@@ -1,4 +1,4 @@
-// Bu Altyapı Tamamen Shydra Codeye Aittir.
+
 const chalk = require("chalk");
 const moment = require("moment");
 const Discord = require("discord.js");
@@ -15,19 +15,9 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
-  client.user.setStatus("online");
+  client.user.setStatus("idle");
   var oyun = [
-    "S",
-    "Sh",
-    "Shy",
-    "Shyd",
-    "Shydr",
-    "Shydra",
-    "Shydr",
-    "Shyd",
-    "Shy",
-    "Sh",
-    "S"
+    "Pink Code Share #Pcs"
   ];
 
   setInterval(function() {
@@ -36,4 +26,5 @@ module.exports = client => {
     client.user.setActivity(oyun[random], "");
   }, 2 * 2500);
 };
-// Bu Altyapı Tamamen Shydra Codeye Aittir.
+
+//Pink Code
