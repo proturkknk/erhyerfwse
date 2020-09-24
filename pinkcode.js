@@ -15,7 +15,7 @@ const snekfetch = require('snekfetch');
 
 const app = express();
 app.get("/", (request, response) => {
-  console.log(Date.now() + "Shydra 7/24 AKTİF TUTMA İŞLEMİ BAŞARILI");
+  console.log(Date.now() + "Pink Code");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);

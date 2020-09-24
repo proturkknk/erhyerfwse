@@ -1,21 +1,31 @@
 {
-  "//1": "Bu Altyapı Tamamen Shydra Codeye Aittir.",
-  "//2": "https://discord.gg/xhyQXPN",
-  "name": "hello-express",
+  "//1": "Developed by Motion",
+  "//2": "Daha fazlası için glitch.com/@Motion33",
+  "//3": "updating this file will download and update your packages",
+  "name": "PinkCodeShare",
   "version": "0.0.1",
-  "description": "Bu Altyapı Tamamen Shydra Codeye Aittir.",
-  "main": "shydracode.js",
+  "description": "Glitch Discord Eğlence Botu.",
+  "main": "pinkcode.js",
   "scripts": {
-    "start": "node shydracode.js"
+    "start": "node pinkcode.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "discord.js": "^12.2.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.2",
+    "moment": "^2.24.0",
     "chalk": "^4.0.0",
-    "moment": "^2.26.0",
-    "jimp": "^0.12.1",
-    "quick.db": "^7.1.1",
-    "snekfetch": "^4.0.4"
+    "node-superfetch": "^0.1.10",
+    "math-expression-evaluator": "^1.2.22",
+    "common-tags": "^1.8.0",
+    "jimp": "^0.16.1",
+    "parse-ms": "^2.1.0",
+    "quick.db": "^7.1.2",
+    "discord.js-commando": "^0.10.0",
+    "chance": "^1.1.7",
+    "snekfetch": "^4.0.4",
+    "figlet": "^1.5.0",
+    "moment-duration-format": "^2.3.2"
   },
   "engines": {
     "node": "12.x"
