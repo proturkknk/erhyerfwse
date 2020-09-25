@@ -1,6 +1,6 @@
 {
-  "sahip": "SAHIP ID",
-  "token": "NzU3ODAxODUxMzE5MDkxMjQx.X2lr-A.MGcgAvdjcPhWSmO1Veze6YCoYNY",
-  "server_id":"DESTEK SUNUCU ID",
-  "prefix": "!"
+  "sahip": "Sahip ID",
+  "token": "Token",
+  "server_id" : "Destek Sunucu ID",
+  "prefix": "Prefix"
 }

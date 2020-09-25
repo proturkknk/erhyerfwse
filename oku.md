@@ -2,7 +2,7 @@
 
 //-------------------------------------------------------------------------------------------//
 
-✔ `Motion tarafından yapılmıştır.
+✔ `Motion ve Ukqzn tarafından yapılmıştır.
 
 ✘ Çalınması, kopyalanması veya başka sunucularda paylaşılması yasaktır.
 
@@ -14,9 +14,15 @@
 
 • **`Motion#9999**
 
+• **ukqzn#0001**
+
 ► Discord Sunucularımız;
 
+**• [FwhyCode](https://discord.gg/5ctK6ux)**
+
 **• [Pink Code Share](https://discord.gg/pCemfHW)**
+
+**• [SaveCode](https://discord.gg/savecode)**
 
 //-------------------------------------------------------------------------------------------// 
 
@@ -81,6 +87,6 @@ ve token kısımı çıkacak. "Copy" diyerek botun tokenini kopyalayabilirsiniz.
 
 **⚠️ #EvdeKal #MaskeTak #MesafeniKoru ⚠️**
 
-**- Pink Code Share**
+**- Pink Code Share - FwhyCode**
 
-**- `Motion**
+**- `Motion - ukqzn**

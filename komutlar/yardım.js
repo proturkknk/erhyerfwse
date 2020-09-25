@@ -2,7 +2,7 @@ const Discord = require ("discord.js");
 
 exports.run = (client, message) => {
 
-const EmbedPinCode = new Discord.MessageEmbed()
+const EmbedFwhyCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
 .setTitle("**▬▬▬▬▬▬[** ©️ **FwhyCode Bot** ©️ **]▬▬▬▬▬▬**  \n\n> :floppy_disk: `!istatistik` **Botun İstatistiklerine Bakarsınız!** \n> :floppy_disk: **Prefixim:** `!`")
@@ -31,18 +31,18 @@ const EmbedPinCode = new Discord.MessageEmbed()
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
-> :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/pCemfHW)**
+> :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/davetlinkiniz)**
 > :round_pushpin: **Komut hakkında detaylı bilgi için: !yardım**
 
 **» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/pCemfHW)** **•** **[Botun Davet Linki](https://www.discord.com/)** **•** **[Web-Site](https://www.discord.com/)**
+**[Destek Sunucusu](https://discord.gg/davetlinkiniz)** **•** **[Botun Davet Linki](https://www.discord.com/)** **•** **[Web-Site](https://www.discord.com/)**
 `)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();
 
 return message.channel.send(EmbedFwhyCode)
-.then; 
+.then; //FwhyCode
 
 };
 exports.conf = {

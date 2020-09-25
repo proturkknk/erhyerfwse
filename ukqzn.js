@@ -15,7 +15,7 @@ const snekfetch = require('snekfetch');
 
 const app = express();
 app.get("/", (request, response) => {
-  console.log(Date.now() + "Pink Code");
+  console.log(Date.now() + "FwhyCode");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
