@@ -3,9 +3,9 @@ const client = new Discord.Client();
 
 exports.run = (client, message) => {
 
-message.channel.send("Pink Code Bot | Espri yükleniyor.").then(message => {
+message.channel.send("FwhyCode | Espri yükleniyor.").then(message => {
 
-    var pinkcode = [
+    var FwhyCode = [
  
       "Seni görünce; \ngözlerim dolar, \nkulaklarım euro.",
       "Kar üzerinde yürüyen adama ne denir. Karabasan.",
@@ -26,9 +26,9 @@ message.channel.send("Pink Code Bot | Espri yükleniyor.").then(message => {
 
     ];
 
-    var pinkcode = pinkcode[Math.floor(Math.random() * pinkcode.length)];
+    var FwhyCode = FwhyCode[Math.floor(Math.random() * FwhyCode.length)];
 
-    message.edit(`${pinkcode}`);
+    message.edit(`${FwhyCode}`);
   });
 };
 

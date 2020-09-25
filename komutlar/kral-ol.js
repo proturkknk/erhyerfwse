@@ -3,22 +3,22 @@ const ayarlar = require("../ayarlar.json");
 
 exports.run = (client, message, params) => {
 
-if (!message.guild) {
+if (!message.guild) { 
 
-const EmbedPinkCode = new Discord.MessageEmbed()
+const EmbedFwhyCode = new Discord.MessageEmbed()
 
       .setColor(0xff0000)
       .setTimestamp()
       .setAuthor(message.author.username, message.author.avatarURL)
       .addField("**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**","----------------------------------------------------------");
 
-return message.author.send(EmbedPinkCode);
+return message.author.send(EmbedFwhyCode);
 
   }
 
 if (message.channel.type !== "dm") {
 
-const EmbedPinkCode = new Discord.MessageEmbed()
+const EmbedFwhyCode = new Discord.MessageEmbed()
 
       .setAuthor(message.author.username + " Artık Kral Oldun!!!")
       .setColor(3447003)
@@ -27,10 +27,10 @@ const EmbedPinkCode = new Discord.MessageEmbed()
       .setURL("https://media.giphy.com/media/F0uvYzyr2a7Li/giphy.gif")
       .setImage(`https://media.giphy.com/media/F0uvYzyr2a7Li/giphy.gif`);
 
-return message.channel.send(EmbedPinkCode);
+return message.channel.send(EmbedFwhyCode);
   }
 };
-//pinkcode
+//FwhyCode
 exports.conf = {
   enabled: true,
   guildOnly: false,

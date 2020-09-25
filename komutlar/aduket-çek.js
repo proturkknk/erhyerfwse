@@ -2,16 +2,16 @@ const Discord = require("discord.js");
 
 exports.run = function(client, message, args) {
 
-const pinkcode = message.mentions.users.first();
+const FwhyCode = message.mentions.users.first();
 
-if (!pinkcode)
+if (!FwhyCode)
 
 return message.reply("**Aduket Çekeceğin Kişiyi Etiketlemelisin**");
 
-const EmbedPinkCode = new Discord.MessageEmbed()
+const EmbedFwhyCode = new Discord.MessageEmbed()
 
     .setDescription(
-      `${pinkcode} ` + `**${message.author.username}** Size Aduket Çekti`
+      `${FwhyCode} ` + `**${message.author.username}** Size Aduket Çekti`
     )
     .setImage(
       "https://cdn.discordapp.com/attachments/747769679984066582/748464442249052251/street-fighter-60854-18102018130021.gif"
@@ -19,7 +19,7 @@ const EmbedPinkCode = new Discord.MessageEmbed()
     .setFooter(client.user.username + " Sundu", client.user.avatarURL)
     .setTimestamp();
 
-return message.channel.send(EmbedPinkCode);
+return message.channel.send(EmbedFwhyCode);
 };
 
 exports.conf = {
@@ -31,6 +31,6 @@ exports.conf = {
 
 exports.help = {
   name: "aduketçek",
-  description: "aduket çekersiniz",
+  description: "FwhyCode",
   usage: "[prefix]aduket-çek <etiket>"
 };

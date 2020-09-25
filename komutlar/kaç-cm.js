@@ -3,9 +3,9 @@ const client = new Discord.Client();
 
 exports.run = (client, message) => {
 
-message.channel.send("Motion Bot | Hemen Diyorum Abi 1 Saniye..").then(message => {
+message.channel.send("FwhyCode | Hemen Diyorum Abi 1 Saniye..").then(message => {
 
-    var pinkcode = [
+    var FwhyCode = [
 
       "**Senin Malafatın  18CM ** :eggplant: ",
       "**Senin Malafatın  11CM ** :eggplant:",
@@ -20,9 +20,9 @@ message.channel.send("Motion Bot | Hemen Diyorum Abi 1 Saniye..").then(message =
 
     ];
 
-    var pinkcode = pinkcode[Math.floor(Math.random() * pinkcode.length)];
+    var FwhyCode = FwhyCode[Math.floor(Math.random() * FwhyCode.length)];
 
-    message.edit(`${pinkcode}`);
+    message.edit(`${FwhyCode}`);
   
   });
 };

@@ -1,4 +1,4 @@
 module.exports = client => {
   console.log(`Başlatılıyor... ${new Date()}`);
-};
-//Pink Code
+};//ukqzn
+//ukqzn

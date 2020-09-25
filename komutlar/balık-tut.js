@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 
 message.channel.send("Balık Tuttun Balığı Çekiyorsun..").then(message => {
 
-var pinkcode = [
+var FwhyCode = [
 
       "Sazan Tuttun! :fish:",
       "Köpek Balığı Tuttun İyi Para Eder Sat Sat :D",
@@ -21,8 +21,8 @@ var pinkcode = [
 
     ];
 
-    var pinkcode = pinkcode[Math.floor(Math.random() * pinkcode.length)];
-    message.edit(`${pinkcode}`);
+    var FwhyCode = FwhyCode[Math.floor(Math.random() * FwhyCode.length)];
+    message.edit(`${FwhyCode}`);
   });
 };
 

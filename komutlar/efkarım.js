@@ -2,9 +2,9 @@ const Discord = require("discord.js");
 
 exports.run = (client, message) => {
 
-const pinkcode = Math.floor(Math.random() * 100) + 1;
+const FwhyCode = Math.floor(Math.random() * 100) + 1;
 
-return message.channel.send(`**Pink Code Bot** \n**Efkarınız:** **%${pinkcode}** **Efkar** `);
+return message.channel.send(`**FwhyCode** \n**Efkarınız:** **%${FwhyCode}** **Efkar** `);
 
 };
 
@@ -17,6 +17,6 @@ exports.conf = {
 
 exports.help = {
   name: "efkarım",
-  description: "Pink Code Bot | Efkarınızı ölçer",
+  description: "FwhyCode | Efkarınızı ölçer",
   usage: "efkar Ölçer"
 };

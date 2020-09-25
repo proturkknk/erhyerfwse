@@ -10,7 +10,7 @@ return message
       .reply("**Kimi Tokatlayacam Reis Etiketlede Vurayım Ağzının Ortasına **")
       .catch(console.error);
 
-const EmbedPinkCode = new Discord.MessageEmbed()
+const EmbedFwhyCode = new Discord.MessageEmbed()
 
     .setColor("0x808080")
     .setDescription(
@@ -19,7 +19,7 @@ const EmbedPinkCode = new Discord.MessageEmbed()
     .setImage("https://media0.giphy.com/media/deKWTyMOYLkje/giphy.gif")
     .setFooter("Pink Code Share #Pcs", client.user.avatarURL);
 
-message.channel.send(EmbedPinkCode);
+message.channel.send(EmbedFwhyCode);
 
 };
 

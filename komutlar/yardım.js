@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 const EmbedPinCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
-.setTitle("**▬▬▬▬▬▬[** ©️ **Pink Code Bot** ©️ **]▬▬▬▬▬▬**  \n\n> :floppy_disk: `!istatistik` **Botun İstatistiklerine Bakarsınız!** \n> :floppy_disk: **Prefixim:** `!`")
+.setTitle("**▬▬▬▬▬▬[** ©️ **FwhyCode Bot** ©️ **]▬▬▬▬▬▬**  \n\n> :floppy_disk: `!istatistik` **Botun İstatistiklerine Bakarsınız!** \n> :floppy_disk: **Prefixim:** `!`")
 .setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
 .setDescription(`
 
@@ -41,7 +41,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();
 
-return message.channel.send(EmbedPinCode)
+return message.channel.send(EmbedFwhyCode)
 .then; 
 
 };

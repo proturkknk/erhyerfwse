@@ -17,12 +17,12 @@ exports.run = function(client, message, args) {
      return message.channel.send("**Hatalı işlem: **" + err);
     }
 
-    const EmbedPinkCode = new Discord.MessageEmbed()
+    const EmbedFwhyCode = new Discord.MessageEmbed()
 
       .addField("Soru", soru)
       .addField("Cevap", cevap);
 
-    return message.channel.send(EmbedPinkCode);
+    return message.channel.send(EmbedFwhyCode);
   }
 };
 
