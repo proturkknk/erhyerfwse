@@ -90,3 +90,5 @@ ve token kısımı çıkacak. "Copy" diyerek botun tokenini kopyalayabilirsiniz.
 **- Pink Code Share - FwhyCode**
 
 **- `Motion - ukqzn**
+
+**- Çalan orospu çocuğudur, lisansla sikeriz bilginize.**
