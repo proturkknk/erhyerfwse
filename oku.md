@@ -1,4 +1,4 @@
-**Discord.js Eğlence Bot Altyapısı by Pink Code Share - `Motion**
+**Discord.js Eğlence Bot Altyapısı V12**
 
 //-------------------------------------------------------------------------------------------//
 
