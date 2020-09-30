@@ -12,9 +12,9 @@ const Embedmatador = new Discord.MessageEmbed()
 ▬▬▬▬▬▬[ :closed_lock_with_key: **Eğlence Komutları** :closed_lock_with_key: ]▬▬▬▬▬▬
 
 > **» !aduketçek :** Etiketlediğiniz kişiye aduket çekersiniz.
+> **» !ara155 :** Polisi aramanıza yarar.
 > **» !balık-tut :** Denizde balık tutarsınız.
 > **» !beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.
-> **» !ara155 :** Polisi aramanıza yarar.
 > **» !efkarım :** Şu anda olan efkarınızı ölçersiniz.
 > **» !ejderha-yazı :** Ejderha temalı logo üretirsiniz.
 > **» !espri :** Bot sizin için espri yapar.
@@ -22,6 +22,8 @@ const Embedmatador = new Discord.MessageEmbed()
 > **» !kartopu :** Etiketlediğiniz kişiye kartopu atarsınız.
 > **» !kaç-cm :** Bot malafat uzunluğunuzu söyler.
 > **» !kralol :** Kral olmanıza yarar.
+> **» !slots :** Etiketlediğiniz kişiyi tokatlarsınız.
+
 > **» !tokat :** Etiketlediğiniz kişiyi tokatlarsınız.
 > **» !yazıtura :** Bot ile yazı-tura oyununu oynarsınız.
 > **» !yılbaşı :** Yılbaşının gelmesine ne kadar yaklaştığınızı gösterir.
