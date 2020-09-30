@@ -4,7 +4,7 @@ exports.run = (client, message) => {
 
 const Embedmatador = new Discord.MessageEmbed()
 
-.setColor("RANDOM")
+.setColor("PİNK")
 .setTitle("**▬▬▬▬▬▬[** ©️ **Eğlence Bot (V12)** ©️ **]▬▬▬▬▬▬**  \n\n> :floppy_disk: `!istatistik` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `!`")
 .setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
 .setDescription(`
@@ -22,8 +22,8 @@ const Embedmatador = new Discord.MessageEmbed()
 > **» !kartopu :** Etiketlediğiniz kişiye kartopu atarsınız.
 > **» !kaç-cm :** Bot malafat uzunluğunuzu söyler.
 > **» !kralol :** Kral olmanıza yarar.
-> **» !slots :** Etiketlediğiniz kişiyi tokatlarsınız.
-
+> **» !slots :** Slot oynarsınız.
+> **» !taksimdayı :** Taksim Dayı gifi atar.
 > **» !tokat :** Etiketlediğiniz kişiyi tokatlarsınız.
 > **» !yazıtura :** Bot ile yazı-tura oyununu oynarsınız.
 > **» !yılbaşı :** Yılbaşının gelmesine ne kadar yaklaştığınızı gösterir.
