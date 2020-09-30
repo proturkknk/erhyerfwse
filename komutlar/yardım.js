@@ -33,12 +33,12 @@ const Embedmatador = new Discord.MessageEmbed()
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
-> :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/davetlinkiniz)**
+> :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/58TjGzY)**
 > :round_pushpin: **Komut hakkında detaylı bilgi için: !yardım**
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
 
 **» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/davetlinkiniz)** **•** **[Botun Davet Linki](https://www.discord.com/)** **•** **[Web-Site](https://www.discord.com/)**
+**[Destek Sunucusu](https://discord.gg/58TjGzY)** **•** **[Botun Davet Linki](https://www.discord.com/)** **•** **[Web-Site](https://www.discord.com/)**
 `)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
