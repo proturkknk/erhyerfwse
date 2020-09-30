@@ -3,9 +3,9 @@ const client = new Discord.Client();
 
 exports.run = (client, message) => {
 
-message.channel.send("FwhyCode | Hemen Diyorum Abi 1 Saniye..").then(message => {
+message.channel.send("matador | Hemen Diyorum Abi 1 Saniye..").then(message => {
 
-    var FwhyCode = [
+    var matador = [
 
       "**Senin Malafatın  18CM ** :eggplant: ",
       "**Senin Malafatın  11CM ** :eggplant:",
@@ -20,9 +20,9 @@ message.channel.send("FwhyCode | Hemen Diyorum Abi 1 Saniye..").then(message => 
 
     ];
 
-    var FwhyCode = FwhyCode[Math.floor(Math.random() * FwhyCode.length)];
+    var matador= matador[Math.floor(Math.random() * matador.length)];
 
-    message.edit(`${FwhyCode}`);
+    message.edit(`${matador}`);
   
   });
 };

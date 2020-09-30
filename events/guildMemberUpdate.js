@@ -1,4 +1,4 @@
-const FwhyCode = require('return-deep-diff');
+const matador = require('return-deep-diff');
 module.exports = (oMember, nMember) => {
-console.log(FwhyCode(oMember, nMember));
+console.log(matador(oMember, nMember));
 };

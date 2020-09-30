@@ -2,7 +2,7 @@ const Discord = require ("discord.js");
 
 exports.run = (client, message) => {
 
-const EmbedFwhyCode = new Discord.MessageEmbed()
+const Embedmatador = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
 .setTitle("**▬▬▬▬▬▬[** ©️ **Eğlence Bot (V12)** ©️ **]▬▬▬▬▬▬**  \n\n> :floppy_disk: `!istatistik` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `!`")
@@ -42,8 +42,8 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();
 
-return message.channel.send(EmbedFwhyCode)
-.then; //FwhyCode
+return message.channel.send(Embedmatador)
+.then; //MATADOR
 
 };
 exports.conf = {

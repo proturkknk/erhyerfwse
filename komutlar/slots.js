@@ -6,14 +6,14 @@ const slots = ["🍇", "🍊", "🍐", "🍒", "🍋"];
 
 exports.run = function(client, message) {
 
-var FwhyCode = slots[Math.floor(Math.random() * slots.length)];
-var FwhyCode2 = slots[Math.floor(Math.random() * slots.length)];
-var FwhyCode3 = slots[Math.floor(Math.random() * slots.length)];
+var matador = slots[Math.floor(Math.random() * slots.length)];
+var matador2 = slots[Math.floor(Math.random() * slots.length)];
+var matador3 = slots[Math.floor(Math.random() * slots.length)];
 
-  if (FwhyCode === FwhyCode2 && FwhyCode === FwhyCode) { return message.channel.send(stripIndents`**Tebrikler, kazandınız!** \n\n${FwhyCode} **:** ${FwhyCode2} **:** ${FwhyCode3}`);
+  if (matador === matador2 && matador3 === matador) { return message.channel.send(stripIndents`**Tebrikler, kazandınız!** \n\n${matador} **:** ${matador2} **:** ${matador3}`);
 
   } else {
-   return message.channel.send(stripIndents`**Eyvah, kaybettin!** \n\n${FwhyCode} **:** ${FwhyCode2} **:** ${FwhyCode3}`);
+   return message.channel.send(stripIndents`**Eyvah, kaybettin!** \n\n${matador} **:** ${matador2} **:** ${matador3}`);
   }
 };
 

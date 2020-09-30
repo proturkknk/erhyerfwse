@@ -2,9 +2,9 @@ const Discord = require("discord.js");
 
 exports.run = (client, message) => {
 
-const FwhyCode = Math.floor(Math.random() * 100) + 1;
+const matador = Math.floor(Math.random() * 100) + 1;
 
-return message.channel.send(`**FwhyCode** \n**Efkarınız:** **%${FwhyCode}** **Efkar** `);
+return message.channel.send(`**matador** \n**Efkarınız:** **%${matador}** **Efkar** `);
 
 };
 
@@ -17,6 +17,6 @@ exports.conf = {
 
 exports.help = {
   name: "efkarım",
-  description: "FwhyCode | Efkarınızı ölçer",
+  description: "MATADOR | Efkarınızı ölçer",
   usage: "efkar Ölçer"
 };

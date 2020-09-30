@@ -2,21 +2,21 @@ const Discord = require("discord.js");
 
 exports.run = function(client, message, args) {
 
-const FwhyCode = message.mentions.users.first();
+const matador = message.mentions.users.first();
 
-if (!FwhyCode) return message.reply("Beşlik Çakacağın Kişiyi Etiketlemelisin");
+if (!matador) return message.reply("Beşlik Çakacağın Kişiyi Etiketlemelisin");
 
-const EmbedFwhyCode = new Discord.MessageEmbed()
+const Embedmatador = new Discord.MessageEmbed()
 
     .setDescription(
-      `${FwhyCode} ` + `ve **${message.author.username}** Beşlik Çaktı`
+      `${matador} ` + `ve **${message.author.username}** Beşlik Çaktı`
     )
     .setImage(
       "https://cdn.discordapp.com/attachments/747769679984066582/748956281930383520/tenor_3.gif"
     )
     .setFooter(client.user.username + " Sundu", client.user.avatarURL)
   
- return message.channel.send(EmbedFwhyCode);
+ return message.channel.send(Embedmatador);
 };
 exports.conf = {
   enabled: true,

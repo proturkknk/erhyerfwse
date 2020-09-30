@@ -2,10 +2,10 @@ const Discord = require("discord.js");
 
 exports.run = (client, msg, args) => {
 
-let FwhyCode = args.slice(0).join(" ");
-if (FwhyCode.length < 1) {
+let matador = args.slice(0).join(" ");
+if (matador.length < 1) {
 
-return msg.reply("**FwhyCode | Kime kartopu atmak isterin ya isim yaz yada etiketle!**");
+return msg.reply("**Matador | Kime kartopu atmak isterin ya isim yaz yada etiketle!**");
 
 } else {
 
@@ -22,7 +22,7 @@ return msg.reply("**FwhyCode | Kime kartopu atmak isterin ya isim yaz yada etike
       .then(nmsg => nmsg.edit("<= :snowflake:"))
       .then(nmsg => nmsg.edit(":snowflake:"))
       .then(nmsg => nmsg.edit(":snowflake:"))
-      .then(nmsg => nmsg.edit(`${FwhyCode} artık :snowman: oldu.`));
+      .then(nmsg => nmsg.edit(`${matador} artık :snowman: oldu.`));
   }
 };
 

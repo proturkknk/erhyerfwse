@@ -5,20 +5,20 @@ exports.run = (client, message, params) => {
 
 if (!message.guild) { 
 
-const EmbedFwhyCode = new Discord.MessageEmbed()
+const Embedmatador = new Discord.MessageEmbed()
 
       .setColor(0xff0000)
       .setTimestamp()
       .setAuthor(message.author.username, message.author.avatarURL)
       .addField("**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**","----------------------------------------------------------");
 
-return message.author.send(EmbedFwhyCode);
+return message.author.send(Embedmatador);
 
   }
 
 if (message.channel.type !== "dm") {
 
-const EmbedFwhyCode = new Discord.MessageEmbed()
+const Embedmatador = new Discord.MessageEmbed()
 
       .setAuthor(message.author.username + " Artık Kral Oldun!!!")
       .setColor(3447003)
@@ -27,10 +27,10 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
       .setURL("https://media.giphy.com/media/F0uvYzyr2a7Li/giphy.gif")
       .setImage(`https://media.giphy.com/media/F0uvYzyr2a7Li/giphy.gif`);
 
-return message.channel.send(EmbedFwhyCode);
+return message.channel.send(Embedmatador);
   }
 };
-//FwhyCode
+//matador
 exports.conf = {
   enabled: true,
   guildOnly: false,

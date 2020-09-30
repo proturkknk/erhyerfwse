@@ -2,5 +2,5 @@
   "sahip": "SahipID",
   "token": "Token",
   "server_id" : "ServerID",
-  "prefix": "Prefix"
+  "prefix": "prefix"
 }

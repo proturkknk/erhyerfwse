@@ -3,9 +3,9 @@ const client = new Discord.Client();
 
 exports.run = (client, message) => {
 
-message.channel.send("FwhyCode | Espri yükleniyor.").then(message => {
+message.channel.send("matador | Espri yükleniyor.").then(message => {
 
-    var FwhyCode = [
+    var matador = [
  
       "Seni görünce; \ngözlerim dolar, \nkulaklarım euro.",
       "Kar üzerinde yürüyen adama ne denir. Karabasan.",
@@ -26,9 +26,9 @@ message.channel.send("FwhyCode | Espri yükleniyor.").then(message => {
 
     ];
 
-    var FwhyCode = FwhyCode[Math.floor(Math.random() * FwhyCode.length)];
+    var matador = matador[Math.floor(Math.random() * matador.length)];
 
-    message.edit(`${FwhyCode}`);
+    message.edit(`${matador}`);
   });
 };
 

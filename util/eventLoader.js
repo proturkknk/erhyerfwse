@@ -3,4 +3,4 @@ module.exports = client => {
   client.on('ready', () => reqEvent('ready')(client));
   client.on('message', reqEvent('message'));
 };
-//ukqzn
+//matador
