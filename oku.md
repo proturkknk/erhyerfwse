@@ -4,8 +4,6 @@
 
 **• [Matador](https://discord.gg/58TjGzY)**
 
-**• [SaveCode](https://discord.gg/savecode)**
-
 //-------------------------------------------------------------------------------------------// 
 
 **✍ Bot nasıl aktif edilir?** 
@@ -52,23 +50,7 @@ ve token kısımı çıkacak. "Copy" diyerek botun tokenini kopyalayabilirsiniz.
 
 **7-** Ardından mavi butona tıklayın ve karşınıza kimlik bilgileri çıkacak. Bunları kısıtlamadan kullanmayın. Yoksa botunuz sorun çıkartabilir.
 
-
-**📱 Youtube Api Key v3 nasıl kısıtlandırılır?**
-
-**1-** Api key'i aldıktan sonra kimlik bilgileri geldiğinde aşağıda "Anahtarı Kısıtlayın." diye seçenek vardır. Tıklayın.
-
-
-**2-** Sizi bir sayfaya yönlendirecek.
-
-**3-** Yönlendirildiğiniz sayfada "Api kısıtlamaları" bölümünden "Youtube Data Api v3"ü seçin.
-
-**4-** Kaydet dedikten sonra Api key'inizin kısıtlanması 5 ila 10 dakikayı bulabilir. Sabrederek bekleyin.
-
 //-------------------------------------------------------------------------------------------// 
 
 
-**⚠️ #EvdeKal #MaskeTak #MesafeniKoru ⚠️**
-
-**- Pink Code Share - FwhyCode**
-
-**- `Motion - ukqzn**
+**⚠️ #EvdeKal ⚠️**

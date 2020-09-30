@@ -1,6 +1,6 @@
-{
+{ 
+  "prefix": "prefix",
   "sahip": "SahipID",
   "token": "Token",
-  "server_id" : "ServerID",
-  "prefix": "prefix"
+  "server_id" : "ServerID"
 }

@@ -15,7 +15,7 @@ const Embedmatador = new Discord.MessageEmbed()
     )
 
     .setImage(
-      `https://i.kym-cdn.com/photos/images/original/000/986/968/2f5.gif`
+      `https://i.kym-cdn.com/photos/images/original/000/986/968/2f5.gif` //matador
     );
   return message.channel.send(Embedmatador);
 };
