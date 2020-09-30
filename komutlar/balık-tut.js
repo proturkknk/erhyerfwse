@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 
 message.channel.send("Balık Tuttun Balığı Çekiyorsun..").then(message => {
 
-var FwhyCode = [
+var matador = [
 
       "Sazan Tuttun! :fish:",
       "Köpek Balığı Tuttun İyi Para Eder Sat Sat :D",
@@ -21,8 +21,8 @@ var FwhyCode = [
 
     ];
 
-    var FwhyCode = FwhyCode[Math.floor(Math.random() * FwhyCode.length)];
-    message.edit(`${FwhyCode}`);
+    var matador = matador[Math.floor(Math.random() * matador.length)];
+    message.edit(`${matador}`);
   });
 };
 

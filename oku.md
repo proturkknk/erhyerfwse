@@ -1,26 +1,8 @@
-**Discord.js Eğlence Bot Altyapısı V12**
-
-//-------------------------------------------------------------------------------------------//
-
-✔ `Motion ve Ukqzn tarafından yapılmıştır.
-
-✘ Çalınması, kopyalanması veya başka sunucularda paylaşılması yasaktır.
-
-//-------------------------------------------------------------------------------------------//
-
-► Hata ile karşılaştığınız durumda iletişim;
-
-► Discord Hesaplarımız;
-
-• **`Motion#9999**
-
-• **ukqzn#0001**
+**Discord Eğlence Bot Altyapısı**
 
 ► Discord Sunucularımız;
 
-**• [FwhyCode](https://discord.gg/5ctK6ux)**
-
-**• [Pink Code Share](https://discord.gg/pCemfHW)**
+**• [Matador](https://discord.gg/58TjGzY)**
 
 **• [SaveCode](https://discord.gg/savecode)**
 

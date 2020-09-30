@@ -11,13 +11,13 @@ module.exports = client => {
     `[${moment().format("YYYY-MM-DD HH:mm:ss")}] BOT: Aktif, Komutlar yüklendi!`
   );
   console.log(
-    `[${moment().format("YYYY-MM-DD HH:mm:ss")}] BOT: ${//ukqzn
+    `[${moment().format("YYYY-MM-DD HH:mm:ss")}] BOT: ${//
       client.user.username
     } ismi ile giriş yapıldı!`
   );
   client.user.setStatus("idle");
   var oyun = [
-    "yt.com/ukqzn"
+    "MATADOR"
   ];
 //ukqzn
   setInterval(function() {

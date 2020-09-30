@@ -1,13 +1,13 @@
 {
   "//1": "Developed by Motion and ukqzn",
-  "//2": "Daha fazlası için glitch.com/@ukqzn",
+  "//2": "Daha fazlası için youtube.com/matadors",
   "//3": "updating this file will download and update your packages",
   "name": "",
   "version": "0.0.1",
-  "description": "Glitch Discord Eğlence Botu.",
-  "main": "ukqzn.js",
+  "description": "Discord Eğlence Botu.",
+  "main": "matador.js",
   "scripts": {
-    "start": "node ukqzn.js"
+    "start": "node matador.js"
   },
   "dependencies": {
     "chalk": "^4.0.0",
@@ -33,7 +33,7 @@
   "repository": {
     "url": "https://glitch.com/edit/#!/hello-express"
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "keywords": [
     "node",
     "glitch",
