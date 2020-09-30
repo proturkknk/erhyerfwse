@@ -3,7 +3,7 @@ const moment = require("moment");
 const os = require('os');
 require("moment-duration-format");
 exports.run = async (bot, message, args) => {
-   const istatistikler = moment.duration(bot.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
+   const matador = moment.duration(bot.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
    const istatistikler = new Discord.MessageEmbed()
   .setColor('RANDOM')
   .setFooter('Istatistik', bot.user.avatarURL)
@@ -23,7 +23,7 @@ exports.run = async (bot, message, args) => {
   .addField("**» Bot Davet**", " [Davet Et](LİNK)", )
   .addField("**» Destek Sunucusu**", " [Sunucumuza Katıl](LİNK)", )
   .addField("**» Oylama Sayfası**", " [Botu votele](LİNK)", )
- return message.channel.send(matador);
+ return message.channel.send(istatistikler);
   };
 
 exports.conf = {
