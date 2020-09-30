@@ -1,29 +1,40 @@
-const Discord = require('discord.js');
-const moment = require('moment');
-const ayarlar = require('../ayarlar.json');
-require('moment-duration-format');
-exports.run = async(cclient, message, args) => {
-
-let cembed = new Discord.RichEmbed()
-.setAuthor(cclient.user.username, cclient.user.avatarURL)
-.setThumbnail(message.author.avatarURL)
-.setTimestamp()
-.addField("Bot Verileri", `Toplam Sunucu **|** **${cclient.guilds.size}** \nToplam Kullanıcı **|** **${cclient.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString()}** \nToplam kanal **|** **${cclient.channels.size}**`)
-.addField("Yapımcılar", `<@515590960953032705> **|** **ilyascuk#0001**`)
-.addField("Gecikmeler", `Bot Pingi **|** **${cclient.ping}** \nMesaj Gecikmesi **|** **${new Date().getTime() - message.createdTimestamp}**`)
-.setColor("#ffd100")
-message.channel.send(cembed)
-}
+const Discord = require("discord.js");
+const moment = require("moment");
+const os = require('os');
+require("moment-duration-format");
+exports.run = async (bot, message, args) => {
+   const matador = moment.duration(bot.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
+   const istatistikler = new Discord.RichEmbed()
+  .setColor('RANDOM')
+  .setFooter('Istatistik', bot.user.avatarURL)
+  .addField("» **Botun Sahibi**", "ever_Sitrey!")
+  .addField("»  **Geliştirici** ","<@675349659040088109>")
+  .addField("» **Bellek kullanımı**", (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + ' MB', true)  
+  .addField("» **Çalışma süresi**", matador)
+  .addField("» **Kullanıcılar**" , bot.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString(), true)
+  .addField("» **Sunucular**", bot.guilds.size.toLocaleString(), true)
+  .addField("» **Kanallar**", bot.channels.size.toLocaleString(), true)
+  .addField("» **Discord.JS sürüm**", "v"+Discord.version, true)
+  .addField("» **Node.JS sürüm**", `${process.version}`, true)
+  .addField("» **Ping**", bot.ping+" ms", true)
+  .addField("» **CPU**", `\`\`\`md\n${os.cpus().map(i => `${i.model}`)[0]}\`\`\``)
+  .addField("» **Bit**", `\`${os.arch()}\``, true)
+  .addField("» **İşletim Sistemi**", `\`\`${os.platform()}\`\``) 
+  .addField("**» Bot Davet**", " [Davet Et](LİNK)", )
+  .addField("**» Destek Sunucusu**", " [Sunucumuza Katıl](LİNK)", )
+  .addField("**» Oylama Sayfası**", " [Botu votele](LİNK)", )
+  return message.channel.send(matador);
+  };
 
 exports.conf = {
-    enabled: true,
-    guildOnly: false,
-    aliases: ['istatistik','yapımcım'],
-    permLevel: 0
-  };
-  
-  exports.help = {
-    name: 'istatistik',
-    description: 'Türkiyenin Saatini Gösterir',
-    usage: 'gç'
-  };
+  enabled: true,
+  guildOnly: false,
+  aliases: [ 'i', 'stats', 'bot', 'botbilgi'],
+  permLevel: 0
+};
+
+exports.help = {
+  name: "istatistik",
+  description: "Bot Stats",
+  usage: "istatistik"
+};
