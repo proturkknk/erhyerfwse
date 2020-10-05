@@ -1,6 +1,6 @@
 { 
   "prefix": "!",
-  "sahip": "",
-  "token": "",
-  "server_id" : ""
+  "sahip": "id",
+  "token": "token",
+  "server_id" : "serverid"
 }
