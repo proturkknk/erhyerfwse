@@ -17,7 +17,7 @@ module.exports = client => {
   );
   client.user.setStatus("idle");
   var oyun = [
-    "MATADOR"
+    "youtube.com/matadors"
   ];
 //matador
   setInterval(function() {
