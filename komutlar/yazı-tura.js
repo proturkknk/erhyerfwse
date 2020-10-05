@@ -42,7 +42,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "yazıtura",
+  name: "yazı-tura",
   description: "Yazı-Tura atar.",
   usage: "yazıtura"
 };
