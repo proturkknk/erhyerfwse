@@ -5,9 +5,9 @@ exports.run = (client, message, args) => {
     const embed = new Discord.MessageEmbed()
     .setAuthor('')
     .setColor("BLUE")
-    .setDescription(`** ${mesaj} ` + message.author.username + ' FBI Open the door !')
+    .setDescription(`** ${mesaj} ` + message.author.username + ' FBI Open the door !**')
     .setImage(`https://media1.tenor.com/images/93d11bc59526ce49f60766f0045d819b/tenor.gif?itemid=11500735 `)
-    return message.channel.cache.sendEmbed(embed);
+    return message.channel.send(embed);
 };
 
 exports.conf = {
