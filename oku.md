@@ -2,7 +2,7 @@
 
 ► Discord Sunucularımız;
 
-**• [Matador](https://discord.gg/58TjGzY)**
+**• [Frenzy Code](https://discord.gg/58TjGzY)**
 
 //-------------------------------------------------------------------------------------------// 
 

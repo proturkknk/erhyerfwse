@@ -12,7 +12,8 @@ const Embedmatador = new Discord.MessageEmbed()
 ▬▬▬▬▬▬[ :closed_lock_with_key: **Eğlence Komutları** :closed_lock_with_key: ]▬▬▬▬▬▬
 
   **  !fbi :** FBİ gifi atar.
- **  !aduketçek :** Etiketlediğiniz kişiye aduket çekersiniz.
+  **  !aşkölçer :** Aşkınızı ölçer. 
+**  !aduketçek :** Etiketlediğiniz kişiye aduket çekersiniz.
  **  !ara155 :** Polisi aramanıza yarar.
  **  !ay :** Ay gifi atar.
  **  !balık-tut :** Denizde balık tutarsınız.
