@@ -23,4 +23,3 @@ exports.help = {
   description: 'ay.',
   usage: 'ay'
 };
-//CodeWorld
