@@ -38,7 +38,7 @@ const Embedmatador = new Discord.MessageEmbed()
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
   :round_pushpin: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
-  :dizzy: **Komut hakkında detaylı bilgi için: !yardım**
+  :dizzy: **Komut hakkında detaylı bilgi için: #yardım**
   :airplane: **Aktif discord.js sürümüm: v12.2.0**
 
 **» Bağlantılar** 
