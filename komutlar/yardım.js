@@ -11,10 +11,10 @@ const Embedmatador = new Discord.MessageEmbed()
 
 ▬▬▬▬▬▬[ :closed_lock_with_key: **Eğlence Komutları** :closed_lock_with_key: ]▬▬▬▬▬▬
 
-  **»  #fbi :** FBİ gifi atar.
-  **»  #aşkölçer :** Aşkınızı ölçer. 
-**»  #aduketçek :** Etiketlediğiniz kişiye aduket çekersiniz.
- **»  #ara155 :** Polisi aramanıza yarar.
+  **»  #fbi :** :crown: FBİ gifi atar :crown:.
+  **»  #aşkölçer :** :crown: Aşkınızı ölçer :crown:. 
+**»  #aduketçek :** :crown: Etiketlediğiniz kişiye aduket çekersiniz :crown:.
+ **»  #ara155 :** :crown: Polisi aramanıza yarar :crown:.
  **»  #ay :** Ay gifi atar.
  **»  #balık-tut :** Denizde balık tutarsınız.
  **»  #beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.

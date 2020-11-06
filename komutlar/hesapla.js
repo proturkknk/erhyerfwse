@@ -7,7 +7,7 @@ exports.run = function(client, message, args) {
 
   if (!soru)
     return message.reply(
-      "**Bir işlem belirtin.** `Örnek`: **!hesapla <işlem>**"
+      "**Bir işlem belirtin.** `Örnek`: **#hesapla <işlem>**"
     );
   else {
     let cevap;
