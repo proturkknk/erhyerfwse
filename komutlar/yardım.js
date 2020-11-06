@@ -15,7 +15,7 @@ const Embedmatador = new Discord.MessageEmbed()
   **»  #aşkölçer :** :crown: Aşkınızı ölçer :crown:. 
 **»  #aduketçek :** :crown: Etiketlediğiniz kişiye aduket çekersiniz :crown:.
  **»  #ara155 :** :crown: Polisi aramanıza yarar :crown:.
- **»  #ay :** Ay gifi atar.
+ **»  #ay :** :crown: Ay gifi atar :crown:.
  **»  #balık-tut :** Denizde balık tutarsınız.
  **»  #beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.
   **»  #dünya :** Dünya gifi atar.
