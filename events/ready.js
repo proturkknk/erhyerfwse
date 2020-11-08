@@ -17,7 +17,7 @@ module.exports = client => {
   );
   client.user.setStatus("idle");
   var oyun = [
-    "youtube.com/matadors"
+    "Yapımcım:! ZΞHÎR ⍣ | Scorn ! ❃"
   ];
 //matador
   setInterval(function() {
