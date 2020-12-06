@@ -15,9 +15,9 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
-  client.user.setStatus("idle");
+  client.user.setStatus("online");
   var oyun = [
-    "Yapımcım:を I ｓｅｉｄｏｕ#3052"
+    "*yardım"
   ];
 //matador
   setInterval(function() {
