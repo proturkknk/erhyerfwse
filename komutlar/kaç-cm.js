@@ -12,9 +12,9 @@ message.channel.send("matador | Hemen Diyorum Abi 1 Saniye..").then(message => {
       "**Senin Malafatın 32CM  ** :eggplant:",
       "**Senin Malafatın  35CM ** :eggplant:",
       "**Senin Malafatın  8CM  ** :eggplant:",
-      "**Senin Malafatın  65CM  ** :eggplant:",
+      "**Senin Malafatın  65CM ÇUŞ OHA  ** :eggplant:",
       "**Senin Malafatın 5CM  ** :eggplant:",
-      "**Senin Malafatın 31CM  ** :eggplant:",
+      "**Senin Malafatın 31CM sjjsj ** :eggplant:",
       "**Senin Malafatın  14CM ** :eggplant:",
       "**Senin Malafatın  1CM ** :eggplant:"
 
@@ -28,8 +28,8 @@ message.channel.send("matador | Hemen Diyorum Abi 1 Saniye..").then(message => {
 };
 
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
+  enabled: false,
+  guildOnly: true,
   aliases: ["kaçcm", "cmkaç", "kaçcm", "cm-kaç"],
   permLevel: 0
 };

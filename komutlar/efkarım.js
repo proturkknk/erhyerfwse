@@ -17,6 +17,6 @@ exports.conf = {
 
 exports.help = {
   name: "efkarım",
-  description: "MATADOR | Efkarınızı ölçer",
+  description: "Seidou-Chan | Efkarınızı ölçer",
   usage: "efkar Ölçer"
 };

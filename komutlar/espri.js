@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 exports.run = (client, message) => {
 
-message.channel.send("matador | Espri yükleniyor.").then(message => {
+message.channel.send("Seidou-Chan | Espri yükleniyor.").then(message => {
 
     var matador = [
  

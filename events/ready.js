@@ -17,7 +17,7 @@ module.exports = client => {
   );
   client.user.setStatus("idle");
   var oyun = [
-    "Yapımcım:! ZΞHÎR ⍣ | Scorn ! ❃"
+    "Yapımcım:を I ｓｅｉｄｏｕ#3052"
   ];
 //matador
   setInterval(function() {
