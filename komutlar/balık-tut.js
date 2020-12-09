@@ -11,7 +11,7 @@ var matador = [
       "Köpek Balığı Tuttun İyi Para Eder Sat Sat :D",
       "Uskumru Tuttun! :fish:",
       "Mezgit Tuttun! Havyarıda Var hee ;) :fish:",
-      "Japon Balığı Tuttun Yemeyi Düşünmüyorsun Herhalde?",
+      "Japon Balığı Tuttun Yemeyi Düşünmüyorsun Herhalde? :D",
       "Hamsi Tuttun! :fish:",
       "Levrek Tuttun! :fish:",
       "Hiçbirşey Tutamadın Maalesef! :wastebasket:",

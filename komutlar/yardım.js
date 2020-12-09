@@ -39,6 +39,7 @@ const Embedmatador = new Discord.MessageEmbed()
  **»  *ping :** Botun pingine bakarsınız.
   **»  *token :** Botun tokenine bakarsınız.
   **»  *tersyazı :** Tersyazı yazarsınız.
+  *»  *düello :** Belirttiniz kişiyle düello atarsınız.
 
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
