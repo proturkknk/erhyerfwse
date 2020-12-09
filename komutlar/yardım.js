@@ -12,14 +12,14 @@ const Embedmatador = new Discord.MessageEmbed()
 ▬▬▬▬▬▬[ :closed_lock_with_key: **Eğlence Komutları** :closed_lock_with_key: ]▬▬▬▬▬▬
 
   **»  *fbi :**  FBİ gifi atar .
-  **»  *aşkölçer :**  Aşkınızı ölçer . 
+  **»  *aşkölçer :**  Aşkınızı ölçer(ironi) . 
 **»  *aduketçek :**  Etiketlediğiniz kişiye aduket çekersiniz .
  **»  *ara155 :** Polisi aramanıza yarar :.
  **»  *ay :**  Ay gifi atar .
  **»  *balık-tut :** Denizde balık tutarsınız.
  **»  *beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.
   **»  *dünya :** Dünya gifi atar.
-  **»  *efkarım :** Şu anda olan efkarınızı ölçersiniz.
+  **»  *efkarım :** Şu anda olan efkarınızı ölçersiniz(ironi).
  **»  *ejderha-yazı :** Ejderha temalı logo üretirsiniz.
  **»  *emojiyazı :** Yazdığınız yazıları emoji halinde yazar.
  **»  *espri :** Bot sizin için espri yapar.
