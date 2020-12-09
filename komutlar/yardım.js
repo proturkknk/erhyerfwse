@@ -34,6 +34,9 @@ const Embedmatador = new Discord.MessageEmbed()
  **»  *yılbaşı :** Yılbaşının gelmesine ne kadar yaklaştığınızı gösterir.
     **»  *öp :** Etiketlediğiniz kişiyi öpmenize yarar.
  **»  *şekerye :** Bot size şeker ikram eder.
+ **»  *atatürk :** Atamızı saygıyla anıyoruz.
+ **»  *mcskin :** Belirttiniz kişin minecraft skinini(karakterini) atar.
+ **»  *düello :** Belirttiniz kişiyle düello atar.
 
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
