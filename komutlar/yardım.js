@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 const Embedmatador = new Discord.MessageEmbed()
 
 .setColor("RED")
-.setTitle("**▬▬▬▬▬▬[** ©️ **Seidou-Chan** ©️ **]▬▬▬▬▬▬**  \n \n **Şuanda kullanılan prefix** `*`")
+.setTitle("**▬▬▬▬▬▬[** ©️ **Seidou-Chan** ©️ **]▬▬▬▬▬▬**  \n \n **Şuanda kullanılan prefix** `u!`")
 .setThumbnail("")
 .setDescription(`
 
@@ -36,16 +36,22 @@ const Embedmatador = new Discord.MessageEmbed()
  **»  *şekerye :** Bot size şeker ikram eder.
  **»  *atatürk :** Atamızı saygıyla anıyoruz.
  **»  *mcskin :** Belirttiniz kişin minecraft skinini(karakterini) atar.
- **»  *düello :** Belirttiniz kişiyle düello atar.
+ **»  *ping :** Botun pingine bakarsınız.
+  **»  *token :** Botun tokenine bakarsınız.
+  **»  *tersyazı :** Tersyazı yazarsınız.
 
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
-  :round_pushpin: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
+:Kurucum: TREFAX#0038**
+:Yardım için kurucuma yazınız kurucum: TREFAX#0038**
+  :round_pushpin: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin! Fikirleriniz için lütfen kurucuma yazın kurucum: TREFAX#0038**
+:Botu sunucunuza davet etmek için lütfen kurucuya yazınız kurucu: TREFAX#0038
   :dizzy: **Komut hakkında detaylı bilgi için: *yardım**
   :airplane: **Aktif discord.js sürümüm: v12.2.0**
+  
 
 **» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/8HHNzCBQ)** **•** **[Botun Davet Linki](https://discord.com/oauth2/authorize?client_id=785101723379302420&scope=bot&permissions=8)** **•** **[Web-Site](https://www.discord.com/)**
+**[Destek Sunucusu](https://discord.gg/Kekc2pU)** **•** **[)** **•** **[Web-Site](https://www.discord.com/)**
 `)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
