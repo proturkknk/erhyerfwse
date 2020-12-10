@@ -18,6 +18,7 @@ module.exports = client => {
   client.user.setStatus("online");
   var oyun = [
     "*yardım"
+
   ];
 //matador
   setInterval(function() {
