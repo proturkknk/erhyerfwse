@@ -44,10 +44,8 @@ const Embedmatador = new Discord.MessageEmbed()
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 :Kurucum: TREFAX#0038**
-:Yardım için kurucuma yazınız kurucum: TREFAX#0038**
-  :round_pushpin: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin! Fikirleriniz için lütfen kurucuya yazın kurucum: TREFAX#0038**
-:Botu sunucunuza davet etmek için lütfen kurucuya yazınız kurucu: TREFAX#0038
-  :dizzy: **Komut hakkında detaylı bilgi için: *yardım**
+:Yardım için kurucuma yazınız
+  :round_pushpin: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!
   :airplane: **Aktif discord.js sürümüm: v12.2.0**
   
 
