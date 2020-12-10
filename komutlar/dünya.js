@@ -3,7 +3,7 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const codeworld = new Discord.MessageEmbed()
-    .setAuthor('Buyur Dünya')
+    .setAuthor('İşte dünyamız')
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
