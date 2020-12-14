@@ -20,7 +20,9 @@ module.exports = client => {
     "İyi eğlenceler :)",
     "7/24 aktif",
     "İyi günler",
-    "Kurucularım: TREFAX#0038
+    "Kurucularım: TREFAX#0038",
+    "Botu yapımında yardım eden tüm arkadaşlarıma çok teşekkürler",
+    "İyi günler :)"
     
     
 
