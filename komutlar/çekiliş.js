@@ -26,7 +26,7 @@ var filter = m => m.author.id === message.author.id;
 
 
 
-      message.channel.send(`:eight_pointed_black_star:| **Çekilişin yapılacağı kanalın adını yaz**`).then(msg => {
+      message.channel.send(`:eight_pointed_black_star:| **Çekilişin yapılacağı kanalın adını yaz(etiketlemeyin sadece kanal ismini yazın)**`).then(msg => {
       message.channel.awaitMessages(filter, {
         max: 1,
         time: 20000,
@@ -59,7 +59,7 @@ var filter = m => m.author.id === message.author.id;
                   let giveEmbed = new Discord.MessageEmbed()
                   .setColor("#f558c9")
                   .setDescription(`**Ödül: ${title}** \n🎉'a Basarak Katıl \nKalan Süre : ${duration} \n **Başlama Zamanı :** ${hours}:${minutes}:${seconds} ${suffix}`)
-                  .setFooter(message.author.username + " Destiny Bot Çekiliş Sistemi", message.author.avatarURL);
+                  .setFooter(message.author.username + " U-BOT Çekiliş Sistemi", message.author.avatarURL);
                   message.guild.channels.cache.find(x => x.name ===  room).send(' :heavy_check_mark: **ÇEKİLİŞ BAŞLADI** :heavy_check_mark:' , {embed: giveEmbed}).then(m => {
                      let re = m.react('🎉');
                      setTimeout(() => {
@@ -77,7 +77,7 @@ var filter = m => m.author.id === message.author.id;
 
                        var embedLel = new Discord.MessageEmbed()
                         .setColor("RANDOM")
-                        .setDescription("Ödülünü Moderatörleri Etiketleyerek Alabilirsin!").setFooter("Destiny bot çekiliş sistemi")
+                        .setDescription("Ödülünü Moderatörleri Etiketleyerek Alabilirsin!").setFooter("U-BOT çekiliş sistemi")
                         message.guild.channels.cache.find(x => x.name ===  room).send(`**Tebrikler ${gFilter}! \`${title}\` kazandın!**` , embedLel)                }, ms(duration));
             });
                 } catch(e) {

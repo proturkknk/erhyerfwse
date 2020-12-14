@@ -40,8 +40,10 @@ const Embedmatador = new Discord.MessageEmbed()
   **»  *token :** Botun tokenine bakarsınız.
   **»  *tersyazı :** Tersyazı yazarsınız.
   *»  *düello :** Belirttiniz kişiyle düello atarsınız.
-  *»  *çekiliş :** çekiliş yaparsınız
-
+  *»  *çekiliş :** çekiliş yaparsınız.
+ *»  *alevlilogo :** sizin için alevlilogo yapar.
+ *»  *duyuru :** sizin için alevlilogo yapar.
+  *»  *ban :** belirttiniz kullanıcıyı banlar.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 :Kurucum: TREFAX#0038**
