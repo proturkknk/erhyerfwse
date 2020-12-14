@@ -17,7 +17,11 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-    "İyi eğlenceler :)"
+    "İyi eğlenceler :)",
+    "7/24 aktif",
+    "İyi günler",
+    "Kurucularım: TREFAX#0038
+    
     
 
   ];
