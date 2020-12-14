@@ -1,3 +1,4 @@
+const uptime = require('node-fetch')
 const fs=require('fs');
 const Discord=require("discord.js");
 const client=new Discord.Client();
@@ -11,7 +12,7 @@ app.get('/', (req, res) => res.send("Bot Aktif"))
 app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env.PORT))
 //////////////////
 
-const uptime = require('node-fetch')
+
 
 client.on("message", message => {
   let client = message.client;
@@ -202,6 +203,7 @@ client.on("message", async msg => {
     });
 
 client.login(ayarlar.token)
+
 setInterval(() => {
 uptime('https://u-bot984238432897432897432957493857436t594765490.glitch.me/')
 },20000)

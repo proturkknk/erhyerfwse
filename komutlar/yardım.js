@@ -45,6 +45,7 @@ const Embedmatador = new Discord.MessageEmbed()
  *»  *duyuru :** sizin için alevlilogo yapar.
   *»  *ban :** belirttiniz kullanıcıyı banlar.
   *»  *bug-bildir :** Kurucularıma bug bildirirsiniz.
+   *»  *şifre :** Özel mesajlarınıza rastgele şifre atar.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 :Kurucum: TREFAX#0038**
