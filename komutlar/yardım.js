@@ -44,7 +44,7 @@ const Embedmatador = new Discord.MessageEmbed()
  *»  *alevlilogo :** sizin için alevlilogo yapar.
  *»  *duyuru :** sizin için alevlilogo yapar.
   *»  *ban :** belirttiniz kullanıcıyı banlar.
-  *»  *bug-bildir :** Kurucularıma bug bildirirsiniz.
+  *»  *bildir:** Kurucularıma bug-botda oluşan sorunlar-şikayet-öneri vb. sorun ve önerileri bildirirsiniz.
    *»  *şifre :** Özel mesajlarınıza rastgele şifre atar.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
