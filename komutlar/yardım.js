@@ -11,11 +11,11 @@ const Embedmatador = new Discord.MessageEmbed()
 
 ▬▬▬▬▬▬[ :closed_lock_with_key: **Eğlence Komutları** :closed_lock_with_key: ]▬▬▬▬▬▬
 
-  **»  *fbi :**  FBİ gifi atar .
-  **»  *aşkölçer :**  Aşkınızı ölçer(ironi) . 
-**»  *aduketçek :**  Etiketlediğiniz kişiye aduket çekersiniz .
- **»  *ara155 :** Polisi aramanıza yarar.
- **»  *ay :**  Ay gifi atar.
+  **»  *fbi :**  FBİ gifi atar.
+  **»  *aşkölçer :**  Aşkınızı ölçer(ironi).
+**»  *aduketçek :**  Etiketlediğiniz kişiye aduket çekersiniz.
+ **»  *ara155 :** Polisi aramanıza yarar :.
+ **»  *ay :**  Ay gifi atar
  **»  *balık-tut :** Denizde balık tutarsınız.
  **»  *beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.
   **»  *dünya :** Dünya gifi atar.
@@ -43,6 +43,7 @@ const Embedmatador = new Discord.MessageEmbed()
   *»  *çekiliş :** çekiliş yaparsınız.
  *»  *alevlilogo :** sizin için alevlilogo yapar.
  *»  *duyuru :** sizin için alevlilogo yapar.
+  *»  *ban :** belirttiniz kullanıcıyı banlar.
   *»  *bildir:** Şikayet-öneri yapmak için kullanılır.
    *»  *şifre :** Özel mesajlarınıza rastgele şifre atar.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
@@ -51,7 +52,11 @@ const Embedmatador = new Discord.MessageEmbed()
 :Yardım için kurucuma yazınız
 :round_pushpin: **Fikirleriniz** ** Bizim İçin Değerlidir, Belirtmekten asla çekinmeyin!
 :airplane: **discord.js sürümüm: v12.2.0**
+  
 
+**» Bağlantılar** 
+**[Destek Sunucusu](https://discord.gg/Kekc2pU)** **•** **[)** **•** **[Web-Site](https://www.discord.com/)**
+`)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();
