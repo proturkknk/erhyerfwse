@@ -52,9 +52,6 @@ const Embedmatador = new Discord.MessageEmbed()
 :round_pushpin: **Fikirleriniz** ** Bizim İçin Değerlidir, Belirtmekten asla çekinmeyin!
 :airplane: **discord.js sürümüm: v12.2.0**
 
-**» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/Kekc2pU)**
-`)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();
