@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 const Embedmatador = new Discord.MessageEmbed()
 
 .setColor("RED")
-.setTitle("**▬▬▬▬▬▬[** ©️ **Seidou-Chan** ©️ **]▬▬▬▬▬▬**  \n \n **Şuanda kullanılan prefix** `u!`")
+.setTitle("**▬▬▬▬▬▬[** ©️ **Seidou-Chan** ©️ **]▬▬▬▬▬▬**  \n \n **Şuanda kullanılan prefix** `+`")
 .setThumbnail("")
 .setDescription(`
 
@@ -14,8 +14,8 @@ const Embedmatador = new Discord.MessageEmbed()
   **»  *fbi :**  FBİ gifi atar .
   **»  *aşkölçer :**  Aşkınızı ölçer(ironi) . 
 **»  *aduketçek :**  Etiketlediğiniz kişiye aduket çekersiniz .
- **»  *ara155 :** Polisi aramanıza yarar :.
- **»  *ay :**  Ay gifi atar .
+ **»  *ara155 :** Polisi aramanıza yarar.
+ **»  *ay :**  Ay gifi atar.
  **»  *balık-tut :** Denizde balık tutarsınız.
  **»  *beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.
   **»  *dünya :** Dünya gifi atar.
@@ -43,7 +43,6 @@ const Embedmatador = new Discord.MessageEmbed()
   *»  *çekiliş :** çekiliş yaparsınız.
  *»  *alevlilogo :** sizin için alevlilogo yapar.
  *»  *duyuru :** sizin için alevlilogo yapar.
-  *»  *ban :** belirttiniz kullanıcıyı banlar.
   *»  *bildir:** Şikayet-öneri yapmak için kullanılır.
    *»  *şifre :** Özel mesajlarınıza rastgele şifre atar.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
@@ -52,10 +51,9 @@ const Embedmatador = new Discord.MessageEmbed()
 :Yardım için kurucuma yazınız
 :round_pushpin: **Fikirleriniz** ** Bizim İçin Değerlidir, Belirtmekten asla çekinmeyin!
 :airplane: **discord.js sürümüm: v12.2.0**
-  
 
 **» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/Kekc2pU)** **•** **[)** **•** **[Web-Site](https://www.discord.com/)**
+**[Destek Sunucusu](https://discord.gg/Kekc2pU)**
 `)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
