@@ -10,7 +10,7 @@ const Embedmatador = new Discord.MessageEmbed()
       .setColor(0xff0000)
       .setTimestamp()
       .setAuthor(message.author.username, message.author.avatarURL)
-      .addField("**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**","----------------------------------------------------------");
+      .addField("**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**","--------------------------");
 
 return message.author.send(Embedmatador);
 
@@ -20,7 +20,7 @@ if (message.channel.type !== "dm") {
 
 const Embedmatador = new Discord.MessageEmbed()
 
-      .setAuthor(message.author.username + " Artık Kral Oldun!!!")
+      .setAuthor(message.author.username + " Artık Kral Oldun!!!(ironi)")
       .setColor(3447003)
       .setTimestamp()
       .setDescription("")

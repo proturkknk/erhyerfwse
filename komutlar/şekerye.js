@@ -10,7 +10,7 @@ const Embedmatador = new Discord.MessageEmbed()//MATADOR
     .setColor(0xFF0000)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .addField("**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**","**----------------------------------------------------------**")
+    .addField("**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**","**----------------------**")
 
 return message.author.send(Embedmatador); }
 

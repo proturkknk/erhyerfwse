@@ -24,7 +24,6 @@ const Embedmatador = new Discord.MessageEmbed()
  **»  *espri :** Bot sizin için espri yapar.
  **»  *hesapla :** Belirttiğiniz matematik işlemini bot yapar.
  **»  *kartopu :** Etiketlediğiniz kişiye kartopu atarsınız.
-    **»  *kaç-cm :** Bot malafat uzunluğunuzu söyler.(ironi)
     **»  *kralol :** Kral olmanıza yarar.(ironi)
  **»  *slots :** Slot oynarsınız.
     **»  *taksimdayı :** Taksim Dayı gifi atar.
@@ -44,7 +43,7 @@ const Embedmatador = new Discord.MessageEmbed()
  *»  *duyuru :** sizin için alevlilogo yapar.
   *»  *ban :** belirttiniz kullanıcıyı banlar.
   *»  *bildir:** Şikayet-öneri yapmak için kullanılır.
-   *»  *şifre :** Özel mesajlarınıza rastgele şifre atar.
+  
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 :Kurucum: TREFAX#0362**
