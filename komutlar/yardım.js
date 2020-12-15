@@ -44,14 +44,14 @@ const Embedmatador = new Discord.MessageEmbed()
  *»  *alevlilogo :** sizin için alevlilogo yapar.
  *»  *duyuru :** sizin için alevlilogo yapar.
   *»  *ban :** belirttiniz kullanıcıyı banlar.
-  *»  *bildir:** Kurucularıma bug-botda oluşan sorunlar-şikayet-öneri vb. sorun ve önerileri bildirirsiniz.
+  *»  *bildir:** Şikayet-öneri yapmak için kullanılır.
    *»  *şifre :** Özel mesajlarınıza rastgele şifre atar.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
-:Kurucum: TREFAX#0038**
+:Kurucum: TREFAX#0362**
 :Yardım için kurucuma yazınız
-  :round_pushpin: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!
-  :airplane: **Aktif discord.js sürümüm: v12.2.0**
+:round_pushpin: **Fikirleriniz** ** Bizim İçin Değerlidir, Belirtmekten asla çekinmeyin!
+:airplane: **discord.js sürümüm: v12.2.0**
   
 
 **» Bağlantılar** 
