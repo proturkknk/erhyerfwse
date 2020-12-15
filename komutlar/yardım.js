@@ -10,8 +10,7 @@ const Embedmatador = new Discord.MessageEmbed()
 .setDescription(`
 
 ▬▬▬▬▬▬[ :closed_lock_with_key: **Eğlence Komutları** :closed_lock_with_key: ]▬▬▬▬▬▬
-
-  **»  *fbi :**  FBİ gifi atar.
+**»  *fbi :**  FBİ gifi atar.
   **»  *aşkölçer :**  Aşkınızı ölçer(ironi).
 **»  *aduketçek :**  Etiketlediğiniz kişiye aduket çekersiniz.
  **»  *ara155 :** Polisi aramanıza yarar :.
@@ -52,7 +51,6 @@ const Embedmatador = new Discord.MessageEmbed()
 :Yardım için kurucuma yazınız
 :round_pushpin: **Fikirleriniz** ** Bizim İçin Değerlidir, Belirtmekten asla çekinmeyin!
 :airplane: **discord.js sürümüm: v12.2.0**
-  
 
 **» Bağlantılar** 
 **[Destek Sunucusu](https://discord.gg/Kekc2pU)** **•** **[)** **•** **[Web-Site](https://www.discord.com/)**

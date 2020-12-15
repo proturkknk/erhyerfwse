@@ -154,31 +154,6 @@ client.on("message", async msg => {
 client.on("messageUpdate", msg => {
  
  
- const i = db.fetch(`${msg.guild.id}.kufur`)
-    if (i) {
-        const kufur = ["oç", 
-                       "amk", 
-                       "ananı sik iyim",
-                       "piç",
-                       "orospu çocuğu",
-                       "orospu",
-                       "oruspu"];
-        if (kufur.some(word => msg.content.includes(word))) {
-          try {
-            if (!msg.member.hasPermission("BAN_MEMBERS")) {
-                  msg.delete();
-                         
-                      return msg.reply('Bu Sunucuda Küfür Filtresi Aktiftir.').then(msg => msg.delete(3000));
-            }              
-          } catch(err) {
-            console.log(err);
-          }
-        }
-    }
-    if (!i) return;
-});
- 
-
 
 client.on("message", async msg => {
  
