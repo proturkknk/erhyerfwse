@@ -183,4 +183,4 @@ const site = 'https://u-bot984238432897432897432957493857436t594765490.glitch.me
 uptime(site)
 .then(console.log(site+' Başarıyla Uptime Edildi'))
  .catch(err => {console.log(err)})
-},60000)
+},200000)
