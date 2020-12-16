@@ -181,4 +181,4 @@ client.login(ayarlar.token)
   
 setInterval(() => {
 uptime('https://u-bot984238432897432897432957493857436t594765490.glitch.me/')
-}20)
+}2000)
