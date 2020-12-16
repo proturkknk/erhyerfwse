@@ -3,11 +3,11 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
-    .setAuthor('İşte Ay')
+    .setAuthor('İsteğiniz üzerine ay gösteriliyor')
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://cdn.discordapp.com/attachments/756534591652626542/762731046634258453/ay.gif `)
+        .setImage(`https://media.tenor.co/videos/8c37901232ba9c604a98ed0a3668b868/mp4 `)
     return message.channel.send(matador);
 };
 
