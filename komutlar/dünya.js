@@ -7,7 +7,7 @@ exports.run = (client, message, params) => {
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://cdn.discordapp.com/attachments/572804441237880847/576423861508112384/donen-dunya-gif.gif`)
+        .setImage(`https://cdn.discordapp.com/attachments/572804441237880847/576423861508112384/donen-dunya-gif `)
     return message.channel.send(codeworld);
 };
 

@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
     .setAuthor('')
     .setColor("BLUE")
     .setDescription(`** ${mesaj} ` + message.author.username + ' FBI Baskını!**')
-    .setImage(`https://media1.tenor.com/images/93d11bc59526ce49f60766f0045d819b/tenor.gif?itemid=11500735 `)
+    .setImage(`https://media1.tenor.com/images/93d11bc59526ce49f60766f0045d819b/tenor.gif?itemid=11500735`)
     return message.channel.send(embed);
 };
 
