@@ -40,8 +40,6 @@ const Embedmatador = new Discord.MessageEmbed()
   *»  *düello :** Belirttiniz kişiyle düello atarsınız.
   *»  *çekiliş :** çekiliş yaparsınız.
  *»  *alevlilogo :** sizin için alevlilogo yapar.
- *»  *duyuru :** sizin için alevlilogo yapar.
-  *»  *ban :** belirttiniz kullanıcıyı banlar.
   *»  *bildir:** Şikayet-öneri yapmak için kullanılır.
   
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**

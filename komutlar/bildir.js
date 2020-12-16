@@ -3,15 +3,15 @@ exports.run = async (client, message, args) => {
 
   
 let istek = args.slice(0).join(' ')
-if(!istek) return message.channel.send('**Bug Bildirmek için Bir Bug Yazınız.** :x:')
+if(!istek) return message.channel.send('**şikayet veya öneri için +bildir(şikayet veya öneriniz)** ')
 
 const embed = new Discord.MessageEmbed()
-.setTitle("Destiny Bug Sistemi")
+.setTitle("U-BOT bildirme Sistemi")
 .setColor('BLUE')
 .setDescription(`**Bug Kanalı** ${message.channel.name} \n **Bug Bildirilen Sunucu** \`${message.guild.name}\` \n **Bugu Bildiren Kullanıcı** <@${message.author.id}> \n **Bildirilen Bug :** \`${istek}\``)
 client.channels.cache.get('787987649977384960').send(embed)
   
-message.channel.send("Bug bildiriminiz gönderildi. :white_check_mark:").then(message => message.delete({ timeout: 5000 }));
+message.channel.send("Bildiriminiz, kurucularımıza gönderildi. :white_check_mark:").then(message => message.delete({ timeout: 5000 }));
 };
 exports.conf = {
   enabled: true,
@@ -21,7 +21,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'bug-bildir',
+  name: 'bildir',
   description: 'İstek kodları belirtmeye yarar',
   usage: 'istek-kod <istek>'
 }
