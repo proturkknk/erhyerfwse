@@ -7,7 +7,7 @@ exports.run = (client, message, params) => {
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://tenor.com/view/earth-planet-gif-5500479.gif `)
+        .setImage(`https://media.giphy.com/media/I2N4CwJGbHJ3TEb4u3/giphy.gif`)
     return message.channel.send(codeworld);
 };
 
