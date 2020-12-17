@@ -7,7 +7,7 @@ exports.run = (client, message, params) => {
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://tenor.com/view/moon-light-full-moon-gif-8036838.gif`)
+        .setImage(`https://media.giphy.com/media/kyHb4nzYScnmtqyJYu/giphy.gif`)
     return message.channel.send(matador);
 };
 
