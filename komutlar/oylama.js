@@ -1,40 +1,162 @@
-const CodAre = require('discord.js');
 
- exports.run = (client, message, args) => {
+const Discord = require("discord.js");
 
-if (!message.member.hasPermission("MANAGE_GUILD"))
-    return message.channel.send(`Bu Komutu Kullanailmek İçin \`MANAGE_GUILD\` yetkisine sahip olmalısın!`);
-   message.delete();
+const client = new Discord.Client();
 
-   let emirhan = args.join(' ');
+exports.run = (client, message, args) => {
 
-   if (!emirhan) {
-const codare = new CodAre.MessageEmbed()
-.setAuthor(message.author.username)
-.setDescription(`Lütfen bir yazı belirtin!`)
-      .setTimestamp()
-message.channel.send(codare)
+  if (!message.member.hasPermission("ADMINISTRATOR"))
 
+    return message.reply(
 
-     message.channel.send(new CodAre.MessageEmbed()
-  .setColor("BLUE")
-.setFooter(`${message.author.tag} Tarafından anket yapıldı!`)
-.setDescription(soru)).then(function(tanersins) {
-tanersins.react('✅');
-tanersins.react('❌');
+      "Bu komutu kullanabilmek için **ADMINISTRATOR** yetkisi gerekir"
 
-});
- };
+    );
 
-     exports.conf = {
-       enabled: true,
-       guildOnly: false,
-       aliases: ['anket'],
-      permLevel: 0
+ 
+
+  let question = args.join(" ");
+
+  if (!question)
+
+    return message.channel.send(
+
+      new Discord.MessageEmbed()
+
+        .setColor("RANDOM")
+
+        .addField("⛔ __Doğru Kullanım__ ⛔", `=> oylama **mesaj**`)
+
+    );
+
+ 
+
+  message.channel.send(
+
+    `everyone - here atılsın mı?\n**evet** veya **hayır** olarak cevap veriniz. \nKalan süre 10 saniye`
+
+  );
+
+  message.channel
+
+    .awaitMessages(response => response.content === "evet", {
+
+      max: 1,
+
+      time: 10000,
+
+      errors: ["time"]
+
+    })
+
+    .then(collected => {
+
+      message.channel
+
+        .send(
+
+          new Discord.MessageEmbed()
+
+ 
+
+            .setColor("RANDOM")
+
+            .setThumbnail(message.author.avatarURL())
+
+            .setTimestamp()
+
+            .setFooter("= = Oylama Var! = =", client.user.avatarURL())
+
+            .addField(`⁉️ __OYLAMA__ ⁉️`, `=> **${question}** `)
+
+        )
+
+ 
+
+        .then(function(message) {
+
+          message.react("✅").then(sıra => {
+
+            message.react("⛔");
+
+          });
+
+        })
+
+        .then(everyone => {
+
+          message.channel.send(" @everyone @here ").then(m => m.delete(50));
+
+        });
+
+    });
+
+  message.channel
+
+    .awaitMessages(response => response.content === "hayır", {
+
+      max: 1,
+
+      time: 10000,
+
+      errors: ["time"]
+
+    })
+
+    .then(collected => {
+
+      message.channel
+
+        .send(
+
+          new Discord.MessageEmbed()
+
+ 
+
+            .setColor("RANDOM")
+
+            .setThumbnail(message.author.avatarURL())
+
+            .setTimestamp()
+
+            .setFooter("= = Oylama Var! = =", client.user.avatarURL())
+
+            .addField(`⁉️ __OYLAMA__ ⁉️`, `=> **${question}** `)
+
+        )
+
+        .then(function(message) {
+
+          message.react("✅").then(sıra => {
+
+            message.react("⛔");
+
+          });
+
+        });
+
+    });
+
 };
 
-exports.help = {
-  name: 'oylama',
-  description: 'Sunucuda oylama yaparsınız',
-  usage: 'oylama '
+exports.conf = {
+
+  enabled: true,
+
+  guildOnly: false,
+
+  aliases: ["anket"],
+
+  permLevel: 0
+
+};
+
+exports.help = {
+
+  name: "oylama",
+
+  description: "oylama.",
+
+  usage: "oylama"
+
 };
