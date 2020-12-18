@@ -36,9 +36,11 @@ const Embedmatador = new Discord.MessageEmbed()
  **»  *mcskin :** Belirttiniz kişin minecraft skinini(karakterini) atar.
  **»  *ping :** Botun pingine bakarsınız.
   **»  *token :** Botun tokenine bakarsınız.
+    **»  *karaliste :** botun kullanılmasını engeller(sadece bot kurucuları bu komutu kullanabilir.)
   **»  *tersyazı :** Tersyazı yazarsınız.
   *»  *düello :** Belirttiniz kişiyle düello atarsınız.
   *»  *çekiliş :** çekiliş yaparsınız.
+  *»  *oylama:** oylama yaparsınız.
  *»  *alevlilogo :** sizin için alevlilogo yapar.
   *»  *bildir:** Şikayet-öneri yapmak için kullanılır.
   
