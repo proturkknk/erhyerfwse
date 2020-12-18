@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const ayarlar = require("../.env");
+const ayarlar = require("../ayarlar.json");
 
 exports.run = (client, message, params) => {
 

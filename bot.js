@@ -5,7 +5,6 @@ const client=new Discord.Client();
 const db = require('quick.db')
   client.login(process.env.token);
 const moment = require("moment");
-const ayarlar=require("./ayarlar.json");
 const express = require('express');
 /////
 const app = express()
@@ -18,7 +17,7 @@ app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env
 client.on("message", message => {
   let client = message.client;
   if (message.author.bot) return;
-  if (!message.content.startsWith(ayarlar.prefix)) return;
+  if (!message.content.startsWith(env.prefix)) return;
   let command = message.content.split(' ')[0].slice(ayarlar.prefix.length);
   let params = message.content.split(' ').slice(1);
   let perms = client.yetkiler(message);
