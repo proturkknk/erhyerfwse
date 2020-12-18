@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const ayarlar = require('../ayarlar.json');
+const database = require('quick.db')
 let talkedRecently = new Set();
 
 module.exports = message => {
@@ -22,6 +23,13 @@ module.exports = message => {
   } else if (client.aliases.has(command)) {
     cmd = client.commands.get(client.aliases.get(command));//
   }
+    if(cmd) {
+  if(message.author.id !== 'sizin idniz') {
+  if(database.fetch(message.guild.owner.user.id) && !database.fetch(message.author.id)) return message.reply('Bu sunucunun sahibi botun karalistesinde. O yüzden sende komut kullanamazsın.'); 
+  if(database.fetch(message.author.id)) return message.reply('Sen botun karalistesindesin. Komutları kullanamazsın.');
+  };
+  };
+  
   if (cmd) {
    if (cmd.conf.enabled === false) {
       if (!ayarlar.sahip.includes(message.author.id) && !ayarlar.sahip.includes(message.author.id)) {
