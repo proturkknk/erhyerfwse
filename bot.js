@@ -3,6 +3,7 @@ const fs=require('fs');
 const Discord=require("discord.js");
 const client=new Discord.Client();
 const db = require('quick.db')
+  client.login(process.env.token);
 const moment = require("moment");
 const ayarlar=require("./ayarlar.json");
 const express = require('express');
@@ -176,5 +177,3 @@ client.on("message", async msg => {
     if (!i) return;
  
     });
-
-  client.login(process.env.token);
