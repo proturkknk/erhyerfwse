@@ -1,33 +1,36 @@
-const Discord = require('discord.js');
-const database = require('quick.db');
+const Discord = require("discord.js");
+const database = require("quick.db");
 
-exports.run = async (client, message, chimp) => {// can ♡ b#1010
-if(message.author.id !== 'sizin idniz') return;
+exports.run = async (client, message, chimp) => {
+  // can ♡ b#1010
+  if (message.author.id !== "696365117063036986") return;
 
-if(!chimp[0]) return message.reply("Bir kullanıcı id'si girmelisin.");
+  if (!chimp[0]) return message.reply("Bir kullanıcı id'si girmelisin.");
 
-const user = await client.fetchUser(chimp[0]).catch(err => {
-return message.reply('Bu idye sahip bir kullanıcı bulamadım.')});
+  const user = await client.fetchUser(chimp[0]).catch(err => {
+    return message.reply("Bu idye sahip bir kullanıcı bulamadım.");
+  });
 
-if(user) {
-
-  if(database.fetch(user.id)) {
-  database.delete(user.id);
-  return message.channel.send(`\`${user.tag}\` isimli kullanıcı zaten karalistedeydi, karalisteden çıkarıldı.\nArtık botun komutlarını kullanabilecek.`);
+  if (user) {
+    if (database.fetch(user.id)) {
+      database.delete(user.id);
+      return message.channel.send(
+        `\`${user.tag}\` isimli kullanıcı zaten karalistedeydi, karalisteden çıkarıldı.\nArtık botun komutlarını kullanabilecek.`
+      );
+    }
+    database.set(user.id, true);
+    return message.channel.send(
+      `\`${user.tag}\` isimli kullanıcı başarıyla karalisteye alındı.\n\`${user.username}\`'nin taç sahibi olduğu tüm sunucularda benim komutlarımı kimse kullanamayacak.\nTaç sahibi değil ise, \`${user.username}\` yine komutları kullanamayacak.`
+    );
   }
-  database.set(user.id, true);
-  return message.channel.send(`\`${user.tag}\` isimli kullanıcı başarıyla karalisteye alındı.\n\`${user.username}\`'nin taç sahibi olduğu tüm sunucularda benim komutlarımı kimse kullanamayacak.\nTaç sahibi değil ise, \`${user.username}\` yine komutları kullanamayacak.`);
-
 };
-
-}; 
 exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: [],
   permLevel: 0
 };
- 
+
 exports.help = {
-  name: 'karaliste'
-};// codare ♥
+  name: "karaliste"
+}; // codare ♥
