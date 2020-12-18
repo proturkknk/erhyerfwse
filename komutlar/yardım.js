@@ -38,6 +38,7 @@ const Embedmatador = new Discord.MessageEmbed()
   **»  *token :** Botun tokenine bakarsınız.
     **»  *karaliste :** sadece yetkililere özel komuttur.
   **»  *tersyazı :** Tersyazı yazarsınız.
+  *»  *yazı-tura:** yazı tura oynarsınız.
   *»  *düello :** Belirttiniz kişiyle düello atarsınız.
   *»  *çekiliş :** çekiliş yaparsınız.
   *»  *oylama:** oylama yaparsınız.
