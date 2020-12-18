@@ -3,7 +3,7 @@ const db = require('quick.db');
 //Efe ve codare
 exports.run = async(client, message, args) => {  
 let id = "696365117063036986" //buranın içerisine kendi id ni yaz
-let user = message.mentions.users.first() || client.users.get(args.slice(1).join(' '))
+let user = message.mentions.users.first() || client.users.cache.get(args.slice(1).join(' '))
 if (message.author.id !== id) return message.channel.send("Bu komutu yalnızca bot sahibi kullanabilir!")
 if(!args[0]) return message.channel.send("Lütfen **aç** veya **kapat** yazınız.\nKullanıcının karaliste bilgisini görmek için **bilgi** kullanın ör:`!blacklist bilgi `")
 switch(args[0]) {//codare & Efe
