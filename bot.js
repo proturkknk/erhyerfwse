@@ -1,4 +1,4 @@
-const uptime = require('node-fetch')
+  const uptime = require('node-fetch')
 const fs=require('fs');
 const Discord=require("discord.js");
 const client=new Discord.Client();
