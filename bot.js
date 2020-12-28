@@ -174,4 +174,4 @@ client.on("message", async msg => {
     }
     if (!i) return;
  
-    });
+});
