@@ -84,3 +84,4 @@ module.exports = message => {
     if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
     cmd.run(client, message, params, perms);
   }
+}

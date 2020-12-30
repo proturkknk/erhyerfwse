@@ -9,13 +9,12 @@ const fs = require("fs");
 const db = require("quick.db");
 const http = require("http");
 const express = require("express");
-require("util/eventLoader.js")(client);
+require("./util/eventLoader.js")(client);
 const path = require("path");
 const snekfetch = require("snekfetch");
 
 const app = express();
 app.get("/", (request, response) => {
-  console.log(Date.now() + "matador");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
