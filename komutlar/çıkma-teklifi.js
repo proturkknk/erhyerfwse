@@ -25,7 +25,7 @@ exports.conf = {
   permLevel: 0
 };
 exports.help = {
-  name: 'çıkma-teklifi-et',
+  name: 'çıkma-teklifi',
   description: 'Özel komut.',
-  usage: 'çıkma-teklifi-et'
+  usage: 'çıkma-teklifi'
 };

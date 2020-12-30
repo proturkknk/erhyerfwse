@@ -31,18 +31,17 @@ const Embedmatador = new Discord.MessageEmbed()
  **»  *yazı-tura :** Bot ile yazı-tura oyununu oynarsınız.
  **»  *yılbaşı :** Yılbaşının gelmesine ne kadar yaklaştığınızı gösterir.
     **»  *öp :** Etiketlediğiniz kişiyi öpmenize yarar.(ironi)
+    *»  *çıkma-teklifi:** Çıkma teklifi edersiniz.(ironi)
  **»  *şekerye :** Bot size şeker ikram eder.
  **»  *atatürk :** Atamızı saygıyla anıyoruz.
  **»  *mcskin :** Belirttiniz kişin minecraft skinini(karakterini) atar.
  **»  *ping :** Botun pingine bakarsınız.
   **»  *token :** Botun tokenine bakarsınız.
-    **»  *karaliste :** özel komuttur!
   **»  *tersyazı :** Tersyazı yazarsınız.
   *»  *yazı-tura:** yazı tura oynarsınız.
   *»  *düello :** Belirttiniz kişiyle düello atarsınız.
   *»  *çekiliş :** çekiliş yaparsınız.
   *»  *oylama:** oylama yaparsınız.
- *»  *alevlilogo :** sizin için alevlilogo yapar.
   *»  *bildir:** Şikayet-öneri yapmak için kullanılır.
   
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
