@@ -7,7 +7,8 @@ exports.run = async (client, message, args) => {
   let zaman = ms(yilbasi - Date.now());//MATADOR
 
 return message.channel.send(
-    `:label: **Yılbaşına Dair Bilgiler Aşağıda;** \n\n> Gün: **${zaman.days}** \n> Saat: **${zaman.hours}** \n> Dakika: **${zaman.minutes}** \n\n:white_check_mark: **Yılbaşına Bu Kadar Zaman Kaldı!**`
+    `:label: **Yılbaşına Dair Bilgiler Aşağıda;** \n\n> Gün: **${zaman.days}** \n> Saat: **${zaman.hours}** \n> Dakika: **${zaman.minutes}** \n\n:white_check_mark: **Yılbaşına Bu Kadar Zaman Kaldı! Mutlu yıllar... 
+    2021 Hoşgeldin!**`
   );
 };
 
