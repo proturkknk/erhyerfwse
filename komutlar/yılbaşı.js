@@ -1,14 +1,16 @@
 const Discord = require ("discord.js");
 const db = require("quick.db");
 const ms = require("parse-ms");
+const moment = require('moment-timezone')
 
 exports.run = async (client, message, args) => {
 
-  let yilbasi = new Date("2021-01-01 22:00:00");
-  let zaman = ms(yilbasi - Date.now());
+  let yilbasi = new Date("2020-12-31 24:00:00");
+  const day = moment().tz('Turkey').format('DD')
 
 return message.channel.send(
-    `:label: **Yılbaşının kutlanmasına Dair Bilgiler Aşağıda;** \n\n> Gün: **${zaman.days}** \n> Saat: **${zaman.hours}** \n> Dakika: **${zaman.minutes}** \n\n:white_check_mark: **Yılbaşının kutlanmasına Bu Kadar Zaman Kaldı! Mutlu Yıllar**`
+    `:label: **Yılbaşının kutlanmasına Dair Bilgiler Aşağıda;** \n\n> Gün: **${day}** \n> Saat: **${day}** \n> Dakika: **${day}** \n\n:white_check_mark: **Yılbaşının kutlanmasına Bu Kadar Zaman Kaldı! Mutlu Yıllar!
+    2021 Hoşgeldin!...**`
   );
 };
 
