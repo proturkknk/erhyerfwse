@@ -9,7 +9,7 @@ const emoji5 = message.client.emojis.cache.get(':telephone_receiver:');
 const emoji6 = message.client.emojis.cache.get(':telephone_receiver:');
 const emoji7 = message.client.emojis.cache.get(':telephone_receiver:');
       let isEnabled;
-      message.reply("Canlı Destek Komutunu Kullandığınız İçin Teşekkürler. Birazdan Yetkili Ekibimiz sizinle ilgilenicektir.");
+      message.reply("Canlı Destek şuanda bakımda.");
       let mesaj = args.slice(0).join(' ');
       let chan = message.channel;
       let destekKanal = "696365117063036986";
