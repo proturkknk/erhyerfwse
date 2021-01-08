@@ -6,11 +6,11 @@ module.exports.run = async (bot, message, args) => {
 
     let result = Math.floor((Math.random() * replies.length));
 
-    let gifembed = new Discord.RichEmbed()
-        .setTitle("Gifiniz")
+    let gifembed = new Discord.MessageEmbed()
+        .setTitle("U-Bot gifimiz!")
         .setColor("#FF69B4")
-        .setFooter(`Gifiniz ${message.author.tag} `, message.author.avatarURL)
-        .setImage(replies[result]);
+        .setFooter(`Beğendinizmi? :)${message.author.tag} `, message.author.avatarURL)
+        .setImage("https://media.giphy.com/media/LZfH1caaZveK3KhXBb/giphy.gif")
 
     message.channel.send(gifembed);
 };
@@ -23,8 +23,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'gif',
-  description: 'Rastgele gif atar.',
+  name: 'gifimiz',
+  description: 'U-bot gifini gösterir.',
   usage: 'gif'
 };
-"
