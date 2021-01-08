@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
     let result = Math.floor((Math.random() * replies.length));
 
     let gifembed = new Discord.RichEmbed()
-        .setTitle("U-Bot gifi ")
+        .setTitle("Gifiniz")
         .setColor("#FF69B4")
         .setFooter(`Gifiniz ${message.author.tag} `, message.author.avatarURL)
         .setImage(replies[result]);
@@ -23,7 +23,8 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'gifimiz',
+  name: 'gif',
   description: 'Rastgele gif atar.',
   usage: 'gif'
 };
+"
