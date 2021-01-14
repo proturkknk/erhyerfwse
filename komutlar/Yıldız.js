@@ -3,23 +3,23 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
-    .setAuthor('İsteğiniz üzerine Güneş gösteriliyor. ☀️')
+    .setAuthor('İsteğiniz üzerine yıldızlar gösteriliyor.  💫')
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://www.hareketligifler.net/data/media/278/gunes-hareketli-resim-0717.gif`)
+        .setImage(`https://media.giphy.com/media/RHIKETUlUINYvV7CAO/giphy.gif`)
     return message.channel.send(matador);
 };
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['Güneş','Güneş','Güneş'],
+  aliases: ['Yıldız','Yıldız','Yıldız'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'güneş',
-  description: 'güneş.',
-  usage: 'güneş'
+  name: 'yıldız',
+  description: 'yıldız.',
+  usage: 'yıldız'
 };
