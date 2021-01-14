@@ -13,15 +13,15 @@ module.exports.run = async (client, message, args) => {
 
   if (!cst2)
     return message.reply(
-      "**Süreyi Belirtmen Gerek!\nÖrnek: `/çekiliş 10m 2w Nitro Hediyesi`**"
+      "**Süreyi Belirtmen Gerek.\nÖrnek: `+çekiliş 10m 2w Nitro Hediyesi`**"
     );
   if (!csts)
     return message.reply(
-      "**Kaç Kişi Kazanacak Yazman Gerek!\nÖrnek: `/çekiliş 10m 2w Nitro Hediyesi`**"
+      "**Kaç Kişi Kazanacak Yazar mısın?\nÖrnek: `+çekiliş 10m 2w Nitro Hediyesi`**"
     );
   if (!csw)
     return message.reply(
-      "**Ne Hediye Verilecek Yazman Gerek!\nÖrnek: `/çekiliş 10m 2w Nitro Hediyesi`**"
+      "**Ne Hediye Verilecek Yazar mısın?\nÖrnek: `+çekiliş 10m 2w Nitro Hediyesi`**"
     );
 
   let x = message.content;

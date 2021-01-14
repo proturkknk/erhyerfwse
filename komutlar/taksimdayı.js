@@ -4,7 +4,7 @@ exports.run = (client, message) => {
 
 const Embedmatador = new Discord.MessageEmbed()
 
-      .setAuthor("Taksim Dayı")//matador
+      .setAuthor("Taksim Dayı!")//matador
       .setColor(3447003)
       .setTimestamp()
       .setDescription("")

@@ -13,8 +13,8 @@ const Embedmatador = new Discord.MessageEmbed()
 **»  *fbi :**  FBİ gifi atar.
   **»  *aşkölçer :**  Aşkınızı ölçer(ironi).
 **»  *aduketçek :**  Etiketlediğiniz kişiye aduket çekersiniz.
- **»  *ara155 :** Polisi aramanıza yarar :.
- **»  *ay :**  Ay gifi atar
+ **»  *ara155 :** Polisi aramanıza yarar.
+ **»  *ay :**  Ay gifi atar.
  **»  *balık-tut :** Denizde balık tutarsınız.
  **»  *beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.
   **»  *dünya :** Dünya gifi atar.
@@ -22,7 +22,7 @@ const Embedmatador = new Discord.MessageEmbed()
  **»  *ejderha-yazı :** Ejderha temalı logo üretirsiniz.
  **»  *emojiyazı :** Yazdığınız yazıları emoji halinde yazar.
  **»  *espri :** Bot sizin için espri yapar.
- **»  *hesapla :** Belirttiğiniz matematik işlemini bot yapar.
+ **»  *hesapla :** Belirttiğiniz matematik işlemini yapar.
  **»  *kartopu :** Etiketlediğiniz kişiye kartopu atarsınız.
     **»  *kralol :** Kral olmanıza yarar.(ironi)
  **»  *slots :** Slot oynarsınız.
@@ -40,7 +40,7 @@ const Embedmatador = new Discord.MessageEmbed()
   **»  *tersyazı :** Tersyazı yazarsınız.
   *»  *yazı-tura:** yazı tura oynarsınız.
   *»  *düello :** Belirttiniz kişiyle düello atarsınız.
-  *»  *çekiliş :** çekiliş yaparsınız.
+  *»  *çekiliş :** çekiliş yaparsınız.(bakımda)
   *»  *oylama:** oylama yaparsınız.
   *»  *bildir:** Şikayet-öneri yapmak için kullanılır.
   

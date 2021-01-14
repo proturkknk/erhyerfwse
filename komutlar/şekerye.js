@@ -18,7 +18,7 @@ if (message.channel.type !== 'dm') {//Fwhy Code
 
 const Embedmatador = new Discord.MessageEmbed()
 
-    .setAuthor('Şekerin Tadı Güzel Mi?')
+    .setAuthor('Şekerin Tadı Güzel Mi? :)')
     .setColor(3447003)
     .setTimestamp()
     .setDescription('')

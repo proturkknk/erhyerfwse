@@ -154,24 +154,8 @@ client.on("messageUpdate", msg => {
  
  
 
-client.on("message", async msg => {
- 
- 
-  const i = await db.fetch(`ssaass_${msg.guild.id}`);
-    if (i == 'acik') {
-      if (msg.content.toLowerCase() == 'sa' || msg.content.toLowerCase() == 's.a' || msg.content.toLowerCase() == 'selamun aleyküm' || msg.content.toLowerCase() == 'sea'|| msg.content.toLowerCase() == 'selam') {
-          try {
- 
-                  return msg.reply(
-                    'Aleyküm Selam, Hoşgeldin')
-          } catch(err) {
-            console.log(err);
-          }
-      }
-    }
-    else if (i == 'kapali') {
-   
-    }
+client.on("message", async msg => 
+          
     if (!i) return;
  
  client.on("ready", async () => {
@@ -229,4 +213,30 @@ client.on("message", async msg => {
       });
 
     //Çekiliş\\
-  });
+  client.on('message', async (msg, member, guild) => {
+  
+let i = await  db.fetch(`saas_${msg.guild.id}`)
+
+if(i === 'açık') {
+  
+if (msg.content.toLowerCase() === 'sa'){
+          
+msg.reply('Aleyküm Selam, Hoşgeldin ');    
+}
+  
+}
+});
+
+client.on('message', async (msg, member, guild) => {
+  
+let i = await  db.fetch(`saas_${msg.guild.id}`)
+
+if(i === 'açık') {
+  
+if (msg.content.toLowerCase() === 'hi'){
+          
+msg.reply('Hi welcome ');    
+}
+  
+}
+});
