@@ -174,4 +174,59 @@ client.on("message", async msg => {
     }
     if (!i) return;
  
-});
+ client.on("ready", async () => {
+        setInterval(async () => {
+          client.guilds.cache.map(guild => {
+            guild.channels.cache.map(channel => {
+              let data = db.get(`cekilis.${guild.id}_${channel.id}`);
+              if (data) {
+                let time = Date.now() - data.zaman;
+                let sure = data.sure;
+                let kanal = guild.channels.cache.get(data.kanalid);
+                kanal.messages.fetch(data.mesajid).then(async mesaj => {
+                  mesaj.edit(
+                    new Discord.MessageEmbed()
+                      .setColor("#2c2f33")
+                      .setTitle(data.odul)
+                      .setTimestamp()
+                      .setFooter(data.toplam + " Kazanan")
+                      .setDescription(`**🎉 Katılmak İçin Tıkla!
+      Süre: \`${moment
+                      .duration(sure - time)
+                      .format(`DD [Days,] HH [Hours,] mm [Minutes,] ss [Seconds]`)}\`
+      Çekilişi yapan: <@${data.hosted}>**`)
+                  );
+                });
+      
+                if (time >= sure) {
+                  let win = client.channels.cache
+                    .get(data.kanalid)
+                    .messages.cache.get(data.mesajid)
+                    .reactions.cache.get("🎉")
+                    .users.cache.array()
+                    .map(user => "<@" + user.id + ">");
+                  let winner = [];
+                  for (let i = 0; i < data.toplam; i += 1) {
+                    winner.push(win[Math.floor(Math.random() * win.length)]);
+                  }
+      
+                  kanal.messages.fetch(data.mesajid).then(async mesaj => {
+                    mesaj.edit(
+                      new Discord.MessageEmbed()
+                        .setTitle(data.odul + " 🎉")//Pixelien
+                        .setColor("#2c2f33")//Çalma lütfen emeğe saygı
+                        .setTimestamp().setDescription(`**Çekilişi yapan: <@${data.hosted}>
+      Kazanan: ${winner}**`)
+                    );
+                  });
+                  kanal.send(`**${winner}, \`${data.odul}\` Kazandı!, Tebirkler**`);
+                  db.delete(`cekilis.${guild.id}_${channel.id}`);
+                }
+              }
+            });
+          });
+        }, 5000);
+      });
+
+    //Çekiliş\\
+  });
