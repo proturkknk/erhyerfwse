@@ -12,7 +12,7 @@ const emoji7 = message.client.emojis.cache.get(':telephone_receiver:');
       message.reply("Canlı Destek şuanda bakımda.");
       let mesaj = args.slice(0).join(' ');
       let chan = message.channel;
-      let destekKanal = "696365117063036986";
+      let destekKanal = "744239406155694192";
       const embed = new Discord.MessageEmbed()
         .addField('Uyarı', `📞 Canlı Destek Çağrısı`)
         .setAuthor(`${message.author.tag} (${message.author.id})`, `${message.author.avatarURL()}`)
