@@ -40,13 +40,12 @@ const Embedmatador = new Discord.MessageEmbed()
   **»  *tersyazı :** Tersyazı yazarsınız.
   *»  *yazı-tura:** yazı tura oynarsınız.
   *»  *düello :** Belirttiniz kişiyle düello atarsınız.
-  *»  *çekiliş :** çekiliş yaparsınız.(bakımda)
-  *»  *oylama:** oylama yaparsınız.
-  *»  *bildir:** Şikayet-öneri yapmak için kullanılır.
+
   
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 :Kurucum: TREFAX#0362**
+Tüm komutları öğrenmek için sunucumuza gelebilirsiniz! https://discord.gg/Kekc2pU
 :Yardım için kurucuma yazınız
 :round_pushpin: **Fikirleriniz** ** Bizim İçin Değerlidir, Belirtmekten asla çekinmeyin!
 :airplane: **discord.js sürümüm: v12.2.0**

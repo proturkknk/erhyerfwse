@@ -21,13 +21,17 @@ module.exports = client => {
     "7/24 aktif",
     "İyi günler",
     "Kurucularım: ! TREFAX#0362",
-    "Botu yapımında yardım eden tüm arkadaşlarıma çok teşekkürler",
+    "Botu yapımında yardım eden tüm arkadaşlarıma çok teşekkürler :)",
     "İyi günler :)",
     "Mutlu Yıllar!... :)",
-      "+30 komut! 😍",
+      "+50 komut! 😍",
     "+Yardım",
-     "Yeni komutlar! 😺"
-    
+     "Yeni komutlar! 😺",
+"Evdekal",
+"#masketak",
+"#HayatEveSığar",
+"#SosyalMesafe"
+
     
     
 
