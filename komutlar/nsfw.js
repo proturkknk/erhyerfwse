@@ -9,7 +9,7 @@ exports.run = (client, msg, args) => {
       msg.channel.send({ file: response.body.message });
     });
   } else {
-    msg.channel.send("Kardeşim sana nfsw göstercemimi sandın? günah günah neden nfsw bakcan ayıp bakma!")
+    msg.channel.send("Kardeşim sana nsfw göstercemimi sandın? günah günah neden nsfw bakcan ayıp bakma! :x:")
   }
 };
  exports.conf = {
