@@ -239,4 +239,123 @@ msg.reply('Hi welcome ');
 }
   
 }
+
+  client.on('message', async msg => { 
+if (msg.content.toLowerCase() === 'sa') { 
+await msg.react('🇦'); 
+msg.react('🇸'); 
+} 
+});
+
+client.on('message', async msg => { 
+if (msg.content.toLowerCase() === 'selam') { 
+await msg.react('🇦'); 
+msg.react('🇸'); 
+} 
+}); 
+
+client.on('message', async msg => { 
+if (msg.content.toLowerCase() === 'selamın aleyküm') { 
+await msg.react('🇦'); 
+msg.react('🇸'); 
+} 
+}); 
+
+client.on('message', async msg => { 
+if (msg.content.toLowerCase() === 'selamun aleyküm') { 
+await msg.react('🇦'); 
+msg.react('🇸'); 
+} 
+client.on('guildMemberAdd', member => {
+  let batuhan = client.channels.get('714087075116220426')
+  if(!batuhan) return
+  let kullanıcı = client.users.get(member.id)
+  const kurulus = new Date().getTime()- kullanıcı.createdAt.getTime();
+  let embed;
+  if (kurulus < 1296000000) batuhan = 'Güvenilir Değil!'
+  if (kurulus > 1296000000) batuhan = 'Güvenilir!'
+  batuhan.send(`${member} Kullanıcısı Katıldı!
+**Güvenirlik Durumu** : *${batuhan}*`)
+
+client.on("guildMemberAdd", (member, message) => {
+  
+if (member.guild.id !== "744873235350552668") return; //Sunucu İd
+  
+var msg = message; 
+var üyesayısı = client.guilds.get("744873235350552668").members.size.toString().replace(/ /g, "") //Sunucu İd
+var üs = üyesayısı.match(/([0-9])/g) 
+
+üyesayısı = üyesayısı.replace(/([a-zA-Z])/g, "Bilinmiyor!").toLowerCase() 
+ 
+if(üs) { 
+  
+üyesayısı = üyesayısı.replace(/([0-9])/g, d => { 
+  
+return { 
+  
+'0': `<a:sifir:744874529657978901>`,
+'1': `<a:bir:744874529859305552>`,
+'2': `<a:iki:744874529196867628>`,
+'3': `<a:uc:744874529561509922>`,
+'4': `<a:dort:744889898783211540>`,                       
+'5': `<a:bes:744874530085929042>`,
+'6': `<a:alti:744874530576793670>`,
+'7': `<a:yedi:744874531122053191>`,
+'8': `<a:sekiz:744874530861744128>`,
+'9': `<a:dokuz:744874530513748049>`}[d];
+  
+}) 
+}
+  
+let aylartoplam = {
+  
+"01": "Ocak",
+"02": "Subat",
+"03": "Mart",
+"04": "Nisan",
+"05": "Mayis",
+"06": "Haziran",
+"07": "Temmuz",
+"08": "Agustos",
+"09": "Eylül",
+"10": "Ekim",
+"11": "Kasim",
+"12": "Aralik"
+  
+};
+  
+let aylar = aylartoplam;
+let user = client.users.get(member.id);
+  
+require("moment-duration-format");
+  
+let eskiNick = member.user.username;
+  
+const id = "744873679636135997"; //Kanal İd
+const channel = member.guild.channels.get(id);
+const kurulus = new Date().getTime() - user.createdAt.getTime();
+const gün = moment.duration(kurulus).format("D");
+  
+var kontrol;
+  
+if (gün < 7) kontrol = `<a:suspect:744900323528671322> Şüpheli!`;
+if (gün > 7) kontrol = `<a:security:744900306344738856> Güvenli!`;
+  
+const giris = new Discord.RichEmbed()
+
+.setColor("Black")
+.setDescription(`**Hosgeldin** **${member} Seninle Birlikte ${üyesayısı} Kisiyiz!**
+ 
+**Sunucuya Kayıt Olmak için Ses Teyit Odasına Geçebilirsiniz.**
+ 
+**Hesap Kuruluş Zamanı : ${moment(user.createdAt).format("DD")} ${aylar[moment(user.createdAt).format("MM")]} ${moment(user.createdAt).format("YYYY HH:mm:ss")}** 
+ 
+**Bu Kullanıcı :** **${kontrol}**
+ 
+**<@&id> Rolündeki Yetkililer Seninle İlgilenecektir.**`)
+
+.setImage("https://cdn.discordapp.com/attachments/744900584611512482/744900855731454043/yay.gif")
+          
+client.channels.get(id).send(giris)
+    
 });

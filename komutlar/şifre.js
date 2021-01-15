@@ -5,7 +5,7 @@ const generator = require('generate-password');
 exports.run = function(client, message, args,params) {
     var uzunluk = args.slice(0).join(' ');
   
-  if (isNaN(uzunluk)) return message.reply(":ak: Geçersiz! Lütfen Örneğe Bakınız; ``+şifre 10`` Hata sebebi: ``Geçersiz Sayı``")
+  if (isNaN(uzunluk)) return message.reply(":ak: Geçersiz! Lütfen Örneğe Bakınız; ``!!şifre 10`` Hata sebebi: ``Geçersiz Sayı``")
     if (!uzunluk) return message.channel.send(':ak: Geçersiz! Lütfen Örneğe Bakınız; ``!!şifre 10``')
     var password = generator.generate({
         length: uzunluk,
