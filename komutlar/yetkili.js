@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
   let mesaj = args.slice(0).join('');
-if (mesaj.length < 1) return message.reply('> **Aktif olan yetkililer yetkilerinin başına.** <@&799560937753280512>**,** <@&799560951720050689>**.** ');
+if (mesaj.length < 1) return message.reply('> **Yetkili çağırdım, aktiflerse birazdan burda olurlar.** <@696365117063036986>**** <@459377860012933121>**** ');
   
 };  
 
@@ -15,7 +15,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'yetkili',
+  name: 'yetkili-çağır',
   description: 'Yetkili çağırma komutu.',
-  usage: '.yetkili'
+  usage: '.yetkili-çağır'
 };
