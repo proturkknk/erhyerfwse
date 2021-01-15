@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 
 exports.run = function(bot, message) {
-    message.channel.sendEmbed(new Discord.RichEmbed()
+    message.channel.send(new Discord.MessageEmbed()
     .setColor(message.guild.me.displayHexColor)
     .setTitle('🎲 Zarın: ' + doMagicDiceVoodoo()));
 

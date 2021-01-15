@@ -5,8 +5,8 @@ const generator = require('generate-password');
 exports.run = function(client, message, args,params) {
     var uzunluk = args.slice(0).join(' ');
   
-  if (isNaN(uzunluk)) return message.reply(":ak: Geçersiz! Lütfen Örneğe Bakınız; ``!!şifre 10`` Hata sebebi: ``Geçersiz Sayı``")
-    if (!uzunluk) return message.channel.send(':ak: Geçersiz! Lütfen Örneğe Bakınız; ``!!şifre 10``')
+  if (isNaN(uzunluk)) return message.reply(":ak: Geçersiz! Lütfen Örneğe Bakınız; ``+şifre 10`` Hata sebebi: ``Geçersiz Sayı``")
+    if (!uzunluk) return message.channel.send(':ak: Geçersiz! Lütfen Örneğe Bakınız; ``+şifre 10``')
     var password = generator.generate({
         length: uzunluk,
         numbers: true,
@@ -14,7 +14,7 @@ exports.run = function(client, message, args,params) {
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
     const longest = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
-    message.author.sendCode('message',password);
+    message.author.send(password);
   if (message.channel.type !== 'dm') {
     message.channel.send(':akA: Heyy! Şifreniz Özel Olarak Size İletildi!') }
   } else {

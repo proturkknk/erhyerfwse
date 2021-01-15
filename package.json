@@ -1,7 +1,7 @@
 {
-  "//1": "matador",
-  "//2": "Daha fazlası için youtube.com/matadors",
-  "//3": "updating this file will download and update your packages",
+  "//1": "U-BOT",
+  "//2": "U-BOT",
+  "//3": "U-BOT",
   "name": "",
   "version": "0.0.1",
   "description": "Discord Eğlence Botu.",
@@ -31,7 +31,8 @@
     "quick.db": "^7.1.3",
     "snekfetch": "^4.0.4",
     "useful-tools": "^0.2.6",
-    "weather-js": "^2.0.0"
+    "weather-js": "^2.0.0",
+    "superagent": "^6.1.0"
   },
   "engines": {
     "node": "12.x"
