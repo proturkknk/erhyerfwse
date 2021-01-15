@@ -6,7 +6,7 @@ exports.run = function(bot, message) {
     .setTitle('🔢 işte şanslı sayın: ' + doMagicDiceVoodoo()));
 
     function doMagicDiceVoodoo() {
-        var rand = ['1', '2', '3', '4', '5', '6','8','9','10','11','12];
+        var rand = ['1', '2', '3', '4', '5', '6','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30',];
 
         return rand[Math.floor(Math.random()*rand.length)];
     }
@@ -20,7 +20,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'zarat',
-  description: 'Zar Atın',
+  name: 'şanslısayı',
+  description: 'Şanslısayınızı söyler(ironi)',
   usage: ''
 };
