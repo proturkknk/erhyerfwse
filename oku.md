@@ -1,1 +1,1 @@
-iletişim için TREFAX#0038
+# token almak için [tıkla](https://lovebird.guru/EQZADO) sj
