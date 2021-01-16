@@ -28,6 +28,15 @@ module.exports.run = async (client, message, args) => {
     message.channel.send(stats);
 };
 
-module.exports.help = {
-    name: "stats"
-}
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: ['Stats','STATS','stats'],
+  permLevel: 0
+};
+
+exports.help = {
+  name: 'stats',
+  description: 'stats',
+  usage: 'stats'
+};

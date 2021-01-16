@@ -54,3 +54,4 @@ module.exports.help = {
   name: 'sayfalı-yardım',
   description: 'Gelişmiş Sayfalı Yardım.',
   usage: 'sayfalı-yardım'
+}

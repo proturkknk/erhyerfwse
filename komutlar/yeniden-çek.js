@@ -40,3 +40,16 @@ exports.run = async (client, message, args) => {
     });
 
 };
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: ['Yeniden-Çek', 'YENİDEN-ÇEK', 'Yeniden Çek', 'yeniden-çek', 'yeniden-cek', 'Yeniden-cek', 'Yeniden cek'],
+  permLevel: 0
+};
+
+exports.help = {
+  name: 'yeniden-çek',
+  description: 'sj',
+  usage: 'yeniden-çek'
+};

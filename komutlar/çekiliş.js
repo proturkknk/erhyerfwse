@@ -1,4 +1,4 @@
-onst ms = require('ms');
+const ms = require('ms');
 
 exports.run = async (client, message, args) => {
 
@@ -69,4 +69,17 @@ exports.run = async (client, message, args) => {
 
     message.channel.send(`bir çekiliş başladı, ${giveawayChannel}!`);
 
+};
+
+exports.conf = {
+  enabled: true,
+  aliases: ['çekiliş','Çekiliş','Cekilis','Cekilis'],
+  guildOnly: false,
+  permLevel: 0
+};
+
+exports.help = {
+  name: 'çekiliş',
+  description: 'çekiliş',
+  usage: 'çekiliş'
 };
