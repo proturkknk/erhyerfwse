@@ -1,1 +1,0 @@
-# token almak için [tıkla](https://lovebird.guru/EQZADO) sj
