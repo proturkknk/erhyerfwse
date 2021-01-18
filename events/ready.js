@@ -17,12 +17,16 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
+    client.guilds.size + " Tane Sunucu",
+    client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + " Tane Kullanıcı",
     "İyi eğlenceler :)",
     "7/24 aktif",
     "İyi günler",
     "Kurucularım: ! TREFAX#0362",
     "İyi günler :)",
  "prefix: **+** ",
+    "Benim 7/24 aktif oldumu biliyor muydun?",
+"+bildir komutuyla şikayet-öneri de bulunabilceğini biliyor muydun?",
 "+saat komutunu kullanarak Türkiyenin saatini öğrenebilceni biliyor muydun?",
     "Mutlu Yıllar!... :)",
       "+50 komut! 😍",
@@ -32,10 +36,6 @@ module.exports = client => {
 "#masketak",
 "#HayatEveSığar",
 "#SosyalMesafe"
-
-    
-    
-
   ];
 //matador
   setInterval(function() {
@@ -44,3 +44,4 @@ module.exports = client => {
     client.user.setActivity(oyun[random], "");
   }, 2 * 2500);
 };//matador
+
