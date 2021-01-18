@@ -7,6 +7,8 @@ const ayarlar = require("../ayarlar.json");
 var prefix = ayarlar.prefix;
 
 module.exports = client => {
+  const user = client.users.size // bruh
+  const server = client.guilds.size
   console.log(
     `[${moment().format("YYYY-MM-DD HH:mm:ss")}] BOT: Aktif, Komutlar yüklendi!`
   );
@@ -17,14 +19,15 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-    client.guilds.size + " Tane Sunucu",
-    client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + " Tane Kullanıcı",
+    server + " Tane Sunucu",
+    user + " Tane Kullanıcı",
     "İyi eğlenceler :)",
     "7/24 aktif",
     "İyi günler",
     "Kurucularım: ! TREFAX#0362",
     "İyi günler :)",
  "prefix: **+** ",
+"Destek sunucumuz: https://discord.gg/Kekc2pU",
     "Benim 7/24 aktif oldumu biliyor muydun?",
 "+bildir komutuyla şikayet-öneri de bulunabilceğini biliyor muydun?",
 "+saat komutunu kullanarak Türkiyenin saatini öğrenebilceni biliyor muydun?",

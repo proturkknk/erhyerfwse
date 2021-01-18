@@ -46,6 +46,7 @@ const Embedmatador = new Discord.MessageEmbed()
 
 :Kurucum: TREFAX#0362**
 Tüm komutları öğrenmek için sunucumuza gelebilirsiniz! https://discord.gg/Kekc2pU
+Destek sunucumuz: https://discord.gg/Kekc2pU
 :Yardım için kurucuma yazınız
 :round_pushpin: **Fikirleriniz** ** Bizim İçin Değerlidir, Belirtmekten asla çekinmeyin!
 :airplane: **discord.js sürümüm: v12.2.0**
