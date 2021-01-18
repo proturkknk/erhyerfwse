@@ -7,8 +7,6 @@ const ayarlar = require("../ayarlar.json");
 var prefix = ayarlar.prefix;
 
 module.exports = client => {
-  const user = client.users.size // bruh
-  const server = client.guilds.size
   console.log(
     `[${moment().format("YYYY-MM-DD HH:mm:ss")}] BOT: Aktif, Komutlar yüklendi!`
   );
@@ -19,8 +17,8 @@ module.exports = client => {
   );
   client.user.setStatus("online");
   var oyun = [
-    server + " Tane Sunucu",
-    user + " Tane Kullanıcı",
+    client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()+" Tane Kullanıcı",
+    client.guilds.cache.size+" Tane Sunucu",
     "İyi eğlenceler :)",
     "7/24 aktif",
     "İyi günler",
