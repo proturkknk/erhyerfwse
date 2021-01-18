@@ -12,13 +12,11 @@ const Embedmatador = new Discord.MessageEmbed()
 ▬▬▬▬▬▬[ :closed_lock_with_key: **Eğlence Komutları** :closed_lock_with_key: ]▬▬▬▬▬▬
 **»  *fbi :**  FBİ gifi atar.
   **»  *aşkölçer :**  Aşkınızı ölçer(ironi).
-**»  *aduketçek :**  Etiketlediğiniz kişiye aduket çekersiniz.
  **»  *ara155 :** Polisi aramanıza yarar.
  **»  *ay :**  Ay gifi atar.
  **»  *balık-tut :** Denizde balık tutarsınız.
  **»  *beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.
   **»  *dünya :** Dünya gifi atar.
-  **»  *efkarım :** Şu anda olan efkarınızı ölçersiniz(ironi).
  **»  *ejderha-yazı :** Ejderha temalı logo üretirsiniz.
  **»  *emojiyazı :** Yazdığınız yazıları emoji halinde yazar.
  **»  *espri :** Bot sizin için espri yapar.
@@ -48,8 +46,9 @@ const Embedmatador = new Discord.MessageEmbed()
 Tüm komutları öğrenmek için sunucumuza gelebilirsiniz! https://discord.gg/Kekc2pU
 Destek sunucumuz: https://discord.gg/Kekc2pU
 :Yardım için kurucuma yazınız
+Beni sunucunuza eklemek için:  https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8
 :round_pushpin: **Fikirleriniz** ** Bizim İçin Değerlidir, Belirtmekten asla çekinmeyin!
-:airplane: **discord.js sürümüm: v12.2.0**
+:airplane: **discord.js sürümüm: v12.5.1**
 `)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
