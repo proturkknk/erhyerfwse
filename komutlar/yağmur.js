@@ -3,23 +3,23 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
-    .setAuthor('İsteğiniz üzerine gökyüzü gösteriliyor,Çok iyi değil mi? 😍 🌙 ★')
-    .setColor('PİNK')
+    .setAuthor('İsteğiniz üzerine yağmur yağaşı gösteriliyor. ☔️ ')
+    .setColor('RED')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://media.giphy.com/media/QZfrZbmNhKA5grghoV/giphy.gif`)
+        .setImage(`https://media.giphy.com/media/IIlQlxQIOY8P6qAQbV/giphy.gif`)
     return message.channel.send(matador);
 };
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['Gözyüzü','Gökyüzü','Gökyüzü'],
+  aliases: ['Yağmur','Yağmur','Yağmur'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'gökyüzü',
-  description: 'gökyüzü.',
-  usage: 'gökyüzü'
+  name: 'yağmur',
+  description: 'yağmur.',
+  usage: 'yağmur'
 };

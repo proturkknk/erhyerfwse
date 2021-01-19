@@ -4,7 +4,7 @@ const ayarlar = require('../ayarlar.json');
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
     .setAuthor('İsteğiniz üzerine Kar yağışı gösteriliyor. ❄')
-    .setColor('BLUE')
+    .setColor('WHİTE')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://www.hareketligifler.net/data/media/619/kar-hareketli-resim-0072.gif`)
