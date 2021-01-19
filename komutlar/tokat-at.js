@@ -7,7 +7,7 @@ let user = message.mentions.users.first();
 if (message.mentions.users.size < 1)
 return message
 
-      .reply("**Kimi Tokatlayacam Reis Etiketlede Vurayım Ağzının Ortasına :D(ironi) **")
+      .reply("**Kimi Tokatlayacam Reis Etiketlede Vurayım Ağzının Ortasına :D( ironi) **")
       .catch(console.error);
 
 const Embedmatador = new Discord.MessageEmbed()
