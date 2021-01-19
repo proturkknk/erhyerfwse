@@ -3,7 +3,7 @@ const chalk = require("chalk");
 const moment = require("moment");
 const Discord = require("discord.js");
 const ayarlar = require("../ayarlar.json");
-//matador
+
 var prefix = ayarlar.prefix;
 
 module.exports = client => {
@@ -20,7 +20,7 @@ module.exports = client => {
     } ismi ile giriş yapıldı!`
   );
   client.user.setStatus("online");
-//matador
+
   setInterval(function() {
     var oyun = [
     client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()+" Tane Kullanıcı",
@@ -53,5 +53,4 @@ module.exports = client => {
     })
     
   }, 2 * 2500);
-};//matador
-
+};

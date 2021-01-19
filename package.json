@@ -5,9 +5,9 @@
   "name": "",
   "version": "0.0.1",
   "description": "Discord Eğlence Botu.",
-  "main": "matador.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node matador.js"
+    "start": "node bot.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
