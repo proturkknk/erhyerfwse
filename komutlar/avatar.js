@@ -35,11 +35,11 @@ exports.run = async (client, msg) => {
   const target = msg.mentions.users.first();
   if(target) {
     try{
-      const bruh = new Discord.RichEmbed()
-.setTitle(`**${target.username} adlı kullanıcının avatarı**`)
+      const bruh = new Discord.MessageEmbed()
+.setTitle(`**${target.username} avatarı**`)
 .setColor('RANDOM')
-.setImage(target.avatarURL)
-  msg.channel.send({bruh})
+.setImage(target.avatarURL())
+  msg.channel.send(bruh)
     }catch(error){
       msg.channel.send(`hata: ${error}`)
     }
@@ -47,7 +47,7 @@ exports.run = async (client, msg) => {
 const embed = new Discord.MessageEmbed()
 .setTitle("**Avatarınız**")
 .setColor('RANDOM')
-.setImage(msg.author.avatarURL)
+.setImage(msg.author.avatarURL())
   msg.channel.send({embed}) 
   }
     
