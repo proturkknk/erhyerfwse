@@ -35,11 +35,10 @@ var ne = [
 '**Boş yere papatya fallarında sen aramışım, boş yere papatyanın çiçeklerini koparmışım, kahve fincanlarında hep sana giden yollar aramışım.**',
 '**Sana bir haber gelecek ama sen kapıda, bacada pencere de bekleme, haber olmadık anda, olmadık yerde gelebilir, olmadı gelmeyebilir de.**',
 '**Bak burada bir yol var hem de hem gidiş hem geliş, hız sınırı 110 km, bak bak az ilerde radar var, hah işte o radar arabasının içindeki polis sana aşık olacak.**',
-'**Biraz Sonra Öleceksin !**'
 
 ];
 var daşşak = Math.floor(Math.random()*ne.length);
-const codeemıng = new Discord.RichEmbed()
+const codeemıng = new Discord.MessageEmbed()
 .setDescription(`${ne[daşşak]}`)
 .setColor(0xe2ff00)
 .setTimestamp()

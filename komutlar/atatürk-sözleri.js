@@ -5,7 +5,7 @@ exports.run = (client, message, params) => {
     const embed = new Discord. MessageEmbed() 
     .addField(`Atatürk sözleri: `, `${sonuc}`)
     .setTimestamp()
-    return message.channel.MessageEmbed();
+    return message.channel.send(embed)
 };
 
 exports.conf = {

@@ -16,7 +16,7 @@ const Embedmatador = new Discord.MessageEmbed()
  **»  *ay :**  Ay gifi atar.
  **»  *balık-tut :** Denizde balık tutarsınız.
  **»  *beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.
-  **»  *dünya :** Dünya gifi atar.
+  **»  *atatürk-sözleri :** Atatürk sözleri atar.
  **»  *ejderha-yazı :** Ejderha temalı logo üretirsiniz.
  **»  *emojiyazı :** Yazdığınız yazıları emoji halinde yazar.
  **»  *espri :** Bot sizin için espri yapar.
