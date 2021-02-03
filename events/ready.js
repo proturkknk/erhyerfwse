@@ -42,7 +42,8 @@ module.exports = client => {
 "#Evdekal",
 "#masketak",
 "#HayatEveSığar",
-"#SosyalMesafe"
+"#SosyalMesafe",
+"+davet",
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
