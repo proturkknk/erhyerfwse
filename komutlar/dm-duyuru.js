@@ -3,7 +3,7 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = async (client, message, args) => {
   if(message.author.id !== ayarlar.sahip) return message.reply('Bu komut bot sahibime özeldir!');
-  let prefix = await require('quick.db').fetch(`prefix_${message.guild.id}`) || env.prefix
+  let prefix = await require('quick.db').fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
   if(!args[0] || args[0] !== "sunucu" && args[0] !== "bot") return message.reply(`Duyurunun bot kullanıcılarına mı bu sunucu üyelerine mi yapılacağını belirtmelisin! => \`${prefix}dmduyuru sunucu/bot <mesaj>\``)
   let mesaj = args.slice(1).join(' ');
   if(args[0] === "sunucu") {
