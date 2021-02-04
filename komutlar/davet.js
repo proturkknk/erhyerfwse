@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 exports.run = (client, message, args) => {
   const motion = new Discord.MessageEmbed()
     .setColor("#00ee00")
-    .setAuthor(`Motion Bot`, client.user.avatarURL)
+    .setAuthor(`U-BOT`, client.user.avatarURL)
     .addField(
       `> Neden Biz ?`,
       `**Çünkü U-BOT Ekibi olarak işimizi en iyi şekilde yaptığımızı düşünüyoruz ve sizide aramızda görmekten mutluluk duyuyoruz. :)**`
