@@ -9,7 +9,7 @@ exports.run = function(client, message, args) {
     .setTitle('Biri Sana Çıkma Teklifi Etti!❤️:heart:')
     .addField('Ne Cevap Vericen Acaba Bende Merak Ettim😆', `Hadi Kabul Et Bence`)
     .addField('Teklif Eden Kişi :', `➽ @${message.author.username}`)
-    .setFooter('Çıkma Teklifi U-Bot')
+    .setFooter('Çıkma Teklifi Xaine')
     teamtr.send(dmat);
     const dmtamam = new Discord.MessageEmbed()
     .setColor('RANDOM')
