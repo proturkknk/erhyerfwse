@@ -25,18 +25,18 @@ module.exports = client => {
     var oyun = [
     client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()+" Tane Kullanıcı",
     client.guilds.cache.size+" Tane Sunucu",
-    "İyi eğlenceler :)",
-    "7/24 aktif",
-    "İyi günler",
-    "Kurucularım: ! TREFAX#0362",
-    "İyi günler :)",
- "prefix: **+** ",
-"Destek sunucumuz: https://discord.gg/Kekc2pU",
-    "Benim 7/24 aktif oldumu biliyor muydun?",
-"+bildir komutuyla şikayet-öneri de bulunabilceğini biliyor muydun?",
-"+saat komutunu kullanarak Türkiyenin saatini öğrenebilceni biliyor muydun?",
-    "Mutlu Yıllar!... :)",
-      cmd+" Tane Komut! 😍",
+    " ✔ İyi eğlenceler :)",
+    " ✔ 7/24 aktif",
+    " ✔ İyi günler",
+    " ✔ Kurucularım: ! TREFAX#0362",
+    " ✔ İyi günler :)",
+ " ✔ prefix: **+** ",
+" ✔ Destek sunucumuz: https://discord.gg/Kekc2pU",
+    " ✔ Benim 7/24 aktif oldumu biliyor muydun?",
+" ✔ +bildir komutuyla şikayet-öneri de bulunabilceğini biliyor muydun?",
+" ✔ +saat komutunu kullanarak Türkiyenin saatini öğrenebilceni biliyor muydun?",
+    " ✔ Mutlu Yıllar!... :)",
+      cmd+" ✔  Tane Komut! 😍",
     " ✔ +Yardım",
      " ✔ Yeni komutlar! 😺",
 " ✔ #Evdekal",
@@ -44,7 +44,7 @@ module.exports = client => {
 " ✔ #HayatEveSığar",
 " ✔ #SosyalMesafe",
 " ✔ +davet",
-      "Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz."
+      "✔ Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz."
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
