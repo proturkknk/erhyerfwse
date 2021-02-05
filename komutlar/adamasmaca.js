@@ -77,7 +77,7 @@ module.exports.run = async (bot, message, args) => {
 
                 await message.channel.send(stripIndents`
 
-            ${displayText === null ? '**U-BOT /Judge Developer/ U-BOT/ Adam Asmaca**!' : displayText ? '**Çok iyisin!**' : '**Yanlış Harf!**'}
+            ${displayText === null ? '**U-BOT /Judge Developer/ Xaine/ Adam Asmaca**!' : displayText ? '**Çok iyisin!**' : '**Yanlış Harf!**'}
 
                          **Kelime:**    \`${display.join(' ')}\`
 

@@ -6,7 +6,7 @@ let istek = args.slice(0).join(' ')
 if(!istek) return message.channel.send('**şikayet veya öneri için +bildir(şikayet veya öneriniz)** ')
 
 const embed = new Discord.MessageEmbed()
-.setTitle("U-BOT bildirme Sistemi")
+.setTitle("Xaine bildirme Sistemi")
 .setColor('BLUE')
 .setDescription(`**Bug Kanalı** ${message.channel.name} \n **Bug Bildirilen Sunucu** \`${message.guild.name}\` \n **Bugu Bildiren Kullanıcı** <@${message.author.id}> \n **Bildirilen Bug :** \`${istek}\``)
 client.channels.cache.get('787987649977384960').send(embed)

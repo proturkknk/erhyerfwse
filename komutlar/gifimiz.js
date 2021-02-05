@@ -7,10 +7,10 @@ module.exports.run = async (bot, message, args) => {
     let result = Math.floor((Math.random() * replies.length));
 
     let gifembed = new Discord.MessageEmbed()
-        .setTitle("U-Bot gifimiz!")
+        .setTitle("Xaine gifimiz!")
         .setColor("#FF69B4")
         .setFooter(`Beğendinizmi? :) ${message.author.tag} `, message.author.avatarURL)
-        .setImage("https://media.giphy.com/media/bjHZUMEGO3bVJzOqm9/giphy.gif")
+        .setImage("Çok yakında!")
 
     message.channel.send(gifembed);
 };
