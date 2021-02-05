@@ -37,13 +37,14 @@ module.exports = client => {
 "+saat komutunu kullanarak Türkiyenin saatini öğrenebilceni biliyor muydun?",
     "Mutlu Yıllar!... :)",
       cmd+" Tane Komut! 😍",
-    "+Yardım",
-     "Yeni komutlar! 😺",
-"#Evdekal",
-"#masketak",
-"#HayatEveSığar",
-"#SosyalMesafe",
-"+davet",
+    " ✔ +Yardım",
+     " ✔ Yeni komutlar! 😺",
+" ✔ #Evdekal",
+" ✔ #masketak",
+" ✔ #HayatEveSığar",
+" ✔ #SosyalMesafe",
+" ✔ +davet",
+      "Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz."
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 

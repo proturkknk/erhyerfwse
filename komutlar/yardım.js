@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 const Embedmatador = new Discord.MessageEmbed()
 
 .setColor("RED")
-.setTitle("**▬▬▬▬▬▬[** ©️ **Xaine Bot YARDIM KOMUTLARI** ©️ **]▬▬▬▬▬▬**  \n \n **Şuanda kullanılan prefix** `+`")
+.setTitle("**▬▬▬▬▬▬[** ©️ **Xaine Bot YARDIM KOMUTLARI** ©️ **]▬▬▬▬▬▬**  \n \n **Şuanda kullanılan prefix** `+`(isterseniz +prefix (prefix) komutuyla prefixi değiştirebilirsiniz.)")
 .setThumbnail("")
 .setDescription(`
 
