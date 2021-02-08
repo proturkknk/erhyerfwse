@@ -17,7 +17,7 @@ bot.on('message', msg => {
   const lower = msg.content.toLowerCase().split(" ").join('')
   if(lower.includes('özür dilerim bot :()') || lower.includes('bot özür dilerim') || lower.includes('özür dilerim bot')) {
     setTimeout(() => {
-      msg.channel.send('Kardeşim reklam yapma girmicem kusura bakma, lütfen felanda deme. (not: Bu atılan mesaj otomatik gönderilmektedir, birsürü reklam yapıldığı için.Eğer reklam yapmadıysanız lütfen bu mesajı görmezden gelin.')
+      msg.channel.send('Sorun değil keyine bak. :)')
     },1000)
   }
 })
