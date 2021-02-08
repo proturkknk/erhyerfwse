@@ -23,7 +23,7 @@ exports.run = (client, message) => {
       .setTimestamp()
       .setDescription("")
       .setImage(
-        `https://tenor.com/view/sad-crying-tears-baby-gif-8822845`
+        `https://media.giphy.com/media/ItEU0SMeoOr1XQqQz4/giphy.gif`
       );
     return message.channel.send(motion);
   }
