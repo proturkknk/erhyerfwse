@@ -1,4 +1,4 @@
-const codework = require('discord.js')
+const Xaine = require('discord.js')
 
 exports.run = (client, message,args) => {
  const codework1 = new codework.MessageEmbed()
@@ -7,10 +7,10 @@ exports.run = (client, message,args) => {
   .setTitle("Xaine") 
   .setDescription(
                   
- **+yardım**, ile yardım alabilirsiniz.
-Örnek komut kullanımı: `+ping`
-Botu davet etmek için: `+davet`
-Destek sunucusuna gelmek için: `+davet`
+ "+yardım", "ile yardım alabilirsiniz"
+"Örnek komut kullanımı": `+ping`
+Botu davet etmek için:" `+davet`
+Destek sunucusuna gelmek için": `+davet`
 )
     
  .addField("-moderatör (20", 
