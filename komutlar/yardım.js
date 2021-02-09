@@ -1,44 +1,72 @@
-const Xaine = require('discord.js')
+const Discord = require ("discord.js");
 
-exports.run = (client, message,args) => {
- const codework1 = new codework.MessageEmbed()
- .setAuthor("Xaine", client.user.avatarURL)
-  .setColor('BLACK')
-  .setTitle("Xaine") 
-  .setDescription("https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8")
-                  
- "+yardım", "ile yardım alabilirsiniz"
-"Örnek komut kullanımı:" `+ping`
-"Botu davet etmek için:" `+davet`
-" Destek sunucusuna gelmek için:" `+davet`
+exports.run = (client, message) => {
 
- .addField("-moderatör (20", 
-" Yetkililerin kullanabileceği komutlar;" 
-`uyar` `sunucukur`
-)
-  .addField("-komutlar (20", 
-" herkesin kullanabileceği standart komutlar;" 
-`avatar` `davet` `` `yılbaşı` `hesapla` `+havadurumu` `atatürk` `+is` `+bildir` `+korona` `ping` `saat` `yapımcım` `token` `sunucubilgi`  `ekibimiz`  `korona`
-)
+const Embedmatador = new Discord.MessageEmbed()
 
+.setColor("RED")
+.setTitle("**▬▬▬▬▬▬[** ©️ **Xaine Bot YARDIM KOMUTLARI** ©️ **]▬▬▬▬▬▬**  \n \n **Şuanda kullanılan prefix** `+`(isterseniz +prefix (prefix) komutuyla prefixi değiştirebilirsiniz.)")
+.setThumbnail("")
+.setDescription(`
+
+▬▬▬▬▬▬[ :closed_lock_with_key: **Eğlence Komutları** :closed_lock_with_key: ]▬▬▬▬▬▬
+**»  *fbi :**  FBİ gifi atar.
+  **»  *aşkölçer :**  Aşkınızı ölçer(ironi).
+ **»  *ara155 :** Polisi aramanıza yarar.
+ **»  *ay :**  Ay gifi atar.
+ **»  *balık-tut :** Denizde balık tutarsınız.
+ **»  *beşlik :** Etiketlediğiniz kişiyle beşlik çakarsınız.
+  **»  *atatürk-sözleri :** Atatürk sözleri atar.
+ **»  *ejderha-yazı :** Ejderha temalı logo üretirsiniz.
+ **»  *emojiyazı :** Yazdığınız yazıları emoji halinde yazar.
+ **»  *espri :** Bot sizin için espri yapar.
+ **»  *hesapla :** Belirttiğiniz matematik işlemini yapar.
+ **»  *kartopu :** Etiketlediğiniz kişiye kartopu atarsınız.
+    **»  *kralol :** Kral olmanıza yarar.(ironi)
+ **»  *slots :** Slot oynarsınız.
+    **»  *taksimdayı :** Taksim Dayı gifi atar.
+    **» *tokat :** Etiketlediğiniz kişiyi tokatlarsınız.(ironi)
+ **»  *yazı-tura :** Bot ile yazı-tura oyununu oynarsınız.
+ **»  *yılbaşı :** Yılbaşının gelmesine ne kadar yaklaştığınızı gösterir.
+    **»  *öp :** Etiketlediğiniz kişiyi öpmenize yarar.(ironi)
+    *»  *çıkma-teklifi:** Çıkma teklifi edersiniz.(ironi)
+ **»  *şekerye :** Bot size şeker ikram eder.
+ **»  *atatürk :** Atamızı saygıyla anıyoruz.
+ **»  *mcskin :** Belirttiniz kişin minecraft skinini(karakterini) atar.
+ **»  *ping :** Botun pingine bakarsınız.
+  **»  *token :** Botun tokenine bakarsınız.
+  **»  *tersyazı :** Tersyazı yazarsınız.
+  *»  *yazı-tura:** yazı tura oynarsınız.
+  *»  *düello :** Belirttiniz kişiyle düello atarsınız.
+
+  
+**▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
+
+:Kurucum: TREFAX#0362**
+Tüm komutları öğrenmek için sunucumuza gelebilirsiniz! https://discord.gg/Kekc2pU
+Destek sunucumuz: https://discord.gg/Kekc2pU
+:Yardım için kurucuma yazınız
+Beni sunucunuza eklemek için:  https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8
+:round_pushpin: **Fikirleriniz** ** Bizim İçin Değerlidir, Belirtmekten asla çekinmeyin!
+:airplane: **discord.js sürümüm: v12.5.1**
+`)
  
-  .addField("-eğlence (18)", 
-" herkesin kullanabileceği eğlence komutları;" 
-`8ball` `atatürk` `aşkölçer` `balıktut` `duello`  `efkarım` `fbi` `resim` `tersyazı`  `yazıtura`  `öp` `aduketçek`  `ara155`  `ay`   `balık-tut`  `beşlik`  `dünya`  `ejderha-yazı` `emojiyazı`  `espri`  `kartopu`  `kralol`  `slots`  `taksimdayı`  `tokat`  `yazı-tura`  `çıkma-teklifi`  `şekerye`  `düello`  `çekiliş`  `oylama`  `güneş`  `yıldız`  `kar`  `adamasmaca`  `stresçarkı`  `duygulandırıcı-sözler`  `şifre`  `gifimiz`  `zarat`  `nsfw`  `gökyüzü`  `atatürk-sözleri`  `fal`  `boks-makinesi`  `şifre-oluştur`  `ağla`
-)
- 
- .setFooter (Xaine | Tüm hakları saklıdır.`)
+.setFooter(client.user.username + "", client.user.avatarURL)
+.setTimestamp();
 
-message.channel.send(Xaine)
-}
+return message.channel.send(Embedmatador)
+.then; 
+
+};
 exports.conf = {
-  enable: true, 
-  guildOnly: false, 
-  aliases: ['ym'], 
-  permLevel: 0 
-} 
-exports.help = {
-  name: "yardım", 
-  description: "CodeWork V12  yardım ", 
-  usage: "yardım" 
-}
+enabled: true, 
+    guildOnly: false, 
+    aliases: [], 
+    permLevel: 0 
+};
+  
+  exports.help = {
+    name: 'yardım', 
+    description: 'The Help Command',
+    usage: 'help'
+};
