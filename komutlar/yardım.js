@@ -5,7 +5,7 @@ exports.run = (client, message,args) => {
  .setAuthor("Xaine", client.user.avatarURL)
   .setColor('BLACK')
   .setTitle("Xaine") 
-  .setDescription("https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8%22")
+  .setDescription("[ekleme linki](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8%22)")
 
  .addField("-moderatör (20", " Yetkililerin kullanabileceği komutlar;")
 .addField("-komutlar (20", '` avatar `davet` `yılbaşı hesapla +havadurumu atatürk +is +bildir +korona ping saat yapımcım token sunucubilgi  ekibimiz  korona`')
