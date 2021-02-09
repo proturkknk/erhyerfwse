@@ -5,18 +5,18 @@ exports.run = (client, message,args) => {
  .setAuthor("Xaine", client.user.avatarURL)
   .setColor('BLACK')
   .setTitle("Xaine") 
-  .setDescription(
+  .setDescription(https//discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8
                   
  "+yardım", "ile yardım alabilirsiniz"
 "Örnek komut kullanımı": `+ping`
-Botu davet etmek için:" `+davet`
-Destek sunucusuna gelmek için": `+davet`
+Botu davet etmek için: `+davet`
+Destek sunucusuna gelmek için: `+davet`
 )
     
  .addField("-moderatör (20", 
 Yetkililerin kullanabileceği komutlar;
 `uyar` `sunucukur`
-              
+)
   .addField("-komutlar (20", 
 herkesin kullanabileceği standart komutlar;
 `avatar` `davet` `` `yılbaşı` `hesapla` `+havadurumu` `atatürk` `+is` `+bildir` `+korona` `ping` `saat` `yapımcım` `token` `sunucubilgi`  `ekibimiz`  `korona`
@@ -34,7 +34,7 @@ herkesin kullanabileceği eğlence komutları;
   .setFooter(Xaine Bot | Tüm hakları saklıdır.`)
 
  
- message.channel.send(codework1)
+ message.channel.send(Xaine)
 
 }
 exports.conf = {
