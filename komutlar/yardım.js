@@ -6,7 +6,7 @@ exports.run = (client, message,args) => {
   .setColor('BLACK')
   .setTitle("Xaine") 
   .setDescription("[davet yazarak tüm davet linklerine ulaşabilirsiniz.](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8%22)")
- .setDescription("[]
+
 .addField("-Normal komutlar (20", '` avatar - davet - yılbaşı - hesapla - havadurumu - atatürk - is - bildir - korona - ping - saat - yapımcım - token - sunucubilgi - ekibimiz - korona`')
 
  
