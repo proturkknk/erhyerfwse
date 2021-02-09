@@ -8,11 +8,10 @@ exports.run = (client, message,args) => {
   .setDescription("https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8")
                   
  "+yardım", "ile yardım alabilirsiniz"
-"Örnek komut kullanımı": `+ping`
+"Örnek komut kullanımı:" `+ping`
 "Botu davet etmek için:" `+davet`
-" Destek sunucusuna gelmek için:"  `+davet`
-)
-    
+" Destek sunucusuna gelmek için:" `+davet`
+
  .addField("-moderatör (20", 
 " Yetkililerin kullanabileceği komutlar;" 
 `uyar` `sunucukur`
@@ -28,14 +27,9 @@ exports.run = (client, message,args) => {
 `8ball` `atatürk` `aşkölçer` `balıktut` `duello`  `efkarım` `fbi` `resim` `tersyazı`  `yazıtura`  `öp` `aduketçek`  `ara155`  `ay`   `balık-tut`  `beşlik`  `dünya`  `ejderha-yazı` `emojiyazı`  `espri`  `kartopu`  `kralol`  `slots`  `taksimdayı`  `tokat`  `yazı-tura`  `çıkma-teklifi`  `şekerye`  `düello`  `çekiliş`  `oylama`  `güneş`  `yıldız`  `kar`  `adamasmaca`  `stresçarkı`  `duygulandırıcı-sözler`  `şifre`  `gifimiz`  `zarat`  `nsfw`  `gökyüzü`  `atatürk-sözleri`  `fal`  `boks-makinesi`  `şifre-oluştur`  `ağla`
 )
  
+ .setFooter (Xaine | Tüm hakları saklıdır.`)
 
-
- 
-  .setFooter(Xaine Bot | Tüm hakları saklıdır.`)
-
- 
- message.channel.send(Xaine)
-
+message.channel.send(Xaine)
 }
 exports.conf = {
   enable: true, 
