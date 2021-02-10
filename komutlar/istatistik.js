@@ -10,16 +10,16 @@ exports.run = async (client, message, args) => {
   const istatistikler = new Discord.MessageEmbed()
     .setColor("YELLOW")
     .addField("**__Ping__**",`Mesaj Gecikmesi: ${new Date().getTime() - message.createdTimestamp} ms\n <a:ayar:779332515029581835> Bot Gecikmesi: ${client.ws.ping}ms`, true)
-    .addField("**__ Kullanıcı Sayısı__** ",`${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()}`, true) 
-    .addField("**__Sunucu Sayısı__**", `${client.guilds.cache.size.toLocaleString()}`, true)
+    .addField("**__ Kullanıcı Sayısı__** ",` :busts_in_silhouette: ${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()}`, true) 
+    .addField("**__Sunucu Sayısı__**", ` :clipboard: ${client.guilds.cache.size.toLocaleString()}`, true)
     .addField("**__Kanal Sayısı__**", `${client.channels.cache.size.toLocaleString()}`, true)
-    .addField("**__Aktiflik__**", `${payidarzaman}`, true)
-    .addField("**__Node.JS Versiyon__**", :bo`${process.version}`, true) 
+    .addField("**__Aktiflik__**", ` :pick: ${payidarzaman}`, true)
+    .addField("**__Node.JS Versiyon__**", ` :boom: ${process.version} `,  true ) 
     .addField("**__Ram Kullanımı__**", `${(process.memoryUsage().heapUsed / 1024 / 512).toFixed(2) + " MB"}`, true)
     .addField("**__Discord.JS__**", `${Discord.version}`, true)
     .addField("**__Konum__**", `Turkey :flag_tr:`, true)
     .addField("**__Bot Sahibi__**", `! TREFAX#0362`, true)
-    .addField("**__Geliştirici__**", `! TREFAX#0362`, true)
+    .addField("**__Geliştirici__**", `! TREFAX#0362, ! 𝓧𝔁𝓟𝓻𝓸𝓟𝓵𝓪𝔂𝔃𝔁𝓧 !#1611, ! kerem98#7884  `, true)
 
   return message.channel.send(istatistikler);
 };
