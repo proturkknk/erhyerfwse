@@ -119,9 +119,9 @@ client.on("error", e => {
 });
 
 client.login(process.env.token);
-client.on("message", async message => {
 
-  client.on("message", async message => {
+
+client.on("message", async message => {
 
   if (message.author.bot) return;
 
