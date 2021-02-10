@@ -121,6 +121,8 @@ client.on("error", e => {
 client.login(process.env.token);
 client.on("message", async message => {
 
+  client.on("message", async message => {
+
   if (message.author.bot) return;
 
   if (!message.guild) return;
@@ -153,4 +155,4 @@ client.on("message", async message => {
 
   if (command) command.run(client, message, args);
 
-})
+});
