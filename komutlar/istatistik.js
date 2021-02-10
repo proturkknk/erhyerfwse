@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
     .addField("**__Sunucu Sayısı__**", `${client.guilds.cache.size.toLocaleString()}`, true)
     .addField("**__Kanal Sayısı__**", `${client.channels.cache.size.toLocaleString()}`, true)
     .addField("**__Aktiflik__**", `${payidarzaman}`, true)
-    .addField("**__Node.JS Versiyon__**", `${process.version}`, true)
+    .addField("**__Node.JS Versiyon__**", :bo`${process.version}`, true) 
     .addField("**__Ram Kullanımı__**", `${(process.memoryUsage().heapUsed / 1024 / 512).toFixed(2) + " MB"}`, true)
     .addField("**__Discord.JS__**", `${Discord.version}`, true)
     .addField("**__Konum__**", `Turkey :flag_tr:`, true)
