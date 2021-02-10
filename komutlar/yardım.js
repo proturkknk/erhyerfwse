@@ -10,7 +10,7 @@ exports.run = (client, message,args) => {
 .addField("-Normal komutlar (20", '` avatar - davet - yılbaşı - hesapla - havadurumu - atatürk - is - bildir - korona - ping - saat - yapımcım - token - sunucubilgi - ekibimiz - korona`')
 
  
-  .addField("-eğlence komutları (18)", '`8ball - atatürk - aşkölçer - balıktut - duello - efkarım - fbi - tersyazı - yazıtura - öp - aduketçek - ara155 - ay - balık-tut - beşlik - dünya - ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - taksimdayı - tokat - yazı-tura - çıkma-teklifi - şekerye - düello - çekiliş - oylama - güneş - yıldız - kar - adamasmaca - stresçarkı - duygulandırıcı-sözler - şifre - gifimiz - zarat - nsfw - gökyüzü - atatürk-sözleri - fal - boks-makinesi - şifre-oluştur - ağla`')
+  .addField("-eğlence komutları (18)", '`8ball - atatürk - aşkölçer - balıktut - duello - efkarım - fbi - tersyazı - yazıtura - öp - aduketçek - ara155 - ay - balık-tut - beşlik - dünya - ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - taksimdayı - tokat - yazı-tura - çıkma-teklifi - şekerye - düello - çekiliş - oylama - güneş - yıldız - kar - adamasmaca - stresçarkı - duygulandırıcı-söz - şifre - gifimiz - zarat - nsfw - gökyüzü - atatürk-sözleri - fal - boks-makinesi - şifre-oluştur - ağla`')
  
 
 message.channel.send(bok)
