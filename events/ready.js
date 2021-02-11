@@ -23,8 +23,8 @@ module.exports = client => {
 
   setInterval(function() {
     var oyun = [
-    client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()+" Tane Kullanıcı",
-    client.guilds.cache.size+" Tane Sunucu",
+    client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()+" Tane Kullanıcı!",
+    client.guilds.cache.size+" Tane Sunucu!",
     " ✔ İyi eğlenceler :)",
     " ✔ 7/24 aktif",
     " ✔ Kurucularım: ! TREFAX#0362",
