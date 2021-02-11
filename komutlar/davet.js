@@ -24,7 +24,7 @@ exports.run = (client, message, args) => {
       `> Sitemize Göz Atmak isterseniz`,
       `[Sitemiz](ÇOK YAKINDA)`
     )
-
+.setImage(`https://media.giphy.com/media/UDjA5NF3NAlKdHnOQG/giphy.gif`)
     .setThumbnail(
       "https://cdn.discordapp.com/emojis/670167074584395816.gif?v=1"
     );
