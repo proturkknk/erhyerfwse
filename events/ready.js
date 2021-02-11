@@ -37,13 +37,10 @@ module.exports = client => {
       cmd+" ✔  Tane Komut! 😍",
     " ✔ +Yardım",
      " ✔ Yeni komutlar! 😺",
-" ✔ #Evdekal",
-" ✔ #Masketak",
-" ✔ #HayatEveSığar",
-" ✔ #SosyalMesafe",
 " ✔ +davet",
 " ✔ Büyük güncelleme çok yakında!",
-      "✔ Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz."
+      "✔ Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz.",
+"  +davet | +bildir | +yardım "
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
