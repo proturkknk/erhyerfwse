@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
     .format(" D [gün], H [saat], m [dakika], s [saniye]");
   const istatistikler = new Discord.MessageEmbed()
     .setColor("YELLOW")
-    .addField("**__Ping__**",`Mesaj Gecikmesi: ${new Date().getTime() - message.createdTimestamp} ms\n <a:ayar:779332515029581835> Bot Gecikmesi: ${client.ws.ping}ms`, true)
+    .addField("**__Ping__**",` :clock: Mesaj Gecikmesi: ${new Date().getTime() - message.createdTimestamp} ms\n <a:ayar:779332515029581835> Bot Gecikmesi: ${client.ws.ping}ms`, true)
     .addField("**__ Kullanıcı Sayısı__** ",` :busts_in_silhouette: ${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()}`, true) 
     .addField("**__Sunucu Sayısı__**", ` :clipboard: ${client.guilds.cache.size.toLocaleString()}`, true)
     .addField("**__Kanal Sayısı__**", `${client.channels.cache.size.toLocaleString()}`, true)
