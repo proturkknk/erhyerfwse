@@ -3,11 +3,11 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
-    .setAuthor('Dışarı çıkarken sağlınız için maske takmayı unutmayın.')
+    .setAuthor('Dışarı çıkarken sağlınız için maske takmayı unutmayın. 😷 ')
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://tenor.com/bgkzV.gif`)
+        .setImage(`https://media.giphy.com/media/ZmZWYiOd2VCpgHk0dG/giphy.gif`)
     return message.channel.send(matador);
 };
 
