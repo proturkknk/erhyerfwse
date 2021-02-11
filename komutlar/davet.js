@@ -17,7 +17,7 @@ exports.run = (client, message, args) => {
       `[Destek Sunusu](https://discord.gg/Kekc2pU)`
     )
     .addField(
-      `> Kod Paylaşım Sunusuna Katılmak İsterseniz`,
+      `> Kod Paylaşım Sunucusuna Katılmak İsterseniz`,
       `[Kod Paylaşım Sunucumuz](ÇOK YAKINDA!)`
     )
     .addField(
