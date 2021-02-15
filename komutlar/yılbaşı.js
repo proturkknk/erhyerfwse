@@ -1,31 +1,38 @@
-const Discord = require ("discord.js");
-const db = require("quick.db");
-const ms = require("parse-ms");
+
+const Discord = require("discord.js")
 
 exports.run = async (client, message, args) => {
+    function sayac(endtime){
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var saniye = Math.floor( (t/1000) % 60 );
+        var dakika = Math.floor( (t/1000/60) % 60 );
+        var saat = Math.floor( (t/(1000*60*60)) % 24 );
+        var gun = Math.floor( t/(1000*60*60*24) );
+        return {'toplam': t,'gun': gun, 'saat': saat, 'dakika': dakika, 'saniye': saniye };
+      };    
+      
+    var gn = new Date();
+    var son = 'January 1 ' + (gn.getFullYear() + 1) + " 00:00:00";
+    if (gn.getMonth() == 0 && gn.getDate() == 1) {
+        son = 'January 1 ' + (gn.getFullYear()) + " 00:00:00";
+    };
+        var t = sayac(son);
+        message.channel.send(new Discord.MessageEmbed().setDescription(`Gün: ${t.gun}, Saat: ${t.saat}, Dakika: ${t.dakika}, Saniye: ${t.saniye}`))
+        if(t.total<=0){
+            message.channel.send(new Discord.MessageEmbed().setDescription(`HAPPY NEW YEAR, NoName.txt`)) 
+        }
 
-  let yilbasi = new Date("2020-12-31 21:01:00");
-  let zaman = ms(yilbasi - Date.now('Turkey'));
-  if(zaman.seconds <= 0 && zaman.minutes <= 0 && zaman.hours <= 0 && zaman.days <= 0) return message.reply('Zaten 2021 deyiz :)')
-
-return message.channel.send(
-    `:label: **Yılbaşının kutlanmasına Dair Bilgiler Aşağıda;** \n\n> Gün: **${zaman.days}** \n> Saat: **${zaman.hours}** \n> Dakika: **${zaman.minutes}**\n> Saniye: **${zaman.seconds}**\n> MiliSaniye: **${zaman.milliseconds}**\n> MicroSaniye: **${zaman.microseconds}**\n> NanoSaniye: **${zaman.nanoseconds}** \n\n:white_check_mark: **Yılbaşının kutlanmasına Bu Kadar Zaman Kaldı! Mutlu Yıllar!
-    2021 Hoşgeldin!...**`
-  );
 };
 
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: [],
-  kategori: "eğlence",
-  permLevel: 0
-};
+  
 
-exports.help = {
-  name: "yılbaşı",
-
-  description:
-    "Yılbaşının kutlanmasına kaç gün kaç saat kaç dakika kaç saniye olduğunu gösterir.",
-  usage: ""
-};
+  exports.help = {
+    name:"yılbaşı",
+    usage:"yılbaşı",
+    description:""
+    }
+    
+    exports.conf = {
+    aliases:[],
+    kategori:"eğlence"
+    }
