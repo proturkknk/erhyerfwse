@@ -50,5 +50,5 @@ module.exports = client => {
       cmd = komutlar.length
     })
     
-  }, 15 * 2500);
+  }, 3 * 2500);
 };
