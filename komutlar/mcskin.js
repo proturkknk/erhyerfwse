@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
  if (mesaj == member) {
     message.reply('kullanıcı değil, bir oyuncu adı belirtmelisin :/')
  } else {
- const mcbody = new Discord.RichEmbed()
+ const mcbody = new Discord.MessageEmbed()
    .setColor('#ffa200')
    .setTitle('Oyuncu: ' + mesaj)
    .setImage(body)
@@ -24,7 +24,7 @@ exports.conf = {
 };
 
 exports.help = {
- name: 'mcbody',
+ name: 'mcskin',
  description: 'Belirtilen oyuncunun kostümünü gösterir.',
- usage: 'mcbody '
+ usage: 'mcskin '
 };

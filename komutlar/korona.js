@@ -42,7 +42,7 @@ if (!args.length) {
                     message.channel.send(exampleEmbed);
                 })
                 .catch((error) => {
-          message.channel.send(':x: Hata \n Lütfen ülke girerken global olarak giriniz. Örnek: Turkey veya başka bi ülke  şeklinde girebilirsiniz. Not: Lütfen ülke i')
+          message.channel.send(':x: Hata \n Lütfen ülke girerken global olarak giriniz. Örnek: Turkey veya başka bi ülke  şeklinde girebilirsiniz. Not: Lütfen ülke isimlerini girerken ingilizce olarak giriniz. Dikkat: sadece ülke vakalarını gösterebilirim.')
                     console.log(error);
                 });
         }

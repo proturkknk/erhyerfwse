@@ -22,7 +22,7 @@ return msg.reply("**Matador | Kime kartopu atmak isterin ya isim yaz yada etiket
       .then(nmsg => nmsg.edit("<= :snowflake:"))
       .then(nmsg => nmsg.edit(":snowflake:"))
       .then(nmsg => nmsg.edit(":snowflake:"))
-      .then(nmsg => nmsg.edit(`${matador} artık :snowman: oldu :D :).`));
+      .then(nmsg => nmsg.edit(`${matador} artık :snowman: oldu. :D :)`));
   }
 };
 
