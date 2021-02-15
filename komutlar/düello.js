@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
       const yasaklayan = kullanıcı.yasaklayan
       const sebep = kullanıcı.sebep
       
-      const embed = new Discord.RichEmbed()
+      const embed = new Discord.MessageEmbed()
       .setTitle('Karaliste')
       .setDescription('Neden Karalistem Var?')
       .setThumbnail(message.author.avatarURL)
