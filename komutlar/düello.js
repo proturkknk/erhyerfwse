@@ -1,27 +1,26 @@
 const Discord = require('discord.js');
 const { stripIndents } = require('common-tags');
-const { randomRange, verify } = require('../util/eventLoader.js');
-
+const { randomRange, verify } = require('../util/Util.js');
 exports.run = async (client, message, args) => {
-  /// MATADOR ///
+  
   this.fighting = new Set();
   
 	let opponent = message.mentions.users.first()
-	if (!opponent) return message.reply("Oynamak istediğin kişiyi etiketlemelisin!")
+	if (!opponent) return message.reply("**Oynamak istediğin kişiyi etiketlemelisin** <a:moneyGF:727895223384014962>")
   
   if (opponent.bot) return message.reply('Botlar ile oynayamazsın!');
-  if (opponent.id === message.author.id) return message.reply('Kendin ile düello atamazsın!');
-		if (this.fighting.has(message.channel.id)) return message.reply('Kanal başına sadece bir düello meydana gelebilir.');
+  if (opponent.id === message.author.id) return message.reply('Kendin ile düello Atamazsın');
+		if (this.fighting.has(message.channel.id)) return message.reply('<a:moneyGF:727895223384014962> | **Kanal başına sadece bir düello meydana gelebilir.**');
 		this.fighting.add(message.channel.id);
 		try {
 			if (!opponent.bot) {
-                await message.channel.send(`${opponent}, düello isteği geldi. Düello'yu kabul ediyor musun? (\`evet\` veya \`hayır\` olarak cevap veriniz.)`);
+                await message.channel.send(`<a:moneyGF:727895223384014962> ${opponent}, **düello isteği geldi.** **Düello'yu kabul ediyor musun?** (\`evet\` veya \`hayir\` **olarak cevap veriniz.**)`);
 				const verification = await verify(message.channel, opponent);
 				if (!verification) {
 					this.fighting.delete(message.channel.id);
 					return message.channel.send(`Düello kabul edilmedi...`);
 				}
-			}   /// MATADOR ///
+			}
 			let userHP = 500;
 			let oppoHP = 500;
 			let userTurn = false;
@@ -38,7 +37,7 @@ exports.run = async (client, message, args) => {
 				if (userTurn) userHP = 0;
 				else oppoHP = 0;
 			};
-			while (userHP > 0 && oppoHP > 0) { 
+			while (userHP > 0 && oppoHP > 0) { // eslint-disable-line no-unmodified-loop-condition
 				const user = userTurn ? message.author : opponent;
 				let choice;
 				if (!opponent.bot || (opponent.bot && userTurn)) {
@@ -83,7 +82,7 @@ exports.run = async (client, message, args) => {
 					}
 					reset();
 				} else if (choice === 'kaç') {
-					await message.channel.send(`${user}, kaçtı! Korkak!`);
+					await message.channel.send(`${user}, kaçtı! sen kazandın! Tebrikler`);
 					forfeit();
 					break;
 				} else {
@@ -98,17 +97,15 @@ exports.run = async (client, message, args) => {
 			throw err;
 		}
   }
-
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['1vs1', '1v1', 'savaş'],
+  aliases: ['1vs1', '1v1', 'savaş','düello'],
   permLevel: `Yetki gerekmiyor.`
 };
-
 exports.help = {
-  name: 'düello',
+  name: 'duello',
   category: "eğlence",
   description: 'İstediğiniz bir kişi ile düello atarsınız!',
-  usage: 'düello <@kullanıcı>'
+  usage: 'duello <@kullanıcı>'
 };
