@@ -3,7 +3,7 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
-    .setAuthor('İşte Kahraman Türk Askerleri!')
+    .setAuthor('İşte Kahraman Türk Askerleri! /:flag_tr:')
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
