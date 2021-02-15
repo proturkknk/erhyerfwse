@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const { stripIndents } = require('common-tags');
-const { randomRange, verify } = require('../util/Util.js');
+const { randomRange, verify } = require('../util/util.js');
 const db = require('quick.db')
 
 exports.run = async (client, message, args) => {
