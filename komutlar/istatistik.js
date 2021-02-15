@@ -33,6 +33,6 @@ exports.conf = {
 
 exports.help = {
   name: "is",
-  description: "is",
+  description: "is", 
   usage: "is"
 };
