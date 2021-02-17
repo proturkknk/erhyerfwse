@@ -26,7 +26,7 @@ var filter = m => m.author.id === message.author.id;
  
   
   
-      message.channel.send(`:eight_pointed_black_star:| ****`).then(msg => {
+      message.channel.send(`:eight_pointed_black_star:| **Bu komut kısa süreliğine bakımdadır.**`).then(msg => {
       message.channel.awaitMessages(filter, {
         max: 1,
         time: 20000,
