@@ -28,7 +28,7 @@ exports.run = function(client, message, args) {
 
     var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)];
 
-    if(!soru) return message.reply('Bir soru belirtin. **Doğru Kullanım**: **{prefix}** 8ball <soru>')
+    if(!soru) return message.reply('Bir soru belirtin. **Doğru Kullanım**: **{prefix}** konuş <soru>')
     else message.channel.send(cevap)
 
 };  
@@ -41,7 +41,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: '8ball', 
-  description: 'Sihirli 8ball sorularınızı cevaplar',
-  usage: '8ball <soru>'
+  name: 'konuş', 
+  description: 'sihirli konuş komutu sorularınızı cevaplar',
+  usage: 'konuş <soru>'
 };
