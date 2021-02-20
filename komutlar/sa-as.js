@@ -4,18 +4,18 @@ const Discord = require('discord.js')
 exports.run = async (bot, message, args) => {
   
   
-  if (!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send(':dikkat:Bu komudu kullanabilmek için `Sunucuyu Yönet` yetkisine sahip olmalısın!')
-  if (!args[0]) return message.channel.send(':dikkat:**Sa-as yazısını açmak için `sa-as aç veya kapat`**')
+  if (!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send(':warning: Bu komudu kullanabilmek için `Sunucuyu Yönet` yetkisine sahip olmalısın!')
+  if (!args[0]) return message.channel.send(':warning: **Sa-as yazısını açmak için `sa-as aç veya kapat`**')
   
   if (args[0] == 'aç') {
     db.set(`saas_${message.guild.id}`, 'açık')  
-      message.channel.send(`:tik:**Başarıyla \`sa-as Sistemini\` Açtınız, Artık Bot \`sa\` Yazıldığında Cevap Verecek.**`)
+      message.channel.send(`:white_check_mark: **Başarıyla \`sa-as Sistemini\` Açtınız, Artık Bot \`sa\` Yazıldığında Cevap Verecek.**`)
     
   }
   if (args[0] == 'kapat') {
     db.set(`saas_${message.guild.id}`, 'kapali')
     
-      message.channel.send(`:tik:**Başarıyla \`sa-as Sistemini\` Kapattınız, Artık Bot \`sa\` Yazıldığında Cevap Vermeyecek.**`)
+      message.channel.send(`:white_check_mark: **Başarıyla \`sa-as Sistemini\` Kapattınız, Artık Bot \`sa\` Yazıldığında Cevap Vermeyecek.**`)
     
   }
 

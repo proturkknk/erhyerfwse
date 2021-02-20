@@ -203,8 +203,8 @@ if (message.content.startsWith("/spotify")) {
 client.on("message", async (msg, member, guild) => {
     let i = await db.fetch(`saas_${msg.guild.id}`);
     if (i === "açık") {
-      if (msg.content.toLowerCase() === "sa","selamın aleyküm", "Selamın aleyküm", "Sa") {
-        msg.reply("**Aleyküm Selam Hoşgeldin. nasılsın :)**");
+      if (msg.content.toLowerCase() === "sa") {
+        msg.reply("**Aleyküm Selam, Hoşgeldin. nasılsın :)**");
       }
     }
   });
