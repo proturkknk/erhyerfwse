@@ -22,7 +22,7 @@ exports.run = (client, message, args) => {
     )
     .addField(
       `> Sitemize Göz Atmak isterseniz`,
-      `[Sitemiz](XaineBot.tr.gg)`
+      `[Sitemiz](https://xainebot.tr.gg/)`
     )
 .setImage(`https://media.giphy.com/media/UDjA5NF3NAlKdHnOQG/giphy.gif`)
     .setThumbnail(
