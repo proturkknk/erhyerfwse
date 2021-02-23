@@ -40,7 +40,7 @@ module.exports = client => {
 " ✔ +davet",
 " ✔ Büyük güncelleme çok yakında!",
       "✔ Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz.",
-"  +davet | +bildir | +yardım "
+"  +davet | +bildir | +yardım | +yapımcım |"
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
