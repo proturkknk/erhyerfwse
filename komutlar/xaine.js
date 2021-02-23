@@ -20,7 +20,15 @@ const cevaplar = [
 "oha gerçekten mi!?",
 "oha",
 "ayıp",
-"tamam ama neden?"
+"tamam ama neden?",
+"önemli değil",
+"nefret ediyorum",
+"nasılsın?",
+"çok saçma cevaplar veriyorum bazen",
+"alınma olur mu?",
+"seni seviyorum",
+"napim :D",
+"ben bir botum"
 ];
 
 exports.run = function(client, message, args) {
@@ -41,7 +49,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'konuş', 
+  name: 'xaine', 
   description: 'sihirli konuş komutu sorularınızı cevaplar',
-  usage: 'konuş <soru>'
+  usage: 'xaine <soru>'
 };
