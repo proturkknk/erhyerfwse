@@ -4,7 +4,7 @@ const generator = require('generate-password');
 
 exports.run = function(client, message, args,params) {
     var uzunluk = args.slice(0).join(' ');
-  const limit = 50
+  const limit = 30
   if (isNaN(uzunluk)) return message.reply(" :x: Geçersiz! Lütfen Örneğe Bakınız; ``+şifre 10`` Hata sebebi: ``Geçersiz Sayı``")
   if(uzunluk > limit) return message.reply(`:x: Hata! Max sınır: ${limit}`)
     if (!uzunluk) return message.channel.send(' :x: Geçersiz! Lütfen Örneğe Bakınız; ``+şifre 10``')
