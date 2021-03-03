@@ -17,7 +17,7 @@ const Embedmatador = new Discord.MessageEmbed()
       message.author.username + ` ${user}` + "** adlı kişiyi, Tokatladı! 🖐️ **"
     )
     .setImage("https://media0.giphy.com/media/deKWTyMOYLkje/giphy.gif")
-    .setFooter("Frenzy", client.user.avatarURL);
+    .setFooter("Xaine", client.user.avatarURL);
 
 message.channel.send(Embedmatador);
 
