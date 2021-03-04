@@ -66,10 +66,10 @@ exports.conf = {
 
 exports.help = {
 
-  name: 'stres-çarkı', 
+  name: 'stresçarkı', 
 
   description: 'Bir stres çarkı döndür!',
 
-  usage: 'stres-çarkı'
+  usage: 'stresçarkı'
 
 };
