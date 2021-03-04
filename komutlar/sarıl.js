@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 exports.run = (client, message, args) => {
 
   let mesaj = args.slice(0).join(" ");
-  if (mesaj.length < 1) return message.channel.send("Kime sarılacaksın?");
+  if (mesaj.length < 1) return message.channel.send("Kime sarılacaksın? Lütfen o kişiyi etiketler misin? örnek: +sarıl @TREFAX#0362");
 
 const Embedmatador = new Discord.MessageEmbed()
 
@@ -11,7 +11,7 @@ const Embedmatador = new Discord.MessageEmbed()
     .setColor(`ORANGE`)
     .setDescription(
       message.author.username +
-        ` **adlı kullanıcı, ${mesaj} adlı kullanıcıya sarıldı.**`
+        ` **adlı kullanıcı, ${mesaj} adlı kullanıcıya sarıldı.(っ^_^)っ :)**`
     )
 
     .setImage(
