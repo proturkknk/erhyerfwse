@@ -6,7 +6,7 @@ const ayarlar = require('../ayarlar.json');
 
 
 exports.run = async (client, message, args) => {
-  let p = db.fetch(`prefix_${message.guild.id}`)
+  let p = db.fetch(`prefix_${message.guild.id}`())
 let prefix = ayarlar.prefix;
 if (p) prefix = p;
   let ceza = db.fetch(`muterol_${message.guild.id}`)
