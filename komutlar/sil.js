@@ -17,7 +17,7 @@ if (args[0] < 1) return message.reply("**1** adetten az mesaj silemem!")
 if (args[0] > 100) return message.reply("**100** adetten fazla mesaj silemem!")
   
 message.channel.bulkDelete(args[0]).then(deletedMessages => {
-if (deletedMessages.size < 1) return message.reply("Hiç mesaj silemedim! _(**14** günden önceki mesajları silemem!)_");
+if (deletedMessages.size < 1) return message.reply("Hiç mesaj silemedim! _(**14** günden önceki mesajları silememe discord izin vermiyor!)_");
 })
 message.channel.send(`**${args[0]}** adet mesaj başarıyla silindi!`)
 };
