@@ -28,7 +28,7 @@
     "snekfetch": "^4.0.4",
     "speedtest-net": "^2.1.1",
     "superagent": "^6.1.0",
-    "uninstall": "0.0.0",
+    "uninstall": "^0.0.0",
     "weather-js": "^2.0.0",
     "wio.db": "^4.0.15"
   },
