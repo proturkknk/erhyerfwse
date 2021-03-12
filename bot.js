@@ -226,7 +226,7 @@ client.on('guildMemberAdd', async(member) => {
       .addField('Eylem:', '**Mute**')
       .addField('Kullanıcı:', `${member} (${member.id})`)
       .addField('Yetkili:', `${client.user} (${client.user.id})`)
-      .addField('Süre', "Sonsuz")
+      .addField('Süre', "10m")
       .addField('Sebep', "Muteliyken Sunucudan Çıkmak.")
      member.guild.channels.cache.get(modlog).send(embed);
   }
