@@ -12,7 +12,6 @@ if (semboller.indexOf('0') > -1) maske += '0123456789';
 if (semboller.indexOf('_') > -1) maske += '_-*?=/%+';
 for (var i = uzunluk; i > 0; --i) 
 
-
 {
 sonuc += maske[Math.floor(Math.random() * maske.length)];
 }

@@ -5,11 +5,11 @@ const client = new Discord.Client();
 
 exports.run = (client, message, args) => {
 
-  if (!message.member.hasPermission("ADMINISTRATOR"))
+  if (!message.member.hasPermission("ADMIN"))
 
     return message.reply(
 
-      "Bu komutu kullanabilmek için **ADMINISTRATOR** yetkisi gerekir"
+      "Bu komutu kullanabilmek için **ADMIN** yetkisi gerekir"
 
     );
 
