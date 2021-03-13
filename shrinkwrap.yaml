@@ -3,6 +3,7 @@ dependencies:
   build-release: 1.0.18
   chalk: 4.1.0
   common-tags: 1.8.0
+  dabi-images: 2.7.5
   discord.js: 12.5.1
   discord.js-commando: 0.12.2
   express: 4.17.1
@@ -1219,6 +1220,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-mI3zP+qxke95mmE2nddsF635V+o=
+  /dabi-images/2.7.5:
+    dependencies:
+      node-fetch: 2.6.1
+    dev: false
+    resolution:
+      integrity: sha512-OHRHu6TERzl+UxN9+EOmR03dQqQR3V+5td5vmciJ1MwjKDSX4cLX/QVBCXad5Tsu8gV5Jdwz88qQqulcmp49bg==
   /dashdash/1.14.1:
     dependencies:
       assert-plus: 1.0.0
@@ -5164,6 +5171,7 @@ specifiers:
   build-release: ^1.0.18
   chalk: ^4.1.0
   common-tags: ^1.8.0
+  dabi-images: ^2.7.5
   discord.js: ^12.5.1
   discord.js-commando: ^0.12.1
   express: ^4.17.1
