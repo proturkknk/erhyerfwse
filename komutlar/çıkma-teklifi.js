@@ -7,7 +7,7 @@ exports.run = function(client, message, args) {
     .setColor('RANDOM')
     .setTimestamp()
     .setTitle('Biri Sana Çıkma Teklifi Etti!❤️:heart:')
-    .addField('Ne Cevap Vericen Acaba Bende Merak Ettim😆', `Hadi Kabul Et Bence`)
+    .addField('Ne Cevap Vericen Acaba Bende Merak Ettim 😆', `Hadi Kabul Et Bence`)
     .addField('Teklif Eden Kişi :', `➽ @${message.author.username}`)
     .setFooter('Çıkma Teklifi Xaine')
     teamtr.send(dmat);
@@ -15,7 +15,7 @@ exports.run = function(client, message, args) {
     .setColor('RANDOM')
     .setTimestamp()
     .setTitle('❤️ Çıkma Teklifi Ettin!')
-    .setFooter('Çıkma Teklifi Ettim')
+    .setFooter('Xaine çıkma teklifi komutu')
     message.channel.send(dmtamam);
     };
 exports.conf = {
