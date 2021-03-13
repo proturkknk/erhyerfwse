@@ -7,7 +7,7 @@ exports.run = (client, message, params) => {
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://media.giphy.com/media/kyHb4nzYScnmtqyJYu/giphy.gif`)
+        .setImage(`https://media.giphy.com/media/oZ1KSq2bHDujIv7JNG/giphy.gif`)
     return message.channel.send(matador);
 };
 
