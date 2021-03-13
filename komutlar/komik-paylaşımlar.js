@@ -8,11 +8,10 @@ module.exports.run = async (bot, message, args) => {
     let result = Math.floor((Math.random() * replies.length));
 
     let gifembed = new Discord.MessageEmbed()
-        .setTitle("Komik Paylaşımlar")
-        .setColor("RANDOM")
+        .setTitle(" İşte Komik Paylaşımlar :)")
+        .setColor("random")
         .setFooter(`${message.author.username} `, message.author.avatarURL)
         .setImage(replies[result]);
-//Developer By CodeShare
     message.channel.send(gifembed);
 };
 //CodeShare
