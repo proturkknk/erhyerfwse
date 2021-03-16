@@ -1,26 +1,29 @@
-const Discord = require('discord.js');
-const ayarlar = require('../ayarlar.json');
-const fs = require("fs");
-exports.run = (client, message, params) => {
-var ne = [
+const db = require('quick.db')
+const Discord = require('discord.js')
 
-["Bu komut şuan bakımda, kısa zamanda açılacaktır. Anlayışınız için teşekkür ederiz!"]
+module.exports.run = async (bot, message, args) => {
 
-];
-var daşşak = Math.floor(Math.random()*ne.length);
-const codeemıng = new Discord.MessageEmbed()
-.setDescription(`${ne[daşşak]}`)
-.setColor(0xe2ff00)
-.setTimestamp()
-message.channel.send(codeemıng)
+    let replies = ["https://i.pinimg.com/originals/43/90/24/4390247c89c7bb46eb90b1de3959a88f.jpg"];
+
+    let result = Math.floor((Math.random() * replies.length));
+
+    let gifembed = new Discord.MessageEmbed()
+        .setTitle(" İşte şiirler!")
+        .setColor("random")
+        .setFooter(`${message.author.username} `, message.author.avatarURL)
+        .setImage(replies[result]);
+    message.channel.send(gifembed);
 };
+//CodeShare
 exports.conf = {
-enabled: true,
-guildOnly: false,
-aliases: [],
-permLevel: 0
+  enabled: true,
+  guildOnly: false,
+  aliases: ['Şiir','şiir'],
+  permLevel: 0
 };
 
 exports.help = {
-name: 'şiir',
+  name: 'şiir', 
+  description: "Şiirler atar.",
+  usage: 'XaineBot'
 };
