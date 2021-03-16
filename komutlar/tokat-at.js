@@ -7,7 +7,7 @@ let user = message.mentions.users.first();
 if (message.mentions.users.size < 1)
 return message
 
-      .reply("**Kimi Tokatlayacam Reis Etiketlede Vurayım Ağzının Ortasına :D( ironi) **")
+      .reply("**Kimi Tokatlayacam Reis Etiketlede Vurayım Ağzının Ortasına :D (ironi) **")
       .catch(console.error);
 
 const Embedmatador = new Discord.MessageEmbed()
@@ -16,7 +16,7 @@ const Embedmatador = new Discord.MessageEmbed()
     .setDescription(
       message.author.username + ` ${user}` + "** adlı kişiyi, Tokatladı! 🖐️ **"
     )
-    .setImage("https://media0.giphy.com/media/deKWTyMOYLkje/giphy.gif")
+    .setImage("https://media.giphy.com/media/OMuDN8lGwgJQcUBJC2/giphy.gif")
     .setFooter("Xaine", client.user.avatarURL);
 
 message.channel.send(Embedmatador);
