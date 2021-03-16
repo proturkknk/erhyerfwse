@@ -48,8 +48,69 @@ module.exports.run = async (bot, message, args) => {
  
  "dondurma",
     
+"karete",
 
+"dondurma",
+
+"moda",
+
+"karakter",
   
+"anı",
+
+"ıhlamur",
+
+"çay",
+
+"çiçek",
+
+"ilkbahar",
+
+"yaz",
+
+"sonbahar",
+
+"kış",
+
+"okul",
+
+"tatil",
+
+"sahil",
+
+"bitki",
+
+"bilgisayar",
+
+"telefon",
+
+"tablet",
+
+"yazılım",
+
+"bebek",
+
+"para",
+
+"defter",
+
+"kitap",
+
+"ülke",
+
+"şehir",
+
+"mersin",
+
+"sahil",
+
+"tatil",
+
+"havuz",
+
+"deniz",
+
+"kayseri",
 
 ]
 
