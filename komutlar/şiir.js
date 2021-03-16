@@ -4,7 +4,7 @@ const fs = require("fs");
 exports.run = (client, message, params) => {
 var ne = [
 
-[""]
+["Bu komut şuan bakımda, kısa zamanda açılacaktır. Anlayışınız için teşekkür ederiz!"]
 
 ];
 var daşşak = Math.floor(Math.random()*ne.length);
