@@ -3,7 +3,7 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
-    .setAuthor('18 Mart Çanakkale Zaferi! Tüm şehitlerimize ALLAH Tan Rahmet Diliyoruz. :)')
+    .setAuthor('18 Mart Çanakkale Zaferi! Tüm şehitlerimize ALLAH Tan Rahmet Diliyoruz. :) ')
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
