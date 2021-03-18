@@ -3,11 +3,11 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
-    .setAuthor('18 Mart Çanakkale Zaferi! Tüm şehitlerimize ALLAH Tan Rahmet Diliyoruz.)
+    .setAuthor('18 Mart Çanakkale Zaferi! Tüm şehitlerimize ALLAH Tan Rahmet Diliyoruz. :)')
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://media.giphy.com/media/UnIlM9eoMwcOb89uk2/giphy.gif`)
+        .setImage(`https://media.giphy.com/media/WzWyWqRZjqtZG6X8Wf/giphy.gif`)
     return message.channel.send(matador);
 };
 
