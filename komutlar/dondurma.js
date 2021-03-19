@@ -63,7 +63,7 @@ exports.run = async(client, msg, args) => {
         const dvm = new Discord.MessageEmbed()
         .setTitle('Windows.exe')
         .setColor('#ffbe19')
-        .setDescription('dondurmanız veriliyor...')///
+        .setDescription('dondurmanız yapılıyor...')///
         .setThumbnail(msg.author.avatarURL)
         .setTimestamp()
         msg.channel.send(dvm)
@@ -120,15 +120,15 @@ exports.run = async(client, msg, args) => {
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
-                if(cvp.first().content.toLowerCase() != 'sil' && cvp.first().content.toLowerCase() != 'boşver' && cvp.first().content.toLowerCase() != 'bosver') {
-                  msg.reply('ZEHİRLENDİN!!!')
+                if(cvp.first().content.toLowerCase() != 'çöpe at' && cvp.first().content.toLowerCase() != 'çöpe at' && cvp.first().content.toLowerCase() != 'çöpe at) {
+                  msg.reply('Dondurmanız çöpe atıldı ve sizin için başka dondurma yapıldı.')
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
                 if(cvp.first().content.toLowerCase() == 'sil') {
                   const sil = new Discord.MessageEmbed()
             .setTitle('Windows.exe')
-            .setDescription('dondurma')
+            .setDescription('ZEHİRLENDİNİZ!!!')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -136,10 +136,10 @@ exports.run = async(client, msg, args) => {
             db.delete(`anti_${msg.channel.id}`)
             return
                 }
-                if(cvp.first().content.toLowerCase() == 'boşver' || cvp.first().content.toLowerCase() == 'bosver') {
+                if(cvp.first().content.toLowerCase() == '' || cvp.first().content.toLowerCase() == 'ye') {
                   const bsvr = new Discord.MessageEmbed()
             .setTitle('Windows.exe')
-            .setDescription('System 31 Tüm Bilgisayarınızı Yok etti Ve artık Sadece Masaüstünü açabiliyorsunuz.')
+            .setDescription('ZEHİRLENDİNİZ!!!.')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -155,7 +155,7 @@ exports.run = async(client, msg, args) => {
             if(cvp.first().content.toLowerCase() == 'hayır') {
               const gg = new Discord.MessageEmbed()
             .setTitle('Windows.exe')
-            .setDescription('System 31 i İndirmediğiniz İçin Bilgisayarınız Açılmıyor!')
+            .setDescription('Başka çeşit dondurmamız yok.')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -172,7 +172,7 @@ exports.run = async(client, msg, args) => {
       if(cvp.first().content.toLowerCase() == 'hayır') {
             const banane = new Discord.MessageEmbed()
             .setTitle('Windows.exe')
-            .setDescription('indirmezsen indirme banane aq')
+            .setDescription('Dondurma almadınız.')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
