@@ -36,7 +36,7 @@ exports.run = function(client, message, args) {
 
     var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)];
 
-    if(!soru) return message.reply('Bir soru belirtin. **Doğru Kullanım**: **{prefix}** konuş <soru>')
+    if(!soru) return message.reply('Bir soru belirtin. **Doğru Kullanım**: **{prefix}** xaine <soru>')
     else message.channel.send(cevap)
 
 };  
