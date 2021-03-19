@@ -17,6 +17,7 @@ dependencies:
   parse-ms: 2.1.0
   quick.db: 7.1.3
   snekfetch: 4.0.4
+  sozluk-api: 1.0.2
   speedtest-net: 2.1.1
   superagent: 6.1.0
   uninstall: 0.0.0
@@ -4366,6 +4367,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-ZYU1WEhh7JfXMNbPQYIuH1ZoQSg=
+  /sozluk-api/1.0.2:
+    dependencies:
+      node-fetch: 2.6.1
+    dev: false
+    resolution:
+      integrity: sha512-jMUXjsNypPUpDBQMbtX9X91X4GumYb5PpP4GpbZG8uLX6JrANW6bc8VrB2gdDibq/4hv9gZ3C6fTl1jq7WkbTQ==
   /sparkles/1.0.1:
     dev: false
     engines:
@@ -5185,6 +5192,7 @@ specifiers:
   parse-ms: ^2.1.0
   quick.db: ^7.1.2
   snekfetch: ^4.0.4
+  sozluk-api: ^1.0.2
   speedtest-net: ^2.1.1
   superagent: ^6.1.0
   uninstall: ^0.0.0
