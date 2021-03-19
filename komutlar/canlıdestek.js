@@ -1,5 +1,5 @@
 exports.run = async(client, message, args) => {
-  
+  const discord = require("discord.js")
   
 const emoji1 = message.client.emojis.cache.get(':telephone_receiver:');
 const emoji2 = message.client.emojis.cache.get(':telephone_receiver:');
@@ -12,7 +12,7 @@ const emoji7 = message.client.emojis.cache.get(':telephone_receiver:');
       message.reply("Canlı Destek Komutunu Kullandığınız İçin Teşekkürler. Birazdan Yetkili Ekibimiz sizinle ilgilenicektir.");
       let mesaj = args.slice(0).join(' ');
       let chan = message.channel;
-      let destekKanal = "822448332374671410";
+      let destekKanal = "822456510307106876";
       const embed = new discord.MessageEmbed()
         .addField('Uyarı', `📞 Canlı Destek Çağrısı`)
         .setAuthor(`${message.author.tag} (${message.author.id})`, `${message.author.avatarURL()}`)
