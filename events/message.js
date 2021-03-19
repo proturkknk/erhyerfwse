@@ -24,7 +24,7 @@ module.exports = message => {
     } else {
       if(command == '') return;
 const pixel = new Discord.MessageEmbed()
-.setDescription("Botta `" + command + '` Adında Bir Komut Bulamadım.')
+.setDescription("Malesef komutlarımın arasında `" + command + '` Adında Bir Komut Bulamadım.')
 .setColor('#2c2f33')
 .setTimestamp()
     message.reply(pixel)//xaine
