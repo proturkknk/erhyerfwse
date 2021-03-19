@@ -232,3 +232,11 @@ client.on('guildMemberAdd', async(member) => {
   }
   })
   //Muteliyken s
+client.on("guildCreate", guild => {
+guild.owner.send(`
+**Merhaba, __${guild.owner.user.username}!__**
+**Beni __Kurucusu__ olduğun __${guild.name}__ sunucusuna eklediğin için teşekkürler!**
+
+Botumuzun destek sunucusuna gelmek isterseniz; (https://discord.gg/Kekc2pU) bu linkten  gelebilirsiniz.
+`)
+})

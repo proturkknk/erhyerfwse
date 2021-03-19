@@ -11,7 +11,7 @@ const embed = new Discord.MessageEmbed()
 .setDescription(`**Bug Kanalı** ${message.channel.name} \n **Bug Bildirilen Sunucu** \`${message.guild.name}\` \n **Bugu Bildiren Kullanıcı** <@${message.author.id}> \n **Bildirilen Bug :** \`${istek}\``)
 client.channels.cache.get('787987649977384960').send(embed)
   
-message.channel.send("Bildiriminiz, kurucularımıza gönderildi. :white_check_mark:").then(message => message.delete({ timeout: 5000 }));
+message.channel.send("Bildiriminiz, ekibimize gönderildi, İyi günler dileriz. :white_check_mark:").then(message => message.delete({ timeout: 5000 }));
 };
 exports.conf = {
   enabled: true,
