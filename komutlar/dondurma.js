@@ -50,7 +50,7 @@ exports.run = async(client, msg, args) => {
       })
         .then(cvp => {
         if(!cvp) {
-          msg.reply('**Süren Doldu!**')
+          msg.reply('**Malesef süreniz doldu! :(**')
           db.delete(`anti_${msg.channel.id}`)
           return
         }
