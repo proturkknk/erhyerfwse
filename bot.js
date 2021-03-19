@@ -239,4 +239,44 @@ guild.owner.send(`
 
 Botumuzun destek sunucusuna gelmek isterseniz; (https://discord.gg/Kekc2pU) bu linkten  gelebilirsiniz.
 `)
+  
+  
+  
 })
+client.on("guildMemberAdd", async (member, message, msg) => {
+  const fakehesapp = db.fetch(`fake_${member.guild.id}`);
+
+  if (fakehesapp == "açık") {
+    var moment = require("moment");
+    require("moment-duration-format");
+    moment.locale("tr");
+    var { Permissions } = require("discord.js");
+    var x = moment(member.user.createdAt)
+      .add(30, "days")
+      .fromNow();
+    var user = member.user;
+    x = x.replace("birkaç saniye önce", " ");
+    if (!x.includes("önce") || x.includes("sonra") || x == " ") {
+      let rol = db.fetch(`fakerol_${member.guild.id}`);
+      member.user.send(
+        "Hesabınız 30 günden önce açıldığı için cezalıya atıldınız, yetkililere bildirerek açtırabilirsiniz."
+      );
+
+      
+      let kanalcık = await db.fetch(`fakekanal_${member.guild.id}`);
+      let kanal = member.guild.channels.cache.find(r => r.id === kanalcık);
+      
+      
+      const embedd = new Discord.MessageEmbed()
+      .setTitle("Fake hesap yakalandı!")
+        .setTimestamp()
+        .setDescription(
+          `Bir fake hesap sisteme yakalandı ve rolü verildi. **${member}**`)
+        .setTimestamp()
+        .setColor("#E8C02A");
+      kanal.send(embedd);
+      member.roles.add(rol);
+    } else {
+    }
+  }
+});

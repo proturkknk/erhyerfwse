@@ -9,11 +9,11 @@ const emoji5 = message.client.emojis.cache.get(':telephone_receiver:');
 const emoji6 = message.client.emojis.cache.get(':telephone_receiver:');
 const emoji7 = message.client.emojis.cache.get(':telephone_receiver:');
       let isEnabled;
-      message.reply("Canlı Destek şuanda bakımda.");
+      message.reply("Canlı Destek Komutunu Kullandığınız İçin Teşekkürler. Birazdan Yetkili Ekibimiz sizinle ilgilenicektir.");
       let mesaj = args.slice(0).join(' ');
       let chan = message.channel;
-      let destekKanal = "744239406155694192";
-      const embed = new Discord.MessageEmbed()
+      let destekKanal = "";
+      const embed = new discord.MessageEmbed()
         .addField('Uyarı', `📞 Canlı Destek Çağrısı`)
         .setAuthor(`${message.author.tag} (${message.author.id})`, `${message.author.avatarURL()}`)
         .setColor("RANDOM")
