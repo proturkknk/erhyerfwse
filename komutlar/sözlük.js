@@ -20,7 +20,6 @@ exports.conf = {
   aliases: ['sözlük'],
   permLevel: 0
 };
-
 exports.help = {
   name: 'sözlük',
   description: 'Xaine Bot',
