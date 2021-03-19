@@ -35,7 +35,7 @@ exports.run = async(client, msg, args) => {
     db.set(`anti_${msg.channel.id}`,'open')
     var filter = m => m.author.id == msg.author.id;
     const ilk = new Discord.MessageEmbed()
-    .setTitle('Windows.exe')
+    .setTitle('Dondurma almak ister misiniz?')
     .setColor('BLUE')
     .setThumbnail(msg.author.avatarURL)
     .addField('dondurma almak mı istiyorsunuz?','   [evet]   [hayır]')/////////////////////////////////////////////////:D
@@ -61,7 +61,7 @@ exports.run = async(client, msg, args) => {
         }
       if(cvp.first().content.toLowerCase() == 'evet') {
         const dvm = new Discord.MessageEmbed()
-        .setTitle('Windows.exe')
+        .setTitle('Lütfen bekleyin...')
         .setColor('#ffbe19')
         .setDescription('dondurmanız yapılıyor...')///
         .setThumbnail(msg.author.avatarURL)
@@ -70,7 +70,7 @@ exports.run = async(client, msg, args) => {
         
         setTimeout(function() {
           const com = new Discord.MessageEmbed()
-        .setTitle('Windows XP.exe')
+        .setTitle('Lütfen bir seçenek seçin.')
         .setColor('GREEN')
         .setThumbnail(msg.author.avatarURL)
           .addField('Dondurmanız limonlu olsunmu?','[evet] [hayır]')
@@ -95,7 +95,7 @@ exports.run = async(client, msg, args) => {
         }
             if(cvp.first().content.toLowerCase() == 'evet') {
               const indiriyo = new Discord.MessageEmbed()
-            .setTitle('Windows.exe')
+            .setTitle('Lütfen bekleyin...')
             .setDescription('Limonlu dondurma yapılıyor...')
             .setColor('#ffbe19')
             .setTimestamp()
@@ -103,7 +103,7 @@ exports.run = async(client, msg, args) => {
             msg.channel.send(indiriyo)
               setTimeout(function() {
                 const virus = new Discord.MessageEmbed()
-            .setTitle('Windows.exe')
+            .setTitle('Dondurma gg şimdi ne yapıcaz?')
             .setColor('RED')
                 .addField('Dondurmanız yere düştü!','[ye] [çöpe at]')
             .setTimestamp()
@@ -120,15 +120,15 @@ exports.run = async(client, msg, args) => {
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
-                if(cvp.first().content.toLowerCase() != 'çöpe at' && cvp.first().content.toLowerCase() != 'çöpe at' && cvp.first().content.toLowerCase() != 'çöpe at) {
-                  msg.reply('Dondurmanız çöpe atıldı ve sizin için başka dondurma yapıldı.')
+                if(cvp.first().content.toLowerCase() != 'ye' && cvp.first().content.toLowerCase() != 'ye ' && cvp.first().content.toLowerCase() != 'Çöpe at') {
+                  msg.reply('Dondurmanız çöpe atıldı ve sizin için başka dondurma yapıldı. Afiyet olsun!')
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
-                if(cvp.first().content.toLowerCase() == 'sil') {
+                if(cvp.first().content.toLowerCase() == 'çöpe at') {
                   const sil = new Discord.MessageEmbed()
-            .setTitle('Windows.exe')
-            .setDescription('ZEHİRLENDİNİZ!!!')
+            .setTitle('Afiyet olsun!')
+            .setDescription('Dondurmanız çöpe atıldı ve sizin için başka dondurma yapıldı. Afiyet olsun!')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -138,8 +138,8 @@ exports.run = async(client, msg, args) => {
                 }
                 if(cvp.first().content.toLowerCase() == '' || cvp.first().content.toLowerCase() == 'ye') {
                   const bsvr = new Discord.MessageEmbed()
-            .setTitle('Windows.exe')
-            .setDescription('ZEHİRLENDİNİZ!!!.')
+            .setTitle('ZEHİRLENDİN!')
+            .setDescription('ZEHİRLENDİNİZ!!!')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -154,7 +154,7 @@ exports.run = async(client, msg, args) => {
             
             if(cvp.first().content.toLowerCase() == 'hayır') {
               const gg = new Discord.MessageEmbed()
-            .setTitle('Windows.exe')
+            .setTitle('Başka yok!')
             .setDescription('Başka çeşit dondurmamız yok.')
             .setColor('RED')
             .setTimestamp()
@@ -171,7 +171,7 @@ exports.run = async(client, msg, args) => {
       }
       if(cvp.first().content.toLowerCase() == 'hayır') {
             const banane = new Discord.MessageEmbed()
-            .setTitle('Windows.exe')
+            .setTitle('Almazsan alma')
             .setDescription('Dondurma almadınız.')
             .setColor('RED')
             .setTimestamp()
