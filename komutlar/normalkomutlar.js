@@ -31,6 +31,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +mcskin :** Belirttiniz ismin Minecraft skinine (karakter) bakarsınız.
 > **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
 **» +sözlük :** Belirttiniz kelimenin sözlük anlamına bakarsınız.
+*» +prefix :** Botun prefixini değiştirirsiniz.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
@@ -56,7 +57,7 @@ exports.conf = {
 };
   
   exports.help = {
-    name: 'normalkomutlar', 
+    name: 'normal', 
     description: 'Xaine Bot normal komutlar menüsü',
     usage: 'Xaine Bot'
 };

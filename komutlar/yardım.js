@@ -6,11 +6,10 @@ exports.run = (client, message, args) => {
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
  .setDescription(`
- > \`+moderasyon -> Moderasyon Komutlarını gösterir.\`
 
  > \`+eğlence -> Eğlence Komutlarını gösterir.\`
 
- > \`+kullanıcı -> Kullanıcı Komutlarını gösterir.\`
+ > \`+normal -> Normal Komutlarını gösterir.\`
  
  > \`+davet -> Botun Davetini ve Destek Sunucunu gösterir.\``)
  .setFooter(`Xaine Bot Yardım Menüsü `)

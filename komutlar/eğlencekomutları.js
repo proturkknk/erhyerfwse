@@ -1,76 +1,64 @@
-const Discord = require ("discord.js");
+const Discord = require("discord.js");
+exports.run = async (client, message, args) => {
 
-exports.run = (client, message) => {
+    //Oyuncular Şehri - ArdaDemr;
+    //Gerekli komutları sizin doldurmanız gerek
 
-const EmbedFwhyCode = new Discord.MessageEmbed()
-
-.setColor("RANDOM")
-.setTitle("**▬▬▬▬▬▬[** ©️ **Eğlence Bot (V12)** ©️ **]▬▬▬▬▬▬**  \n\n> :floppy_disk: `+istatistik` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`")
-.setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
-.setDescription(`
-
-▬▬▬▬▬▬[ :closed_lock_with_key: **Xaine Bot Normal Komutlar** :closed_lock_with_key: ]▬▬▬▬▬▬
-
-> **» +dondurma :** Dondurma alırsınız..
-> **» +xaine :** Botla konuşursunuz.
-> **» +atatürk :** Bot sizin için Atatürk sözlerini gösterir.
-> **» +aşkölçer :** Belirttiniz kişiyle aranızdaki aşkı ölçer.
-> **» +balık-tut :** Balık tutarsınız.
-> **» +düello :** Belirttiniz kişiyle düello atarsınız.
-> **» +efkarım :** Bot sizin için efkarınızı ölçer.
-> **» +fbi :** Bot sizin için fbi baskını yapar.
-> **» +tersyazı :** Bot sizin için yazdınız kelimeyi ters yazıya dönüştürür.
-> **» +yazıtura :** Yazı-tura oynarsınız.
-> **» +öp :** Belirttiniz kişiyi öpersiniz.
-> **» +aduketçek :** Aduket oynarsınız..
-> **» +güneş :** Güneş e bakarsınız.
-> **» +ay :** Ay a bakarsınız bakarsınız.
-**» +yıldız :** Yıldızlara bakarsınız.
-> **» +dünya :** Dünya ya bakarsınız.
-> **» +kar:** Kar yağışına bakarsınız.
-
-> **» +beşlik :** Belirttiniz kişiyle beşlik çakarsınız.
-> **» +ejderha-yazı :** Bot sizin yazdınız cümleyi ejderha-yazı olarak değiştirir.
-> **» +emojiyazı :** Bot yazdınız cümleyi emoji-yazı olarak değiştirir.
-> **» +espri :** Bot sizin için espri yapar.
-> **» +kartopu :** Belirttiniz kişiyle kartopu oynarsınız.
-**» +kralol :** kral olursunuz.
-**» +slots :** Slots oynarsınız.
-**» +taksimdayı :** Taksimdayı!!!
-**» +tokat :**belirttiniz kişiye tokat atarsınız.
-**» +çıkmateklifi :** Belirttiniz kişiye çıkma teklifi edersiniz.
-**» +şekerye :** Şeker yersiniz.
-**» +adamasmaca :** Adam-asmaca oynarsınız.
-**» +stresçarkı :** Stres-çarkı döndürürsünüz.
-**» +duygulandırıcısöz :** Duygulandırıcı sözlere bakarsınız.
-**» +zarat :** Zar atarsınız, Bakalım size kaç çıkıcak. :)
-**» +nsfw :** nsfw bakarsınız. (Tavsiye etmeyiz :D)
-**▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
-
-> :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
-> :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
-> :round_pushpin: **Komut hakkında detaylı bilgi için: +yardım**
-> :airplane: **Aktif discord.js sürümüm: v12.2.0**
-**» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/https://discord.gg/Kekc2pU)** **•** **
-`)
+var page = 0;
  
-.setFooter(client.user.username + "", client.user.avatarURL)
-.setTimestamp();
+let arr = [];
+let emojiarr = message.guild.emojis.cache.array();
+for(let i =0; Number(i + "0") < (Math.round(emojiarr.length/10)*10 +1); ++i) {
+var on = emojiarr.slice(Number(i + "0"), Number(i + "0")+10)
+arr.push(on.toString())
+}
 
-return message.channel.send(EmbedFwhyCode)
-.then; //FwhyCode
+let embd = new Discord.MessageEmbed()
+message.channel.send(embd.setDescription(arr[0]).setDescription('Xaine Bot eğlence komutları menüsüne hoş geldiniz. Sayfaları değiştirerek kodları görebilirsiniz, İyi eğlenceler!')).then(async msg => {
+      await msg.react("⬅️");
+      await msg.react("➡️");
 
-};
-exports.conf = {
-    enabled: true, 
-    guildOnly: false, 
-    aliases: [], 
-    permLevel: 0 
-};
-  
-  exports.help = {
-    name: 'normalkomutlar', 
-    description: 'Xaine Bot Eğlence komutlar menüsü',
-    usage: 'Xaine Bot'
-};
+      let filter = (reaction, user) => user.id !== message.client.user.id && user.id === message.author.id;
+
+      var collector = msg.createReactionCollector(filter, {
+        time: 120000
+      });
+
+      collector.on("collect", async (reaction, user) => {
+        switch (reaction.emoji.name) {
+          case "⬅️":
+            reaction.users.remove(user).catch(console.error);
+            if (page == 0) return;
+            --page
+
+              embd.setColor("RANDOM");
+              embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
+              embd.setDescription("dondurma - xaine - atatürk - aşkölçer - balıktut - duello - efkarım - fbi - tersyazı - yazıtura - öp - aduketçek - ay - balık-tut - beşlik - dünya - ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - taksimdayı - tokat - yazı-tura - çıkma-teklifi - şekerye - düello - oylama - güneş - yıldız - kar - adamasmaca")
+            msg.edit(embd)
+           break;
+          case "➡️":
+            if (page == arr.length) return;
+            ++page
+            reaction.users.remove(user).catch(console.error);
+              embd.setColor("RANDOM");
+              embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
+              embd.setDescription("stresçarkı - duygulandırıcı-söz - zarat - nsfw - gökyüzü - atatürk-sözleri - fal - boks-makinesi - şifre-oluştur - ağla - masketak - sevgili - asker - sayıtut - kolonya - kandil - komik - gol - iyikidoğdun - sarıl - yemek - bebek - şiir - çanakkalezaferi")
+            msg.edit(embd)
+          break;
+
+        }
+      });
+    })
+}
+    exports.conf = {
+        enabled: true,
+        guildOnly: true,
+        aliases: ["Eğlence", "eğlence"],
+        permLevel: 0
+      };
+      
+      exports.help = {
+        name: "eğlence",
+        description: "Sayfalı Yardım Menüsü -ArdaDemr",
+        usage: "Sayfalı Yardım Menüsü"
+      };
