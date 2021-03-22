@@ -13,30 +13,32 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 
 > **» +avatar :** Avatarınızı gösterir.
 > **» +davet :** Davet linklerini gösterir.
-> **» +yılbaşı :** yılbaşına kalan zamanı gösterir.
-> **» +nuke :** kanalı tekrar kurar ve tüm mesajları siler.
-> **» +hesapla :** matematik işl.
-> **» +ejderha-yazı :** Ejderha temalı logo üretirsiniz.
-> **» +espri :** Bot sizin için espri yapar.
-> **» +hesapla :** Belirttiğiniz matematik işlemini bot yapar.
-> **» +kartopu :** Etiketlediğiniz kişiye kartopu atarsınız.
-> **» +kaç-cm :** Bot malafat uzunluğunuzu söyler.
-> **» +kralol :** Kral olmanıza yarar.
-> **» +tokat :** Etiketlediğiniz kişiyi tokatlarsınız.
-> **» +yazıtura :** Bot ile yazı-tura oyununu oynarsınız.
-> **» +yılbaşı :** Yılbaşının gelmesine ne kadar yaklaştığınızı gösterir.
-> **» +öp :** Etiketlediğiniz kişiyi öpmenize yarar.
-> **» +şekerye :** Bot size şeker ikram eder.
-
+> **» +yılbaşı :** Yılbaşına kalan zamanı gösterir.
+> **» +nuke :** Kanalı tekrar kurar ve tüm mesajları siler.
+> **» +hesapla :** Matematik işlemi hesaplarsınız.
+> **» +havadurumu :** Belirttiniz bölgenin hava durumuna bakarsınız.
+> **» +is :** Botun istatistik bilgilerine bakarsınız.
+> **» +bildir :** Şikayet-öneri de bulunursunuz.
+> **» +korona :** Belirttiniz ülkenin korona virüs bilgilerine bakarsınız (lütfen ingilizce olarak ülkeleri yazın.)
+> **» +kilit :** Belirttiniz kanala mesaj yazılmasını engeller.
+> **» +kilitaç :** Belirttiniz kanalın mesaj yazımını açar.
+> **» +ping :** Botun pingine bakarsınız.
+> **» +saat :** Saatin kaç olduğuna bakarsınız.
+> **» +yapımcım :** Botun yapımcısına bakarsınız.
+> **» +token :** Botun tokenine bakarsınız :D.
+> **» +sunucubilgi :** Bulundunuz sunucu bilgilerini bot sizin için gösterir.
+> **» +ekibimiz :** Xaine Bot Ekibini gösterir.
+> **» +mcskin :** Belirttiniz ismin Minecraft skinine (karakter) bakarsınız.
+> **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
+**» +sözlük :** Belirttiniz kelimenin sözlük anlamına bakarsınız.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
 > :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
 > :round_pushpin: **Komut hakkında detaylı bilgi için: +yardım**
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
-> **Not! Botu sunucunuza eklemek istiyorsanız TREFAX#0038 e dm den yazabilirsiniz**
 **» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/https://discord.gg/Kekc2pU)** **•** **[Botun Davet Linki](https://www.discord.com/)** **•** **[Web-Site](https://www.discord.com/)**
+**[Destek Sunucusu](https://discord.gg/https://discord.gg/Kekc2pU)** **•** **
 `)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
@@ -54,7 +56,7 @@ exports.conf = {
 };
   
   exports.help = {
-    name: 'yardım', 
-    description: 'The Help Command',
-    usage: 'help'
+    name: 'normalkomutlar', 
+    description: 'Xaine Bot normal komutlar menüsü',
+    usage: 'Xaine Bot'
 };
