@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
  const sharpen = new Discord.MessageEmbed()
 
 .setColor("RED")
-.setImage("https://media1.tenor.com/images/0c05631335594254143fb8beb56c7817/tenor.gif?itemid=11558347")
+.setImage("https://media1.tenor.com/images/0c05631335594254143fb8beb56c7817/tenor.gif?itemid=11558347","https://media.giphy.com/media/95PhJTpb2EwW3WdGxk/giphy.gif","https://media.giphy.com/media/9z7UFQ4mniGoqStVxu/giphy.gif")
 .setTitle("EFSANE Bİ GOL ATTIN! ");
 
   message.channel.send(sharpen);
