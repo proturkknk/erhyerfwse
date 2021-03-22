@@ -23,15 +23,28 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +yazıtura :** Yazı-tura oynarsınız.
 > **» +öp :** Belirttiniz kişiyi öpersiniz.
 > **» +aduketçek :** Aduket oynarsınız..
+> **» +güneş :** Güneş e bakarsınız.
 > **» +ay :** Ay a bakarsınız bakarsınız.
-> **» +beşlik :** Belirttiniz kişiyle beşlik çakarsınız.
+**» +yıldız :** Yıldızlara bakarsınız.
 > **» +dünya :** Dünya ya bakarsınız.
+> **» +kar:** Kar yağışına bakarsınız.
+
+> **» +beşlik :** Belirttiniz kişiyle beşlik çakarsınız.
 > **» +ejderha-yazı :** Bot sizin yazdınız cümleyi ejderha-yazı olarak değiştirir.
 > **» +emojiyazı :** Bot yazdınız cümleyi emoji-yazı olarak değiştirir.
 > **» +espri :** Bot sizin için espri yapar.
 > **» +kartopu :** Belirttiniz kişiyle kartopu oynarsınız.
 **» +kralol :** kral olursunuz.
 **» +slots :** Slots oynarsınız.
+**» +taksimdayı :** Taksimdayı!!!
+**» +tokat :**belirttiniz kişiye tokat atarsınız.
+**» +çıkmateklifi :** Belirttiniz kişiye çıkma teklifi edersiniz.
+**» +şekerye :** Şeker yersiniz.
+**» +adamasmaca :** Adam-asmaca oynarsınız.
+**» +stresçarkı :** Stres-çarkı döndürürsünüz.
+**» +duygulandırıcısöz :** Duygulandırıcı sözlere bakarsınız.
+**» +zarat :** Zar atarsınız, Bakalım size kaç çıkıcak. :)
+**» +nsfw :** nsfw bakarsınız. (Tavsiye etmeyiz :D)
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
