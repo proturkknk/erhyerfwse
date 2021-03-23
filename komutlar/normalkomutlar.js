@@ -35,7 +35,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
-> :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
+> :open_file_folder: **Botun Kod Paylaşım Ve Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
 > :round_pushpin: **Komut hakkında detaylı bilgi için: +yardım**
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
 **» Bağlantılar** 
