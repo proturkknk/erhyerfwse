@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
  const embed = new Discord.MessageEmbed()
- .setAuthor(`${client.user.username} Yardım Menüsü`,client.user.avatarURL())
+ .setAuthor(`${client.user.username} Yardım Menüsüne Hoşgeldin!`,client.user.avatarURL())
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
  .setDescription(`
