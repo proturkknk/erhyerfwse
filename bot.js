@@ -43,12 +43,6 @@ passport.use(
     }
   )
 );
-
-app.use(session({
-    secret: '...',
-    resave: false,
-    saveUninitialized: false
-}));
 app.use('/views',express.static(path.join(__dirname,'static')));
 app.set('view engine', 'ejs')
 app.get("/", (request, response) => {
@@ -59,6 +53,7 @@ app.get('/login', passport.authenticate('discord'), function(req, res){
 })
 app.get('/home', checkAuth, (req, res) => {
   res.render('home')
+  console.log(req.user)
 })
 app.listen(process.env.PORT);
 setInterval(() => {
@@ -419,5 +414,5 @@ client.users.cache.get(botOwnerID).send(embed)
 
 function checkAuth(req, res, next) {
     if (req.isAuthenticated()) return next();
-    res.redirect("/login")
+    res.redirect("https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login")
 }
