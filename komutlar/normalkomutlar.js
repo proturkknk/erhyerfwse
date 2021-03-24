@@ -32,7 +32,8 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
 **» +sözlük :** Belirttiniz kelimenin sözlük anlamına bakarsınız.
 *» +prefix :** Botun prefixini değiştirirsiniz.
-*» +kuruluş-tarihi :** botun kuruluş tarihine bakarsınız.
+*» +kuruluş-tarihi :** Botun kuruluş tarihine bakarsınız.
+*» +toplam-komut :** Botun toplam kaç tane komutu olduğuna bakarsınız.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
