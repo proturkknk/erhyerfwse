@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const session = require("express-session")
 const ayarlar = require("./ayarlar.json");
 const chalk = require("chalk");
 const moment = require("moment");
@@ -9,16 +8,18 @@ const { Client, Util } = require("discord.js");
 const fs = require("fs");
 const db = require("quick.db");
 const http = require("http");
-const express = require("express");
 require("./util/eventLoader.js")(client);
 const path = require("path");
 const snekfetch = require("snekfetch");
+const express = require("express")
+const session = require("express-session")
 const passport = require("passport")
 const Strategy = require("passport-discord").Strategy
-
 const app = express();
-app.use(passport.initialize());
-app.use(passport.session());
+app.use('/views',express.static(path.join(__dirname,'static')));
+app.set('view engine', 'ejs')
+app.listen(process.env.PORT)
+
 passport.serializeUser(function(user, done) {
   done(null, user);
 });
@@ -48,14 +49,23 @@ app.set('view engine', 'ejs')
 app.get("/", (request, response) => {
   response.render('index')
 });
-app.get('/login', passport.authenticate('discord'), function(req, res){
-  res.redirect('/home')
-})
+app.use(session({
+    secret: '...',
+    resave: false,
+    saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+app.get('/login',passport.authenticate('discord'), function(req, res) { res.redirect('/home') });
+
+app.get('/logout', function(req, res) {
+    req.logout();
+    res.redirect('/');
+});
 app.get('/home', checkAuth, (req, res) => {
-  res.render('home')
-  console.log(req.user)
+  res.render('home', {user: req.user})
 })
-app.listen(process.env.PORT);
+app.listen(8080);
 setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 280000);
