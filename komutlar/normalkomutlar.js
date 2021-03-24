@@ -24,7 +24,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +kilitaç :** Belirttiniz kanalın mesaj yazımını açar.
 > **» +ping :** Botun pingine bakarsınız.
 > **» +saat :** Saatin kaç olduğuna bakarsınız.
-> **» +yapımcım :** Botun yapımcısına bakarsınız.
+> **» +kurucu :** Botun yapımcısına bakarsınız.
 > **» +token :** Botun tokenine bakarsınız :D.
 > **» +sunucubilgi :** Bulundunuz sunucu bilgilerini bot sizin için gösterir.
 > **» +ekibimiz :** Xaine Bot Ekibini gösterir.
@@ -32,6 +32,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
 **» +sözlük :** Belirttiniz kelimenin sözlük anlamına bakarsınız.
 *» +prefix :** Botun prefixini değiştirirsiniz.
+*» +kuruluş-tarihi :** botun kuruluş tarihine bakarsınız.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
