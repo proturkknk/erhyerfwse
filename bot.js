@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const session = require("express-session")
 const ayarlar = require("./ayarlar.json");
 const chalk = require("chalk");
 const moment = require("moment");
@@ -16,6 +17,38 @@ const passport = require("passport")
 const Strategy = require("passport-discord").Strategy
 
 const app = express();
+app.use(passport.initialize());
+app.use(passport.session());
+passport.serializeUser(function(user, done) {
+  done(null, user);
+});
+passport.deserializeUser(function(obj, done) {
+  done(null, obj);
+});
+
+var scopes = ["identify", "guilds"];
+
+passport.use(
+  new Strategy(
+    {
+      clientID: "774235071653216286",
+      clientSecret: process.env.SECRET,
+      callbackURL: "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/",
+      scope: scopes
+    },
+    function(accessToken, refreshToken, profile, done) {
+      process.nextTick(function() {
+        return done(null, profile);
+      });
+    }
+  )
+);
+
+app.use(session({
+    secret: '...',
+    resave: false,
+    saveUninitialized: false
+}));
 app.use('/views',express.static(path.join(__dirname,'static')));
 app.set('view engine', 'ejs')
 app.get("/", (request, response) => {
