@@ -33,7 +33,7 @@ passport.use(
     {
       clientID: "774235071653216286",
       clientSecret: process.env.SECRET,
-      callbackURL: "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/",
+      callbackURL: "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login",
       scope: scopes
     },
     function(accessToken, refreshToken, profile, done) {
@@ -54,8 +54,11 @@ app.set('view engine', 'ejs')
 app.get("/", (request, response) => {
   response.render('index')
 });
-app.get('/login', (req, res) => {
-  
+app.get('/login', passport.authenticate('discord'), function(req, res){
+  res.redirect('/home')
+})
+app.get('/home', checkAuth, (req, res) => {
+  res.render('home')
 })
 app.listen(process.env.PORT);
 setInterval(() => {
@@ -413,3 +416,8 @@ embed.setThumbnail(guild.iconURL)
 
 client.users.cache.get(botOwnerID).send(embed)
 });
+
+function checkAuth(req, res, next) {
+    if (req.isAuthenticated()) return next();
+    res.redirect("/login")
+}
