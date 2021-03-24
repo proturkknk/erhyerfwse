@@ -12,11 +12,18 @@ const express = require("express");
 require("./util/eventLoader.js")(client);
 const path = require("path");
 const snekfetch = require("snekfetch");
+const passport = require("passport")
+const Strategy = require("passport-discord").Strategy
 
 const app = express();
+app.use('/views',express.static(path.join(__dirname,'static')));
+app.set('view engine', 'ejs')
 app.get("/", (request, response) => {
-  response.sendStatus(200);
+  response.render('index')
 });
+app.get('/login', (req, res) => {
+  
+})
 app.listen(process.env.PORT);
 setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);

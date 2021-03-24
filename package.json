@@ -32,7 +32,9 @@
     "superagent": "^6.1.0",
     "uninstall": "^0.0.0",
     "weather-js": "^2.0.0",
-    "wio.db": "^4.0.15"
+    "wio.db": "^4.0.15",
+    "ejs": "^3.1.6",
+    "passport": "^0.4.1"
   },
   "engines": {
     "node": "12.x"
