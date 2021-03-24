@@ -27,17 +27,18 @@ module.exports = client => {
     client.guilds.cache.size+" Tane Sunucu!",
     " ✔ İyi Eğlenceler :)",
     " ✔ 7/24 Aktif!",
-    " ✔ Kurucularım: ! TREFAX#0362",
+    " ✔ Kurucum-yapımcım: (! TREFAX#0362)",
     " ✔ İyi Günler :)",
  " ✔ Prefix: + ",
 " ✔ Destek sunucumuz: https://discord.gg/Kekc2pU",
-    " ✔ Benim 7/24 aktif oldumu biliyor muydun?",
-" ✔ Bildir komutuyla şikayet-öneri de bulunabilceğini biliyor muydun?",
-" ✔ +saat komutunu kullanarak Türkiyenin saatini öğrenebilceni biliyor muydun?",
+    " ✔ Benim 7/24 aktif oldumu biliyor muydunuz?",
+" ✔ Bildir komutuyla şikayet-öneri de bulunabilceğinizi biliyor muydunuz?",
+" ✔ +saat komutunu kullanarak Türkiyenin saatini öğrenebilceğinizi biliyor muydunuz?",
       cmd+" ✔  Tane Komut! 😍",
      " ✔ Yeni komutlar! 😺",
       "✔ Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz.",
 " | +yardım | +bildir | +davet | +yapımcım | +ekibimiz | +prefix | ",
+"Güncelleme!: Yeni Yardım Menüleri!",
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
