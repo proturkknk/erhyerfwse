@@ -44,6 +44,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 **» Bağlantılar** 
 **[Destek Sunucusu](https://discord.gg/https://discord.gg/Kekc2pU)** **•** **
 `)
+.setImage(`https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif`)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();
