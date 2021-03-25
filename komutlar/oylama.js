@@ -65,7 +65,7 @@ exports.run = (client, message, args) => {
 
             .setTimestamp()
 
-            .setFooter("= = Oylama Var! = =", client.user.avatarURL())
+            .setFooter("= = Xaine Bot Oylama Sistemi = =", client.user.avatarURL())
 
             .addField(`⁉️ __OYLAMA__ ⁉️`, `=> **${question}** `)
 
@@ -77,7 +77,7 @@ exports.run = (client, message, args) => {
 
           message.react("✅").then(sıra => {
 
-            message.react("⛔");
+            message.react("❌");
 
           });
 
@@ -119,7 +119,7 @@ exports.run = (client, message, args) => {
 
             .setTimestamp()
 
-            .setFooter("= = Oylama Var! = =", client.user.avatarURL())
+            .setFooter("= = Xaine Bot Oylama Sistemi = =", client.user.avatarURL())
 
             .addField(`⁉️ __OYLAMA__ ⁉️`, `=> **${question}** `)
 
@@ -129,7 +129,7 @@ exports.run = (client, message, args) => {
 
           message.react("✅").then(sıra => {
 
-            message.react("⛔");
+            message.react("❌");
 
           });
 
