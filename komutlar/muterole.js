@@ -13,7 +13,7 @@ exports.run = async (client, message, args) => {
   if (args[0] === "create") {
     message.guild.roles
       .create({
-        data: { name: args.slice(1).join(" ") || "muted", color: "#f4424b" }
+        data: { name: args.slice(1).join(" ") || "muted", color: "RANDOM" }
       })
       .then(role => {
         role.setPermissions(0);

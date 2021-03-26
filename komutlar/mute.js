@@ -17,9 +17,9 @@ exports.run = async (client, message, args) => {
   if (!args[0])
     return message.channel.send(`\`\`\`${
       message.content.split("mute")[0]
-    }mute  [duration]
-      ^^^^^^^^
-member is a required argument that is missing.\`\`\``);
+    }mute  [süresi]
+    
+Susturmak istediğiniz kişiyi etiketleyerek susturabilirsiniz.\`\`\``);
 
   let member =
     message.guild.members.cache.get(args[0]) ||
@@ -32,7 +32,7 @@ member is a required argument that is missing.\`\`\``);
     message.guild.members.cache.find(a =>
       a.user.username.toLowerCase().includes(args[0].toLowerCase())
     );
-  if (!member) return message.channel.send(`Member "${args[0]}" not found`);
+  if (!member) return message.channel.send(`Member "${args[0]}" bulunamadı`);
 
   let infinity = false;
   if (args[1]) {
@@ -61,13 +61,13 @@ member is a required argument that is missing.\`\`\``);
   args = args.filter(a => a !== "");
 
   let reason;
-  if (!args[1]) reason = "sebep: Hiçbir sebep belirtilmedi";
+  if (!args[1]) reason = "sebep: içbir sebep belirtilmedi";
   if (args[1]) reason = "Reason: " + args.slice(1).join(" ");
 
   if (!zaman) {
     member.roles.add(muteRoleFetch).then(() => {
       return message.channel.send(
-        `**${message.author.tag}** muted **${member.user.tag}** for infinity. ${reason}`
+        `**${member.user.tag} sessize alındı **${message.author.tag}**** başarıyla mutelendi. ${reason}`
       );
     });
   } else {
@@ -95,7 +95,7 @@ member is a required argument that is missing.\`\`\``);
 
     member.roles.add(muteRoleFetch).then(() => {
       message.channel.send(
-        `**${message.author.tag}** mutelendi **${member.user.tag}** tarafından ${zamann}. ${reason}`
+        `**${message.author.tag}** mutelendi **${member.user.tag}** tarafından ${zaman}. ${reason}`
       );
       setTimeout(() => {
         if (member.roles.has(muteRoleFetch)) {
