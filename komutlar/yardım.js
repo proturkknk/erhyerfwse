@@ -9,10 +9,14 @@ exports.run = (client, message, args) => {
 
  > \`+eğlence -> Eğlence Komutlarını gösterir.\`
 
+> \`+moderasyon -> Moderasyon komutlarını gösterir.\`
+
  > \`+normal -> Normal Komutları gösterir.\`
  
- > \`+davet -> Botun Davetini ve Destek Sunucunu gösterir.\``)
- .setFooter(`Xaine Bot Yardım Menüsü `)
+ > \`+davet -> Botun Davetini ve Destek Sunucunu gösterir.\`
+ > \`2020 Xaine | Tüm hakları saklıdır.
+
+ .setFooter(`Xaine Bot Yardım Menüsü `
     .setTimestamp()
     .setImage("https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif")
 message.channel.send(embed) 

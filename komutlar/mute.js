@@ -95,7 +95,7 @@ Susturmak istediğiniz kişiyi etiketleyerek susturabilirsiniz.\`\`\``);
 
     member.roles.add(muteRoleFetch).then(() => {
       message.channel.send(
-        `**${message.author.tag}** mutelendi **${member.user.tag}** tarafından ${zaman}. ${reason}`
+        `**${member.user.tag}** mutelendi **${message.author.tag}** tarafından ${zaman}. ${reason}`
       );
       setTimeout(() => {
         if (member.roles.has(muteRoleFetch)) {

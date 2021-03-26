@@ -70,7 +70,7 @@ exports.run = async (client, message, args) => {
       );
 
     database.set(`carl-mute-role.${message.guild.id}`, role.id);
-    return message.channel.send(`Set **${role.name}** as the muterole.`);
+    return message.channel.send(`Set **${role.name}** muterole olarak ayarlandı!`);
   }
 };
 exports.conf = {
