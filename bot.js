@@ -330,7 +330,7 @@ client.on("guildMemberAdd", async (member, message, msg) => {
           `Bir fake hesap sisteme yakalandı ve rolü verildi. **${member}**`
         )
         .setTimestamp()
-        .setColor("#E8C02A");
+        .setColor("RANDOM");
       kanal.send(embedd);
       member.roles.add(rol);
     } else {
