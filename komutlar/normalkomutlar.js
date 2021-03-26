@@ -30,12 +30,14 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 **» +sözlük :** Belirttiniz kelimenin sözlük anlamına bakarsınız.
 *» +kuruluş-tarihi :** Botun kuruluş tarihine bakarsınız.
 *» +toplam-komut :** Botun toplam kaç tane komutu olduğuna bakarsınız.
+*» +sunucukur :** Bot sizin için sunucu kurar.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
 > :open_file_folder: **Botun Kod Paylaşım Ve Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
 > :round_pushpin: **Komut hakkında detaylı bilgi için: +yardım**
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
+> :partying_face: ** Şikayet-öneride bulunmak isterseniz **bildir** komutunu kullanabilirsiniz!
 **» Bağlantılar** 
 **[Destek Sunucusu](https://discord.gg/https://discord.gg/Kekc2pU)** **•** **
 `)
