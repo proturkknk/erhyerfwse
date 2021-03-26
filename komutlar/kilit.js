@@ -35,5 +35,5 @@ exports.conf = {
 };
  
 exports.help = {
-  name: 'lock'
+  name: 'kilit'
 };
