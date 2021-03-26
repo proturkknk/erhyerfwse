@@ -9,7 +9,7 @@ var sonuç = Math.floor((Math.random() * sayı.length));
   let gamerwolf = new Discord.MessageEmbed()
 
 .setDescription(`**  İşte Tuttuğum Sayı ` + sayı[sonuç] + `  **`)
-.setColor('#313131')
+.setColor('RANDOM')
 message.channel.send(gamerwolf)};
 
 

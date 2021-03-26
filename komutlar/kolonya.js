@@ -4,7 +4,7 @@ const ayarlar = require('../ayarlar.json');
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
     .setAuthor('Getirin elinizi kolonya dökelim. :)')
-    .setColor('pink')
+    .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://media.giphy.com/media/SdxAuxpXZf9yNMvASS/giphy.gif`)

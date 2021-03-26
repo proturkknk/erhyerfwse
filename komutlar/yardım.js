@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
 
  > \`+eğlence -> Eğlence Komutlarını gösterir.\`
 
- > \`+normal -> Normal Komutlarını gösterir.\`
+ > \`+normal -> Normal Komutları gösterir.\`
  
  > \`+davet -> Botun Davetini ve Destek Sunucunu gösterir.\``)
  .setFooter(`Xaine Bot Yardım Menüsü `)
