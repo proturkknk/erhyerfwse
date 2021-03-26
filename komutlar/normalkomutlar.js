@@ -31,6 +31,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 *» +kuruluş-tarihi :** Botun kuruluş tarihine bakarsınız.
 *» +toplam-komut :** Botun toplam kaç tane komutu olduğuna bakarsınız.
 *» +sunucukur :** Bot sizin için sunucu kurar.
+*» +çekiliş :** Çekiliş yaparsınız.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
