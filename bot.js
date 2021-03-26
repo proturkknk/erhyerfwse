@@ -426,3 +426,8 @@ function checkAuth(req, res, next) {
     if (req.isAuthenticated()) return next();
     res.redirect("https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login")
 }
+
+client.on('roleDelete', async role => {
+const data = await require('quick.db').fetch(carl-mute-role.${role.guild.id});
+if(data && data === role.id) require('quick.db').delete(carl-mute-role.${role.guild.id}); 
+});
