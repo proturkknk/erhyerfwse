@@ -61,7 +61,7 @@ member is a required argument that is missing.\`\`\``);
   args = args.filter(a => a !== "");
 
   let reason;
-  if (!args[1]) reason = "Resaon: no reason given";
+  if (!args[1]) reason = "sebep: Hiçbir sebep belirtilmedi";
   if (args[1]) reason = "Reason: " + args.slice(1).join(" ");
 
   if (!zaman) {
