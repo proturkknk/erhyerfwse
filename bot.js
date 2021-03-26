@@ -11,14 +11,14 @@ const http = require("http");
 require("./util/eventLoader.js")(client);
 const path = require("path");
 const snekfetch = require("snekfetch");
-const express = require("express")
-const session = require("express-session")
-const passport = require("passport")
-const Strategy = require("passport-discord").Strategy
+const express = require("express");
+const session = require("express-session");
+const passport = require("passport");
+const Strategy = require("passport-discord").Strategy;
 const app = express();
-app.use('/views',express.static(path.join(__dirname,'static')));
-app.set('view engine', 'ejs')
-app.listen(process.env.PORT)
+app.use("/views", express.static(path.join(__dirname, "static")));
+app.set("view engine", "ejs");
+app.listen(process.env.PORT);
 
 passport.serializeUser(function(user, done) {
   done(null, user);
@@ -34,7 +34,8 @@ passport.use(
     {
       clientID: "774235071653216286",
       clientSecret: process.env.SECRET,
-      callbackURL: "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login",
+      callbackURL:
+        "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login",
       scope: scopes
     },
     function(accessToken, refreshToken, profile, done) {
@@ -44,27 +45,31 @@ passport.use(
     }
   )
 );
-app.use('/views',express.static(path.join(__dirname,'static')));
-app.set('view engine', 'ejs')
+app.use("/views", express.static(path.join(__dirname, "static")));
+app.set("view engine", "ejs");
 app.get("/", (request, response) => {
-  response.render('index')
+  response.render("index");
 });
-app.use(session({
-    secret: '...',
+app.use(
+  session({
+    secret: "...",
     resave: false,
     saveUninitialized: false
-}));
+  })
+);
 app.use(passport.initialize());
 app.use(passport.session());
-app.get('/login',passport.authenticate('discord'), function(req, res) { res.redirect('/home') });
-
-app.get('/logout', function(req, res) {
-    req.logout();
-    res.redirect('/');
+app.get("/login", passport.authenticate("discord"), function(req, res) {
+  res.redirect("/home");
 });
-app.get('/home', checkAuth, (req, res) => {
-  res.render('home', {user: req.user})
-})
+
+app.get("/logout", function(req, res) {
+  req.logout();
+  res.redirect("/");
+});
+app.get("/home", checkAuth, (req, res) => {
+  res.render("home", { user: req.user });
+});
 app.listen(8080);
 setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
@@ -169,7 +174,6 @@ client.on("error", e => {
 client.login(process.env.token);
 
 client.on("message", async message => {
-
   if (message.author.bot) return;
 
   if (!message.guild) return;
@@ -181,8 +185,7 @@ client.on("message", async message => {
   if (!message.content.startsWith(prefix)) return;
 
   if (!message.member)
-
-  message.member = await message.guild.fetchMember(message);
+    message.member = await message.guild.fetchMember(message);
 
   const args = message.content
 
@@ -195,102 +198,109 @@ client.on("message", async message => {
   const cmd = args.shift().toLowerCase();
 
   if (cmd.length === 0) return;
-  
+
   let command = client.commands.get(cmd);
 
   if (!command) command = client.commands.get(client.aliases.get(cmd));
 
   if (command) command.run(client, message, args);
-
 });
 
-client.on("message", async (message , bot) => {
-if (message.content.startsWith("/spotify")) {
+client.on("message", async (message, bot) => {
+  if (message.content.startsWith("/spotify")) {
     let user;
     if (message.mentions.users.first()) {
       user = message.mentions.users.first();
     } else {
       user = message.author;
     }
-    
-    let convert = require('parse-ms')
-    
-    let status = user.presence.activities[0];
-    
-    if (user.presence.activities.length === 0 || status.name !== "Spotify" && status.type !== "LISTENING") return message.channel.send("Bu kullanıcı Müzik Dinlemiyor.");
-    
 
-      let image = `https://i.scdn.co/image/${status.assets.largeImage.slice(8)}`,
-          url = `https://open.spotify.com/track/${status.syncID}`,
-          name = status.details,
-          artist = status.state,
-          album = status.assets.largeText,
-          timeStart = status.timestamps.start,
-          timeEnd = status.timestamps.end,
-          timeConvert = convert(timeEnd - timeStart);
-      
-      let minutes = timeConvert.minutes < 10 ? `0${timeConvert.minutes}` : timeConvert.minutes;
-      let seconds = timeConvert.seconds < 10 ? `0${timeConvert.seconds}` : timeConvert.seconds;
-      
-      let time = `${minutes}:${seconds}`;
-      
-      const embed = new Discord.MessageEmbed()
-      .setAuthor("Spotify Parça Bilgisi", "https://image.flaticon.com/icons/png/512/2111/2111624.png")
-      .setColor(0x1ED768)
+    let convert = require("parse-ms");
+
+    let status = user.presence.activities[0];
+
+    if (
+      user.presence.activities.length === 0 ||
+      (status.name !== "Spotify" && status.type !== "LISTENING")
+    )
+      return message.channel.send("Bu kullanıcı Müzik Dinlemiyor.");
+
+    let image = `https://i.scdn.co/image/${status.assets.largeImage.slice(8)}`,
+      url = `https://open.spotify.com/track/${status.syncID}`,
+      name = status.details,
+      artist = status.state,
+      album = status.assets.largeText,
+      timeStart = status.timestamps.start,
+      timeEnd = status.timestamps.end,
+      timeConvert = convert(timeEnd - timeStart);
+
+    let minutes =
+      timeConvert.minutes < 10
+        ? `0${timeConvert.minutes}`
+        : timeConvert.minutes;
+    let seconds =
+      timeConvert.seconds < 10
+        ? `0${timeConvert.seconds}`
+        : timeConvert.seconds;
+
+    let time = `${minutes}:${seconds}`;
+
+    const embed = new Discord.MessageEmbed()
+      .setAuthor(
+        "Spotify Parça Bilgisi",
+        "https://image.flaticon.com/icons/png/512/2111/2111624.png"
+      )
+      .setColor(0x1ed768)
       .setThumbnail(image)
       .addField("İsim:", name, true)
       .addField("Albüm:", album, true)
       .addField("Artist:", artist, true)
       .addField("Süre:", time, false)
-      .addField("Spotifyda Dinle!", `[\`${artist} - ${name}\`](${url})`, false)
-      message.channel.send(embed)
-    
+      .addField("Spotifyda Dinle!", `[\`${artist} - ${name}\`](${url})`, false);
+    message.channel.send(embed);
   }
-})
+});
 
 client.on("message", async (msg, member, guild) => {
-    let i = await db.fetch(`saas_${msg.guild.id}`);
-    if (i === "açık") {
-      if (msg.content.toLowerCase() === "sa") {
-        msg.reply("**Aleyküm Selam, Hoşgeldin. Nasılsın? :)**");
-      }
+  let i = await db.fetch(`saas_${msg.guild.id}`);
+  if (i === "açık") {
+    if (msg.content.toLowerCase() === "sa") {
+      msg.reply("**Aleyküm Selam, Hoşgeldin. Nasılsın? :)**");
     }
-  });
+  }
+});
 //Muteliyken sw den çıkana mute
-client.on('guildMemberAdd', async(member) => {
+client.on("guildMemberAdd", async member => {
   let mute = db.fetch(`muterol_${member.guild.id}`);
-  let mutelimi = db.fetch(`muteli_${member.guild.id + member.id}`)
+  let mutelimi = db.fetch(`muteli_${member.guild.id + member.id}`);
   if (!mutelimi) return;
   if (mutelimi == "muteli") {
-  member.roles.add(mute)
-   member.send("Muteliyken Sunucudan Çıktığın için Yeniden Mutelendin!")
-       const modlog = db.fetch(`modlogKK_${member.guild.id}`)
+    member.roles.add(mute);
+    member.send("Muteliyken Sunucudan Çıktığın için Yeniden Mutelendin!");
+    const modlog = db.fetch(`modlogKK_${member.guild.id}`);
     if (!modlog) return;
-     db.delete(`muteli_${member.guild.id + member.id}`)
-        const embed = new Discord.MessageEmbed()
+    db.delete(`muteli_${member.guild.id + member.id}`);
+    const embed = new Discord.MessageEmbed()
       .setThumbnail(member.avatarURL())
-      .setColor(0x00AE86)
+      .setColor(0x00ae86)
       .setTimestamp()
-      .addField('Eylem:', '**Mute**')
-      .addField('Kullanıcı:', `${member} (${member.id})`)
-      .addField('Yetkili:', `${client.user} (${client.user.id})`)
-      .addField('Süre', "10m")
-      .addField('Sebep', "Muteliyken Sunucudan Çıkmak.")
-     member.guild.channels.cache.get(modlog).send(embed);
+      .addField("Eylem:", "**Mute**")
+      .addField("Kullanıcı:", `${member} (${member.id})`)
+      .addField("Yetkili:", `${client.user} (${client.user.id})`)
+      .addField("Süre", "10m")
+      .addField("Sebep", "Muteliyken Sunucudan Çıkmak.");
+    member.guild.channels.cache.get(modlog).send(embed);
   }
-  })
-  //Muteliyken s
+});
+//Muteliyken s
 client.on("guildCreate", guild => {
-guild.owner.send(`
+  guild.owner.send(`
 **Merhaba, __${guild.owner.user.username}!__**
 **Beni __Kurucusu__ olduğun __${guild.name}__ sunucusuna eklediğin için teşekkürler!**
 
 Botumuzun destek sunucusuna gelmek isterseniz; (https://discord.gg/Kekc2pU) bu linkten  gelebilirsiniz.
-`)
-  
-  
-  
-})
+`);
+});
 client.on("guildMemberAdd", async (member, message, msg) => {
   const fakehesapp = db.fetch(`fake_${member.guild.id}`);
 
@@ -310,16 +320,15 @@ client.on("guildMemberAdd", async (member, message, msg) => {
         "Hesabınız 30 günden önce açıldığı için cezalıya atıldınız, yetkililere bildirerek açtırabilirsiniz."
       );
 
-      
       let kanalcık = await db.fetch(`fakekanal_${member.guild.id}`);
       let kanal = member.guild.channels.cache.find(r => r.id === kanalcık);
-      
-      
+
       const embedd = new Discord.MessageEmbed()
-      .setTitle("Fake hesap yakalandı!")
+        .setTitle("Fake hesap yakalandı!")
         .setTimestamp()
         .setDescription(
-          `Bir fake hesap sisteme yakalandı ve rolü verildi. **${member}**`)
+          `Bir fake hesap sisteme yakalandı ve rolü verildi. **${member}**`
+        )
         .setTimestamp()
         .setColor("#E8C02A");
       kanal.send(embedd);
@@ -328,106 +337,97 @@ client.on("guildMemberAdd", async (member, message, msg) => {
     }
   }
 });
-client.on('guildDelete', guild => {
+client.on("guildDelete", guild => {
+  let rrrsembed = new Discord.RichEmbed()
 
-let rrrsembed = new Discord.RichEmbed()
+    .setColor("RED")
+    .setTitle(" Bot Kicklendi ")
+    .addField("Sunucu Adı:", guild.name)
+    .addField("Sunucu sahibi", guild.owner)
+    .addField("Sunucu Sahibi'nin ID'si", guild.ownerID)
+    .addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
+    .addField("Sunucudaki Kişi Sayısı:", guild.memberCount);
 
-.setColor("RED")
-.setTitle(" Bot Kicklendi ")
-.addField("Sunucu Adı:", guild.name)
-.addField("Sunucu sahibi", guild.owner)
-.addField("Sunucu Sahibi'nin ID'si", guild.ownerID)
-.addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
-.addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
-
-   client.channels.get('822453879676600320').send(rrrsembed);
- 
+  client.channels.get("822453879676600320").send(rrrsembed);
 });
 
 //--------------------------------------------------------//
 
-client.on('guildCreate', guild => {
+client.on("guildCreate", guild => {
+  let rrrsembed = new Discord.RichEmbed()
 
-let rrrsembed = new Discord.RichEmbed()
+    .setColor("GREEN")
+    .setTitle(" Bot Eklendi ")
+    .addField("Sunucu Adı:", guild.name)
+    .addField("Sunucu sahibi", guild.owner)
+    .addField("Sunucu Sahibi'nin ID'si", guild.ownerID)
+    .addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
+    .addField("Sunucudaki Kişi Sayısı:", guild.memberCount);
 
-.setColor("GREEN")
-.setTitle(" Bot Eklendi ")
-.addField("Sunucu Adı:", guild.name)
-.addField("Sunucu sahibi", guild.owner)
-.addField("Sunucu Sahibi'nin ID'si", guild.ownerID)
-.addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
-.addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
-
-   client.channels.get('822453879676600320').send(rrrsembed);
-
+  client.channels.get("822453879676600320").send(rrrsembed);
 });
 
 client.on("guildCreate", async guild => {
-let embed = new Discord.MessageEmbed()
-var botOwnerID = "696365117063036986";
-var guildOwner = guild.owner.user
-var guildOwnerTag = guild.owner.user.tag
-var guildName = guild.name
-var guildMemberCount = guild.memberCount
+  let embed = new Discord.MessageEmbed();
+  var botOwnerID = "696365117063036986";
+  var guildOwner = guild.owner.user;
+  var guildOwnerTag = guild.owner.user.tag;
+  var guildName = guild.name;
+  var guildMemberCount = guild.memberCount;
 
-embed.setTitle(`Yeni Sunucu!`)
-embed.addField("Sunucu adı", guildName)
-embed.addField("Sunucu üye sayısı", guildMemberCount)
-embed.addField(`Sunucu sahibi`, guildOwnerTag)
-embed.addField("Şuan ki Kullanıcı : ",
-      client.guilds.cache
-        .reduce((a, b) => a + b.memberCount, 0)
-        .toLocaleString(),
-      true
-    )
-embed.addField(
-      "Şuan ki Sunucu sayısı",
-      client.guilds.cache.size.toLocaleString(),
-      true
-    )
-embed.setColor("RANDOM")
+  embed.setTitle(`Yeni Sunucu!`);
+  embed.addField("Sunucu adı", guildName);
+  embed.addField("Sunucu üye sayısı", guildMemberCount);
+  embed.addField(`Sunucu sahibi`, guildOwnerTag);
+  embed.addField(
+    "Şuan ki Kullanıcı : ",
+    client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString(),
+    true
+  );
+  embed.addField(
+    "Şuan ki Sunucu sayısı",
+    client.guilds.cache.size.toLocaleString(),
+    true
+  );
+  embed.setColor("RANDOM");
 
-embed.setFooter(guildName, guild.iconURL)
-embed.setThumbnail(guild.iconURL)
+  embed.setFooter(guildName, guild.iconURL);
+  embed.setThumbnail(guild.iconURL);
 
-client.users.cache.get(botOwnerID).send(embed)
-})
+  client.users.cache.get(botOwnerID).send(embed);
+});
 client.on("guildDelete", async guild => {
-let embed = new Discord.MessageEmbed()
-var botOwnerID = "696365117063036986";
-var guildOwner = guild.owner.user
-var guildOwnerTag = guild.owner.user.tag
-var guildName = guild.name
-var guildMemberCount = guild.memberCount
+  let embed = new Discord.MessageEmbed();
+  var botOwnerID = "696365117063036986";
+  var guildOwner = guild.owner.user;
+  var guildOwnerTag = guild.owner.user.tag;
+  var guildName = guild.name;
+  var guildMemberCount = guild.memberCount;
 
-embed.setTitle("Sunucudan Attılar!")
-embed.addField("Sunucu adı", guildName)
-embed.addField("Sunucu üye sayısı", guildMemberCount)
-embed.addField(`Sunucu sahibi`, guildOwnerTag)
-embed.addField("Şuan ki Kullanıcı : ",
-      client.guilds.cache
-        .reduce((a, b) => a + b.memberCount, 0)
-        .toLocaleString(),
-      true
-    )
-embed.addField(
-      "Şuan ki Sunucu sayısı",
-      client.guilds.cache.size.toLocaleString(),
-      true
-    )
-  embed.setColor("RED")
-embed.setFooter(guildName, guild.iconURL)
-embed.setThumbnail(guild.iconURL)
+  embed.setTitle("Sunucudan Attılar!");
+  embed.addField("Sunucu adı", guildName);
+  embed.addField("Sunucu üye sayısı", guildMemberCount);
+  embed.addField(`Sunucu sahibi`, guildOwnerTag);
+  embed.addField(
+    "Şuan ki Kullanıcı : ",
+    client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString(),
+    true
+  );
+  embed.addField(
+    "Şuan ki Sunucu sayısı",
+    client.guilds.cache.size.toLocaleString(),
+    true
+  );
+  embed.setColor("RED");
+  embed.setFooter(guildName, guild.iconURL);
+  embed.setThumbnail(guild.iconURL);
 
-client.users.cache.get(botOwnerID).send(embed)
+  client.users.cache.get(botOwnerID).send(embed);
 });
 
 function checkAuth(req, res, next) {
-    if (req.isAuthenticated()) return next();
-    res.redirect("https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login")
+  if (req.isAuthenticated()) return next();
+  res.redirect(
+    "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login"
+  );
 }
-
-client.on('roleDelete', async role => {
-const data = await require('quick.db').fetch(carl-mute-role.${role.guild.id});
-if(data && data === role.id) require('quick.db').delete(carl-mute-role.${role.guild.id}); 
-});
