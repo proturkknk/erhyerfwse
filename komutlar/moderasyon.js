@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 const EmbedFwhyCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
-.setTitle("**▬▬▬▬▬▬[** ©️ **Xaine Bot (V12)** ©️ **]▬▬▬▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`")
+.setTitle("**▬▬▬[** ©️ **Xaine Bot (V12)** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`")
 .setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
 .setDescription(`
 
@@ -15,7 +15,9 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +muterole :** Mute rolünü ayarlarsınız.
 > **» +kilit :** Bulunduğunuz kanalın mesaj yazımını kapatır.
 > **» +kilitaç :** Bulunduğunuz kanalın mesaj yazımını açar.
-
+> **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
+> **» +nuke :** Kanalı tekrar kurar ve tüm mesajları siler.
+*» +prefix :** Botun prefixini değiştirirsiniz.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**

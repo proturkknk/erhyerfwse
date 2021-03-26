@@ -14,14 +14,11 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +avatar :** Avatarınızı gösterir.
 > **» +davet :** Davet linklerini gösterir.
 > **» +yılbaşı :** Yılbaşına kalan zamanı gösterir.
-> **» +nuke :** Kanalı tekrar kurar ve tüm mesajları siler.
 > **» +hesapla :** Matematik işlemi hesaplarsınız.
 > **» +havadurumu :** Belirttiniz bölgenin hava durumuna bakarsınız.
 > **» +is :** Botun istatistik bilgilerine bakarsınız.
 > **» +bildir :** Şikayet-öneri de bulunursunuz.
 > **» +korona :** Belirttiniz ülkenin korona virüs bilgilerine bakarsınız (lütfen ingilizce olarak ülkeleri yazın.)
-> **» +kilit :** Belirttiniz kanala mesaj yazılmasını engeller.
-> **» +kilitaç :** Belirttiniz kanalın mesaj yazımını açar.
 > **» +ping :** Botun pingine bakarsınız.
 > **» +saat :** Saatin kaç olduğuna bakarsınız.
 > **» +kurucu :** Botun yapımcısına bakarsınız.
@@ -30,9 +27,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +kullanıcıbilgi :** Belirttiniz kullanıcının bilgilerini gösterir.
 > **» +ekibimiz :** Xaine Bot Ekibini gösterir.
 > **» +mcskin :** Belirttiniz ismin Minecraft skinine (karakter) bakarsınız.
-> **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
 **» +sözlük :** Belirttiniz kelimenin sözlük anlamına bakarsınız.
-*» +prefix :** Botun prefixini değiştirirsiniz.
 *» +kuruluş-tarihi :** Botun kuruluş tarihine bakarsınız.
 *» +toplam-komut :** Botun toplam kaç tane komutu olduğuna bakarsınız.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**

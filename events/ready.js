@@ -38,7 +38,7 @@ module.exports = client => {
      " ✔ Yeni komutlar! 😺",
       "✔ Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz.",
 " | +yardım | +bildir | +davet | +yapımcım | +ekibimiz | +prefix | ",
-"Güncelleme!: Yeni Yardım Menüleri!",
+"Güncelleme!: Yeni Moderasyon Komutları!",
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
