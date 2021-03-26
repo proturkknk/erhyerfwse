@@ -33,7 +33,7 @@ message.channel.send(embd.setDescription(arr[0]).setDescription('Xaine Bot eğle
 
               embd.setColor("RANDOM");
               embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
-              embd.setDescription("dondurma - xaine - atatürk - aşkölçer - balıktut - duello - efkarım - fbi - tersyazı - yazıtura - öp - aduketçek - ay - balık-tut - beşlik - dünya - ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - taksimdayı - tokat - yazı-tura - çıkma-teklifi - şekerye - düello - oylama - güneş - yıldız - kar - adamasmaca")
+              embd.setDescription("dondurma - xaine - atatürk - aşkölçer - balıktut - duello - efkarım - fbi - tersyazı - yazıtura - öp - aduketçek - ay - balık-tut - beşlik - dünya - ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - taksimdayı - tokat - yazı-tura - çıkma-teklifi - şekerye - su - düello - oylama - güneş - yıldız - kar - adamasmaca")
             msg.edit(embd)
            break;
           case "➡️":
