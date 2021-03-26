@@ -35,17 +35,7 @@ const pixel = new Discord.MessageEmbed()
   } else if (client.aliases.has(command)) {
     cmd = client.commands.get(client.aliases.get(command));//
   }
-  
-  if (cmd) {
-   if (cmd.conf.enabled === false) {
-      if (!ayarlar.sahip.includes(message.author.id) && !ayarlar.sahip.includes(message.author.id)) {
-        const embed = new Discord.MessageEmbed()//
-                    .setDescription(`:x: **${cmd.help.name}** isimli komut şuanda geçici olarak kullanıma kapalıdır!`)
-                    .setColor("RED")
-                message.channel.send({embed})
-                return
-      }//
-    }
+
     
     if (cmd.conf.permLevel === 1) {
 			if (!message.member.hasPermission("MANAGE_MESSAGES")) {//
@@ -96,4 +86,3 @@ const pixel = new Discord.MessageEmbed()
     if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
     cmd.run(client, message, params, perms);
   }
-}

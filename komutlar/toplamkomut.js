@@ -4,7 +4,7 @@ exports.run = function(client, message, args) {
 const embed = new Discord.MessageEmbed()
 .setTimestamp()
 .setFooter(`${message.author.tag} Tarafından İstendi.`)
-.addField(` Xaine Botta Bulunan Toplam Komut Sayısı`,`${client.commands.size}`)
+.addField(`Botta Bulunan Toplam Komut Sayısı`,`${client.commands.size}`)
   message.channel.send(embed)
   
   
