@@ -14,13 +14,13 @@
       body{
         background-color: #3fffec;
       }
-      .kod{
+      .container{
         text-align: center;
         align-items: center;
         height: 200px;
         justify-content: center;
       }
-      .kod button{
+      .container button{
         text-align: center;
         margin: 40px;
         align-items: center;
@@ -32,7 +32,7 @@
         color: white;
         position: relative;
       }
-      .kod button:hover{
+      .container button:hover{
         cursor: pointer;
       }
     </style>
@@ -41,9 +41,14 @@
     <h1 class="hg">
       Hoşgeldin <%=user.username%>
     </h1>
-    <div class="kod">
+    <div class="container">
       <button id="share">
         Kod Paylaş
+      </button>
+    </div>
+    <div class="container">
+      <button id="">
+        çıkış yap
       </button>
     </div>
     <script>

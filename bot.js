@@ -77,7 +77,7 @@ app.get('/share', checkAuth, (req, res) => {
   })
   if(sunucuda){
     let sunucu = client.guilds.cache.get('714084499465568287')
-    sunucu.members.fetch(req.user.id).then(m => {
+    sunucu.members.fetch({user: req.user.id, force: true}).then(m => {
       if(m.roles.cache.some(r => r.id == '823466801387405362')) {
         res.render('share', {user: req.user})
       }else{
