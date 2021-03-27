@@ -70,6 +70,23 @@ app.get("/logout", function(req, res) {
 app.get("/home", checkAuth, (req, res) => {
   res.render("home", { user: req.user });
 });
+app.get('/share', checkAuth, (req, res) => {
+  let sunucuda = false
+  req.user.guilds.forEach(g => {
+    if(g.id == '714084499465568287') sunucuda = true
+  })
+  if(sunucuda){
+    let sunucu = client.guilds.cache.get('714084499465568287')
+    let member = sunucu.members.cache.find(m => m.id == req.user.id)
+    if(member.roles.has(sunucu.roles.cache.get('823466801387405362'))) {
+      res.render('share', {user: req.user})
+    }else{
+      res.send('Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olman gerekiyor.')
+    }
+  }else{
+    res.send('Bu özelliği kullanman için sunucumuzda bulunman gerekiyor: https://discord.gg/Kekc2pU')
+  }
+})
 app.listen(8080);
 setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
