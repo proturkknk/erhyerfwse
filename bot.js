@@ -77,8 +77,9 @@ app.get('/share', checkAuth, (req, res) => {
   })
   if(sunucuda){
     let sunucu = client.guilds.cache.get('714084499465568287')
-    let member = sunucu.members.cache.find(m => m.id == req.user.id)
-    if(member.roles.has(sunucu.roles.cache.get('823466801387405362'))) {
+    let member = sunucu.members.cache.find(m => m.user.id == req.user.id)d)
+    console.log(member)
+    if(member.roles.has('823466801387405362')) {
       res.render('share', {user: req.user})
     }else{
       res.send('Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olman gerekiyor.')
