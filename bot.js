@@ -8,7 +8,7 @@ const { Client, Util } = require("discord.js");
 const fs = require("fs");
 const db = require("quick.db");
 const http = require("http");
-require("./util/eventLoader.js")(client);
+require("./utils/eventLoader.js")(client);
 const path = require("path");
 const snekfetch = require("snekfetch");
 const express = require("express");
@@ -77,9 +77,12 @@ app.get('/share', checkAuth, (req, res) => {
   })
   if(sunucuda){
     let sunucu = client.guilds.cache.get('714084499465568287')
-    let member = sunucu.members.cache.find(m => m.user.id == req.user.id)d)
+    let member
+    sunucu.fetchMembers().then(m => {
+      console.log(m.user.tag)
+    })
     console.log(member)
-    if(member.roles.has('823466801387405362')) {
+    if(true) {
       res.render('share', {user: req.user})
     }else{
       res.send('Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olman gerekiyor.')

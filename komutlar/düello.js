@@ -1,3 +1,4 @@
+/*
 const Discord = require('discord.js');
 const { stripIndents } = require('common-tags');
 const { randomRange, verify } = require('../util/util.js');
@@ -139,7 +140,7 @@ exports.run = async (client, message, args) => {
   
     
   }
-
+*/
 exports.conf = {
   enabled: true,
   guildOnly: false,
@@ -153,4 +154,3 @@ exports.help = {
   description: 'İstediğiniz bir kişi ile düello atarsınız!',
   usage: 'düello <@kullanıcı>'
 };
-   
