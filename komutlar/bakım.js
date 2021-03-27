@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const db = require('wio.db');
+const db = require("quick.db");
 exports.run = async (client, message, args) => {
   
   if(message.author.id !== '696365117063036986') {

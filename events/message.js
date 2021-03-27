@@ -86,7 +86,7 @@ const pixel = new Discord.MessageEmbed()
   let bakım = db.fetch('bakım');
   if(message.author.id !== ayarlar.sahip){
   if(bakım){
- return message.channel.send(`** :warning: Sizlere En iyi şekilde Verebilmek İçin Bakımdayız.\n❓ Bakım Sebebi: \`${bakım}\` Lütfen Daha Sonra Tekrar Deneyin.**`)
+ return message.channel.send(`** :warning: Sizlere En iyi şekilde Verebilmek İçin Bakımdayız.\n❓ Bakım Sebebi: \`${bakım}\` <:hourglass:825313852321169429> Lütfen Daha Sonra Tekrar Deneyin.**`)
      }
   }
     }
