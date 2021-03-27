@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const ayarlar = require('../ayarlar.json');
-const db = require('quick.db')
+const db = require('quick.db');
 let talkedRecently = new Set();
 
 module.exports = message => {
@@ -82,6 +82,14 @@ const pixel = new Discord.MessageEmbed()
 				return
 			}
 		}
+       if (cmd) {
+  let bakım = db.fetch('bakım');
+  if(message.author.id !== ayarlar.sahip){
+  if(bakım){
+ return message.channel.send(`**:alet: Sizlere En İyi Hizmeti Verebilmek İçin Bakımdayız.\n❓ Bakım Sebebi: \`${bakım}\`\n:yukleniyoo: Lütfen Daha Sonra Tekrar Deneyin.**`)
+     }
+  }
+    }
     if (perms < cmd.conf.permLevel) return;
     if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
     cmd.run(client, message, params, perms);

@@ -8,6 +8,7 @@ const { Client, Util } = require("discord.js");
 const fs = require("fs");
 const db = require("quick.db");
 const http = require("http");
+const huh = require('./bot.js')
 require("./utils/eventLoader.js")(client);
 const path = require("path");
 const snekfetch = require("snekfetch");
@@ -79,7 +80,7 @@ app.get('/share', checkAuth, (req, res) => {
     let sunucu = client.guilds.cache.get('714084499465568287')
     sunucu.members.fetch({user: req.user.id, force: true}).then(m => {
       if(m.roles.cache.some(r => r.id == '823466801387405362')) {
-        res.render('share', {user: req.user})
+        res.render('share', {user: req.user, huh: huh})
       }else{
         res.send('Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olman gerekiyor.')
       }
@@ -448,4 +449,10 @@ function checkAuth(req, res, next) {
   res.redirect(
     "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login"
   );
+}
+
+module.exports = {
+  test: function test(text) {
+    console.log(text)
+  }
 }
