@@ -9,16 +9,31 @@
     <style>
       .hg{
         text-align: center;
+        margin: 20px;
       }
       body{
         background-color: #3fffec;
       }
       .kod{
         text-align: center;
+        align-items: center;
+        height: 200px;
+        justify-content: center;
       }
       .kod button{
+        text-align: center;
+        margin: 40px;
+        align-items: center;
+        justify-content: center;
         width: 300px;
         height: 100px;
+        font-size: 40px;
+        background-color: orange;
+        color: white;
+        position: relative;
+      }
+      .kod button:hover{
+        cursor: pointer;
       }
     </style>
   </head>
@@ -27,9 +42,14 @@
       Hoşgeldin <%=user.username%>
     </h1>
     <div class="kod">
-      <button>
+      <button id="share">
         Kod Paylaş
       </button>
     </div>
+    <script>
+      document.getElementById('share').onclick = function() {
+        
+      }
+    </script>
   </body>
 </html>
