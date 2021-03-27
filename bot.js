@@ -77,16 +77,13 @@ app.get('/share', checkAuth, (req, res) => {
   })
   if(sunucuda){
     let sunucu = client.guilds.cache.get('714084499465568287')
-    let member
-    sunucu.fetchMembers().then(m => {
-      console.log(m.user.tag)
+    sunucu.members.fetch(req.user.id).then(m => {
+      if(m.roles.cache.some(r => r.id == '823466801387405362')) {
+        res.render('share', {user: req.user})
+      }else{
+        res.send('Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olman gerekiyor.')
+      }
     })
-    console.log(member)
-    if(true) {
-      res.render('share', {user: req.user})
-    }else{
-      res.send('Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olman gerekiyor.')
-    }
   }else{
     res.send('Bu özelliği kullanman için sunucumuzda bulunman gerekiyor: https://discord.gg/Kekc2pU')
   }
