@@ -20,6 +20,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
 > **» +nuke :** Kanalı tekrar kurar ve tüm mesajları siler.
 *» +prefix :** Botun prefixini değiştirirsiniz.
+*» +yavaşmod :** Bulunduğunuz kanalın yazma limitini belirlersiniz.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
