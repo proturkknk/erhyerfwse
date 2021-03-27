@@ -450,9 +450,3 @@ function checkAuth(req, res, next) {
     "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login"
   );
 }
-
-module.exports = {
-  test: function test(text) {
-    console.log(text)
-  }
-}
