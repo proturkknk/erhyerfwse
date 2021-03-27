@@ -38,8 +38,8 @@ exports.run = (client, message, args) => {
     const ilgincsözembed = new Discord.MessageEmbed()
     .setColor("RANDOM")
     .setAuthor(`İlginç Bilgi`, message.author.avatarURL())
-    .setFooter(`${message.author.username} bir ilginç bilgi öğrendi.`)
-    .setFooter(`Xaine Bot ilginç bilgi komutu`)
+    .setFooter(`${message.author.username} bir ilginç bilgi öğrendi. | Xaine Bot ilginç bilgi komutu`)
+    
   .setDescription(`${ilgincsöz}`)
     return message.channel.send(ilgincsözembed);
 };
