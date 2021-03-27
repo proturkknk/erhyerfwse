@@ -39,6 +39,7 @@ exports.run = (client, message, args) => {
     .setColor("RANDOM")
     .setAuthor(`İlginç Bilgi`, message.author.avatarURL())
     .setFooter(`${message.author.username} bir ilginç bilgi öğrendi.`)
+    .setFooter(`Xaine Bot ilginç bilgi komutu`)
   .setDescription(`${ilgincsöz}`)
     return message.channel.send(ilgincsözembed);
 };
