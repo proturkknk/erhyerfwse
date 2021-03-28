@@ -226,7 +226,7 @@ module.exports.run = async (bot, message, args) => {
 
             if (cevap.length === confirmation.length || tahmin) return message.channel.send(`**Tebrikler kelimeyi buldun! **${cevap}!`);
 
-            return message.channel.send(`Maalesef bilemedin kelime bu: **${cevap}**`);
+            return message.channel.send(`Malesef bilemediniz kelime bu: **${cevap}**`);
 
         } catch (err) {
 

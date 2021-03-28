@@ -3,7 +3,7 @@ exports.run = async (client, message, args) => {
 
   
 let istek = args.slice(0).join(' ')
-if(!istek) return message.channel.send('**şikayet veya öneri için +bildir(şikayet veya öneriniz)** ')
+if(!istek) return message.channel.send('**şikayet veya öneri için +bildir (şikayet veya öneriniz)** ')
 
 const embed = new Discord.MessageEmbed()
 .setTitle("Xaine bildirme Sistemi")
