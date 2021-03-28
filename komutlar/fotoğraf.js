@@ -8,6 +8,7 @@ exports.run = (client, message, params) => {
     .setTimestamp()
     .setDescription('')
         .setImage(`https://media.giphy.com/media/vu54y1Y4QRz4GouIWY/giphy.gif`)
+    .setFooter('Xaine Bot Fotoğraf Komutu')
     return message.channel.send(matador);
 };
 
