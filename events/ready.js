@@ -34,13 +34,12 @@ module.exports = client => {
     " ✔ Benim 7/24 aktif oldumu biliyor muydunuz?",
 " ✔ Bildir komutuyla şikayet-öneri de bulunabilceğinizi biliyor muydunuz?",
 " ✔ +saat komutunu kullanarak Türkiyenin saatini öğrenebilceğinizi biliyor muydunuz?",
-      cmd+" ✔  Tane Komut! 😍",
+      cmd+" ✔  Tane Komutum var! 😍",
      " ✔ Yeni komutlar! 😺",
       "✔ Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz.",
 " | +yardım | +bildir | +davet | +yapımcım | +ekibimiz | +prefix | ",
 "Güncelleme!: Yeni Moderasyon Ve Çekiliş Komutları!",
       "✔ Yeni Moderasyon ve Çekiliş komutlarımıza göz attınız mı?",
-         "Berat kandilimiz mübarek olsun! :) <3"
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
