@@ -37,7 +37,7 @@ passport.use(
       clientID: "774235071653216286",
       clientSecret: process.env.SECRET,
       callbackURL:
-        "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login",
+        "http://www.xaine.tk/login",
       scope: scopes
     },
     function(accessToken, refreshToken, profile, done) {
@@ -469,6 +469,6 @@ client.on("guildDelete", async guild => {
 function checkAuth(req, res, next) {
   if (req.isAuthenticated()) return next();
   res.redirect(
-    "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login"
+    "http://www.xaine.tk/login"
   );
 }
