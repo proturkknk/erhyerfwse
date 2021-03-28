@@ -16,7 +16,7 @@ const express = require("express");
 const session = require("express-session");
 const passport = require("passport");
 const Strategy = require("passport-discord").Strategy;
-const hook = new Discord.WebhookClient(825719691745820672, process.env.hook)
+const hook = new Discord.WebhookClient('825719691745820672', process.env.hook)
 const app = express();
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
@@ -100,6 +100,8 @@ app.get('/reedem', checkAuth, (req, res) => {
     sunucu.members.fetch({user: req.user.id, force: true}).then(m => {
       if(m.roles.cache.some(r => r.id == '823466801387405362')) {
         const kod = req.query.fname
+        if(!kod) return res.redirect('/home')
+        hook.send(req.user.username+' ('+req.user.id+') tarafından paylaşılan kod:\n\n```js\n'+kod+'```')
         res.redirect('/home')
       }else{
         res.send('Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olman gerekiyor.')
