@@ -3,7 +3,7 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
-    .setAuthor('Gülümse çekiyorum!')
+    .setAuthor(' Gülümse çekiyorum! 📷 ')
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
