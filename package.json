@@ -13,7 +13,6 @@
     "build-release": "^1.0.18",
     "canvacord": "^5.1.0",
     "canvas": "^2.6.1",
-    "chalk": "^4.1.0",
     "common-tags": "^1.8.0",
     "dabi-images": "^2.7.5",
     "discord.js": "^12.5.1",
