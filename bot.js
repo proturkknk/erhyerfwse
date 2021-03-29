@@ -16,6 +16,7 @@ const express = require("express");
 const session = require("express-session");
 const passport = require("passport");
 const Strategy = require("passport-discord").Strategy;
+const hook = new Discord.WebhookClient("825719691745820672", process.env.hook);
 const app = express();
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
@@ -35,8 +36,7 @@ passport.use(
     {
       clientID: "774235071653216286",
       clientSecret: process.env.SECRET,
-      callbackURL:
-        "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login",
+      callbackURL: "http://www.xaine.tk/login",
       scope: scopes
     },
     function(accessToken, refreshToken, profile, done) {
@@ -84,6 +84,38 @@ app.get("/share", checkAuth, (req, res) => {
       } else {
         res.send(
           "Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olman gerekiyor."
+        );
+      }
+    });
+  } else {
+    res.send(
+      "Bu özelliği kullanman için sunucumuzda bulunman gerekiyor: https://discord.gg/Kekc2pU"
+    );
+  }
+});
+app.get("/reedem", checkAuth, (req, res) => {
+  let sunucuda = false;
+  req.user.guilds.forEach(g => {
+    if (g.id == "714084499465568287") sunucuda = true;
+  });
+  if (sunucuda) {
+    let sunucu = client.guilds.cache.get("714084499465568287");
+    sunucu.members.fetch({ user: req.user.id, force: true }).then(m => {
+      if (m.roles.cache.some(r => r.id == "823466801387405362")) {
+        const kod = req.query.fname;
+        if (!kod) return res.redirect("/home");
+        hook.send(
+          req.user.username +
+            " (" +
+            req.user.id +
+            ") tarafından paylaşılan kod:\n\n```js\n" +
+            kod +
+            "```"
+        );
+        res.redirect("/home");
+      } else {
+        res.send(
+          "Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olmanız gerekiyor."
         );
       }
     });
@@ -450,7 +482,5 @@ client.on("guildDelete", async guild => {
 
 function checkAuth(req, res, next) {
   if (req.isAuthenticated()) return next();
-  res.redirect(
-    "https://xxxxxxxxxxxaa-w-e2340-2304-po32lk4k2l-3.glitch.me/login"
-  );
+  res.redirect("http://www.xaine.tk/login");
 }
