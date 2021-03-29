@@ -54,7 +54,7 @@ packages:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
-      mime-types: 2.1.28
+      mime-types: 2.1.29
     dev: false
     engines:
       node: '>= 6'
@@ -1522,10 +1522,10 @@ packages:
       '@discordjs/form-data': 3.0.1
       abort-controller: 3.0.0
       node-fetch: 2.6.1
-      prism-media: 1.2.6
+      prism-media: 1.2.9
       setimmediate: 1.0.5
       tweetnacl: 1.0.3
-      ws: 7.4.3
+      ws: 7.4.4
     dev: false
     engines:
       node: '>=12.0.0'
@@ -3329,6 +3329,14 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-0TO2yJ5YHYr7M2zzT7gDU1tbwHxEUWBCLt0lscSNpcdAfFyJOVEpRYNS7EXVcTLNj/25QO8gulHC5JtTzSE2UQ==
+  /mime-types/2.1.29:
+    dependencies:
+      mime-db: 1.46.0
+    dev: false
+    engines:
+      node: '>= 0.6'
+    resolution:
+      integrity: sha512-Y/jMt/S5sR9OaqteJtslsFZKWOIIqMACsJSiHghlCAyhf7jfVYjKBmLiX8OgpWeW+fjJ2b+Az69aPFPkUOY6xQ==
   /mime/1.6.0:
     dev: false
     engines:
@@ -4051,15 +4059,15 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
-  /prism-media/1.2.6:
+  /prism-media/1.2.9:
     dev: false
     peerDependencies:
-      '@discordjs/opus': ^0.4.0
+      '@discordjs/opus': ^0.5.0
       ffmpeg-static: ^4.2.7 || ^3.0.0 || ^2.4.0
       node-opus: ^0.3.3
-      opusscript: ^0.0.7
+      opusscript: ^0.0.8
     resolution:
-      integrity: sha512-I1Ys8HA+9aSKQ2jbkO3r6p9Z+tMpSssGhucgxXvc0sSpOi0kK550rDQnKtAS7Z5TzPQeLJdBmK2Br8x+5137lg==
+      integrity: sha512-UHCYuqHipbTR1ZsXr5eg4JUmHER8Ss4YEb9Azn+9zzJ7/jlTtD1h0lc4g6tNx3eMlB8Mp6bfll0LPMAV4R6r3Q==
   /process-nextick-args/2.0.1:
     dev: false
     resolution:
@@ -5272,7 +5280,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-  /ws/7.4.3:
+  /ws/7.4.4:
     dev: false
     engines:
       node: '>=8.3.0'
@@ -5280,7 +5288,7 @@ packages:
       bufferutil: ^4.0.1
       utf-8-validate: ^5.0.2
     resolution:
-      integrity: sha512-hr6vCR76GsossIRsr8OLR9acVVm1jyfEWvhbNjtgPOrfvAlKzvyeg/P6r8RuDjRyrcQoPQT7K0DGEPc7Ae6jzA==
+      integrity: sha512-Qm8k8ojNQIMx7S+Zp8u/uHOx7Qazv3Yv4q68MiWWWOJhiwG5W3x7iqmRtJo8xxrciZUY4vRxUTJCKuRnF28ZZw==
   /xhr/2.6.0:
     dependencies:
       global: 4.4.0
