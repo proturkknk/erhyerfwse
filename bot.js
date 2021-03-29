@@ -472,15 +472,3 @@ function checkAuth(req, res, next) {
     "http://www.xaine.tk/login"
   );
 }
-
-client.on("message", msg => {
-  const westrabumbe = new Discord.MessageEmbed()
-    .setColor("RANDOM")
-    .setDescription("Xaine bot size yardım için hazır!  -}\n Yardım için: +yardım);"
-  if (
-    msg.content.includes(<@${client.user.id}>) ||
-    msg.content.includes(<@!${client.user.id}>)
-  ) {
-    msg.channel.send(westrabumbe);
-  }
-});
