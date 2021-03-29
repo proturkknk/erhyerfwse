@@ -24,10 +24,6 @@ exports.run = (client, message, args) => {
       `> Sitemize Göz Atmak isterseniz`,
       `[Sitemiz](https://xainebot.tr.gg/)`
     )
-   .addField(
-      `> Kod paylaşım sitemiz`,
-      `[Kod Paylaşım Sitemiz](http://www.xaine.tk/)`
-    )
 .setImage(`https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif`)
     .setThumbnail(
       "https://cdn.discordapp.com/emojis/670167074584395816.gif?v=1"
