@@ -4,7 +4,7 @@ exports.run = function(client, message, args,params) {
 
  let destek = "826374034362728478"///destek log kanal id
 
- let yetkili = "826374118311460864" /// destek ekibi rol ID
+ let yetkili = "826378987038572565" /// destek ekibi rol ID
 
 message.channel.send(`Destek ekibi çağırıldı! Kısa sürede size yardıma geliceklerdir.`)
 
@@ -16,11 +16,11 @@ const embed = new Discord.MessageEmbed()
 
 .addField("Sunucu İsmi:", message.guild.name, true)
 
-.addField("Sunucu Sahbi:", message.guild.owner, true)
+.addField("Sunucu Sahibi:", message.guild.owner, true)
 
 .addField("Davet Linki:", invite.url, true)
 
-.setFooter(`Acilen yardıma gidin!`)
+.setFooter(`Acilen yardıma gitmeniz gerek!`)
 
 client.channels.cache.get(destek).send(embed).then(client.channels.cache.get(destek).send(`<@&${yetkili}>`))
 
