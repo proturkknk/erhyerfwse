@@ -25,6 +25,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +token :** Botun tokenine bakarsınız :D.
 > **» +sunucubilgi :** Bulundunuz sunucu bilgilerini bot sizin için gösterir.
 > **» +kullanıcıbilgi :** Belirttiniz kullanıcının bilgilerini gösterir.
+> **» +destek-ekibi :** Bulunduğunuz sunucuya botun **destek ekibi**ni  çağırır.
 > **» +ekibimiz :** Xaine Bot Ekibini gösterir.
 > **» +mcskin :** Belirttiniz ismin Minecraft skinine (karakter) bakarsınız.
 **» +sözlük :** Belirttiniz kelimenin sözlük anlamına bakarsınız.
@@ -39,6 +40,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > :round_pushpin: **Komut hakkında detaylı bilgi için: +yardım**
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
 > :partying_face: ** Şikayet-öneride bulunmak isterseniz **bildir** komutunu kullanabilirsiniz!
+> :man_technologist: Yardıma ihtiyacınız olduğu zaman **destek-ekibi** komutunu kullanınız, destek ekibimiz size yardıma gelecektir.
 **» Bağlantılar** 
 **[Destek Sunucusu](https://discord.gg/https://discord.gg/Kekc2pU)** **•** **
 `)
