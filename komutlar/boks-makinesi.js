@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
 exports.run = (client, message, args) => {
   
- var boksmakinesi = ['Boks Makinesi Sonucu ・ **3000 Boks Makinesi Kırıldı.** !', 
-                 'Boks Makinesi Sonucu ・ **100 Çook Yavaş Vurdun.**', 
+ var boksmakinesi = ['Boks Makinesi Sonucu ・ **3000 Boks Makinesi Kırıldı!** !', 
+                 'Boks Makinesi Sonucu ・ **100 Çook Yavaş Vurdun. Daha iyisini yapabilirsin!**', 
                  'Boks Makinesi Sonucu ・ **900 Eh İşte **', 
                  'Boks Makinesi Sonucu ・ **1000 İyi**',
-                 'Boks Makinesi Sonucu ・ **50 Kaplumbağamısın Bune Çooook Yavaş**', 
-                 'Boks Makinesi Sonucu ・ **2000 Çok İyi**', 
+                 'Boks Makinesi Sonucu ・ **50  Bune Çooook Yavaş! Daha iyisini yapabilirsin!**', 
+                 'Boks Makinesi Sonucu ・ **2000 Çok İyi!**', 
                  'Boks Makinesi Sonucu ・ **700 Daha İyisini Yapabilirsin.**',
                  'Boks Makinesi Sonucu ・ **500 Yanii Daha İyisini Yapabilirsin**', 
                  'Boks Makinesi Sonucu ・ **999 | 1 Puanla Kaçırdın Be.**', 
@@ -25,7 +25,7 @@ message.channel.send(gamerwolf)
 };
 
 exports.conf = {
-   aliases: ['boks-makinası']
+   aliases: ['boks-makinesi']
  };
 
  exports.help = {
