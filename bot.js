@@ -386,7 +386,7 @@ client.on("guildDelete", guild => {
 //--------------------------------------------------------//
 
 client.on("guildCreate", guild => {
-  let rrrsembed = new Discord.RichEmbed()
+  let rrrsembed = new Discord.MessageEmbed()
 
     .setColor("GREEN")
     .setTitle(" Bot Eklendi ")
