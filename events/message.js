@@ -91,6 +91,6 @@ const pixel = new Discord.MessageEmbed()
   }
     }
     if (perms < cmd.conf.permLevel) return;
-    if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send(" :warning: Olamaz! Sen botun karalistesinde bulunuyorsun botu kullanamazsın!")
+    if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
     cmd.run(client, message, params, perms);
   }
