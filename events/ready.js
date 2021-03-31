@@ -40,6 +40,7 @@ module.exports = client => {
 " | +yardım | +bildir | +davet | +yapımcım | +ekibimiz | +prefix | ",
 "Güncelleme!: Yeni Moderasyon Ve Çekiliş Komutları!",
       "✔ Yeni Moderasyon ve Çekiliş komutlarımıza göz attınız mı?",
+ " BAHADIR doğum günün kutlu olsun <3 iyiki doğmuşsun :)",
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
