@@ -1,22 +1,50 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js")
 
-exports.run = (client, message, args) => {
-message.channel.clone().then(knl => {
-  let position = message.channel.position;
-  knl.setPosition(position);
-  message.channel.delete();
-});
-  return message.reply("**Başarıyla bu kanalı nukeledim! :)**");
-}
+exports.run = async (client, message, args) => {
+
+  const onayembed = new Discord.MessageEmbed()
+  .setColor("RANDOM")
+  .setTimestamp()
+  .setAuthor("Nuke Komutu")
+  .setFooter("Onaylamak için 👍 emojisine, onaylamamak içinse 👎 emojisine tıklayabilirsiniz.")
+  .setDescription("** :warning: UYARI!** \n\nEğer nuke işlemini onaylarsanız bu kanal kalıcı olarak **silinecek**,\n**geri getirilemeyecektir!**\nAncak bu kanalın **kopyası oluşturulacaktır!** \n")
+  message.channel.send(onayembed).then(msg => {
+msg.react('👍').then(() => msg.react('👎'));
+
+const filter = (reaction, user) => {
+    return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
+};
+
+msg.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
+    .then(collected => {
+        const reaction = collected.first();
+
+        if (reaction.emoji.name === '👍') {
+      message.channel.clone({position: message.channel.position});
+      message.channel.delete();
+        } else {
+            message.reply('Nuke işlemi iptal edildi.');
+      msg.delete({timeout:3000})
+        }
+    })
+    .catch(collected => {
+        message.reply(' :warning: Bir hatayla karşılaştık! Lütfen daha sonra tekrar deneyiniz.');
+    });
+  
+})
+
+};
+
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ["nuke","nuk","nk"],
-  permLevel: 3
+  aliases: [],
+  permLevel: 3,
+  kategori: "sunucu"
 };
 
-exports.help = {
-    name: 'nuke',
-  description: 'belirtilen kanalı siler tekrar oluşturu işte',
+exports.help = { 
+    name: 'nuke', 
+  description: "Bot bulunduğunuz kanalı siler ve yeniden oluşturur.",
   usage: 'nuke'
-};
+}
