@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
   const onayembed = new Discord.MessageEmbed()
   .setColor("RANDOM")
   .setTimestamp()
-  .setAuthor("Nuke Komutu")
+  .setAuthor("Xaine Bot Nuke Komutu")
   .setFooter("Onaylamak için 👍 emojisine, onaylamamak içinse 👎 emojisine tıklayabilirsiniz.")
   .setDescription("** :warning: UYARI!** \n\nEğer nuke işlemini onaylarsanız bu kanal kalıcı olarak **silinecek**,\n**geri getirilemeyecektir!**\nAncak bu kanalın **kopyası oluşturulacaktır!** \n")
   message.channel.send(onayembed).then(msg => {
