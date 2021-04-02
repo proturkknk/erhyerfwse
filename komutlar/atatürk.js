@@ -13,7 +13,7 @@ exports.run = async(client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['Atatürk','ATATÜRK','Atatürk'],
   permLevel: 0
 };
 //KobsCode

@@ -21,7 +21,7 @@ const Embedmatador = new Discord.MessageEmbed()
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["beşlikçak"],
+  aliases: ['beşlikçak','Beşlik','BEŞLİK','beşlik'],
   permLevel: 0
 };
 exports.help = {

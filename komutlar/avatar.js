@@ -62,7 +62,7 @@ const embed = new Discord.MessageEmbed()
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['avatar'],
+  aliases: ['avatar','Avatar','AVATAR',],
   permLevel: 0
 };
 

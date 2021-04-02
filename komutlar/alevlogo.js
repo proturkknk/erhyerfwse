@@ -12,13 +12,13 @@ exports.run = async (client, message, args) => {
   .setTitle("Logo")
   .setColor("RANDOM")
   .setImage(linqo)
-  .setFooter('Alevli Logo Oluşturuldu')
+  .setFooter('Alevli Logo Oluşturuldu.')
   message.channel.send(embed)
 }
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: ['yazıfoto','yazı-foto','alevlilogo'],
+    aliases: ['yazıfoto','yazı-foto','alevlilogo','ALEVLİLOGO','alevli-logo','alev-logo'],
     permLevel: 0
 }
 

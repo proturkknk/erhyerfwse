@@ -25,7 +25,7 @@ message.channel.send(gamerwolf)
 };
 
 exports.conf = {
-   aliases: ['boks-makinesi']
+   aliases: ['boks-makinesi','BOKS-MAKİNESİ']
  };
 
  exports.help = {

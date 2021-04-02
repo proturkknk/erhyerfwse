@@ -11,7 +11,7 @@ exports.run = (client, message, params) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['atatürk-sözleri','Atatürk-sözleri','ATATÜRK-SÖZLERİ',],
   permLevel: 0
 };
 

@@ -29,7 +29,7 @@ var matador = [
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["balıktut"],
+  aliases: ['balıktut','Balıktut','Balık-tut','balık-tut','BALIKTUT','BALIK-TUT'],
   permLevel: 0
 };
 

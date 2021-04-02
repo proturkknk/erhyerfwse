@@ -16,7 +16,7 @@ message.channel.send("Bildiriminiz, ekibimize gönderildi, İyi günler dileriz.
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['Bildir','bildir','BİLDİR'],
   permLevel: 0  
 };
 
