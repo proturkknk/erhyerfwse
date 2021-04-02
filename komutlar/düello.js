@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
 		this.fighting.add(message.channel.id);
 		try {
 			if (!opponent.bot) {
-                await message.channel.send(`${opponent}, **düello isteği geldi.** **Düello'yu kabul ediyor musun? Lütfen ** (\`evet\` veya \`hayır\` **olarak cevap veriniz.**)`);
+                await message.channel.send(`${opponent}, **düello isteği geldi!** **Düello'yu kabul ediyor musun? Lütfen ** (\`evet\` veya \`hayır\` **olarak cevap veriniz.**)`);
 				const verification = await verify(message.channel, opponent);
 				if (!verification) {
 					this.fighting.delete(message.channel.id);
