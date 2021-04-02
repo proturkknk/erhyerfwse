@@ -1,26 +1,26 @@
 const Discord = require('discord.js');
 const { delay, randomRange, verify } = require('../utils/Util');
-const words = ['çikolata', 'vortex', 'odun', 'bomba', 'süt', 'şimşek', 'yıldırım', 'patlat', 'savaş', 'kelime', 'yok et', 'bilmem', 'öldür', 'sonsuzluk', 'gerçek'];
+const words = ['çikolata', 'vortex', 'odun', 'bomba', 'süt', 'şimşek', 'yıldırım', 'patlat', 'savaş', 'kelime', 'yok et', 'bilmem', 'öldür', 'sonsuzluk', 'gerçek','dondurma','klasik','xaine','discord'];
 
 exports.run = async (client, msg, args) => {
  
   this.fighting = new Set();
   
   let opponent = msg.mentions.users.first()
-	if (!opponent) return msg.reply("Oynamak istediğin kişiyi etiketlemelisin!")
+	if (!opponent) return msg.reply("Lütfen oynamak istediğiniz kişiyi etiketleyiniz.")
   
-  if (opponent.bot) return msg.reply('Botlar ile oynayamazsın!');
-		if (opponent.id === msg.author.id) return msg.reply('Kendin ile kapışamassın!');
-		if (this.fighting.has(msg.channel.id)) return msg.reply('Kanal başına sadece bir meydan okuma gelebilir!');
+  if (opponent.bot) return msg.reply('Botlar ile oynayamazsınız.');
+		if (opponent.id === msg.author.id) return msg.reply('Kendiniz ile oyayamazsınız.');
+		if (this.fighting.has(msg.channel.id)) return msg.reply(':warning: Hata!: Kanal başına sadece bir meydan okuma gelebilir.');
 		this.fighting.add(msg.channel.id);
 		try {
-			await msg.channel.send(`${opponent}, bu meydan okumayı kabul ediyor musun? (\`evet\` veya \`hayır\` olarak cevap veriniz.)`);
+			await msg.channel.send(`${opponent}, bu meydan okumayı kabul ediyor musun? Lütfen (\`evet\` veya \`hayır\` olarak cevap veriniz.)`);
 			const verification = await verify(msg.channel, opponent);
 			if (!verification) {
 				this.fighting.delete(msg.channel.id);
 				return msg.reply('Meydan okuman reddedildi...');
 			}
-			await msg.channel.send('Hazırlanın kelime geliyor...').then(m => {m.delete(3000)});
+			await msg.channel.send('Hazırlanın kelime geliyor!...').then(m => {m.delete(3000)});
 			const word = words[Math.floor(Math.random() * words.length)];
 			await msg.channel.send(`ŞİMDİ \`${word.toUpperCase()}\` YAZ!`);
 			await msg.channel.send(`_Kelimeyi tamamen küçük harfle yazınız._`);
@@ -42,7 +42,7 @@ exports.run = async (client, msg, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['yazı-yarışı', 'ilk-yazan-kazanır','kelime-yarışması'],
+  aliases: ['yazı-yarışı', 'ilk-yazan-kazanır','kelime-yarışması','yazan-kazanır','Yazan-kazanır','YAZAN-KAZANIR','yazankazanır','Yazankazanır','YAZANKAZANIR'],
   permLevel: 0,
   kategori: "eğlence"
 };
