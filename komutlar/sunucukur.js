@@ -62,7 +62,7 @@ await message.guild.channels.cache.find(a => a.name === "「💬」Chat").send('
 exports.conf = {
 enabled: true, 
 guildOnly: false,
-aliases: [], 
+aliases: ['sunucu-kur','Sunucu-kur','SUNUCU-KUR'], 
 permLevel: 0 
 };
 

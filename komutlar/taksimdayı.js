@@ -17,7 +17,7 @@ return message.channel.send(Embedmatador);
 exports.conf = {
   enabled: true,
   guild0nly: false,
-  aliases: ["dayı", "taksim"],
+  aliases: ["dayı", "taksim",'Taksim-dayı','taksim-dayı','TAKSİM-DAYI'],
   permLevel: 0
 };
 exports.help = {

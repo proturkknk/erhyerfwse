@@ -16,7 +16,7 @@ exports.run = (client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ['uyarı', 'uyarıver'],
+  aliases: ['uyarı', 'uyarıver','uyar','Uyar','UYAR'],
   permlevel: 0
 };
 

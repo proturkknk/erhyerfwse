@@ -24,6 +24,8 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +kurucu :** Botun yapımcısına bakarsınız.
 > **» +token :** Botun tokenine bakarsınız :D.
 > **» +sunucubilgi :** Bulundunuz sunucu bilgilerini bot sizin için gösterir.
+> **» +sunucu-kur :** Bot sizin için sunucu kurar.
+> **» +uyar :** Belirttiniz kullanıcıyı uyarır.
 > **» +kullanıcıbilgi :** Belirttiniz kullanıcının bilgilerini gösterir.
 > **» +destek-ekibi :** Bulunduğunuz sunucuya botun **destek ekibi**ni  çağırır.
 > **» +ekibimiz :** Xaine Bot Ekibini gösterir.

@@ -17,8 +17,8 @@ module.exports.run = async (client, message, args) => {
     let cores = os.cpus().length;
 
     let stats = new Discord.MessageEmbed()
-    .setAuthor('U-BOT')
-    .setTitle(`Statistics of ${client.user.username}`)
+    .setAuthor('Xaine Bot')
+    .setTitle(`İşte bilgilerim ${client.user.username}`)
     .setColor('RED')
     .addField("Sunucu sayısı", `${servercount}`, true)
     .addField("Kullanıcı sayısı", `${usercount}`, true)

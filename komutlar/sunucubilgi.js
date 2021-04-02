@@ -30,7 +30,7 @@ module.exports.run = async (bot, message, args, user) => {
 exports.conf = {
   enabled: true, 
   guildOnly: false,
-  aliases: ['sunucu-bilgi','sbilgi','s-bilgi'], 
+  aliases: ['sunucu-bilgi','sbilgi','s-bilgi','Sunucu-bilgi','SUNUCUBİLGİ'], 
   permLevel: 0 
 };
 

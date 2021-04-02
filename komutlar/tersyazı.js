@@ -9,7 +9,7 @@ message.channel.send(args.join(' ').split('').reverse().join(''))
 };
 
 exports.conf = {
-  aliases: [ 'ters' ],
+  aliases: [ 'tersyazı','Tersyazı','TERSYAZI','ters-yazı','Ters-yazı','TERS-YAZI' ],
   enabled: true,
   guildOnly: false,
   permLevel: 0

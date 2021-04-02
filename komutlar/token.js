@@ -19,7 +19,7 @@ exports.run = (client, message, params) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['token','Token','TOKEN'],
   permLevel: 0
 };
 exports.help = {

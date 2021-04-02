@@ -12,7 +12,7 @@ return message
 
 const Embedmatador = new Discord.MessageEmbed()
 
-    .setColor("0x808080")
+    .setColor("RANDOM")
     .setDescription(
       message.author.username + ` ${user}` + "** adlı kişiyi, Tokatladı! 🖐️ **"
     )
@@ -26,7 +26,7 @@ message.channel.send(Embedmatador);
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ["tokat-at", "tokatat"],
+  aliases: ["tokat-at", "tokatat","Tokatat","Tokat-at","TOKATAT","TOKAT-AT"],
   permLevel: 0
 };
 

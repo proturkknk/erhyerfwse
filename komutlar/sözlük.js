@@ -17,7 +17,7 @@ message.channel.send(embed)
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['sözlük'],
+  aliases: ['sözlük','Sözlük','SÖZLÜK'],
   permLevel: 0
 };
 exports.help = {

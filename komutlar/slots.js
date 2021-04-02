@@ -20,7 +20,7 @@ var matador3 = slots[Math.floor(Math.random() * slots.length)];
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["slot","Slot","SLOT"],
   permLevel: 0
 };
 

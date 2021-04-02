@@ -12,7 +12,7 @@ const embed = new Discord.MessageEmbed()
 exports.conf = {
     enabled: false,
     guildOnly: false,
-    aliases: ["toplam-komut","komut-sayısı","komutsayısı"],
+    aliases: ["toplam-komut","komut-sayısı","komutsayısı","Toplam-komut","TOPLAM-KOMUT"],
     permLevel: 0
   };
   

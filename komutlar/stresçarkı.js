@@ -56,7 +56,7 @@ exports.conf = {
 
   guildOnly: false, 
 
-  aliases: [],
+  aliases: ['stres-çarkı','Stres-çarkı','STRES-ÇARKI','stresçarkı','Stresçarkı','STRESÇARKI'],
 
   permLevel: 0 
 

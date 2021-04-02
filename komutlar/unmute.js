@@ -40,7 +40,7 @@ member is a required argument that is missing.\`\`\``);
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["unmute","Unmute","UNMUTE"],
   permLevel: 0
 };
 
