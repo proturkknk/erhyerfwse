@@ -53,7 +53,7 @@ message.channel.send(embd.setDescription(arr[0]).setDescription('Xaine Bot eğle
     exports.conf = {
         enabled: true,
         guildOnly: true,
-        aliases: ["Eğlence", "eğlence"],
+        aliases: ["Eğlence", "eğlence","EĞLENCE"],
         permLevel: 0
       };
       

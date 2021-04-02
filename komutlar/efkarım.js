@@ -11,7 +11,7 @@ return message.channel.send(`**matador** \n**Efkarınız:** **%${matador}** **Ef
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['Efkarım','EFKARIM','efkarım'],
   permLevel: 0
 };
 

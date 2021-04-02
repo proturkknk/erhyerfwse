@@ -36,7 +36,7 @@ message.channel.send(codeemıng)
 exports.conf = {
 enabled: true,
 guildOnly: false,
-aliases: [],
+aliases: ["fal","Fal","FAL"],
 permLevel: 0
 };
 

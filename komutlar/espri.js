@@ -35,7 +35,7 @@ message.channel.send(" Xaine | Espri yükleniyor.").then(message => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["espiri", "espri-yap", "yap-espri", "yapbi-espri"],
+  aliases: ["espiri", "espri-yap", "yap-espri", "yapbi-espri","espri","Espri","ESPRİ"],
   permLevel: 0
 };
 

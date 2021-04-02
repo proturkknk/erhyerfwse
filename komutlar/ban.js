@@ -26,7 +26,7 @@ exports.run = (client, message, args) => {
   message.guild.member(dızcılaraselam).ban();
 
   message.channel.send(
-    " Başarılı, " +
+    " Başarılı! " +
       dızcılaraselam +
       " İD'li kullanıcı **" +
       reason +

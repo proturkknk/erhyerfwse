@@ -11,7 +11,7 @@ if (mesaj.length < 1) return message.reply('Lütfen Duyuru Metnini Giriniz.');
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['duyuru'],
   permLevel: 0
 };
 

@@ -32,7 +32,7 @@ client.channels.cache.get(destek).send(embed).then(client.channels.cache.get(des
 
 exports.conf = {
 
-  aliases: [],
+  aliases: ['destek-ekibi','destekekibi','DESTEK-EKİBİ','DESTEKEKİBİ','Destek-ekibi','Destekekibi'],
 
   enabled: true,
 

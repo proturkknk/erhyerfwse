@@ -70,7 +70,7 @@ exports.conf = {
  
   guildOnly: true,
  
-  aliases: [],
+  aliases: ['emojiyazı','Emojiyazı','EMOJİYAZI','emoji-yazı','Emoji-yazı','EMOJİ-YAZI',],
  
   permLevel: 0
  
