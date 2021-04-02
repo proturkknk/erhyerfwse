@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
-const { delay, randomRange, verify } = require('../utils/yazmaoyunu.json');
-const words = ['çikolata', 'rache', 'odun', 'bomba', 'süt', 'şimşek', 'yıldırım', 'patlat', 'savaş', 'kelime', 'yok et', 'bilmem', 'öldür', 'sonsuzluk', 'gerçek'];
+const { delay, randomRange, verify } = require('../utils/Util');
+const words = ['çikolata', 'vortex', 'odun', 'bomba', 'süt', 'şimşek', 'yıldırım', 'patlat', 'savaş', 'kelime', 'yok et', 'bilmem', 'öldür', 'sonsuzluk', 'gerçek'];
 
 exports.run = async (client, msg, args) => {
-  
+ 
   this.fighting = new Set();
   
   let opponent = msg.mentions.users.first()
