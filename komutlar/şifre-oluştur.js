@@ -26,7 +26,7 @@ return sonuc;
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ["Şifre-oluştur","şifreoluştur"]
+  aliases: ["Şifre-oluştur","şifreoluştur","şifre-oluştur","ŞİFRE-OLUŞTUR"]
 };
 
 exports.help = {

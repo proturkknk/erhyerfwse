@@ -56,7 +56,7 @@ const liste = await db.fetch('list');
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['yazıtura','turayazı','paraçevir','paradöndür'],
+  aliases: ['yazıtura','turayazı','paraçevir','paradöndür','Yazıtura','YAZITURA','yazı-tura',],
   permLevel: 0
 };
 

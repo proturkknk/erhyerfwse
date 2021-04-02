@@ -14,7 +14,7 @@ exports.run = function(bot, message) {
 
 exports.conf = {
   enabled: true,
-  aliases: ['zar'],
+  aliases: ['zarat','Zarat','ZARAT'],
   guildOnly: false,
   permLevel: 0
 };

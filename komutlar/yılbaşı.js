@@ -15,7 +15,7 @@ return message.channel.send(
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['yılbaşı','Yılbaşı','YILBAŞI'],
   kategori: "eğlence",
   permLevel: 0
 };

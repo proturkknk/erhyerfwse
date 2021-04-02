@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['Şiir','şiir'],
+  aliases: ['Şiir','şiir','ŞİİR'],
   permLevel: 0
 };
 

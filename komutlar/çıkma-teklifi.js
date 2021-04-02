@@ -21,7 +21,7 @@ exports.run = function(client, message, args) {
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ["çteklifet",'teklifet','çte'],
+  aliases: ["çteklifet",'teklifet','çte','çıkma-teklifi','Çıkma-teklifi','ÇIKMA-TEKLİFİ'],
   permLevel: 0
 };
 exports.help = {

@@ -25,7 +25,7 @@ message.channel.send(embed)
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['],
+  aliases: ['yardım','Yardım','YARDIM'],
   permLevel: 0
 };
 

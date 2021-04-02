@@ -23,7 +23,7 @@ const Embedmatador = new Discord.MessageEmbed()
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: [],
+  aliases: ['öp','öp','ÖP'],
   kategori: "eğlence",
   permLevel: 0
 };

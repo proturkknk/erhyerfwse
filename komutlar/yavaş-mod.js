@@ -30,7 +30,7 @@ request({
   exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["slow-mode", "slowmode", "yavas-mod", 'yavasmod', 'yavaşmod'],
+  aliases: ["slow-mode", "slowmode", "yavas-mod", 'yavasmod', 'yavaşmod','Yavaşmod','YAVAŞMOD'],
   permLevel: 3,
 };
 
