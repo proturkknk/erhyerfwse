@@ -246,7 +246,7 @@ exports.conf = {
 
   guildOnly: false,
 
-  aliases: ['adamasmaca'],
+  aliases: ['Adamasmaca','adam-asmaca','adamasmaca','ADAM-ASMACA'],
 
   permlevel: 0
 

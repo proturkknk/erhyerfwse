@@ -25,7 +25,7 @@ return message.channel.send(Embedmatador);
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["aduket-çek"],
+  aliases: ["aduket-çek","Aduket-çek","Aduketçek","aduketçek","ADUKET-ÇEK","ADUKETÇEK"],
   permLevel: 0
 };
 
