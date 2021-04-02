@@ -27,7 +27,7 @@ exports.run = async (client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['is'],
+  aliases: ['is','İs','İS','İstatistik','istatistik','İSTATİSTİK'],
   permLevel: 0
 };
 

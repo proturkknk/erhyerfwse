@@ -47,7 +47,7 @@ module.exports.run = async (bot, message, args) => {
 };
 
 module.exports.conf = {
-  aliases: [],
+  aliases: ['kick','Kick','KİCK'],
   permLevel: 2,
   enabled: true,
   guildOnly: true,

@@ -29,7 +29,7 @@ return msg.reply("**Matador | Kime kartopu atmak isterin ya isim yaz yada etiket
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['Kartopu','kartopu','KARTOPU','Kar-topu','kar-topu','KAR-TOPU'],
   permLevel: 0
 };
 

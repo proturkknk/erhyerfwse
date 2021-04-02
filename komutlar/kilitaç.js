@@ -18,7 +18,7 @@ channel.send(new Discord.MessageEmbed()
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['kilit-aç','kilitaç','kanalkilidiaç','kanal-kilidi-aç'],
+  aliases: ['kilit-aç','kilitaç','kanalkilidiaç','kanal-kilidi-aç','KİLİTAÇ','kilit-aç'],
   permLevel: 0
 };
  

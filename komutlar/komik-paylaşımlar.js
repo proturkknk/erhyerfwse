@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['komik','vine'],
+  aliases: ['Komik-paylaşımlar','vine','Vine','VİNE','komik-paylaşımlar','KOMİK-PAYLAŞIMLAR','Komik'],
   permLevel: 0
 };
 
