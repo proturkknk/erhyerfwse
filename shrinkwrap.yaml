@@ -18,7 +18,6 @@ dependencies:
   snekfetch: 4.0.4
   sozluk-api: 1.0.2
   superagent: 6.1.0
-  tcmb-doviz: 1.0.6
   weather-js: 2.0.0
 packages:
   /@babel/runtime/7.13.10:
@@ -537,13 +536,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
-  /axios/0.19.2:
-    dependencies:
-      follow-redirects: 1.5.10
-    deprecated: 'Critical security vulnerability fixed in v0.21.1. For more information, see https://github.com/axios/axios/pull/3410'
-    dev: false
-    resolution:
-      integrity: sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
   /axios/0.21.1:
     dependencies:
       follow-redirects: 1.13.3
@@ -759,12 +751,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
-  /debug/3.1.0:
-    dependencies:
-      ms: 2.0.0
-    dev: false
-    resolution:
-      integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
   /debug/4.3.1:
     dependencies:
       ms: 2.1.2
@@ -1034,14 +1020,6 @@ packages:
       node: '>=4.0'
     resolution:
       integrity: sha512-DUgl6+HDzB0iEptNQEXLx/KhTmDb8tZUHSeLqpnjpknR70H0nC2t9N73BK6fN4hOvJ84pKlIQVQ4k5FFlBedKA==
-  /follow-redirects/1.5.10:
-    dependencies:
-      debug: 3.1.0
-    dev: false
-    engines:
-      node: '>=4.0'
-    resolution:
-      integrity: sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
   /forever-agent/0.6.1:
     dev: false
     resolution:
@@ -2114,13 +2092,6 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-DUCttfhsnLCjwoDoFcI+B2iJgYa93vBnDUATYEeRx6sntCTdN01VnqsIuTlALXla/LWooNg0yEGeB+Y8WdFxGA==
-  /tcmb-doviz/1.0.6:
-    dependencies:
-      axios: 0.19.2
-      xml2js: 0.4.23
-    dev: false
-    resolution:
-      integrity: sha512-RmHpO+U/DeMNlBlyzgx5mnUN5HmHQBdi9ZrDd+HT9JV1upCpb7hbj0GZiiN9HJfHL/4FsN2eZsZBM5CpFUu65w==
   /timm/1.7.1:
     dev: false
     resolution:
@@ -2319,5 +2290,4 @@ specifiers:
   snekfetch: ^4.0.4
   sozluk-api: ^1.0.2
   superagent: ^6.1.0
-  tcmb-doviz: ^1.0.6
   weather-js: ^2.0.0
