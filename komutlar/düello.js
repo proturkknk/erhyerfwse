@@ -6,7 +6,7 @@ exports.run = async (client, message, args) => {
   this.fighting = new Set();
   
 	let opponent = message.mentions.users.first()
-	if (!opponent) return message.reply("Oynamak istediğin kişiyi etiketlemelisin")
+	if (!opponent) return message.reply("Lütfen oynamak istediğiniz kişiyi etiketleyiniz.")
   
   if (opponent.bot) return message.reply(' :warning: Botlar ile oynayamazsın!');
   if (opponent.id === message.author.id) return message.reply(' :warning: Kendin ile düello Atamazsın!');
@@ -53,7 +53,7 @@ exports.run = async (client, message, args) => {
 						time: 30000
 					});
 					if (!turn.size) {
-						await message.reply(`Üzgünüm ama, süre doldu!`);
+						await message.reply(`Üzgünüm ama süre doldu!`);
 						reset();
 						continue;
 					}
@@ -82,7 +82,7 @@ exports.run = async (client, message, args) => {
 					}
 					reset();
 				} else if (choice === 'kaç') {
-					await message.channel.send(`${user}, kaçtı! Korkak!`);
+					await message.channel.send(`${user}, Kaçtı!`);
 					forfeit();
 					break;
 				} else {
@@ -91,7 +91,7 @@ exports.run = async (client, message, args) => {
 			}
 			this.fighting.delete(message.channel.id);
             const winner = userHP > oppoHP ? message.author : opponent;
-			return message.channel.send(`Oyun bitti! Tebrikler, **${winner}** kazandı! \n**${message.author.username}**: ${userHP} :heartpulse: \n**${opponent.username}**: ${oppoHP} :heartpulse:`);
+			return message.channel.send(`Oyun bitti! Tebrikler, **${winner}** oyunu kazandı! \n**${message.author.username}**: ${userHP} :heartpulse: \n**${opponent.username}**: ${oppoHP} :heartpulse:`);
 		} catch (err) {
 			this.fighting.delete(message.channel.id);
 			throw err;
