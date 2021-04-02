@@ -15,7 +15,7 @@ exports.run = (client, msg, args) => {
  exports.conf = {
    enabled: true,
    guildOnly: false,
-   aliases: ['nsfw-4k','4knsfw'],
+   aliases: ['nsfw','Nsfw','NSFW'],
    permLevel: 0
  };
 

@@ -109,7 +109,7 @@ Susturmak istediğiniz kişiyi etiketleyerek susturabilirsiniz.\`\`\``);
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['mute','Mute','MUTE'],
   permLevel: 0
 };
 

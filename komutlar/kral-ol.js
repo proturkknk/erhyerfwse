@@ -34,7 +34,7 @@ return message.channel.send(Embedmatador);
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["kral-ol"],
+  aliases: ["kral-ol","Kral-ol","KRAL-OL","kralol","Kralol","KRALOL"],
   permLevel: 0
 };
 

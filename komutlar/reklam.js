@@ -38,7 +38,7 @@ if (!message.guild) {
 exports.conf = {
  enabled: true,
  guildOnly: false,
-  aliases: ['link','reklam'],
+  aliases: ['link','reklam','Reklam','REKLAM'],
  permLevel: 0
 };
 

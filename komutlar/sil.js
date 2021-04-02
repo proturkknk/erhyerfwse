@@ -25,7 +25,7 @@ message.channel.send(`**${args[0]}** adet mesaj başarıyla silindi!`)
 exports.conf = {
   enabled: true, 
   guildOnly: false, 
-  aliases: ["sil", "mesaj-sil", "mesajları-sil"],
+  aliases: ["sil", "mesaj-sil", "mesajları-sil","Sil","SİL",],
   permLevel: `Mesajları yönet yetkisine sahip olmak gerekir.`
 };
 

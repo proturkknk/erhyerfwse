@@ -145,7 +145,7 @@ exports.conf = {
 
   guildOnly: false,
 
-  aliases: ["anket"],
+  aliases: ['anket','Anket','ANKET','oylama','Oylama','OYLAMA'],
 
   permLevel: 0
 

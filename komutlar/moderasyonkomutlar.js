@@ -17,6 +17,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +muterole :** Mute rolünü ayarlarsınız.
 > **» +kilit :** Bulunduğunuz kanalın mesaj yazımını kapatır.
 > **» +kilitaç :** Bulunduğunuz kanalın mesaj yazımını açar.
+*» +reklam :** Reklam engeli açarsınız.
 > **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
 > **» +nuke :** Kanalı tekrar kurar ve tüm mesajları siler.
 *» +prefix :** Botun prefixini değiştirirsiniz.
@@ -42,7 +43,7 @@ return message.channel.send(EmbedFwhyCode)
 exports.conf = {
     enabled: true, 
     guildOnly: false, 
-    aliases: [], 
+    aliases: ['moderasyon-komutları','Moderasyon-komutları','MODERASYON-KOMUTLARI','moderasyon','Moderasyon','MODERASYON'], 
     permLevel: 0 
 };
   

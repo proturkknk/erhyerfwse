@@ -13,7 +13,7 @@ message.channel.send(embed)
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: [],
+    aliases: ['saat','Saat','SAAT'],
     permLevel: 0
   };
   

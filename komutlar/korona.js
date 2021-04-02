@@ -52,7 +52,7 @@ if (!args.length) {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["corona", "covid", "covid19", "covıd", "virüs", "coronavirüs"],
+  aliases: ["corona", "covid", "covid19", "covıd", "virüs", "coronavirüs","korona","KORONA","Korona"],
   permLevel: 0
 };
 

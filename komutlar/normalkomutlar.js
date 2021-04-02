@@ -55,7 +55,7 @@ return message.channel.send(EmbedFwhyCode)
 exports.conf = {
     enabled: true, 
     guildOnly: false, 
-    aliases: [], 
+    aliases: ['normal','Normal','NORMAL','normal-komutlar','Normal-komutlar','NORMAL-KOMUTLAR'], 
     permLevel: 0 
 };
   

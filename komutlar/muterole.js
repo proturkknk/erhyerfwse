@@ -76,7 +76,7 @@ exports.run = async (client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['muterole','Muterole','MUTEROLE','muterol','Muterol','MUTEROL'],
   permLevel: 0
 };
 

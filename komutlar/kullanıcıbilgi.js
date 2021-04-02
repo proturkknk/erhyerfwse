@@ -37,7 +37,7 @@ let user;
 exports.conf = {
   enabled: true, 
   guildOnly: false,
-  aliases: ['profil-bilgi','profilbilgi','kullanıcı-bilgi','kullanıcıbilgi','k-bilgi','kbilgi'], 
+  aliases: ['profil-bilgi','profilbilgi','kullanıcı-bilgi','kullanıcıbilgi','k-bilgi','kbilgi','kullanıcıbilgi','KULLANICIBİLGİ'], 
   permLevel: 0 
 };
 

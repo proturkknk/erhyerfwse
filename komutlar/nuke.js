@@ -38,7 +38,7 @@ msg.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: [],
+  aliases: ['nuke','Nuke','NUKE'],
   permLevel: 3,
   kategori: "sunucu"
 };
