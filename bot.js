@@ -491,3 +491,35 @@ client.on("message" , async msg => {
  }
  
 });
+
+client.on('message', async message => {
+  
+let aktif = await db.fetch(`reklamEngelcodework_${message.channel.id}`)
+if (!aktif) return 
+  
+let reklamlar = ["discord.app", "discord.gg" ,"discordapp","discordgg", ".com", ".net", ".xyz", ".tk", ".pw", ".io", ".me", ".gg", "www.", "https", "http", ".gl", ".org", ".com.tr", ".biz", ".party", ".rf.gd", ".az", ".cf", ".me", ".in"]
+let kelimeler = message.content.slice(" ").split(/ +/g)
+
+if (reklamlar.some(word => message.content.toLowerCase().includes(word))) {
+  
+if (message.member.hasPermission("BAN_MEMBERS")) return; message.delete()
+  
+message.reply(':x: Hey! Reklam veya link atamazsın!').then(msg => msg.delete(7000)) 
+}
+});
+
+client.on("messageUpdate", async (oldMsg, newMsg) => {
+  
+let aktif = await db.fetch(`reklamEngelcodework_${oldMsg.channel.id}`)
+if(!aktif) return
+  
+let reklamlar = ["discord.app", "discord.gg","discordapp","discordgg", ".com", ".net", ".xyz", ".tk", ".pw", ".io", ".me", ".gg", "www.", "https", "http", ".gl", ".org", ".com.tr", ".biz", ".party", ".rf.gd", ".az", ".cf", ".me", ".in"]
+let kelimeler = newMsg.content.slice(" ").split(/ +/g)
+
+if (reklamlar.some(word => newMsg.content.toLowerCase().includes(word))) {
+  
+if (newMsg.member.hasPermission("BAN_MEMBERS")) return; newMsg.delete()
+  
+oldMsg.reply(':x: Hey! Reklam veya link atamazsın!').then(msg => msg.delete(7000)) 
+}
+});

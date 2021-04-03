@@ -12,24 +12,22 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 ▬▬▬▬▬▬[ :closed_lock_with_key: **Xaine Bot Moderasyon Komutları** :closed_lock_with_key: ]▬▬▬▬▬▬
 
 > **» +mute :** Belirttiniz kişiyi sunucuda susturursunuz.
+> **» +muterole :** Mute rolünü ayarlarsınız.
 > **» +ban :** Belirttiniz kişiyi sunucudan yasaklarsınız.
 > **» +kick :** Belirttiniz kişiyi  sunucudan atarsınız.
-> **» +muterole :** Mute rolünü ayarlarsınız.
 > **» +kilit :** Bulunduğunuz kanalın mesaj yazımını kapatır.
 > **» +kilitaç :** Bulunduğunuz kanalın mesaj yazımını açar.
-*» +reklam :** Reklam engeli açarsınız.
+*» +reklam-engel :** Reklam engeli açarsınız veya kapatırsınız.
 > **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
 > **» +nuke :** Kanalı tekrar kurar ve tüm mesajları siler.
 *» +prefix :** Botun prefixini değiştirirsiniz.
 *» +yavaşmod :** Bulunduğunuz kanalın yazma limitini belirlersiniz.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
-> :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
+> :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, Belirtmekten asla çekinmeyin!**
 > :open_file_folder: **Botun Kod Paylaşım Ve Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
 > :round_pushpin: **Komut hakkında detaylı bilgi için: +yardım**
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
-**» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/https://discord.gg/Kekc2pU)** **•** **
 `)
 .setImage(`https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif`)
  
