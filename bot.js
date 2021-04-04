@@ -523,3 +523,30 @@ if (newMsg.member.hasPermission("BAN_MEMBERS")) return; newMsg.delete()
 oldMsg.reply(':x: Hey! Reklam veya link atamazsın!').then(msg => msg.delete(7000)) 
 }
 });
+
+//eklendim
+client.on("guildCreate", async function(guild) {
+const owner = client.users.cache.get(guild.ownerID)
+const kanal = "822453879676600320" 
+const candycode = new Discord.MessageEmbed()
+.setTitle(`📥Yeni bir sunucuya eklendim`)
+.setColor("GREEN")
+.addField(`Sunucu Adı`, guild.name)
+.addField(`Sunucu Sahibi`, owner.username + "#" +owner.discriminator)
+.addField(`Sunucu Üye Sayısı`, guild.memberCount)
+client.channels.cache.get(kanal).send({embed: candycode}).catch(err => console.log("Kanala mesaj atamıyorum!"))
+})
+//candy code
+  
+//Atıldım
+client.on("guildDelete", async function(guild) {
+const owner = client.users.cache.get(guild.ownerID)
+const kanal = "822453879676600320" 
+const candycode = new Discord.MessageEmbed()
+.setTitle(`📤Bir sunucudan atıldım`)
+.setColor("RED")
+.addField(`Sunucu Adı`, guild.name)
+.addField(`Sunucu Sahibi`, owner.username + "#" + owner.discriminator)
+.addField(`Sunucu Üye Sayısı`, guild.memberCount)
+client.channels.cache.get(kanal).send({embed: candycode}).catch(err => console.log("Kanala mesaj atamıyorum!"))
+})
