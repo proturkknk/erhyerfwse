@@ -9,7 +9,7 @@ module.exports.run = async (Main, message, args) => {
       if(!reminderTime) return message.channel.send(`** :warning: Yanlışlık var!**\n**Geçerli Kullanım Örneği:** ${prefix}hatırlat 10m uyandır \n(min = Dakika)`);
 
       let Bilgi = new Discord.MessageEmbed()
-      .setColor('#ffffff')
+      .setColor('RANDOM')
       .setAuthor(`${message.author.username}`, message.author.displayAvatarURL({dynamic:true}))
       .setDescription("**Hatırlatıcı Başarıyla Ayarlandı!**")
       .setTimestamp()
@@ -19,7 +19,7 @@ module.exports.run = async (Main, message, args) => {
       
       setTimeout(function(){
         let Zamanlayıcı = new Discord.MessageEmbed()
-        .setColor('#ffffff')
+        .setColor('RANDOM')
         .setAuthor(`${message.author.username}`, message.author.displayAvatarURL({dynamic:true}))
         .addField("Hatırlatıcı... zaman doldu!", `\`\`\`${reminder}\`\`\``)
         .setTimestamp()
