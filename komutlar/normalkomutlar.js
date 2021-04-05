@@ -4,7 +4,7 @@ exports.run = (client, message,args) => {
  .setAuthor("Xaine", client.user.avatarURL)
   .setColor('RANDOM')
   .setTitle("Xaine Bot") 
-  .setDescription("[davet yazarak tüm davet linklerine ulaşabilirsiniz.](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8%22)%22")
+  .setDescription("[davet yazarak tüm davet linklerine ulaşabilirsiniz.](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8%22)")
 .addField("-Normal komutlar (22)", ' avatar - davet - yılbaşı - hesapla - havadurumu -  bildir - korona - ping - istatistik -  saat - yapımcım - token - sunucubilgi - ekibimiz - mcskin - uyar - duyuru - sözlük - kuruluş-tarihi - destek-ekibi - toplam-komut - çekiliş')
  .setImage("https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif")
 message.channel.send(bok)
