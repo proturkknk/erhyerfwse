@@ -42,8 +42,6 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
 > :partying_face: ** Şikayet-öneride bulunmak isterseniz **bildir** komutunu kullanabilirsiniz!
 > :man_technologist: Yardıma ihtiyacınız olduğu zaman **destek-ekibi** komutunu kullanınız, destek ekibimiz size yardıma gelecektir.
-**» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/https://discord.gg/Kekc2pU)** **•** **
 `)
 .setImage(`https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif`)
  
