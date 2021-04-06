@@ -88,9 +88,9 @@ Susturmak istediğiniz kişiyi etiketleyerek susturabilirsiniz.\`\`\``);
       zamann = zamann.split(" ")[0] + " days";
     if (zamann.includes("week") && zamann.split(" ")[0] > 1)
       zamann = zamann.split(" ")[0] + " weeks";
-    if (ms(zaman) >= 2147483647)
+    if (ms(zaman) >= 0)
       return message.channel.send(
-        "24 gün boyunca en fazla birini sessize alabilirsiniz."
+        " Şuanda birini sustaramazsınız!"
       ); // elleme treefax.
 
     member.roles.add(muteRoleFetch).then(() => {
