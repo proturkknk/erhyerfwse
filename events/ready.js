@@ -41,7 +41,7 @@ module.exports = client => {
 "Güncelleme!: Botumuzu telefondan kullanan kullanıcılarımız artık komutların baş harfi büyük olsa bile bot komutu gösterecektir.",
       "Güncelleme2!: Yeni komutlarımız eklendi!",
       "✔ Yeni Moderasyon ve Çekiliş komutlarımıza göz attınız mı?",
-      "En çok sevilen komutum: **dondurma**
+      "En çok sevilen komutum: **dondurma**"
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
