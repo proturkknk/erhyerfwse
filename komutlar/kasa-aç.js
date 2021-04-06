@@ -68,7 +68,7 @@ exports.run = async (client, message, args) => {
     ]
     var kasadancikanlar = kasadancikanlar[Math.floor(Math.random(1) * kasadancikanlar.length)]
     const embed  = new Discord.MessageEmbed()
-    .setImage("https://media.giphy.com/media/WHNY5xzj5UUzmADK7t/giphy.gif")
+    .setImage("https://cdn.wallpapersafari.com/40/16/8rTMh6.jpg")
     .setAuthor(`Kasayı açan kullanıcı ${message.author.tag}`, message.author.avatarURL)
     .setDescription(`${kasadancikanlar}`)
     .addField(`Kasa Fiyatı: 80$`,  
