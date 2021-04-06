@@ -11,15 +11,15 @@ exports.run = async (client, message, args) => {
   );
   if (!muteRoleFetch)
     return message.channel.send(
-      "Bu sunucuda muteleme rolü yok, birini ayarlamak için`-muterole 'veya oluşturmak için' -muterole [rol-adı] 'kullanın."
+      "Bu sunucuda muteleme rolü yok, birini ayarlamak için`+muterole 'veya oluşturmak için' +muterole [rol-adı] 'kullanın."
     );
 
   if (!args[0])
     return message.channel.send(`\`\`\`${
       message.content.split("unmute")[0]
-    }unmute  [reason]
+    }unmute  [sebep]
       ^^^^^^^^
-member is a required argument that is missing.\`\`\``);
+Lütfen susturması kaldırılıcak olan kişiyi etiketleyiniz ve sebebini belirtiniz.\`\`\``);
 
   let member =
     message.guild.members.cache.get(args[0]) ||
@@ -34,7 +34,7 @@ member is a required argument that is missing.\`\`\``);
     );
   if (!member) return message.channel.send(`Member "${args[0]}" not found`);
   member.roles.remove(muteRoleFetch).then(() => {
-    return message.channel.send("Unmute Başarılı**" + member.user.tag + "**");
+    return message.channel.send("Unmute Başarıyla açıldı! **" + member.user.tag + "**");
   });
 };
 exports.conf = {
