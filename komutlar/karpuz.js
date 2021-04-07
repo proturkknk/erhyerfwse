@@ -113,7 +113,7 @@ exports.run = async(client, msg, args) => {
                 const virus = new Discord.MessageEmbed()
             .setTitle('Karpuz gg şimdi ne yapıcaz?')
             .setColor('RED')
-                .addField('Karpuzunuz yere düştü! ','[ye] [çöpe at]')
+                .addField('Karpuzunuz yolda giderken yere düştü! ','[ye] [çöpe at]')
                 .setFooter("Xaine Bot")
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
