@@ -61,7 +61,7 @@ Susturmak istediğiniz kişiyi etiketleyerek susturabilirsiniz.\`\`\``);
   args = args.filter(a => a !== "");
 
   let reason;
-  if (!args[1]) reason = "sebep: içbir sebep belirtilmedi";
+  if (!args[1]) reason = "sebep:  Sebep belirtilmedi.";
   if (args[1]) reason = "Reason: " + args.slice(1).join(" ");
 
   if (!zaman) {
