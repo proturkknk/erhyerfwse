@@ -138,7 +138,7 @@ module.exports.run = async (bot, message, args) => {
 
                 await message.channel.send(stripIndents`
 
-            ${displayText === null ? '** Xaine Bot/ Adam Asmaca**!' : displayText ? '**Çok iyisin!**' : '**Yanlış Harf!**'}
+            ${displayText === null ? '** Xaine Bot / Adam Asmaca**!' : displayText ? '**Çok iyisin!**' : '**Yanlış Harf!**'}
 
                          **Kelime:**    \`${display.join(' ')}\`
 
@@ -224,7 +224,7 @@ module.exports.run = async (bot, message, args) => {
 
             oyndurum.delete(message.channel.id);
 
-            if (cevap.length === confirmation.length || tahmin) return message.channel.send(`**Tebrikler kelimeyi buldun! **${cevap}!`);
+            if (cevap.length === confirmation.length || tahmin) return message.channel.send(`**Tebrikler kelimeyi buldun! Kelime: **${cevap}!`);
 
             return message.channel.send(`Malesef bilemediniz kelime bu: **${cevap}**`);
 

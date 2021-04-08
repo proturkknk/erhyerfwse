@@ -11,7 +11,7 @@ return message.reply("**Aduket Çekeceğin Kişiyi Etiketlemelisin**");
 const Embedmatador = new Discord.MessageEmbed()
 
     .setDescription(
-      `${matador} ` + `**${message.author.username}** Size Aduket Çekti`
+      `${matador} ` + `**${message.author.username}** Size Aduket Çekti!`
     )
     .setImage(
       "https://cdn.discordapp.com/attachments/747769679984066582/748464442249052251/street-fighter-60854-18102018130021.gif"

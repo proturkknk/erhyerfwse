@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
   .setTitle("Logo")
   .setColor("RANDOM")
   .setImage(linqo)
-  .setFooter('Alevli Logo Oluşturuldu.')
+  .setFooter('Xaine Bot | Alevli Logo Oluşturuldu.')
   message.channel.send(embed)
 }
 exports.conf = {
