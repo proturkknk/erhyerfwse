@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 exports.run = function(client, message, args) {
     let teamtr = message.mentions.users.first();
-    if (!teamtr) return message.channel.send('**Çıkma Teklif Edeceğin Kişiyi Seçsene **');
+    if (!teamtr) return message.channel.send('**Çıkma teklifi edeceğin kişiyi etiketler misin?**');
     let dm = args.slice(1).join(' ');
     const dmat = new Discord.MessageEmbed()
     .setColor('RANDOM')
     .setTimestamp()
-    .setTitle('Biri Sana Çıkma Teklifi Etti!❤️:heart:')
-    .addField('Ne Cevap Vericen Acaba Bende Merak Ettim 😆', `Hadi Kabul Et Bence`)
+    .setTitle('Biri Sana Çıkma Teklifi Etti! ❤️')
+    .addField('Ne cevap vericeksin  acaba bende merak ettim 😆', `Hadi Kabul Et Bence, genede senin kararın. Not!: Eğlence için yapılmış komutdur gerçek anlamayın!`)
     .addField('Teklif Eden Kişi :', `➽ @${message.author.username}`)
     .setFooter('Çıkma Teklifi Xaine')
     teamtr.send(dmat);
