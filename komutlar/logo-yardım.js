@@ -14,10 +14,10 @@ exports.run = (client, message) => {
     .setColor("RANDOM")
     .setTitle("**  Xaine Bot  **")
     .setThumbnail(
-      "https://cdn.discordapp.com/emojis/770265448892858368.gif?v=1"
+      "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`
 
-**• Logo Komutları**
+**•Logo Komutları**
 
 > [+alev-logo]() → Alevli logo oluşturur. 
 > [+altın-logo]() → Altın logo oluşturur. 

@@ -13,7 +13,10 @@ exports.run = (client, message, args) => {
 
  > \`+normal -> Normal Komutları gösterir.\`
  
+ > \`+logo-yardım -> Logo yardım menüsünü gösterir.\`
+ 
  > \`+davet -> Botun Davetini ve Destek Sunucunu gösterir.\``)
+ 
  .setFooter(`Xaine Bot Yardım Menüsü `)
  .setFooter(`© 2020 Xaine Bot | Tüm hakları saklıdır`)
     .setTimestamp()
