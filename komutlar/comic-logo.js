@@ -23,7 +23,7 @@ exports.conf = {
   permLevel: 0
 };
 exports.help = {
-  name: 'comic',
+  name: 'comic-logo',
   description: 'Logo Yaparsınız',
   usage: ''
 };
