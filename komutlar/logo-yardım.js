@@ -4,7 +4,7 @@ exports.run = (client, message) => {
   if (!message.guild) {
     const ozelmesajuyari = new Discord.MessageEmbed()
       .setColor()
-      .setTimestamp()
+      .setTimestamp("RANDOM")
       .setAuthor(message.author.username, message.author.avatarURL)
       .addField("**Komutları Özel Mesajlarda Kullanılamaz!**");
     return message.author.send(ozelmesajuyari);
@@ -19,18 +19,12 @@ exports.run = (client, message) => {
 
 **• Logo Komutları**
 
-> [-arrow](https://discord.gg/qzHTkhjQgT) → arrow logo oluşturur. 
-> [-green](https://discord.gg/qzHTkhjQgT) → green logo oluşturur. 
-> [-alev](https://discord.gg/qzHTkhjQgT) → alev logo oluşturur. 
-> [-red](https://discord.gg/qzHTkhjQgT) → red logo oluşturur. 
-> [-kalp](https://discord.gg/qzHTkhjQgT) → kalp logo oluşturur. 
+> [+alev-logo]() → Alevli logo oluşturur. 
+> [+altın-logo]() → Altın logo oluşturur. 
+> [+bubble-logo]() → Bubble logo oluşturur. 
+> [+comic-logo]() → comic logo oluşturur. 
+> [+discord-logo]() → Discord logo oluşturur. 
 
-**• Bilgilendirme**
-
-> :bulb: **Discord Js Sürümü : 12.5.0**
-> :robot: **Yapımcım : Ahmet Samet#1226**
-> :eye_in_speech_bubble: **Sürümüm : 2.0.1**
-© 2021 Frizone | Tüm hakları saklıdır.
 `);
 
   return message.channel.send(EmbedCrewCode).then;
@@ -38,12 +32,12 @@ exports.run = (client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ["logo-yardım","Logo-yardım","LOGO-YARDIM"],
   permLevel: 0
 };
 
 exports.help = {
   name: "logo",
   description: "Botun Komut Listesini Gösterir!",
-  usage: "-logo"
+  usage: "+logo"
 };
