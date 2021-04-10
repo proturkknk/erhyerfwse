@@ -18,19 +18,7 @@ module.exports = message => {
   let params = message.content.split(' ').slice(1);//
   let perms = client.elevation(message);
   let cmd;
-   if (!client.commands.has(command)) {
-    if (client.aliases.has(command)) {
-      cmd = client.commands.get(client.aliases.get(command));
-    } else {
-      if(command == '') return;
-const pixel = new Discord.MessageEmbed()
-.setDescription(":warning: Botda `" + command + '` adında bir komut bulunamadı.')
-.setColor('RANDOM')
-.setTimestamp()
-    message.reply(pixel)//Xaine
-  }
-  }
-  }
+  
   if (client.commands.has(command)) {
     cmd = client.commands.get(command);
   } else if (client.aliases.has(command)) {
@@ -94,3 +82,4 @@ const pixel = new Discord.MessageEmbed()
     if (perms < cmd.conf.permLevel) return;
     if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
     cmd.run(client, message, params, perms);
+  }
