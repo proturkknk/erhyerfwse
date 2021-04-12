@@ -29,6 +29,7 @@ module.exports = client => {
     " ✔ 7/24 Aktif!",
     " ✔ Kurucum-yapımcım: (! TREFAX#0362)",
     " ✔ İyi Günler :)",
+      "Hayırlı ramazanlar!",
  " ✔ Prefix: + ",
 " ✔ Destek sunucumuz: https://discord.gg/Kekc2pU",
     " ✔ Benim 7/24 aktif oldumu biliyor muydunuz?",
@@ -38,11 +39,11 @@ module.exports = client => {
      " ✔ Yeni komutlar! 😺",
       "✔ Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz.",
 " | +yardım | +bildir | +davet | +yapımcım | +ekibimiz | +prefix | ",
-"Güncelleme!: Botumuzu telefondan kullanan kullanıcılarımız artık komutların baş harfi büyük olsa bile bot komutu gösterecektir.",
+"Güncelleme!: Bota yeni ramazan komutu eklendi! Hayırlı ramazanlar!",
       "Güncelleme2!: Yeni komutlarımız eklendi!",
       "✔ Yeni Moderasyon ve Çekiliş komutlarımıza göz attınız mı?",
       "En çok sevilen komutum: **dondurma**",
-      "Güncelleme3!: Yeni **logo-yardım** menüsü eklendi!"
+      "Güncelleme3!: Yeni **gif-yardım** menüsü eklendi!"
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
