@@ -33,7 +33,7 @@ message.channel.send(embd.setDescription(arr[0]).setDescription('Xaine Bot eğle
 
               embd.setColor("RANDOM");
               embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
-              embd.setDescription("dondurma - xaine -  aşkölçer - balıktut - düello - efkarım - tersyazı - yazıtura - öp - aduketçek -  balık-tut - beşlik -  ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - taksimdayı - tokat - yazı-tura - çıkma-teklifi - şekerye -  düello - oylama -  yıldız - kar - adamasmaca - fotoğraf - alkış - napim")
+              embd.setDescription("dondurma - xaine -  aşkölçer - balıktut - düello - efkarım - tersyazı - yazıtura - öp - aduketçek -  balık-tut - beşlik -  ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - tokat - yazı-tura - çıkma-teklifi -   düello - oylama -  yıldız - kar - adamasmaca ")
             msg.edit(embd)
            break;
           case "➡️":
@@ -42,7 +42,7 @@ message.channel.send(embd.setDescription(arr[0]).setDescription('Xaine Bot eğle
             reaction.users.remove(user).catch(console.error);
               embd.setColor("RANDOM");
               embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
-              embd.setDescription("stresçarkı - duygulandırıcı-söz - zarat - nsfw - gökyüzü - atatürk-sözleri - fal - boks-makinesi - şifre-oluştur - ağla - masketak - sevgili - asker - sayıtut - kolonya - kandil - komik - gol - iyikidoğdun - sarıl - yemek - bebek - şiir - çanakkalezaferi - ilginçbilgi - şanslı-sayım - yazan-kazanır - doğruluk-cesaret - kasa-aç - karpuz")
+              embd.setDescription("stresçarkı - duygulandırıcı-söz - zarat - nsfw - atatürk-sözleri - fal - boks-makinesi - şifre-oluştur -  sayıtut  - komik - sarıl - şiir -  ilginçbilgi - şanslı-sayım - yazan-kazanır - doğruluk-cesaret - kasa-aç - karpuz")
             msg.edit(embd)
           break;
 

@@ -34,10 +34,21 @@ exports.run = (client, message) => {
 > [ramazan]() → Ramazan gifi gösterir. 
 > [kandil]() → Kandil gifi gösterir.
 > [su]() → Su gifi gösterir. 
-> [şekerye]() → Şeker gifi gösterir.
+> [yemek]() →  gifi gösterir.
+> [taksim-dayı]() → Taksim dayı gifi gösterir.
 > [maske]() → Maske gifi gösterir. 
 > [iyikidoğdun]() → İyiki doğdun gifi gösterir.
 > [şekerye]() → Şeker gifi gösterir.
+> [fotoğraf]() → fotoğraf gifi gösterir.
+> [napim]() → Napim gifi gösterir.
+> [alkış]() → Alkış gifi gösterir.
+> [ağla]() → Ağlama gifi gösterir.
+> [sevgili]() → Sevgili gifi gösterir.
+> [kolonya]() → Kolonya gifi gösterir.
+> [gol]() → Gol gifi gösterir.
+> [bebek]() → Bebek gifi gösterir.
+> [çanakkalezaferi]() → Çanakkale zaferi gifi gösterir.
+
 
 `);
 
