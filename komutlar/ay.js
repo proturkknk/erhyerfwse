@@ -4,7 +4,7 @@ const ayarlar = require('../ayarlar.json');
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
     .setAuthor('İsteğiniz üzerine ay gösteriliyor. 🌙')
-    .setColor('BLUE')
+    .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://media.giphy.com/media/kyHb4nzYScnmtqyJYu/giphy.gif`)
