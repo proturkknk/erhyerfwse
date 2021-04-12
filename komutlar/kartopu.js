@@ -5,7 +5,7 @@ exports.run = (client, msg, args) => {
 let matador = args.slice(0).join(" ");
 if (matador.length < 1) {
 
-return msg.reply("**Matador | Kime kartopu atmak isterin ya isim yaz yada etiketle!**");
+return msg.reply("** Xaine Bot | Kime kartopu atmak isterin? İsim yaz yada etiketleyiniz.**");
 
 } else {
 

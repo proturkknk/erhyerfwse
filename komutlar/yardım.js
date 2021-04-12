@@ -15,6 +15,8 @@ exports.run = (client, message, args) => {
  
  > \`+logo-yardım -> Logo yardım menüsünü gösterir.\`
  
+  \`+gif-yardım -> Gif yardım menüsünü gösterir.\`
+ 
  > \`+davet -> Botun Davetini ve Destek Sunucunu gösterir.\``)
  
  .setFooter(`Xaine Bot Yardım Menüsü `)

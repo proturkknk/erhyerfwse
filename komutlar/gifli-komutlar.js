@@ -19,14 +19,25 @@ exports.run = (client, message) => {
 
 **•Logo Komutları**
 
+> [atatürk]() → Atatürk gifi gösterir.
 > [yıldız]() → Yıldız gifi gösterir. 
+> [dünya]() → Dünya gifi gösterir. 
+> [yağmur]() → Yağmur gifi gösterir. 
+> [yemek]() → Yemek gifi gösterir.
 > [ay]() → Ay gifi gösterir. 
 > [asker]() → Asker gifi gösterir. 
 > [fbi]() → Fbi baskını gösterir. 
 > [gol]() → Gol gifi gösterir. 
 > [gökyüzü]() → Gökyüzü gifi gösterir. 
 > [güneş]() → Güneş gifi gösterir. 
-> [kar]() → Discord logo oluşturur. 
+> [kar]() → Kar gifi gösterir. 
+> [ramazan]() → Ramazan gifi gösterir. 
+> [kandil]() → Kandil gifi gösterir.
+> [su]() → Su gifi gösterir. 
+> [şekerye]() → Şeker gifi gösterir.
+> [maske]() → Maske gifi gösterir. 
+> [iyikidoğdun]() → İyiki doğdun gifi gösterir.
+> [şekerye]() → Şeker gifi gösterir.
 
 `);
 
@@ -35,12 +46,12 @@ exports.run = (client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["logo-yardım","Logo-yardım","LOGO-YARDIM"],
+  aliases: ["gif-yardım","Gif-yardım","GİF-YARDIM"],
   permLevel: 0
 };
 
 exports.help = {
-  name: "logo",
+  name: "gif-yardım",
   description: "Botun Komut Listesini Gösterir!",
-  usage: "+logo"
+  usage: "+gif-yardım"
 };
