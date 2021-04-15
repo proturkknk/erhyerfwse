@@ -13,6 +13,8 @@ exports.run = (client, message, args) => {
 
  > \`+normal -> Normal Komutları gösterir.\`
  
+ \`+seçmeli-oyunlar-yardım -> Seçmeli oyunlar yardım menüsünü gösterir.\`
+ 
  > \`+logo-yardım -> Logo yardım menüsünü gösterir.\`
  
   \`+gif-yardım -> Gif yardım menüsünü gösterir.\`
