@@ -43,7 +43,7 @@ module.exports = client => {
       "Güncelleme2!: Yeni komutlarımız eklendi!",
       "✔ Yeni Moderasyon ve Çekiliş komutlarımıza göz attınız mı?",
       "En çok sevilen komutum: **dondurma**",
-      "Güncelleme3!: Yeni **gif-yardım** menüsü eklendi!"
+      "Güncelleme3!: Yeni yardım menüleri!"
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
