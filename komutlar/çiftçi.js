@@ -54,7 +54,7 @@ exports.run = async(client, msg, args) => {
           db.delete(`anti_${msg.channel.id}`)
           return
         }
-        if(cvp.first().content.toLowerCase() != 'hayır' && cvp.first().content.toLowerCase() != 'hayır') {
+        if(cvp.first().content.toLowerCase() != 'evet' && cvp.first().content.toLowerCase() != 'hayır') {
           msg.reply('Tohumlar ekilmedi.')
           db.delete(`anti_${msg.channel.id}`)
           return
@@ -129,7 +129,7 @@ exports.run = async(client, msg, args) => {
                   const sil = new Discord.MessageEmbed()
             .setTitle('Tebrikler!')
             .setDescription('Kargaya fındık verdiniz ve karga fındığı yedikten sonra gitti, ve tohumlar büyüyor!')
-            .setColor('RED')
+            .setColor('GREEN')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
             msg.channel.send(sil)
@@ -152,10 +152,10 @@ exports.run = async(client, msg, args) => {
               },5000)
             }
             
-            if(cvp.first().content.toLowerCase() == 'qwe') {
+            if(cvp.first().content.toLowerCase() == 'hayır') {
               const gg = new Discord.MessageEmbed()
-            .setTitle('Başka yok!')
-            .setDescription('Başka çeşit dondurmamız yok.')
+            .setTitle('Su vermediniz!')
+            .setDescription('Su vermediğiniz için tohumlar büyümedi.')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -169,11 +169,11 @@ exports.run = async(client, msg, args) => {
         
         db.delete(`anti_${msg.channel.id}`)
       }
-      if(cvp.first().content.toLowerCase() == 'd') {
+      if(cvp.first().content.toLowerCase() == 'hayır') {
             const banane = new Discord.MessageEmbed()
-            .setTitle('Almazsan alma')
-            .setDescription('Dondurma almadınız.')
-            .setColor('RED')
+            .setTitle('Tohumları ekmediniz!')
+            .setDescription('Tohumlar ekilmedi.')
+            .setColor('RANDOM')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
             msg.channel.send(banane)
