@@ -38,7 +38,7 @@ exports.run = async(client, msg, args) => {
     .setTitle('Tohumlar ekilsin mi?')
     .setColor('BLUE')
     .setThumbnail(msg.author.avatarURL)
-    .addField('Tohumları ekmek ister misiniz?','   [evet]   [hayır]')/////////////////////////////////////////////////:D
+    .addField('Tohumları ekmek ister misiniz?','  [evet]  [hayır]')/////////////////////////////////////////////////:D
     .setTimestamp()
     msg.channel.send(ilk).then(msj => {
       msg.channel.awaitMessages(filter,{
@@ -50,11 +50,11 @@ exports.run = async(client, msg, args) => {
       })
         .then(cvp => {
         if(!cvp) {
-          msg.reply('**Malesef süreniz doldu! :(**')
+          msg.reply('**Malesef süreniz doldu! **')
           db.delete(`anti_${msg.channel.id}`)
           return
         }
-        if(cvp.first().content.toLowerCase() != 'hayır' && cvp.first().content.toLowerCase() != 'evet') {
+        if(cvp.first().content.toLowerCase() != 'hayır' && cvp.first().content.toLowerCase() != 'hayır') {
           msg.reply('Tohumlar ekilmedi.')
           db.delete(`anti_${msg.channel.id}`)
           return
@@ -127,7 +127,7 @@ exports.run = async(client, msg, args) => {
                 }
                 if(cvp.first().content.toLowerCase() == 'fındık ver') {
                   const sil = new Discord.MessageEmbed()
-            .setTitle('Afiyet olsun!')
+            .setTitle('Tebrikler!')
             .setDescription('Kargaya fındık verdiniz ve karga fındığı yedikten sonra gitti, ve tohumlar büyüyor!')
             .setColor('RED')
             .setTimestamp()
@@ -136,7 +136,7 @@ exports.run = async(client, msg, args) => {
             db.delete(`anti_${msg.channel.id}`)
             return
                 }
-                if(cvp.first().content.toLowerCase() == '' || cvp.first().content.toLowerCase() == 'ye') {
+                if(cvp.first().content.toLowerCase() == '' || cvp.first().content.toLowerCase() == 'kov') {
                   const bsvr = new Discord.MessageEmbed()
             .setTitle('OLAMAZ TOHUMLAR GG')
             .setDescription('Gece karga gelerek tohumları yemiş!')
