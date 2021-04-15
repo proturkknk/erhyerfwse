@@ -35,10 +35,10 @@ exports.run = async(client, msg, args) => {
     db.set(`anti_${msg.channel.id}`,'open')
     var filter = m => m.author.id == msg.author.id;
     const ilk = new Discord.MessageEmbed()
-    .setTitle('Dondurma almak ister misiniz?')
+    .setTitle('Tohumlar ekilsin mi?')
     .setColor('BLUE')
     .setThumbnail(msg.author.avatarURL)
-    .addField('dondurma almak mı istiyorsunuz?','   [evet]   [hayır]')/////////////////////////////////////////////////:D
+    .addField('Tohumları ekmek ister misiniz?','   [evet]   [hayır]')/////////////////////////////////////////////////:D
     .setTimestamp()
     msg.channel.send(ilk).then(msj => {
       msg.channel.awaitMessages(filter,{
@@ -55,7 +55,7 @@ exports.run = async(client, msg, args) => {
           return
         }
         if(cvp.first().content.toLowerCase() != 'hayır' && cvp.first().content.toLowerCase() != 'evet') {
-          msg.reply('tamam.')
+          msg.reply('Tohumlar ekilmedi.')
           db.delete(`anti_${msg.channel.id}`)
           return
         }
@@ -63,7 +63,7 @@ exports.run = async(client, msg, args) => {
         const dvm = new Discord.MessageEmbed()
         .setTitle('Lütfen bekleyin...')
         .setColor('#ffbe19')
-        .setDescription('dondurmanız yapılıyor...')///
+        .setDescription('Tohumlar ekiliyor...')///
         .setThumbnail(msg.author.avatarURL)
         .setTimestamp()
         msg.channel.send(dvm)
@@ -73,7 +73,7 @@ exports.run = async(client, msg, args) => {
         .setTitle('Lütfen bir seçenek seçin.')
         .setColor('GREEN')
         .setThumbnail(msg.author.avatarURL)
-          .addField('Dondurmanız limonlu olsunmu?','[evet] [hayır]')
+          .addField('Tohumlara su verilsin mi?','[evet] [hayır]')
         .setTimestamp()
         msg.channel.send(com)
           .then(msj => {
@@ -89,23 +89,23 @@ exports.run = async(client, msg, args) => {
           return
         }
         if(cvp.first().content.toLowerCase() != 'hayır' && cvp.first().content.toLowerCase() != 'evet') {
-          msg.reply('malesef sadece limonlu var.')
+          msg.reply('Su vermediniz için tohumlar büyümedi.')
           db.delete(`anti_${msg.channel.id}`)
           return
         }
             if(cvp.first().content.toLowerCase() == 'evet') {
               const indiriyo = new Discord.MessageEmbed()
             .setTitle('Lütfen bekleyin...')
-            .setDescription('Limonlu dondurma yapılıyor...')
+            .setDescription('Tohumlara su veriliyor...')
             .setColor('#ffbe19')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
             msg.channel.send(indiriyo)
               setTimeout(function() {
                 const virus = new Discord.MessageEmbed()
-            .setTitle('Dondurma gg şimdi ne yapıcaz?')
+            .setTitle('OLAMAZ KARGA!')
             .setColor('RED')
-                .addField('Dondurmanız yere düştü!','[ye] [çöpe at]')
+                .addField('Karga geldi ve tohumları yiyor!','[kov] [fındık ver]')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
             msg.channel.send(virus).then(msj => {
@@ -120,15 +120,15 @@ exports.run = async(client, msg, args) => {
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
-                if(cvp.first().content.toLowerCase() != 'ye' && cvp.first().content.toLowerCase() != 'ye ' && cvp.first().content.toLowerCase() != 'Çöpe at') {
-                  msg.reply('Dondurmanız çöpe atıldı ve sizin için başka dondurma yapıldı. Afiyet olsun!')
+                if(cvp.first().content.toLowerCase() != 'kov' && cvp.first().content.toLowerCase() != 'kov ' && cvp.first().content.toLowerCase() != 'fındık ver') {
+                  msg.reply('Kargaya fındık verdiniz ve karga fındığı yedikten sonra gitti, ve tohumlar büyüyor!')
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
-                if(cvp.first().content.toLowerCase() == 'çöpe at') {
+                if(cvp.first().content.toLowerCase() == 'fındık ver') {
                   const sil = new Discord.MessageEmbed()
             .setTitle('Afiyet olsun!')
-            .setDescription('Dondurmanız çöpe atıldı ve sizin için başka dondurma yapıldı. Afiyet olsun!')
+            .setDescription('Kargaya fındık verdiniz ve karga fındığı yedikten sonra gitti, ve tohumlar büyüyor!')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -138,8 +138,8 @@ exports.run = async(client, msg, args) => {
                 }
                 if(cvp.first().content.toLowerCase() == '' || cvp.first().content.toLowerCase() == 'ye') {
                   const bsvr = new Discord.MessageEmbed()
-            .setTitle('ZEHİRLENDİN!')
-            .setDescription('ZEHİRLENDİNİZ!!!')
+            .setTitle('OLAMAZ TOHUMLAR GG')
+            .setDescription('Gece karga gelerek tohumları yemiş!')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -152,7 +152,7 @@ exports.run = async(client, msg, args) => {
               },5000)
             }
             
-            if(cvp.first().content.toLowerCase() == 'hayır') {
+            if(cvp.first().content.toLowerCase() == 'qwe') {
               const gg = new Discord.MessageEmbed()
             .setTitle('Başka yok!')
             .setDescription('Başka çeşit dondurmamız yok.')
@@ -169,7 +169,7 @@ exports.run = async(client, msg, args) => {
         
         db.delete(`anti_${msg.channel.id}`)
       }
-      if(cvp.first().content.toLowerCase() == 'hayır') {
+      if(cvp.first().content.toLowerCase() == 'd') {
             const banane = new Discord.MessageEmbed()
             .setTitle('Almazsan alma')
             .setDescription('Dondurma almadınız.')
@@ -194,12 +194,12 @@ exports.run = async(client, msg, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['dondurma','DONDURMA','DONDURMA','Dondurma','dondurma'],
+  aliases: ['çiftçi','Çiftçi','ÇİFTÇİ'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'dondurma',
+  name: 'çiftçi',
   description: '',
   usage: 'çiftçi'
 };
