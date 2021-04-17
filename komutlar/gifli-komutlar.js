@@ -45,7 +45,6 @@ exports.run = (client, message) => {
 > [ağla]() → Ağlama gifi gösterir.
 > [sevgili]() → Sevgili gifi gösterir.
 > [kolonya]() → Kolonya gifi gösterir.
-> [gol]() → Gol gifi gösterir.
 > [bebek]() → Bebek gifi gösterir.
 > [çanakkalezaferi]() → Çanakkale zaferi gifi gösterir.
 
