@@ -10,14 +10,14 @@ exports.run = async (client, message, args) => {
     }
 if(args[0] === "aç"){
   if(!args[1]){
-  message.channel.send('Bakım neden')
+  message.channel.send('Bakım sebebini belirtir misin?')
   }
   db.set('bakım', args.slice(1).join(' '))
   if (args.slice(1).join(' ')) {
-  message.channel.send("Bakım açıldı")
+  message.channel.send("Bakım modu başarıyla açıldı!")
     }
 } else if(args[0]=== "kapat"){
-  message.channel.send("Bakım Kapatıldı")
+  message.channel.send("Bakım başarıyla kapatıldı!")
   db.delete('bakım')
 }
 
