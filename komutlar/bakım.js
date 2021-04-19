@@ -10,7 +10,7 @@ exports.run = async (client, message, args) => {
     }
 if(args[0] === "aç"){
   if(!args[1]){
-  message.channel.send('Bakım modu sebebini belirtin!')
+  message.channel.send('Bakım neden')
   }
   db.set('bakım', args.slice(1).join(' '))
   if (args.slice(1).join(' ')) {
