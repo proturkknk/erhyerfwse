@@ -3,52 +3,21 @@ const axios = require('axios');
 
 exports.run = async (client, message, args) => {
     const city = args[0];
-const embed = new Discord.MessageEmbed()
-   .setAuthor('HATA', message.author.avatarURL())
-   .setColor('RANDOM') 
-     .setDescription(`
-  Şehir adı girmelisiniz!
-
-  **Örnek Kullanım:** +iftar istanbul
-
-`)
-
-
-   .setTimestamp()
-   .setFooter(`${message.author.username} Başarıyla İftar Komutunu Kullandı!`, message.author.avatarURL())
-
-
-   .setThumbnail(client.user.avatarURL())
-    if (!city) return message.channel.send(embed);
+    if (!city) return message.channel.send('Şehir adı girmelisiniz.');
     axios.get(`https://api.collectapi.com/pray/single?ezan=Ak%C5%9Fam&data.city=${city.toLowerCase()}`, {
         headers: {
             "content-type": "application/json",
-            "authorization": "apikey"
+            "authorization": "apikey 0wundItn3wBW8lt7V0NxOK:2yfwbEJlrQJgxPwRMFphPD"
         }
     }).then(res => {
-const lauraaaaa = new Discord.MessageEmbed()
-   .setAuthor('BAŞARILI!', message.author.avatarURL())
-   .setColor('RANDOM') 
-     .setDescription(` \`\`\`${city} Şehri için iftar saati ${res.data.result[0].time}.\`\`\`
-           
-  \`\`\`Kalan Süre: ${res.data.result[0].hour} ${res.data.result[0].min}\`\`\`
+        const messageEmbed = new Discord.MessageEmbed().setDescription(`
+           > **${city}** şehri için iftar saati **${res.data.result[0].time}.**
+           \`\`\`Kalan Süre: ${res.data.result[0].hour} ${res.data.result[0].min}\`\`\`
+        `);
 
-`)
-.setTimestamp()
-.setFooter(`${message.author.username} Başarıyla İftar Komutunu Kullandın!`, message.author.avatarURL())
-.setThumbnail(client.user.avatarURL())
-    message.channel.send(lauraaaaa);
+        message.channel.send(messageEmbed);
     }).catch(err => {
-const codare = new Discord.MessageEmbed()
-   .setAuthor('HATA!', message.author.avatarURL())
-   .setColor('RANDOM') 
-   .setDescription(`:warning:  Bir sorun ortaya çıktı. Komutu doğru kullandığınızdan emin olun.
-
-  **Örnek Kullanım:** +iftar istanbul`)
-   .setTimestamp()
-   .setFooter(`${message.author.username} Başarıyla İftar Komutunu Kullandı!`, message.author.avatarURL())
-   .setThumbnail(client.user.avatarURL())
-        message.channel.send(codare);
+        message.channel.send('Bir sorun ortaya çıktı. Komudu doğru kullandığınızdan emin olun.');
         console.log(err);
     });
 };
