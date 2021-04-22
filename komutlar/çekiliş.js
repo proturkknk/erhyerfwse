@@ -23,7 +23,7 @@ exports.run = async (client, message, args) => {
   let prize = args.slice(2).join(" ");
   if (!prize) return message.channel.send(` Bir ödül belirtmelisin!`);
   message.channel.send(
-    ` Çekiliş ${channel} kanalında başarıyla başladı! Eğer çekiliş bozulursa unutma ki yeni bir güncelleme gelmiştir. Eğer tekrar yaptınızda aynı hatayı verirse lütfen kurucularımızla iletişime geçiniz.
+    ` Çekiliş ${channel} kanalında başarıyla başladı! Eğer çekiliş bozulursa unutma ki bot yenilenmiştir. Eğer tekrar yaptınızda aynı hatayı verirse lütfen kurucularımızla iletişime geçiniz.
     :warning: Dikkat!: Başlattınız çekiliş başlattınız zamanki zamanda biter! (saat,saniye,salise)`
   );
   let Embed = new MessageEmbed()
