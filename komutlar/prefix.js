@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
 
     if (!args[0]) {
 
-    return message.channel.send("Lütfen bir prefix giriniz");
+    return message.channel.send("Lütfen bir prefix giriniz.");
 
     }
 
