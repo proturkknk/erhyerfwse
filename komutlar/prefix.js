@@ -24,7 +24,7 @@ exports.run = async (client, message, args) => {
 
     if (args[0].length > 3) {
 
-    return message.channel.send("3 karakterden uzun bir prefix yapamazsın!");
+    return message.channel.send("3 karakterden uzun bir prefix yapamazsınızız!");
 
     }
 
@@ -51,6 +51,6 @@ exports.conf = {
 
 exports.help = {
   name: "prefix",
-  description: "prefix ayarlarsınız",
+  description: "Xaine Bot Prefix Komutu",
   usage: "prefix"
 };
