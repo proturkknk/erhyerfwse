@@ -14,7 +14,7 @@ exports.run = (client, message, args) => {
           .setDescription(`**${current.skytext}**`)
           .setAuthor(`${current.observationpoint} için hava durumu`)
           .setThumbnail(current.imageUrl)
-          .setColor('RANDOM')
+          .setColor(0x00AE86)
           .addField('● Zaman Dilimi',`UTC${location.timezone}`, true)
           .addField('● Derece Türü',location.degreetype, true)
           .addField('● Sıcaklık',`${current.temperature} Derece`, true)
@@ -28,12 +28,12 @@ exports.run = (client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['Hava-durumu','hava-durumu','HAVA-DURUMU'],
+  aliases: ['YEDEK KOMUT1', 'YEDEK KOMUT2'],
   permLevel: "0"
 };
 
 exports.help = {
   name: "havadurumu",
   description: "hava durumunu gösterir",
-  usage: "havadurumu"
-}
+  usage: "havadurumu" 
+};
