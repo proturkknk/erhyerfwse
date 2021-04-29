@@ -203,7 +203,7 @@ var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 //   console.log(chalk.bgBlue.green(e.replace(regToken, 'that was redacted')));
 // });
 
-client.login(process.env.token);
+//client.login(process.env.token).catch(err => {console.error(err)})
 
 client.on("message", async message => {
   if (message.author.bot) return;
