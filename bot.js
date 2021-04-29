@@ -295,7 +295,6 @@ client.on("message", async (message, bot) => {
 
 client.on("message", async (msg, member, guild) => {
   let i = await db.fetch(`saas_${msg.guild.id}`);
-  if(msg.author.bot) return
   if (i === "açık") {
     if (msg.content.toLowerCase() === "sa") {
       msg.reply("**Aleyküm Selam, Hoşgeldin. Nasılsın? :)**");
@@ -550,10 +549,4 @@ const candycode = new Discord.MessageEmbed()
 .addField(`Sunucu Sahibi`, owner.username + "#" + owner.discriminator)
 .addField(`Sunucu Üye Sayısı`, guild.memberCount)
 client.channels.cache.get(kanal).send({embed: candycode}).catch(err => console.log("Kanala mesaj atamıyorum!"))
-  app.listen(process.env.PORT, () =>console.log('Port ayarlandı: ' + process.env.PORT))
-const app = express()
-
-app.get('/', (req, res) =>res.send("Bot Aktif | Ahmet Samet #Frizone -yardım"))
-
-app.listen(process.env.PORT, () =>console.log('Port ayarlandı: ' + process.env.PORT))
 })
