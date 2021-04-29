@@ -550,4 +550,10 @@ const candycode = new Discord.MessageEmbed()
 .addField(`Sunucu Sahibi`, owner.username + "#" + owner.discriminator)
 .addField(`Sunucu Üye Sayısı`, guild.memberCount)
 client.channels.cache.get(kanal).send({embed: candycode}).catch(err => console.log("Kanala mesaj atamıyorum!"))
+  app.listen(process.env.PORT, () =>console.log('Port ayarlandı: ' + process.env.PORT))
+const app = express()
+
+app.get('/', (req, res) =>res.send("Bot Aktif | Ahmet Samet #Frizone -yardım"))
+
+app.listen(process.env.PORT, () =>console.log('Port ayarlandı: ' + process.env.PORT))
 })
