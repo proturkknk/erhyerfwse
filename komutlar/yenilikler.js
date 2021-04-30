@@ -19,7 +19,8 @@ exports.run = (client, message) => {
 
 **•Yenilikler**
 
-> [30.04.2021]() → Yenilikler komutu eklendi.
+> [30.04.2021]() → **Yenilikler** komutu eklendi.
+> [30.04.2021]() → **küfür-engel** komutu eklendi.
 
 
 

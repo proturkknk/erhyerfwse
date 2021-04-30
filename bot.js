@@ -524,6 +524,25 @@ oldMsg.reply(':x: Hey! Reklam veya link atamazsın!').then(msg => msg.delete(700
 }
 });
 
+client.on("message", async msg => {
+ const i = await db.fetch(`${msg.guild.id}.kufur`)
+    if (i) {
+        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "am", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
+        if (kufur.some(word => msg.content.includes(word))) {
+          try {
+            if (!msg.member.permissions.has("BAN_MEMBERS")) {
+                  msg.delete();
+                          
+                      return msg.reply('Heey! Bu sunucuda küfür etmek yasak!').then(nordx => nordx.delete({timeout: 5000}))
+            }              
+          } catch(err) {
+            console.log(err);
+          }
+        }
+    }
+    if (!i) return;
+});
+
 //eklendim
 client.on("guildCreate", async function(guild) {
 const owner = client.users.cache.get(guild.ownerID)
