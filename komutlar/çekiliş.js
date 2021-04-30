@@ -24,7 +24,7 @@ exports.run = async (client, message, args) => {
   if (!prize) return message.channel.send(` Bir ödül belirtmelisin!`);
   message.channel.send(
     ` Çekiliş ${channel} kanalında başarıyla başladı! Eğer çekiliş bozulursa unutma ki bot yenilenmiştir. Eğer tekrar yaptınızda aynı hatayı verirse lütfen kurucularımızla iletişime geçiniz.
-    :warning: Dikkat!: Başlattınız çekiliş başlattınız zamanki zamanda biter! (saat,saniye,salise)`
+    :warning: Dikkat!: Başlattınız çekiliş başlattınız zamanki zamanda biter! (saat,saniye,salise) NOT: Çekiliş komutu bakımdadır. Kısa zamanda bakım çalışması bitecektir, gelişmeleri destek sunucumuzdan takip edebilirsiniz.`
   );
   let Embed = new MessageEmbed()
     .setTitle(`:tada: Çekiliş! :tada:`)
