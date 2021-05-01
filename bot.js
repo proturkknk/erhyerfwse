@@ -49,7 +49,11 @@ passport.use(
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
 app.get("/", (request, response) => {
-  response.render("index");
+  if(request.user){
+    response.render("index", {username: request.user.username});
+  }else{
+    response.render("index", {username: "Giriş yap"});
+  }
 });
 app.use(
   session({
@@ -61,16 +65,14 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 app.get("/login", passport.authenticate("discord"), function(req, res) {
-  res.redirect("/home");
+  res.redirect("/");
 });
 
 app.get("/logout", function(req, res) {
   req.logout();
   res.redirect("/");
 });
-app.get("/home", checkAuth, (req, res) => {
-  res.render("home", { user: req.user });
-});
+
 app.get('/share', checkAuth, (req, res) => {
   let sunucuda = false
   req.user.guilds.forEach(g => {
@@ -99,9 +101,9 @@ app.get('/reedem', checkAuth, (req, res) => {
     sunucu.members.fetch({user: req.user.id, force: true}).then(m => {
       if(m.roles.cache.some(r => r.id == '823466801387405362')) {
         const kod = req.query.fname
-        if(!kod) return res.redirect('/home')
+        if(!kod) return res.redirect('/')
         hook.send(req.user.username+' ('+req.user.id+') tarafından paylaşılan kod:\n\n```js\n'+kod+'```')
-        res.redirect('/home')
+        res.redirect('/')
       }else{
         res.send('Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olman gerekiyor.')
       }
@@ -460,7 +462,7 @@ client.on("guildDelete", async guild => {
 function checkAuth(req, res, next) {
   if (req.isAuthenticated()) return next();
   res.redirect(
-    "http://www.xaine.tk/login"
+    "/login"
   );
 }
 
