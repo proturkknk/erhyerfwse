@@ -66,11 +66,13 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.get("/login", passport.authenticate("discord"), function(req, res) {
   res.redirect("/");
+  res.render('index',{username: req.user.username})
 });
 
 app.get("/logout", function(req, res) {
   req.logout();
   res.redirect("/");
+  res.render('index',{username: 'Giriş'})
 });
 
 app.get('/share', checkAuth, (req, res) => {
