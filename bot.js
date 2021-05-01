@@ -46,11 +46,13 @@ passport.use(
     }
   )
 );
+let ss = null
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
 app.get("/", (request, response) => {
-  if(request.user){
-    response.render("index", {username: request.user.username});
+  if(ss){
+    response.render("index", {username: ss});
+    ss = null
   }else{
     response.render("index", {username: "Giriş yap"});
   }
@@ -65,14 +67,14 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 app.get("/login", passport.authenticate("discord"), function(req, res) {
+  ss = req.user.username
   res.redirect("/");
-  res.render('index',{username: req.user.username})
 });
 
 app.get("/logout", function(req, res) {
   req.logout();
+  ss = null
   res.redirect("/");
-  res.render('index',{username: 'Giriş'})
 });
 
 app.get('/share', checkAuth, (req, res) => {

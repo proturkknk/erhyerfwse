@@ -3,8 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Xaine Bot, Xaine, Tüm hakları saklıdır">
-    <meta name="description" content="">
+    <meta name="keywords" content="Xaine Bot, Xaine, Tüm hakları saklıdır, discord, bot, discord bot">
+    <meta name="description" content="Xaine bot discord botudur oyüzden napim 😎">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Page 1</title>
     <style>
@@ -4626,7 +4626,6 @@ ol {
   text-align: center;
   padding: 10px 30px;
   border-radius: 0;
-  align-self: flex-start;
 }
 .u-btn:focus,
 .u-btn:active:focus,
@@ -33683,7 +33682,7 @@ a.u-link.u-text-hover-grey-90:hover {
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 1px;
-  margin: 20px 204px 0 auto;
+  margin: 20px 400px 0 auto;
 }
 
 .u-header .u-btn-2 {
@@ -34040,20 +34039,7 @@ a.u-link.u-text-hover-grey-90:hover {
   </head>
   <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-2e68"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="/share" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">kod paylaş</a>
-        <a href="/login" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2" id='giris'>Giriş yap</a>
-    <script>
-      <%if(username){%>
-        document.getElementById('giris').innerText = <%=username%>
-      <%}%>
-    </script>
-    <script>
-    const params = new URLSearchParams(document.location.search);
-    const name = params.get('name')
-    console.log(name)
-    if(name) {
-      document.getElementById('giris').innerText = name
-    }
-    </script>
+        <a href="/login" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2" id='giris'><%=username%></a>
       </div></header>
     <section class="u-clearfix u-section-1" id="sec-b786">
       <div class="u-clearfix u-sheet u-sheet-1">
