@@ -107,6 +107,7 @@ app.get('/reedem', checkAuth, (req, res) => {
         const kod = req.query.fname
         if(!kod) return res.redirect('/')
         hook.send(req.user.username+' ('+req.user.id+') tarafından paylaşılan kod:\n\n```js\n'+kod+'```')
+        ss = req.user.username
         res.redirect('/')
       }else{
         res.send('Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olman gerekiyor.')

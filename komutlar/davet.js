@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
     .setColor("#00ee00")
     .setAuthor(`Xaine`, client.user.avatarURL)
     .addField(
-      `> Neden Biz ?`,
+      `> Neden biz ?`,
       `**Çünkü Xaine Ekibi olarak işimizi en iyi şekilde yaptığımızı düşünüyoruz ve sizide aramızda görmekten mutluluk duyuyoruz. :)**`
     )
     .addField(
@@ -22,8 +22,13 @@ exports.run = (client, message, args) => {
     )
     .addField(
       `> Sitemize Göz Atmak isterseniz`,
-      `[Sitemiz](https://xainebot.tr.gg/)`
+      `[Sitemiz](http://www.xaine.tk/)`
     )
+   
+    .addField(
+      `> Kod Sitemize Göz Atmak İsterseniz`,
+      `[Kod sitemiz](http://www.xaine.tk/)`
+       )
 .setImage(`https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif`)
     .setThumbnail(
       "https://cdn.discordapp.com/emojis/670167074584395816.gif?v=1"
