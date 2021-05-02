@@ -19,7 +19,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +kilitaç :** Bulunduğunuz kanalın mesaj yazımını açar.
 *» +reklam-engel :** Reklam engeli açarsınız veya kapatırsınız.
 *» +küfür-engel-aç :** Küfür engeli açarsınız.
-*» +küfür-engel-kapat :** Küfür engeli açarsınız.
+*» +küfür-engel-kapat :** Küfür engeli kapatırsınız..
 > **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
 > **» +nuke :** Kanalı tekrar kurar ve tüm mesajları siler.
 *» +prefix :** Botun prefixini değiştirirsiniz.
