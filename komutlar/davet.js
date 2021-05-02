@@ -27,7 +27,7 @@ exports.run = (client, message, args) => {
    
     .addField(
       `> Kod Sitemize Göz Atmak İsterseniz`,
-      `[Kod sitemiz](http://www.xaine.tk/)`
+      `[Kod sitemiz](https://xainecode.glitch.me/)`
        )
 .setImage(`https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif`)
     .setThumbnail(
