@@ -6,17 +6,17 @@ exports.run = (client, message, args) => {
   return message.reply(`Sanırım bu özellik zaten açıkmış. :slight_smile:`)
 }
   db.set(`küfürE_${message.channel.id}`, "aktif")
-  message.reply(`Küfür engel **başarıyla açıldı. Artık bundan sonra kimse küfür edemeyecek.** ${message.guild.emojis.cache.get("647746144155467786")}`)
+  message.reply(`Küfür engel başarıyla açıldı. Artık bundan sonra kimse küfür edemeyecek.`)
 };
 exports.conf = {
   enabled: true,  
   guildOnly: false, 
-  aliases: [], 
+  aliases: ['küfür-engel-aç','Küfür-engel-aç','KÜFÜR-ENGEL-AÇ'], 
   permLevel: 0
 };
 
 exports.help = {
-  name: 'küfür-engel aç',
-  description: 'küfür-engel aç', 
-  usage: 'küfür-engel aç'
+  name: 'küfür-engel-aç',
+  description: 'küfür-engel-aç', 
+  usage: 'küfür-engel-aç'
 };

@@ -11,12 +11,12 @@ exports.run = (client, message, args) => {
 exports.conf = {
   enabled: true,  
   guildOnly: false, 
-  aliases: [], 
+  aliases: ['küfür-engel-kapat','Küfür-engel-kapat','KÜFÜR-ENGEL-KAPAT'], 
   permLevel: 0
 };
 
 exports.help = {
-  name: 'küfür-engel kapat',
-  description: 'küfür-engel kapat', 
-  usage: 'küfür-engel kapat'
+  name: 'küfür-engel-kapat',
+  description: 'küfür-engel-kapat', 
+  usage: 'küfür-engel-kapat'
 };
