@@ -515,40 +515,7 @@ message.reply(':x: Hey! Reklam veya link atamazsın!').then(msg => msg.delete(70
 }
 });
 
-client.on("messageUpdate", async (oldMsg, newMsg) => {
-  
-let aktif = await db.fetch(`reklamEngelcodework_${oldMsg.channel.id}`)
-if(!aktif) return
-  
-let reklamlar = ["discord.app", "discord.gg","discordapp","discordgg", ".com", ".net", ".xyz", ".tk", ".pw", ".io", ".me", ".gg", "www.", "https", "http", ".gl", ".org", ".com.tr", ".biz", ".party", ".rf.gd", ".az", ".cf", ".me", ".in"]
-let kelimeler = newMsg.content.slice(" ").split(/ +/g)
 
-if (reklamlar.some(word => newMsg.content.toLowerCase().includes(word))) {
-  
-if (newMsg.member.hasPermission("BAN_MEMBERS")) return; newMsg.delete()
-  
-oldMsg.reply(':x: Hey! Reklam veya link atamazsın!').then(msg => msg.delete(7000)) 
-}
-});
-
-client.on("message", async msg => {
- const i = await db.fetch(`${msg.guild.id}.kufur`)
-    if (i) {
-        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "am", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
-        if (kufur.some(word => msg.content.includes(word))) {
-          try {
-            if (!msg.member.permissions.has("BAN_MEMBERS")) {
-                  msg.delete();
-                          
-                      return msg.reply('Heey! Bu sunucuda küfür etmek yasak!').then(nordx => nordx.delete({timeout: 5000}))
-            }              
-          } catch(err) {
-            console.log(err);
-          }
-        }
-    }
-    if (!i) return;
-});
 
 //eklendim
 client.on("guildCreate", async function(guild) {
