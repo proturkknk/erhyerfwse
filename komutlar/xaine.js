@@ -28,7 +28,16 @@ const cevaplar = [
 "alınma olur mu?",
 "seni seviyorum",
 "napim :D",
-"ben bir botum"
+"ben bir botum",
+"Trefax benim sahibim",
+  "Sen kimsin?",
+  "Rastgele cevaplar veriyorum",
+  "Seni sevdim",
+  "Beni seviyor musun?",
+  "Hey",
+"Tanışabiliriz",
+"Sahibim trefax ı tanıyor musunuz?",
+  "Sihirli küreme soru sormak ister misiniz?"
 ];
 
 exports.run = function(client, message, args) {
