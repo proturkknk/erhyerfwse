@@ -31,7 +31,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > :round_pushpin: **Komut hakkında detaylı bilgi için: +yardım**
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
 `)
-.setImage(`https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif`)
+.setImage(`https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif`)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();

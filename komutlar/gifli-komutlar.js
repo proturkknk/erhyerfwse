@@ -14,7 +14,7 @@ exports.run = (client, message) => {
     .setColor("RANDOM")
     .setTitle("**  Xaine Bot  **")
     .setThumbnail(
-      "https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif"
+      "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`
 
 **• Gif komutları**

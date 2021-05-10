@@ -6,7 +6,7 @@ exports.run = (client, message,args) => {
   .setTitle("Xaine Bot") 
   .setDescription("[davet yazarak tüm davet linklerine ulaşabilirsiniz.](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8%22)")
 .addField("-Normal komutlar (24)", ' avatar - davet - yılbaşı - hesapla - hava-durumu -  bildir - korona - ping - istatistik -  saat - yapımcım - token - sunucubilgi - ekibimiz - mcskin - duyuru - sözlük - kuruluş-tarihi - destek-ekibi - toplam-komut - çekiliş(bakımda) - hatırlatıcı - yetkilerim - iftar - yenilikler - destek-ekibi')
- .setImage("https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif")
+ .setImage("https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif")
 message.channel.send(bok)
 }
 exports.conf = {
