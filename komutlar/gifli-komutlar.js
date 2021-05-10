@@ -14,7 +14,7 @@ exports.run = (client, message) => {
     .setColor("RANDOM")
     .setTitle("**  Xaine Bot  **")
     .setThumbnail(
-      "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
+      "https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif"
     ).setDescription(`
 
 **• Gif komutları**
@@ -33,6 +33,7 @@ exports.run = (client, message) => {
 > [güneş]() → Güneş gifi gösterir. 
 > [kar]() → Kar gifi gösterir. 
 > [ramazan]() → Ramazan gifi gösterir. 
+> [bayram]() → Ramazan bayramı gifi gösterir.
 > [kandil]() → Kandil gifi gösterir.
 > [su]() → Su gifi gösterir. 
 > [yemek]() →  gifi gösterir.

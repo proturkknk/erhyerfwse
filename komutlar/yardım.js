@@ -24,7 +24,7 @@ exports.run = (client, message, args) => {
  .setFooter(`Xaine Bot Yardım Menüsü `)
  .setFooter(`© 2020 Xaine Bot | Tüm hakları saklıdır`)
     .setTimestamp()
-    .setImage("https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif")
+    .setImage("https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif")
 message.channel.send(embed) 
 //sharpen
 };
