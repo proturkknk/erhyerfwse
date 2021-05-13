@@ -46,8 +46,11 @@ module.exports = client => {
       "Güncelleme3!: Yeni yardım menüleri!",
       " ✔ İftar komutunu kullanarak belirttiniz şehrin iftar saatini öğrenebilceğinizi biliyor muydunuz?",
       "Sitemiz: http://www.xaine.tk/",
-      "Kod paylaşım sitemiz: https://xainecode.glitch.me/ "
-     
+      "Kod paylaşım sitemiz: https://xainecode.glitch.me/ ",
+     "İyi bayramlar!",
+"Bayramınız mübarek olsun iyi bayramlar!",
+      "İyi Bayramlar! :)",
+      "Bayramınız mübarek olsun iyi bayramlar! :)"
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
