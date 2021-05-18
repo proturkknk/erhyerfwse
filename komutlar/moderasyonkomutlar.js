@@ -14,6 +14,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +mute :** Belirttiniz kişiyi sunucuda susturursunuz.
 > **» +muterole :** Mute rolünü ayarlarsınız.
 > **» +ban :** Belirttiniz kişiyi sunucudan yasaklarsınız.
+> **» +unban :** Belirttiniz kişinin yasağını kaldırırsınız.
 > **» +kick :** Belirttiniz kişiyi  sunucudan atarsınız.
 > **» +kilit :** Bulunduğunuz kanalın mesaj yazımını kapatır.
 > **» +kilitaç :** Bulunduğunuz kanalın mesaj yazımını açar.
