@@ -49,6 +49,7 @@ exports.run = (client, message) => {
 > [kolonya]() → Kolonya gifi gösterir.
 > [bebek]() → Bebek gifi gösterir.
 > [çanakkalezaferi]() → Çanakkale zaferi gifi gösterir.
+> [19mayıs]() → 19 Mayıs Atatürkü Anma Gençlik Ve Spor Bayramı gifi gösterir.
 
 
 `);
