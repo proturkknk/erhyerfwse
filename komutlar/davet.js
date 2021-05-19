@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
     )
     .addField(
       `> Botumuzu Davet Etmek isterseniz`,
-      `[Bot davet linki](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)`
+      `[Botu Davet Et!](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)`
     )
     .addField(
       `> Destek Sunucusuna Katılmak İsterseniz`,
@@ -29,7 +29,7 @@ exports.run = (client, message, args) => {
       `> Kod Sitemize Göz Atmak İsterseniz`,
       `[Kod sitemiz](https://xainecode.glitch.me/)`
        )
-.setImage(`https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif`)
+.setImage(`https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif`)
     .setThumbnail(
       "https://cdn.discordapp.com/emojis/670167074584395816.gif?v=1"
     );

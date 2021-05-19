@@ -33,12 +33,12 @@ exports.run = (client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["seçmeli-oyunlar","Seçmeli-oyunlar","SEÇMELİ-OYUNLAR"],
+  aliases: ["seçmeli-oyunlar-yardım","Seçmeli-oyunlar-yardım","SEÇMELİ-OYUNLAR-YARDIM"],
   permLevel: 0
 };
 
 exports.help = {
-  name: "seçmeli-oyunlar",
+  name: "seçmeli-oyunlar-yardım",
   description: "Botun Komut Listesini Gösterir!",
-  usage: "+seçmeli-oyunlar"
+  usage: "+seçmeli-oyunlar-yardım"
 };
