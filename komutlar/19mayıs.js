@@ -3,7 +3,7 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
-    .setAuthor('19 Mayıs Atatürkü')
+    .setAuthor('19 Mayıs Atatürkü Anma Gençlik Ve Spor Bayramı Kutlu Olsun!')
     .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
