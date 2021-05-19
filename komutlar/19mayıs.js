@@ -3,11 +3,11 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
-    .setAuthor('')
+    .setAuthor('19 Mayıs Atatürkü Anma Gençlik Ve Spor Bayramı Kutlu Olsun!')
     .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://media.giphy.com/media/kyHb4nzYScnmtqyJYu/giphy.gif`)
+        .setImage(``)
     return message.channel.send(matador);
 };
 
