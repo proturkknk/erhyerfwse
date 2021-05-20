@@ -10,7 +10,7 @@ exports.run = (client, message, params) => {
     return message.author.send(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const embed = new Discord.MessageEmbed()
-    .setAuthor(message.author.username + ' Kanka sana tokenimi vereceğime inandın mı \nGerçekten inandıysan helal olsun. :)')
+    .setAuthor(message.author.username + ' Sahibim bana tokenimi kimseyle paylaşmamamı söyledi.')
     .setColor("RANDOM")
     .setTimestamp()
     return message.channel.send(embed);
