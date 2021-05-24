@@ -23,7 +23,7 @@ exports.run = (client, message) => {
 > [karpuz]() → Karpuz oyununu oynarsınız.
 > [dondurma]() → Dondurma oyununu oynarsınız.
 > [çiftçi]() → Çiftçi oyununu oynarsınız.
-> [kahve]() → Kahve oyununu oynarsıız. **(Yapım aşamasında)**
+> [kahve]() → Kahve oyununu oynarsınız.**
  
 
 

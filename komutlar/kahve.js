@@ -55,7 +55,7 @@ exports.run = async(client, msg, args) => {
           return
         }
         if(cvp.first().content.toLowerCase() != 'hayır' && cvp.first().content.toLowerCase() != 'evet') {
-          msg.reply('tamam.')
+          msg.reply('Yine bekleriz!')
           db.delete(`anti_${msg.channel.id}`)
           return
         }
@@ -105,7 +105,7 @@ exports.run = async(client, msg, args) => {
                 const virus = new Discord.MessageEmbed()
             .setTitle('Olamaz! Kahvenizi yolda giderken düşürdünüz!')
             .setColor('RED')
-                .addField('Kahveniz yere düştü!','[iç] [kutusunu at]')
+                .addField('Kahveniz yere düştü!','[iç] [kutusunu çöpe at]')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
             msg.channel.send(virus).then(msj => {
@@ -120,15 +120,15 @@ exports.run = async(client, msg, args) => {
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
-                if(cvp.first().content.toLowerCase() != 'ye' && cvp.first().content.toLowerCase() != 'ye ' && cvp.first().content.toLowerCase() != 'Çöpe at') {
-                  msg.reply('Kahvenizin kutusu çöpe atıldı ve sizin için başka bir mocha kahve hazırlandı Afiyet olsun!')
+                if(cvp.first().content.toLowerCase() != 'kutusunu çöpe at' && cvp.first().content.toLowerCase() != 'kutusunu çöpe at ' && cvp.first().content.toLowerCase() != 'Çöpe at') {
+                  msg.reply('Düşürdünüz kahveyi içtiniz için zehirlendiniz!')
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
-                if(cvp.first().content.toLowerCase() == 'çöpe at') {
+                if(cvp.first().content.toLowerCase() == 'kutusunu çöpe at') {
                   const sil = new Discord.MessageEmbed()
             .setTitle('Afiyet olsun!')
-            .setDescription('Kahvenizin kutusu çöpe atıldı ve sizin için başka bir mocha kahve hazırlandı Afiyet olsun!')
+            .setDescription('Kahvenizin kutusu çöpe atıldı ve sizin için başka bir mocha kahve hazırlandı. Afiyet olsun!')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -155,7 +155,7 @@ exports.run = async(client, msg, args) => {
             if(cvp.first().content.toLowerCase() == 'hayır') {
               const gg = new Discord.MessageEmbed()
             .setTitle('Başka yok!')
-            .setDescription('Başka çeşit dondurmamız yok.')
+            .setDescription('Malesef başka çeşit kahvemiz yok.')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -171,8 +171,8 @@ exports.run = async(client, msg, args) => {
       }
       if(cvp.first().content.toLowerCase() == 'hayır') {
             const banane = new Discord.MessageEmbed()
-            .setTitle('Almazsan alma')
-            .setDescription('Dondurma almadınız.')
+            .setTitle('Kahve almadınız.')
+            .setDescription('Yine bekleriz.')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -194,12 +194,12 @@ exports.run = async(client, msg, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['dondurma','DONDURMA','DONDURMA','Dondurma','dondurma'],
+  aliases: ['KAHVE','Kahve','kahve'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'dondurma',
-  description: 'dondurma',
-  usage: 'dondurma'
+  name: 'kahve',
+  description: 'kahve',
+  usage: 'kahve'
 };
