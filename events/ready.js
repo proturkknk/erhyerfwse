@@ -42,9 +42,10 @@ module.exports = client => {
       "✔ Yeni Moderasyon ve Çekiliş komutlarımıza göz attınız mı?",
       "En çok sevilen komutum: **dondurma**",
       "Güncelleme3!: Yeni yardım menüleri!",
-      " ✔ İftar komutunu kullanarak belirttiniz şehrin iftar saatini öğrenebilceğinizi biliyor muydunuz?",
       "Sitemiz: http://www.xaine.tk/",
-      "Kod paylaşım sitemiz: https://xainecode.glitch.me/ "
+      "Kod paylaşım sitemiz: https://xainecode.glitch.me/ ",
+       "XAİNE BOT ",
+      "Xaine Bot",
 
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
