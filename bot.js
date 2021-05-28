@@ -637,4 +637,37 @@ const candycode = new Discord.MessageEmbed()
 .addField(`Sunucu Sahibi`, owner.username + "#" + owner.discriminator)
 .addField(`Sunucu Üye Sayısı`, guild.memberCount)
 client.channels.cache.get(kanal).send({embed: candycode}).catch(err => console.log("Kanala mesaj atamıyorum!"))
+  
+  const disbut = require('discord-buttons')(client);
+
+client.on('message', async (message) => {
+    if (message.content.startsWith('+buton')) {
+        let button = new disbut.MessageButton()
+        .setStyle('red')
+        .setLabel('Hayır')
+        .setID('click_to_function') 
+
+        let button2 = new disbut.MessageButton()
+        .setStyle('green')
+        .setLabel('Evet') 
+        .setID('click_to_function2') 
+        
+
+        message.channel.send('Bot ile ilgili sorunların mı var?', {
+            buttons:[
+                button,button2
+            ]
+        });
+    };
+});
+
+client.on('clickButton', async (button) => {
+  if (button.id === 'click_to_function') {
+    button.channel.send(`${button.clicker.user.tag} Eğer sorun yaşarsan lütfen bizimle iletişime geç! :)`);
+  }
+    if (button.id === 'click_to_function2') {
+    button.channel.send(`${button.clicker.user.tag} #ticket kanalına giderek destek ekibimize ulaşabilirsiniz.`);
+  }
+});
+  
 })
