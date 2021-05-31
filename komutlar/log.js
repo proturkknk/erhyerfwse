@@ -38,7 +38,7 @@ if(args[0] === "sıfırla") {
    //message.channel.send(`Otorol \`${rol.name}\`, otorol kanalı ${rolk} olarak ayarlandı.`)
   
   const embed = new Discord.MessageEmbed()
-        .setDescription(`Mod Log Kanalı başarıyla ${log} olarak ayarlandı.\nKanalı sıfırlamak için **modlog sıfırla** yazabilirsiniz!`)
+        .setDescription(`Mod Log Kanalı başarıyla ayarlandı.\nKanalı sıfırlamak için **modlog sıfırla** yazabilirsiniz!`)
         .setColor("RANDOM")
         .setTimestamp()
     message.channel.send({embed})
