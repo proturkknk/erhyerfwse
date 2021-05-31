@@ -49,8 +49,8 @@ passport.use(
 let ss = null
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
-app.get("/", (request, response) => {
-  const trefax = client.users.cache.get('696365117063036986').avatarURL()
+app.get("/", async(request, response) => {
+  const trefax = await client.users.fetch('696365117063036986').displayAvatarURL()
   if(ss){
     response.render("index", {username: ss, trefax: trefax});
     ss = null
