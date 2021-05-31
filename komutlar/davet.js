@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 exports.run = (client, message, args) => {
   const motion = new Discord.MessageEmbed()
-    .setColor("#00ee00")
+    .setColor("RANDOM")
     .setAuthor(`Xaine`, client.user.avatarURL)
     .addField(
       `> Neden biz ?`,
@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
     )
     .addField(
       `> Botumuzu Davet Etmek isterseniz`,
-      `[Botu Davet Et!](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)`
+      `[Botu Davet Etme Linki](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)`
     )
     .addField(
       `> Destek Sunucusuna Katılmak İsterseniz`,
@@ -24,11 +24,22 @@ exports.run = (client, message, args) => {
       `> Sitemize Göz Atmak isterseniz`,
       `[Sitemiz](http://www.xaine.tk/)`
     )
-   
-    .addField(
+  
+   .addField(
       `> Kod Sitemize Göz Atmak İsterseniz`,
       `[Kod sitemiz](https://xainecode.glitch.me/)`
        )
+  
+  .addField(
+      `> Top.gg den botumuza bakmak isterseniz`,
+      `[Top.gg Botumuz Linki](https://top.gg/bot/774235071653216286)`
+    )
+
+
+    .addField(
+      `> Xaine Bota Oy Vermek İsterseniz`,
+      `[Top.gg Oy Verme Linki](https://top.gg/bot/774235071653216286/vote)`
+    )
 .setImage(`https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif`)
     .setThumbnail(
       "https://cdn.discordapp.com/emojis/670167074584395816.gif?v=1"
