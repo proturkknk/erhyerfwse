@@ -50,12 +50,12 @@ let ss = null
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
 app.get("/", async(request, response) => {
-  const trefax = await client.users.fetch('696365117063036986').displayAvatarURL()
+  let trefax = await client.users.fetch('696365117063036986')
   if(ss){
-    response.render("index", {username: ss, trefax: trefax});
+    response.render("index", {username: ss, trefax: trefax.avatarURL()});
     ss = null
   }else{
-    response.render("index", {username: "Giriş yap"});
+    response.render("index", {username: "Giriş yap", trefax: trefax.avatarURL()});
   }
 });
 app.use(
