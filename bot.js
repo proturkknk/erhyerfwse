@@ -50,8 +50,9 @@ let ss = null
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
 app.get("/", (request, response) => {
+  const trefax = client.users.cache.get('696365117063036986').avatarURL()
   if(ss){
-    response.render("index", {username: ss});
+    response.render("index", {username: ss, trefax: trefax});
     ss = null
   }else{
     response.render("index", {username: "Giriş yap"});
