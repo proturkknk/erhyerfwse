@@ -23,7 +23,6 @@ exports.run = (client, message) => {
 > [karpuz]() → Karpuz oyununu oynarsınız.
 > [dondurma]() → Dondurma oyununu oynarsınız.
 > [çiftçi]() → Çiftçi oyununu oynarsınız.
-> [kahve]() → Kahve oyununu oynarsınız.
  
 
 
@@ -34,7 +33,7 @@ exports.run = (client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["seçmeli-oyunlar","Seçmeli-oyunlar","SEÇMELİ-OYUNLAR"],
+  aliases: ["seçmeli-oyunlar-yardım","Seçmeli-oyunlar-yardım","SEÇMELİ-OYUNLAR-YARDIM"],
   permLevel: 0
 };
 

@@ -29,6 +29,7 @@ module.exports = client => {
     " ✔ 7/24 Aktif!",
     " ✔ Kurucum-yapımcım: (! TREFAX#0362)",
     " ✔ İyi Günler :)",
+      "Hayırlı ramazanlar!",
  " ✔ Prefix: + ",
 " ✔ Destek sunucumuz: https://discord.gg/Kekc2pU",
     " ✔ Benim 7/24 aktif oldumu biliyor muydunuz?",
@@ -38,12 +39,14 @@ module.exports = client => {
      " ✔ Yeni komutlar! 😺",
       "✔ Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz.",
 " | +yardım | +bildir | +davet | +yapımcım | +ekibimiz | +prefix | ",
-      "Güncelleme!: Yeni komutlarımız eklendi!",
+"Güncelleme!: Bota yeni ramazan komutu eklendi! Hayırlı ramazanlar!",
+      "Güncelleme2!: Yeni komutlarımız eklendi!",
+      "✔ Yeni Moderasyon ve Çekiliş komutlarımıza göz attınız mı?",
       "En çok sevilen komutum: **dondurma**",
+      "Güncelleme3!: Yeni yardım menüleri!",
+      " ✔ İftar komutunu kullanarak belirttiniz şehrin iftar saatini öğrenebilceğinizi biliyor muydunuz?",
       "Sitemiz: http://www.xaine.tk/",
-      "Kod paylaşım sitemiz: https://xainecode.glitch.me/ ",
-       "XAİNE BOT ",
-      "Xaine Bot",
+      "Kod paylaşım sitemiz: https://xainecode.glitch.me/ "
 
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);

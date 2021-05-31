@@ -21,9 +21,7 @@ exports.run = (client, message) => {
 
 > [30.04.2021]() → **Yenilikler** komutu eklendi.
 > [30.04.2021]() → **küfür-engel** komutu eklendi.
-> [24.05.2021]() → **Kahve** komutu eklendi.
 
-**Daha fazlası için destek sunucumuza gelmeyi unutmayın! Davet linki için: +davet komutunu kullanabilirsiniz.**
 
 
 `);
