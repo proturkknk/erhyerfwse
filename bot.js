@@ -50,12 +50,14 @@ let ss = null
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
 app.get("/", async(request, response) => {
-  let trefax = await client.users.fetch('696365117063036986')
+  const trefax = await client.users.fetch('696365117063036986')
+  const ensar = await client.users.fetch('522834911732695041')
+  const kerem = await client.users.fetch('459377860012933121')
   if(ss){
-    response.render("index", {username: ss, trefax: trefax.avatarURL()});
+    response.render("index", {username: ss, trefax: trefax.avatarURL(), ensar: ensar.avatarURL(), kerem: kerem.avatarURL()});
     ss = null
   }else{
-    response.render("index", {username: "Giriş yap", trefax: trefax.avatarURL()});
+    response.render("index", {username: "Giriş yap", trefax: trefax.avatarURL(), ensar: ensar.avatarURL(), kerem: kerem.avatarURL()});
   }
 });
 app.use(
