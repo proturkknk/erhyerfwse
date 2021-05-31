@@ -49,10 +49,13 @@ passport.use(
 let ss = null
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
+let trefax = client.users.fetch('696365117063036986')
+let ensar = client.users.fetch('522834911732695041')
+let kerem = client.users.fetch('459377860012933121')
 app.get("/", async(request, response) => {
-  const trefax = await client.users.fetch('696365117063036986')
-  const ensar = await client.users.fetch('522834911732695041')
-  const kerem = await client.users.fetch('459377860012933121')
+  let trefax = await client.users.fetch('696365117063036986')
+  let ensar = await client.users.fetch('522834911732695041')
+  let kerem = await client.users.fetch('459377860012933121')
   if(ss){
     response.render("index", {username: ss, trefax: trefax.avatarURL(), ensar: ensar.avatarURL(), kerem: kerem.avatarURL()});
     ss = null
@@ -641,3 +644,9 @@ const candycode = new Discord.MessageEmbed()
 .addField(`Sunucu Üye Sayısı`, guild.memberCount)
 client.channels.cache.get(kanal).send({embed: candycode}).catch(err => console.log("Kanala mesaj atamıyorum!"))
 })
+
+setInterval(() => {
+  trefax = client.users.fetch('696365117063036986')
+  ensar = client.users.fetch('522834911732695041')
+  kerem = client.users.fetch('459377860012933121')
+},5000)
