@@ -25,6 +25,8 @@ module.exports = message => {
     cmd = client.commands.get(client.aliases.get(command));//
   }
     if (cmd) {
+      
+      
         if(message.author.id !== ayarlar.sahip) {
         const player = db.fetch(`karaliste.${message.author.id}`)//Bots For List Yapımı!
         if(player) return message.channel.send(
