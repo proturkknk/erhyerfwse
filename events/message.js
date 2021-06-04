@@ -24,7 +24,15 @@ module.exports = message => {
   } else if (client.aliases.has(command)) {
     cmd = client.commands.get(client.aliases.get(command));//
   }
-
+    if (cmd) {
+        if(message.author.id !== ayarlar.sahip) {
+        const player = db.fetch(`karaliste.${message.author.id}`)//Bots For List Yapımı!
+        if(player) return message.channel.send(
+          new Discord.MessageEmbed()
+          .setDescription(`**Bu botu kullanamazsınız çünkü yetkili tarafından kara listeye alınmışsınız.**`)//Bots For List Yapımı!
+        )
+ }
+      }
     
     if (cmd.conf.permLevel === 1) {
 			if (!message.member.hasPermission("MANAGE_MESSAGES")) {//
