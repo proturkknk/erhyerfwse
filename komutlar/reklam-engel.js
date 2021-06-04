@@ -11,7 +11,7 @@ if (!codework) {
   
 const embed = new Discord.MessageEmbed()
   
-.setDescription(`Reklam engel sistemini açmak için ${ayarlar.prefix}**reklam-engel aç #kanal** veya ${ayarlar.prefix}**reklam-engel aç** yazmalısınız.`)
+.setDescription(`Reklam engel sistemini açmak için ${ayarlar.prefix}**reklam-engel aç #kanal**  ${ayarlar.prefix}**reklam-engel aç** yazmalısınız. Kapatmak içinde`)
 .setColor('RED')
 
 return message.channel.send(embed)
