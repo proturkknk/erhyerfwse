@@ -14,16 +14,16 @@ exports.run = (client, message) => {
     .setColor("RANDOM")
     .setTitle("**  Xaine Bot  **")
     .setThumbnail(
-      "https://cdn.discordapp.com/emojis/670167074584395816.gif?v=1"
+      "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`
 
-**• Bakımdaki komutlar aşağıda yazmaktadır. Lütfen bu komutlar bakımdan çıkana kadar kullanmayınız.**
+**•Yenilikler**
 
-> [mute]() → Bakımda lütfen bu komutu kullanmayınız.
-> [çekiliş]() → Bakımda lütfen bu komutu kullanmayınız.
-> [hatırlatıcı]() → Bakımda lütfen bu komutu kullanmayınız.
-> [unmute]() → Bakımda lütfen bu komutu kullanmayınız. 
+> [30.04.2021]() → **Yenilikler** komutu eklendi.
+> [30.04.2021]() → **küfür-engel** komutu eklendi.
+> [24.05.2021]() → **Kahve** komutu eklendi.
 
+**Daha fazlası için destek sunucumuza gelmeyi unutmayın! Davet linki için: +davet komutunu kullanabilirsiniz.**
 
 
 `);
@@ -33,12 +33,12 @@ exports.run = (client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["bakımdaki-komutlar","Bakımdaki-komutlar","BAKIMDAKİ-KOMUTLAR"],
+  aliases: ["yenilikler","Yenilikler","YENİLİKLER"],
   permLevel: 0
 };
 
 exports.help = {
-  name: "bakımdaki-komutlar",
-  description: "Botun Bakımdaki Komutlar Listesini Gösterir!",
-  usage: "+bakımdaki-komutlar"
+  name: "yenilikler",
+  description: "Bota eklenen yenilikleri gösterir",
+  usage: "+yenilikler"
 };
