@@ -22,8 +22,9 @@ exports.run = (client, message) => {
 > [30.04.2021]() → **Yenilikler** komutu eklendi.
 > [30.04.2021]() → **küfür-engel** komutu eklendi.
 > [24.05.2021]() → **Kahve** komutu eklendi.
+> [04.06.2021]() → **yenilikler** komutu devre dışı bırakıldı.
 
-**Daha fazlası için destek sunucumuza gelmeyi unutmayın! Davet linki için: +davet komutunu kullanabilirsiniz.**
+**Bazı kullanıcılarımız yenilikler komutundan sadece gelen komut ve yardım menülerini öğrenebiliyorlardı. Bunun önüne geçmek için Yenilikler komutunu Devre dışı bıraktık. Artık kullanıcılarımız destek sunucumuzdan tüm olayları ve gelen yenilikleri öğrenebiliceklerdir. Yenilikler komutuna bakan kullanıcılarımızın devre dışı bıraktımızı öğrenebilmeleri için komutu şuanlık silmiyoruz. +davet yazarak destek sunucumuzu öğrenebilirsiniz.**
 
 
 `);
