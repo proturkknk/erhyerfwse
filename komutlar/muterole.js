@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
   if (!message.member.hasPermission("MANAGE_MESSAGES")) return;
   if (!args[0])
     return message.channel.send(
-      "Bir rol belirlemeniz gerekiyor.. (Sunucuda olan rolü etiketlemeyin sonuna create yazın bot rol oluşturacaktır.)"
+      "Bir rol belirlemeniz gerekiyor.. (Sunucuda olan rolü etiketlemeyin sonuna create yazın bot rol oluşturacaktır.) Örnek: +muterole create"
     );
 
   if (args[0] === "create") {
@@ -46,7 +46,7 @@ exports.run = async (client, message, args) => {
                 role.name +
                 "** oluşturuluyor... " +
                 okay +
-                " oluşturma başarılı şekilde sürüyor"
+                " oluşturma başarılı şekilde sürüyor."
             );
           });
       });
