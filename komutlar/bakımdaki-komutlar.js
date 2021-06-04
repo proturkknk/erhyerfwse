@@ -22,7 +22,6 @@ exports.run = (client, message) => {
 > [mute]() → Bakımda lütfen bu komutu kullanmayınız.
 > [çekiliş]() → Bakımda lütfen bu komutu kullanmayınız.
 > [hatırlatıcı]() → Bakımda lütfen bu komutu kullanmayınız.
-> [unmute]() → Bakımda lütfen bu komutu kullanmayınız. 
 
 
 
