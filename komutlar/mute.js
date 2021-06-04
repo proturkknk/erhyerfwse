@@ -11,7 +11,7 @@ exports.run = async (client, message, args) => {
   );
   if (!muteRoleFetch)
     return message.channel.send(
-      "Bu sunucuda ayarlnmış rolü bulamadım, birini ayarlamak için`+muterole 'veya oluşturmak için' +muterole [rol-adı] 'olarak oluşturabilirsiniz."
+      "Bu sunucuda ayarlanmış rolü bulamadım, birini ayarlamak için`+muterole 'veya oluşturmak için' +muterole [rol-adı] 'olarak oluşturabilirsiniz."
     );
 
   if (!args[0])

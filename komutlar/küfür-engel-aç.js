@@ -10,10 +10,10 @@ if(args[0] === 'aç') {
 }
 if (args[0] === 'kapat') {
   db.delete(`${message.guild.id}.kufur`)
-message.channel.send(`Küfür Engel Başarılı Bir Şekilde Kapatıldı Edildi`)
+message.channel.send(`Küfür Engel Başarılı Bir Şekilde Kapatıldı.`)
 return
 }
-  message.channel.send('Lütfen **aç** veya **kapat** yazın. Örnek Kullanım: **küfür-engel aç/kapat**')
+  message.channel.send('Lütfen **aç** veya **kapat** yazınız. Örnek Kullanım: **küfür-engel aç/kapat**')
 };
 exports.conf = {
  enabled: true,

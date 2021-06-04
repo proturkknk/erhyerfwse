@@ -517,7 +517,7 @@ if (reklamlar.some(word => message.content.toLowerCase().includes(word))) {
   
 if (message.member.hasPermission("BAN_MEMBERS")) return; message.delete()
   
-message.reply(':x: Hey! Reklam veya link atamazsın!').then(msg => msg.delete(7000)) 
+message.reply(':x: Hey! Bu sunucuda reklam veya link atamazsın!').then(msg => msg.delete(7000)) 
 }
 });
 
@@ -530,7 +530,7 @@ client.on("message", async msg => {
             if (!msg.member.permissions.has("BAN_MEMBERS")) {
                   msg.delete();
                           
-                      return msg.reply('Heey! Küfür Yasak.').then(nordx => nordx.delete({timeout: 5000}))
+                      return msg.reply('Yakaladım seni! Bu sunucuda küfür etmek yasak!').then(nordx => nordx.delete({timeout: 5000}))
             }              
           } catch(err) {
             console.log(err);
@@ -549,7 +549,7 @@ client.on("messageUpdate", async msg => {
             if (!msg.member.permissions.has("BAN_MEMBERS")) {
                   msg.delete();
                           
-                      return msg.reply('Yakaladım Seni! Küfür Yasak.').then(nordx => nordx.delete({timeout: 5000}))
+                      return msg.reply('Yakaladım Seni! Bu sunucuda küfür etmek yasak!').then(nordx => nordx.delete({timeout: 5000}))
             }              
           } catch(err) {
             console.log(err);
