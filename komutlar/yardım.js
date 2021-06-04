@@ -19,7 +19,9 @@ exports.run = (client, message, args) => {
  
   \`+gif-yardım -> Gif yardım menüsünü gösterir.\`
  
- > \`+davet -> Botun Davetini ve Destek Sunucunu gösterir.\``)
+ > \`+davet -> Botun Davetini ve Destek Sunucunu gösterir.\`
+ 
+  > \`+Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.\``)
  
  .setFooter(`Xaine Bot Yardım Menüsü `)
  .setFooter(`© 2020 Xaine Bot | Tüm hakları saklıdır`)
