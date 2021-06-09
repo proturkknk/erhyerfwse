@@ -56,13 +56,14 @@ exports.run = async(client, msg, args) => {
           db.delete(`anti_${msg.channel.id}`)
           return
         }
-        if(cvp.first().content.toLowerCase() != 'ateş yak' && cvp.first().content.toLowerCase() != 'tahta bul') {
-          msg.reply('Tahta bulmadan nası ateş yakıcağız?.')
+        if(cvp.first().content.toLowerCase() != "ateş yak" && cvp.first().content.toLowerCase() != "tahta bul") return msg.reply('tahta bul')
+        if(cvp.first().content.toLowerCase() == "ateş yak"){
+          msg.reply('Tahta bulmadan nası ateş yakıcağız?')
           .setFooter("Xaine Bot")
           db.delete(`anti_${msg.channel.id}`)
           return
         }
-      if(cvp.first().content.toLowerCase() == 'evet') {
+      if(cvp.first().content.toLowerCase() == 'tahta bul') {
         const dvm = new Discord.MessageEmbed()
         .setTitle('Lütfen bekleyin...')
         .setColor('#ffbe19')
@@ -94,7 +95,7 @@ exports.run = async(client, msg, args) => {
               .setFooter("Xaine Bot")
           return
         }
-        if(cvp.first().content.toLowerCase() != 'uçurtma yap' && cvp.first().content.toLowerCase() != 'evet') {
+        if(cvp.first().content.toLowerCase() != 'uçurtma yap' && cvp.first().content.toLowerCase() != 'ateş yakmayı dene') {
           msg.reply('Uçurtmayı ne yapacaksınız? Lütfen gerekli şeyleri yapın ve tekrar deneyin.')
           .setFooter("Xaine Bot")
           db.delete(`anti_${msg.channel.id}`)
