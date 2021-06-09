@@ -44,7 +44,6 @@ module.exports = client => {
       "Kod paylaşım sitemiz: https://xainecode.glitch.me/ ",
        "XAİNE BOT ",
       "Xaine Bot",
-       "Tüm LGS sınavına giricek olan öğrencilere başarılar dileriz! :)"
 
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
