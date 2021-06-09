@@ -38,12 +38,12 @@ exports.run = async(client, msg, args) => {
     .setTitle('Olamaz! Sen tekne ile gezerken ıssız bir adaya düştün! Şimdi ne yapıcağız?')
     .setColor('BLUE')
     .setThumbnail(msg.author.avatarURL)
-    .addField('Ne yapacağız?','   [tahta bul]   [ateş yak]')/////////////////////////////////////////////////:D
+    .addField('Ne yapacağız?', ' [tahta bul]  [ateş yak]')/////////////////////////////////////////////////:D
     .setTimestamp()
     msg.channel.send(ilk).then(msj => {
       msg.channel.awaitMessages(filter,{
       max: 1,
-      time: 6000,
+      time: 7000,
       errors: ['time']
     }).catch(err => {
         //hiçbişi
@@ -59,7 +59,7 @@ exports.run = async(client, msg, args) => {
           db.delete(`anti_${msg.channel.id}`)
           return
         }
-      if(cvp.first().content.toLowerCase() == 'evet') {
+      if(cvp.first().content.toLowerCase() == 'tahta bul') {
         const dvm = new Discord.MessageEmbed()
         .setTitle('Tahta bulmaya çalışıyorsun...')
         .setColor('#ffbe19')
@@ -73,13 +73,13 @@ exports.run = async(client, msg, args) => {
         .setTitle('İşte tahta buldun! Peki şimdi ne yapıcaksın?')
         .setColor('GREEN')
         .setThumbnail(msg.author.avatarURL)
-          .addField('Ne yapıcaksın?','[ateş yak] [uçurtma yap]')
+          .addField('Ne yapıcaksın?','[ateş yakmayı dene] [uçurtma yap]')
         .setTimestamp()
         msg.channel.send(com)
           .then(msj => {
           msg.channel.awaitMessages(filter,{
             max: 1,
-            time: 6000,
+            time: 7000,
             errors: ['time']
           }).catch(err => {})
             .then(cvp => {
@@ -88,12 +88,12 @@ exports.run = async(client, msg, args) => {
           db.delete(`anti_${msg.channel.id}`)
           return
         }
-        if(cvp.first().content.toLowerCase() != 'uçurtma yap' && cvp.first().content.toLowerCase() != 'ateş yak') {
+        if(cvp.first().content.toLowerCase() != 'uçurtma yap' && cvp.first().content.toLowerCase() != 'uçurtma yap') {
           msg.reply('Uçurtmayı ne yapacaksın! Lütfen burdan kurtulmak için gerekli şeyleri yap ve tekrar dene.')
           db.delete(`anti_${msg.channel.id}`)
           return
         }
-            if(cvp.first().content.toLowerCase() == 'ateş yak') {
+            if(cvp.first().content.toLowerCase() == 'ateş yakmayı dene') {
               const indiriyo = new Discord.MessageEmbed()
             .setTitle('Lütfen bekleyin...')
             .setDescription('Ateş yakmaya çalışıyorsun')
@@ -105,13 +105,13 @@ exports.run = async(client, msg, args) => {
                 const virus = new Discord.MessageEmbed()
             .setTitle('Ateş yanmıyor! şimdi ne yapıcaz?')
             .setColor('RED')
-                .addField('Ateş yanmıyor!!','[boşver] [sürtünme yöntemiyle dene]')
+                .addField('Ateş yanmıyor!','[boşver] [sürtünme yöntemiyle dene]')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
             msg.channel.send(virus).then(msj => {
               msg.channel.awaitMessages(filter,{
                 max: 1,
-                time: 6000,
+                time: 7000,
                 errors: ['time']
               }).catch(err => {})
                 .then(cvp => {
@@ -121,7 +121,7 @@ exports.run = async(client, msg, args) => {
                   return
                 }
                 if(cvp.first().content.toLowerCase() != 'sürtünme yöntemiyle dene' && cvp.first().content.toLowerCase() != 'sürtünme yöntemiyle dene ' && cvp.first().content.toLowerCase() != 'sürtünme yöntemiyle dene') {
-                  msg.reply('İşte bu kadar! Ateşi yaktın ve 1 gece üşümeden uyudun! Sabah olunca sahil güvenlikler seni buldu ve kurtardı! Oynadığın için teşekkür ederiz.')
+                  msg.reply('Olamaz! Ateşi yakmadın ve çok üşüdün. Lütfen tekrar dene.')
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
