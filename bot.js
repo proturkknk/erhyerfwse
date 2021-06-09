@@ -558,3 +558,6 @@ client.on("messageUpdate", async msg => {
     }
     if (!i) return;
 });
+  if (msg.content.toLowerCase() === '') {
+    msg.reply("Botun vereceği cevap")
+  }
