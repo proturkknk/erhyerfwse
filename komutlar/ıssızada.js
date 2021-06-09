@@ -4,35 +4,9 @@ const db = require('quick.db')
 const Discord = require('discord.js')
 
 exports.run = async(client, msg, args) => {
-  
-  let cooldown = true
-  
-  if(cooldown) {
-    cooldown = false
-    
-    const liste = await db.fetch('list');
-    
-  if(liste) {
-    if(liste.find(o => o.id === msg.author.id)) {
-      
-      const kullanıcı = liste.find(o => o.id === msg.author.id)
-      const yasaklayan = kullanıcı.yasaklayan
-      const sebep = kullanıcı.sebep
-      
-      const embed = new Discord.MessageEmbed()
-      .setTitle('Karaliste')
-      .setDescription('Neden Karalistem Var?')
-      .setThumbnail(msg.author.avatarURL)
-      .addField('Karaliste Bilgiler','\nYasaklayan: **'+yasaklayan+'**\nSebep: '+sebep)
-      .setColor('RED')
-      .setTimestamp()
-      
-      msg.channel.send(embed)
-      return
-    }
-  }
     const antispam = await db.fetch(`anti_${msg.channel.id}`)
     db.set(`anti_${msg.channel.id}`,'open')
+  console.log(db.fetch(`anti_${msg.channel.id}`))
     var filter = m => m.author.id == msg.author.id;
     const ilk = new Discord.MessageEmbed()
     .setTitle('Olamaz! Sen teknede gezerken uyuya kaldın ve ıssız bir adaya düştün! Şimdi ne yapacağız?')
@@ -44,7 +18,7 @@ exports.run = async(client, msg, args) => {
     msg.channel.send(ilk).then(msj => {
       msg.channel.awaitMessages(filter,{
       max: 1,
-      time: 6000,
+      time: 10000,
       errors: ['time']
     }).catch(err => {
         //hiçbişi
@@ -56,7 +30,7 @@ exports.run = async(client, msg, args) => {
           db.delete(`anti_${msg.channel.id}`)
           return
         }
-        if(cvp.first().content.toLowerCase() != "ateş yak" && cvp.first().content.toLowerCase() != "tahta bul") return msg.reply('tahta bul')
+        if(cvp.first().content.toLowerCase() != "ateş yak" && cvp.first().content.toLowerCase() != "tahta bul") return msg.reply('ateş yak veya tahta bul seçeneklerinden birini kullanmak zorundasın')
         if(cvp.first().content.toLowerCase() == "ateş yak"){
           msg.reply('Tahta bulmadan nası ateş yakıcağız?')
           .setFooter("Xaine Bot")
@@ -85,7 +59,7 @@ exports.run = async(client, msg, args) => {
           .then(msj => {
           msg.channel.awaitMessages(filter,{
             max: 1,
-            time: 6000,
+            time: 10000,
             errors: ['time']
           }).catch(err => {})
             .then(cvp => {
@@ -95,12 +69,13 @@ exports.run = async(client, msg, args) => {
               .setFooter("Xaine Bot")
           return
         }
-        if(cvp.first().content.toLowerCase() != 'uçurtma yap' && cvp.first().content.toLowerCase() != 'ateş yakmayı dene') {
+        if(cvp.first().content.toLowerCase() == 'uçurtma yap') {
           msg.reply('Uçurtmayı ne yapacaksınız? Lütfen gerekli şeyleri yapın ve tekrar deneyin.')
           .setFooter("Xaine Bot")
           db.delete(`anti_${msg.channel.id}`)
           return
         }
+            if(cvp.first().content.toLowerCase() != 'uçurtma yap' && cvp.first().content.toLowerCase() != 'ateş yakmayı dene') return msg.reply('2 seçenekten birini söyle Rage')
             if(cvp.first().content.toLowerCase() == 'ateş yakmayı dene') {
               const indiriyo = new Discord.MessageEmbed()
             .setTitle('Lütfen bekleyin...')
@@ -121,26 +96,24 @@ exports.run = async(client, msg, args) => {
             msg.channel.send(virus).then(msj => {
               msg.channel.awaitMessages(filter,{
                 max: 1,
-                time: 6000,
+                time: 10000,
                 errors: ['time']
               }).catch(err => {})
                 .then(cvp => {
                 if(!cvp) {
                   msg.reply('**Süren Doldu!**')
-                  .setFooter("Xaine Bot")
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
-                if(cvp.first().content.toLowerCase() != 'ye' && cvp.first().content.toLowerCase() != 'boşver ' && cvp.first().content.toLowerCase() != 'sürtünme yöntemiyle dene') {
+                if(cvp.first().content.toLowerCase() != 'ye' && cvp.first().content.toLowerCase() != 'boşver ' && cvp.first().content.toLowerCase() != 'boşver') {
                   msg.reply('TEBRİKLER! Sürtünme yöntemiyle ateşi yakarak üşümediniz. Sabah olunca sizi kurtarmak için sahil güvenlikler geldi. Oynadığınız için teşekkür ederiz.')
-                  .setFooter("Xaine Bot")
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
                 if(cvp.first().content.toLowerCase() == 'sürtünme yöntemiyle dene') {
                   const sil = new Discord.MessageEmbed()
             .setTitle('Tebrikler')
-            .setDescription('EBRİKLER! Sürtünme yöntemiyle ateşi yakarak üşümediniz. Sabah olunca sizi kurtarmak için sahil güvenlikler geldi. Oynadığınız için teşekkür ederiz.')
+            .setDescription('TEBRİKLER! Sürtünme yöntemiyle ateşi yakarak üşümediniz. Sabah olunca sizi kurtarmak için sahil güvenlikler geldi. Oynadığınız için teşekkür ederiz.')return msg.reply('2Buraya yazma rage')
             .setColor('RED')
                   .setFooter("Xaine Bot")
             .setTimestamp()
@@ -197,13 +170,6 @@ exports.run = async(client, msg, args) => {
       }
     })
     })
-    
-    
-    setTimeout(function() {
-       cooldown = true
-      }, 2500);
-  }
-  
     
 };
 
