@@ -5,8 +5,8 @@ const Discord = require('discord.js')
 
 exports.run = async(client, msg, args) => {
     const antispam = await db.fetch(`anti_${msg.channel.id}`)
+    //if(db.fetch(`anti_${msg.channel.id}`)) return msg.reply('kanal başına sadece 1 tane oynanabilir.')
     db.set(`anti_${msg.channel.id}`,'open')
-  console.log(db.fetch(`anti_${msg.channel.id}`))
     var filter = m => m.author.id == msg.author.id;
     const ilk = new Discord.MessageEmbed()
     .setTitle('Olamaz! Sen teknede gezerken uyuya kaldın ve ıssız bir adaya düştün! Şimdi ne yapacağız?')
@@ -30,10 +30,13 @@ exports.run = async(client, msg, args) => {
           db.delete(`anti_${msg.channel.id}`)
           return
         }
-        if(cvp.first().content.toLowerCase() != "ateş yak" && cvp.first().content.toLowerCase() != "tahta bul") return msg.reply('ateş yak veya tahta bul seçeneklerinden birini kullanmak zorundasın')
+        if(cvp.first().content.toLowerCase() != "ateş yak" && cvp.first().content.toLowerCase() != "tahta bul") {
+          msg.reply('seçenek belirt :rage:')
+          db.delete(`anti_${msg.channel.id}`)
+          return
+        }
         if(cvp.first().content.toLowerCase() == "ateş yak"){
           msg.reply('Tahta bulmadan nası ateş yakıcağız?')
-          .setFooter("Xaine Bot")
           db.delete(`anti_${msg.channel.id}`)
           return
         }
@@ -66,7 +69,6 @@ exports.run = async(client, msg, args) => {
             if(!cvp) {
           msg.reply('**Süren Doldu!**')
           db.delete(`anti_${msg.channel.id}`)
-              .setFooter("Xaine Bot")
           return
         }
         if(cvp.first().content.toLowerCase() == 'uçurtma yap') {
@@ -75,7 +77,11 @@ exports.run = async(client, msg, args) => {
           db.delete(`anti_${msg.channel.id}`)
           return
         }
-            if(cvp.first().content.toLowerCase() != 'uçurtma yap' && cvp.first().content.toLowerCase() != 'ateş yakmayı dene') return msg.reply('2 seçenekten birini söyle Rage')
+            if(cvp.first().content.toLowerCase() != 'uçurtma yap' && cvp.first().content.toLowerCase() != 'ateş yakmayı dene') {
+              msg.reply('iki seçenekten birini söyle')
+              db.delete(`anti_${msg.channel.id}`)
+              return
+            }
             if(cvp.first().content.toLowerCase() == 'ateş yakmayı dene') {
               const indiriyo = new Discord.MessageEmbed()
             .setTitle('Lütfen bekleyin...')
@@ -105,15 +111,20 @@ exports.run = async(client, msg, args) => {
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
-                if(cvp.first().content.toLowerCase() != 'ye' && cvp.first().content.toLowerCase() != 'boşver ' && cvp.first().content.toLowerCase() != 'boşver') {
+                if(cvp.first().content.toLowerCase() == 'sürtünme yöntemiyle dene') {
                   msg.reply('TEBRİKLER! Sürtünme yöntemiyle ateşi yakarak üşümediniz. Sabah olunca sizi kurtarmak için sahil güvenlikler geldi. Oynadığınız için teşekkür ederiz.')
+                  db.delete(`anti_${msg.channel.id}`)
+                  return
+                }
+                if(cvp.first().content.toLowerCase() != 'boşver ' && cvp.first().content.toLowerCase() != 'sürtünme yöntemiyle dene') {
+                  msg.reply('iki seçenekten birini seç :x: :brain:')
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
                 if(cvp.first().content.toLowerCase() == 'sürtünme yöntemiyle dene') {
                   const sil = new Discord.MessageEmbed()
             .setTitle('Tebrikler')
-            .setDescription('TEBRİKLER! Sürtünme yöntemiyle ateşi yakarak üşümediniz. Sabah olunca sizi kurtarmak için sahil güvenlikler geldi. Oynadığınız için teşekkür ederiz.')return msg.reply('2Buraya yazma rage')
+            .setDescription('EBRİKLER! Sürtünme yöntemiyle ateşi yakarak üşümediniz. Sabah olunca sizi kurtarmak için sahil güvenlikler geldi. Oynadığınız için teşekkür ederiz.')
             .setColor('RED')
                   .setFooter("Xaine Bot")
             .setTimestamp()
