@@ -24,6 +24,7 @@ exports.run = (client, message) => {
 > [dondurma]() → Dondurma oyununu oynarsınız.
 > [çiftçi]() → Çiftçi oyununu oynarsınız.
 > [kahve]() → Kahve oyununu oynarsınız.
+> [ıssızada]() → Issızada oyununu oynarsınız.
  
 
 

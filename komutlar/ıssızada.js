@@ -31,7 +31,7 @@ exports.run = async(client, msg, args) => {
           return
         }
         if(cvp.first().content.toLowerCase() != "ateş yak" && cvp.first().content.toLowerCase() != "tahta bul") {
-          msg.reply('seçenek belirt :rage:')
+          msg.reply('seçenek belirt.')
           db.delete(`anti_${msg.channel.id}`)
           return
         }
@@ -78,7 +78,7 @@ exports.run = async(client, msg, args) => {
           return
         }
             if(cvp.first().content.toLowerCase() != 'uçurtma yap' && cvp.first().content.toLowerCase() != 'ateş yakmayı dene') {
-              msg.reply('iki seçenekten birini söyle')
+              msg.reply('iki seçenekten birini söyleyiniz.')
               db.delete(`anti_${msg.channel.id}`)
               return
             }
@@ -117,7 +117,7 @@ exports.run = async(client, msg, args) => {
                   return
                 }
                 if(cvp.first().content.toLowerCase() != 'boşver ' && cvp.first().content.toLowerCase() != 'sürtünme yöntemiyle dene') {
-                  msg.reply('iki seçenekten birini seç :x: :brain:')
+                  msg.reply('İki seçenekten birini seçiniz.')
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
