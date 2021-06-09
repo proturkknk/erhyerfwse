@@ -37,7 +37,21 @@ const cevaplar = [
   "Hey",
 "Tanışabiliriz",
 "Sahibim trefax ı tanıyor musunuz?",
-  "Sihirli küreme soru sormak ister misiniz?"
+  "Sihirli küreme soru sormak ister misiniz?",
+   "selam",
+  "Peki",
+  "Beni seviyor musun?",
+  "Seni çok seviyorum <3",
+  "Beni beğeniyor musun?",
+  "Sevindim",
+  "Çok sıkıldım",
+  "dın dın",
+  "Kahvaltı yapar mısın benimle?",
+  "sıkıldım biraz",
+  "Sahibimi seviyorum <3",
+  "çok iyi birine benziyorsun",
+  "beraber gezellimi?",
+  "tamam",
 ];
 
 exports.run = function(client, message, args) {
