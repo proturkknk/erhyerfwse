@@ -562,3 +562,41 @@ client.on("messageUpdate", (oldMessage, newMessage) => {
     }
     if (!i) return;
 });
+
+client.on("message", async msg => {
+ const i = await db.fetch(`${msg.guild.id}.kufur`)
+    if (i) {
+        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak",  "amcık", "amık", "yarram", "sikimi ye", "mq", "aq",  "amq",];
+        if (kufur.some(word => msg.content.includes(word))) {
+          try {
+            if (!msg.member.permissions.has("BAN_MEMBERS")) {
+                  msg.delete();
+                          
+                      return msg.reply('Yakaladım seni! Bu sunucuda küfür etmek yasak.').then(nordx => nordx.delete({timeout: 5000}))
+            }              
+          } catch(err) {
+            console.log(err);
+          }
+        }
+    }
+    if (!i) return;
+});
+
+client.on("messageUpdate", async msg => {
+ const i = db.fetch(`${msg.guild.id}.kufur`)
+    if (i) {
+        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", , "amcık", "amık", "yarram", "sikimi ye",,  "aq",  "amq",];
+        if (kufur.some(word => msg.content.includes(word))) {
+          try {
+            if (!msg.member.permissions.has("BAN_MEMBERS")) {
+                  msg.delete();
+                          
+                      return msg.reply('Yakaladım Seni! Bu sunucuda küfür etmek yasak.').then(nordx => nordx.delete({timeout: 5000}))
+            }              
+          } catch(err) {
+            console.log(err);
+          }
+        }
+    }
+    if (!i) return;
+});

@@ -2,27 +2,28 @@ const Discord = require('discord.js')
 const db = require('quick.db')
 
 exports.run = async (client ,message, args) =>{
-if(args[0] === 'aktif') {
-    db.set(`kufur_${message.guild.id}`, "acik")
-    message.channel.send('Başarılı Şekilde `Aktif` Edildi.')
+  if (!message.member.permissions.has("MANAGE_GUILD")) return message.channel.send(`❌ Bu Komutu Kullana Bilmek İçin \`Mesajları Yönet\` Yetkisine Sahip Olmalısın!`)
+if(args[0] === 'aç') {
+    db.set(`${message.guild.id}.kufur`, true)
+    message.channel.send(`Küfür Engel Başarılı Bir Şekilde Akif Edildi.`)
   return
 }
-if (args[0] === 'deaktif') {
-  db.delete(`kufur_${message.guild.id}`)
-message.channel.send('Başarılı Şekilde `küfür engel` kapatıldı.')
+if (args[0] === 'kapat') {
+  db.delete(`${message.guild.id}.kufur`)
+message.channel.send(`Küfür Engel Başarılı Bir Şekilde Kapatıldı.`)
 return
 }
-  message.channel.send('Lüten `Aktif` yada `kapat` Yazınız.')
+  message.channel.send('Lütfen **aç** veya **kapat** yazınız. Örnek Kullanım: **küfür-engel aç/kapat**')
 };
 exports.conf = {
  enabled: true,
  guildOnly: false,
- aliases: ['küfür'],
+ aliases: ['küfürengel','Küfür-engel','küfür-engel','KÜFÜR-ENGEL'], 
  permLevel: 0
 };
 
 exports.help = {
- name: 'küfür-ayarla',
- description: 'Davet Log Kanalını Belirler',
- usage: 'davet-kanal-ayarla #kanal'
+ name: 'küfür-engel',
+ description: 'küfürleri engeller',
+ usage: 'küfürengel'
 };
