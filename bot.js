@@ -524,7 +524,7 @@ message.reply(':x: Hey! Bu sunucuda reklam veya link atamazsın!').then(msg => m
 client.on("message", async msg => {
  const i = await db.fetch(`${msg.guild.id}.kufur`)
     if (i) {
-        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "am", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
+        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "am", "amcık", "amık", "yarram", "sikimi ye", "aq", "amq",];
         if (kufur.some(word => msg.content.includes(word))) {
           try {
             if (!msg.member.permissions.has("BAN_MEMBERS")) {
@@ -543,7 +543,7 @@ client.on("message", async msg => {
 client.on("messageUpdate", async msg => {
  const i = db.fetch(`${msg.guild.id}.kufur`)
     if (i) {
-        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "am", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
+        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak",  "amcık", "amık", "yarram", "sikimi ye", "mk", "aq", "amq",];
         if (kufur.some(word => msg.content.includes(word))) {
           try {
             if (!msg.member.permissions.has("BAN_MEMBERS")) {
