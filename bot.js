@@ -522,16 +522,18 @@ message.reply(':x: Hey! Bu sunucuda reklam veya link atamazsın!').then(msg => m
 });
 
 client.on("message", async msg => {
- const i = await db.fetch(`${msg.guild.id}.kufur`)
-    if (i) {
-        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "am", "amcık", "amık", "yarram", "sikimi ye", "aq", "amq",];
+ 
+ 
+ const i = await db.fetch(`kufur_${msg.guild.id}`)
+    if (i == "acik") {
+        const kufur = ["küfürler","küfürler","küfürler",];
         if (kufur.some(word => msg.content.includes(word))) {
           try {
-            if (!msg.member.permissions.has("BAN_MEMBERS")) {
+            if (!msg.member.hasPermission("BAN_MEMBERS")) {
                   msg.delete();
                           
-                      return msg.reply('Yakaladım seni! Bu sunucuda küfür etmek yasak!').then(nordx => nordx.delete({timeout: 5000}))
-            }              
+                      return msg.reply('Bu Sunucuda Küfür Filtresi Aktiftir.')
+            }             
           } catch(err) {
             console.log(err);
           }
@@ -540,17 +542,19 @@ client.on("message", async msg => {
     if (!i) return;
 });
 
-client.on("messageUpdate", async msg => {
- const i = db.fetch(`${msg.guild.id}.kufur`)
+client.on("messageUpdate", (oldMessage, newMessage) => {
+ 
+ 
+ const i = db.fetch(`${oldMessage.guild.id}.kufur`)
     if (i) {
-        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak",  "amcık", "amık", "yarram", "sikimi ye", "mk", "aq", "amq",];
-        if (kufur.some(word => msg.content.includes(word))) {
+        const kufur = ["aq","oç","siktir",];
+        if (kufur.some(word => newMessage.content.includes(word))) {
           try {
-            if (!msg.member.permissions.has("BAN_MEMBERS")) {
-                  msg.delete();
+            if (!oldMessage.member.hasPermission("BAN_MEMBERS")) {
+                  oldMessage.delete();
                           
-                      return msg.reply('Yakaladım Seni! Bu sunucuda küfür etmek yasak!').then(nordx => nordx.delete({timeout: 5000}))
-            }              
+                      return oldMessage.reply('Yakaladım seni! Bu sunucuda küfür etmek yasaktır.')
+            }             
           } catch(err) {
             console.log(err);
           }
