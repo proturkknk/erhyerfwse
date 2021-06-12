@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 exports.run = async (bot, message, args) => {
-    var dogruluk = ['Telefonunda arattığın en son şey nedir ?', 'Bir sabah karşı cins olarak uyansaydın ilk yapacağın şey ne olurdu ?', 'Sokakta yere bir şey düşürdüğünde hiç bir şey olmamış gibi alıp ağzına attın mı ?', '']
-    var cesaret = ['Bugün yaptığın bir şeyle alakalı uydurma kısa, komik bir hikaye anlat', 'Whatsappındaki son mesajlaşmanı bize oku', 'Çok yüksek bir sesle 3 saniye bağır']
+    var dogruluk = ['Telefonunda arattığın en son şey nedir ?', 'Bir sabah karşı cins olarak uyansaydın ilk yapacağın şey ne olurdu ?', 'Sokakta yere bir şey düşürdüğünde hiç bir şey olmamış gibi alıp ağzına attın mı ?', 'Dışarıda en son ne yaptın?', 'En son ne zaman dışarı çıktın?']
+    var cesaret = ['Bugün yaptığın bir şeyle alakalı uydurma kısa, komik bir hikaye anlat', 'Whatsappındaki son mesajlaşmanı bize oku',]
     var dogrulukcevap = dogruluk[Math.floor(Math.random() * dogruluk.length)];
     var cesaretcevap = cesaret[Math.floor(Math.random() * cesaret.length)]
     message.channel.send('\`Doğruluk\` mu yoksa \`cesaret\` mi?')
