@@ -117,14 +117,14 @@ exports.run = async(client, msg, args) => {
                   return
                 }
                 if(cvp.first().content.toLowerCase() != 'boşver ' && cvp.first().content.toLowerCase() != 'sürtünme yöntemiyle dene') {
-                  msg.reply('İki seçenekten birini seçiniz.')
+                  msg.reply('Soğuk bir gece geçirdiniz! Lütfen tekrar deneyin.')
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
                 if(cvp.first().content.toLowerCase() == 'sürtünme yöntemiyle dene') {
                   const sil = new Discord.MessageEmbed()
             .setTitle('Tebrikler')
-            .setDescription('EBRİKLER! Sürtünme yöntemiyle ateşi yakarak üşümediniz. Sabah olunca sizi kurtarmak için sahil güvenlikler geldi. Oynadığınız için teşekkür ederiz.')
+            .setDescription('TEBRİKLER! Sürtünme yöntemiyle ateşi yakarak üşümediniz. Sabah olunca sizi kurtarmak için sahil güvenlikler geldi. Oynadığınız için teşekkür ederiz.')
             .setColor('RED')
                   .setFooter("Xaine Bot")
             .setTimestamp()
