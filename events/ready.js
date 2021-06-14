@@ -44,6 +44,7 @@ module.exports = client => {
       "Kod paylaşım sitemiz: https://xainecode.glitch.me/ ",
        "XAİNE BOT ",
       "Xaine Bot",
+       "Yeni **taş-kağıt-makas** komutu yarın Xaine Bota eklenmiş olacak! Komuta bakmak için +taş-kağıt-makas veya +tkm yazabilirsiniz. İyi günler dileriz.",
 
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
