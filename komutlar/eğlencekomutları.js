@@ -41,7 +41,7 @@ message.channel.send(embd.setDescription(arr[0]).setDescription('Xaine Bot eğle
             reaction.users.remove(user).catch(console.error);
               embd.setColor("RANDOM");
               embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
-              embd.setDescription("stresçarkı - duygulandırıcı-söz - zarat - nsfw - atatürk-sözleri - fal - boks-makinesi - şifre-oluştur -  sayıtut  - komik - sarıl - şiir -  ilginçbilgi - şanslı-sayım - yazan-kazanır - doğruluk-cesaret - kasa-aç")
+              embd.setDescription("stresçarkı - zarat - nsfw - fal - boks-makinesi - şifre-oluştur -  sayıtut  - komik - sarıl - şiir -  ilginçbilgi - şanslı-sayım - yazan-kazanır - doğruluk-cesaret - kasa-aç")
             msg.edit(embd)
           break;
 
