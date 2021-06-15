@@ -40,7 +40,7 @@ module.exports = client => {
 " | +yardım | +bildir | +davet | +yapımcım | +ekibimiz | +prefix | ",
       "Güncelleme!: Yeni komutlarımız eklendi!",
       "En çok sevilen komutum: **dondurma**",
-      "Sitemiz: http://www.xaine.tk/",
+      "Sitemiz: https://www.xaine.tk/",
       "Kod paylaşım sitemiz: https://xainecode.glitch.me/ ",
        "XAİNE BOT ",
       "Xaine Bot",
