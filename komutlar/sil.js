@@ -21,8 +21,7 @@ if (deletedMessages.size < 1) return message.reply("Hiç mesaj silemedim! _(**14
 })
    
 message.channel.send(`**${args[0]}** adet mesaj başarıyla silindi!`) 
- time: 10000,
-            er ['time']
+ time: 10000, ['time']
 };
 
 exports.conf = {
