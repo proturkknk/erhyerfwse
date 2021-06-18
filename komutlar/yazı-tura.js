@@ -26,7 +26,7 @@ const liste = await db.fetch('list');
   }
 
   var filter = m => m.author.id == message.author.id
-  message.channel.send(message.author.toString() + " Yazı mı Tura mı? ");
+  message.channel.send(message.author.toString() + " Yazı mı Tura mı yoksa dikmi? Dik tutturma ihtimali: %1 Bol şans!");
   const random = Math.random()
   let answer
   if(random < 0.5) {
@@ -35,7 +35,7 @@ const liste = await db.fetch('list');
   if(random > 0.55) {
     answer = "Yazı"
   }
-  if(random > 0.5 && random < 0.55) {
+  if(random > 1 && random < 1) {
     answer = "Dik"
   }
   message.channel.awaitMessages(filter,{
@@ -46,9 +46,9 @@ const liste = await db.fetch('list');
   .then(cvp => {
     if(!cvp.first()) return message.reply('Süren Doldu :x:')
     if(cvp.first().content.toLowerCase() == answer.toLowerCase()) {
-      message.channel.send('Doğru Bildin: '+answer+'')
+      message.channel.send('Doğru bildin. Tebrikler! Parada çıkan: '+answer+'')
     }else{
-      message.channel.send('Yanlış Bildin: '+answer+'')
+      message.channel.send('Yanlış Bildin! Bidahaki sefere. Parada çıkan: '+answer+'')
     }
   })
 }
@@ -56,7 +56,7 @@ const liste = await db.fetch('list');
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['yazıtura','turayazı','paraçevir','paradöndür','Yazıtura','YAZITURA','yazı-tura',],
+  aliases: ['yazıtura','turayazı','paraçevir','paradöndür','Yazıtura','YAZITURA','yazı-tura','Yazı-tura','YAZI-TURA'],
   permLevel: 0
 };
 

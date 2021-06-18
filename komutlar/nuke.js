@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
   .setTimestamp()
   .setAuthor("Xaine Bot Nuke Komutu")
   .setFooter("Onaylamak için 👍 emojisine, onaylamamak içinse 👎 emojisine tıklayabilirsiniz.")
-  .setDescription("** :warning: UYARI!** \n\nEğer nuke işlemini onaylarsanız bu kanal kalıcı olarak **silinecek**,\n**geri getirilemeyecektir!**\nAncak bu kanalın **kopyası oluşturulacaktır!** \n")
+  .setDescription("** :warning: UYARI!** \n\nEğer nuke işlemini onaylarsanız bu kanal kalıcı olarak **silinecek**,\n**geri getirilemeyecektir!**\nAncak bu kanalın **kopyası(Yenisi) oluşturulacaktır!** \n")
   message.channel.send(onayembed).then(msg => {
 msg.react('👍').then(() => msg.react('👎'));
 
@@ -28,7 +28,7 @@ msg.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
         }
     })
     .catch(collected => {
-        message.reply(' :warning: Bir hatayla karşılaştık! Lütfen daha sonra tekrar deneyiniz.');
+        message.reply(' :warning: Bir hatayla karşılaştık! Lütfen daha sonra tekrar deneyiniz. Eğer hatanın nedenini bilmiyorsanız lütfen **bildir** komutuyla Yetkililerimize bildiriniz.');
     });
   
 })

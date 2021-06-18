@@ -20,7 +20,7 @@ if (message.channel.type !== "dm") {
 
 const Embedmatador = new Discord.MessageEmbed()
 
-      .setAuthor(message.author.username + " Artık Kral Oldun!!!(ironi)")
+      .setAuthor(message.author.username + " Artık Kral Oldun!")
       .setColor(3447003)
       .setTimestamp()
       .setDescription("")

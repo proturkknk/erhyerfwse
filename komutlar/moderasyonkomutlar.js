@@ -25,12 +25,12 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
 > **» +nuke :** Kanalı tekrar kurar ve tüm mesajları siler.
 > **» +prefix :** Botun prefixini değiştirirsiniz.
-> **» +yavaşmod :** Bulunduğunuz kanalın yazma limitini belirlersiniz.
+> **» +yavaşmod :** Bulunduğunuz kanalın yazma limitini(Süresini) belirlersiniz.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
-> :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, Belirtmekten asla çekinmeyin!**
+> :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, bildir komutuyla belirtmekten asla çekinmeyin!**
 > :open_file_folder: **Botun Kod Paylaşım Ve Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
-> :round_pushpin: **Komut hakkında detaylı bilgi için: +yardım**
+> :round_pushpin: **Ana yardım menüsüne dönmek için: +yardım**
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
 `)
 .setImage(`https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif`)

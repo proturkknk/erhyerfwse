@@ -16,11 +16,11 @@ let user;
 
     const embed = new Discord.MessageEmbed()
     
-        .setColor("GREEN")
+        .setColor("RANDOM")
     
     .setThumbnail(user.avatarURL())
     
-    .setTitle(`${user.username}#${user.discriminator} Kullanıcı Bilgi'si`)
+    .setTitle(`${user.username}#${user.discriminator} İşte belirttiniz kullanıcının bilgileri`)
     
     .addField("İsim :",`${user.username}#${user.discriminator}`, true)
     .addField("İd :", `${user.id}`, true)

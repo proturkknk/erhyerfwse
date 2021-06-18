@@ -7,7 +7,7 @@ if (!args.length) {
             axios.get('https://corona.lmao.ninja/v2/all')
                 .then((response) => {
                     const exampleEmbed = new Discord.MessageEmbed()
-                        .setColor("BLUE")
+                        .setColor("RANDOM")
                         .setTitle('Dünya Geneli COVID-19 Bilgileri')
                         .setDescription('Tanı konulan vakalar, ölümler ve dünya çapında gelişmeler \n Ülkeler hakkında bilgi almak için: ' + ` \`${ayarlar.prefix}korona turkey\` `)
                         .addField(`Tanı Konulan Hasta Sayısı`,response.data.cases)
@@ -25,7 +25,7 @@ if (!args.length) {
             axios.get(`https://corona.lmao.ninja/v2/countries/${args[0]}`)
                 .then((response) => {
                     const exampleEmbed = new Discord.MessageEmbed()
-                        .setColor('RED')
+                        .setColor('RANDOM')
                         .setTitle(`${args[0]} - COVID19 Bilgileri`)
                         .addField(`Ülke`,response.data.country)
             .addField(`Tanı Konulan Hasta`,response.data.cases ,true)
