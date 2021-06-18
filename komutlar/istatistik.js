@@ -8,7 +8,7 @@ exports.run = async (client, message, args) => {
     .duration(client.uptime)
     .format(" D [gün], H [saat], m [dakika], s [saniye]");
   const istatistikler = new Discord.MessageEmbed()
-    .setColor("YELLOW")
+    .setColor("RANDOM")
     .addField("**__Ping__**",` :clock: Mesaj Gecikmesi: ${new Date().getTime() - message.createdTimestamp} ms\n :person_running: Bot Gecikmesi: ${client.ws.ping}ms`, true)
     .addField("**__ Kullanıcı Sayısı__** ",` :busts_in_silhouette: ${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()}`, true) 
     .addField("**__Sunucu Sayısı__**", ` :clipboard: ${client.guilds.cache.size.toLocaleString()}`, true)
