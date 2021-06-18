@@ -9,7 +9,7 @@ if(!message.mentions.members.first()) return message.channel.send(':warning: Hat
 let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
 if(!member) return message.channel.send('Etiketlediğin kullanıcıyı bulamıyorum.');
 if(!args[1]) return message.channel.send('Kaç tane mesaj sileceğimi belirt.');
-if(isNaN(args[1])) return message.channel.send('Rakam yaz rage :rage:');
+if(isNaN(args[1])) return message.channel.send(':warning: Hata!: Lütfen bir rakam yazınız.');
 var i = 0;
 message.delete();
 channel.messages.fetch().then(x => {
