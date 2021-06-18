@@ -9,7 +9,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 .setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
 .setDescription(`
 
-▬[ :civcivkalp: **Xaine Bot Moderasyon Komutları** :closed_lock_with_key: ]▬
+▬[ :closed_lock_with_key: **Xaine Bot Moderasyon Komutları** :teddy_bear: ]▬
 
 > **» +mute :** Belirttiniz kişiyi sunucuda susturursunuz.
 > **» +muterole :** Mute rolünü ayarlarsınız.
