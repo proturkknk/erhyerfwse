@@ -9,7 +9,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 .setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
 .setDescription(`
 
-▬▬▬▬▬▬[ :closed_lock_with_key: **Xaine Bot Moderasyon Komutları** :closed_lock_with_key: ]▬▬▬▬▬▬
+▬[ :civcivkalp: **Xaine Bot Moderasyon Komutları** :closed_lock_with_key: ]▬
 
 > **» +mute :** Belirttiniz kişiyi sunucuda susturursunuz.
 > **» +muterole :** Mute rolünü ayarlarsınız.
@@ -17,13 +17,15 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +kick :** Belirttiniz kişiyi  sunucudan atarsınız.
 > **» +kilit :** Bulunduğunuz kanalın mesaj yazımını kapatır.
 > **» +kilitaç :** Bulunduğunuz kanalın mesaj yazımını açar.
-*» +reklam-engel :** Reklam engeli açarsınız veya kapatırsınız.
-*» +küfür-engel aç :** Küfür engeli açarsınız.
-*» +küfür-engel kapat :** Küfür engeli kapatırsınız..
+> **» +reklam-engel :** Reklam engeli açarsınız veya kapatırsınız.
+> **» +küfür-engel aç :** Küfür engeli açarsınız.
+> **» +küfür-engel kapat :** Küfür engeli kapatırsınız.
+> **» +sil :** Belirttiniz sayı kadar mesaj siler. (Limit: 100)
+> **» +kullanıcı-mesaj-sil :** Bellirttiniz kullanıcının o gün içindeki tüm mesajlarını siler.
 > **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
 > **» +nuke :** Kanalı tekrar kurar ve tüm mesajları siler.
-*» +prefix :** Botun prefixini değiştirirsiniz.
-*» +yavaşmod :** Bulunduğunuz kanalın yazma limitini belirlersiniz.
+> **» +prefix :** Botun prefixini değiştirirsiniz.
+> **» +yavaşmod :** Bulunduğunuz kanalın yazma limitini belirlersiniz.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, Belirtmekten asla çekinmeyin!**
