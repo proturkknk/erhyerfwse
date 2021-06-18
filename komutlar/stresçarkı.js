@@ -14,7 +14,7 @@ exports.run = async (client, message) => {
 
             color: 0x00AE86,
 
-            description: `${message.author.tag} stres çarkı çevirdin!`,
+            description: `${message.author.tag} stres çarkı çevirdin! Lütfen kaç saniye döndünü öğrenmek için bekleyiniz.`,
 
             image: {
 

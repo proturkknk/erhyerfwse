@@ -6,7 +6,7 @@ exports.run = (client,message) => {
   
     levix = new Discord.MessageEmbed()
   .setColor('RANDOM')
-  .setAuthor(message.author.username +  'Karakola Senin Hakkında İhbar Düştü !!! (ironi ciddiye )')
+  .setAuthor(message.author.username +  'Karakola Senin Hakkında İhbar Düştü !!! (ironi)')
   .setImage(`http://www.hareketligifler.net/data/media/114/polis-hareketli-resim-0023.gif`)
   .setDescription(``)
  message.channel.send(`<@728190172490891275> Karakola Bak Hakkında Biri İhbar Yapmış. (ironi ciddiye almayın) ;(`) 

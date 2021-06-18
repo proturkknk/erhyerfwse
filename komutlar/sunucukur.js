@@ -1,13 +1,34 @@
+
+   
 const Discord = require('discord.js');
-const ayarlar = require('../ayarlar.json');
-const db = require('quick.db');
+const { stripIndents } = require('common-tags');
+const db = require("quick.db")
+const ayarlar = require('../ayarlar.json')
 
-exports.run = async(client, message, args) => {
+exports.run = async(client, message, params) => {
 
-if(message.author.id !== message.guild.owner.id) return message.channel.send(' Bu komut sunucu sahiplerine özel yapılmıştır. *Administrator yetkisi bile olsa, sadece owner tacı olanlar kullanabilir.*')
+          let prefix =  ayarlar.prefix
 
-await message.guild.channels.cache.forEach(a => a.delete())
-
+ if (!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send("Sunucu kur yapmak için **Yönetici** olmanız gerekir.")
+  message.channel.send("Sunucu Kur yapmayı onaylıyormusunuz ``evet/hayır`` yazınız \n**(not: Botun rolü en üste olmalıdır yoksa hata verir)**").then(() => {
+  
+ const filter = m => m.author.id === message.author.id;
+    message.channel.awaitMessages(filter, {
+      max: 1,
+      time: 10000
+    }).then(collected => {
+      if (collected.first().content === 'hayır') {
+        return message.reply("İşlem iptal edildi.");
+      }});
+  
+    message.channel.awaitMessages(filter, {
+      max: 1,
+      time: 15000
+    }).then((collected) => {
+      if (collected.first().content === 'evet') {
+      message.guild.channels.cache.filter(u => {
+        u.delete()
+     })
 await message.guild.channels.create('Önemli Kanallar', { type: "category" }).then(a => {
 a.createOverwrite(message.guild.roles.cache.find(a => a.name === "@everyone"), {
  SEND_MESSAGES: false,
@@ -58,16 +79,23 @@ await message.guild.channels.create("「🔒」Yetkili chat", {type: "text", par
   await message.guild.channels.create("「🎤」Yetkili Özel", {type: "voice", parent: message.guild.channels.cache.find(a => a.name === 'Yetkili Mekan').id})
 await message.guild.channels.cache.find(a => a.name === "「💬」Chat").send(' <@'+message.author.id+"> sunucu kuruldu!")
 }
+                    .catch(error => {
+                    message.channel.send(`Bir hata oluştu Lütfen Destek Sunucusuna Gelip Bunu Bize Bildir!`);
+                    console.error('Hata:', error);
+                });
+
+}
 
 exports.conf = {
-enabled: true, 
-guildOnly: false,
-aliases: ['sunucu-kur','Sunucu-kur','SUNUCU-KUR'], 
-permLevel: 0 
+  enabled: true,
+  guildOnly: false,
+  aliases: ['hazırsunucu','hazır-sunucu','sunucu-kur'],
+  permLevel: 0
 };
 
 exports.help = {
-name: 'sunucukur',
-description: '',
-usage: ''
-}
+  name: 'sunucukur',
+  description: 'Sizin için sunucu kurar.',
+  usage: 'sunucukur'
+};
+"

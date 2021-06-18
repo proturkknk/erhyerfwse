@@ -25,7 +25,7 @@ exports.run = (client, message, args) => {
 
         .setColor("RANDOM")
 
-        .addField("⛔ __Doğru Kullanım__ ⛔", `=> oylama **mesaj**`)
+        .addField("⛔ __Doğru Kullanım__ ⛔", `=> +oylama **mesaj**`)
 
     );
 

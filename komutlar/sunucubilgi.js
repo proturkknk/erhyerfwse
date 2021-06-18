@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args, user) => {
   
    let serverembed = new Discord.MessageEmbed()
    
-   .setAuthor('Sunucu Bilgi')
+   .setAuthor('Sunucu bilgisi')
    
    .setColor("GREEN")
   

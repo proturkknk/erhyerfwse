@@ -5,7 +5,7 @@ const embed = new Discord.MessageEmbed()
 .setTitle(':flag_tr: Türkiyemizin Saati Aşağida Yazmaktadır.')
 .setTimestamp()
 .setFooter('Türkiyemizin Saati ->')
-.setColor(0xff7f00)
+.setColor('RANDOM')
 
 message.channel.send(embed)
 }
