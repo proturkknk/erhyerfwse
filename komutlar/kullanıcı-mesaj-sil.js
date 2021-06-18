@@ -9,7 +9,7 @@ if(!message.mentions.members.first()) return message.channel.send(':warning: Hat
 let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
 if(!member) return message.channel.send('Etiketlediğin kullanıcıyı bulamıyorum.');
 if(!args[1]) return message.channel.send('Kaç tane mesaj sileceğimi belirt.');
-if(isNaN(args[1])) return message.channel.send(':warning: Hata!: Lütfen bir rakam yazınız.');
+if(isNaN(args[1])) return message.channel.send(':warning: Hata!: Lütfen kaç mesajın siliniceğini yazınız.');
 var i = 0;
 message.delete();
 channel.messages.fetch().then(x => {
@@ -17,7 +17,7 @@ x.filter(a => a.author.id === member.user.id).map(a => a).slice(0, args[1]).forE
 i++
 s.delete();
 if(i === x.filter(a => a.author.id === member.user.id).map(a => a).slice(0, args[1]).length) {
-return message.channel.send(`**${i}** mesaj başarıyla silindi.`);
+return message.channel.send(`Bellirttiniz kullanıcının **${i}** mesajı başarıyla silindi.`).then(m => m.delete({ timeout: 3000 }))
 }
 });
 });
