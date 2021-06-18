@@ -18,6 +18,7 @@ dependencies:
   snekfetch: 4.0.4
   sozluk-api: 1.0.2
   superagent: 6.1.0
+  uninstall: 0.0.0
   useful-tools: 0.2.6
   weather-js: 2.0.0
 packages:
@@ -2296,6 +2297,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-SDEm4Rd03y9xuLY53NeZw3YWK4I=
+  /uninstall/0.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-ED5uN+nFLshXVCzSWQI9ccej+ys=
   /unpipe/1.0.0:
     dev: false
     engines:
@@ -2443,5 +2448,6 @@ specifiers:
   snekfetch: ^4.0.4
   sozluk-api: ^1.0.2
   superagent: ^6.1.0
+  uninstall: ^0.0.0
   useful-tools: ^0.2.6
   weather-js: ^2.0.0
