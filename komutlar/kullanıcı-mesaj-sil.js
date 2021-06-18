@@ -8,17 +8,15 @@ if(!args[0]) return message.channel.send(':warning: Hata!: Bir kullanıcıyı et
 if(!message.mentions.members.first()) return message.channel.send(':warning: Hata!: Etiketlediğin kullanıcıyı bulamıyorum.');
 let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
 if(!member) return message.channel.send('Etiketlediğin kullanıcıyı bulamıyorum.');
-if(args[1]) {
-if(!message.mentions.channels.first()) return message.channel.send(':warning: Hata!: Etiketlediğin kanalı bulamıyorum.');
-channel = message.mentions.channels.first();
-};
+if(!args[1]) return message.channel.send('Kaç tane mesaj sileceğimi belirt.');
+if(isNaN(args[1])) return message.channel.send('Rakam yaz rage :rage:');
 var i = 0;
 message.delete();
 channel.messages.fetch().then(x => {
-x.filter(a => a.author.id === member.user.id).map(a => a).slice(0, 100).forEach(s => {
+x.filter(a => a.author.id === member.user.id).map(a => a).slice(0, args[1]).forEach(s => {
 i++
 s.delete();
-if(i === x.filter(a => a.author.id === member.user.id).map(a => a).slice(0, 100).length) {
+if(i === x.filter(a => a.author.id === member.user.id).map(a => a).slice(0, args[1]).length) {
 return message.channel.send(`**${i}** mesaj başarıyla silindi.`);
 }
 });
