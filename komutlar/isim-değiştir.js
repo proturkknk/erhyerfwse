@@ -1,4 +1,4 @@
-c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000onst Discord = require('discord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const ayarlar = require('../ayarlar.json');
 const prefix = ayarlar.prefix
