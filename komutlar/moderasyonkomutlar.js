@@ -11,21 +11,22 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 
 ▬[ :closed_lock_with_key: **Xaine Bot Moderasyon Komutları** :teddy_bear: ]▬
 
-> **» +mute :** Belirttiniz kişiyi sunucuda susturursunuz.
+> **» +mute :** Belirttiğiniz kişiyi sunucuda susturursunuz.
 > **» +muterole :** Mute rolünü ayarlarsınız.
-> **» +ban :** Belirttiniz kişiyi sunucudan yasaklarsınız.
-> **» +kick :** Belirttiniz kişiyi  sunucudan atarsınız.
+> **» +ban :** Belirttiğiniz kişiyi sunucudan yasaklarsınız.
+> **» +kick :** Belirttiğiniz kişiyi  sunucudan atarsınız.
 > **» +kilit :** Bulunduğunuz kanalın mesaj yazımını kapatır.
 > **» +kilitaç :** Bulunduğunuz kanalın mesaj yazımını açar.
 > **» +reklam-engel :** Reklam engeli açarsınız veya kapatırsınız.
 > **» +küfür-engel aç :** Küfür engeli açarsınız.
 > **» +küfür-engel kapat :** Küfür engeli kapatırsınız.
-> **» +sil :** Belirttiniz sayı kadar mesaj siler. (Limit: 100)
-> **» +kullanıcı-mesaj-sil :** Bellirttiniz kullanıcının o gün içindeki tüm mesajlarını siler.
-> **» +uyar :** Belirttiniz kullanıcıyı uyarırsınız.
+> **» +sil :** Belirttiğiniz sayı kadar mesaj siler. (Limit: 100)
+> **» +kullanıcı-mesaj-sil :** Bellirttiğiniz kullanıcının o gün içindeki tüm mesajlarını siler.
+> **» +uyar :** Belirttiğiniz kullanıcıyı uyarırsınız.
 > **» +nuke :** Kanalı tekrar kurar ve tüm mesajları siler.
 > **» +prefix :** Botun prefixini değiştirirsiniz.
 > **» +yavaşmod :** Bulunduğunuz kanalın yazma limitini(Süresini) belirlersiniz.
+> **» +isim-değiştir :** Belirttiğiniz kullanıcının ismini değiştirir.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, bildir komutuyla belirtmekten asla çekinmeyin!**

@@ -12,17 +12,17 @@ let kullanici = message.mentions.users.first();
   
 if(!kullanici) return message.reply(`Lütfen bir kullanıcı giriniz! \nDoğru Kullanım; \`${prefix}isimdeğiştir @${client.user.username}#${client.user.discriminator} <yeni isim>\``)
   
-if(!isim) return message.reply(`Lütfen bir kullanıcı adı giriniz! \nDoğru Kullanım; \`${prefix}isimdeğiştir @${client.user.username}#${client.user.discriminator} <yeni isim>\``)
-if(isim.length > 32) return message.reply(`Lütfen \`32\` karakteri geçmeyecek şekilde bir isim giriniz!`)
+if(!isim) return message.reply(`:warning: Hata!: Lütfen bir kullanıcı adı giriniz! \nDoğru Kullanım; \`${prefix}isimdeğiştir @${client.user.username}#${client.user.discriminator} <yeni isim>\``)
+if(isim.length > 32) return message.reply(`:warning: Hata!: Lütfen \`32\` karakteri geçmeyecek şekilde bir isim giriniz!`)
   
 message.guild.members.cache.get(kullanici.id).setNickname(`${isim}`)
-message.channel.send(`Başarılı bir şekilde \`${kullanici.username}\` adlı kişinin kullanıcı adı \`${isim}\` olarak değiştirildi.`)
+message.channel.send(`Başarıyla \`${kullanici.username}\` adlı kişinin kullanıcı adı \`${isim}\` olarak değiştirildi. Dikkat!: Eğer isim değişmediyse lütfen botun rolünü en üste alınız ve tekrar deneyiniz.`)
 }
 
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: ['isimdegistir'],
+    aliases: ['isimdegistir','İsim-değiştir','isim-değiştir','İSİM-DEĞİŞTİR'],
     permLevel: 0
 }
 
