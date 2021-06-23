@@ -20,6 +20,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +reklam-engel :** Reklam engeli açarsınız veya kapatırsınız.
 > **» +küfür-engel aç :** Küfür engeli açarsınız.
 > **» +küfür-engel kapat :** Küfür engeli kapatırsınız.
+> **» +sa-as :** Sa-as sistemini açarsınız veya kapatırsınız.
 > **» +sil :** Belirttiğiniz sayı kadar mesaj siler. (Limit: 100)
 > **» +kullanıcı-mesaj-sil :** Bellirttiğiniz kullanıcının o gün içindeki tüm mesajlarını siler.
 > **» +uyar :** Belirttiğiniz kullanıcıyı uyarırsınız.
