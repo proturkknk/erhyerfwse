@@ -49,6 +49,7 @@ module.exports = client => {
       "Web sitemiz | https://www.xaine.tk/",
       "Kurucum-Yapımcım - ! TREFAX#0362",
       "Kurucum-Yapımcım | ! TREFAX#0362",
+      "Destek sunucumuzda Hergün düzenli olarak çekilişler yapılıyor! Destek sunucumuza gelerek çekilişlere katılabilirsiniz.",
   ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
