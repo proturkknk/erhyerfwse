@@ -45,7 +45,8 @@ module.exports = client => {
        "XAİNE BOT ",
       "Xaine Bot",
       "Hergün yapılan destek sunucumuzdaki çekilişlere katılmayı unutmayın! Destek sunucumuzun davet linkini almak için +davet yazabilirsiniz",
-
+      "Web sitemiz - https://www.xaine.tk/",
+      "Web sitemiz | https://www.xaine.tk/",
   ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
