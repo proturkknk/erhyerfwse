@@ -17,7 +17,7 @@ exports.run = async (client, message, args) => {
 
         message.channel.send(messageEmbed);
     }).catch(err => {
-        message.channel.send('Bir sorun ortaya çıktı.Komutu doğru kullandığınızdan emin olun.');
+        message.channel.send(':warning: Hata!: Bir sorun ortaya çıktı. Komutu doğru kullandığınızdan emin olun. Eğer komutu doğru kullandınızdan eminseniz lütfen bildir komutuyla veya destek sunucumuza gelerek hatayı bildiriniz.');
         console.log(err);
     });
 };
