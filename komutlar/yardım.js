@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
  const embed = new Discord.MessageEmbed()
- .setAuthor(`${client.user.username} Yardım Menüsüne Hoşgeldin!`,client.user.avatarURL())
+ .setAuthor(`${client.user.username} Bot Yardım Menüsüne Hoşgeldin!`,client.user.avatarURL())
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
  .setDescription(`
@@ -19,7 +19,7 @@ exports.run = (client, message, args) => {
  
   \`+gif-yardım -> Gif yardım menüsünü gösterir.\`
  
- > \`+davet -> Botun Davetini ve Destek Sunucunu gösterir.\`
+ > \`+davet -> Botla ilgili tüm linkleri gösterir.\`
  
   > \`+Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.\``)
  

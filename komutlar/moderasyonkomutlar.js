@@ -18,6 +18,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +kilit :** Bulunduğunuz kanalın mesaj yazımını kapatır.
 > **» +kilitaç :** Bulunduğunuz kanalın mesaj yazımını açar.
 > **» +reklam-engel :** Reklam engeli açarsınız veya kapatırsınız.
+> **» +spam-engel :** Spam engeli açarsınız veya kapatırsınız.
 > **» +küfür-engel aç :** Küfür engeli açarsınız.
 > **» +küfür-engel kapat :** Küfür engeli kapatırsınız.
 > **» +sa-as :** Sa-as sistemini açarsınız veya kapatırsınız.
