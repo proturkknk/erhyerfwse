@@ -600,3 +600,41 @@ client.on("messageUpdate", async msg => {
     }
     if (!i) return;
 });
+
+
+const dctrat = require('dctr-antispam.js'); 
+
+var authors = [];
+var warned = [];
+
+var messageLog = [];
+
+client.on('message', async message => {
+const spam = await db.fetch(`spam.${message.guild.id}`);
+if(!spam) return;
+const maxTime = await db.fetch(`max.${message.guild.id}.${message.author.id}`);
+const timeout = await db.fetch(`time.${message.guild.id}.${message.author.id}`);
+db.add(`mesaj.${message.guild.id}.${message.author.id}`, 1)
+if(timeout) {
+const sayÄ = await db.fetch(`mesaj.${message.guild.id}.${message.author.id}`);
+if(Date.now() < maxTime) {
+  const westraaaaam = new Discord.MessageEmbed()
+  .setColor(0x36393F)
+  .setDescription(`<@${message.author.id}> , **Bu sunucuda spam yapmak yasak!**`)
+ // .setFooter(`Bu mesaj otomatik olarak silinecektir.`)
+ if (message.member.hasPermission("BAN_MEMBERS")) return ;
+ message.channel.send(westraaaaam).then(msg => msg.delete({timeout: 1500}));
+  return message.delete();
+  
+}
+} else {
+db.set(`time.${message.guild.id}.${message.author.id}`, 'ok');
+db.set(`max.${message.guild.id}.${message.author.id}`, Date.now()+3000);
+setTimeout(() => {
+db.delete(`mesaj.${message.guild.id}.${message.author.id}`);
+db.delete(`time.${message.guild.id}.${message.author.id}`);
+}, 500) // default : 500
+}
+
+
+});
