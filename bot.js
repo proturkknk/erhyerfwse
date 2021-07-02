@@ -619,7 +619,7 @@ if(timeout) {
 const sayÄ = await db.fetch(`mesaj.${message.guild.id}.${message.author.id}`);
 if(Date.now() < maxTime) {
   const westraaaaam = new Discord.MessageEmbed()
-  .setColor(0x36393F)
+  .setColor('RANDOM')
   .setDescription(`<@${message.author.id}> , **Bu sunucuda spam yapmak yasak!**`)
  // .setFooter(`Bu mesaj otomatik olarak silinecektir.`)
  if (message.member.hasPermission("BAN_MEMBERS")) return ;
