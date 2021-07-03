@@ -4,7 +4,7 @@ const ayarlar = require('../ayarlar.json');
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
     .setAuthor('İsteğiniz üzerine yağmur yağaşı gösteriliyor. ☔️ ')
-    .setColor('RED')
+    .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://media.giphy.com/media/IIlQlxQIOY8P6qAQbV/giphy.gif`)
