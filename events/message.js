@@ -82,6 +82,13 @@ module.exports = message => {
 			}
 		}
        if (cmd) {
+  let bakım = db.fetch('bakım');
+  if(message.author.id !== ayarlar.sahip){
+  if(bakım){
+ return message.channel.send(`** :warning: Sizlere En iyi şekilde Verebilmek İçin Bakımdayız.\n❓ Bakım Sebebi: \`${bakım}\` <:hourglass:825313852321169429> Lütfen Daha Sonra Tekrar Deneyin. Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız.**`)
+     .addField('İşte Destek Sunucum!',"[Destek Sunucusu](https://discord.gg/Kekc2pU)")
+     }
+  }
     }
     if (perms < cmd.conf.permLevel) return;
     if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
