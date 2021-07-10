@@ -41,15 +41,16 @@ module.exports = client => {
       "Güncelleme!: Yeni komutlarımız eklendi!",
       "En çok sevilen komutum: **dondurma**",
       "Sitemiz: https://www.xaine.tk/",
-      "Kod paylaşım sitemiz: https://xainecode.glitch.me/ ",
+      "Kod paylaşım sitemiz: https://xainecode.glitch.me",
        "XAİNE BOT ",
       "Xaine Bot",
       "Hergün yapılan destek sunucumuzdaki çekilişlere katılmayı unutmayın! Destek sunucumuzun davet linkini almak için +davet yazabilirsiniz",
-      "Web sitemiz - https://www.xaine.tk/",
-      "Web sitemiz | https://www.xaine.tk/",
+      "Web sitemiz - https://www.xaine.tk",
+      "Web sitemiz | https://www.xaine.tk",
       "Kurucum-Yapımcım - ! TREFAX#0362",
       "Kurucum-Yapımcım | ! TREFAX#0362",
       "Destek sunucumuzda Hergün düzenli olarak çekilişler yapılıyor! Destek sunucumuza gelerek çekilişlere katılabilirsiniz.",
+      "https://www.xaine.tk",
   ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
