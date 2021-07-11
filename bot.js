@@ -99,11 +99,11 @@ app.get('/share', checkAuth, (req, res) => {
       if(m.roles.cache.some(r => r.id == '823466801387405362')) {
         res.render('share', {user: req.user, huh: huh})
       }else{
-        res.send('Bu özelliği kullanabilmek için Kod Paylaşım rolüne sahip olman gerekiyor.')
+        res.send('Bu özelliği kullanabilmek için Destek sunucumuzdaki Kod Paylaşım rolüne sahip olman gerekiyor.')
       }
     })
   }else{
-    res.send('Bu özelliği kullanman için sunucumuzda bulunman gerekiyor: https://discord.gg/Kekc2pU')
+    res.send('Bu özelliği kullanman için Destek sunucumuzda bulunman gerekiyor: https://discord.gg/Kekc2pU')
   }
 })
 app.get('/reedem', checkAuth, (req, res) => {
