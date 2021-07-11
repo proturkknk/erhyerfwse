@@ -36,7 +36,7 @@ passport.use(
       clientID: "774235071653216286",
       clientSecret: process.env.SECRET,
       callbackURL:
-        "http://www.xaine.tk/login",
+        "http://xaine.tk/login",
       scope: scopes
     },
     function(accessToken, refreshToken, profile, done) {
@@ -52,10 +52,6 @@ app.set("view engine", "ejs");
 let trefax = client.users.fetch('696365117063036986')
 let ensar = client.users.fetch('522834911732695041')
 let kerem = client.users.fetch('459377860012933121')
-
-app.get('/.well-known/pki-validation/B0A31E3BF6A8605CE228EE05CB5E7E22.txt', (req, res) => {
-  res.sendFile(__dirname + "/views/auth.txt")
-})
 
 app.get("/", async(request, response) => {
   let trefax = await client.users.fetch('696365117063036986')
