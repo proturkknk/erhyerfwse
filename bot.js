@@ -52,6 +52,11 @@ app.set("view engine", "ejs");
 let trefax = client.users.fetch('696365117063036986')
 let ensar = client.users.fetch('522834911732695041')
 let kerem = client.users.fetch('459377860012933121')
+
+app.get('/.well-known/pki-validation/44F9972CC4461DC3C57C32937CFF6292.txt', (req, res) => {
+  res.sendFile(__dirname + "/views/auth.txt")
+})
+
 app.get("/", async(request, response) => {
   let trefax = await client.users.fetch('696365117063036986')
   let ensar = await client.users.fetch('522834911732695041')
