@@ -30,7 +30,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +yavaşmod :** Bulunduğunuz kanalın yazma limitini(Süresini) belirlersiniz.
 > **» +isim-değiştir :** Belirttiğiniz kullanıcının ismini değiştirir.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
-
+**DİKKAT!: LÜTFEN DİKKATLİCE OKUYUNUZ! Botda oluşan teknik nedenden dolayı bot moderasyon yetkisi alamadı buda moderasyon komutlarını kullanamazsınız anlamına geliyor. Sorun çözülmüştür Lütfen Xaine Botu sunucudan atıp tekrardan eklerseniz seviniriz. İyi günler!**
 > :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, bildir komutuyla belirtmekten asla çekinmeyin!**
 > :open_file_folder: **Botun Kod Paylaşım Ve Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
 > :round_pushpin: **Ana yardım menüsüne dönmek için: +yardım**
