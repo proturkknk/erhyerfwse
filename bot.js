@@ -1,3 +1,5 @@
+//DEĞİŞKENLER
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const ayarlar = require("./ayarlar.json");
@@ -17,9 +19,8 @@ const passport = require("passport");
 const Strategy = require("passport-discord").Strategy;
 const hook = new Discord.WebhookClient('825719691745820672', process.env.hook)
 const app = express();
-app.use("/views", express.static(path.join(__dirname, "static")));
-app.set("view engine", "ejs");
-app.listen(process.env.PORT);
+
+//AYARLAR
 
 passport.serializeUser(function(user, done) {
   done(null, user);
@@ -36,7 +37,7 @@ passport.use(
       clientID: "774235071653216286",
       clientSecret: process.env.SECRET,
       callbackURL:
-        "http://xaine.tk/login",
+        "https://www.xaine.tk/login",
       scope: scopes
     },
     function(accessToken, refreshToken, profile, done) {
@@ -46,14 +47,13 @@ passport.use(
     }
   )
 );
-let ss = null
+
 app.use("/views", express.static(path.join(__dirname, "static")));
-
-app.get('*', (req,res) => {
-  res.status(404).sendFile()
-})
-
 app.set("view engine", "ejs");
+
+//SAYFALAR
+
+let ss = null
 let trefax = client.users.fetch('696365117063036986')
 let ensar = client.users.fetch('522834911732695041')
 let kerem = client.users.fetch('459377860012933121')
@@ -129,10 +129,17 @@ app.get('/reedem', checkAuth, (req, res) => {
     res.send('Bu özelliği kullanman için sunucumuzda bulunman gerekiyor: https://discord.gg/Kekc2pU')
   }
 })
-app.listen(8080);
+
+app.get('*', (req,res) => {
+  res.status(404).sendFile("PageNotFound.ejs")
+})
+
+app.listen(process.env.PORT);
 setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 280000);
+
+//BOT
 
 var prefix = ayarlar.prefix;
 
