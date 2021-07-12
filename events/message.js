@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 const ayarlar = require('../ayarlar.json');
 const db = require('quick.db');
+const dblapi = require('dblapi.js')
+const dbl = new dblapi(process.env.dbl_token)
 let talkedRecently = new Set();
 
 module.exports = (message, bot) => {
@@ -37,6 +39,10 @@ module.exports = (message, bot) => {
         )
  }
   if(message.author.id != "522834911732695041") return message.reply('Bot Şuan Bakımda. Nedenini destek sunucumudaki duyurular kanalından öğrenebilirsin!')
+  let voted
+  dbl.hasVoted(message.author.id).then(c => {
+    voted = c
+  })
     if(!sunucu.members.cache.get(message.author.id)){
       if(cmd.help.category) {
         if(cmd.help.category == 'moderasyon') {

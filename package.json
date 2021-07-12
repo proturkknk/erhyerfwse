@@ -33,7 +33,8 @@
     "tcmb-doviz": "^1.1.1",
     "uninstall": "^0.0.0",
     "useful-tools": "^0.2.6",
-    "weather-js": "^2.0.0"
+    "weather-js": "^2.0.0",
+    "dblapi.js": "^2.4.1"
   },
   "engines": {
     "node": "12.x.x"

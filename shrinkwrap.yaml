@@ -1,6 +1,7 @@
 dependencies:
   axios: 0.21.1
   common-tags: 1.8.0
+  dblapi.js: 2.4.1
   dctr-antispam.js: 0.1.1
   discord.js: 12.5.3
   discord.js-commando: 0.12.3
@@ -753,6 +754,11 @@ packages:
       node: '>=0.10'
     resolution:
       integrity: sha1-hTz6D3y+L+1d4gMmuN1YEDX24vA=
+  /dblapi.js/2.4.1:
+    deprecated: Module is no longer maintained
+    dev: false
+    resolution:
+      integrity: sha512-g+u1inF/qOLit5qPK4hBGk5pKL1vy09uBLV+nukkRMvw2S9D1PyiyO70n4fboUXOgbExPp6Sho/Y782OqQOUiQ==
   /dctr-antispam.js/0.1.1:
     dependencies:
       discord.js: 11.6.4
@@ -2482,6 +2488,7 @@ shrinkwrapVersion: 3
 specifiers:
   axios: ^0.21.1
   common-tags: ^1.8.0
+  dblapi.js: ^2.4.1
   dctr-antispam.js: ^0.1.1
   discord.js: ^12.5.2
   discord.js-commando: ^0.12.3
