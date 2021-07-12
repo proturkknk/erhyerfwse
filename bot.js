@@ -48,6 +48,11 @@ passport.use(
 );
 let ss = null
 app.use("/views", express.static(path.join(__dirname, "static")));
+
+app.get('*', (req,res) => {
+  res.status(404).sendFile()
+})
+
 app.set("view engine", "ejs");
 let trefax = client.users.fetch('696365117063036986')
 let ensar = client.users.fetch('522834911732695041')
