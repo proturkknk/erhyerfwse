@@ -131,7 +131,7 @@ app.get('/reedem', checkAuth, (req, res) => {
 })
 
 app.get('*', (req,res) => {
-  res.status(404).sendFile("PageNotFound.ejs")
+  res.status(404).render("PageNotFound.ejs")
 })
 
 app.listen(process.env.PORT);
