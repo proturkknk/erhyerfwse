@@ -38,4 +38,5 @@ exports.help = {
   name: 'yavaş-mod',
   description: 'Sohbete yazma sınır (süre) ekler.',
   usage: 'yavaş-mod [1/120]',
+  category: "moderasyon"
 };

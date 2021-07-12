@@ -35,5 +35,6 @@ exports.conf = {
 };
  
 exports.help = {
-  name: 'kilit'
+  name: 'kilit',
+  category: "moderasyon"
 };

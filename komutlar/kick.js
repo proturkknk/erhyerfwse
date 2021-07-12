@@ -56,6 +56,7 @@ module.exports.conf = {
 
 module.exports.help = {
   name: "kick",
+  category: "moderasyon",
   description: "kick",
   usage: "kick"
 };

@@ -52,5 +52,6 @@ exports.conf = {
 exports.help = {
   name: "prefix",
   description: "Xaine Bot Prefix Komutu",
-  usage: "prefix"
+  usage: "prefix",
+  category: "moderasyon"
 };

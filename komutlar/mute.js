@@ -111,5 +111,5 @@ exports.conf = {
 
 exports.help = {
   name: "mute",
-  "category": "moderasyon"
+  category: "moderasyon"
 };

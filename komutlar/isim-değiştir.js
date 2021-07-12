@@ -27,7 +27,8 @@ exports.conf = {
 }
 
 exports.help = {
-    name: 'isimdeğiştir',
-    description: 'Belirttiğiniz kullanıcının kullanıcı adını değiştirir.',
-    usage: 'isimdeğiştir @kullanıcı <kullanıcı adı>'
+  name: 'isimdeğiştir',
+  description: 'Belirttiğiniz kullanıcının kullanıcı adını değiştirir.',
+  usage: 'isimdeğiştir @kullanıcı <kullanıcı adı>',
+  category: "moderasyon"
 }

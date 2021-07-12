@@ -32,5 +32,6 @@ exports.conf = {
 };
  
 exports.help = {
-  name: 'kullanıcı-mesaj-sil'
+  name: 'kullanıcı-mesaj-sil',
+  category: "moderasyon"
 };

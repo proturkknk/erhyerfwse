@@ -3,14 +3,15 @@ const ayarlar = require('../ayarlar.json');
 const db = require('quick.db');
 let talkedRecently = new Set();
 
-module.exports = message => {
+module.exports = (message, bot) => {
   if (talkedRecently.has(message.author.id)) {
     return;
   }
-  talkedRecently.add(message.author.id);//
+  talkedRecently.add(message.author.id);
 	setTimeout(() => {
     talkedRecently.delete(message.author.id);
   }, 2500);
+  const sunucu = bot.guilds.cache.get('714084499465568287')
   let client = message.client;
   if (message.author.bot) return;//
   if (!message.content.startsWith(ayarlar.prefix)) return;
@@ -35,6 +36,14 @@ module.exports = message => {
         )
  }
       }
+  
+  if(message.author.id == '522834911732695041') {
+    if(sunucu.members.cache.find(message.author.id)){
+      message.channel.send('sunucuda')
+    }else{
+      message.channel.send('sunucuda değil')
+    }
+  }
     
     if (cmd.conf.permLevel === 1) {
 			if (!message.member.hasPermission("MANAGE_MESSAGES")) {//

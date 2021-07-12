@@ -44,6 +44,7 @@ exports.conf = {
 
 exports.help = {
   name: "ban",
+  category: "moderasyon",
   description: "İstediğiniz kişiyi sunucudan yasaklar.",
   usage: "ban <@kullanıcı> <sebep>"
 };

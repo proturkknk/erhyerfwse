@@ -23,5 +23,6 @@ exports.conf = {
 exports.help = {
   name: 'uyar',
   description: 'Belirtilen kullanıcıyı özel mesajlarında gözükecek şekilde uyarır.',
-  usage: 'uyarı'
+  usage: 'uyarı',
+  category: "moderasyon"
 };

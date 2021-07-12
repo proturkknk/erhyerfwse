@@ -57,5 +57,6 @@ exports.conf = {
 exports.help = {
   name: 'reklam-engel',
   description: 'reklam engellemeyi açar',
-  usage: 'reklam-engel'
+  usage: 'reklam-engel',
+  category: "moderasyon"
 }

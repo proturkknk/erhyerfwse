@@ -46,5 +46,6 @@ exports.conf = {
 exports.help = { 
     name: 'nuke', 
   description: "Bot bulunduğunuz kanalı siler ve yeniden oluşturur.",
-  usage: 'nuke'
+  usage: 'nuke',
+  category: "moderasyon"
 }

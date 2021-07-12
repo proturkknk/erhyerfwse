@@ -19,5 +19,6 @@ exports.conf = {
 }
 
 exports.help = {
-  name: 'spam'
+  name: 'spam',
+  category: "moderasyon"
 };

@@ -23,5 +23,6 @@ exports.conf = {
 };
  
 exports.help = {
-  name: 'unlock'
+  name: 'unlock',
+  category: "moderasyon"
 };

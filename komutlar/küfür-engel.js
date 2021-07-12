@@ -23,7 +23,8 @@ exports.conf = {
 };
 
 exports.help = {
- name: 'küfür-engel',
- description: 'küfürleri engeller',
- usage: 'küfürengel'
+  name: 'küfür-engel',
+  description: 'küfürleri engeller',
+  usage: 'küfürengel',
+  category: "moderasyon"
 };

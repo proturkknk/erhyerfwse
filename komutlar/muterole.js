@@ -81,5 +81,6 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "muterole"
-}; // Ahmetsamet
+  name: "muterole",
+  category: "moderasyon"
+};
