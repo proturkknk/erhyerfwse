@@ -38,13 +38,13 @@ module.exports = (message, bot) => {
           .setDescription(`**Bu botu kullanamazsınız çünkü yetkili tarafından kara listeye alınmışsınız.**`)//Bots For List Yapımı!
         )
  }
-  if(message.author.id != "522834911732695041") return message.reply('Bot Şuan Bakımda. Nedenini destek sunucumudaki duyurular kanalından öğrenebilirsin!')
+  
   const hatamesaj = new Discord.MessageEmbed()
   .setTitle('Bekle! Biletiniz var mı?')
   .setDescription('**Bu komutu kullanmak için Destek sunucumuza katılıp bota oy vermeniz gerekmektedir.\n\n[Oy Ver](https://top.gg/bot/774235071653216286/vote), [Sunucuya Katıl](https://discord.gg/99C4tGzgK4)**')
   .setColor('RANDOM')
-  .setThumbnail(message.user.avatarURL)
-    if(sunucu.members.cache.get(message.author.id)){
+  .setThumbnail(message.author.avatarURL())
+    if(!sunucu.members.cache.get(message.author.id)){
       if(cmd.help.category) {
         if(cmd.help.category == 'moderasyon') {
           message.author.send(hatamesaj).catch(() => message.channel.send(hatamesaj).then(m => m.delete({timeout: 30000})))
@@ -55,12 +55,11 @@ module.exports = (message, bot) => {
     }else{
       dbl.hasVoted(message.author.id).then(c => {
         if(!c) {
-          
-        }
-      })
-    }
-    
-    if (cmd.conf.permLevel === 1) {
+          message.author.send(hatamesaj).catch(() => message.channel.send(hatamesaj).then(m => m.delete({timeout: 30000})))
+          message.delete()
+          return
+        }else{
+          if (cmd.conf.permLevel === 1) {
 			if (!message.member.hasPermission("MANAGE_MESSAGES")) {//
 				const embed = new Discord.MessageEmbed()
 					.setDescription(`Bu komutu kullanabilmek için **Mesajları Yönet** iznine sahip olmalısın!`)
@@ -117,4 +116,7 @@ module.exports = (message, bot) => {
     if (perms < cmd.conf.permLevel) return;
     if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
     cmd.run(client, message, params, perms);
+        }
+      })
+    }
   }
