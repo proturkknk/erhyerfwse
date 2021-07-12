@@ -40,13 +40,14 @@ module.exports = (message, bot) => {
  }
   if(message.author.id != "522834911732695041") return message.reply('Bot Şuan Bakımda. Nedenini destek sunucumudaki duyurular kanalından öğrenebilirsin!')
   const hatamesaj = new Discord.MessageEmbed()
-  .setDescription('**Bekle! Biletiniz varmı? Bu komutu kullanmak için Destek sunucumuza katılıp bota oy vermeniz gerekmektedir**')
+  .setTitle('Bekle! Biletiniz var mı?')
+  .setDescription('**Bu komutu kullanmak için Destek sunucumuza katılıp bota oy vermeniz gerekmektedir.\n\n[Oy Ver](https://top.gg/bot/774235071653216286/vote), [Sunucuya Katıl](https://discord.gg/99C4tGzgK4)**')
   .setColor('RANDOM')
-  .setFooter('[Oy Ver](https://top.gg/bot/774235071653216286/vote), [Sunucuya Katıl](https://discord.gg/)')
+  .setThumbnail(message.user.avatarURL)
     if(sunucu.members.cache.get(message.author.id)){
       if(cmd.help.category) {
         if(cmd.help.category == 'moderasyon') {
-          message.author.send(hatamesaj).catch(() => message.channel.send(hatamesaj).then(m => m.delete({timeout: 3000})))
+          message.author.send(hatamesaj).catch(() => message.channel.send(hatamesaj).then(m => m.delete({timeout: 30000})))
           message.delete()
           return
         }
