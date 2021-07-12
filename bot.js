@@ -37,7 +37,7 @@ passport.use(
       clientID: "774235071653216286",
       clientSecret: process.env.SECRET,
       callbackURL:
-        "https://wvw.xaine.tk/login",
+        "https://www.xaine.tk/login",
       scope: scopes
     },
     function(accessToken, refreshToken, profile, done) {
