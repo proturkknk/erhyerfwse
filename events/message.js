@@ -39,18 +39,24 @@ module.exports = (message, bot) => {
         )
  }
   if(message.author.id != "522834911732695041") return message.reply('Bot Şuan Bakımda. Nedenini destek sunucumudaki duyurular kanalından öğrenebilirsin!')
-  let voted
-  dbl.hasVoted(message.author.id).then(c => {
-    voted = c
-  })
-    if(!sunucu.members.cache.get(message.author.id)){
+  const hatamesaj = new Discord.MessageEmbed()
+  .setDescription('**Bekle! Biletiniz varmı? Bu komutu kullanmak için Destek sunucumuza katılıp bota oy vermeniz gerekmektedir**')
+  .setColor('RANDOM')
+  .setFooter('[Oy Ver](https://top.gg/bot/774235071653216286/vote), [Sunucuya Katıl](https://discord.gg/)')
+    if(sunucu.members.cache.get(message.author.id)){
       if(cmd.help.category) {
         if(cmd.help.category == 'moderasyon') {
-          message.author.send('Bu komudu kullanmak için Destek sunucumuzda bulunmalısın.').catch(() => message.reply('Bu komudu kullanmak için Destek sunucumuzda bulunmalısın.').then(m => m.delete({timeout: 3000})))
+          message.author.send(hatamesaj).catch(() => message.channel.send(hatamesaj).then(m => m.delete({timeout: 3000})))
           message.delete()
           return
         }
       }
+    }else{
+      dbl.hasVoted(message.author.id).then(c => {
+        if(!c) {
+          
+        }
+      })
     }
     
     if (cmd.conf.permLevel === 1) {
