@@ -36,14 +36,15 @@ module.exports = (message, bot) => {
         )
  }
       }
-  
-  if(message.author.id == '522834911732695041') {
-    if(sunucu.members.cache.find(message.author.id)){
-      message.channel.send('sunucuda')
-    }else{
-      message.channel.send('sunucuda değil')
+
+  if(message.author.id != "522834911732695041") return message.reply('Bot Şuan Bakımda. Nedenini destek sunucumudaki duyurular kanalından öğrenebilirsin!')
+  let success = false
+    if(sunucu.members.cache.get(message.author.id)){
+      message.author.send('Bu komutu kullanmak için Destek sunucumuzda bulunmalısın.').then(success = true)
+      if(!success) message.reply('dm kapalı (test mesajı editlemeyin)')
+      message.delete()
+      return
     }
-  }
     
     if (cmd.conf.permLevel === 1) {
 			if (!message.member.hasPermission("MANAGE_MESSAGES")) {//
