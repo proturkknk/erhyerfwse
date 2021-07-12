@@ -25,7 +25,8 @@ module.exports = (message, bot) => {
   } else if (client.aliases.has(command)) {
     cmd = client.commands.get(client.aliases.get(command));//
   }
-    if (cmd) {
+  
+  if(!cmd) return
       
       
         if(message.author.id !== ayarlar.sahip) {
@@ -35,15 +36,15 @@ module.exports = (message, bot) => {
           .setDescription(`**Bu botu kullanamazsınız çünkü yetkili tarafından kara listeye alınmışsınız.**`)//Bots For List Yapımı!
         )
  }
-      }
-
   if(message.author.id != "522834911732695041") return message.reply('Bot Şuan Bakımda. Nedenini destek sunucumudaki duyurular kanalından öğrenebilirsin!')
-  let success = false
-    if(sunucu.members.cache.get(message.author.id)){
-      message.author.send('Bu komutu kullanmak için Destek sunucumuzda bulunmalısın.').then(success = true)
-      if(!success) message.reply('dm kapalı (test mesajı editlemeyin)')
-      message.delete()
-      return
+    if(!sunucu.members.cache.get(message.author.id)){
+      if(cmd.help.category) {
+        if(cmd.help.category == 'moderasyon') {
+          message.author.send('Bu komudu kullanmak için Destek sunucumuzda bulunmalısın.').catch(() => message.reply('Bu komudu kullanmak için Destek sunucumuzda bulunmalısın.').then(m => m.delete({timeout: 3000})))
+          message.delete()
+          return
+        }
+      }
     }
     
     if (cmd.conf.permLevel === 1) {
