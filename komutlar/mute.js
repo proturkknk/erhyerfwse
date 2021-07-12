@@ -110,5 +110,6 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "mute"
-}; //ahmetcode
+  name: "mute",
+  "category": "moderasyon"
+};
