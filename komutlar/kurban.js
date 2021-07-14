@@ -100,6 +100,8 @@ exports.run = async(client, msg, args) => {
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
             msg.channel.send(indiriyo)
+               max: 1,
+              
               setTimeout(function() {
                 const virus = new Discord.MessageEmbed()
             .setTitle('Olamaz! kurbanlık kaçtı! Şimdi ne yapacağız?')
