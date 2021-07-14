@@ -76,21 +76,25 @@ exports.run = async(client, msg, args) => {
           db.delete(`anti_${msg.channel.id}`)
           return
         }
-        if(cvp.first().content.toLowerCase() == 'uçurtma yap') {
-          msg.reply('Uçurtmayı ne yapacaksınız? Lütfen gerekli şeyleri yapın ve tekrar deneyin.')
-          .setFooter("Xaine Bot")
-          db.delete(`anti_${msg.channel.id}`)
-          return
+             if(cvp.first().content.toLowerCase() == 'kurbanı kes') {
+              const indiriyo = new Discord.MessageEmbed()
+            .setTitle('Lütfen bekleyin...')
+            .setDescription('Kurban yetkililer tarafından kesiliyor...')
+            .setColor('#ffbe19')
+              .setFooter("Xaine Bot")
+            .setTimestamp()
+            .setThumbnail(msg.author.avatarURL)
+            msg.channel.send(indiriyo)
         }
-            if(cvp.first().content.toLowerCase() != 'uçurtma yap' && cvp.first().content.toLowerCase() != 'ateş yakmayı dene') {
+            if(cvp.first().content.toLowerCase() != 'bekle' && cvp.first().content.toLowerCase() != 'kurbanı kes') {
               msg.reply('iki seçenekten birini söyleyiniz.')
               db.delete(`anti_${msg.channel.id}`)
               return
             }
-            if(cvp.first().content.toLowerCase() == 'ateş yakmayı dene') {
+            if(cvp.first().content.toLowerCase() == 'kurbanı kes') {
               const indiriyo = new Discord.MessageEmbed()
             .setTitle('Lütfen bekleyin...')
-            .setDescription('Ateş yakmaya çalışıyorsunuz...')
+            .setDescription('Kurban yetkililer tarafından kesiliyor...')
             .setColor('#ffbe19')
               .setFooter("Xaine Bot")
             .setTimestamp()
@@ -98,9 +102,9 @@ exports.run = async(client, msg, args) => {
             msg.channel.send(indiriyo)
               setTimeout(function() {
                 const virus = new Discord.MessageEmbed()
-            .setTitle('Ateş yanmıyor ne yapacağız?')
+            .setTitle('Olamaz! kurbanlık kaçtı! Şimdi ne yapacağız?')
             .setColor('RED')
-                .addField('Ateş yanmıyor! ','[boşver] [sürtünme yöntemiyle dene]')
+                .addField('Kurbanlık kaçtı! ','[boşver] [yakalamayı dene]')
                 .setFooter("Xaine Bot")
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -116,20 +120,20 @@ exports.run = async(client, msg, args) => {
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
-                if(cvp.first().content.toLowerCase() == 'sürtünme yöntemiyle dene') {
-                  msg.reply('TEBRİKLER! Sürtünme yöntemiyle ateşi yakarak üşümediniz. Sabah olunca sizi kurtarmak için sahil güvenlikler geldi. Oynadığınız için teşekkür ederiz.')
+                if(cvp.first().content.toLowerCase() == 'yakalamayı dene') {
+                  msg.reply('TEBRİKLER! Kurbanlığı yakaladınız ve yetkililer tarafından kesildi! Oynadığınız için teşekkür ederiz.')
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
                 if(cvp.first().content.toLowerCase() != 'boşver ' && cvp.first().content.toLowerCase() != 'sürtünme yöntemiyle dene') {
-                  msg.reply('Soğuk bir gece geçirdiniz! Lütfen tekrar deneyin.')
+                  msg.reply('Kurbanlık kaçtı! Nereye gidildiği bilinmiyor. Lütfen tekrar deneyin.')
                   db.delete(`anti_${msg.channel.id}`)
                   return
                 }
-                if(cvp.first().content.toLowerCase() == 'sürtünme yöntemiyle dene') {
+                if(cvp.first().content.toLowerCase() == 'yakalamayı dene') {
                   const sil = new Discord.MessageEmbed()
             .setTitle('Tebrikler')
-            .setDescription('TEBRİKLER! Sürtünme yöntemiyle ateşi yakarak üşümediniz. Sabah olunca sizi kurtarmak için sahil güvenlikler geldi. Oynadığınız için teşekkür ederiz.')
+            .setDescription('TEBRİKLER! Kurbanlığı yakaladınız ve yetkililer tarafından kesildi! Oynadığınız için teşekkür ederiz.')
             .setColor('RED')
                   .setFooter("Xaine Bot")
             .setTimestamp()
@@ -141,7 +145,7 @@ exports.run = async(client, msg, args) => {
                 if(cvp.first().content.toLowerCase() == '' || cvp.first().content.toLowerCase() == 'boşver') {
                   const bsvr = new Discord.MessageEmbed()
             .setTitle('OLAMAZ!')
-            .setDescription('Soğuk bir gece geçirdiniz! Lütfen tekrar deneyin.')
+            .setDescription('Kurbanlık kaçtı! Nereye gidildiği bilinmiyor. Lütfen tekrar deneyin.')
             .setColor('RED')
                   .setFooter("Xaine Bot")
             .setTimestamp()
@@ -176,7 +180,7 @@ exports.run = async(client, msg, args) => {
       if(cvp.first().content.toLowerCase() == 'boşver') {
             const banane = new Discord.MessageEmbed()
             .setTitle('SOĞUK GECE!')
-            .setDescription('Soğuk bir gece geçirdiniz. Lütfen tekrar deneyin.')
+            .setDescription('Kurbanlık kaçtı! Nereye gidildiği bilinmiyor. Lütfen tekrar deneyin.')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
@@ -192,12 +196,12 @@ exports.run = async(client, msg, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['ıssızada','ISSIZADA','Issızada'],
+  aliases: ['ıssızada','ISSIZADA'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'ıssızada',
-  description: 'ıssızada',
-  usage: 'ıssızada'
+  name: 'kurban',
+  description: 'kurban',
+  usage: 'kurban'
 };
