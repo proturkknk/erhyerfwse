@@ -44,6 +44,7 @@ exports.run = async(client, msg, args) => {
         .setThumbnail(msg.author.avatarURL)
         .setTimestamp()
         msg.channel.send(dvm)
+         
         }
       if(cvp.first().content.toLowerCase() == 'tosun') {
         const dvm = new Discord.MessageEmbed()
