@@ -50,11 +50,70 @@ module.exports = (message, bot) => {
           message.author.send(hatamesaj).catch(() => message.channel.send(hatamesaj).then(m => m.delete({timeout: 30000})))
           message.delete()
           return
+        }else{
+          if (cmd.conf.permLevel === 1) {
+			if (!message.member.hasPermission("MANAGE_MESSAGES")) {//
+				const embed = new Discord.MessageEmbed()
+					.setDescription(`Bu komutu kullanabilmek için **Mesajları Yönet** iznine sahip olmalısın!`)
+          .setColor("RED")
+				message.channel.send({embed})
+				return
+			}
+		}
+		if (cmd.conf.permLevel === 2) {
+			if (!message.member.hasPermission("KICK_MEMBERS")) {//
+				const embed = new Discord.MessageEmbed()
+					.setDescription(`Bu komutu kullanabilmek için **Üyeleri At** iznine sahip olmalısın!`)
+					.setColor("RED")//
+				message.channel.send({embed})
+				return//
+			}
+		}
+    if (cmd.conf.permLevel === 3) {
+			if (!message.member.hasPermission("BAN_MEMBERS")) {
+				const embed = new Discord.MessageEmbed()
+					.setDescription(`Bu komutu kullanabilmek için **Üyeleri Yasakla** iznine sahip olmalısın!`)
+					.setColor("RED")
+				message.channel.send({embed})
+				return
+			}
+		}
+		if (cmd.conf.permLevel === 4) {
+			if (!message.member.hasPermission("ADMINISTRATOR")) {//
+				const embed = new Discord.MessageEmbed()
+					.setDescription(`Bu komutu kullanabilmek için **Yönetici** iznine sahip olmalısın!`)
+					.setColor("RED")
+				message.channel.send({embed})
+				return
+			}
+		}
+		if (cmd.conf.permLevel === 5) {
+			if (!ayarlar.sahip.includes(message.author.id)) {
+				const embed = new Discord.MessageEmbed()
+					.setDescription(`Bu komutu sadece **sahibim** kullanabilir!`)
+					.setColor("RED")
+				message.channel.send({embed})
+				return
+			}
+		}
+       if (cmd) {
+  let bakım = db.fetch('bakım');
+  if(message.author.id !== ayarlar.sahip){
+  if(bakım){
+ return message.channel.send(`** :warning: Sizlere En iyi şekilde Verebilmek İçin Bakımdayız.\n❓ Bakım Sebebi: \`${bakım}\` <:hourglass:825313852321169429> Lütfen Daha Sonra Tekrar Deneyin. Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız.**`)
+     .addField('İşte Destek Sunucum!',"[Destek Sunucusu](https://discord.gg/Kekc2pU)")
+     }
+  }
+    }
+    if (perms < cmd.conf.permLevel) return;
+    if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
+    cmd.run(client, message, params, perms);
         }
       }
     }else{
       dbl.hasVoted(message.author.id).then(c => {
         if(!c) {
+          if(cmd.help.category)
           message.author.send(hatamesaj).catch(() => message.channel.send(hatamesaj).then(m => m.delete({timeout: 30000})))
           message.delete()
           return
