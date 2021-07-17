@@ -111,6 +111,14 @@ module.exports.run = async (bot, message, args) => {
 "deniz",
 
 "kayseri",
+    
+"koyun",
+    
+"Tosun",
+    
+"inek",
+    
+"bayram",
 
 ]
 
