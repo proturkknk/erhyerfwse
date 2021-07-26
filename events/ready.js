@@ -25,7 +25,8 @@ module.exports = client => {
     var oyun = [
     client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
-    " ✔ İyi Eğlenceler :)",
+    " Xaine Bot Sürümü **3.0** ",
+      " ✔ İyi Eğlenceler :)",
     " ✔ 7/24 Aktif!",
     " ✔ Kurucum-yapımcım: (! TREFAX#0362)",
     " ✔ İyi Günler :)",
