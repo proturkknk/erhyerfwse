@@ -126,7 +126,7 @@ app.get('/reedem', checkAuth, (req, res) => {
       }
     })
   }else{
-    res.send('Bu özelliği kullanman için sunucumuzda bulunman gerekiyor: https://discord.gg/Kekc2pU')
+    res.send('Bu özelliği kullanman için sunucumuzda bulunman gerekiyor. Gelmek istersen Discord sunucumuzun linki: https://discord.gg/Kekc2pU')
   }
 })
 
