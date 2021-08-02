@@ -104,7 +104,7 @@ app.get('/share', checkAuth, (req, res) => {
       }
     })
   }else{
-    res.send('Bu özelliği kullanman için Destek sunucumuzda bulunman gerekiyor: https://discord.gg/Kekc2pU')
+    res.send('Bu özelliği kullanman için Destek sunucumuzda bulunman gerekiyor. Gelmek istersen Discord sunucumuzun linki: https://discord.gg/Kekc2pU')
   }
 })
 app.get('/reedem', checkAuth, (req, res) => {
