@@ -104,5 +104,19 @@ module.exports = (message, bot) => {
   .setDescription('**Bu komutu kullanmak için Destek sunucumuza katılıp bota oy vermeniz gerekmektedir.\n\n[Oy Ver](https://top.gg/bot/774235071653216286/vote), [Sunucuya Katıl](https://discord.gg/99C4tGzgK4)**')
   .setColor('RANDOM')
   .setThumbnail(message.author.avatarURL())
-  if(cmd.conf.)
+  if(cmd.help.category) {
+    if(cmd.help.category == 'moderasyon'){
+      dbl.hasVoted(message.author.id).then(c => {
+        if(c && sunucu.members.cache.get(message.author.id)){
+          ok()
+        }else{
+          message.channel.send(hatamesaj)
+        }
+      })
+    }else{
+      ok()
+    }
+  }else{
+    ok()
   }
+}
