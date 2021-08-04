@@ -89,6 +89,10 @@ app.get("/logout", function(req, res) {
   res.redirect("/");
 });
 
+app.get("/hakkinda", function(req, res){
+  res.render("xaine-hakkinda")
+})
+
 app.get('/share', checkAuth, (req, res) => {
   let sunucuda = false
   req.user.guilds.forEach(g => {
