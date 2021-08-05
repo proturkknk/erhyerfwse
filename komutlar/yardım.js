@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
  const embed = new Discord.MessageEmbed()
-const discord = client.emojis.get('')
  .setAuthor(`${client.user.username} Bot Yardım Menüsüne Hoşgeldin!`,client.user.avatarURL())
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
