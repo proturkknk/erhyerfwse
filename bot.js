@@ -49,8 +49,8 @@ passport.use(
   )
 );
 
-app.use(exfile())
 app.use("/views", express.static(path.join(__dirname, "static")));
+app.use(exfile())
 app.set("view engine", "ejs");
 
 //SAYFALAR
@@ -99,14 +99,9 @@ app.get("/hakkinda", (req, res) => {
   res.render("xaine-hakkinda")
 })
 
-app.post('/hakkinda', (req, res) => {
-  if(req.files){
-    console.log(req.files)
-    res.send('olr')
-  }else{
-    res.send("dosya yok RAGE")
-    console.log('sg')
-  }
+app.get('/bok', (req, res) => {
+  console.log('sg')
+  res.send('sg')
 })
 
 app.get('/share', checkAuth, (req, res) => {
