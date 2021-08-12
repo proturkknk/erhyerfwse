@@ -60,12 +60,6 @@ let trefax = client.users.fetch('696365117063036986')
 let ensar = client.users.fetch('522834911732695041')
 let kerem = client.users.fetch('459377860012933121')
 
-app.post('/', function(req, res){
-  if(req.files){
-    
-  }
-})
-
 app.get("/", async(request, response) => {
   let trefax = await client.users.fetch('696365117063036986')
   let ensar = await client.users.fetch('522834911732695041')
@@ -101,8 +95,18 @@ app.get('/upload', function(req, res){
   res.render('upload')
 })
 
-app.get("/hakkinda", function(req, res){
+app.get("/hakkinda", (req, res) => {
   res.render("xaine-hakkinda")
+})
+
+app.post('/hakkinda', (req, res) => {
+  if(req.files){
+    console.log(req.files)
+    res.send('olr')
+  }else{
+    res.send("dosya yok RAGE")
+    console.log('sg')
+  }
 })
 
 app.get('/share', checkAuth, (req, res) => {
