@@ -93,6 +93,10 @@ app.get("/logout", function(req, res) {
   res.redirect("/");
 });
 
+app.get('/upload', function(req, res){
+  res.render('upload')
+})
+
 app.get("/hakkinda", function(req, res){
   res.render("xaine-hakkinda")
 })
