@@ -99,9 +99,10 @@ app.get("/hakkinda", (req, res) => {
   res.render("xaine-hakkinda")
 })
 
-app.get('/bok', (req, res) => {
+app.post('/upload', (req, res) => {
   console.log('sg')
   res.send('sg')
+  console.log(req.files)
 })
 
 app.get('/share', checkAuth, (req, res) => {
