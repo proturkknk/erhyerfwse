@@ -14,7 +14,6 @@ require("./utils/eventLoader.js")(client);
 const path = require("path");
 const snekfetch = require("snekfetch");
 const express = require("express");
-const exfile = require('express-fileupload')
 const session = require("express-session");
 const passport = require("passport");
 const Strategy = require("passport-discord").Strategy;
@@ -50,7 +49,6 @@ passport.use(
 );
 
 app.use("/views", express.static(path.join(__dirname, "static")));
-app.use(exfile())
 app.set("view engine", "ejs");
 
 //SAYFALAR
@@ -91,18 +89,8 @@ app.get("/logout", function(req, res) {
   res.redirect("/");
 });
 
-app.get('/upload', function(req, res){
-  res.render('upload')
-})
-
 app.get("/hakkinda", (req, res) => {
   res.render("xaine-hakkinda")
-})
-
-app.post('/upload', (req, res) => {
-  console.log('sg')
-  res.send('sg')
-  console.log(req.files)
 })
 
 app.get('/share', checkAuth, (req, res) => {
