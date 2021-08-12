@@ -2,6 +2,9 @@
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
+var phpExpress = require('php-express')({
+  binPath: 'php'
+});
 const ayarlar = require("./ayarlar.json");
 const moment = require("moment");
 var Jimp = require("jimp");
@@ -50,6 +53,7 @@ passport.use(
 
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
+app.all(/.+\.php$/, phpExpress.router);
 
 //SAYFALAR
 
