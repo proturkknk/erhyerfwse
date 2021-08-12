@@ -2,9 +2,6 @@
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var phpExpress = require('php-express')({
-  binPath: 'php'
-});
 const ayarlar = require("./ayarlar.json");
 const moment = require("moment");
 var Jimp = require("jimp");
@@ -17,6 +14,7 @@ require("./utils/eventLoader.js")(client);
 const path = require("path");
 const snekfetch = require("snekfetch");
 const express = require("express");
+const exfile = require('express-fileupload')
 const session = require("express-session");
 const passport = require("passport");
 const Strategy = require("passport-discord").Strategy;
@@ -51,6 +49,7 @@ passport.use(
   )
 );
 
+app.use(exfile())
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
 
@@ -60,6 +59,12 @@ let ss = null
 let trefax = client.users.fetch('696365117063036986')
 let ensar = client.users.fetch('522834911732695041')
 let kerem = client.users.fetch('459377860012933121')
+
+app.post('/', function(req, res){
+  if(req.files){
+    
+  }
+})
 
 app.get("/", async(request, response) => {
   let trefax = await client.users.fetch('696365117063036986')
@@ -91,6 +96,10 @@ app.get("/logout", function(req, res) {
   ss = null
   res.redirect("/");
 });
+
+app.get('/upload', function(req, res){
+  res.render('upload')
+})
 
 app.get("/hakkinda", function(req, res){
   res.render("xaine-hakkinda")
