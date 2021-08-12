@@ -53,7 +53,6 @@ passport.use(
 
 app.use("/views", express.static(path.join(__dirname, "static")));
 app.set("view engine", "ejs");
-app.all(/.+\.php$/, phpExpress.router);
 
 //SAYFALAR
 
@@ -92,10 +91,6 @@ app.get("/logout", function(req, res) {
   ss = null
   res.redirect("/");
 });
-
-app.get('/upload', function(req, res){
-  res.render('upload')
-})
 
 app.get("/hakkinda", function(req, res){
   res.render("xaine-hakkinda")
