@@ -2,16 +2,11 @@ const Discord = require('discord.js');
 const qdb = require('quick.db');
 const ms = require("ms");
 const ayarlar = require('../ayarlar.json');
-
-const low = require('lowdb');
-const FileSync = require('lowdb/adapters/FileSync');
-const adapter = new FileSync('./database/systems.json');
-const sdb = low(adapter);
+const sdb = require('quick.db')
 
 exports.run = async (client, message, args) => {    
 
 var msg = message;
-sdb.read()
 var muterole1 = qdb.fetch(`muteroluid_${message.guild.id}`);
 var muterole2 = message.guild.roles.cache.find(r => r.id === muterole1);
 if (!muterole2) {

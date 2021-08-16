@@ -1,38 +1,45 @@
-const Discord = require("discord.js");
-const db = require("quick.db");
-exports.run = async (client, message, args) => {
-  
-  if(message.author.id !== '696365117063036986') {
-     const embed = new Discord.MessageEmbed()
-    .setDescription(`**:x: Bu Komut Yapımcıma Özeldir !**`)
-    .setColor('RANDOM')
-    return message.channel.send(embed).then(msg=>msg.delete(3000));
-    }
-if(args[0] === "aç"){
-  if(!args[1]){
-  message.channel.send('Bakım sebebini belirtir misin?')
+const Discord = require('discord.js');
+const db = require('quick.db')
+exports.run = async(client, message, args) => {
+  let arg = args[0]
+  let sebep = args.slice(2).join(" ")
+  let açıklama = args[1]
+let dreamcode = db.fetch(`xaine.bakim`)
+if(!arg) {
+  message.reply('Bakım modunu açmak için !bakım aç yaz')
+}
+
+if(arg == 'kapat'){
+message.channel.send(`Bot başarıyla bakım modundan çıkarıldı.`)
+db.delete(`xaine.bakim`)
+db.delete(`afk_süre`);
+}
+
+if(arg == 'aç') {
+  if(!açıklama){
+    message.reply('Tahmini bitiş tarihini yaz.')
   }
-  db.set('bakım', args.slice(1).join(' '))
-  if (args.slice(1).join(' ')) {
-  message.channel.send("Bakım modu başarıyla açıldı!")
+  if(açıklama){
+    if(!sebep){
+      message.reply('Neden bakıma alıyorsun?')
     }
-} else if(args[0]=== "kapat"){
-  message.channel.send("Bakım başarıyla kapatıldı!")
-  db.delete('bakım')
+    if(sebep){
+    db.set(`bakimyüzde`, açıklama)
+      db.set(`bakimsebep`, sebep)
+       db.set(`afk_süre`, Date.now());
+message.channel.send(`Botu başarıyla bakıma aldınız, bakımdan çıkarmak için **+bakım kapat** yazınız.`)
+db.set(`xaine.bakim`, 'aktif')
+  }
 }
-
 }
-
-
+}
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: [],
-  permLevel: 0
+enabled: true,
+guildOnly: false,
+aliases: [`bakım`],
+permLevel: 4,
 };
 
 exports.help = {
-  name: 'bakım',
-  description: 'Bakım.',
-  usage: 'Bakım'
-};
+  name: "bakım"
+}

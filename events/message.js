@@ -5,7 +5,8 @@ const dblapi = require('dblapi.js')
 const dbl = new dblapi(process.env.dbl_token)
 let talkedRecently = new Set();
 
-module.exports = (message, bot) => {
+module.exports = async(message, bot) => {
+  
   if (talkedRecently.has(message.author.id)) {
     return;
   }
@@ -39,7 +40,7 @@ module.exports = (message, bot) => {
         )
  }
   
-  function ok() {
+  async function ok() {
     if (cmd.conf.permLevel === 1) {
 			if (!message.member.hasPermission("MANAGE_MESSAGES")) {//
 				const embed = new Discord.MessageEmbed()
