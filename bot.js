@@ -89,6 +89,10 @@ app.get("/logout", function(req, res) {
   res.redirect("/");
 });
 
+app.get('/room', checkAuth, (req, res) => {
+  res.render('menu',{user: req.user})
+})
+
 app.get("/hakkinda", (req, res) => {
   res.render("xaine-hakkinda")
 })
@@ -245,7 +249,7 @@ client.on("message", async message => {
 
   let prefix = db.get(`prefix_${message.guild.id}`);
 
-  if (prefix === null) prefix = prefix;
+  if (prefix === null) prefix = "+";
 
   if (!message.content.startsWith(prefix)) return;
 
