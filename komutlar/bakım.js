@@ -37,7 +37,7 @@ exports.conf = {
 enabled: true,
 guildOnly: false,
 aliases: [`bakım`],
-permLevel: 4,
+permLevel: 5,
 };
 
 exports.help = {

@@ -27,6 +27,7 @@ module.exports = client => {
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
     "Bot bakımdadır. Nedenini Destek sunucumuzdaki Xaine Bot kategorisindeki Duyurular kanalından öğrenebilirsiniz.",
       "+yardım",
+      "Bot bakımdadır!",
   ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 

@@ -222,9 +222,11 @@ client.elevation = message => {
     return;
   }
   let permlvl = 0;
-  if (message.member.hasPermission("BAN_MEMBERS")) permlvl = 2;
-  if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 3;
-  if (message.author.id === ayarlar.sahip) permlvl = 4;
+  if (message.member.hasPermission("MANAGE_MESSAGES")) permlvl = 1;
+  if (message.member.hasPermission("KICK_MEMBERS")) permlvl = 2;
+  if (message.member.hasPermission("BAN_MEMBERS")) permlvl = 3;
+  if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 4;
+  if (ayarlar.sahip.includes(message.author.id)) permlvl = 5;
   return permlvl;
 };
 

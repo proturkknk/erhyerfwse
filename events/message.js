@@ -32,7 +32,7 @@ module.exports = async(message, bot) => {
   if(await db.fetch('xaine.bakim') == 'aktif' && message.author.id != "522834911732695041" && message.author.id != "696365117063036986") return message.channel.send(`** :warning: Sizlere En iyi şekilde Verebilmek İçin Bakımdayız.\n❓ <:hourglass:825313852321169429> Lütfen Daha Sonra Tekrar Deneyin. Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız.**`).addField('İşte Destek Sunucum!',"[Destek Sunucusu](https://discord.gg/Kekc2pU)")
       
       
-        if(message.author.id !== ayarlar.sahip) {
+        if(!ayarlar.sahip.includes(message.author.id)) {
         const player = db.fetch(`karaliste.${message.author.id}`)//Bots For List Yapımı!
         if(player) return message.channel.send(
           new Discord.MessageEmbed()
