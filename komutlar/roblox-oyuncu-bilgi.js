@@ -24,11 +24,11 @@ exports.run = async (client, message, args) => {
 
 
 
-            if (body.success === false) return message.reply('**Böyle Bir Oyuncu Bulunamadı!**')
+            if (body.success === false) return message.reply('**Uzun uzun aradım ama böyle bi oyuncu bulamadım.**')
 
 
 
-            if (ulke.length < 3) return message.reply(`**Oyuncu Adları En Az 3 Karakterden Oluşmalıdır!**`)
+            if (ulke.length < 3) return message.reply(`**Oyuncu Adları En Az 3 Karakterden Oluşmalıdır.**`)
 
 
             if (IsOnline === false) {
@@ -99,7 +99,7 @@ exports.run = async (client, message, args) => {
                                                         .addField(`Takip Edilen`, `${takipedilen}`, true)
                                                         .addField(`Yasaklı Mı?`, `${isBanned}`, true)
                                                         .addField(`Hesap Oluşturulma Tarihi`, `${tarih[2]}-${tarih[1]}-${tarih[0]}`, true)
-                                                        .setFooter("Bilgiler Her Zaman Doğru Olmayabilir!")
+                                                        .setFooter("Xaine Bot | Bilgiler her zaman doğru olmayabilir.")
                                                     message.channel.send(embed)
 
 
@@ -123,11 +123,11 @@ exports.run = async (client, message, args) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: [],
+    aliases: ['roblox-oyuncu-bilgi','Roblox-oyuncu-bilgi','ROBLOX-OYUNCU-BİLGİ'],
     permLevel: 0
 };
 
 exports.help = {
-    name: 'roblox',
+    name: 'roblox-oyuncu-bilgi',
     description: 'Belirttiğiniz Roblox Kullanıcısının Hesap Bilgilerini Gösterir.'
 };

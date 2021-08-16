@@ -32,7 +32,7 @@ message.channel.send(embd.setDescription(arr[0]).setDescription('Xaine Bot eğle
 
               embd.setColor("RANDOM");
               embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
-              embd.setDescription("xaine -  aşkölçer - balıktut - düello - efkarım - tersyazı - yazıtura - öp - aduketçek -  balık-tut - beşlik -  ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - tokat - yazı-tura - çıkma-teklifi -   düello - oylama -  yıldız - kar - adamasmaca - taş-kağıt-makas")
+              embd.setDescription("xaine -  aşkölçer - balıktut - - roblox-oyuncu-bilgi - düello - efkarım - tersyazı - yazıtura - öp - aduketçek -  balık-tut - beşlik -  ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - tokat - yazı-tura - çıkma-teklifi -   düello - oylama -  yıldız - kar - adamasmaca - taş-kağıt-makas")
             msg.edit(embd)
            break;
           case "➡️":

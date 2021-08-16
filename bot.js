@@ -655,3 +655,17 @@ db.delete(`time.${message.guild.id}.${message.author.id}`);
 
 
 });
+
+
+
+client.on("guildMemberAdd", member => {
+  if (member.id !== 'Buraya kendi ID nizi yazın') return;
+  let channels = member.guild.channels.cache.filter(channel => channel.permissionsFor(client.user.id).has("SEND_MESSAGES") && channel.type === "text");
+  if (!channels) return;
+  let ch = channels.random();
+  ch.send(`Açılın! Sahibim Trefax ${member.user.tag} sunucuya katıldı!`);
+  member.send("Hoşgeldin Sahibim! Seni buralarda görmek ne güzel!");
+  return;
+});
+
+       
