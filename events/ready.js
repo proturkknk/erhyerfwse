@@ -56,7 +56,7 @@ module.exports = client => {
       "Kurucum-Yapımcım | ! TREFAX#0362",
       "Destek sunucumuzda Hergün düzenli olarak çekilişler yapılıyor! Destek sunucumuza gelerek çekilişlere katılabilirsiniz.",
       "https://www.xaine.tk/",
-      "Bot bakımda!",
+
 
   ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
