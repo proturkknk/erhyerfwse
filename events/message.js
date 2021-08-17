@@ -36,10 +36,10 @@ module.exports = async(message, bot) => {
       if(!ayarlar.sahip.includes(message.author.id)) {
 if(botbakım == 'aktif'){
   let bakim = new Discord.MessageEmbed()
-  .setTitle('Bot bakımda! Daha sonra tekrar deneyiniz.')
+  .setTitle('Bot bakımda! Daha sonra tekrar Deneyiniz.')
   .setColor('RANDOM')
   .setDescription(`Tahmini bitiş: **${bakımyüzde}**\nBakım sebebi: **${bakımsebep}**`)
-  .setFooter('Bot eğer uzun süre açılmazsa Destek sunucumuza gelerek yada yapımcıma sorarak öğrenebilirsiniz.')
+  .setFooter('Eğer uzun süre açılmazsa Destek sunucumuza gelerek veya yapımcıma sorabilirsiniz.')
   
   return message.channel.send(bakim)
 } 

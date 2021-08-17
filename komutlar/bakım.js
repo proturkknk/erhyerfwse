@@ -36,7 +36,7 @@ db.set(`dreamcode.botbakim`, 'aktif')
 exports.conf = {
 enabled: true,
 guildOnly: false,
-aliases: [`bakim`],
+aliases: [`bakım`],
 permLevel: 4,
 };
 
@@ -46,4 +46,4 @@ description: 'Botu bakıma alırsınız.',
 usage: 'bakım'
 };
 
-//komutlar/bakım.js
+
