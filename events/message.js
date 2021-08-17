@@ -33,7 +33,7 @@ module.exports = async(message, bot) => {
    // if (cmd) { satırının altına yazılacak!
 
 let kabulettimi = db.fetch(`kabulettimi_${message.author.id}`)
-if (!kabulettimi && (command !== "kabulet" && command !== "şartlar")) return message.reply("Botun herhangi bir komutunu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şarltar` yazın.")
+if(!db.get("sartkabul."+ message.author.id)) return message.reply("Botun herhangi bir komutunu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şarltar` yazın.")
              
    let botbakım = db.fetch('dreamcode.botbakim')
   let bakımyüzde = db.fetch('bakimyüzde')
