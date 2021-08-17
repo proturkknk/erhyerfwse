@@ -4,11 +4,15 @@ const db = require('quick.db');
 const dblapi = require('dblapi.js')
 const dbl = new dblapi(process.env.dbl_token)
 let talkedRecently = new Set();
-
+let i = 0
 module.exports = async(message, bot) => {
+  i += 1
+  console.log(i)
   if (talkedRecently.has(message.author.id)) {
     return;
   }
+  i += 1
+  console.log(i)
   talkedRecently.add(message.author.id);
 	setTimeout(() => {
     talkedRecently.delete(message.author.id);
@@ -27,30 +31,35 @@ module.exports = async(message, bot) => {
   } else if (client.aliases.has(command)) {
     cmd = client.commands.get(client.aliases.get(command));//
   }
-  
+  let sg = false
+  let bakim = new Discord.MessageEmbed()
+          .setTitle('Bot bakımda! Lütfen daha sonra tekrar Deneyiniz.')
+          .setColor('RANDOM')
+          .setDescription(`**:warning: Sizlere En iyi şekilde hizmet Verebilmek İçin Bakımdayız.\n:question: :hourglass: Lütfen Daha Sonra Tekrar Deneyin. Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız. Ayrıca bot neden bakımda ve bakım süresi ne zaman öğrenmek isterseniz destek sunucumuza gelebilirsiniz. [Destek sunucumuza katılmak için tıkla](https://discord.gg/Kekc2pU)**`)
+          .setFooter('Eğer uzun süre açılmazsa yapımcıma veya Destek sunucumuza gelerek sorabilirsiniz.')
+  i += 1
+  console.log(i)
  if (cmd) {
-   
-   // if (cmd) { satırının altına yazılacak!
-
-let kabulettimi = await db.fetch(`kabulettimi_${message.author.id}`)
+   i += 1
+  console.log(i)
+   // if (cmd) { satırının altına yazılacak! NAPİM
+let kabulettimi = db.fetch(`kabulettimi_${message.author.id}`)
 if(!kabulettimi) return message.reply("Botun herhangi bir komutunu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şartlar` yazın.")
-             
+            i += 1
+  console.log(i)
    let botbakım = db.fetch('xaine.bakim')
       if(!ayarlar.sahip.includes(message.author.id)) {
-if(botbakım == 'aktif'){
-  let bakim = new Discord.MessageEmbed()
-  .setTitle('Bot bakımda! Daha sonra tekrar Deneyiniz.')
-  .setColor('RANDOM')
-  .setDescription(`**Bot Bakımdadır.**`)
-  .setFooter('Eğer uzun süre açılmazsa Destek sunucumuza gelerek veya yapımcıma sorabilirsiniz.')
-return message.channel.send(botbakım)
-} 
+        if(botbakım == 'aktif'){
+          sg = true
+        return message.channel.send(bakim)
+        } 
   }
-    
+    if(sg) return message.channel.send(bakim)
     if (perms < cmd.conf.permLevel) return;
     cmd.run(client, message, params, perms);
   } 
-      
+
+      if(sg) return message.channel.send(bakim)
       
         if(!ayarlar.sahip.includes(message.author.id)) {
         const player = db.fetch(`karaliste.${message.author.id}`)//Bots For List Yapımı!
@@ -61,6 +70,7 @@ return message.channel.send(botbakım)
  }
   
   async function ok() {
+    if(sg) return message.channel.send(bakim)
     if (cmd.conf.permLevel === 1) {
 			if (!message.member.hasPermission("MANAGE_MESSAGES")) {//
 				const embed = new Discord.MessageEmbed()
@@ -109,6 +119,7 @@ return message.channel.send(botbakım)
        if (cmd) {
     }
     if (perms < cmd.conf.permLevel) return;
+    if(sg) return message.channel.send(bakim)
     if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
     cmd.run(client, message, params, perms);
   }
