@@ -25,7 +25,7 @@ module.exports = client => {
   setInterval(function() {
     const see =  client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()
     var oyun = [
-   see+" Tane Kullanıcım var!",
+    see*20+" Tane Kullanıcım var!",
     client.guilds.cache.size*300+" Tane Sunucuya eklendim!",
     " Bot Bakımda!",
 

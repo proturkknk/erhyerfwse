@@ -12,7 +12,7 @@ exports.conf = {
   guildOnly: true,
   permLevel: 0,
   kategori: "bot",
-  aliases: ['kabul-et','Kabuk']
+  aliases: ['kabul-et','Kabul-et','KABUL-ET']
 };
 
 exports.help = {
