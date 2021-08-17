@@ -32,7 +32,7 @@ module.exports = async(message, bot) => {
    
 
    let kabulettimi = db.fetch(`kabulettimi_${message.author.id}`)
-if (!kabulettimi && (command !== "kabulet" && command !== "şartlar")) message.reply("Botu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şartlar` yazınız.")
+if (!kabulettimi && (command !== "kabulet" && command !== "şartlar")) return message.reply("Botu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şartlar` yazınız.")
 // if (cmd) { satırının altına yazılacak!
 
               let botbakım = db.fetch('dreamcode.botbakim')
@@ -46,8 +46,7 @@ if(botbakım == 'aktif'){
   .setColor('RANDOM')
   .setDescription(`Tahmini bitiş: **${bakımyüzde}**\nBakım sebebi: **${bakımsebep}**`)
   .setFooter('Eğer uzun süre açılmazsa Destek sunucumuza gelerek veya yapımcıma sorabilirsiniz.')
-  
-  return message.channel.send(bakim)
+return message.channel.send(botbakım)
 } 
   }
     
