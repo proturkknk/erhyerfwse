@@ -32,19 +32,16 @@ module.exports = async(message, bot) => {
    
    // if (cmd) { satırının altına yazılacak!
 
-let kabulettimi = db.fetch(`kabulettimi_${message.author.id}`)
-if(!db.get("sartkabul."+ message.author.id)) return message.reply("Botun herhangi bir komutunu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şarltar` yazın.")
+let kabulettimi = await db.fetch(`kabulettimi_${message.author.id}`)
+if(!kabulettimi) return message.reply("Botun herhangi bir komutunu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şartlar` yazın.")
              
-   let botbakım = db.fetch('dreamcode.botbakim')
-  let bakımyüzde = db.fetch('bakimyüzde')
-  let bakımsebep = db.fetch('bakimsebep')
-  let cfxtime = await db.fetch(`afk_süre}`);
+   let botbakım = db.fetch('xaine.bakim')
       if(!ayarlar.sahip.includes(message.author.id)) {
 if(botbakım == 'aktif'){
   let bakim = new Discord.MessageEmbed()
   .setTitle('Bot bakımda! Daha sonra tekrar Deneyiniz.')
   .setColor('RANDOM')
-  .setDescription(`Tahmini bitiş: **${bakımyüzde}**\nBakım sebebi: **${bakımsebep}**`)
+  .setDescription(`**Bot Bakımdadır.**`)
   .setFooter('Eğer uzun süre açılmazsa Destek sunucumuza gelerek veya yapımcıma sorabilirsiniz.')
 return message.channel.send(botbakım)
 } 

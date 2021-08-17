@@ -27,9 +27,9 @@ module.exports = client => {
     var oyun = [
     see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
-    " Sürümüm: 3.4 ",
-      "Sürüm 3.4 ",
-      " Xaine Bot Sürümü 3.4 ",
+    " Sürümüm: 3.5 ",
+      "Sürüm 3.5 ",
+      " Xaine Bot Sürümü 3.5 ",
       " ✔️ İyi Eğlenceler :)",
     " ✔️ 7/24 Aktif!",
     " ✔️ Kurucum-yapımcım: (! TREFAX#0362)",
