@@ -11,7 +11,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 
 ▬[ :closed_lock_with_key: **Xaine Bot Moderasyon Komutları** :teddy_bear: ]▬
 
-> **» +mute :** Belirttiğiniz kişiyi sunucuda susturursunuz.(Bakımda)
+> **» +mute :** Belirttiğiniz kişiyi sunucuda susturursunuz.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 **DİKKAT!: LÜTFEN DİKKATLİCE OKUYUNUZ! Botda oluşan teknik nedenden dolayı bot moderasyon yetkisi alamadı buda moderasyon komutlarını kullanamazsınız anlamına geliyor. Sorun çözülmüştür Lütfen Xaine Botu sunucudan atıp tekrardan eklerseniz seviniriz. İyi günler! (10 temmuz 2021 sonrası botu sunucudan atıp ekleyenlerde bu sorun yoktur. Lütfen çalışmıyorsa botu atıp geri ekleyin.)**
 > :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, bildir komutuyla belirtmekten asla çekinmeyin!**

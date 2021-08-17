@@ -82,6 +82,7 @@ if (!time) {
            }, 6000);
         }
     } else {
+      console.log(db.get('mute'))
         if(!db.get('mute').find({guild: message.guild.id, user: kisi.id}).value()) {
             let obj12 = {guild: msg.guild.id, guild_name: msg.guild.name, user: kisi.id, user_name: kisi.user.username, staff: msg.author.id, staff_username: message.author.username, channel: message.channel.id, channel_name: message.channel.name, reason: "No Reason Given", time: time, finishtime: finishtime}
             db.get('mute').push(obj12).write()
