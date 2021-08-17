@@ -27,7 +27,7 @@ if(arg == 'aç') {
     db.set(`bakimyüzde`, açıklama)
       db.set(`bakimsebep`, sebep)
        db.set(`afk_süre`, Date.now());
-message.channel.send(`Botu başarıyla bakıma aldınız, bakımdan çıkarmak için **${client.ayarlar.prefix}bakım kapat** yazınız.`)
+message.channel.send(`Botu başarıyla bakıma aldınız, bakımdan çıkarmak için **+bakım kapat** yazınız.`)
 db.set(`dreamcode.botbakim`, 'aktif')
   }
 }
