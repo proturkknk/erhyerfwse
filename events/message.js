@@ -6,7 +6,6 @@ const dbl = new dblapi(process.env.dbl_token)
 let talkedRecently = new Set();
 
 module.exports = async(message, bot) => {
-  let i = 0
   if (talkedRecently.has(message.author.id)) {
     return;
   }
@@ -41,17 +40,13 @@ module.exports = async(message, bot) => {
  if (cmd) {
    // if (cmd) { satırının altına yazılacak! NAPİM
 
-if(!kabulettimi) return message.reply("Botun herhangi bir komutunu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şartlar` yazın.")
-            i += 1
-  console.log(i)
+if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herhangi bir komutunu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şartlar` yazın.")
       if(!ayarlar.sahip.includes(message.author.id)) {
         if(botbakım == 'aktif'){
           sg = true
         return message.channel.send(bakim)
         } 
   }
-    if (perms < cmd.conf.permLevel) return;
-    cmd.run(client, message, params, perms);
   } 
       if(sg) return message.channel.send(bakim)
         if(!ayarlar.sahip.includes(message.author.id)) {
