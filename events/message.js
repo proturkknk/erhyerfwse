@@ -132,3 +132,8 @@ if(botbakım == 'aktif'){
     ok()
   }
 }
+
+// if (cmd) { satırının altına yazılacak!
+
+let kabulettimi = db.fetch(`kabulettimi_${message.author.id}`)
+if (!kabulettimi && (command !== "kabulet" && command !== "şartlar")) return message.reply("Botu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şartlar` yazınız.")

