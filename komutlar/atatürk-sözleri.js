@@ -20,4 +20,4 @@ exports.help = {
   description: 'Atatürk ün sözlerini gönderir',
   usage: 'atatürk-sözleri'
 };
-﻿
+
