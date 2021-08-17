@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 
 exports.run = async (client, message, args) => {
-
+ if (!message.member.permissions.has("MANAGE_GUILD")) return message.channel.send(`❌ Bu Komutu Kullana Bilmek İçin \`Mesajları Yönet\` Yetkisine Sahip Olmalısın!`)
   const onayembed = new Discord.MessageEmbed()
   .setColor("RANDOM")
   .setTimestamp()
