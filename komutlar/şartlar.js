@@ -14,7 +14,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "kabulet",
+  name: "şartlar",
   description: "Şartları kabul edersiniz. C:",
-  usage: "kabulet"
+  usage: ""
 };

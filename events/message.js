@@ -58,7 +58,6 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
  }
   
   async function ok() {
-    console.log('ok??')
     if(sg) return message.channel.send(bakim)
     if (cmd.conf.permLevel === 1) {
 			if (!message.member.hasPermission("MANAGE_MESSAGES")) {//
@@ -110,7 +109,6 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
     if (perms < cmd.conf.permLevel) return;
     if(sg) return message.channel.send(bakim)
     if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
-    console.log('çalıştırıldı') //knk bu çalışmıordu :I yo biliyom düzeldimi :flsu no oky
     cmd.run(client, message, params, perms);
   }
   
