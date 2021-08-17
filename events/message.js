@@ -28,8 +28,26 @@ module.exports = async(message, bot) => {
     cmd = client.commands.get(client.aliases.get(command));//
   }
   
-  if(!cmd) return
-  if(await db.fetch('xaine.bakim') == 'aktif' && message.author.id != "522834911732695041" && message.author.id != "696365117063036986") return message.channel.send(`** :warning: Sizlere En iyi şekilde Verebilmek İçin Bakımdayız.\n❓ <:hourglass:825313852321169429> Lütfen Daha Sonra Tekrar Deneyin. Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız.**`).addField('İşte Destek Sunucum!',"[Destek Sunucusu](https://discord.gg/Kekc2pU)")
+ if (cmd) {
+              let botbakım = db.fetch('dreamcode.botbakim')
+  let bakımyüzde = db.fetch('bakimyüzde')
+  let bakımsebep = db.fetch('bakimsebep')
+  let cfxtime = await db.fetch(`afk_süre}`);
+      if(!ayarlar.sahip.includes(message.author.id)) {
+if(botbakım == 'aktif'){
+  let bakim = new Discord.MessageEmbed()
+  .setTitle('BOT BAKIMDA')
+  .setColor('RANDOM')
+  .setDescription(`Tahmini bitiş: **${bakımyüzde}**\nBakım sebebi: **${bakımsebep}**`)
+  .setFooter('Eğer uzun süre açılmazsa Destek sunucumuza gelerek veya yapımcıma sorabilirsiniz.')
+  
+  return message.channel.send(bakim)
+} 
+  }
+    
+    if (perms < cmd.conf.permLevel) return;
+    cmd.run(client, message, params, perms);
+  } 
       
       
         if(!ayarlar.sahip.includes(message.author.id)) {

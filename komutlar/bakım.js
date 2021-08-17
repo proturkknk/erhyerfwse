@@ -4,14 +4,14 @@ exports.run = async(client, message, args) => {
   let arg = args[0]
   let sebep = args.slice(2).join(" ")
   let açıklama = args[1]
-let dreamcode = db.fetch(`xaine.bakim`)
+let dreamcode = db.fetch(`dreamcode.botbakim`)
 if(!arg) {
   message.reply('Bakım modunu açmak için !bakım aç yaz')
 }
 
 if(arg == 'kapat'){
 message.channel.send(`Bot başarıyla bakım modundan çıkarıldı.`)
-db.delete(`xaine.bakim`)
+db.delete(`dreamcode.botbakim`)
 db.delete(`afk_süre`);
 }
 
@@ -27,8 +27,8 @@ if(arg == 'aç') {
     db.set(`bakimyüzde`, açıklama)
       db.set(`bakimsebep`, sebep)
        db.set(`afk_süre`, Date.now());
-message.channel.send(`Botu başarıyla bakıma aldınız, bakımdan çıkarmak için **+bakım kapat** yazınız.`)
-db.set(`xaine.bakim`, 'aktif')
+message.channel.send(`Botu başarıyla bakıma aldınız, bakımdan çıkarmak için **${client.ayarlar.prefix}bakım kapat** yazınız.`)
+db.set(`dreamcode.botbakim`, 'aktif')
   }
 }
 }
@@ -36,10 +36,14 @@ db.set(`xaine.bakim`, 'aktif')
 exports.conf = {
 enabled: true,
 guildOnly: false,
-aliases: [`bakım`],
-permLevel: 5,
+aliases: [`bakim`],
+permLevel: 4,
 };
 
 exports.help = {
-  name: "bakım"
-}
+name: 'bakım',
+description: 'Botu bakıma alırsınız.',
+usage: 'bakım'
+};
+
+//komutlar/bakım.js
