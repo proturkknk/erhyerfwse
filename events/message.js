@@ -4,15 +4,12 @@ const db = require('quick.db');
 const dblapi = require('dblapi.js')
 const dbl = new dblapi(process.env.dbl_token)
 let talkedRecently = new Set();
-let i = 0
+
 module.exports = async(message, bot) => {
-  i += 1
-  console.log(i)
+  let i = 0
   if (talkedRecently.has(message.author.id)) {
     return;
   }
-  i += 1
-  console.log(i)
   talkedRecently.add(message.author.id);
 	setTimeout(() => {
     talkedRecently.delete(message.author.id);
@@ -37,30 +34,26 @@ module.exports = async(message, bot) => {
           .setColor('RANDOM')
           .setDescription(`**:warning: Sizlere En iyi şekilde hizmet Verebilmek İçin Bakımdayız.\n:question: :hourglass: Lütfen Daha Sonra Tekrar Deneyin. Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız. Ayrıca bot neden bakımda ve bakım süresi ne zaman öğrenmek isterseniz destek sunucumuza gelebilirsiniz. [Destek sunucumuza katılmak için tıkla](https://discord.gg/Kekc2pU)**`)
           .setFooter('Eğer uzun süre açılmazsa yapımcıma veya Destek sunucumuza gelerek sorabilirsiniz.')
-  i += 1
-  console.log(i)
+  
+    let botbakım = db.fetch('xaine.bakim')
+  let kabulettimi = db.fetch(`kabulettimi_${message.author.id}`)
+  
  if (cmd) {
-   i += 1
-  console.log(i)
    // if (cmd) { satırının altına yazılacak! NAPİM
-let kabulettimi = db.fetch(`kabulettimi_${message.author.id}`)
+
 if(!kabulettimi) return message.reply("Botun herhangi bir komutunu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şartlar` yazın.")
             i += 1
   console.log(i)
-   let botbakım = db.fetch('xaine.bakim')
       if(!ayarlar.sahip.includes(message.author.id)) {
         if(botbakım == 'aktif'){
           sg = true
         return message.channel.send(bakim)
         } 
   }
-    if(sg) return message.channel.send(bakim)
     if (perms < cmd.conf.permLevel) return;
     cmd.run(client, message, params, perms);
   } 
-
       if(sg) return message.channel.send(bakim)
-      
         if(!ayarlar.sahip.includes(message.author.id)) {
         const player = db.fetch(`karaliste.${message.author.id}`)//Bots For List Yapımı!
         if(player) return message.channel.send(
@@ -70,6 +63,7 @@ if(!kabulettimi) return message.reply("Botun herhangi bir komutunu kullanmak iç
  }
   
   async function ok() {
+    console.log('ok??')
     if(sg) return message.channel.send(bakim)
     if (cmd.conf.permLevel === 1) {
 			if (!message.member.hasPermission("MANAGE_MESSAGES")) {//
@@ -121,6 +115,7 @@ if(!kabulettimi) return message.reply("Botun herhangi bir komutunu kullanmak iç
     if (perms < cmd.conf.permLevel) return;
     if(sg) return message.channel.send(bakim)
     if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
+    console.log('çalıştırıldı') //knk bu çalışmıordu :I yo biliyom düzeldimi :flsu no oky
     cmd.run(client, message, params, perms);
   }
   
