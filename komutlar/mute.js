@@ -4,6 +4,8 @@ const ms = require("ms");
 
 exports.run = async (client, msg, args) => {    
   let mute = await db.fetch('mute')
+  let muterole = await db.fetch(`xaine-mute-role.${msg.guild.id}`)
+  if(!muterole) return msg.reply('Bu sunucuda mute rolünü belirleyemedik. +muterole komutunu kullanarak mute rolü oluşturun')
   const za = 'Susturmak istediniz kişiyi ne kadar süreyle susturmak istediğinizi yazın. 0 = Sınırsız'
   const user = msg.mentions.members.first()
   if(!user) return msg.channel.send('Susturmak İstediniz Kişiyi Etiketleyin!')
@@ -20,7 +22,10 @@ exports.run = async (client, msg, args) => {
   if(mute){
     msg.reply('za')
   }else{
-    msg.reply('Date now: '+Date.now)
+    const bitis = Date.now()+zaman
+    const baslayis = Date.now()
+    
+    db.push('mute', {'user': user.id, 'guild': msg.guild.id, 'bitis': bitis, 'baslayis': baslayis})
   }
 };
 

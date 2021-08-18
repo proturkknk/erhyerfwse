@@ -40,7 +40,7 @@ exports.run = async (client, message, args) => {
               );
               okay++;
             }
-            database.set(`carl-mute-role.${message.guild.id}`, role.id);
+            database.set(`xaine-mute-role.${message.guild.id}`, role.id);
             return message.channel.send(
               "Rol başarıyla oluşturuldu! **" +
                 role.name +
@@ -69,7 +69,7 @@ exports.run = async (client, message, args) => {
         'Role "' + args.slice(0).join(" ") + '" bulunamadı.'
       );
 
-    database.set(`carl-mute-role.${message.guild.id}`, role.id);
+    database.set(`xaine-mute-role.${message.guild.id}`, role.id);
     return message.channel.send(`Set **${role.name}** muterole olarak ayarlandı!`);
   }
 };
