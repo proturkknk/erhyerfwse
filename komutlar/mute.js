@@ -4,22 +4,23 @@ const ms = require("ms");
 
 exports.run = async (client, msg, args) => {    
   let mute = await db.fetch('mute')
+  const za = 'Susturmak istediniz kişiyi ne kadar süreyle susturmak istediğinizi yazın. 0 = Sınırsız'
   const user = msg.mentions.members.first()
   if(!user) return msg.channel.send('Susturmak İstediniz Kişiyi Etiketleyin!')
+  if(!args[1]) return msg.channel.send(za)
   let zaman
-  if(ms[args[1]]){
-    zaman = ms[args[1]]
+  if(ms(args[1])){
+    zaman = ms(args[1])
   }else{
     if (args[1] == 0) {
       zaman = 0
     }
   }
-  if(!zaman) return msg.channel.send('Susturmak istediniz kişiyi ne kadar süreyle susturulucağını yazın. 0=Sınırsız')
-  console.log(zaman)
+  if(!zaman && zaman != 0) return msg.channel.send(za)
   if(mute){
-    
+    msg.reply('za')
   }else{
-    
+    msg.reply('Date now: '+Date.now)
   }
 };
 
