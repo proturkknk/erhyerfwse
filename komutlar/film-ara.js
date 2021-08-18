@@ -3,7 +3,7 @@ const film = require('film-apisi') //Thetis Code
 
 exports.run = async (client, message, args) => {
 if(!args.join(" ")) return message.reply('aramam için film ismi belirtmeniz lazım.')
-let c = await film.ara(args.join(" "))
+let c = await film.ara(args.join("+"))
 const embed = new Discord.MessageEmbed()
 .setColor('RANDOM')
 .setTitle(c.ismi)

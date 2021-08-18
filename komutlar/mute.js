@@ -19,8 +19,11 @@ exports.run = async (client, msg, args) => {
     }
   }
   if(!zaman && zaman != 0) return msg.channel.send(za)
+  async function rolver(userid, roleid) {
+    
+  }
   if(mute){
-    msg.reply('za')
+    msg.reply('muteroleid: '+muterole)
   }else{
     const bitis = Date.now()+zaman
     const baslayis = Date.now()
@@ -31,7 +34,8 @@ exports.run = async (client, msg, args) => {
 
 exports.conf = {
   aliases: ['sustur','mutele','Sustur','Mute','mute','Mutele'],
-  permLevel: 2
+  permLevel: 2,
+  category: "moderasyon"
 };
 
 exports.help = {
