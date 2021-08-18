@@ -5,30 +5,12 @@ const ms = require("ms");
 exports.run = async (client, message, args) => {    
 
 var msg = message;
+  let mute = await db.fetch('mute')
 var muterole1 = db.fetch(`muteroluid_${message.guild.id}`);
 var muterole2 = message.guild.roles.cache.find(r => r.id === muterole1);
-if (!muterole2) {
-    try {
-     muterole2 = await message.guild.roles.create({ 
-            data: {
-                name: "Muted",
-                color: "#1800FF",
-                permissions: []
-              },
-            reason: 'Mute Rolü başarıyla oluşturuldu!' 
-            })
-        db.set(`muteroluid_${message.guild.id}`, muterole2.id);
-        message.guild.channels.cache.forEach(async (channel) => {
-            await channel.createOverwrite(muterole2, {
-                  SEND_MESSAGES: false,
-                  ADD_REACTIONS: false,
-                  CONNECT: false
-              });
-          });
-} catch (err) {
-    console.log(err);
-}
-};
+if (!muterole2) return msg.reply('Mute Rolünüz bulunmamakta! Mute rolü oluşturmak için `+muterole` komutunu kullanın')
+  
+  
 var kisi = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]));
 if (!kisi) return message.reply("Susturmam İçin Bir Kullanıcı Belirtiniz.");
 var time = args[1];
@@ -45,9 +27,9 @@ if (!time) {
             if(!kisi.roles.cache.has(muterole2.id)) await kisi.roles.add(muterole2.id);
         message.channel.send(`${kisi} **SINIRSIZ** Şekilde Susturuldu!\nNedeni: **${reason}**\n Susturan Yetkili: **${message.author}**`);
     } else {
-        if(!db.get('mute').find({guild: message.guild.id, user: kisi.id}).value()) {
+        if(!mute.find(g => g.id == message.guild.id) && !mute.find(u => u.id == kisi.id)) {
             let obj12 = {guild: msg.guild.id, guild_name: msg.guild.name, user: kisi.id, user_name: kisi.user.username, staff: msg.author.id, staff_username: message.author.username, channel: message.channel.id, channel_name: message.channel.name, reason: "No Reason Given", time: "INFINITY", finishtime: "INFINITY"}
-            db.get('mute').push(obj12).write()
+            mute.push(obj12).write()
             } else {
                 let obj12 = {guild: msg.guild.id, guild_name: msg.guild.name, user: kisi.id, user_name: kisi.user.username, staff: msg.author.id, staff_username: message.author.username, channel: message.channel.id, channel_name: message.channel.name, reason: "No Reason Given", time: "INFINITY", finishtime: "INFINITY"}
                 db.get('mute').find({guild: msg.guild.id, user: kisi.id}).assign(obj12).write()
