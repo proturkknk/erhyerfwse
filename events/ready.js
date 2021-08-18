@@ -38,7 +38,7 @@ module.exports = client => {
  "  Prefix: + ",
 " Destek sunucumuz: https://discord.gg/Kekc2pU",
     "  Benim 7/24 aktif oldumu biliyor muydunuz?",
-" :Bildir komutuyla şikayet-öneri de bulunabiliceğinizi biliyor muydunuz?",
+" Bildir komutuyla şikayet-öneri de bulunabiliceğinizi biliyor muydunuz?",
 "  +saat komutunu kullanarak Türkiyenin saatini öğrenebileceğinizi biliyor muydunuz?",
       cmd+" :  Tane Komutum var! :heart_eyes:",
      "  Yeni komutlar! :smiley_cat:",
