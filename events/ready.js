@@ -3,6 +3,7 @@ const chalk = require("chalk");
 const moment = require("moment");
 const Discord = require("discord.js");
 const ayarlar = require("../ayarlar.json");
+const db = require('quick.db')
 
 var prefix = ayarlar.prefix;
 
@@ -41,10 +42,19 @@ module.exports = client => {
     
   }, 3 * 2500);
   
-  setInterval(function(){
-    
-  })
+  setInterval(async function(){
+    const mute = db.fetch('mute')
+    mute.forEach(m => {
+      if(m.bitis <= Date.now()){
+        const guild = client.guilds.cache.get(m.guild)
+        if(guild){
+          
+        }else{
+          
+        }
+      }
+    })
+  },2000)
   
 };
 
-//bot.js daha iyi ab yo
