@@ -42,15 +42,36 @@ module.exports = client => {
     
   }, 3 * 2500);
   
+  async function del(guild, user) {
+    const mute = db.fetch('mute')
+    let ez = []
+    mute.forEach(data => {
+      if(data.guild == guild){
+        if(data.user == user){
+          return
+        }
+      }
+      
+      ez.push(data)
+    })
+    db.set('mute', ez)
+  }
+  
   setInterval(async function(){
     const mute = db.fetch('mute')
     mute.forEach(m => {
       if(m.bitis <= Date.now()){
         const guild = client.guilds.cache.get(m.guild)
         if(guild){
-          
+          const member = guild.members.cache.get(m.user)
+          if(member){
+            const muterole = db.fetch(`xaine-mute-role.${guild.id}`)
+            member.roles.remove(muterole).then(() => {
+              del(m.guild, m.user)
+            })
+          }
         }else{
-          
+          del(m.guild, m.user);
         }
       }
     })
