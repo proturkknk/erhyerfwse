@@ -28,6 +28,7 @@ module.exports = client => {
     see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
 "Bot bakımda!",
+"Web sitemiz bakım bitene kadar kapalıdır.",
 
   ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
@@ -39,4 +40,11 @@ module.exports = client => {
     })
     
   }, 3 * 2500);
+  
+  setInterval(function(){
+    
+  })
+  
 };
+
+//bot.js daha iyi ab yo
