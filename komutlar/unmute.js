@@ -18,7 +18,7 @@ exports.run = async (client, msg, args) => {
     otuzbir.push(data)
   })
   db.set('mute', otuzbir)
-  user.roles.remove(muterole).then(() => {msg.channel.send(user.user.tag+' Adlı kişinin susturulması başarıyla kaldırıldı!')})
+  user.roles.remove(muterole).then(() => {msg.channel.send(user.user.tag+' Adlı kişinin susturulması başarıyla kaldırıldı! :white_check_mark: ')})
 }
 
 exports.conf = {
