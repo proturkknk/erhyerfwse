@@ -19,17 +19,15 @@ exports.run = async (client, msg, args) => {
     }
   }
   if(!zaman && zaman != 0) return msg.channel.send(za)
-  async function rolver(userid, roleid) {
-    
-  }
-  if(mute){
-    msg.reply('muteroleid: '+muterole)
-  }else{
-    const bitis = Date.now()+zaman
-    const baslayis = Date.now()
-    
-    db.push('mute', {'user': user.id, 'guild': msg.guild.id, 'bitis': bitis, 'baslayis': baslayis})
-  }
+    const role = msg.guild.roles.cache.get(muterole)
+    const member = msg.guild.members.cache.get(user.id)
+    member.roles.add(role).then(() => {
+      const bitis = Date.now()+zaman
+      const baslayis = Date.now()
+
+      db.push('mute', {'user': user.id, 'guild': msg.guild.id, 'bitis': bitis, 'baslayis': baslayis})
+      msg.channel.send(user.tag+' İsimli kullanıcı '+(zaman/1000)+' saniyeliğine susturuldu.')
+    })
 };
 
 exports.conf = {
