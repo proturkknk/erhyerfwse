@@ -11,6 +11,8 @@ exports.run = (client, message, args) => {
 
 > \`+moderasyon -> Moderasyon komutlarını gösterir.\`
 
+> \`+moderasyon -> Kullanmak için şartı olmayan moderasyon komutlarını gösterir.\`
+
  > \`+normal -> Normal Komutları gösterir.\`
  
  \`+seçmeli-oyunlar -> Seçmeli oyunlar yardım menüsünü gösterir.\`

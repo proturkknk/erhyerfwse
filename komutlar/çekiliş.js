@@ -50,7 +50,7 @@ exports.run = async (client, message, args) => {
       .get("🎉")
       .users.cache.filter(u => !u.bot)
       .random();
-    channel.send(`:tada: **${prize}** çekilişinin kazananı -> ${winner}`);
+    channel.send(`:tada: **${prize}** çekilişinin kazananı -> ${winner} Tebrik ederiz!`);
   }, ms(args[0]));
 };
 exports.conf = {
