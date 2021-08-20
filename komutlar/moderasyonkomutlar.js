@@ -25,7 +25,6 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +sil :** Belirttiğiniz sayı kadar mesaj siler. (Limit: 100)
 > **» +kullanıcı-mesaj-sil :** Bellirttiğiniz kullanıcının o gün içindeki tüm mesajlarını siler.
 > **» +uyar :** Belirttiğiniz kullanıcıyı uyarırsınız.
-> **» +nuke :** Kanalı tekrar kurar ve tüm mesajları siler.
 > **» +prefix :** Botun prefixini değiştirirsiniz.
 > **» +isim-değiştir :** Belirttiğiniz kullanıcının ismini değiştirir.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
