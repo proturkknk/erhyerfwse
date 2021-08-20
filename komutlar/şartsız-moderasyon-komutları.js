@@ -39,7 +39,7 @@ exports.conf = {
 };
   
   exports.help = {
-    name: 'moderasyon', 
+    name: 'şartsız-moderasyon-komutları', 
     description: 'Xaine Bot moderasyon komutları',
     usage: 'Xaine Bot'
 };
