@@ -13,6 +13,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 
 > **» +mute :** Belirttiğiniz kişiyi sunucuda susturursunuz. (BAKIMDA!)
 > **» +unmute :** Belirttiğiniz kişinin mutesini (susturulmasını) kaldırırsınız.
+> **» +yavaşmod :** Bulunduğunuz kanalın yazma limitini(Süresini) belirlersiniz.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 **DİKKAT!: LÜTFEN DİKKATLİCE OKUYUNUZ! Botda oluşan teknik nedenden dolayı bot moderasyon yetkisi alamadı buda moderasyon komutlarını kullanamazsınız anlamına geliyor. Sorun çözülmüştür Lütfen Xaine Botu sunucudan atıp tekrardan eklerseniz seviniriz. İyi günler! (10 temmuz 2021 sonrası botu sunucudan atıp ekleyenlerde bu sorun yoktur. Lütfen çalışmıyorsa botu atıp geri ekleyin.)**
 > :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, bildir komutuyla belirtmekten asla çekinmeyin!**
