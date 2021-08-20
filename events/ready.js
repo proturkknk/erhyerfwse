@@ -40,7 +40,7 @@ module.exports = client => {
     "  Benim 7/24 aktif oldumu biliyor muydunuz?",
 " Bildir komutuyla şikayet-öneri de bulunabiliceğinizi biliyor muydunuz?",
 "  +saat komutunu kullanarak Türkiyenin saatini öğrenebileceğinizi biliyor muydunuz?",
-      cmd+" :  Tane Komutum var! :heart_eyes:",
+      cmd+"  Tane Komutum var! :heart_eyes:",
      "  Yeni komutlar! 😺 ",
       " Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz.",
 " | +yardım | +bildir | +davet | +yapımcım | +ekibimiz | +prefix | ",
