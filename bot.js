@@ -333,7 +333,7 @@ client.on("guildCreate", guild => {
   let kanal = guild.channels.cache.filter(c => c.type === "text").random();
 
   kanal.send(
-    "**Selam! Beni Sunucunuza Eklediğiniz İçin Teşekkür ederim! Sizlere en iyi şekilde hizmet etmeye çalışıcağım.** Bu arada! Destek sunucumuza gelmek ister misiniz? Çeşitli duyurular ve çekilişler buradan yapılıyor. Bot bir hata yaşadığında veya yenilik geldiğinde destek sunucusundan bildiriliyor. Ve sunucumuzda hergün yapılan çekilişler etkinlikler bile var." Gelmek istersen [Discord Sunucumuz](https://discord.gg/Kekc2pU)`)
+    "Selam! Beni Sunucunuza Eklediğiniz İçin Teşekkür ederim! Sizlere en iyi şekilde hizmet etmeye çalışıcağım. Bu arada! Destek sunucumuza gelmek ister misiniz? Çeşitli duyurular ve çekilişler buradan yapılıyor. Bot bir hata yaşadığında veya yenilik geldiğinde destek sunucusundan bildiriliyor. Ve sunucumuzda hergün yapılan çekilişler etkinlikler bile var! Gelmek istersen yardım menüsünün hemen altına davet linkini bulabilirsiniz. İyi eğlenceler!"
   );
 });
 
