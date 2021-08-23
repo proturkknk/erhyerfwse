@@ -330,7 +330,7 @@ client.on("guildMemberAdd", async member => {
 });
 //Muteliyken s
 client.on("guildCreate", guild => {
-  let kanal = client.channels.cache.get(c => c.type === "text").random();
+  let kanal = guild.channels.cache.get(c => c.type === "text").random();
   kanal.send(
 `**Duyuru! Hey selam! Ben Xaine | Beni Sunucunuza Eklediğiniz İçin Teşekkür Ederim! Size Ve Üyelerinize En iyi Şekilde Hizmet Vermeye Çalışıcağım.** | Bu arada Destek sunucumuza gelmek ister misiniz? Çeşitli duyurular ve çekilişler buradan yapılıyor. Bot bir hata yaşadığında veya yenilik geldiğinde destek sunucusundan bildiriliyor. Ve sunucumuzda hergün yapılan çekilişler etkinlikler bile var. [Discord Sunucumuz](https://discord.gg/Kekc2pU)`)
 });
@@ -372,7 +372,7 @@ client.on("guildMemberAdd", async (member, message, msg) => {
   }
 });
 client.on("guildDelete", guild => {
-  let rrrsembed = new Discord.RichEmbed()
+  let rrrsembed = new Discord.MessageEmbed()
 
     .setColor("RED")
     .setTitle(" Bot Kicklendi ")
