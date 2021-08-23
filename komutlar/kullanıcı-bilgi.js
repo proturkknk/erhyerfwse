@@ -27,7 +27,6 @@ let user;
     .addField("Hesap Oluşturma Tarihi :", `${moment.utc(user.createdAt).format('dddd, MMMM.Do.YYYY, ')}`, true)
     .addField("Sunucuya Katılma Tarihi :", `${moment.utc(member.joinedAt).format('dddd, MMMM.Do.YYYY')}`, true)
     .addField("Durumu :", `${user.presence.status}`, true)
-  .setImage('GİF/RESİM LİNK')
     message.channel.send({embed});
     }
 
