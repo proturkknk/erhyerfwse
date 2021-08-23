@@ -330,13 +330,13 @@ client.on("guildMemberAdd", async member => {
 });
 //Muteliyken s
 client.on("guildCreate", guild => {
-  guild.owner.send(`
-**Merhaba, __${guild.owner.user.username}!__**
-**Beni __Kurucusu__ olduğun __${guild.name}__ sunucusuna eklediğin için teşekkürler!**
+  let kanal = guild.channels.cache.filter(c => c.type === "text").random();
 
-Botumuzun destek sunucusuna gelmek isterseniz; (https://discord.gg/Kekc2pU) bu linkten  gelebilirsiniz.
-`);
+  kanal.send(
+    "Selam! Beni Sunucunuza Eklediğiniz İçin Teşekkür ederim! Sizlere en iyi şekilde hizmet etmeye çalışıcağım. Ayrıca"
+  );
 });
+
 client.on("guildMemberAdd", async (member, message, msg) => {
   const fakehesapp = db.fetch(`fake_${member.guild.id}`);
 
