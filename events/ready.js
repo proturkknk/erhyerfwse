@@ -57,7 +57,9 @@ module.exports = client => {
       "Kurucum-Yapımcım | ! TREFAX#0362",
       "Destek sunucumuzda Hergün düzenli olarak çekilişler yapılıyor! Destek sunucumuza gelerek çekilişlere katılabilirsiniz.",
       "https://www.xaine.tk/",
-
+      "Sürümlerimiz 1 ayda 2 kez yani 2 haftada 1 kez güncellenir.",
+      "Sürümlerimiz 2 haftada bir güncellenir.",
+      "Sürümlerimiz ayda 2 kez güncellenir.",
 
   ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
