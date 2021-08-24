@@ -47,7 +47,6 @@ module.exports = client => {
       "Güncelleme!: Yeni komutlarımız eklendi!",
       "En çok sevilen komutum: dondurma",
       "Sitemiz: https://www.xaine.tk/",
-      "Kod paylaşım sitemiz: https://xainecode.glitch.me/",
        "XAİNE BOT ",
       "Xaine Bot",
       "Hergün yapılan destek sunucumuzdaki çekilişlere katılmayı unutmayın! Destek sunucumuzun davet linkini almak için +davet yazabilirsiniz",
