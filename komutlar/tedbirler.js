@@ -48,12 +48,12 @@ Güvenlik tedbirlerimizi ve merak ettiniz soruları yanıtma zamanı!
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["aldığımız-tedbirler","Aldığımız-tedbirler","ALDIĞIMIZ-TEDBİRLER"],
+  aliases: ["tedbirler","Tedbirler","TEDBİRLER"],
   permLevel: 0
 };
 
 exports.help = {
-  name: "aldığımız-tedbirler",
+  name: "tedbirler",
   description: "Botun Komut Listesini Gösterir!",
-  usage: "+aldığımız-tedbirler"
+  usage: "+tedbirler"
 };

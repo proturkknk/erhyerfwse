@@ -14,6 +14,8 @@ exports.run = (client, message, args) => {
 > \`+şartsız-moderasyon-komutları -> Kullanmak için şartı olmayan moderasyon komutlarını gösterir.\`
 
  > \`+normal -> Normal Komutları gösterir.\`
+
+ > \`+aldığımız-tedbirler -> Xaine Bot ve sizin için aldığımız tedbirleri gösterir.\`
  
  \`+seçmeli-oyunlar -> Seçmeli oyunlar yardım menüsünü gösterir.\`
  

@@ -17,7 +17,7 @@ exports.run = (client, message) => {
       "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`
 
-**• Gif komutları**
+**• Xaine Bot ve sizin için aldığımız tedbirler yardım menüsü**
 
 > [tedbirler]() → Xaine Bot ve Kullanıcılarımız için aldığımız tedbirleri gösterir.
 
