@@ -22,7 +22,7 @@ exports.run = (client, message) => {
 Güvenlik tedbirlerimizi ve merak ettiniz soruları yanıtma zamanı!
 
 1- Xaine Bota nası güvenelim?
-**otumuzun tokeni gizli bi odada saklanıyor. Ve 180k kullanıcılarımız ve her geçen gün artan sunucu sayımızla güvenirliğimizi kazanmaya devam ediyoruz. Peki nası size güvenli oldumuzu kanıtlayacağız? Şuana kadar botu hiçbi şekilde kötü amaç veya amaçlar için kullanmadık kullanmayacağız. Şartlarımızda bile bunları belirtiyoruz.**
+**Botumuzun tokeni gizli bi odada saklanıyor. 180k kullanıcılarımız ve her geçen gün artan sunucu sayımızla güvenirliğimizi kazanmaya devam ediyoruz. Peki nası size güvenli oldumuzu kanıtlayacağız? Şuana kadar botu hiçbi şekilde kötü amaç veya amaçlar için kullanmadık kullanmayacağız. Şartlarımızda bile bunları belirtiyoruz.**
 
 2-Botu nası koruyorsunuz?
 **Botun içine girmeleri imkansızdır. Botun Tokeni gizli bi odada saklanıyor.( Oda dedim alt yapının içinde) O odaya sadece ekibimiz erişebilir. Başka birinin girmesi imkansızdır.**
