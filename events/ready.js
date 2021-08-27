@@ -26,7 +26,40 @@ module.exports = client => {
   setInterval(function() {
     const see =  client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()
     var oyun = [
-"Bakım çalışması!",
+see+" Tane Kullanıcım var!",
+    client.guilds.cache.size+" Tane Sunucuya eklendim!",
+"Yeni güncelleme!: Tedbirler komutu eklendi! Artık Xaine Bot ve kullanıcılarımız için aldığımız tedbirleri görebilirsiniz.",
+" Sürümüm: 3.5 ",
+      "Sürüm 3.5 ",
+      " Xaine Bot Sürümü 3.5 ",
+      " İyi Eğlenceler :blush:",
+    "  7/24 Aktif!",
+    "  Kurucum-yapımcım: (! TREFAX#0362)",
+    "  İyi Günler :blush:",
+ "  Prefix: + ",
+" Destek sunucumuz: https://discord.gg/Kekc2pU",
+    "  Benim 7/24 aktif oldumu biliyor muydunuz?",
+" Bildir komutuyla şikayet-öneri de bulunabiliceğinizi biliyor muydunuz?",
+"  +saat komutunu kullanarak Türkiyenin saatini öğrenebileceğinizi biliyor muydunuz?",
+      cmd+"  Tane Komutum var! :heart_eyes:",
+     "  Yeni komutlar! :smiley_cat: ",
+      " Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz.",
+" | +yardım | +bildir | +davet | +yapımcım | +ekibimiz | +prefix | ",
+      "Güncelleme!: Yeni komutlarımız eklendi!",
+      "En çok sevilen komutum: dondurma",
+      "Sitemiz: https://www.xaine.tk/",
+       "XAİNE BOT ",
+      "Xaine Bot",
+      "Hergün yapılan destek sunucumuzdaki çekilişlere katılmayı unutmayın! Destek sunucumuzun davet linkini almak için +davet yazabilirsiniz",
+      "Web sitemiz - https://www.xaine.tk/",
+      "Web sitemiz | https://www.xaine.tk/",
+      "Kurucum-Yapımcım - ! TREFAX#0362",
+      "Kurucum-Yapımcım | ! TREFAX#0362",
+      "Destek sunucumuzda Hergün düzenli olarak çekilişler yapılıyor! Destek sunucumuza gelerek çekilişlere katılabilirsiniz.",
+      "https://www.xaine.tk/",
+      "Sürümlerimiz 1 ayda 2 kez yani 2 haftada 1 kez güncellenir.",
+      "Sürümlerimiz 2 haftada bir güncellenir.",
+      "Sürümlerimiz ayda 2 kez güncelleniyor"
 
   ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);

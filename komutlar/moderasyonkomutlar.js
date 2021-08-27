@@ -11,8 +11,6 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 
 ▬[ :closed_lock_with_key: **Xaine Bot Moderasyon Komutları** :teddy_bear: ]▬
 
-> **» +mute :** Belirttiğiniz kişiyi sunucuda susturursunuz.(Bakımda)
-> **» +muterole :** Mute rolünü ayarlarsınız.(Bakımda)
 > **» +ban :** Belirttiğiniz kişiyi sunucudan yasaklarsınız.
 > **» +kick :** Belirttiğiniz kişiyi  sunucudan atarsınız.
 > **» +kilit :** Bulunduğunuz kanalın mesaj yazımını kapatır.
@@ -22,7 +20,6 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +küfür-engel aç :** Küfür engeli açarsınız.
 > **» +küfür-engel kapat :** Küfür engeli kapatırsınız.
 > **» +sa-as :** Sa-as sistemini açarsınız veya kapatırsınız.
-> **» +sil :** Belirttiğiniz sayı kadar mesaj siler. (Limit: 100)
 > **» +kullanıcı-mesaj-sil :** Bellirttiğiniz kullanıcının o gün içindeki tüm mesajlarını siler.
 > **» +uyar :** Belirttiğiniz kullanıcıyı uyarırsınız.
 > **» +prefix :** Botun prefixini değiştirirsiniz.

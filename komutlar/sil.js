@@ -33,7 +33,6 @@ exports.conf = {
 
 exports.help = {
   name: 'sil',
-  category: "moderasyon",
   description: 'Belirtilen miktarda mesaj siler.',
   usage: '.sil <miktar>'
 };

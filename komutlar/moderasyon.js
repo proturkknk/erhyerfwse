@@ -16,15 +16,15 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 
 \n Şartlı moderasyon komutlarımıza gitmek için: +şartlı-moderasyon-komutları 
 
-\
+\n Şartsız moderasyon komutlarımıza gitmek için ise +şartsız-moderasyon-komutları
  
 \n **Dikkat!: Prefix sizin bulunduğunuz sunucuda hangisi ile ayarlıysa o prefixi yazınız.**
 
 
 
-**▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
-**DİKKAT!: LÜTFEN DİKKATLİCE OKUYUNUZ! Botda oluşan teknik nedenden dolayı bot moderasyon yetkisi alamadı buda moderasyon komutlarını kullanamazsınız anlamına geliyor. Sorun çözülmüştür Lütfen Xaine Botu sunucudan atıp tekrardan eklerseniz seviniriz. İyi günler!**
-> :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, bildir komutuyla belirtmekten asla çekinmeyin!**
+**▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬**
+\n **DİKKAT!: LÜTFEN DİKKATLİCE OKUYUNUZ! Botda oluşan teknik nedenden dolayı bot moderasyon yetkisi alamadı buda moderasyon komutlarını kullanamazsınız anlamına geliyor. Sorun çözülmüştür Lütfen Xaine Botu sunucudan atıp tekrardan eklerseniz seviniriz. İyi günler!**
+\n > :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, bildir komutuyla belirtmekten asla çekinmeyin!**
 > :open_file_folder: **Botun Kod Paylaşım Ve Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
 > :round_pushpin: **Ana yardım menüsüne dönmek için: +yardım**
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
