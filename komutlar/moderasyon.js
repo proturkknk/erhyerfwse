@@ -11,22 +11,17 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 
 ▬[ :closed_lock_with_key: **Xaine Bot Moderasyon Komutları** :teddy_bear: ]▬
 
-> **» +mute :** Belirttiğiniz kişiyi sunucuda susturursunuz.(Bakımda)
-> **» +muterole :** Mute rolünü ayarlarsınız.(Bakımda)
-> **» +ban :** Belirttiğiniz kişiyi sunucudan yasaklarsınız.
-> **» +kick :** Belirttiğiniz kişiyi  sunucudan atarsınız.
-> **» +kilit :** Bulunduğunuz kanalın mesaj yazımını kapatır.
-> **» +kilitaç :** Bulunduğunuz kanalın mesaj yazımını açar.
-> **» +reklam-engel :** Reklam engeli açarsınız veya kapatırsınız.
-> **» +spam-engel :** Spam engeli açarsınız veya kapatırsınız.
-> **» +küfür-engel aç :** Küfür engeli açarsınız.
-> **» +küfür-engel kapat :** Küfür engeli kapatırsınız.
-> **» +sa-as :** Sa-as sistemini açarsınız veya kapatırsınız.
-> **» +sil :** Belirttiğiniz sayı kadar mesaj siler. (Limit: 100)
-> **» +kullanıcı-mesaj-sil :** Bellirttiğiniz kullanıcının o gün içindeki tüm mesajlarını siler.
-> **» +uyar :** Belirttiğiniz kullanıcıyı uyarırsınız.
-> **» +prefix :** Botun prefixini değiştirirsiniz.
-> **» +isim-değiştir :** Belirttiğiniz kullanıcının ismini değiştirir.
+
+**Merhaba! Lütfen gitmek istediğiniz moderasyon seçeneğini yazınız.**
+
+\n Şartlı moderasyon komutlarımıza gitmek için: +şartlı-moderasyon-komutları 
+
+\
+ 
+\n **Dikkat!: Prefix sizin bulunduğunuz sunucuda hangisi ile ayarlıysa o prefixi yazınız.**
+
+
+
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
 **DİKKAT!: LÜTFEN DİKKATLİCE OKUYUNUZ! Botda oluşan teknik nedenden dolayı bot moderasyon yetkisi alamadı buda moderasyon komutlarını kullanamazsınız anlamına geliyor. Sorun çözülmüştür Lütfen Xaine Botu sunucudan atıp tekrardan eklerseniz seviniriz. İyi günler!**
 > :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, bildir komutuyla belirtmekten asla çekinmeyin!**
@@ -46,12 +41,12 @@ return message.channel.send(EmbedFwhyCode)
 exports.conf = {
     enabled: true, 
     guildOnly: false, 
-    aliases: ['şartlı-moderasyon-komutları','Şartlı-moderasyon-komutları','ŞARTLI-MODERASYON-KOMUTLARI',], 
+    aliases: ['moderasyon','Moderasyon','MODERASYON',], 
     permLevel: 0 
 };
   
   exports.help = {
-    name: 'şartlı-moderasyon-komutları', 
+    name: 'moderasyon', 
     description: 'Xaine Bot moderasyon komutları',
     usage: 'Xaine Bot'
 };
