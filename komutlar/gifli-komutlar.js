@@ -20,6 +20,7 @@ exports.run = (client, message) => {
 **• Gif komutları**
 
 > [atatürk]() → Atatürk gifi gösterir.
+> [zaferbayramı]() → Zafer Bayramı gifi gösterir.
 > [23nisan]() → 23 Nisan gifi gösterir.
 > [yıldız]() → Yıldız gifi gösterir. 
 > [dünya]() → Dünya gifi gösterir. 
