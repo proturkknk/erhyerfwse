@@ -371,19 +371,6 @@ client.on("guildMemberAdd", async (member, message, msg) => {
     }
   }
 });
-client.on("guildDelete", guild => {
-  let rrrsembed = new Discord.MessageEmbed()
-
-    .setColor("RED")
-    .setTitle(" Bot Kicklendi ")
-    .addField("Sunucu Adı:", guild.name)
-    .addField("Sunucu sahibi", guild.owner)
-    .addField("Sunucu Sahibi'nin ID'si", guild.ownerID)
-    .addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
-    .addField("Sunucudaki Kişi Sayısı:", guild.memberCount);
-
-  client.channels.get("822453879676600320").send(rrrsembed);
-});
 
 //--------------------------------------------------------//
 
@@ -429,24 +416,7 @@ client.on("guildCreate", async guild => {
   embed.setThumbnail(guild.iconURL);
 
   client.users.cache.get(botOwnerID).send(embed);
-});
-client.on("guildDelete", async guild => {
-  let embed = new Discord.MessageEmbed();
-  var botOwnerID = "696365117063036986";
-  var guildOwner = guild.owner.user;
-  var guildOwnerTag = guild.owner.user.tag;
-  var guildName = guild.name;
-  var guildMemberCount = guild.memberCount;
 
-  embed.setTitle("Sunucudan Attılar!");
-  embed.addField("Sunucu adı", guildName);
-  embed.addField("Sunucu üye sayısı", guildMemberCount);
-  embed.addField(`Sunucu sahibi`, guildOwnerTag);
-  embed.addField(
-    "Şuan ki Kullanıcı : ",
-    client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString(),
-    true
-  );
   embed.addField(
     "Şuan ki Sunucu sayısı",
     client.guilds.cache.size.toLocaleString(),
