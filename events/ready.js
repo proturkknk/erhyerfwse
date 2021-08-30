@@ -28,6 +28,7 @@ module.exports = client => {
     var oyun = [
 see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
+"30 Ağustos Zafer Bayramı Kutlu Olsun!",
 "Yeni güncelleme!: Tedbirler komutu eklendi! Artık Xaine Bot ve kullanıcılarımız için aldığımız tedbirleri görebilirsiniz.",
 " Sürümüm: 3.5 ",
       "Sürüm 3.5 ",
