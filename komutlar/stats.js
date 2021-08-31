@@ -18,10 +18,10 @@ module.exports.run = async (client, message, args) => {
 
     let stats = new Discord.MessageEmbed()
     .setAuthor('Xaine Bot')
-    .setTitle(`İşte bilgilerim ${client.user.username}`)
-    .setColor('RED')
+    .setTitle(`${client.user.username} Bot bilgileri`)
+    .setColor('RANDOM')
     .addField("Sunucu sayısı", `${servercount}`, true)
-    .addField("Kullanıcı sayısı", `${usercount}`, true)
+    .addField("Kullanıcı sayısı", `$see+`, true)
     .addField("Kanal sayısı", `${channelscount}`, true)
     .setTimestamp()
     .setFooter(`${message.author.tag}`, message.author.displayAvatarURL());
