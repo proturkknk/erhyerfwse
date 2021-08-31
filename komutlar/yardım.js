@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
  .setDescription(`
-Bugüne özel öne çıkan komut: **zaferbayramı**
+Bugüne özel öne çıkan komut: **-**
 
  > \`+eğlence -> Eğlence Komutlarını gösterir.\`
 
