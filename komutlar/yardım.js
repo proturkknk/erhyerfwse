@@ -6,9 +6,9 @@ exports.run = (client, message, args) => {
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
  .setDescription(`
-Yeni güncelleme!: 3.6 güncellemesi yayımlandı!
+**Yeni Güncelleme!:** 3.6 güncellemesi yayımlandı!
 
-Bugüne özel öne çıkan komut: **-**
+**Bugüne Özel Öne Çıkan Komut:** -
 
  > \`+eğlence -> Eğlence Komutlarını gösterir.\`
 
