@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args) => {
     .setTitle(`${client.user.username} Bot bilgileri`)
     .setColor('RANDOM')
     .addField("Sunucu sayısı", `${servercount}`, true)
-    .addField("Kullanıcı sayısı", `$31napimsg`, true)
+    .addField("Kullanıcı sayısı", `$see+`, true)
     .addField("Kanal sayısı", `${channelscount}`, true)
     .setTimestamp()
     .setFooter(`${message.author.tag}`, message.author.displayAvatarURL());
