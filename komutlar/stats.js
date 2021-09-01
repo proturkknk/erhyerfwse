@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
     if(!message.content.startsWith(prefix)) return;
 
     let servercount = client.guilds.cache.size;
-    let usercount = client.users.cache.size;
+    let usercount = client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString();
     let channelscount = client.channels.cache.size;
     let arch = os.arch();
     let platform = os.platform();
@@ -31,12 +31,12 @@ module.exports.run = async (client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['Stats','STATS','stats'],
+  aliases: ['Bot-bilgi','BOT-BİLGİ','bot-bilgi'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'stats',
-  description: 'stats',
-  usage: 'stats'
+  name: 'bot-bilgi',
+  description: 'Xaine Bot bilgilerini gösterir',
+  usage: 'bot-bilgi'
 };
