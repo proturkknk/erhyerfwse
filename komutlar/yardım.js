@@ -6,9 +6,9 @@ exports.run = (client, message, args) => {
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
  .setDescription(`
-**Yeni Güncelleme!:** 3.6 güncellemesi yayımlandı!
+<:civcivkalp:853213881111150642>  **Yeni Güncelleme!:** 3.6 güncellemesi yayımlandı!
 
-**Bugüne Özel Öne Çıkan Komut:** -
+<:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** -  
 
  > \`+eğlence -> Eğlence Komutlarını gösterir.\`
 
