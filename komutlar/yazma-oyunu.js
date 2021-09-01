@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const { delay, randomRange, verify } = require('../utils/Util');
-const words = ['çikolata', 'vortex', 'odun', 'bomba', 'süt', 'şimşek', 'yıldırım', 'patlat', 'savaş', 'kelime', 'yok et', 'bilmem', 'öldür', 'sonsuzluk', 'gerçek','dondurma','klasik','xaine','discord'];
+const words = ['çikolata', 'vortex', 'odun', 'bomba', 'süt', 'şimşek', 'yıldırım', 'patlat', 'savaş', 'kelime', 'yok et', 'bilmem', 'öldür', 'sonsuzluk', 'gerçek','dondurma','klasik','xaine','discord','bot',];
 
 exports.run = async (client, msg, args) => {
  
@@ -14,16 +14,17 @@ exports.run = async (client, msg, args) => {
 		if (this.fighting.has(msg.channel.id)) return msg.reply(':warning: Hata!: Kanal başına sadece bir meydan okuma gelebilir.');
 		this.fighting.add(msg.channel.id);
 		try {
-			await msg.channel.send(`${opponent}, bu meydan okumayı kabul ediyor musun? Lütfen (\`evet\` veya \`hayır\` olarak cevap veriniz.)`);
+			await msg.channel.send(`${opponent}, Bu meydan okumayı kabul ediyor musun? Lütfen (\`evet\` veya \`hayır\` olarak cevap veriniz.)`);
 			const verification = await verify(msg.channel, opponent);
 			if (!verification) {
 				this.fighting.delete(msg.channel.id);
-				return msg.reply('Meydan okuman reddedildi...');
+				return msg.reply('Meydan okuman reddedildi veya verilen süre içerisinde cevap verilmedi.');
 			}
-			await msg.channel.send('Hazırlanın kelime geliyor!...').then(m => {m.delete(3000)});
+      const sur = Math.random()*1000
+			await msg.channel.send('Hazırlanın kelime geliyor!...'+sur).then(m => {m.delete(5000)});
 			const word = words[Math.floor(Math.random() * words.length)];
 			await msg.channel.send(`ŞİMDİ \`${word.toUpperCase()}\` YAZ!`);
-			await msg.channel.send(`_Kelimeyi tamamen küçük harfle yazınız._`);
+			await msg.channel.send(`**Kelimeyi tamamen küçük harfle yazın!**`);
 			const filter = res => [opponent.id, msg.author.id].includes(res.author.id) && res.content.toLowerCase() === word;
 			const winner = await msg.channel.awaitMessages(filter, {
 				max: 1,
@@ -31,7 +32,7 @@ exports.run = async (client, msg, args) => {
 			});
 			this.fighting.delete(msg.channel.id);
 			if (!winner.size) return msg.channel.send('Kimse kazanmadı, berabere bitti!');
-			return msg.channel.send(`Hızlıymışsın! Tebrikler ${winner.first().author} Kazandın!`);
+			return msg.channel.send(`Ooo, Hızlıymışsın! Tebrikler ${winner.first().author}, Sen Kazandın!`);
 		} catch (err) {
 			this.fighting.delete(msg.channel.id);
 			throw err;

@@ -7,7 +7,7 @@ if (!message.guild) {
 
 const Embedmatador = new Discord.MessageEmbed()//MATADOR
 
-    .setColor(0xFF0000)
+    .setColor('RANDOM')
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
     .addField("**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**","**----------------------**")
