@@ -21,9 +21,7 @@ exports.run = async (client, msg, args) => {
 				return msg.reply('Meydan okuman reddedildi veya verilen süre içerisinde cevap verilmedi.');
 			}
       const sur = Math.random()*2000+2000
-      msg.channel.send('bu bir test mesajı1')
-      await msg.channel.send('Hazırlanın, kelime '+Math.floor(sur).toString()+" saniye içinde geliyor!").then(m => {m.delete({timeout: sur})});
-      msg.channel.send('bu bir test mesajı2')
+      await msg.channel.send('Hazırlanın, kelime '+(sur/1000).toFixed(1)+" saniye içinde geliyor!").then(m => {m.delete({timeout: sur})});
 			setTimeout(async () => {
       const word = words[Math.floor(Math.random() * words.length)];
 			await msg.channel.send(`ŞİMDİ \`${word.toUpperCase()}\` YAZ!`);
