@@ -9,7 +9,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 .setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
 .setDescription(`
 
-▬[ :closed_lock_with_key: **Xaine Bot Moderasyon Komutları** :teddy_bear: ]▬
+▬[ :closed_lock_with_key: ** <:civcivkalp:853213881111150642> Xaine Bot Moderasyon Komutları** :teddy_bear: ]▬
 
 
 **Merhaba! Lütfen gitmek istediğiniz moderasyon seçeneğini yazınız.**

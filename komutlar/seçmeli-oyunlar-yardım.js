@@ -17,7 +17,7 @@ exports.run = (client, message) => {
       "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`
 
-**• Seçmeli oyunlar **
+**• <:civcivkalp:853213881111150642>  Seçmeli oyunlar **
 
 
 > [karpuz]() → Karpuz oyununu oynarsınız.

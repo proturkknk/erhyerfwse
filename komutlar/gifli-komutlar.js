@@ -17,7 +17,7 @@ exports.run = (client, message) => {
       "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`
 
-**• Gif komutları**
+**• <:civcivkalp:853213881111150642> Gif komutları**
 
 > [atatürk]() → Atatürk gifi gösterir.
 > [zaferbayramı]() → Zafer Bayramı gifi gösterir.
