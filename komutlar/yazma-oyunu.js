@@ -20,19 +20,23 @@ exports.run = async (client, msg, args) => {
 				this.fighting.delete(msg.channel.id);
 				return msg.reply('Meydan okuman reddedildi veya verilen süre içerisinde cevap verilmedi.');
 			}
-      const sur = Math.random()*1000
-			await msg.channel.send('Hazırlanın kelime geliyor!...'+sur).then(m => {m.delete(5000)});
-			const word = words[Math.floor(Math.random() * words.length)];
+      const sur = Math.random()*2000+2000
+      msg.channel.send('bu bir test mesajı1')
+      await msg.channel.send('Hazırlanın, kelime '+Math.floor(sur).toString()+" saniye içinde geliyor!").then(m => {m.delete({timeout: sur})});
+      msg.channel.send('bu bir test mesajı2')
+			setTimeout(async () => {
+      const word = words[Math.floor(Math.random() * words.length)];
 			await msg.channel.send(`ŞİMDİ \`${word.toUpperCase()}\` YAZ!`);
 			await msg.channel.send(`**Kelimeyi tamamen küçük harfle yazın!**`);
 			const filter = res => [opponent.id, msg.author.id].includes(res.author.id) && res.content.toLowerCase() === word;
 			const winner = await msg.channel.awaitMessages(filter, {
 				max: 1,
-				time: 30000
+				time: 10000
 			});
 			this.fighting.delete(msg.channel.id);
 			if (!winner.size) return msg.channel.send('Kimse kazanmadı, berabere bitti!');
 			return msg.channel.send(`Ooo, Hızlıymışsın! Tebrikler ${winner.first().author}, Sen Kazandın!`);
+      },sur)
 		} catch (err) {
 			this.fighting.delete(msg.channel.id);
 			throw err;
