@@ -12,10 +12,10 @@ const limit = args[0] ? args[0] : 0;
             message.channel.send({embed})
             return
           }
-if (limit > 3600) {
-    return message.channel.send(new Discord.MessageEmbed().setDescription(" :x: Hata!: Süre limiti maksimum **3600** saniye olabilir.").setColor("RANDOM"));
+if (limit > 120) {
+    return message.channel.send(new Discord.MessageEmbed().setDescription(" :x: Hata!: Süre limiti maksimum **120** saniye olabilir.").setColor("#36393F"));
 }
-   message.channel.send(new Discord.MessageEmbed().setDescription(`Yazma süre limiti **${limit}** saniye olarak ayarlanmıştır.`).setColor("RANDOM"));
+   message.channel.send(new Discord.MessageEmbed().setDescription(`Yazma süre limiti **${limit}** saniye olarak ayarlanmıştır.`).setColor("#36393F"));
 var request = require('request');
 request({
     url: `https://discordapp.com/api/v7/channels/${message.channel.id}`,

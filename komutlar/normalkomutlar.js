@@ -5,7 +5,7 @@ exports.run = (client, message,args) => {
   .setColor('RANDOM')
   .setTitle("Xaine Bot") 
   .setDescription("[davet yazarak tüm botla ilgili  linklere ulaşabilirsiniz. Yada buraya tıklayarak botu davet edebilirsiniz.](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)")
-.addField("-Normal komutlar (24)", ' avatar - çeviri - kullanıcı-bilgi - stats - roblox-oyuncu-bilgi - son-görülme - davet - Atatürk-sözleri - duygulandırıcı-sözler - yılbaşı - hesapla - hava-durumu -  bildir - korona - ping - istatistik -  saat - yapımcım - token - sunucubilgi - sunucukur - ekibimiz - mcskin - duyuru - sözlük - kuruluş-tarihi - destek-ekibi - toplam-komut - çekiliş(bakımda) - hatırlatıcı - yetkilerim - iftar - yenilikler')
+.addField("-Normal komutlar (24)", ' avatar - çeviri - kullanıcı-bilgi - roblox-oyuncu-bilgi - son-görülme - davet - Atatürk-sözleri - duygulandırıcı-sözler - yılbaşı - hesapla - hava-durumu -  bildir - korona - ping - istatistik -  saat - yapımcım - token - sunucubilgi - sunucukur - ekibimiz - mcskin - duyuru - sözlük - kuruluş-tarihi - destek-ekibi - toplam-komut - çekiliş(bakımda) - hatırlatıcı - yetkilerim - iftar - yenilikler')
  .setImage("https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif")
 message.channel.send(bok)
 }
