@@ -14,27 +14,28 @@ exports.run = (client, message, args) => {
 Güncelleme 2: **ayarlamalı-komutlar** yardım menüsü eklendi!
 Güncelleme 3: Yeni **sürüm** komutu eklendi!
 
-<:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** -  
+<:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** - `)
 
- > ⭐ +eğlence -> Eğlence Komutlarını gösterir.
+.setFooter(`
+ > ⭐| +eğlence -> Eğlence Komutlarını gösterir.
 
-> ⭐ +moderasyon -> Moderasyon komutlarını gösterir.
+> ⭐| +moderasyon -> Moderasyon komutlarını gösterir.
 
- > ⭐ +normal -> Normal Komutları gösterir.
+ > ⭐| +normal -> Normal Komutları gösterir.
 
-> ⭐ +ayarlamalı-komutlar -> Ayarlamalı komutları gösterir.
+> ⭐| +ayarlamalı-komutlar -> Ayarlamalı komutları gösterir.
 
- > ⭐ +aldığımız-tedbirler -> Xaine Bot ve sizin için aldığımız tedbirleri gösterir.
+ > ⭐| +aldığımız-tedbirler -> Xaine Bot ve sizin için aldığımız tedbirleri gösterir.
  
- > ⭐ +seçmeli-oyunlar -> Seçmeli oyunlar yardım menüsünü gösterir.
+ > ⭐| +seçmeli-oyunlar -> Seçmeli oyunlar yardım menüsünü gösterir.
  
- > ⭐ +logo-yardım -> Logo yardım menüsünü gösterir.
+ > ⭐| +logo-yardım -> Logo yardım menüsünü gösterir.
  
- > ⭐ +gif-yardım -> Gif yardım menüsünü gösterir.
+ > ⭐| +gif-yardım -> Gif yardım menüsünü gösterir.
  
- > ⭐ +davet -> Botla ilgili tüm linkleri gösterir.
+ > ⭐| +davet -> Botla ilgili tüm linkleri gösterir.
  
-  > ⭐ +Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.`)
+  > ⭐| +Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.`)
  
  .setFooter(`Xaine Bot Yardım Menüsü `)
  .setFooter(`© 2020 Xaine Bot | Tüm hakları saklıdır`)
