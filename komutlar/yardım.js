@@ -5,8 +5,10 @@ exports.run = (client, message, args) => {
  .setAuthor(`${client.user.username} Bot Yardım Menüsüne Hoşgeldin!`,client.user.avatarURL())
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
- .setDescription(`
-<:civcivkalp:853213881111150642> **Yeni Güncelleme!:** 3.6 güncellemesi yayımlandı! | Yardım menülerimize ve bazı komutlarımıza emojiler eklendi! | sa-as komutu tekrardan aktif hale getirildi!
+.setDescription(`
+**Şuanki kullanılan Xaine Bot sürümü:** 3.6
+
+<:civcivkalp:853213881111150642> **Yeni Güncelleme!:** sa-as komutu tekrardan aktif!
 
 <:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** -  
 
