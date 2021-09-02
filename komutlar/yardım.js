@@ -6,6 +6,8 @@ exports.run = (client, message, args) => {
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
 .setDescription(`
+[ <:civcivkalp:853213881111150642>  davet yazarak tüm botla ilgili linklere ulaşabilirsiniz. Yada buraya tıklayarak botu davet edebilirsiniz.](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)
+
 **Şuanki kullanılan Xaine Bot sürümü:** 3.6
 
 <:civcivkalp:853213881111150642> **Yeni Güncelleme!:** sa-as komutu tekrardan aktif!
