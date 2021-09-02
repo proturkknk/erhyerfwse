@@ -9,11 +9,13 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 .setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
 .setDescription(`
 
-▬[ :closed_lock_with_key: ** <:civcivkalp:853213881111150642> Xaine Bot Moderasyon Komutları** :teddy_bear: ]▬
+[ :closed_lock_with_key: ** <:civcivkalp:853213881111150642> Xaine Bot Moderasyon Komutları** :teddy_bear: ]
 
-> [sa-as]() → Sa-as sistemini açıp kapatmanızı sağlar
+> **[sa-as]**() → Sa-as sistemini açıp kapatmanızı sağlar
 
-> [sa-as]()
+> **[küfür-engel]**() → Küfür engeli açıp kapatmanızı sağlar.
+
+Not: **küfür-engel** komutu şartlı moderasyon komutudur.
 
 **▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬**
 \n **DİKKAT!: LÜTFEN DİKKATLİCE OKUYUNUZ! Botda oluşan teknik nedenden dolayı bot moderasyon yetkisi alamadı buda moderasyon komutlarını kullanamazsınız anlamına geliyor. Sorun çözülmüştür Lütfen Xaine Botu sunucudan atıp tekrardan eklerseniz seviniriz. İyi günler!**
