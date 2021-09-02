@@ -7,7 +7,7 @@ exports.run = async(client, message, params) => {
 
           let prefix =  ayarlar.prefix
 
- if (!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send("Sunucu kur yapmak için **Yönetici** olmanız gerekir.")
+ if (!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send("Sunucu kurmak **Yönetici** olmanız gerekir.")
   message.channel.send("Sunucu kurmayı onaylıyormusunuz ``evet/hayır`` evet veya hayır olarak cevap veriniz. \n**(Not!: Botun rolü en üste olmalıdır yoksa hata verebilir.)**").then(() => {
   
  const filter = m => m.author.id === message.author.id;
@@ -164,7 +164,7 @@ exports.run = async(client, message, params) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['hazırsunucu','hazır-sunucu','sunucu-kur'],
+  aliases: ['hazırsunucu','hazır-sunucu','sunucu-kur','Sunucu-kur','SUNUCU-KUR',],
   permLevel: 0
 };
 
