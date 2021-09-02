@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
  .setDescription(`
-<:civcivkalp:853213881111150642> **Yeni Güncelleme!:** 3.6 güncellemesi yayımlandı! | Yardım menülerimize ve bazı komutlarımıza emojiler eklendi!
+<:civcivkalp:853213881111150642> **Yeni Güncelleme!:** 3.6 güncellemesi yayımlandı! | Yardım menülerimize ve bazı komutlarımıza emojiler eklendi! | sa-as komutu tekrardan aktif hale getirildi!
 
 <:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** -  
 

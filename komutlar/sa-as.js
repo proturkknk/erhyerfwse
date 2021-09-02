@@ -32,5 +32,5 @@ exports.help = {
   name: 'sa-as',
   description: 'Selamün aleyküm, Aleyküm selam',
   usage: '!sa-as',
-  category: "moderasyon"
+  category: 'Salladım burayı napim za'
 };
