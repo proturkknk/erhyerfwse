@@ -14,9 +14,6 @@ module.exports = async(message, bot) => {
     talkedRecently.delete(message.author.id);
   }, 2500);
   const sunucu = bot.guilds.cache.get('714084499465568287')
-  if(message.author.id == '522834911732695041'){
-    
-  }
   let client = message.client;
   if (message.author.bot) return;//
   if (!message.content.startsWith(ayarlar.prefix)) return;
