@@ -26,15 +26,15 @@ Güncelleme 3: Yeni **sürüm** komutu eklendi!
 
  > ⭐ +aldığımız-tedbirler -> Xaine Bot ve sizin için aldığımız tedbirleri gösterir.
  
- > +seçmeli-oyunlar -> Seçmeli oyunlar yardım menüsünü gösterir.
+ > ⭐ +seçmeli-oyunlar -> Seçmeli oyunlar yardım menüsünü gösterir.
  
- > + +logo-yardım -> Logo yardım menüsünü gösterir.
+ > ⭐ +logo-yardım -> Logo yardım menüsünü gösterir.
  
- >  +gif-yardım -> Gif yardım menüsünü gösterir.
+ > ⭐ +gif-yardım -> Gif yardım menüsünü gösterir.
  
- > +davet -> Botla ilgili tüm linkleri gösterir.
+ > ⭐ +davet -> Botla ilgili tüm linkleri gösterir.
  
-  > +Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.`)
+  > ⭐ +Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.`)
  
  .setFooter(`Xaine Bot Yardım Menüsü `)
  .setFooter(`© 2020 Xaine Bot | Tüm hakları saklıdır`)
