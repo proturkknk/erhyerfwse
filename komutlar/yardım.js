@@ -10,7 +10,9 @@ exports.run = (client, message, args) => {
 
 **Şuanki kullanılan Xaine Bot sürümü:** 3.6
 
-<:civcivkalp:853213881111150642> **Yeni Güncelleme!:** sa-as komutu tekrardan aktif!
+<:civcivkalp:853213881111150642> **Yeni Güncelleme!:** sa-as komutu tekrardan aktif! 
+Güncelleme 2: **ayarlamalı-komutlar** yardım menüsü eklendi!
+Güncelleme 3: Yeni **sürüm** komutu eklendi!
 
 <:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** -  
 
@@ -19,6 +21,8 @@ exports.run = (client, message, args) => {
 > \`+moderasyon -> Moderasyon komutlarını gösterir.\`
 
  > \`+normal -> Normal Komutları gösterir.\`
+
+> \`+ayarlamalı-komutlar -> Ayarlamalı komutları gösterir.\`
 
  > \`+aldığımız-tedbirler -> Xaine Bot ve sizin için aldığımız tedbirleri gösterir.\`
  
