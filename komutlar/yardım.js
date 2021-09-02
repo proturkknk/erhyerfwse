@@ -15,7 +15,7 @@ Güncelleme 2: **ayarlamalı-komutlar** yardım menüsü eklendi!
 Güncelleme 3: Yeni **sürüm** komutu eklendi!
 
 <:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** -  
-
+---> ⭐ Komutlar
  > ⭐| +eğlence -> Eğlence Komutlarını gösterir.
 
 > ⭐| +moderasyon -> Moderasyon komutlarını gösterir.
@@ -39,7 +39,7 @@ Güncelleme 3: Yeni **sürüm** komutu eklendi!
  .setFooter(`Xaine Bot Yardım Menüsü `)
  .setFooter(`© 2020 Xaine Bot | Tüm hakları saklıdır`)
 .addField(`Duyuru!`,`Hey selam! Ben Xaine | Destek sunucumuza gelmek ister misiniz? Çeşitli duyurular ve çekilişler buradan yapılıyor. Bot bir hata yaşadığında veya yenilik geldiğinde destek sunucusundan bildiriliyor. Ve sunucumuzda hergün yapılan çekilişler etkinlikler bile var. Katılmak isterseniz altda yazan bağlantılar bölümünden **Destek sunucusu** yazan yere tıklayarak katılabilirsiniz.`)
-.addfield()    
+.addField(':gear: Bağlantılar')  
 .setTimestamp()
     .setImage("https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif")
 message.channel.send(embed) 
