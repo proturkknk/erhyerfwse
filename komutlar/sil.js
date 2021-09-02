@@ -20,7 +20,7 @@ message.channel.bulkDelete(args[0]).then(deletedMessages => {
 if (deletedMessages.size < 1) return message.reply("Hiç mesaj silemedim! (**14** günden önceki mesajları silememe Discord izin vermiyor!)");
 })
    
-message.channel.send(`**${args[0]}** adet mesaj başarıyla silindi!`).then(m => m.delete({ timeout: 3000 }))
+message.channel.send (`**${args[0]}** adet mesaj başarıyla silindi!`).then(m => m.delete({ timeout: 3000 }))
 
 };
 
