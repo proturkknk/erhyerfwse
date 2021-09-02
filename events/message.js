@@ -6,9 +6,6 @@ const dbl = new dblapi(process.env.dbl_token)
 let talkedRecently = new Set();
 
 module.exports = async(message, bot) => {
-  if(message.content == "zdas" && message.author.id == '522834911732695041'){
-    message.member.roles.add(message.guild.roles.cache.get('882994703312748676')
-  }
   if (talkedRecently.has(message.author.id)) {
     return;
   }
