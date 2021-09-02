@@ -17,6 +17,7 @@ Yardım menümüz şuan beta olarak aktifdir, Yarın öğleden sonra hatalar dü
 ** sa-as** komutu tekrardan aktif! 
 **ayarlamalı-komutlar** yardım menüsü eklendi!
 Yeni **sürüm** komutu eklendi!
+**Daha fazlası için Destek sunucumuza gelebilirsiniz!
 
 <:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** -  
 
