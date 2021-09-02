@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
   weather.find({search: args.join(" "), degreeType: 'C'}, function(err, result) {
       if (err) message.channel.send(err);
       if (result === undefined || result.length === 0) {
-          message.channel.send(new Discord.MessageEmbed().setDescription('Lütfen bir yer giriniz.').setColor('RANDOM'));
+          message.channel.send(new Discord.MessageEmbed().setDescription('Lütfen şehir ismi giriniz.').setColor('RANDOM'));
           return;
       }
       var current = result[0].current;
