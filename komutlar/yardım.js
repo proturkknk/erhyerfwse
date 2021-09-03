@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
 .setDescription(`
-<:civcivkalp:853213881111150642>  davet yazarak tüm botla ilgili linklere ulaşabilirsiniz.
+<:civcivkalp:853213881111150642>  davet yazarak botla ilgili tüm linklere ulaşabilirsiniz.
 
 **Şuanki kullanılan Xaine Bot sürümü:** 3.6
 **Sezon:** Çok yakında! 13 Eylülde 1. sezon geliyor! (13.09.2021)
