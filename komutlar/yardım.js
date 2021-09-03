@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
 .setDescription(`
 [ <:civcivkalp:853213881111150642>  davet yazarak tüm botla ilgili linklere ulaşabilirsiniz. Yada buraya tıklayarak botu davet edebilirsiniz.](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)
 
-Yardım menümüz şuan beta olarak aktifdir, Yarın öğleden sonra hatalar düzeltilicektir. 
+Yardım menümüz şuan beta olarak aktifdir, bugün öğleden sonra hatalar düzeltilicektir. 
 
 **Şuanki kullanılan Xaine Bot sürümü:** 3.6
 
