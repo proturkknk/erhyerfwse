@@ -42,7 +42,7 @@ exports.run = (client, message, args) => {
  .setFooter(`© 2020 Xaine Bot | Tüm hakları saklıdır`)
 .addField(`Duyuru!`,`Hey selam! Ben Xaine | Destek sunucumuza katılmak ister misiniz? Destek sunucumuzda çekilişler, bot hakkında duyurular ve güncellemeleri öğrenebilirsiniz! Katılmak isterseniz üsteki **bağlantılar** bölümünden **Destek sunucusu** yazan yere tıklayabilirsiniz.`)
     .setTimestamp()
-    .setImage("https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif")
+    .setImage("https://media.giphy.com/media/rZ3NPLjVRjAtLnwphZ/giphy.gif?cid=790b761116ac64a6f9e3add97dfb3c8126c68b94170377aa&rid=giphy.gif&ct=g")
 message.channel.send(embed) 
 //sharpen
 };

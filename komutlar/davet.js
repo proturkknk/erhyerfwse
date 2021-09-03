@@ -40,7 +40,7 @@ exports.run = (client, message, args) => {
       `> Xaine Bota Oy Vermek İsterseniz`,
       `[Top.gg Oy Verme Linki](https://top.gg/bot/774235071653216286/vote)`
     )
-.setImage(`https://media.giphy.com/media/9CkIFgNLtPFAiiCqGN/giphy.gif`)
+.setImage(`https://media.giphy.com/media/rZ3NPLjVRjAtLnwphZ/giphy.gif?cid=790b761116ac64a6f9e3add97dfb3c8126c68b94170377aa&rid=giphy.gif&ct=g`)
     .setThumbnail(
       "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     );
