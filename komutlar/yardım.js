@@ -8,8 +8,6 @@ exports.run = (client, message, args) => {
 .setDescription(`
 [ <:civcivkalp:853213881111150642>  davet yazarak tüm botla ilgili linklere ulaşabilirsiniz. Yada buraya tıklayarak botu davet edebilirsiniz.](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)
 
-Yardım menümüz şuan beta olarak aktifdir, bugün öğleden sonra hatalar düzeltilicektir. 
-
 **Şuanki kullanılan Xaine Bot sürümü:** 3.6
 
 ---------------  **⭐ Yeni güncellemeler!** ---------------
@@ -42,8 +40,9 @@ Yeni **sürüm** komutu eklendi!
   > ⭐+Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.`)
  
  .setFooter(`Xaine Bot Yardım Menüsü `)
+.addField("Bağlantılar","[Destek sunucusu](https://discord.gg/99C4tGzgK4)\n[Oy verme linki](https://top.gg/bot/774235071653216286/vote)")
  .setFooter(`© 2020 Xaine Bot | Tüm hakları saklıdır`)
-.addField(`Duyuru!`,`Hey selam! Ben Xaine | Destek sunucumuza gelmek ister misiniz? Çeşitli duyurular ve çekilişler buradan yapılıyor. Bot bir hata yaşadığında veya yenilik geldiğinde destek sunucusundan bildiriliyor. Ve sunucumuzda hergün yapılan çekilişler etkinlikler bile var. Katılmak isterseniz altda yazan bağlantılar bölümünden **Destek sunucusu** yazan yere tıklayarak katılabilirsiniz.`)
+.addField(`Duyuru!`,`Hey selam! Ben Xaine | Destek sunucumuza katılmak ister misiniz? Destek sunucumuzda çekilişler, bot hakkında duyurular ve güncellemeleri öğrenebilirsiniz! Katılmak isterseniz üsteki **bağlantılar** bölümünden **destek sunucusu** yazan yere tıklayabilirsiniz.`)
     .setTimestamp()
     .setImage("https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif")
 message.channel.send(embed) 
