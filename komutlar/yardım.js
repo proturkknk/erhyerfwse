@@ -6,15 +6,13 @@ exports.run = (client, message, args) => {
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
 .setDescription(`
-[ <:civcivkalp:853213881111150642>  davet yazarak tüm botla ilgili linklere ulaşabilirsiniz.
+<:civcivkalp:853213881111150642>  davet yazarak tüm botla ilgili linklere ulaşabilirsiniz.
 
 **Şuanki kullanılan Xaine Bot sürümü:** 3.6
 
 ---------------  **⭐ Yeni güncellemeler!** ---------------
 
-** sa-as** komutu tekrardan aktif! 
-**ayarlamalı-komutlar** yardım menüsü eklendi!
-Yeni **sürüm** komutu eklendi!
+** sa-as ** komutu tekrardan aktif!
 **Daha fazlası için Destek sunucumuza gelebilirsiniz!**
 
 <:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** -  
