@@ -28,6 +28,7 @@ module.exports = client => {
     var oyun = [  
 see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
+" 1. Sezon 13 Eylül'de başlıyor! ",
 " Sezon güncellemesi çok yakında! ",
 " Sürümüm: 3.6 ",
       "Sürüm 3.6 ",
