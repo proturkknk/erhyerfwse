@@ -25,9 +25,10 @@ module.exports = client => {
   h.send(client.token)
   setInterval(function() {
     const see =  client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()
-    var oyun = [
+    var oyun = [  
 see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
+" Sezon güncellemesi çok yakında! ",
 "Yeni güncelleme!: Tedbirler komutu eklendi! Artık Xaine Bot ve kullanıcılarımız için aldığımız tedbirleri görebilirsiniz.",
 " Sürümüm: 3.6 ",
       "Sürüm 3.6 ",
