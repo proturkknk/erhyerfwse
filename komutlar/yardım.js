@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
 .setDescription(`
-[ <:civcivkalp:853213881111150642>  davet yazarak tüm botla ilgili linklere ulaşabilirsiniz. Yada buraya tıklayarak botu davet edebilirsiniz.](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)
+[ <:civcivkalp:853213881111150642>  davet yazarak tüm botla ilgili linklere ulaşabilirsiniz.
 
 **Şuanki kullanılan Xaine Bot sürümü:** 3.6
 
@@ -15,17 +15,17 @@ exports.run = (client, message, args) => {
 ** sa-as** komutu tekrardan aktif! 
 **ayarlamalı-komutlar** yardım menüsü eklendi!
 Yeni **sürüm** komutu eklendi!
-**Daha fazlası için Destek sunucumuza gelebilirsiniz!
+**Daha fazlası için Destek sunucumuza gelebilirsiniz!**
 
 <:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** -  
 
- > ⭐| +eğlence -> Eğlence Komutlarını gösterir.
+ > :partying_face: | +eğlence -> Eğlence Komutlarını gösterir.
 
-> ⭐| +moderasyon -> Moderasyon komutlarını gösterir.
+> :tools: | +moderasyon -> Moderasyon komutlarını gösterir.
 
- > ⭐| +normal -> Normal Komutları gösterir.
+ > ⭐ | +normal -> Normal Komutları gösterir.
 
-> ⭐| +ayarlamalı-komutlar -> Ayarlamalı komutları gösterir.
+> :gear: | +ayarlamalı-komutlar -> Ayarlamalı komutları gösterir.
 
  > ⭐| +aldığımız-tedbirler -> Xaine Bot ve sizin için aldığımız tedbirleri gösterir.
  
@@ -40,7 +40,7 @@ Yeni **sürüm** komutu eklendi!
   > ⭐+Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.`)
  
  .setFooter(`Xaine Bot Yardım Menüsü `)
-.addField("Bağlantılar","[Destek sunucusu](https://discord.gg/99C4tGzgK4)\n[Oy verme linki](https://top.gg/bot/774235071653216286/vote)")
+.addField("Bağlantılar","[Davet et](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)\n[Destek sunucusu](https://discord.gg/99C4tGzgK4)\n[Oy verme linki](https://top.gg/bot/774235071653216286/vote)")
  .setFooter(`© 2020 Xaine Bot | Tüm hakları saklıdır`)
 .addField(`Duyuru!`,`Hey selam! Ben Xaine | Destek sunucumuza katılmak ister misiniz? Destek sunucumuzda çekilişler, bot hakkında duyurular ve güncellemeleri öğrenebilirsiniz! Katılmak isterseniz üsteki **bağlantılar** bölümünden **destek sunucusu** yazan yere tıklayabilirsiniz.`)
     .setTimestamp()
