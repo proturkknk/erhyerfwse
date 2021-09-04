@@ -19,7 +19,7 @@ exports.run = (client, message) => {
 
 **• Xaine Bot ve sizin için aldığımız tedbirler yardım menüsü**
 
-> [tedbirler]() → Xaine Bot ve Kullanıcılarımız için aldığımız tedbirleri gösterir.
+> tedbirler → Xaine Bot ve Kullanıcılarımız için aldığımız tedbirleri gösterir.
 
 **Daha fazla tedbir bilgileri eklenecektir.**
 

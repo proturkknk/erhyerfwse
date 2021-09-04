@@ -10,9 +10,9 @@ exports.run = (client, message, args) => {
 
 **Şuanki kullanılan Xaine Bot sürümü:** 3.6
 **Sezon:** Çok yakında! 13 Eylülde 1. sezon geliyor! (13.09.2021)
----------------  **⭐ Yeni güncellemeler!** ---------------
-
+---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
 ** sa-as ** komutu tekrardan aktif!
+** tedbirler ** Komutunun mobil cihazlarda yardım menüsünde gözükmeme sorunu düzeltildi!
 **Daha fazlası için Destek sunucumuza gelebilirsiniz!**
 
 <:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** -  
