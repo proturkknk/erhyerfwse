@@ -11,6 +11,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 
 ▬[ :closed_lock_with_key: **<:civcivkalp:853213881111150642> Xaine Bot Moderasyon Komutları** :teddy_bear: ]▬
 
+> **» +uyar :** Belirttiğiniz kullanıcıyı uyarırsınız.
 > **» +sil :** Bulunduğunuz kanalın belirttiniz miktardaki mesajları siler.
 > **» +mute :** Belirttiğiniz kişiyi sunucuda susturursunuz. (BAKIMDA!)
 > **» +unmute :** Belirttiğiniz kişinin mutesini (susturulmasını) kaldırırsınız.

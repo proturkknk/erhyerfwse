@@ -21,7 +21,6 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 > **» +küfür-engel kapat :** Küfür engeli kapatırsınız.
 > **» +sa-as :** Sa-as sistemini açarsınız veya kapatırsınız.
 > **» +kullanıcı-mesaj-sil :** Bellirttiğiniz kullanıcının o gün içindeki tüm mesajlarını siler.
-> **» +uyar :** Belirttiğiniz kullanıcıyı uyarırsınız.
 > **» +prefix :** Botun prefixini değiştirirsiniz.
 > **» +isim-değiştir :** Belirttiğiniz kullanıcının ismini değiştirir.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
