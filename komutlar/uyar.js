@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
   let sebep = args.slice(1).join(' ');
   if (message.mentions.users.size < 1) return message.channel.send('Uyaracağın kişiyi etiketlemelisin.').catch(console.error);
   if (sebep.length < 1) return message.channel.send('Uyaracağım kişiyi neden uyarmam gerektiğini yazmalısın.');
-  message.channel.send('Kişiyi başarıyla uyardım, özel mesajlarında uyarısı gözükecektir.')
+  message.channel.send('Kullanıcıyı başarıyla uyardım, eğer özel mesajları açıksa özel mesajlarında uyarısı gözükecektir.')
   return uyarilacak.send(`${sunucu} sunucusunda \`${sebep}\` sebebiyle uyarıldın.`);
 };
 
