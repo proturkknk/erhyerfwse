@@ -3,7 +3,7 @@ exports.run = (client, message, args) => {
  
   if (!message.guild) {
     const ozelmesajuyari = new Discord.MessageEmbed()
-    .setColor(0xFF0000)
+    .setColor('RANDOM')
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
     .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
