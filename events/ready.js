@@ -29,7 +29,6 @@ module.exports = client => {
 see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
 " 1. Sezon! Sonbahar sezonu :leaves: ",
-" Sezon güncellemesi çok yakında! ",
 " Sürümüm: 3.7 ",
       "Sürüm 3.7 ",
       " Xaine Bot Sürümü 3.7 ",
