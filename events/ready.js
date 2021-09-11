@@ -28,7 +28,9 @@ module.exports = client => {
     var oyun = [  
 see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
-" 1. Sezon! Sonbahar sezonu :leaves: ",
+"Sonbahar Sezonu 🍂 ",
+"Sonbahar Sezonu 🍂  aktif! ",
+" 1. Sezon! Sonbahar Sezonu 🍂 ",
 " Sürümüm: 3.7 ",
       "Sürüm 3.7 ",
       " Xaine Bot Sürümü 3.7 ",
