@@ -3,7 +3,7 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new Discord.MessageEmbed()
-    .setAuthor('İsteğiniz üzerine yağmur yağaşı gösteriliyor. ☔️ ')
+    .setAuthor('İsteğiniz üzerine yağmur yağışı gösteriliyor. ☔️ ')
     .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')

@@ -16,7 +16,7 @@ Sezon: ** 1. Sezon! Sonbahar sezonu :leaves: **
 ** tedbirler ** Komutunun mobil cihazlarda yardım menüsünde gözükmeme sorunu düzeltildi!
 **Daha fazlası için Destek sunucumuza gelebilirsiniz!**
 
-<:civcivkalp:853213881111150642>  **Bugüne Özel Öne Çıkan Komut:** -  
+<:civcivkalp:853213881111150642>  Bugüne Özel Öne Çıkan Komut: **yağmur** 
 
  > :partying_face: | +eğlence -> Eğlence Komutlarını gösterir.
 
