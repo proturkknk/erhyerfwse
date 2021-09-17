@@ -11,12 +11,13 @@ exports.run = (client, message, args) => {
                  'Boks Makinesi Sonucu ・ **500 Yanii Daha İyisini Yapabilirsin**', 
                  'Boks Makinesi Sonucu ・ **999 | 1 Puanla Kaçırdın Be.**', 
                  'Boks Makinesi Sonucu ・ **1100 Fena Değil**', 
-                 'Boks Makinesi Sonucu ・ **1200 Güzel Güzel** '
+                 'Boks Makinesi Sonucu ・ **1300 ** Çok güzel vurdun! Ama daha iyisini yapabilirsin.',
+                 'Boks Makinesi Sonucu ・ **1500, ** Çok iyi vurdun! Nerdeyse boks makinesi devrilicekti. Tebrik ederiz! '
                 ];
  var cevap = boksmakinesi[Math.floor(Math.random() * boksmakinesi.length)];
   
  const gamerwolf = new Discord.MessageEmbed()
- .setColor(`#313131`)
+ .setColor(`RANDOM`)
  .setDescription(":boxing_glove: " + cevap)
  .setImage('https://media.giphy.com/media/Rl4yxxVEvUge8b5mkW/giphy.gif')
 message.channel.send(gamerwolf)

@@ -19,10 +19,11 @@ exports.run = (client, message) => {
 
 **• Bakımdaki komutlar aşağıda yazmaktadır. Lütfen bu komutlar bakımdan çıkana kadar kullanmayınız.**
 
-> [mute]() → Bakımda lütfen bu komutu kullanmayınız.
-> [çekiliş]() → Bakımda lütfen bu komutu kullanmayınız.
-> [hatırlatıcı]() → Bakımda lütfen bu komutu kullanmayınız.
-> [unmute]() → Bakımda lütfen bu komutu kullanmayınız. 
+> [mute]() → Bakımda, lütfen bu komutu kullanmayınız.
+> [çekiliş]() → Bakımda, lütfen bu komutu kullanmayınız.
+> [hatırlatıcı]() → Bakımda, lütfen bu komutu kullanmayınız.
+> [unmute]() → Bakımda, lütfen bu komutu kullanmayınız. 
+> [son-görülme]() → Bakımda, lütfen bu komutu kullanmayınız. 
 
 
 

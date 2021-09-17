@@ -24,7 +24,7 @@ exports.run = async (client, msg, args) => {
       "Sen yine de bana, nasılsın? Diye sorma. İyiyim desem yalan olur; kötüyüm desem inancıma dokunur. En güzeli, şükre vurayım.",
      
 
-     //Duygulandırıcı Sözler Şahsım Yani Benim Tarafımdan Yapıldı .. Paylaşmayınız Ve Çalmayınız /Owner Code Share ////
+     
       
     ]
        let member = msg.mentions.members.first()

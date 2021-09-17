@@ -7,13 +7,13 @@ require('moment-duration-format');
 exports.run = (client, message, args) => {//! TREFAX#0362
 
 let Member = message.mentions.users.first()
-if(!Member) return message.channel.send(`${message.author} Durumuna bakmak istediğin kullanıcıyı etiketlemelisin.`).then(m => m.delete({timeout: 10000}));
-if(Member.bot) return message.channel.send(`${message.author} Maalesef botların son görülmesine bakma gibi bi özelliğim yok. Ama kullanıcıların Discord'a giriş ve çıkış tarihlerini gösterebilirim. İstersen bi kullanıcıyı etiketle ve ne zaman girip ne zaman çıkış yaptığını öğren.`).then(m => m.delete({timeout: 10000}));
+if(!Member) return message.channel.send(`${message.author} Durumuna bakmak istediğin kullanıcıyı etiketlemelisin. DİKKAT! **Bu komut bakımdadır. Bakım bittiğinde Destek sunucumuzdan öğrenebilirsiniz.**`).then(m => m.delete({timeout: 10000}));
+if(Member.bot) return message.channel.send(`${message.author} Maalesef botların son görülmesine bakma gibi bi özelliğim yok. Ama kullanıcıların Discord'a giriş ve çıkış tarihlerini gösterebilirim. İstersen bi kullanıcıyı etiketle ve ne zaman girip ne zaman çıkış yaptığını öğren. **Bu komut bakımdadır. Bakım bittiğinde Destek sunucumuzdan öğrenebilirsiniz.**`).then(m => m.delete({timeout: 10000}));
 if(Member.presence.status === "offline") {
 const Embed = new Discord.MessageEmbed()
 .setAuthor(Member.username, Member.displayAvatarURL({dynamic: true}))
 .setColor("BLACK")
-.setDescription(`Bu kullanıcı en son ${moment(database.fetch(`Member.${Member.id}`)).format('DD/MM/YYYY HH:mm:ss')} tarihinde Discord'a giriş yapıp, ${moment(database.fetch(`Member2.${Member.id}`)).format('DD/MM/YYYY HH:mm:ss')} tarihinde çıkış yaptı.`)
+.setDescription(`Bu kullanıcı en son ${moment(database.fetch(`Member.${Member.id}`)).format('DD/MM/YYYY HH:mm:ss')} tarihinde Discord'a giriş yapıp, ${moment(database.fetch(`Member2.${Member.id}`)).format('DD/MM/YYYY HH:mm:ss')} tarihinde çıkış yaptı. **Bu komut bakımdadır. Bakım bittiğinde Destek sunucumuzdan öğrenebilirsiniz.**`)
 message.channel.send(Embed)
 } else {
 let Array = [];
