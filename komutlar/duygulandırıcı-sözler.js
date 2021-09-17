@@ -43,7 +43,7 @@ exports.run = async (client, msg, args) => {
   
   exports.conf = {
     enabled: true,
-    guildOnly: true, // Tre = Açık False = Kapalı Değişebilir
+    guildOnly: true,
     aliases: ["ağlatan-sözler","ağlatansözler","duygurandırıcı-sözler","duygulandırıcısözler",'Duygulandırıcı-sözler','Duygulandırıcısözler','DUYGULANDIRICI-SÖZLER','DUYGULANDIRICISÖZLER'],
     permLevel: 0
    };

@@ -154,7 +154,7 @@ exports.run = async (client, message, args) => {
 	var lang = args[0]
 	if(!lang) {
 		const embed = new Discord.MessageEmbed()
-			.setDescription(`Lütfen geçerli bir dil yazın! Dillere [buradan](https://www.deepbilgi.com/tum-ulkelerin-iso-dil-kodlari.html) bakabilirsin.`)
+			.setDescription(`Lütfen geçerli bir dil yazın! Dillere [buradan](https://www.deepbilgi.com/tum-ulkelerin-iso-dil-kodlari.html) ülkelerin dil kodlarına bakabilirsin.`)
 			.setColor(embedrenk)
 			.setTimestamp()
 		message.channel.send({embed})
