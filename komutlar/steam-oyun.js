@@ -16,7 +16,7 @@ exports.run = (client, message, args) => {
     .addField(`Oyunun ID'sı`, result[0].id)
     .setThumbnail(results.otherData.imageUrl)
     .addField('Türleri', results.genres)
-    .addField('Fiyati', `Nolmal Fiyat **${results.priceData.initialPrice}** TL
+    .addField('Fiyatı', `Normal fiyatı **${results.priceData.initialPrice}** TL
 İndirimli Fiyat **${results.priceData.finalPrice}** TL`, true)
     .addField('Platformlar', results.otherData.platforms, true)
     .addField('Metacritic Puanı', results.otherData.metacriticScore, true)

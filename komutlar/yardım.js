@@ -8,12 +8,14 @@ exports.run = (client, message, args) => {
 .setDescription(`
 <:civcivkalp:853213881111150642>  davet yazarak botla ilgili tüm linklere ulaşabilirsiniz.
 
-Şuan kullanılan Xaine Bot sürümü: **3.7**
+Kullanılan Xaine Bot sürümü: **3.7**
 Sezon: ** 1. Sezon! Sonbahar sezonu :leaves: **
 
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
-**uyar** Komutu artık şartsız moderasyon komutlarında!
 
+**steam-fiyat** Komutu aktif!
+
+**uyar** Komutu artık şartsız moderasyon komutlarında!
 
 Botdaki bildirilen ve belirlenen tüm yazım yanlışları düzeltildi! Bildiren kullanıcılarımıza teşekkür ederiz.
 
