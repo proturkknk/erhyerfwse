@@ -14,7 +14,6 @@ Sezon: ** 1. Sezon! Sonbahar sezonu :leaves: **
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
 **uyar** Komutu artık şartsız moderasyon komutlarında!
 
-** tedbirler ** Komutunun mobil cihazlarda yardım menüsünde gözükmeme sorunu düzeltildi!
 
 Botdaki bildirilen ve belirlenen tüm yazım yanlışları düzeltildi! Bildiren kullanıcılarımıza teşekkür ederiz.
 
