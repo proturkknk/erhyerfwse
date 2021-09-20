@@ -31,7 +31,7 @@ Not: **küfür-engel** komutu şartlı moderasyon komutudur.
 .setTimestamp();
 
 return message.channel.send(EmbedFwhyCode)
-.then; //FwhyCode
+.then; 
 
 };
 exports.conf = {
