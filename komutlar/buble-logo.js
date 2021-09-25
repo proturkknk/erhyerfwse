@@ -25,5 +25,5 @@ exports.conf = {
 exports.help = {
   name: 'bubble',
   description: 'Logo Yaparsınız',
-  usage: '-bubble <yazı>'
+  usage: '+bubble <yazı>'
 };
