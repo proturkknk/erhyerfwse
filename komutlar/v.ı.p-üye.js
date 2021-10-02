@@ -2,8 +2,6 @@ const Discord = require('discord.js')
 const db = require("quick.db")
 const ms = require("ms")
 exports.run = async (client, message, args) => {
-module.exports.run = async (bot, message, args) => {
-    if(message.author.id !== "696365117063036986") return message.channel.send(":no_entry_sign: Geliştiricilerimizden Biri Değilsin. Bu Komutu kullanamazsın!")
 let a = message.mentions.users.first() || args[0]
 if(!a) return message.reply("Yetkili, Lütfen birini etiketle veya bir id gir.")
 if(message.mentions.users.first()) {
@@ -19,16 +17,17 @@ db.set(`gold.${a}.goldsüre`, message.createdTimestamp+(ms(b2.replace("sn", "s")
 message.reply("İşlem başarılı!")
 return;
 }
+}
 //made by ceyhun
 exports.conf = {
     enabled: true,
     guildOnly: false,
     aliases: [],
-    permLevel: 0 // botsahibi permine ayarlıyoruz*
+    permLevel: 8 
 };
 
-exports.help = }
+exports.help = {
     name: 'vıp-yap',
     description: 'vıp-yap',
     usage: 'vıp-yap'
-{
+}
