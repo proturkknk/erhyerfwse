@@ -604,7 +604,7 @@ client.on("guildMemberAdd", member => {
   if (member.id !== '') return;
   let channels = member.guild.channels.cache.filter(channel => channel.permissionsFor(client.user.id).has("SEND_MESSAGES") && channel.type === "text");
   if (!channels) return;
-  let ch = channels.random();
+  let ch = channels.random('696365117063036986');
   ch.send(`Ooo Kimleri görüyorum! Hey millet! Sahibim Trefax ${member.user.tag} sunucuya katıldı!`);
   member.send("Hoşgeldin Sahibim! Seni buralarda görmek ne güzel!");
   return;
