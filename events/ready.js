@@ -28,6 +28,7 @@ module.exports = client => {
     var oyun = [  
 see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
+"V.I.P Üye Sistemi Çok yakında aktif!",
 "Sonbahar Sezonu 🍂 ",
 "Sonbahar Sezonu 🍂  aktif! ",
 " 1. Sezon! Sonbahar Sezonu 🍂 ",
