@@ -20,7 +20,8 @@ exports.run = (client, message) => {
 **• <:civcivkalp:853213881111150642>  V.I.P Olmanın Avantajları **
 
 1- Destek sunucumuzda V.I.P 🌟 adlı rol kazanırsınız.
-2- 
+
+**DAHA FAZLA ÖZELLİK EKLENECEK.**
 
 
  
