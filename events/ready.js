@@ -62,6 +62,8 @@ see+" Tane Kullanıcım var!",
       "Sürümlerimiz 1 ayda 2 kez yani 2 haftada 1 kez güncellenir.",
       "Sürümlerimiz 2 haftada bir güncellenir.",
       "Sürümlerimiz ayda 2 kez güncelleniyor",
+      "Mevlid Kandilimiz Mübarek Olsun!",
+      "Hayırlı Kandiller!",
 
   ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
