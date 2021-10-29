@@ -143,6 +143,7 @@ app.get('*', (req,res) => {
 })
 
 app.listen(process.env.PORT);
+console.log(`Sunucu ${process.env.PORT} portundan başlatıldı.`)
 setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 280000);
