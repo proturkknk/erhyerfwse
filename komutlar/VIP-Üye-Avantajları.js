@@ -17,11 +17,13 @@ exports.run = (client, message) => {
       "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`
 
-1- Oy vermek 
+1- Destek sunucumuzda VIP Üyelerine özel rol
 
-2- Destek sunucusuna katılmak
+2- Destek sunucumuzda VIP Üyelerine özel sesli ve yazılı sohbet kanalları
 
-**Şuanlık sadece 2 şartımız var. Xaine Bot geliştikçe vıp üye avantajları hemde şartları yenilenecektir.**
+
+
+**Şuanlık sadece 2 avantajımız var. Xaine Bot geliştikçe VIP Üye avantajları ve şartları yenilenecektir.**
 
 Dikkat! :warning: VIP Üye Sistemimiz şuan aktif değildir. Gelişmeleri Destek Sunucumuzdan takip edebilirsiniz.
 

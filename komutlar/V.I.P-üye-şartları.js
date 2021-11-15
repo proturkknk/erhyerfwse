@@ -21,7 +21,7 @@ exports.run = (client, message) => {
 
 2- Destek sunucusuna katılmak
 
-**Şuanlık sadece 2 şartımız var. Xaine Bot geliştikçe vıp üye avantajları hemde şartları yenilenecektir.**
+**Şuanlık sadece 2 şartımız var. Xaine Bot geliştikçe VIP Üye avantajları ve şartları yenilenecektir.**
 
 Dikkat! :warning: VIP Üye Sistemimiz şuan aktif değildir. Gelişmeleri Destek Sunucumuzdan takip edebilirsiniz.
 
