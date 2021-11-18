@@ -21,7 +21,7 @@ Botdaki bildirilen ve belirlenen tüm yazım yanlışları düzeltildi! Bildiren
 
 **Daha fazlası için Destek sunucumuza gelebilirsiniz!**
 
-<:civcivkalp:853213881111150642>  Bugüne Özel Öne Çıkan Komut: **yağmur** 
+<:civcivkalp:853213881111150642>  Bugüne Özel Öne Çıkan Komut: **kar** 
 
  > :partying_face: | +eğlence -> Eğlence Komutlarını gösterir.
 
