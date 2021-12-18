@@ -17,7 +17,7 @@ exports.run = (client, message) => {
       "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`
 
-18.12.2021 ---> Alt yapımız bir yere bağlı olduğundan o yer bir hacklenme durumuyla karşılaşırsa çok sıkıntı bi durum olabilir. Bu yüzden sunucularınızın yedeklerinizi almayı ısrarla öneriyoruz. Xaine Botun tüm güvenlik önemleri alındı Ama siz genede tedbiri elden bırakmayın. Bu yüzden sunucunuzun yedeğini alın ve riske atmayın.
+**18.12.2021** ---> Alt yapımız bir yere bağlı olduğundan o yer bir hacklenme durumuyla karşılaşırsa çok sıkıntı bi durum olabilir. Bu yüzden sunucularınızın yedeklerinizi almayı ısrarla öneriyoruz. Xaine Botun tüm güvenlik önemleri alındı Ama siz genede tedbiri elden bırakmayın. Bu yüzden sunucunuzun yedeğini alın ve riske atmayın.
 
 `);
 
@@ -26,12 +26,12 @@ exports.run = (client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["Vıp-üye-şartları","vıp-üye-şartları","v.ı.p-üye-şartları"],
+  aliases: ["bilgilendirme","Bilgilendirme","BİLGİLENDİRME"],
   permLevel: 0
 };
 
 exports.help = {
-  name: "vıp-üye-avantajları",
-  description: "Vıp üye için gereken şartları gösterir",
-  usage: "+vıp-üye-avantajları"
+  name: "bilgilendirme",
+  description: "Xaine Bot bilgilendirmelerini gösterir",
+  usage: "+bilgilendirme"
 };

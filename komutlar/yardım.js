@@ -13,7 +13,7 @@ Sezon: ** 2. Sezon Kış Sezonu ❄️ **
 
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
 
-**VIP-üye-avantajları** Ve **VIP-üye-şartları** Komutları eklendi!
+**bilgilendirme** Komutu eklendi! Artık Xaine Bot hakkında tüm bilgilendirmeleri görebilirsiniz.
 
 Botdaki bildirilen ve belirlenen tüm yazım yanlışları düzeltildi! Bildiren kullanıcılarımıza teşekkür ederiz.
 
