@@ -40,6 +40,8 @@ Botdaki bildirilen ve belirlenen tüm yazım yanlışları düzeltildi! Bildiren
  > :rosette: | +gif-yardım -> Gif yardım menüsünü gösterir.
  
  > :tickets: | +davet -> Botla ilgili tüm linkleri gösterir.
+
+ > :pencil:  | +bilgilendirme -> Xaine Bot hakkındaki tüm bilgilendirmeleri gösterir.
  
   > :wrench: | +Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.`)
  
