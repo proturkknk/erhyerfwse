@@ -4,7 +4,7 @@ const ms = require("parse-ms");
 
 exports.run = async (client, message, args) => {
 
-  let yilbasi = new Date("2022-02-01 21:03:00");
+  let yilbasi = new Date("2022-01-01 21:00:00");
   let zaman = ms(yilbasi - Date.now());
 
 return message.channel.send(
