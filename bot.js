@@ -1,7 +1,7 @@
 //DEĞİŞKENLER
 
-const {Client, Intents, Collection, MessageEmbed} = require("discord.js");
-const client = new Client({ intents: ['GUILDS','GUILD_MESSAGES'] });
+const {Client, Intents, Collection, MessageEmbed, WebhookClient} = require("discord.js");
+const client = new Client({ intents: [Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 const ayarlar = require("./ayarlar.json");
 const moment = require("moment");
 var Jimp = require("jimp");
@@ -16,7 +16,7 @@ const express = require("express");
 const session = require("express-session");
 const passport = require("passport");
 const Strategy = require("passport-discord").Strategy;
-//const hook = new WebhookClient('825719691745820672', process.env.hook)
+const hook = new WebhookClient({id: 825719691745820672, token: process.env.hook})
 const app = express();
 
 //AYARLAR
@@ -125,7 +125,7 @@ app.get('/reedem', checkAuth, (req, res) => {
       if(m.roles.cache.some(r => r.id == '823466801387405362')) {
         const kod = req.query.fname
         if(!kod) return res.redirect('/')
-        //hook.send(req.user.username+' ('+req.user.id+') tarafından paylaşılan kod:\n\n```js\n'+kod+'```')
+        hook.send(req.user.username+' ('+req.user.id+') tarafından paylaşılan kod:\n\n```js\n'+kod+'```')
         ss = req.user.username
         res.redirect('/')
       }else{
@@ -242,7 +242,7 @@ var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 
 client.login(process.env.token).catch(err => {console.error(err)})
 
-client.on("message", async (message, bot) => {
+client.on("messageCreate", async (message, bot) => {
   if (message.content.startsWith("/spotify")) {
     let user;
     if (message.mentions.users.first()) {
@@ -281,7 +281,7 @@ client.on("message", async (message, bot) => {
 
     let time = `${minutes}:${seconds}`;
 
-    const embed = new Discord.MessageEmbed()
+    const embed = new MessageEmbed()
       .setAuthor(
         "Spotify Parça Bilgisi",
         "https://image.flaticon.com/icons/png/512/2111/2111624.png"
@@ -293,11 +293,11 @@ client.on("message", async (message, bot) => {
       .addField("Artist:", artist, true)
       .addField("Süre:", time, false)
       .addField("Spotifyda Dinle!", `[\`${artist} - ${name}\`](${url})`, false);
-    message.channel.send(embed);
+    message.channel.send({embeds: [embed]});
   }
 });
 
-client.on("message", async (msg, member, guild) => {
+client.on("messageCreate", async (msg, member, guild) => {
   let i = await db.fetch(`saas_${msg.guild.id}`);
   if (i === "açık") {
     if (msg.content.toLowerCase() === "sa") {
@@ -316,7 +316,7 @@ client.on("guildMemberAdd", async member => {
     const modlog = db.fetch(`modlogKK_${member.guild.id}`);
     if (!modlog) return;
     db.delete(`muteli_${member.guild.id + member.id}`);
-    const embed = new Discord.MessageEmbed()
+    const embed = new MessageEmbed()
       .setThumbnail(member.avatarURL())
       .setColor(0x00ae86)
       .setTimestamp()
@@ -325,7 +325,7 @@ client.on("guildMemberAdd", async member => {
       .addField("Yetkili:", `${client.user} (${client.user.id})`)
       .addField("Süre", "10m")
       .addField("Sebep", "Muteliyken Sunucudan Çıkmak.");
-    member.guild.channels.cache.get(modlog).send(embed);
+    member.guild.channels.cache.get(modlog).send({embeds: [embed]});
   }
 });
 //Muteliyken s
@@ -357,7 +357,7 @@ client.on("guildMemberAdd", async (member, message, msg) => {
       let kanalcık = await db.fetch(`fakekanal_${member.guild.id}`);
       let kanal = member.guild.channels.cache.find(r => r.id === kanalcık);
 
-      const embedd = new Discord.MessageEmbed()
+      const embedd = new MessageEmbed()
         .setTitle("Fake hesap yakalandı!")
         .setTimestamp()
         .setDescription(
@@ -365,7 +365,7 @@ client.on("guildMemberAdd", async (member, message, msg) => {
         )
         .setTimestamp()
         .setColor("RANDOM");
-      kanal.send(embedd);
+      kanal.send({embeds: [embedd]});
       member.roles.add(rol);
     } else {
     }
@@ -375,7 +375,7 @@ client.on("guildMemberAdd", async (member, message, msg) => {
 //--------------------------------------------------------//
 
 client.on("guildCreate", guild => {
-  let rrrsembed = new Discord.MessageEmbed()
+  let rrrsembed = new MessageEmbed()
 
     .setColor("GREEN")
     .setTitle(" Bot Eklendi ")
@@ -385,11 +385,11 @@ client.on("guildCreate", guild => {
     .addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
     .addField("Sunucudaki Kişi Sayısı:", guild.memberCount);
 
-  client.channels.get("822453879676600320").send(rrrsembed);
+  client.channels.get("822453879676600320").send({embeds: [rrrsembed]});
 });
 
 client.on("guildCreate", async guild => {
-  let embed = new Discord.MessageEmbed();
+  let embed = new MessageEmbed();
   var botOwnerID = "696365117063036986";
   var guildOwner = guild.owner.user;
   var guildOwnerTag = guild.owner.user.tag;
@@ -426,7 +426,7 @@ client.on("guildCreate", async guild => {
   embed.setFooter(guildName, guild.iconURL);
   embed.setThumbnail(guild.iconURL);
 
-  client.users.cache.get(botOwnerID).send(embed);
+  client.users.cache.get(botOwnerID).send({embeds: [embed]});
 });
 
 function checkAuth(req, res, next) {
@@ -436,7 +436,7 @@ function checkAuth(req, res, next) {
   );
 }
 
-client.on("message" , async msg => {
+client.on("messageCreate" , async msg => {
   if(msg.content.startsWith(ayarlar.prefix+"afk")) return;
  
   let afk = msg.mentions.users.first()
@@ -464,7 +464,7 @@ client.on("message" , async msg => {
  
 });
 
-client.on('message', async message => {
+client.on('messageCreate', async message => {
   
 let aktif = await db.fetch(`reklamEngelcodework_${message.channel.id}`)
 if (!aktif) return 
@@ -480,7 +480,7 @@ message.reply(':x: Hey! Bu sunucuda reklam veya link atamazsın!').then(msg => m
 }
 });
 
-client.on("message", async msg => {
+client.on("messageCreate", async msg => {
  
  
  const i = await db.fetch(`kufur_${msg.guild.id}`)
@@ -522,7 +522,7 @@ client.on("messageUpdate", (oldMessage, newMessage) => {
     if (!i) return;
 });
 
-client.on("message", async msg => {
+client.on("messageCreate", async msg => {
  const i = await db.fetch(`${msg.guild.id}.kufur`)
     if (i) {
         const kufur = ["oç", "amk", "ananı sikiyim", "ananı", "ANANI", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak",  "amcık", "amık", "yarram", "sikimi ye", "mq", "aq",  "amq",];
@@ -568,7 +568,7 @@ var warned = [];
 
 var messageLog = [];
 
-client.on('message', async message => {
+client.on('messageCreate', async message => {
 const spam = await db.fetch(`spam.${message.guild.id}`);
 if(!spam) return;
 const maxTime = await db.fetch(`max.${message.guild.id}.${message.author.id}`);

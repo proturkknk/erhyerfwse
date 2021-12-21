@@ -17,7 +17,6 @@ module.exports = async(message, bot) => {
   let client = message.client;
   if (message.author.bot) return;//
   if (!message.content.startsWith(ayarlar.prefix)) return;
-  console.log(message.content)
   let command = message.content.split(' ')[0].slice(ayarlar.prefix.length);
   let params = message.content.split(' ').slice(1);//
   let perms = client.elevation(message);
