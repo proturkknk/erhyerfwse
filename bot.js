@@ -125,7 +125,7 @@ app.get('/reedem', checkAuth, (req, res) => {
       if(m.roles.cache.some(r => r.id == '823466801387405362')) {
         const kod = req.query.fname
         if(!kod) return res.redirect('/')
-        hook.send(req.user.username+' ('+req.user.id+') tarafından paylaşılan kod:\n\n```js\n'+kod+'```')
+        //hook.send(req.user.username+' ('+req.user.id+') tarafından paylaşılan kod:\n\n```js\n'+kod+'```')
         ss = req.user.username
         res.redirect('/')
       }else{

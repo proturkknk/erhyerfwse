@@ -1,15 +1,17 @@
 const Discord = require ("discord.js");
 const db = require("quick.db");
-import ms from "parse-ms"
 
 exports.run = async (client, message, args) => {
 
   let yilbasi = new Date("2022-01-01 21:00:00");
+  /*
   let zaman = ms(yilbasi - Date.now());
 
 return message.channel.send(
     `:label: **Yılbaşının kutlanmasına Dair Bilgiler Aşağıda;** \n\n> Gün: **${zaman.days}** \n> Saat: **${zaman.hours}** \n> Dakika: **${zaman.minutes}** \n\n:white_check_mark: **Yılbaşının kutlanmasına Bu Kadar Zaman Kaldı!**`
   );
+  */
+  message.channel.send('Bu komut bir süreliğine devre dışıdır!')
 };
 
 exports.conf = {
