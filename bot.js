@@ -1,7 +1,7 @@
 //DEĞİŞKENLER
 
 const {Client, Intents, Collection, MessageEmbed} = require("discord.js");
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client({ intents: ['GUILDS','GUILD_MESSAGES'] });
 const ayarlar = require("./ayarlar.json");
 const moment = require("moment");
 var Jimp = require("jimp");
@@ -226,10 +226,10 @@ client.elevation = message => {
     return;
   }
   let permlvl = 0;
-  if (message.member.hasPermission("MANAGE_MESSAGES")) permlvl = 1;
-  if (message.member.hasPermission("KICK_MEMBERS")) permlvl = 2;
-  if (message.member.hasPermission("BAN_MEMBERS")) permlvl = 3;
-  if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 4;
+  if (message.member.permissions.has("MANAGE_MESSAGES")) permlvl = 1;
+  if (message.member.permissions.has("KICK_MEMBERS")) permlvl = 2;
+  if (message.member.permissions.has("BAN_MEMBERS")) permlvl = 3;
+  if (message.member.permissions.has("ADMINISTRATOR")) permlvl = 4;
   if (ayarlar.sahip.includes(message.author.id)) permlvl = 5;
   return permlvl;
 };

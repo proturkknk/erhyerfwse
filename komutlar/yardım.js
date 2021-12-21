@@ -1,7 +1,7 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 
 exports.run = (client, message, args) => {
- const embed = new Discord.MessageEmbed()
+ const embed = new MessageEmbed()
  .setAuthor(`${client.user.username} Bot Yardım Menüsüne Hoşgeldin!`,client.user.avatarURL())
  .setThumbnail(message.author.avatarURL())
  .setColor('RANDOM')
@@ -51,7 +51,7 @@ Botdaki bildirilen ve belirlenen tüm yazım yanlışları düzeltildi! Bildiren
 .addField(`Duyuru!`,`Hey selam! Ben Xaine | Destek sunucumuza katılmak ister misiniz? Destek sunucumuzda çekilişler, bot hakkında duyurular ve güncellemeleri öğrenebilirsiniz! Katılmak isterseniz üsteki **bağlantılar** bölümünden **Destek sunucusu** yazan yere tıklayabilirsiniz.`)
     .setTimestamp()
     .setImage("https://media.giphy.com/media/rZ3NPLjVRjAtLnwphZ/giphy.gif?cid=790b761116ac64a6f9e3add97dfb3c8126c68b94170377aa&rid=giphy.gif&ct=g")
-message.channel.send(embed) 
+message.channel.send({embeds: [embed]}) 
 //sharpen
 };
 

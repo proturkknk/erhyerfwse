@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 const ayarlar = require('../ayarlar.json');
 const db = require('quick.db');
 const dblapi = require('dblapi.js')
@@ -17,6 +17,7 @@ module.exports = async(message, bot) => {
   let client = message.client;
   if (message.author.bot) return;//
   if (!message.content.startsWith(ayarlar.prefix)) return;
+  console.log(message.content)
   let command = message.content.split(' ')[0].slice(ayarlar.prefix.length);
   let params = message.content.split(' ').slice(1);//
   let perms = client.elevation(message);
@@ -28,7 +29,7 @@ module.exports = async(message, bot) => {
     cmd = client.commands.get(client.aliases.get(command));//
   }
   let sg = false
-  let bakim = new Discord.MessageEmbed()
+  let bakim = new MessageEmbed()
           .setTitle('Bot bakımda! Lütfen daha sonra tekrar Deneyiniz.')
           .setColor('RANDOM')
           .setDescription(`**:warning: Sizlere En iyi şekilde hizmet Verebilmek İçin Bakımdayız.\n:question: :hourglass: Lütfen Daha Sonra Tekrar Deneyin. Bot Ne Durumda Yada Botla İlgili Güncelleme Ve Duyurular İçin Destek Sunucumuza Gelmeyi Unutmayınız. Ayrıca bot neden bakımda ve bakım süresini öğrenmek isterseniz destek sunucumuza gelebilirsiniz. [Destek sunucumuza katılmak için tıkla](https://discord.gg/Kekc2pU)**`)
@@ -52,7 +53,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
         if(!ayarlar.sahip.includes(message.author.id)) {
         const player = db.fetch(`karaliste.${message.author.id}`)//Bots For List Yapımı!
         if(player) return message.channel.send(
-          new Discord.MessageEmbed()
+          new MessageEmbed()
           .setDescription(`**Bu botu kullanamazsınız çünkü yetkili tarafından kara listeye alınmışsınız.**`)//Bots For List Yapımı!
         )
  }
@@ -60,8 +61,8 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
   async function ok() {
     if(sg) return message.channel.send(bakim)
     if (cmd.conf.permLevel === 1) {
-			if (!message.member.hasPermission("MANAGE_MESSAGES")) {//
-				const embed = new Discord.MessageEmbed()
+			if (!message.member.permissions.has("MANAGE_MESSAGES")) {//
+				const embed = new MessageEmbed()
 					.setDescription(`Bu komutu kullanabilmek için **Mesajları Yönet** iznine sahip olmalısın!`)
           .setColor("RED")
 				message.channel.send({embed})
@@ -69,8 +70,8 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
 			}
 		}
 		if (cmd.conf.permLevel === 2) {
-			if (!message.member.hasPermission("KICK_MEMBERS")) {//
-				const embed = new Discord.MessageEmbed()
+			if (!message.member.permissions.has("KICK_MEMBERS")) {//
+				const embed = new MessageEmbed()
 					.setDescription(`Bu komutu kullanabilmek için **Üyeleri At** iznine sahip olmalısın!`)
 					.setColor("RED")//
 				message.channel.send({embed})
@@ -78,8 +79,8 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
 			}
 		}
     if (cmd.conf.permLevel === 3) {
-			if (!message.member.hasPermission("BAN_MEMBERS")) {
-				const embed = new Discord.MessageEmbed()
+			if (!message.member.permissions.has("BAN_MEMBERS")) {
+				const embed = new MessageEmbed()
 					.setDescription(`Bu komutu kullanabilmek için **Üyeleri Yasakla** iznine sahip olmalısın!`)
 					.setColor("RED")
 				message.channel.send({embed})
@@ -87,8 +88,8 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
 			}
 		}
 		if (cmd.conf.permLevel === 4) {
-			if (!message.member.hasPermission("ADMINISTRATOR")) {//
-				const embed = new Discord.MessageEmbed()
+			if (!message.member.permissions.has("ADMINISTRATOR")) {//
+				const embed = new MessageEmbed()
 					.setDescription(`Bu komutu kullanabilmek için **Yönetici** iznine sahip olmalısın!`)
 					.setColor("RED")
 				message.channel.send({embed})
@@ -97,7 +98,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
 		}
 		if (cmd.conf.permLevel === 5) {
 			if (!ayarlar.sahip.includes(message.author.id)) {
-				const embed = new Discord.MessageEmbed()
+				const embed = new MessageEmbed()
 					.setDescription(`Bu komutu sadece **sahibim** kullanabilir!`)
 					.setColor("RED")
 				message.channel.send({embed})
@@ -112,7 +113,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
     cmd.run(client, message, params, perms);
   }
   
-  const hatamesaj = new Discord.MessageEmbed()
+  const hatamesaj = new MessageEmbed()
   .setTitle('Bekle! Biletiniz var mı?')
   .setDescription('**Bu komutu kullanmak için Destek sunucumuza katılıp bota oy vermeniz gerekmektedir.\n\n[Oy Ver](https://top.gg/bot/774235071653216286/vote), [Sunucuya Katıl](https://discord.gg/99C4tGzgK4)**')
   .setColor('RANDOM')
