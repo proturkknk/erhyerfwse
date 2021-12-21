@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 exports.run = async (client, message, args) => {
 
     
@@ -6,14 +6,13 @@ exports.run = async (client, message, args) => {
 var page = 0;
  
 let arr = [];
-let emojiarr = message.guild.emojis.cache.array();
-for(let i =0; Number(i + "0") < (Math.round(emojiarr.length/10)*10 +1); ++i) {
-var on = emojiarr.slice(Number(i + "0"), Number(i + "0")+10)
-arr.push(on.toString())
-}
+message.guild.emojis.cache.forEach(e => {
+  arr.push(e)
+})
 
-let embd = new Discord.MessageEmbed()
-message.channel.send(embd.setDescription(arr[0]).setDescription('<:civcivkalp:853213881111150642>  Xaine Bot eğlence komutları menüsüne hoş geldiniz. Sayfaları değiştirerek kodları görebilirsiniz, İyi eğlenceler!')).then(async msg => {
+let embd = new MessageEmbed()
+.setDescription('<:civcivkalp:853213881111150642>  Xaine Bot eğlence komutları menüsüne hoş geldiniz. Sayfaları değiştirerek kodları görebilirsiniz, İyi eğlenceler!')
+message.channel.send({embeds: embd}).then(async msg => {
       await msg.react("⬅️");
       await msg.react("➡️");
 
