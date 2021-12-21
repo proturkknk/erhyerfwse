@@ -1,15 +1,15 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 exports.run = (client, message) => {
   if (!message.guild) {
-    const ozelmesajuyari = new Discord.MessageEmbed()
+    const ozelmesajuyari = new MessageEmbed()
       .setColor()
       .setTimestamp("RANDOM")
       .setAuthor(message.author.username, message.author.avatarURL)
       .addField("**Komutları Özel Mesajlarda Kullanılamaz!**");
-    return message.author.send(ozelmesajuyari);
+    return message.author.send({embeds: [ozelmesajuyari]});
   }
-  const EmbedCrewCode = new Discord.MessageEmbed()
+  const EmbedCrewCode = new MessageEmbed()
 
     .setColor("RANDOM")
     .setTitle("**  Xaine Bot  **")
@@ -27,7 +27,7 @@ Dikkat! :warning: VIP Üye Sistemimiz şuan aktif değildir. Gelişmeleri Destek
 
 `);
 
-  return message.channel.send(EmbedCrewCode).then;
+  return message.channel.send({embeds: [EmbedCrewCode]})
 };
 exports.conf = {
   enabled: true,

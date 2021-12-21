@@ -12,7 +12,7 @@ message.guild.emojis.cache.forEach(e => {
 
 let embd = new MessageEmbed()
 .setDescription('<:civcivkalp:853213881111150642>  Xaine Bot eğlence komutları menüsüne hoş geldiniz. Sayfaları değiştirerek kodları görebilirsiniz, İyi eğlenceler!')
-message.channel.send({embeds: embd}).then(async msg => {
+message.channel.send({embeds: [embd]}).then(async msg => {
       await msg.react("⬅️");
       await msg.react("➡️");
 

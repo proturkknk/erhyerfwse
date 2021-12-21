@@ -1,14 +1,14 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
-    const matador = new Discord.MessageEmbed()
+    const embed = new MessageEmbed()
     .setAuthor('23 Nisan Ulusal Egemenlik Ve Çocuk Bayramı Kutlu Olsun! ')
     .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://media.giphy.com/media/ohURfnxIDqCa49jZ2p/giphy.gif`)
-    return message.channel.send(matador);
+    return message.channel.send({embeds: [embed]});
 };
 
 exports.conf = {

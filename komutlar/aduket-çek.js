@@ -1,17 +1,17 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 exports.run = function(client, message, args) {
 
-const matador = message.mentions.users.first();
+const cu = message.mentions.users.first();
 
-if (!matador)
+if (!cu)
 
 return message.reply("**Aduket Çekeceğin Kişiyi Etiketlemelisin**");
 
-const Embedmatador = new Discord.MessageEmbed()
+const Embedmatador = new MessageEmbed()
 
     .setDescription(
-      `${matador} ` + `**${message.author.username}** Size Aduket Çekti!`
+      `${cu} ` + `**${message.author.username}** Size Aduket Çekti!`
     )
     .setImage(
       "https://cdn.discordapp.com/attachments/747769679984066582/748464442249052251/street-fighter-60854-18102018130021.gif"
@@ -19,7 +19,7 @@ const Embedmatador = new Discord.MessageEmbed()
     .setFooter(client.user.username + " Sundu", client.user.avatarURL)
     .setTimestamp();
 
-return message.channel.send(Embedmatador);
+return message.channel.send({embeds: [Embedmatador]});
 };
 
 exports.conf = {
@@ -31,6 +31,6 @@ exports.conf = {
 
 exports.help = {
   name: "aduketçek",
-  description: "matador",
+  description: "",
   usage: "aduket-çek <etiket>"
 };

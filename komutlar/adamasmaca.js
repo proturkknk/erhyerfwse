@@ -182,7 +182,7 @@ module.exports.run = async (bot, message, args) => {
 
                     max: 1,
 
-                    time: 300000
+                    time: 30000
 
                 });
 

@@ -1,14 +1,14 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
-    const matador = new Discord.MessageEmbed()
+    const embed = new MessageEmbed()
     .setAuthor('19 Mayıs Atatürkü Anma Gençlik Ve Spor Bayramı Kutlu Olsun!')
     .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://media.giphy.com/media/JTDLcjTwIKpcEzsABn/giphy.gif`)
-    return message.channel.send(matador);
+    return message.channel.send({embeds: [embed]});
 };
 
 exports.conf = {
