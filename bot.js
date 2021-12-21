@@ -1,11 +1,10 @@
 //DEĞİŞKENLER
 
-const Discord = require("discord.js");
-const client = new Discord.Client();
+const {Client, Intents} = require("discord.js");
+const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 const ayarlar = require("./ayarlar.json");
 const moment = require("moment");
 var Jimp = require("jimp");
-const { Client, Util } = require("discord.js");
 const fs = require("fs");
 const db = require("quick.db");
 const http = require("http");

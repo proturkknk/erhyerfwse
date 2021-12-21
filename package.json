@@ -1,0 +1,26 @@
+{
+  "name": "XAINE",
+  "version": "3.1",
+  "description": "Xaine Discord Botu",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^13.3.1",
+    "moment": "^2.29.1",
+    "jimp": "^0.16.1"
+  },
+  "engines": {
+    "node": "16.6"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/glitch-hello-node"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
