@@ -1,13 +1,13 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 
 exports.run = function(client, message, args) {
   
-  const alkış = new Discord.MessageEmbed()
+  const alkış = new MessageEmbed()
   .setDescription("**BRAVOOO!!!**")
   .setColor("RANDOM")
   .setImage("https://media.giphy.com/media/dKXjvcJU9pPEKnWufl/giphy.gif")
 
-  message.channel.send(alkış);
+  message.channel.send({embeds: [alkış]});
 };
 
 exports.conf = {

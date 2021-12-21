@@ -59,12 +59,13 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
   
   async function ok() {
     if(sg) return message.channel.send(bakim)
+    if(!cmd) return
     if (cmd.conf.permLevel === 1) {
 			if (!message.member.permissions.has("MANAGE_MESSAGES")) {//
 				const embed = new MessageEmbed()
 					.setDescription(`Bu komutu kullanabilmek için **Mesajları Yönet** iznine sahip olmalısın!`)
           .setColor("RED")
-				message.channel.send({embed})
+				message.channel.send({embeds: [embed]})
 				return
 			}
 		}
@@ -73,7 +74,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
 				const embed = new MessageEmbed()
 					.setDescription(`Bu komutu kullanabilmek için **Üyeleri At** iznine sahip olmalısın!`)
 					.setColor("RED")//
-				message.channel.send({embed})
+				message.channel.send({embeds: [embed]})
 				return//
 			}
 		}
@@ -82,7 +83,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
 				const embed = new MessageEmbed()
 					.setDescription(`Bu komutu kullanabilmek için **Üyeleri Yasakla** iznine sahip olmalısın!`)
 					.setColor("RED")
-				message.channel.send({embed})
+				message.channel.send({embeds: [embed]})
 				return
 			}
 		}
@@ -91,7 +92,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
 				const embed = new MessageEmbed()
 					.setDescription(`Bu komutu kullanabilmek için **Yönetici** iznine sahip olmalısın!`)
 					.setColor("RED")
-				message.channel.send({embed})
+				message.channel.send({embeds: [embed]})
 				return
 			}
 		}
@@ -100,7 +101,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
 				const embed = new MessageEmbed()
 					.setDescription(`Bu komutu sadece **sahibim** kullanabilir!`)
 					.setColor("RED")
-				message.channel.send({embed})
+				message.channel.send({embeds: [embed]})
 				return
 			}
 		}
@@ -125,7 +126,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
             if(c && sunucu.members.cache.get(message.author.id)){
               ok()
             }else{
-              message.channel.send(hatamesaj)
+              message.channel.send({embeds: [hatamesaj]})
             }
           })
         }else{

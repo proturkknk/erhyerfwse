@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 
 exports.run = async (client, message, args) => {
   const yazi = args.slice(0).join('+'); 
@@ -8,12 +8,12 @@ exports.run = async (client, message, args) => {
   .replace(' ', '+')
 
   
-  const embed = new Discord.MessageEmbed()
+  const embed = new MessageEmbed()
   .setTitle("Logo")
   .setColor("RANDOM")
   .setImage(linqo)
   .setFooter('Xaine Bot | Alevli Logo Oluşturuldu.')
-  message.channel.send(embed)
+  message.channel.send({embeds: [embed]})
 }
 exports.conf = {
     enabled: true,

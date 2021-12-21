@@ -1,6 +1,6 @@
 const settings = require('../ayarlar.json');
 const prefix = settings.prefix;
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const db = require('quick.db')
 
 exports.run = async (client, msg) => {
