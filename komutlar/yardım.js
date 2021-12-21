@@ -11,6 +11,8 @@ exports.run = (client, message, args) => {
 Kullanılan Xaine Bot sürümü: **3.9**
 Sezon: ** 2. Sezon Kış Sezonu ❄️ **
 
+BİLGİLENDİRME: Botumuz v13 sürümüne geçtiği için bazı Komutlar çalışmıyor. Bugün(22 Aralık 2021) akşama kadar sorun düzelecek. Anlayışınız için teşekkür ederiz.
+
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
 
 **bilgilendirme** Komutu eklendi! Artık Xaine Bot hakkında tüm bilgilendirmeleri görebilirsiniz.
