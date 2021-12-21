@@ -1,6 +1,6 @@
 //DEĞİŞKENLER
 
-const {Client, Intents} = require("discord.js");
+const {Client, Intents, Collection, MessageEmbed} = require("discord.js");
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 const ayarlar = require("./ayarlar.json");
 const moment = require("moment");
@@ -16,7 +16,7 @@ const express = require("express");
 const session = require("express-session");
 const passport = require("passport");
 const Strategy = require("passport-discord").Strategy;
-const hook = new Discord.WebhookClient('825719691745820672', process.env.hook)
+//const hook = new WebhookClient('825719691745820672', process.env.hook)
 const app = express();
 
 //AYARLAR
@@ -155,8 +155,8 @@ const log = message => {
   console.log(`${message}`);
 };
 
-client.commands = new Discord.Collection();
-client.aliases = new Discord.Collection();
+client.commands = new Collection();
+client.aliases = new Collection();
 fs.readdir("./komutlar/", (err, files) => {
   if (err) console.error(err);
   log(`${files.length} komut yüklenecek.`);
@@ -561,7 +561,7 @@ client.on("messageUpdate", async msg => {
 });
 
 
-const dctrat = require('dctr-antispam.js'); 
+ 
 
 var authors = [];
 var warned = [];
@@ -577,7 +577,7 @@ db.add(`mesaj.${message.guild.id}.${message.author.id}`, 1)
 if(timeout) {
 const sayÄ = await db.fetch(`mesaj.${message.guild.id}.${message.author.id}`);
 if(Date.now() < maxTime) {
-  const westraaaaam = new Discord.MessageEmbed()
+  const westraaaaam = new MessageEmbed()
   .setColor('RANDOM')
   .setDescription(`<@${message.author.id}> , **Bu sunucuda spam yapmak yasak!**`)
  // .setFooter(`Bu mesaj otomatik olarak silinecektir.`)
