@@ -1,7 +1,6 @@
 
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
-const client = new Discord.Client();
 
 exports.run = (client, message, args) => {
 
@@ -21,7 +20,7 @@ exports.run = (client, message, args) => {
 
     return message.channel.send(
 
-      new Discord.MessageEmbed()
+      new MessageEmbed()
 
         .setColor("RANDOM")
 
@@ -55,7 +54,7 @@ exports.run = (client, message, args) => {
 
         .send(
 
-          new Discord.MessageEmbed()
+          new MessageEmbed()
 
  
 
@@ -109,7 +108,7 @@ exports.run = (client, message, args) => {
 
         .send(
 
-          new Discord.MessageEmbed()
+          new MessageEmbed()
 
  
 

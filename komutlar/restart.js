@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
 const ayarlar = require("../ayarlar.json")
 
 module.exports.run = async (bot, message, args) => {
