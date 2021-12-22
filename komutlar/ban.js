@@ -1,14 +1,14 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 const fs = require("fs");
 
 exports.run = (client, message, args) => {
   if (!message.guild) {
-    const ozelmesajuyari = new Discord.MessageEmbed()
+    const ozelmesajuyari = new MessageEmbed()
       .setColor("RANDOM")
       .setTimestamp()
       .setAuthor(message.author.username, message.author.avatarURL)
       .addField(" :warning: Uyarı!", "`ban` adlı komutu özel mesajlarda kullanamazsın.");
-    return message.author.send(ozelmesajuyari);
+    return message.author.send({embeds: [ozelmesajuyari]});
   }
   let guild = message.guild;
   let reason = args.slice(1).join(" ");
@@ -21,7 +21,7 @@ exports.run = (client, message, args) => {
 
   if (!message.guild.member(dızcılaraselam).bannable)
     return message.channel.send(
-      `❌ Belirttiğiniz kişinin Yetkisi Benden Daha Üstün!`
+      `❌ Belirttiğiniz kişinin Yetkisi Benden Daha Üstün. O yüzden Banlayamıyorum.(Yasaklama)`
     );
   message.guild.member(dızcılaraselam).ban();
 

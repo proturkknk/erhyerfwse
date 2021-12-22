@@ -1,8 +1,8 @@
-const Discord = require ("discord.js");
+const {MessageEmbed} = require ("discord.js");
 
 exports.run = (client, message) => {
 
-const EmbedFwhyCode = new Discord.MessageEmbed()
+const EmbedFwhyCode = new MessageEmbed()
 
 .setColor("RANDOM")
 .setAuthor('**▬▬▬[** ©️ **Xaine Bot (V12)** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`','https://nolur.com/nah.jpg')
@@ -27,10 +27,10 @@ Not: **küfür-engel** komutu şartlı moderasyon komutudur.
 `)
 .setImage(`https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif`)
  
-.setFooter(client.user.username + "", client.user.avatarURL)
+.setFooter(client.user.username + "", client.user.avatarURL())
 .setTimestamp();
 
-return message.channel.send(EmbedFwhyCode)
+return message.channel.send({embeds: [EmbedFwhyCode]})
 .then; 
 
 };

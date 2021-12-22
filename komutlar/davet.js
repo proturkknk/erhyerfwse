@@ -1,7 +1,7 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 exports.run = (client, message, args) => {
-  const motion = new Discord.MessageEmbed()
+  const motion = new MessageEmbed()
     .setColor("RANDOM")
     .setAuthor(`Xaine`, client.user.avatarURL)
     .addField(
@@ -44,7 +44,7 @@ exports.run = (client, message, args) => {
     .setThumbnail(
       "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     );
-  message.channel.send(motion);
+  message.channel.send({embeds: [motion]});
 };
 
 exports.conf = {

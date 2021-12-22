@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 exports.run = (client, message, args) => {
   
  var boksmakinesi = ['Boks Makinesi Sonucu ・ **3000 Boks Makinesi Kırıldı!** !', 
@@ -16,11 +16,11 @@ exports.run = (client, message, args) => {
                 ];
  var cevap = boksmakinesi[Math.floor(Math.random() * boksmakinesi.length)];
   
- const gamerwolf = new Discord.MessageEmbed()
+ const gamerwolf = new MessageEmbed()
  .setColor(`RANDOM`)
  .setDescription(":boxing_glove: " + cevap)
  .setImage('https://media.giphy.com/media/Rl4yxxVEvUge8b5mkW/giphy.gif')
-message.channel.send(gamerwolf)
+message.channel.send({embeds: [gamerwolf]})
   
   
 };

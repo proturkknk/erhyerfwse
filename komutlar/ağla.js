@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 const bot = require("../bot.js");
 
 exports.run = (client, message) => {
@@ -9,15 +9,15 @@ exports.run = (client, message) => {
     return;
   }
   if (!message.guild) {
-    const motion = new Discord.MessageEmbed()
+    const motion = new MessageEmbed()
       .setColor(0xff0000)
       .setTimestamp()
       .setAuthor(message.author.username, message.author.avatarURL)
       .addField("**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**");
-    return message.author.sendEmbed(motion);
+    return message.author.send({embeds: [motion]});
   }
   if (message.channel.type !== "dm") {
-    const motion = new Discord.MessageEmbed()
+    const motion = new MessageEmbed()
       .setAuthor("Bot Ağladı Bence özür dile. :(")
       .setColor(3447003)
       .setTimestamp()
@@ -25,7 +25,7 @@ exports.run = (client, message) => {
       .setImage(
         `https://media.giphy.com/media/ItEU0SMeoOr1XQqQz4/giphy.gif`
       );
-    return message.channel.send(motion);
+    return message.channel.send({embeds: [motion]});
   }
 };
 

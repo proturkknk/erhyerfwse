@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 exports.run = function(client, message, args) {
 
@@ -6,7 +6,7 @@ const matador = message.mentions.users.first();
 
 if (!matador) return message.reply("Beşlik Çakacağın Kişiyi Etiketlemelisin");
 
-const Embedmatador = new Discord.MessageEmbed()
+const Embedmatador = new MessageEmbed()
 
     .setDescription(
       `${matador} ` + `ve **${message.author.username}** Beşlik Çaktı`
@@ -16,7 +16,7 @@ const Embedmatador = new Discord.MessageEmbed()
     )
     .setFooter(client.user.username + " Sundu", client.user.avatarURL)
   
- return message.channel.send(Embedmatador);
+ return message.channel.send({embeds: [Embedmatador]});
 };
 exports.conf = {
   enabled: true,

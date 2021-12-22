@@ -33,18 +33,18 @@ exports.run = async (client, msg, args) => {
       "Aşkölçer %100 Gösteriyor.",
     ]
       let member = msg.mentions.members.first()
-     if(!member)return msg.channel.send({embed: {
+     if(!member)return msg.channel.send({embeds: [{
    color: Math.floor(Math.random() * (0xFFFFFF + 1)),
    description: ('🚫 Kimi Sevdiğini etiketlemelisin..')
-  }});
+  }]});
  
  
  
     else{
-    msg.channel.send({embed: {
+    msg.channel.send({embeds: [{
    color: Math.floor(Math.random() * (0xFFFFFF + 1)),
    description: (`${member} ${ask[Math.floor(Math.random() * 30)]}.`)
-    }})
+    }]})
     }
  
  

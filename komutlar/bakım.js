@@ -1,5 +1,5 @@
-const Discord = require('discord.js');
 const db = require('quick.db')
+
 exports.run = async(client, message, args) => {
   let arg = args[0]
   let sebep = args.slice(2).join(" ")
