@@ -1,11 +1,11 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 exports.run = (client, message, args) => {
 
   let mesaj = args.slice(0).join(" ");
   if (mesaj.length < 1) return message.channel.send("Kime sarılacaksın? Lütfen o kişiyi etiketler misin? örnek: +sarıl @TREFAX#0362");
 
-const Embedmatador = new Discord.MessageEmbed()
+const Embedmatador = new MessageEmbed()
 
     .setAuthor(" ")
     .setColor('RANDOM')
@@ -17,7 +17,7 @@ const Embedmatador = new Discord.MessageEmbed()
     .setImage(
                `https://media.giphy.com/media/sFpS4ZHKYTp6yMNDEU/giphy.gif`
  );
-  return message.channel.send(Embedmatador);
+  return message.channel.send({embeds: [Embedmatador]});
 };
 
 exports.conf = {

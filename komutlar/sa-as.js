@@ -1,10 +1,9 @@
 const db = require('quick.db')
-const Discord = require('discord.js')
 
 exports.run = async (bot, message, args) => {
   
   
-  if (!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send(':warning: Bu komudu kullanabilmek için `Sunucuyu Yönet` yetkisine sahip olmalısın!')
+  if (!message.member.permissions.has('MANAGE_GUILD')) return message.channel.send(':warning: Bu komudu kullanabilmek için `Sunucuyu Yönet` yetkisine sahip olmalısın!')
   if (!args[0]) return message.channel.send(':warning: **Sa-as yazısını açmak için `sa-as aç veya kapat`**')
   
   if (args[0] == 'aç') {

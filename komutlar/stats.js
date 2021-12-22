@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const config = require('../ayarlar.json');
 const os = require('os');
 
@@ -16,7 +16,7 @@ module.exports.run = async (client, message, args) => {
     let NodeVersion = process.version;
     let cores = os.cpus().length;
 
-    let stats = new Discord.MessageEmbed()
+    let stats = new MessageEmbed()
     .setAuthor('Xaine Bot')
     .setTitle(`İşte bilgilerim ${client.user.username}`)
     .setColor('RED')
@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args) => {
     .addField("Kanal sayısı", `${channelscount}`, true)
     .setTimestamp()
     .setFooter(`${message.author.tag}`, message.author.displayAvatarURL());
-    message.channel.send(stats);
+    message.channel.send({embeds: [stats]});
 };
 
 exports.conf = {

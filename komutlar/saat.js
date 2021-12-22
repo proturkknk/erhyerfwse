@@ -1,13 +1,13 @@
-const Discord = require('discord.js')
+const {MessageEmbed} = require('discord.js')
 
 exports.run = (client, message, params) => {
-const embed = new Discord.MessageEmbed()
+const embed = new MessageEmbed()
 .setTitle(':flag_tr: Türkiyemizin Saati Aşağıda Yazmaktadır.')
 .setTimestamp()
 .setFooter('Türkiyemizin Saati ->')
 .setColor('RANDOM')
 
-message.channel.send(embed)
+message.channel.send({embeds: [embed]})
 }
 
 exports.conf = {

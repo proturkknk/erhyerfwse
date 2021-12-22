@@ -1,8 +1,8 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 exports.run = (client, message) => {
 
-const Embedmatador = new Discord.MessageEmbed()
+const e = new MessageEmbed()
 
       .setAuthor("Taksim Dayı!")//matador
       .setColor(3447003)
@@ -11,7 +11,7 @@ const Embedmatador = new Discord.MessageEmbed()
       .setURL("https://cdn.discordapp.com/attachments/757801669839814677/758308330585325619/taksim.gif")
       .setImage(`https://cdn.discordapp.com/attachments/757801669839814677/758308330585325619/taksim.gif`);
 
-return message.channel.send(Embedmatador);
+return message.channel.send({embeds: [e]});
 
 };
 exports.conf = {

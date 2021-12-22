@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 exports.run = function(client, message, args) {
 
@@ -10,7 +10,7 @@ return message
       .reply("**Kimi Tokatlayacam Reis Etiketlede Vurayım Ağzının Ortasına :D (ironi) **")
       .catch(console.error);
 
-const Embedmatador = new Discord.MessageEmbed()
+const Embedmatador = new MessageEmbed()
 
     .setColor("RANDOM")
     .setDescription(
@@ -19,7 +19,7 @@ const Embedmatador = new Discord.MessageEmbed()
     .setImage("https://media.giphy.com/media/OMuDN8lGwgJQcUBJC2/giphy.gif")
     .setFooter("Xaine", client.user.avatarURL);
 
-message.channel.send(Embedmatador);
+message.channel.send({embeds: [Embedmatador]});
 
 };
 

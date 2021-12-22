@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 const ayarlar = require('../ayarlar.json');
 
 module.exports.run = async (bot, message, args, user) => {
@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args, user) => {
   let year = message.guild.createdAt.getFullYear()
   let sicon = message.guild.iconURL;
   
-   let serverembed = new Discord.MessageEmbed()
+   let serverembed = new MessageEmbed()
    
    .setAuthor('Sunucu bilgisi')
    
@@ -23,7 +23,7 @@ module.exports.run = async (bot, message, args, user) => {
    .addField("Kanallar", message.guild.channels.size, true)
    .addField("Roller", message.guild.roles.size, true)
    
-   message.channel.send(serverembed);
+   message.channel.send({embeds: [serverembed]});
 
 }
 

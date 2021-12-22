@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 
 exports.run = async (client, message, args) => {
@@ -86,7 +86,7 @@ exports.run = async (client, message, args) => {
                                                     const tarih = splituras.reverse()
 
 
-                                                    const embed = new Discord.MessageEmbed()
+                                                    const embed = new MessageEmbed()
                                                         .setAuthor(`${ulke} Oyuncusunun Bilgileri`, `https://www.roblox.com/Thumbs/Avatar.ashx?x=420&y=420&username=${ulke}`)
                                                         .setColor(`RANDOM`)
                                                         .setThumbnail(`https://www.roblox.com/Thumbs/Avatar.ashx?x=420&y=420&username=${ulke}`)
@@ -100,7 +100,7 @@ exports.run = async (client, message, args) => {
                                                         .addField(`Yasaklı Mı?`, `${isBanned}`, true)
                                                         .addField(`Hesap Oluşturulma Tarihi`, `${tarih[2]}-${tarih[1]}-${tarih[0]}`, true)
                                                         .setFooter("Xaine Bot | Bilgiler her zaman doğru olmayabilir.")
-                                                    message.channel.send(embed)
+                                                    message.channel.send({embeds: [embed]})
 
 
                                                 })

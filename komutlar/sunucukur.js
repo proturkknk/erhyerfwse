@@ -1,4 +1,3 @@
-const Discord = require('discord.js');
 const { stripIndents } = require('common-tags');
 const db = require("quick.db")
 const ayarlar = require('../ayarlar.json')

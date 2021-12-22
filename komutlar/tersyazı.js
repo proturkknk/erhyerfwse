@@ -1,4 +1,3 @@
-const discord = require('discord.js')
 exports.run = function(client, message, args,params) {
 
   if (args.length < 1) {

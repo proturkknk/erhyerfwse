@@ -1,11 +1,11 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 exports.run = (client, message, args) => {
-  const rexus = new Discord.MessageEmbed()
+  const rexus = new MessageEmbed()
     .setColor("RANDOM")
     .setDescription("Şuanda kullanılan Xaine Bot sürümü: 3.8")
     
-  message.channel.send(rexus);
+  message.channel.send({embeds: [rexus]});
 };
 
 exports.conf = {

@@ -1,4 +1,4 @@
-const Discord = require('discord.js')
+const {MessageEmbed} = require('discord.js')
 var steam = require('steam-provider')
 var provider = new steam.SteamProvider();
 
@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
     provider.search(game).then(result => {
     provider.detail(result[0].id, "turkey", "tr").then(results => {
         console.log(results)
-    const embed = new Discord.MessageEmbed()
+    const embed = new MessageEmbed()
     .setAuthor(' Xaine Bot | Steam Store', steampng)
   .setColor("RANDOM")
     .setTitle(result[0].name)
@@ -24,7 +24,7 @@ exports.run = (client, message, args) => {
     .addField('Geliştiricileri', results.otherData.developer, true)
     .setFooter(`Xaine Bot`)
   .setColor("RANDOM")
-    message.channel.send(embed).catch(e => {
+    message.channel.send({embeds: [embed]}).catch(e => {
         console.log(e)
         message.reply('Bi sorunla karşılaşıldı! Hata oluştu ya da `' + game + '` adlı oyun bulunamadı')
     })

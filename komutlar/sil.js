@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
 exports.run = function(client, message, args) {
@@ -6,11 +6,11 @@ exports.run = function(client, message, args) {
   if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply(`Bu komutu kullanabilmek için **Mesajları Yönet** iznine sahip olmalısın!`);
   
 if(isNaN(args[0])) {
-  var errembed = new Discord.MessageEmbed()
+  var errembed = new MessageEmbed()
     .setColor("RANDOM")
     .addField(`Yanlış Kullanım!`, `Bir rakam yazmalısın!`)
     .addField(`Doğru Kullanım:`, `${ayarlar.prefix}sil <temizlenecek mesaj sayısı>`)
-return message.channel.send(errembed);
+return message.channel.send({embeds: [errembed]});
 }
   
 if (args[0] < 1) return message.reply("**1** adetten az mesaj silemem!")
