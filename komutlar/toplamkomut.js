@@ -1,11 +1,11 @@
-const Discord = require('discord.js')
+const {MessageEmbed} = require('discord.js')
 exports.run = function(client, message, args) {
 
-const embed = new Discord.MessageEmbed()
+const embed = new MessageEmbed()
 .setTimestamp()
 .setFooter(`${message.author.tag} Tarafından İstendi.`)
 .addField(`Botta Bulunan Toplam Komut Sayısı`,`${client.commands.size}`)
-  message.channel.send(embed)
+  message.channel.send({embeds: [embed]})
   
   
 };

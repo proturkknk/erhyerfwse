@@ -1,4 +1,3 @@
-const Discord = require('discord.js');
 const { delay, randomRange, verify } = require('../utils/Util');
 const words = ['çikolata', 'vortex', 'odun', 'bomba', 'süt', 'şimşek', 'yıldırım', 'patlat', 'savaş', 'kelime', 'yok et', 'bilmem', 'öldür', 'sonsuzluk', 'gerçek','dondurma','klasik','xaine','discord','bot',];
 

@@ -1,9 +1,9 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 exports.run = function(client, message, args) {
     let teamtr = message.mentions.users.first();
     if (!teamtr) return message.channel.send('**Çıkma teklifi edeceğin kişiyi etiketler misin?**');
     let dm = args.slice(1).join(' ');
-    const dmat = new Discord.MessageEmbed()
+    const dmat = new MessageEmbed()
     .setColor('RANDOM')
     .setTimestamp()
     .setTitle('Biri Sana Çıkma Teklifi Etti! ❤️')

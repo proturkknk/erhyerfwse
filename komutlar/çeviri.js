@@ -1,5 +1,5 @@
 
-const Discord = require('discord.js')
+const {MessageEmbed} = require('discord.js')
 const fs = require('fs')
 const translate = require('node-google-translate-skidz');
 const embedrenk = "#FFFFFF"
@@ -153,27 +153,27 @@ exports.run = async (client, message, args) => {
 	var text = args.slice(1).join(" ");
 	var lang = args[0]
 	if(!lang) {
-		const embed = new Discord.MessageEmbed()
+		const embed = new MessageEmbed()
 			.setDescription(`Lütfen geçerli bir dil yazın! Dillere [buradan](https://www.deepbilgi.com/tum-ulkelerin-iso-dil-kodlari.html) ülkelerin dil kodlarına bakabilirsin.`)
 			.setColor(embedrenk)
 			.setTimestamp()
-		message.channel.send({embed})
+		message.channel.send({embeds: [embed]})
 		return
 	}
 	if(!text) {
-		const embed = new Discord.MessageEmbed()
+		const embed = new MessageEmbed()
 			.setDescription(`Lütfen geçerli bir yazı yazın!`)
 			.setColor(embedrenk)
 			.setTimestamp()
-		message.channel.send({embed})
+		message.channel.send({embeds: [embed]})
 		return
 	}
 	if(lang === "tr") {
-		const embed = new Discord.MessageEmbed()
+		const embed = new MessageEmbed()
 			.setDescription(` :warning: Hata!: Lütfen Türkçe dışında bir dil yazın. Dillere [Bu linkten](https://www.deepbilgi.com/tum-ulkelerin-iso-dil-kodlari.html) bakabilirsiniz.`)
 			.setColor(embedrenk)
 			.setTimestamp()
-		message.channel.send({embed})
+		message.channel.send({embeds: [embed]})
 		return
 	}
 	translate({
@@ -182,25 +182,25 @@ exports.run = async (client, message, args) => {
 		target: lang
 	}).then(result => {
 		if(dil[args[0]] === undefined) {
-			const embed = new Discord.MessageEmbed()
+			const embed = new MessageEmbed()
 				.setDescription(`:warning: Hata!: Bu dilde çeviri hizmetimiz bulunmuyor veya yazılan yazıyı çevremedik.`)
 				.setColor(embedrenk)
 				.setTimestamp()
-			message.channel.send({embed})
+			message.channel.send({embeds: [embed]})
 			return
 		}
-		const embed = new Discord.MessageEmbed()
+		const embed = new MessageEmbed()
 			.setAuthor(`Çeviri`, 'https://cdn.discordapp.com/avatars/774235071653216286/ebccb2ef43cc310d90fb1b24e21afb4b.webp', 'https://translate.google.com/')
 			.addField(`Türkçe ---> ${dil[args[0]]}`, result.translation)
 			.setColor(embedrenk)
 			.setTimestamp()
-		message.channel.send({embed})
+		message.channel.send({embeds: [embed]})
 	}).catch(err => {
-		const embed = new Discord.MessageEmbed()
+		const embed = new MessageEmbed()
 			.setDescription(`:warning: Hata!: Bu dilde çeviri hizmetimiz bulunmuyor veya çeviremedik.`)
 			.setColor(embedrenk)
 			.setTimestamp()
-		message.channel.send({embed})
+		message.channel.send({embeds: [embed]})
 		return
 	})
 }

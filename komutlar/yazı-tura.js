@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const db = require('quick.db')
 
 module.exports.run = async (bot, message, args) => {
@@ -12,7 +12,7 @@ const liste = await db.fetch('list');
       const yasaklayan = kullanıcı.yasaklayan
       const sebep = kullanıcı.sebep
 
-      const embed = new Discord.RichEmbed()
+      const embed = new MessageEmbed()
       .setTitle('Karaliste')
       .setDescription('Neden Karalistem Var?')
       .setThumbnail(message.author.avatarURL)
@@ -20,7 +20,7 @@ const liste = await db.fetch('list');
       .setColor('RED')
       .setTimestamp()
 
-      message.channel.send(embed)
+      message.channel.send({embeds: [embed]})
       return
     }
   }

@@ -1,9 +1,8 @@
-const Discord = require('discord.js');
 exports.run = (client, message, args) => {
       
    if (!message.guild) {
   return message.author.send(':x: Bu komut özel mesajlarda kullanma kapatılmıştır.'); }  
-  if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(`Bu komutu kullanabilmek için **Kullanıcıları At** yetkisine sahip olmalısın.`);
+  if (!message.member.permissions.has("KICK_MEMBERS")) return message.channel.send(`Bu komutu kullanabilmek için **Kullanıcıları At** yetkisine sahip olmalısın.`);
   let sunucu = message.guild;
   let uyarilacak = message.mentions.users.first();
   let sebep = args.slice(1).join(' ');
