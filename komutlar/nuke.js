@@ -1,14 +1,14 @@
-const Discord = require("discord.js")
+const {MessageEmbed} = require("discord.js")
 
 exports.run = async (client, message, args) => {
  if (!message.member.permissions.has("MANAGE_GUILD")) return message.channel.send(`❌ Bu Komutu Kullana Bilmek İçin \`Mesajları Yönet\` Yetkisine Sahip Olmalısın!`)
-  const onayembed = new Discord.MessageEmbed()
+  const onayembed = new MessageEmbed()
   .setColor("RANDOM")
   .setTimestamp()
   .setAuthor("Xaine Bot Nuke Komutu")
   .setFooter("Onaylamak için 👍 emojisine, onaylamamak içinse 👎 emojisine tıklayabilirsiniz.")
   .setDescription("** :warning: UYARI!** \n\nEğer nuke işlemini onaylarsanız bu kanal kalıcı olarak **silinecek**,\n**geri getirilemeyecektir!**\nAncak bu kanalın **kopyası(Yenisi) oluşturulacaktır!** \n")
-  message.channel.send(onayembed).then(msg => {
+  message.channel.send({embeds: [onayembed]}).then(msg => {
 msg.react('👍').then(() => msg.react('👎'));
 
 const filter = (reaction, user) => {

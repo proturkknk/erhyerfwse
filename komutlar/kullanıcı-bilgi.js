@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const db = require('quick.db');
 const moment = require("moment");
 const ayarlar = require('../ayarlar.json');
@@ -14,7 +14,7 @@ let user;
 
     const member = message.guild.member(user);
        
-    const embed = new Discord.MessageEmbed()
+    const embed = new MessageEmbed()
         .setColor("RANDOM")
     
     .setThumbnail(user.avatarURL)
@@ -27,7 +27,7 @@ let user;
     .addField("Hesap Oluşturma Tarihi :", `${moment.utc(user.createdAt).format('dddd, MMMM.Do.YYYY, ')}`, true)
     .addField("Sunucuya Katılma Tarihi :", `${moment.utc(member.joinedAt).format('dddd, MMMM.Do.YYYY')}`, true)
     .addField("Durumu :", `${user.presence.status}`, true)
-    message.channel.send({embed});
+    message.channel.send({embeds: [embed]});
     }
 
 exports.conf = {

@@ -13,19 +13,20 @@ module.exports.run = async (bot, message, args) => {
 
   let u = message.mentions.users.first();
   if (!u) {
-    return message.channel.send({embeds: []}
+    return message.channel.send({embeds: [
       new MessageEmbed()
         .setDescription("Lütfen atılacak kişiyi etiketleyiniz!")
         .setColor("BLACK")
         .setFooter(bot.user.username, bot.user.avatarURL)
+      ]}
     );
   }
 
-  const embed = new Discord.MessageEmbed()
+  const embed = new MessageEmbed()
     .setColor("BLACK")
     .setDescription(`:warning: ${u} **Adlı şahsın sunucudan atılmasını onaylıyor musunuz?**`)
     .setFooter(bot.user.username, bot.user.avatarURL);
-  message.channel.send(embed).then(async function(sentEmbed) {
+  message.channel.send({embeds: [embed]}).then(async function(sentEmbed) {
     const emojiArray = ["✅"];
     const filter = (reaction, user) =>
       emojiArray.includes(reaction.emoji.name) && user.id === message.author.id;

@@ -4,7 +4,7 @@ const {prefix} = require('../ayarlar.json')
 
 exports.run = async (client, message, args) => {
 
-   if (!message.member.hasPermission("ADMINISTRATOR")) {
+   if (!message.member.permissions.has("ADMINISTRATOR")) {
 
    return message.channel.send("Prefix'i değiştirmeniz için \`YÖNETİCİ\` yetkiniz olması lazım!");
 

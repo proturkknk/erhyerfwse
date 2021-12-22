@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 const ayarlar = require("../ayarlar.json")
 const axios = require('axios');
 exports.run = async (client, message, args) => {
@@ -6,7 +6,7 @@ exports.run = async (client, message, args) => {
 if (!args.length) {
             axios.get('https://corona.lmao.ninja/v2/all')
                 .then((response) => {
-                    const exampleEmbed = new Discord.MessageEmbed()
+                    const exampleEmbed = new MessageEmbed()
                         .setColor("RANDOM")
                         .setTitle('Dünya Geneli COVID-19 Bilgileri')
                         .setDescription('Tanı konulan vakalar, ölümler ve dünya çapında gelişmeler \n Ülkeler hakkında bilgi almak için: ' + ` \`${ayarlar.prefix}korona turkey\` `)
@@ -15,7 +15,7 @@ if (!args.length) {
             .addField(`Toplam İyileşen`,response.data.recovered)
                         .setTimestamp();
 
-                    message.channel.send(exampleEmbed);
+                    message.channel.send({embeds: [exampleEmbed]});
                 })
                 .catch((error) => {
                     console.log(error);
@@ -24,7 +24,7 @@ if (!args.length) {
         else {
             axios.get(`https://corona.lmao.ninja/v2/countries/${args[0]}`)
                 .then((response) => {
-                    const exampleEmbed = new Discord.MessageEmbed()
+                    const exampleEmbed = new MessageEmbed()
                         .setColor('RANDOM')
                         .setTitle(`${args[0]} - COVID19 Bilgileri`)
                         .addField(`Ülke`,response.data.country)
@@ -39,10 +39,10 @@ if (!args.length) {
                         .setTimestamp()
             .setThumbnail(response.data.countryInfo.flag)
           console.log(response)
-                    message.channel.send(exampleEmbed);
+                    message.channel.send({embeds: [exampleEmbed]});
                 })
                 .catch((error) => {
-          message.channel.send(':x: Hata \n Lütfen ülke girerken global olarak giriniz. Örnek: Turkey veya başka bi ülke  şeklinde girebilirsiniz. Not: Lütfen ülke isimlerini girerken ingilizce olarak giriniz. Dikkat: sadece ülke vakalarını gösterebilirim.')
+          message.channel.send(':x: Hata \n Lütfen ülke girerken global olarak giriniz. Örnek: Turkey veya başka bi ülke şeklinde girebilirsiniz. Not: Lütfen ülke isimlerini girerken ingilizce olarak giriniz. Dikkat: sadece ülke vakalarını gösterebilirim.')
                     console.log(error);
                 });
         }

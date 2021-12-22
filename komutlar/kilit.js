@@ -1,5 +1,5 @@
 //Kanal kilitleme
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
  
 exports.run = (client, message, args) => {
 if(!message.member.hasPermission('782286411281858570')) return;
@@ -21,10 +21,10 @@ message.channel.send(`Kanal ${channel} kilitlendi.`).then(m => m.delete({timeout
 
 let everyone = message.guild.roles.cache.find(a => a.name === '@everyone');
 channel.updateOverwrite(everyone, { 'SEND_MESSAGES': false }, 'Kilitleyen '+message.author.tag);
-channel.send(new Discord.MessageEmbed()
+channel.send({embeds: [new MessageEmbed()
 .setColor('RED')
 .setTitle(channel.name+' kilitlendi.')
-.setDescription(`Ne yazık ki, modlar bunu kilitlemek zorunda kaldı \nKilitlenme Sebebi: ${reasonn}`));
+.setDescription(`Ne yazık ki, modlar bunu kilitlemek zorunda kaldı \nKilitlenme Sebebi: ${reasonn}`)]});
 //FroLenk
 };
 exports.conf = {

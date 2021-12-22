@@ -1,11 +1,11 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 exports.run = (client, message, args) => {
-  const rexus = new Discord.MessageEmbed()
+  const rexus = new MessageEmbed()
     .setColor("RANDOM")
     .setDescription("> Xaine Bot kuruluş tarihi: 13.08.2020 (13 ağustos 2020)")
     .setFooter("Xaine Bot")
-  message.channel.send(rexus);
+  message.channel.send({embeds: [rexus]});
 };
 
 exports.conf = {

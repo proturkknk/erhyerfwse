@@ -1,11 +1,11 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 exports.run = (client, message, args) => {
-  const rexus = new Discord.MessageEmbed()
+  const rexus = new MessageEmbed()
     .setColor("RANDOM")
     .setDescription("> Yapımcım-kurucum: (! TREFAX#0362)")
     .setFooter(" Kurucumun Discord id si: <@696365117063036986>")
-  message.channel.send(rexus);
+  message.channel.send({embeds: [rexus]});
 };
 
 exports.conf = {

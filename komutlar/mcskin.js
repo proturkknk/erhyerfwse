@@ -1,4 +1,4 @@
-const Discord = require(`discord.js`);
+const {MessageEmbed} = require(`discord.js`);
 
 exports.run = (client, message, args) => {
  let mesaj = args.slice(0).join(' ');
@@ -8,11 +8,11 @@ exports.run = (client, message, args) => {
  if (mesaj == member) {
     message.reply('kullanıcı değil, bir **oyuncu** adı belirtmelisin.')
  } else {
- const mcbody = new Discord.MessageEmbed()
+ const mcbody = new MessageEmbed()
    .setColor('RANDOM')
    .setTitle('Oyuncu: ' + mesaj)
    .setImage(body)
- message.channel.send(mcbody);
+ message.channel.send({embeds: [mcbody]});
  }
 };
 

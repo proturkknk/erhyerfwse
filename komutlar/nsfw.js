@@ -1,4 +1,3 @@
-const Discord = require('discord.js');
 const superagent = require('superagent');
 
 exports.run = (client, msg, args) => {
@@ -9,7 +8,7 @@ exports.run = (client, msg, args) => {
       msg.channel.send({ file: response.body.message });
     });
   } else {
-    msg.channel.send("Kardeşim sana nsfw göstercemimi sandın? günah günah neden nsfw bakcan ayıp bakma! :x:")
+    msg.channel.send("Kardeşim sana nsfw göstercemimi sandın? günah günah neden nsfw bakcan ayıp bakma! :x: ||nsfw istiyosan kanalı nsfw yap||")
   }
 };
  exports.conf = {

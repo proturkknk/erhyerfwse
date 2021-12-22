@@ -1,8 +1,8 @@
-const Discord = require ("discord.js");
+const {MessageEmbed} = require ("discord.js");
 
 exports.run = (client, message) => {
 
-const EmbedFwhyCode = new Discord.MessageEmbed()
+const EmbedFwhyCode = new MessageEmbed()
 
 .setColor("RANDOM")
 .setTitle("**▬▬▬[** ©️ **Xaine Bot (V12)** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`")
@@ -35,8 +35,7 @@ const EmbedFwhyCode = new Discord.MessageEmbed()
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();
 
-return message.channel.send(EmbedFwhyCode)
-.then; //FwhyCode
+return message.channel.send({embeds: [EmbedFwhyCode]})
 
 };
 exports.conf = {

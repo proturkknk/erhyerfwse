@@ -4,7 +4,7 @@ const {MessageEmbed} = require("discord.js");
 
 exports.run = (client, message, args) => {
 
-  if (!message.member.hasPermission("ADMIN"))
+  if (!message.member.permissions.has("ADMIN"))
 
     return message.reply(
 
@@ -18,13 +18,13 @@ exports.run = (client, message, args) => {
 
   if (!question)
 
-    return message.channel.send(
+    return message.channel.send({embeds: [
 
       new MessageEmbed()
 
         .setColor("RANDOM")
 
-        .addField("⛔ __Doğru Kullanım__ ⛔", `=> +oylama **mesaj**`)
+        .addField("⛔ __Doğru Kullanım__ ⛔", `=> +oylama **mesaj**`)]}
 
     );
 
@@ -32,7 +32,7 @@ exports.run = (client, message, args) => {
 
   message.channel.send(
 
-    `everyone - here atılsın mı?\n**evet** veya **hayır** olarak cevap veriniz. \nKalan süre 10 saniye`
+    `everyone - here atılsın mı?\n**evet** veya **hayır** olarak cevap veriniz. \n Cevap verme süreniz 10 saniye`
 
   );
 
@@ -52,7 +52,7 @@ exports.run = (client, message, args) => {
 
       message.channel
 
-        .send(
+        .send({embeds: [
 
           new MessageEmbed()
 
@@ -66,7 +66,7 @@ exports.run = (client, message, args) => {
 
             .setFooter("= = Xaine Bot Oylama Sistemi = =", client.user.avatarURL())
 
-            .addField(`⁉️ __OYLAMA__ ⁉️`, `=> **${question}** `)
+            .addField(`⁉️ __OYLAMA__ ⁉️`, `=> **${question}** `)]}
 
         )
 
@@ -106,7 +106,7 @@ exports.run = (client, message, args) => {
 
       message.channel
 
-        .send(
+        .send({embeds: [
 
           new MessageEmbed()
 
@@ -120,7 +120,7 @@ exports.run = (client, message, args) => {
 
             .setFooter("= = Xaine Bot Oylama Sistemi = =", client.user.avatarURL())
 
-            .addField(`⁉️ __OYLAMA__ ⁉️`, `=> **${question}** `)
+            .addField(`⁉️ __OYLAMA__ ⁉️`, `=> **${question}** `)]}
 
         )
 

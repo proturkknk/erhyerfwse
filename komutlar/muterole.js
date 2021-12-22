@@ -1,10 +1,9 @@
-const Discord = require("discord.js");
 const database = require("quick.db");
 
 exports.run = async (client, message, args) => {
   // can#0002
 
-  if (!message.member.hasPermission("MANAGE_MESSAGES")) return;
+  if (!message.member.permissions.has("MANAGE_MESSAGES")) return;
   if (!args[0])
     return message.channel.send(
       "Bir rol belirlemeniz gerekiyor.. (Sunucuda olan rolü etiketlemeyin sonuna create yazın bot rol oluşturacaktır.) Örnek: +muterole create"
