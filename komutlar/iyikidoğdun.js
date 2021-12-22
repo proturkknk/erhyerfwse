@@ -1,14 +1,14 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
-    const matador = new Discord.MessageEmbed()
+    const matador = new MessageEmbed()
     .setAuthor('İyiki Doğdun <3 ')
-    .setColor('BLUE')
+    .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://media.giphy.com/media/R1dWfIYh0yz7usnkVc/giphy.gif`)
-    return message.channel.send(matador);
+    return message.channel.send({embeds: [matador]});
 };
 
 exports.conf = {

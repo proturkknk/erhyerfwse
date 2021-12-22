@@ -1,7 +1,7 @@
 const settings = require('../ayarlar.json');
 const prefix = settings.prefix;
 const db = require('quick.db')
-const Discord = require('discord.js')
+const {MessageEmbed} = require('discord.js')
 
 exports.run = async(client, msg, args) => {
   
@@ -19,7 +19,7 @@ exports.run = async(client, msg, args) => {
       const yasaklayan = kullanıcı.yasaklayan
       const sebep = kullanıcı.sebep
       
-      const embed = new Discord.MessageEmbed()
+      const embed = new MessageEmbed()
       .setTitle('Karaliste')
       .setDescription('Neden Karalistem Var?')
       .setThumbnail(msg.author.avatarURL)
@@ -27,21 +27,21 @@ exports.run = async(client, msg, args) => {
       .setColor('RED')
       .setTimestamp()
       
-      msg.channel.send(embed)
+      msg.channel.send({embeds: [embed]})
       return
     }
   }
     const antispam = await db.fetch(`anti_${msg.channel.id}`)
     db.set(`anti_${msg.channel.id}`,'open')
     var filter = m => m.author.id == msg.author.id;
-    const ilk = new Discord.MessageEmbed()
+    const ilk = new MessageEmbed()
     .setTitle('Karpuz almak ister misiniz?')
     .setColor('BLUE')
     .setThumbnail(msg.author.avatarURL)
     .addField('Karpuz almak mı istiyorsunuz?','   [evet]   [hayır]')/////////////////////////////////////////////////:D
     .setFooter("Xaine Bot")
     .setTimestamp()
-    msg.channel.send(ilk).then(msj => {
+    msg.channel.send({embeds: [ilk]}).then(msj => {
       msg.channel.awaitMessages(filter,{
       max: 1,
       time: 6000,
@@ -63,24 +63,24 @@ exports.run = async(client, msg, args) => {
           return
         }
       if(cvp.first().content.toLowerCase() == 'evet') {
-        const dvm = new Discord.MessageEmbed()
+        const dvm = new MessageEmbed()
         .setTitle('Lütfen bekleyin...')
         .setColor('#ffbe19')
         .setDescription('Karpuzunuz tartılıyor...')///
         .setFooter("Xaine Bot")
         .setThumbnail(msg.author.avatarURL)
         .setTimestamp()
-        msg.channel.send(dvm)
+        msg.channel.send({embeds: [dvm]})
         
         setTimeout(function() {
-          const com = new Discord.MessageEmbed()
+          const com = new MessageEmbed()
         .setTitle('Lütfen bir seçenek seçin.')
         .setColor('GREEN')
         .setThumbnail(msg.author.avatarURL)
           .addField('Karpuz tam 1 kg toplam 5 TL ediyor kabul ediyor musunuz?','[evet] [hayır]')
           .setFooter("Xaine Bot")
         .setTimestamp()
-        msg.channel.send(com)
+        msg.channel.send({embeds: [com]})
           .then(msj => {
           msg.channel.awaitMessages(filter,{
             max: 1,
@@ -101,23 +101,23 @@ exports.run = async(client, msg, args) => {
           return
         }
             if(cvp.first().content.toLowerCase() == 'evet') {
-              const indiriyo = new Discord.MessageEmbed()
+              const indiriyo = new MessageEmbed()
             .setTitle('Lütfen bekleyin...')
             .setDescription('Karpuzun parası veriliyor...')
             .setColor('#ffbe19')
               .setFooter("Xaine Bot")
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
-            msg.channel.send(indiriyo)
+            msg.channel.send({embeds: [indiriyo]})
               setTimeout(function() {
-                const virus = new Discord.MessageEmbed()
+                const virus = new MessageEmbed()
             .setTitle('Karpuz gg şimdi ne yapıcaz?')
             .setColor('RED')
                 .addField('Karpuzunuz yolda giderken yere düştü! ','[ye] [çöpe at]')
                 .setFooter("Xaine Bot")
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
-            msg.channel.send(virus).then(msj => {
+            msg.channel.send({embeds: [virus]}).then(msj => {
               msg.channel.awaitMessages(filter,{
                 max: 1,
                 time: 6000,
@@ -137,26 +137,26 @@ exports.run = async(client, msg, args) => {
                   return
                 }
                 if(cvp.first().content.toLowerCase() == 'çöpe at') {
-                  const sil = new Discord.MessageEmbed()
+                  const sil = new MessageEmbed()
             .setTitle('Afiyet olsun!')
             .setDescription('Karpuzunuz çöpe atıldı ve sizin için başka karpuz alındı. Afiyet olsun!')
             .setColor('RED')
                   .setFooter("Xaine Bot")
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
-            msg.channel.send(sil)
+            msg.channel.send({embeds: [sil]})
             db.delete(`anti_${msg.channel.id}`)
             return
                 }
                 if(cvp.first().content.toLowerCase() == '' || cvp.first().content.toLowerCase() == 'ye') {
-                  const bsvr = new Discord.MessageEmbed()
+                  const bsvr = new MessageEmbed()
             .setTitle('OLAMAZ!')
             .setDescription('Karpuzun içi böcek dolmuş!')
             .setColor('RED')
                   .setFooter("Xaine Bot")
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
-            msg.channel.send(bsvr)
+            msg.channel.send({embeds: [bsvr]})
             db.delete(`anti_${msg.channel.id}`)
             return
                 }
@@ -166,14 +166,14 @@ exports.run = async(client, msg, args) => {
             }
             
             if(cvp.first().content.toLowerCase() == 'hayır') {
-              const gg = new Discord.MessageEmbed()
+              const gg = new MessageEmbed()
             .setTitle('Karpuz almadınız!')
             .setDescription('Karpuz almadınız.')
             .setColor('RED')
               .setFooter("Xaine Bot")
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
-            msg.channel.send(gg)
+            msg.channel.send({embeds: [gg]})
             db.delete(`anti_${msg.channel.id}`)
             return
             }
@@ -184,13 +184,13 @@ exports.run = async(client, msg, args) => {
         db.delete(`anti_${msg.channel.id}`)
       }
       if(cvp.first().content.toLowerCase() == 'hayır') {
-            const banane = new Discord.MessageEmbed()
+            const banane = new MessageEmbed()
             .setTitle('Almadınız!')
             .setDescription('Karpuz almadınız.')
             .setColor('RED')
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
-            msg.channel.send(banane)
+            msg.channel.send({embeds: [banane]})
         db.delete(`anti_${msg.channel.id}`)
         .setFooter("Xaine Bot")
       }

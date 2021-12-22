@@ -1,4 +1,3 @@
-const Discord = require("discord.js");
 const db = require("quick.db")
 exports.run = (client, message, args) => {
     let kabulettimi = db.fetch(`kabulettimi_${message.author.id}`)

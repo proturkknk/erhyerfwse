@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 const axios = require('axios');
 
 exports.run = async (client, message, args) => {
@@ -15,7 +15,7 @@ exports.run = async (client, message, args) => {
            \`\`\`Kalan Süre: ${res.data.result[0].hour} ${res.data.result[0].min}\`\`\`
         `);
 
-        message.channel.send(messageEmbed);
+        message.channel.send({embeds: [messageEmbed]});
     }).catch(err => {
         message.channel.send(':warning: Hata!: Bir sorun ortaya çıktı. Komutu doğru kullandığınızdan emin olun. Eğer komutu doğru kullandınızdan eminseniz lütfen bildir komutuyla veya destek sunucumuza gelerek hatayı bildiriniz.');
         console.log(err);

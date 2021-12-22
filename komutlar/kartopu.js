@@ -1,5 +1,3 @@
-const Discord = require("discord.js");
-
 exports.run = (client, msg, args) => {
 
 let matador = args.slice(0).join(" ");

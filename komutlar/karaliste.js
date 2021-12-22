@@ -1,21 +1,24 @@
-const Discord = require('discord.js')
+const {MessageEmbed} = require('discord.js')
 const ayarlar = require('../ayarlar.json')
-const { Database } = require('quick.db')//Seninki quick.db İse Bunu Sil Onun yerine const db = require('quick.db') Yaz
+const db = require('quick.db')//Seninki quick.db İse Bunu Sil Onun yerine const db = require('quick.db') Yaz
 exports.run = (client, message, args) => {
 const black = args[0]
-if(message.author.id !== ayarlar.sahip) return message.channel.send(
-    new Discord.MessageEmbed()
+if(message.author.id !== ayarlar.sahip) return message.channel.send({embeds: [
+    new MessageEmbed()
     .setDescription(`**Malesef!, Sahibim Değilsin!**`)
 //Bots For List Yapımı!
+  ]}
 )
-if(!black) return message.channel.send(
-    new Discord.MessageEmbed()
+if(!black) return message.channel.send({embeds: [
+    new MessageEmbed()
     .setDescription(`Üyenin İDsini Yaz`)
+  ]}
 )//Bots For List Yapımı!
 if(black == ayarlar.sahip) return message.channel.send(`Kanka Kendini BlackListe Alamazsın Anla :D`)
-message.channel.send(
-    new Discord.MessageEmbed()
+message.channel.send({embeds: [
+    new MessageEmbed()
     .setDescription(`**<@${black}> Adlı Kişi BlackList'e Eklendi!**`)
+  ]}
 )
 db.set(`karaliste.${black}`, black)
 }

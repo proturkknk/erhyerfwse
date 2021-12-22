@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed, version} = require("discord.js");
 const moment = require("moment");
 const os = require("os");
 require("moment-duration-format");
@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
 
     .duration(client.uptime)
     .format(" D [gün], H [saat], m [dakika], s [saniye]");
-  const istatistikler = new Discord.MessageEmbed()
+  const istatistikler = new MessageEmbed()
     .setColor("RANDOM")
     .addField("**__Ping__**",` :clock: Mesaj Gecikmesi: ${new Date().getTime() - message.createdTimestamp} ms\n :person_running: Bot Gecikmesi: ${client.ws.ping}ms`, true)
     .addField("**__ Kullanıcı Sayısı__** ",` :busts_in_silhouette: ${client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()}`, true) 
@@ -16,12 +16,12 @@ exports.run = async (client, message, args) => {
     .addField("**__Aktiflik__**", ` :pick: ${payidarzaman}`, true)
     .addField("**__Node.JS Versiyon__**", ` :boom: ${process.version} `,  true ) 
     .addField("**__Ram Kullanımı__**", `${(process.memoryUsage().heapUsed / 1024 / 512).toFixed(2) + " MB"}`, true)
-    .addField("**__Discord.JS__**", `${Discord.version}`, true)
+    .addField("**__Discord.JS__**", `${version}`, true)
     .addField("**__Konum__**", `Türkiye (Turkey) :flag_tr:`, true)
     .addField("**__Bot Sahibi__**", `<:civcivkalp:853213881111150642> ! TREFAX#0362`, true)
     .addField("**__Geliştirici__**", ` <:civcivkalp:853213881111150642>  ! TREFAX#0362, ! xEnsar69#1611, ! kerem98#7884  `, true)
 
-  return message.channel.send(istatistikler);
+  return message.channel.send({embeds: [istatistikler]});
 };
 
 exports.conf = {

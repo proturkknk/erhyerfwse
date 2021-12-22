@@ -1,19 +1,19 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 
 exports.run = (client, message, args) => {
 if (!message.guild) {
-    const ozelmesajuyari = new Discord.MessageEmbed()
+    const ozelmesajuyari = new MessageEmbed()
     .setColor(0xFF0000)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
     .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
-    return message.author.send(ozelmesajuyari); }
+    return message.author.send({embeds: [ozelmesajuyari]}); }
   let isim = args.slice(0).join("+")
   if(!isim)return message.channel.send("Lütfen bir yazı yazınız.")
 let link = "https://bcassetcdn.com/asset/logo/4362501d-64af-4538-8b4e-051670b7dc5f/logo?v=4&text="+isim
-  const CrewCodeembed = new Discord.MessageEmbed()
+  const CrewCodeembed = new MessageEmbed()
   .setImage(link)
-  message.channel.send(CrewCodeembed)
+  message.channel.send({embeds: [CrewCodeembed]})
 };
 
 exports.conf = {

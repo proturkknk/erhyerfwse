@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 
 exports.run = (client, message, args) => {
     var ilgincsöz = [
@@ -41,7 +41,7 @@ exports.run = (client, message, args) => {
     .setFooter(`${message.author.username} bir ilginç bilgi öğrendi. | Xaine Bot ilginç bilgi komutu`)
     
   .setDescription(`${ilgincsöz}`)
-    return message.channel.send(ilgincsözembed);
+    return message.channel.send({embeds: [ilgincsözembed]});
 };
 
 exports.conf = {

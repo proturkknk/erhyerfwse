@@ -1,5 +1,5 @@
 
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 exports.run = async (client, message, args) => {
     let csgopng = "https://media.giphy.com/media/WHNY5xzj5UUzmADK7t/giphy.gif"
     var kasadancikanlar = [
@@ -67,7 +67,7 @@ exports.run = async (client, message, args) => {
 
     ]
     var kasadancikanlar = kasadancikanlar[Math.floor(Math.random(1) * kasadancikanlar.length)]
-    const embed  = new Discord.MessageEmbed()
+    const embed  = new MessageEmbed()
     .setImage("https://cdn.wallpapersafari.com/40/16/8rTMh6.jpg")
     .setAuthor(`Kasayı açan kullanıcı ${message.author.tag}`, message.author.avatarURL)
     .setDescription(`${kasadancikanlar}`)
@@ -76,7 +76,7 @@ exports.run = async (client, message, args) => {
     .setFooter("Xaine Bot")//alt ksım
     .setColor("RANDOM")
     .setThumbnail("https://media.giphy.com/media/WHNY5xzj5UUzmADK7t/giphy.gif")
-    return message.channel.send(embed);
+    return message.channel.send({embeds: [embed]});
 };
 exports.conf = {
   enabled: true,

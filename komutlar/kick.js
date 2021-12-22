@@ -1,20 +1,20 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
   let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "t+";
   if (!message.member.hasPermission("KICK_MEMBERS")) {
-    const embed = new Discord.MessageEmbed()
+    const embed = new MessageEmbed()
       .setDescription("**Ne yazık ki bu komutu kullanmaya yetkin yok.**")
       .setColor("BLACK");
 
-    message.channel.send(embed);
+    message.channel.send({embeds: [embed]});
     return;
   }
 
   let u = message.mentions.users.first();
   if (!u) {
-    return message.channel.send(
-      new Discord.MessageEmbed()
+    return message.channel.send({embeds: []}
+      new MessageEmbed()
         .setDescription("Lütfen atılacak kişiyi etiketleyiniz!")
         .setColor("BLACK")
         .setFooter(bot.user.username, bot.user.avatarURL)
