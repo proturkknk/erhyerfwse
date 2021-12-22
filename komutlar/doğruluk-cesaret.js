@@ -1,4 +1,3 @@
-const Discord = require('discord.js');
 exports.run = async (bot, message, args) => {
     var dogruluk = ['Telefonunda arattığın en son şey nedir ?', 'Bir sabah karşı cins olarak uyansaydın ilk yapacağın şey ne olurdu ?', 'Sokakta yere bir şey düşürdüğünde hiç bir şey olmamış gibi alıp ağzına attın mı ?', 'Dışarıda en son ne yaptın?', 'En son ne zaman dışarı çıktın?']
     var cesaret = ['Bugün yaptığın bir şeyle alakalı uydurma kısa, komik bir hikaye anlat', 'Whatsappındaki son mesajlaşmanı bize oku',]

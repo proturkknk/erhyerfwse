@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 const math = require("math-expression-evaluator");
 const stripIndents = require("common-tags").stripIndents;
 
@@ -17,12 +17,12 @@ exports.run = function(client, message, args) {
      return message.channel.send("**Hatalı işlem: **" + err);
     }
 
-    const Embedmatador = new Discord.MessageEmbed()
+    const Embedmatador = new MessageEmbed()
 
       .addField("Soru", soru)
       .addField("Cevap", cevap);
 
-    return message.channel.send(Embedmatador);
+    return message.channel.send({embeds: [Embedmatador]});
   }
 };
 

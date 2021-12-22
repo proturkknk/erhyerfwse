@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 const fs = require("fs");
 exports.run = (client, message, params) => {
@@ -27,11 +27,11 @@ var ne = [
 
 ];
 var daşşak = Math.floor(Math.random()*ne.length);
-const codeemıng = new Discord.MessageEmbed()
+const codeemıng = new MessageEmbed()
 .setDescription(`${ne[daşşak]}`)
 .setColor(0xe2ff00)
 .setTimestamp()
-message.channel.send(codeemıng)
+message.channel.send({embeds: [codeemıng]})
 };
 exports.conf = {
 enabled: true,

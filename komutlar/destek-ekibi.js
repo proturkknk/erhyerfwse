@@ -1,4 +1,4 @@
-const Discord = require('discord.js')
+const {MessageEmbed} = require('discord.js')
 
 exports.run = function(client, message, args,params) {
 
@@ -10,7 +10,7 @@ message.channel.send(`Destek ekibi çağırıldı! Kısa sürede size yardıma g
 
 message.channel.createInvite({maxAge: 0}).then((invite) => {
 
-const embed = new Discord.MessageEmbed()
+const embed = new MessageEmbed()
 
 .setTitle("Bir Destek Çağrısı Var!")
 
@@ -20,9 +20,9 @@ const embed = new Discord.MessageEmbed()
 
 .addField("Davet Linki:", invite.url, true)
 
-.setFooter(`Acilen yardıma gitmeniz gerek!`)
+.setFooter(`Değerli ekibimiz, acilen yardıma gitmeniz gerek!`)
 
-client.channels.cache.get(destek).send(embed).then(client.channels.cache.get(destek).send(`<@&${yetkili}>`))
+client.channels.cache.get(destek).send({embeds: [embed]}).then(client.channels.cache.get(destek).send(`<@&${yetkili}>`))
 
 });
 

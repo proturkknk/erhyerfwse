@@ -1,5 +1,3 @@
-const Discord = require("discord.js");
-
 exports.run = (client, message) => {
 
 const matador = Math.floor(Math.random() * 100) + 1;

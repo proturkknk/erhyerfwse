@@ -1,16 +1,16 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const weather = require('weather-js');
 
 exports.run = (client, message, args) => {
   weather.find({search: args.join(" "), degreeType: 'C'}, function(err, result) {
       if (err) message.channel.send(err);
       if (result === undefined || result.length === 0) {
-          message.channel.send(new Discord.MessageEmbed().setDescription('Lütfen şehir ismi giriniz.').setColor('RANDOM'));
+          message.channel.send(new MessageEmbed().setDescription('Lütfen şehir ismi giriniz.').setColor('RANDOM'));
           return;
       }
       var current = result[0].current;
       var location = result[0].location;
-      const embed = new Discord.MessageEmbed()
+      const embed = new MessageEmbed()
           .setDescription(`**${current.skytext}**`)
           .setAuthor(`${current.observationpoint} için hava durumu`)
           .setThumbnail(current.imageUrl)
@@ -21,7 +21,7 @@ exports.run = (client, message, args) => {
           .addField('● Hava', `${current.feelslike}`, true)
           .addField('● Rüzgar',current.winddisplay, true)
           .addField('● Nem', `${current.humidity}%`, true)
-          message.channel.send({embed});
+          message.channel.send({embeds: [embed]});
   })
 }
 

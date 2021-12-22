@@ -35,7 +35,7 @@ exports.run = (client, message, args) => {
         
     ]
     var ilgincsöz = ilgincsöz[Math.floor(Math.random(1) * ilgincsöz.length)]
-    const ilgincsözembed = new Discord.MessageEmbed()
+    const ilgincsözembed = new MessageEmbed()
     .setColor("RANDOM")
     .setAuthor(`İlginç Bilgi`, message.author.avatarURL())
     .setFooter(`${message.author.username} bir ilginç bilgi öğrendi. | Xaine Bot ilginç bilgi komutu`)

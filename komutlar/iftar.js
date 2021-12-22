@@ -10,7 +10,7 @@ exports.run = async (client, message, args) => {
             "authorization": "apikey 0wundItn3wBW8lt7V0NxOK:2yfwbEJlrQJgxPwRMFphPD"
         }
     }).then(res => {
-        const messageEmbed = new Discord.MessageEmbed().setDescription(`
+        const messageEmbed = new MessageEmbed().setDescription(`
            > **${city}** şehri için iftar saati **${res.data.result[0].time} Not: Eğer kalan zamanda undafined yazıyorsa iftar saati geçmiş demektir. Saat 00:00 da otomatikmen diğer günkü iftar saatini gösterir. Hayırlı iftarlar!**
            \`\`\`Kalan Süre: ${res.data.result[0].hour} ${res.data.result[0].min}\`\`\`
         `);

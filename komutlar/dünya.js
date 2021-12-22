@@ -1,14 +1,14 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
-    const codeworld = new Discord.MessageEmbed()
+    const codeworld = new MessageEmbed()
     .setAuthor('İşte dünyamız')
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://media.giphy.com/media/I2N4CwJGbHJ3TEb4u3/giphy.gif`)
-    return message.channel.send(codeworld);
+    return message.channel.send({embeds: [codeworld]});
 };
 
 exports.conf = {

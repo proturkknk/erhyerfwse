@@ -1,14 +1,14 @@
-const Discord = require('discord.js');
+const {MessageEmbed} = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
-    const matador = new Discord.MessageEmbed()
+    const matador = new MessageEmbed()
     .setAuthor('İsteğiniz üzerine Güneş gösteriliyor. ☀️')
     .setColor('BLUE')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://www.hareketligifler.net/data/media/278/gunes-hareketli-resim-0717.gif`)
-    return message.channel.send(matador);
+    return message.channel.send({embeds: [matador]});
 };
 
 exports.conf = {

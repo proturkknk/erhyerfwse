@@ -1,4 +1,3 @@
-const Discord = require('discord.js');
 const { stripIndents } = require('common-tags');
 const { randomRange, verify } = require('../utils/Util.js');
 exports.run = async (client, message, args) => {

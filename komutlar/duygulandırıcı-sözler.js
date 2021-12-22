@@ -1,4 +1,4 @@
-const Discord = require("discord.js"); 
+const {MessageEmbed} = require("discord.js"); 
 
 exports.run = async (client, msg, args) => {
     let ağlatan=[
@@ -28,15 +28,15 @@ exports.run = async (client, msg, args) => {
       
     ]
        let member = msg.mentions.members.first()
-     if(!member)return msg.channel.send({embed: {
+     if(!member)return msg.channel.send({embed: [{
    color: Math.floor(Math.random() * (0xFFFFFF + 1)),
    description: (':no_entry_sign: Kime Duygulandırıcı Bir Söz Söleyeceğim? ')
-  }});
+  }]});
     else{
-    msg.channel.send({embed: {
+    msg.channel.send({embeds: [{
    color: Math.floor(Math.random() * (0xFFFFFF + 1)),
    description: (`${ağlatan[Math.floor(Math.random() * 16)]}.`)
-    }})
+    }]})
     }
     
   }

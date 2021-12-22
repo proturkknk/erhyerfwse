@@ -1,5 +1,3 @@
-const Discord = require("discord.js");
-
 exports.run = (client, message) => {
 
 message.channel.send(" Xaine | Espri yükleniyor.").then(message => {
