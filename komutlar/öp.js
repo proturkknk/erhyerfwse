@@ -1,11 +1,11 @@
-const Discord = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 
 exports.run = (client, message, args) => {
 
   let mesaj = args.slice(0).join(" ");
   if (mesaj.length < 1) return message.channel.send("Kimi öpeceksin?");
 
-const Embedmatador = new Discord.MessageEmbed()
+const Embedmatador = new MessageEmbed()
 
     .setAuthor(" ")
     .setColor(`ORANGE`)
@@ -17,7 +17,7 @@ const Embedmatador = new Discord.MessageEmbed()
     .setImage(
                `https://media.tenor.com/images/39fe167bdab90223bcc890bcb067b761/tenor.gif`
  );
-  return message.channel.send(Embedmatador);
+  return message.channel.send({embeds: [Embedmatador]});
 };
 
 exports.conf = {

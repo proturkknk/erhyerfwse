@@ -1,5 +1,3 @@
-const Discord = require('discord.js');
-
 exports.run = (client, message, args) => {
   function şifre(uzunluk, semboller) {
 

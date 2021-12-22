@@ -1,5 +1,5 @@
 const db = require('quick.db')
-const Discord = require('discord.js')
+const {MessageEmbed} = require('discord.js')
 
 module.exports.run = async (bot, message, args) => {
 
@@ -7,12 +7,12 @@ module.exports.run = async (bot, message, args) => {
 
     let result = Math.floor((Math.random() * replies.length));
 
-    let gifembed = new Discord.MessageEmbed()
+    let gifembed = new MessageEmbed()
         .setTitle(" İşte şiirler!")
         .setColor("random")
         .setFooter(`${message.author.username} `, message.author.avatarURL)
         .setImage(replies[result]);
-    message.channel.send(gifembed);
+    message.channel.send({embeds: [gifembed]});
 };
 //CodeShare
 exports.conf = {

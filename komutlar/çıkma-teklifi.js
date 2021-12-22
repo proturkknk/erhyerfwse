@@ -10,13 +10,13 @@ exports.run = function(client, message, args) {
     .addField('Ne cevap vericeksin  acaba bende merak ettim 😆', `Hadi Kabul Et Bence, genede senin kararın. Not!: Eğlence için yapılmış komutdur gerçek anlamayın!`)
     .addField('Teklif Eden Kişi :', `➽ @${message.author.username}`)
     .setFooter('Çıkma Teklifi Xaine')
-    teamtr.send(dmat);
-    const dmtamam = new Discord.MessageEmbed()
+    teamtr.send({embeds: [dmat]});
+    const dmtamam = new MessageEmbed()
     .setColor('RANDOM')
     .setTimestamp()
     .setTitle('❤️ Çıkma Teklifi Ettin!')
     .setFooter('Xaine çıkma teklifi komutu')
-    message.channel.send(dmtamam);
+    message.channel.send({embeds: [dmtamam]});
     };
 exports.conf = {
   enabled: true,
