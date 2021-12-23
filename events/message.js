@@ -122,7 +122,9 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
     if(cmd.help){
       if(cmd.help.category) {
         if(cmd.help.category == 'moderasyon'){
-          dbl.hasVoted(message.author.id).then(c => {
+          dbl.hasVoted(message.author.id).then(c => { 
+if(message.author.id === ["696365117063036986", "id"]) return
+
             if(c && sunucu.members.cache.get(message.author.id)){
               ok()
             }else{
