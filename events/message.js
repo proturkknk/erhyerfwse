@@ -55,7 +55,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
           new MessageEmbed()
           .setDescription(`**Xaine Botu artık kullanamazsınız! Çünkü Yetkililerimiz tarafından Karalisteye alınmışsınız. Nedenini bilmiyorsanız Xaine Bot sahibine yazabilirsiniz.**`)]}//Bots For List Yapımı!
         )
- }
+        }
   
   async function ok() {
     if(sg) return message.channel.send({embeds: [bakim]})

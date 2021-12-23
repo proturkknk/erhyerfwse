@@ -3,7 +3,7 @@ const ayarlar = require('../ayarlar.json')
 const db = require('quick.db')//Seninki quick.db İse Bunu Sil Onun yerine const db = require('quick.db') Yaz
 exports.run = (client, message, args) => {
 const white = args[0]
-if(!!ayarlar.sahip.includes(message.author.id)) return message.channel.send(
+if(!ayarlar.sahip.includes(message.author.id)) return message.channel.send(
     {embeds: [
       new MessageEmbed()
     .setDescription(`**Malesef!, Sahibim Değilsin!**`)//Bots For List Yapımı!
