@@ -40,7 +40,7 @@ module.exports = async(message, bot) => {
  if (cmd) {
    // if (cmd) { satırının altına yazılacak! NAPİM
 
-if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herhangi bir komutunu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şartlar` yazın.")
+if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herhangi bir komutunu kullanmak için şartlarımızı onaylamalısınız! Onaylamak için `<prefix>kabulet` yazın. Şartlarımızı görmek için `<prefix>şartlar` yazın. Örnek: +kabulet +şartlar")
       if(!ayarlar.sahip.includes(message.author.id)) {
         if(botbakım == 'aktif'){
           sg = true
@@ -53,7 +53,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
         const player = db.fetch(`karaliste.${message.author.id}`)//Bots For List Yapımı!
         if(player) return message.channel.send({embeds: [
           new MessageEmbed()
-          .setDescription(`**Bu botu kullanamazsınız çünkü yetkili tarafından kara listeye alınmışsınız.**`)]}//Bots For List Yapımı!
+          .setDescription(`**Xaine Botu artık kullanamazsınız! Çünkü Yetkililerimiz tarafından Karalisteye alınmışsınız. Nedenini bilmiyorsanız Xaine Bot sahibine yazabilirsiniz.**`)]}//Bots For List Yapımı!
         )
  }
   
