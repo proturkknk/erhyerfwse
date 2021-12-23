@@ -17,6 +17,6 @@ exports.conf = {
 } 
 exports.help = {
   name: "normal", 
-  description: "Xaine Bot v12 Normal Yardım Menüsü", 
+  description: "Xaine Bot v13 Normal Yardım Menüsü", 
   usage: "normal" 
 }
