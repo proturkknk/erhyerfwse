@@ -28,7 +28,7 @@ const EmbedFwhyCode = new MessageEmbed()
 > :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, bildir komutuyla belirtmekten asla çekinmeyin!**
 > :open_file_folder: **Botun Kod Paylaşım Ve Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
 > :round_pushpin: **Ana yardım menüsüne dönmek için: +yardım**
-> :airplane: **Aktif discord.js sürümüm: v12.2.0**
+> :airplane: **Aktif discord.js sürümüm: v16.12.0**
 `)
 .setImage(`https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif`)
  
