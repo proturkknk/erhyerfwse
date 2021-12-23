@@ -44,21 +44,21 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
       if(!ayarlar.sahip.includes(message.author.id)) {
         if(botbakım == 'aktif'){
           sg = true
-        return message.channel.send(bakim)
+        return message.channel.send({embeds: [bakim]})
         } 
   }
   } 
-      if(sg) return message.channel.send(bakim)
+      if(sg) return message.channel.send({embeds: [bakim]})
         if(!ayarlar.sahip.includes(message.author.id)) {
         const player = db.fetch(`karaliste.${message.author.id}`)//Bots For List Yapımı!
-        if(player) return message.channel.send(
+        if(player) return message.channel.send({embeds: [
           new MessageEmbed()
-          .setDescription(`**Bu botu kullanamazsınız çünkü yetkili tarafından kara listeye alınmışsınız.**`)//Bots For List Yapımı!
+          .setDescription(`**Bu botu kullanamazsınız çünkü yetkili tarafından kara listeye alınmışsınız.**`)]}//Bots For List Yapımı!
         )
  }
   
   async function ok() {
-    if(sg) return message.channel.send(bakim)
+    if(sg) return message.channel.send({embeds: [bakim]})
     if(!cmd) return
     if (cmd.conf.permLevel === 1) {
 			if (!message.member.permissions.has("MANAGE_MESSAGES")) {//
