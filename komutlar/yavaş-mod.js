@@ -11,10 +11,10 @@ const limit = args[0] ? args[0] : 0;
             message.channel.send({embeds: [embed]})
             return
           }
-if (limit > 120) {
-    return message.channel.send({embeds: [new MessageEmbed().setDescription(" :x: Hata!: Süre limiti maksimum **120** saniye olabilir.").setColor("#36393F")]});
+if (limit > 130) {
+    return message.channel.send({embeds: [new MessageEmbed().setDescription(" :x: Hata!: Süre limiti maksimum **120** saniye olabilir.").setColor("RANDOM")]});
 }
-   message.channel.send({embeds: [new MessageEmbed().setDescription(`Yazma süre limiti **${limit}** saniye olarak ayarlanmıştır.`).setColor("#36393F")]});
+   message.channel.send({embeds: [new MessageEmbed().setDescription(`Yazma süre limiti **${limit}** saniye olarak ayarlanmıştır.`).setColor("RANDOM")]});
 var request = require('request');
 request({
     url: `https://discordapp.com/api/v7/channels/${message.channel.id}`,
@@ -29,13 +29,13 @@ request({
   exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["slow-mode", "slowmode", "yavas-mod", 'yavasmod', 'yavaşmod','Yavaşmod','YAVAŞMOD'],
+  aliases: ["slow-mode", "slowmode", "yavaş-mod", 'yavasmod', 'yavaşmod','Yavaşmod','YAVAŞMOD'],
   permLevel: 3,
 };
 
 exports.help = {
   name: 'yavaş-mod',
   description: 'Sohbete yazma sınır (süre) ekler.',
-  usage: 'yavaş-mod [1/120]',
+  usage: 'yavaş-mod [1/130]',
 
 };

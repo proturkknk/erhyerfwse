@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
 <:civcivkalp:853213881111150642>  davet yazarak botla ilgili tüm linklere ulaşabilirsiniz.
 
 Kullanılan Xaine Bot sürümü: **3.9**
-Sezon: ** 2. Sezon Kış Sezonu ❄️ **
+Sezon: ** Yılbaşı sezonu! ❄️ **
 
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
 
@@ -21,7 +21,7 @@ Botdaki bildirilen ve belirlenen tüm yazım yanlışları düzeltildi! Bildiren
 
 **Daha fazlası için Destek sunucumuza gelebilirsiniz!**
 
-<:civcivkalp:853213881111150642>  Bugüne Özel Öne Çıkan Komut: **kar** 
+<:civcivkalp:853213881111150642>  Bugüne Özel Öne Çıkan Komut: **yılbaşı - kar - mutlu-yıllar** 
 
  > :partying_face: | +eğlence -> Eğlence Komutlarını gösterir.
 

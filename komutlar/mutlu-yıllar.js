@@ -3,23 +3,23 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const codeworld = new MessageEmbed()
-    .setAuthor('İşte dünyamız!')
-    .setColor('BLUE')
+    .setAuthor('Mutlu yıllar!')
+    .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://media.giphy.com/media/I2N4CwJGbHJ3TEb4u3/giphy.gif`)
+        .setImage(`https://media.giphy.com/media/Q5gYwgsTe2ixRthGO9/giphy.gif`)
     return message.channel.send({embeds: [codeworld]});
 };
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['dünya','Dünya','DÜNYA'],
+  aliases: ['mutlu-yıllar','Mutlu-yıllar','MUTLU-YILLAR'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'dünya',
-  description: 'Dünya.',
-  usage: 'dünya'
+  name: 'mutlu-yıllar',
+  description: 'Mutlu-yıllar.',
+  usage: 'mutlu-yıllar'
 };
