@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
 <:civcivkalp:853213881111150642>  davet yazarak botla ilgili tüm linklere ulaşabilirsiniz.
 
 Kullanılan Xaine Bot sürümü: **3.9**
-Sezon: ** Yılbaşı sezonu! ❄️ **
+Sezon: ** Kar Sezonu ❄️ **
 
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
 
