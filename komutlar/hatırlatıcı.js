@@ -11,7 +11,7 @@ module.exports.run = async (Main, message, args) => {
       let Bilgi = new MessageEmbed()
       .setColor('RANDOM')
       .setAuthor(`${message.author.username}`, message.author.displayAvatarURL({dynamic:true}))
-      .setDescription("**Hatırlatıcı Başarıyla Ayarlandı!**")
+      .setDescription("**Bu Komut Geçici Olarak Kullanım Dışıdır.**")
       .setTimestamp()
       message.channel.send({embeds: [Bilgi]});
 
