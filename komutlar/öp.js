@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
 const Embedmatador = new MessageEmbed()
 
     .setAuthor(" ")
-    .setColor(`ORANGE`)
+    .setColor(`RANDOM`)
     .setDescription(
       message.author.username +
         ` **adlı kullanıcı, ${mesaj} adlı kullanıcıyı öptü.**`
