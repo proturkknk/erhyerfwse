@@ -27,6 +27,7 @@ module.exports = client => {
     var oyun = [  
 see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
+"Xaine Botun ismiyle açılan sahte botları bize bildirebilirsiniz! Bildiren kullanıcılarımıza ödüllerimiz olacak!",
 "V.I.P Üye Sistemi Çok yakında aktif!",
 "Kış Sezonu ❄️ ",
 "Kış Sezonu ❄️ aktif! ",
