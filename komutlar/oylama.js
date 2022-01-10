@@ -32,7 +32,7 @@ exports.run = (client, message, args) => {
 
   message.channel.send(
 
-    `everyone - here atılsın mı?\n**evet** veya **hayır** olarak cevap veriniz. \n Cevap verme süreniz 10 saniye`
+    `Oylamayı başlatmaya emin misiniz?\n**evet** veya **hayır** olarak cevap veriniz. \n Cevap verme süreniz 10 saniye`
 
   );
 
@@ -84,7 +84,7 @@ exports.run = (client, message, args) => {
 
         .then(everyone => {
 
-          message.channel.send(" @everyone @here ").then(m => m.delete(50));
+          message.channel.send("Oylama başladı! ").then(m => m.delete(50));
 
         });
 
