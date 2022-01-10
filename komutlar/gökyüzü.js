@@ -3,8 +3,8 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, params) => {
     const matador = new MessageEmbed()
-    .setAuthor('İsteğiniz üzerine gökyüzü gösteriliyor,Çok iyi değil mi? 😍 🌙 ★')
-    .setColor('PİNK')
+    .setAuthor('İsteğiniz üzerine gökyüzü gösteriliyor. Çok iyi değil mi? 😍 🌙 ★')
+    .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://media.giphy.com/media/QZfrZbmNhKA5grghoV/giphy.gif`)
