@@ -1,14 +1,18 @@
-const {MessageEmbed} = require ("discord.js");
+const { MessageEmbed } = require("discord.js");
 
 exports.run = (client, message) => {
+  const EmbedFwhyCode = new MessageEmbed()
 
-const EmbedFwhyCode = new MessageEmbed()
-
-.setColor("RANDOM")
-.setAuthor('**▬▬▬[** ©️ **Xaine Bot (V12)** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`','https://nolur.com/nah.jpg')
-.setTitle("")
-.setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
-.setDescription(`
+    .setColor("RANDOM")
+    .setAuthor(
+      "**▬▬▬[** ©️ **Xaine Bot (V12)** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`",
+    )
+    .setTitle("")
+    .setThumbnail(
+      "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
+    )
+    .setDescription(
+      `
 
 [ :closed_lock_with_key: ** <:civcivkalp:853213881111150642> Xaine Bot Moderasyon Komutları** :teddy_bear: ]
 
@@ -24,25 +28,28 @@ Not: **küfür-engel** komutu şartlı moderasyon komutudur.
 > :open_file_folder: **Botun Kod Paylaşım Ve Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
 > :round_pushpin: **Ana yardım menüsüne dönmek için: +yardım**
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
-`)
-.setImage(`https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif`)
- 
-.setFooter(client.user.username + "", client.user.avatarURL())
-.setTimestamp();
+`
+    )
+    .setImage(`https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif`)
 
-return message.channel.send({embeds: [EmbedFwhyCode]})
-.then; 
+    .setFooter(client.user.username + "", client.user.avatarURL())
+    .setTimestamp();
 
+  return message.channel.send({ embeds: [EmbedFwhyCode] }).then;
 };
 exports.conf = {
-    enabled: true, 
-    guildOnly: false, 
-    aliases: ['ayarlamalı-komutlar','Ayarlamalı-komutlar','AYARLAMALI-KOMUTLAR',], 
-    permLevel: 0 
+  enabled: true,
+  guildOnly: false,
+  aliases: [
+    "ayarlamalı-komutlar",
+    "Ayarlamalı-komutlar",
+    "AYARLAMALI-KOMUTLAR",
+  ],
+  permLevel: 0,
 };
-  
-  exports.help = {
-    name: 'ayarlamalı-komutlar', 
-    description: 'Xaine Bot ayarlamalı komutlar',
-    usage: 'Xaine Bot'
+
+exports.help = {
+  name: "ayarlamalı-komutlar",
+  description: "Xaine Bot ayarlamalı komutlar",
+  usage: "Xaine Bot",
 };
