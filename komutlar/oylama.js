@@ -28,19 +28,25 @@ exports.run = (client, message, args) => {
 
     );
 
- 
+ let za;
 
   message.channel.send(
 
     `Oylamayı başlatmaya emin misiniz?\n**evet** veya **hayır** olarak cevap veriniz. \n Cevap verme süreniz 10 saniye`
 
-  );
+  ).then(m => {
+    za = m;
+  })
   
   const filter = u => u.author.id == message.author.id;
 
   message.channel
 
     .awaitMessages({filter: filter, max: 1, time: 10000, errors: ["time"]})
+  
+  .catch(error => {
+    message.reply('Süren doldu!')
+  })
 
     .then(collected => {
     const got = collected.first().content
@@ -65,7 +71,6 @@ exports.run = (client, message, args) => {
             .addField(`⁉️ __OYLAMA__ ⁉️`, `=> **${question}** `)]}
 
         )
-
  
 
         .then(function(message) {
@@ -77,58 +82,9 @@ exports.run = (client, message, args) => {
           });
 
         })
-
-        .then(everyone => {
-
-          message.channel.send("Oylama başladı! ").then(m => m.delete(50));
-
-        });
-
-    });
-
-  message.channel
-
-    .awaitMessages(response => response.content === "hayır", {
-
-      max: 1,
-
-      time: 10000,
-
-      errors: ["time"]
-
-    })
-
-    .then(collected => {
-
-      message.channel
-
-        .send({embeds: [
-
-          new MessageEmbed()
-
- 
-
-            .setColor("RANDOM")
-
-            .setThumbnail(message.author.avatarURL())
-
-            .setTimestamp()
-
-            .setFooter("= = Xaine Bot Oylama Sistemi = =", client.user.avatarURL())
-
-            .addField(`⁉️ __OYLAMA__ ⁉️`, `=> **${question}** `)]}
-
-        )
-
-        .then(function(message) {
-
-          message.react("✅").then(sıra => {
-
-            message.react("❌");
-
-          });
-
-        });
+    collected.first().delete();
+    message.delete();
+    za.delete();
 
     });
 
