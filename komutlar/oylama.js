@@ -35,21 +35,17 @@ exports.run = (client, message, args) => {
     `Oylamayı başlatmaya emin misiniz?\n**evet** veya **hayır** olarak cevap veriniz. \n Cevap verme süreniz 10 saniye`
 
   );
+  
+  const filter = u => u.author.id == message.author.id;
 
   message.channel
 
-    .awaitMessages(response => response.content === "evet", {
-
-      max: 1,
-
-      time: 10000,
-
-      errors: ["time"]
-
-    })
+    .awaitMessages({filter: filter, max: 1, time: 10000, errors: ["time"]})
 
     .then(collected => {
-
+    const got = collected.first().content
+    if(got.toLowerCase() != 'evet' && got.toLowerCase() != 'hayır') return collected.first().reply('dayı nediyosun evet yada hayır dicen')
+    if(got.toLowerCase() == 'hayır') return collected.first().reply('Oylama iptal edildi')
       message.channel
 
         .send({embeds: [
