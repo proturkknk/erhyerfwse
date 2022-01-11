@@ -9,6 +9,11 @@ let arr = [];
 message.guild.emojis.cache.forEach(e => {
   arr.push(e)
 })
+  
+  var cmds = [
+    "xaine -  aşkölçer - balıktut - mutlu-yıllar - roblox-oyuncu-bilgi - düello - efkarım - tersyazı - yazıtura - öp - aduketçek -  balık-tut - beşlik -  ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - tokat - yazı-tura - çıkma-teklifi -   düello - oylama -  yıldız - kar - adamasmaca - taş-kağıt-makas",
+    "stresçarkı - zarat - nsfw - fal - boks-makinesi - şifre-oluştur -  sayıtut  - komik - sarıl - şiir -  ilginçbilgi - şanslı-sayım - yazan-kazanır - doğruluk-cesaret - kasa-aç"
+  ]
 
 let embd = new MessageEmbed()
 .setDescription('<:civcivkalp:853213881111150642>  Xaine Bot eğlence komutları menüsüne hoş geldiniz. Sayfaları değiştirerek kodları görebilirsiniz, İyi eğlenceler!')
@@ -28,18 +33,20 @@ message.channel.send({embeds: [embd]}).then(async msg => {
             --page
 
               embd.setColor("RANDOM");
-              embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
-              embd.setDescription("xaine -  aşkölçer - balıktut - mutlu-yıllar - roblox-oyuncu-bilgi - düello - efkarım - tersyazı - yazıtura - öp - aduketçek -  balık-tut - beşlik -  ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - tokat - yazı-tura - çıkma-teklifi -   düello - oylama -  yıldız - kar - adamasmaca - taş-kağıt-makas")
+              embd.setFooter(`Sayfa ${page+1} / ${cmds.length}`);
+            console.log("page: "+page)
+              embd.setDescription(cmds[page])
             msg.edit({embeds: [embd]})
            break;
           case "➡️":
-            if (page == arr.length) return;
+            if (page == cmds.length) return;
             ++page
             console.log("sağ za")
             reaction.users.remove(user).catch(console.error);
               embd.setColor("RANDOM");
-              embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
-              embd.setDescription("stresçarkı - zarat - nsfw - fal - boks-makinesi - şifre-oluştur -  sayıtut  - komik - sarıl - şiir -  ilginçbilgi - şanslı-sayım - yazan-kazanır - doğruluk-cesaret - kasa-aç")
+              embd.setFooter(`Sayfa ${page} / ${cmds.length}`);
+            console.log("page: "+page)
+              embd.setDescription(cmds[page - 1])
             msg.edit({embeds: [embd]})
           break;
           
