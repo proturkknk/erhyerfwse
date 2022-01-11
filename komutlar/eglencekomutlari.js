@@ -3,7 +3,7 @@ exports.run = async (client, message, args) => {
 
     
 
-var page = 0;
+var page = 1;
  
 let arr = [];
 message.guild.emojis.cache.forEach(e => {
@@ -16,7 +16,7 @@ message.guild.emojis.cache.forEach(e => {
   ]
 
 let embd = new MessageEmbed()
-.setDescription('<:civcivkalp:853213881111150642>  Xaine Bot eğlence komutları menüsüne hoş geldiniz. Sayfaları değiştirerek kodları görebilirsiniz, İyi eğlenceler!')
+.setDescription(cmds[0])
 message.channel.send({embeds: [embd]}).then(async msg => {
       await msg.react("⬅️");
       await msg.react("➡️");
@@ -29,24 +29,21 @@ message.channel.send({embeds: [embd]}).then(async msg => {
         switch (reaction.emoji.name) {
           case "⬅️":
             reaction.users.remove(user).catch(console.error);
-            if (page == 0) return;
+            if (page == 1) return;
             --page
 
               embd.setColor("RANDOM");
-              embd.setFooter(`Sayfa ${page+1} / ${cmds.length}`);
-            console.log("page: "+page)
-              embd.setDescription(cmds[page])
+              embd.setFooter(`Sayfa ${page} / ${cmds.length}`);
+              embd.setDescription(cmds[page-1])
             msg.edit({embeds: [embd]})
            break;
           case "➡️":
+            reaction.users.remove(user).catch(console.error);
             if (page == cmds.length) return;
             ++page
-            console.log("sağ za")
-            reaction.users.remove(user).catch(console.error);
               embd.setColor("RANDOM");
               embd.setFooter(`Sayfa ${page} / ${cmds.length}`);
-            console.log("page: "+page)
-              embd.setDescription(cmds[page - 1])
+              embd.setDescription(cmds[page-1])
             msg.edit({embeds: [embd]})
           break;
           
