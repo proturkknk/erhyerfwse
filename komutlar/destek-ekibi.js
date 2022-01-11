@@ -16,7 +16,7 @@ const embed = new MessageEmbed()
 
 .addField("Sunucu İsmi:", message.guild.name, true)
 
-.addField("Sunucu Sahibi:", message.guild.owner, true)
+.addField("Sunucu Sahibi:", message.guild.owner.user.username, true)
 
 .addField("Davet Linki:", invite.url, true)
 

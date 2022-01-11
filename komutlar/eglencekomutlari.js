@@ -18,10 +18,7 @@ message.channel.send({embeds: [embd]}).then(async msg => {
 
       let filter = (reaction, user) => user.id !== message.client.user.id && user.id === message.author.id;
 
-      var collector = msg.createReactionCollector({
-        filter: filter,
-        time: 130000
-      });
+      var collector = msg.createReactionCollector({filter: filter, time: 130000})
 
       collector.on("collect", async (reaction, user) => {
         switch (reaction.emoji.name) {
@@ -33,7 +30,7 @@ message.channel.send({embeds: [embd]}).then(async msg => {
               embd.setColor("RANDOM");
               embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
               embd.setDescription("xaine -  aşkölçer - balıktut - mutlu-yıllar - roblox-oyuncu-bilgi - düello - efkarım - tersyazı - yazıtura - öp - aduketçek -  balık-tut - beşlik -  ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - tokat - yazı-tura - çıkma-teklifi -   düello - oylama -  yıldız - kar - adamasmaca - taş-kağıt-makas")
-            msg.edit(embd)
+            msg.edit({embeds: [embd]})
            break;
           case "➡️":
             if (page == arr.length) return;
@@ -43,16 +40,8 @@ message.channel.send({embeds: [embd]}).then(async msg => {
               embd.setColor("RANDOM");
               embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
               embd.setDescription("stresçarkı - zarat - nsfw - fal - boks-makinesi - şifre-oluştur -  sayıtut  - komik - sarıl - şiir -  ilginçbilgi - şanslı-sayım - yazan-kazanır - doğruluk-cesaret - kasa-aç")
-            msg.edit(embd)
+            msg.edit({embeds: [embd]})
           break;
-        case "➡️":
-            if (page == arr.length) return;
-            ++page
-            reaction.users.remove(user).catch(console.error);
-              embd.setColor("RANDOM");
-              embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
-              embd.setDescription("stresçarkı - zarat - nsfw - fal - boks-makinesi - şifre-oluştur -  sayıtut  - komik - sarıl - şiir -  ilginçbilgi - şanslı-sayım - yazan-kazanır - doğruluk-cesaret - kasa-aç")
-            msg.edit(embd)
           
 
         }
