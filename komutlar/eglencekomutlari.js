@@ -18,7 +18,8 @@ message.channel.send({embeds: [embd]}).then(async msg => {
 
       let filter = (reaction, user) => user.id !== message.client.user.id && user.id === message.author.id;
 
-      var collector = msg.createReactionCollector(filter, {
+      var collector = msg.createReactionCollector({
+        filter: filter,
         time: 130000
       });
 
@@ -37,6 +38,7 @@ message.channel.send({embeds: [embd]}).then(async msg => {
           case "➡️":
             if (page == arr.length) return;
             ++page
+            console.log("sağ za")
             reaction.users.remove(user).catch(console.error);
               embd.setColor("RANDOM");
               embd.setFooter(`Sayfa ${page+1} / ${arr.length+1}`);
