@@ -19,7 +19,7 @@ message.channel.send({embeds: [embd]}).then(async msg => {
       let filter = (reaction, user) => user.id !== message.client.user.id && user.id === message.author.id;
 
       var collector = msg.createReactionCollector(filter, {
-        time: 120000
+        time: 130000
       });
 
       collector.on("collect", async (reaction, user) => {
