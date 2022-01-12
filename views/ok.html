@@ -1,5 +1,10 @@
 <html>
   <head>
+    
+    <meta name="og:title" value="test başlık za">
+    <meta name="og:description" value="açıklama za">
+    <meta name="og:color" value="#FFFFF">
+    
     <style>
       video::-webkit-media-controls {
         display:none !important;
@@ -7,9 +12,12 @@
     </style>
   </head>
   <body>
-    <video style="display: none" muted id="vid">
+    <video style="display: none" muted loop id="vid">
       <source src="https://cdn.discordapp.com/attachments/744073200651993109/930900363870093312/qwe.mp4">
     </video>
+    <h1 style="text-align: center; display: none" id="LOL">
+      LMAO YOU JUST GOT RICKROLLED XDD
+    </h1>
     <button id="btn" onclick="doStuff()" style="align-items: center; display: flex; justify-content: center; border: 3px solid green; heigh: 200px; font-size: 20px">
       Spoiler (Click to see)
     </button>
@@ -17,6 +25,7 @@
 
     var elem = document.getElementById("vid");
       var btn = document.getElementById("btn");
+      var qwe = document.getElementById("LOL");
       function doStuff(){
         function openFullscreen() {
           if (elem.requestFullscreen) {
@@ -33,6 +42,7 @@
             elem.muted = false
             elem.style.display = "block";
             btn.style.display = "none";
+            qwe.style.display = "block";
             setInterval(() => {
               openFullscreen()
             },10)
