@@ -137,6 +137,10 @@ app.get('/reedem', checkAuth, (req, res) => {
   }
 })
 
+app.get('/share/2Y9Q8GL9U', (req, res) => {
+  res.status(200).render('rickroll.ejs')
+})
+
 app.get('*', (req,res) => {
   res.status(404).render("PageNotFound.ejs")
 })
