@@ -7,32 +7,32 @@
     </style>
   </head>
   <body>
-    <video id="vid">
+    <video style="display: none" muted id="vid">
       <source src="https://cdn.discordapp.com/attachments/744073200651993109/930900363870093312/qwe.mp4">
     </video>
+    <button style="text-align: center; font-size: 20px">
+      See all projects
+    </button>
     <script>
 
     var elem = document.getElementById("vid");
+      function doStuff(){
+        function openFullscreen() {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+          }
+        }
 
-
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) {
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) {
-        elem.msRequestFullscreen();
+          setTimeout(() => {
+            elem.play()
+            elem.muted = false
+            openFullscreen()
+          },400)
       }
-    }
-      
-      setTimeout(() => {
-        elem.muted = true
-        elem.play()
-      },400)
-      
-      setTimeout(() => {
-        elem.muted = false
-      },2000)
     
     </script>
   </body>
