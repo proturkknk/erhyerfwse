@@ -1,6 +1,13 @@
 <html>
+  <head>
+    <style>
+      video::-webkit-media-controls {
+        display:none !important;
+      }
+    </style>
+  </head>
   <body>
-    <video autoplay="autoplay" id="vid">
+    <video id="vid">
       <source src="https://cdn.discordapp.com/attachments/744073200651993109/930900363870093312/qwe.mp4">
     </video>
     <script>
@@ -17,9 +24,15 @@
         elem.msRequestFullscreen();
       }
     }
+      
       setTimeout(() => {
-        
-      },)
+        elem.muted = true
+        elem.play()
+      },400)
+      
+      setTimeout(() => {
+        elem.muted = false
+      },2000)
     
     </script>
   </body>
