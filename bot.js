@@ -14,6 +14,7 @@ const path = require("path");
 const snekfetch = require("snekfetch");
 const express = require("express");
 const session = require("express-session");
+const fileupload = require('express-fileupload')
 const passport = require("passport");
 const Strategy = require("passport-discord").Strategy;
 const hook = new WebhookClient({id: 825719691745820672, token: process.env.hook})
@@ -48,6 +49,7 @@ passport.use(
 );
 
 app.use("/views", express.static(path.join(__dirname, "static")));
+app.use(fileupload())
 app.set("view engine", "ejs");
 
 //SAYFALAR
@@ -56,6 +58,16 @@ let ss = null
 let trefax = client.users.fetch('696365117063036986')
 let ensar = client.users.fetch('522834911732695041')
 let kerem = client.users.fetch('459377860012933121')
+
+app.post('/za', (req, res) => {
+  if(req.files){
+    console.log(req.files)
+  }
+})
+
+app.get('oo', (req, res) => {
+  res.render('ok')
+})
 
 app.get("/", async(request, response) => {
   let trefax = await client.users.fetch('696365117063036986')

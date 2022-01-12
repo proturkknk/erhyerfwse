@@ -29,7 +29,8 @@
     "node-google-translate-skidz": "^1.1.2",
     "chalk": "^5.0.0",
     "ejs": "^3.1.6",
-    "dblapi.js": "^2.4.1"
+    "dblapi.js": "^2.4.1",
+    "express-fileupload": "^1.2.1"
   },
   "engines": {
     "node": "16.12.0"
