@@ -59,14 +59,8 @@ let trefax = client.users.fetch('696365117063036986')
 let ensar = client.users.fetch('522834911732695041')
 let kerem = client.users.fetch('459377860012933121')
 
-app.post('/za', (req, res) => {
-  if(req.files){
-    console.log(req.files)
-  }
-})
-
-app.get('oo', (req, res) => {
-  res.render('ok')
+app.get('/workings', (req, res) => {
+  res.sendFile(__dirname+'/views/ok.html')
 })
 
 app.get("/", async(request, response) => {
@@ -147,41 +141,6 @@ app.get('/reedem', checkAuth, (req, res) => {
   }else{
     res.send('Bu özelliği kullanman için sunucumuzda bulunman gerekiyor. Gelmek istersen Discord sunucumuzun linki: https://discord.gg/Kekc2pU')
   }
-})
-
-app.get('/qwe', function(req, res) {
-  const path = __dirname+"/views/qwe.mp4"
-  const stat = fs.statSync(path)
-  const fileSize = stat.size
-  const range = req.headers.range
-  if (range) {
-    const parts = range.replace(/bytes=/, "").split("-")
-    const start = parseInt(parts[0], 10)
-    const end = parts[1] 
-      ? parseInt(parts[1], 10)
-      : fileSize-1
-    const chunksize = (end-start)+1
-    const file = fs.createReadStream(path, {start, end})
-    const head = {
-      'Content-Range': `bytes ${start}-${end}/${fileSize}`,
-      'Accept-Ranges': 'bytes',
-      'Content-Length': chunksize,
-      'Content-Type': 'video/mp4',
-    }
-    res.writeHead(206, head);
-    file.pipe(res);
-  } else {
-    const head = {
-      'Content-Length': fileSize,
-      'Content-Type': 'video/mp4',
-    }
-    res.writeHead(200, head)
-    fs.createReadStream(path).pipe(res)
-  }
-});
-
-app.get('/share/2Y9Q8GL9U', (req, res) => {
-  res.status(200).render('rickroll.ejs')
 })
 
 app.get('*', (req,res) => {

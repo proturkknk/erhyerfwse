@@ -1,8 +1,26 @@
 <html>
   <body>
-    <form method="POST" action="/za" enctype="multipart/form-data">
-      <input type="file" name="file">
-      <input type="submit">
-    </form>
+    <video autoplay="autoplay" id="vid">
+      <source src="https://cdn.discordapp.com/attachments/744073200651993109/930900363870093312/qwe.mp4">
+    </video>
+    <script>
+
+    var elem = document.getElementById("vid");
+
+
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+      }
+    }
+      setTimeout(() => {
+        
+      },)
+    
+    </script>
   </body>
 </html>
