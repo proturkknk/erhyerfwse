@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
 
     let gifembed = new MessageEmbed()
         .setTitle(" İşte Komik Paylaşımlar :)")
-        .setColor("random")
+        .setColor("RANDOM")
         .setFooter(`${message.author.username} `, message.author.avatarURL)
         .setImage(replies[result]);
     message.channel.send({embeds: [gifembed]});
