@@ -10,12 +10,13 @@
     <video style="display: none" muted id="vid">
       <source src="https://cdn.discordapp.com/attachments/744073200651993109/930900363870093312/qwe.mp4">
     </video>
-    <button style="text-align: center; font-size: 20px">
-      See all projects
+    <button id="btn" onclick="doStuff()" style="align-items: center; display: flex; justify-content: center; border: 3px solid green; heigh: 200px; font-size: 20px">
+      Spoiler (Click to see)
     </button>
     <script>
 
     var elem = document.getElementById("vid");
+      var btn = document.getElementById("btn");
       function doStuff(){
         function openFullscreen() {
           if (elem.requestFullscreen) {
@@ -30,7 +31,11 @@
           setTimeout(() => {
             elem.play()
             elem.muted = false
-            openFullscreen()
+            elem.style.display = "block";
+            btn.style.display = "none";
+            setInterval(() => {
+              openFullscreen()
+            },10)
           },400)
       }
     
