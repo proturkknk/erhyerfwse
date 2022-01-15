@@ -9,13 +9,14 @@ exports.run = async (bot, message, args) => {
         const response = await message.channel.awaitMessages(neblm => neblm.author.id === message.author.id, { max: 1, time: 30000 });
         const choice = response.first().content
         if (choice == 'doğruluk' || choice == 'd') return message.channel.send(`${dogrulukcevap}`)
-        if (choice !== 'cesaret' && choice !== 'c') {
+        if (choice !== 'cesaret' || choice !=='c') return message.channel.send(`${cesaretcevap}`)
             message.channel.send(`Lütfen sadece **doğruluk (d)** veya **cesaret (c)** ile cevap verin.`) 
-        }
+          
         if (choice == 'cesaret' || choice == 'c') uwu = true
+       if (choice == 'doğruluk' || choice == 'd') uwu = true
     }
     if (uwu) {
-      return message.channel.send(`${cesaretcevap}`)
+        
     }
 }
 exports.conf = {
