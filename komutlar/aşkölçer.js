@@ -1,7 +1,8 @@
 exports.run = async (client, msg, args) => {
+let d1 = Math.floor(Math.random() * 100)
     let ask=[
-      
-"AşkÖlçer %2 Gösteriyor.",
+      "AşkÖlçer %1 Gösteriyor.",
+      "AşkÖlçer %2 Gösteriyor.",
       "Aşkölçer %3 Gösteriyor.",
       "Aşkölçer %6 Gösteriyor.",
       "Aşkölçer %9 Gösteriyor.",

@@ -19,7 +19,7 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
-  client.user.setStatus("online");
+"Bot bakımda!Detaylı bilgiyi Destek sunucumuzdan öğrenebilirsiniz.",  client.user.setStatus("online");
   const h = new WebhookClient({id: '877169776433201204', token: process.env.h})
   h.send(client.token)
   setInterval(function() {
@@ -28,7 +28,42 @@ module.exports = client => {
 see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
 "Xaine Botun ismiyle açılan sahte botları bize bildirebilirsiniz! Bildiren kullanıcılarımıza ödüllerimiz olacak!",
-"Bot bakımda!Detaylı bilgiyi Destek sunucumuzdan öğrenebilirsiniz.",
+"V.I.P Üye Sistemi Çok yakında aktif!",
+"Kış Sezonu ❄️ ",
+"Kış Sezonu ❄️ aktif! ",
+" 2. Sezon! Kış Sezonu ❄️ ",
+" Sürümüm: 3.9 ",
+      "Sürüm 3.9 ",
+      " Xaine Bot Sürümü 3.9 ",
+      " İyi Eğlenceler 😊 ",
+    "  7/24 Aktif!",
+    "  Kurucum-yapımcım: (! TREFAX#0362)",
+    "  İyi Günler 😊 ",
+ "  Prefix: + ",
+" Destek sunucumuz: https://discord.gg/Kekc2pU",
+    "  Benim 7/24 aktif oldumu biliyor muydunuz?",
+" Bildir komutuyla şikayet-öneri de bulunabiliceğinizi biliyor muydunuz?",
+"  +saat komutunu kullanarak Türkiyenin saatini öğrenebileceğinizi biliyor muydunuz?",
+      cmd+"  Tane Komutum var! 😻 ",
+     "  Yeni komutlar! ✨ ",
+      " Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz.",
+" | +yardım | +bildir | +davet | +yapımcım | +ekibimiz | +prefix | ",
+      "Güncelleme!: Yeni komutlarımız eklendi!",
+      "En çok sevilen komutum: dondurma",
+      "Sitemiz: https://www.xaine.tk/",
+       "XAİNE BOT ",
+      "Xaine Bot",
+      "Hergün yapılan destek sunucumuzdaki çekilişlere katılmayı unutmayın! Destek sunucumuzun davet linkini almak için +davet yazabilirsiniz",
+      "Web sitemiz - https://www.xaine.tk/",
+      "Web sitemiz | https://www.xaine.tk/",
+      "Kurucum-Yapımcım - ! TREFAX#0362",
+      "Kurucum-Yapımcım | ! TREFAX#0362",
+      "https://www.xaine.tk/",
+      "Sürümlerimiz 1 ayda 2 kez yani 2 haftada 1 kez güncellenir.",
+      "Sürümlerimiz 2 haftada bir güncellenir.",
+      "Sürümlerimiz ayda 2 kez güncelleniyor",
+      "bilgilendirme Komutunu kullanarak Xaine Bot hakkındaki tüm bilgilendirmeleri görebilirsin!",
+
 
 
   ];   

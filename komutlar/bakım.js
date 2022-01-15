@@ -10,14 +10,14 @@ if(!arg) {
 }
 
 if(arg == 'kapat'){
-message.channel.send(`Bot başarıyla bakım modundan çıkarıldı.`)
+message.channel.send(`Bot başarıyla bakım modundan çıkarıldı!`)
 db.delete(`xaine.bakim`)
 db.delete(`afk_süre`);
 }
 
 if(arg == 'aç') {
   if(!açıklama){
-    message.reply('Tahmini bitiş tarihini yaz.')
+    message.reply('Tahmini bitiş tarihini yazınız.')
   }
   if(açıklama){
     if(!sebep){
