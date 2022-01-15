@@ -6,23 +6,23 @@ exports.run = async (bot, message, args) => {
     message.channel.send('\`Doğruluk\` mu yoksa \`cesaret\` mi?')
     let uwu = false;
     while (!uwu) {
-        const response = await message.channel.awaitMessages(neblm => neblm.author.id === message.author.id, { max: 1, time: 30000 });
+        const response = await message.channel.awaitMessages({filter: neblm => neblm.author.id === message.author.id, max: 1, time: 30000 })
+        if(!response.first()) return message.reply('Süren doldu')
         const choice = response.first().content
         if (choice == 'doğruluk' || choice == 'd') return message.channel.send(`${dogrulukcevap}`)
-        if (choice !== 'cesaret' || choice !=='c') return message.channel.send(`${cesaretcevap}`)
+        if (choice !== 'cesaret' && choice !== 'c') {
             message.channel.send(`Lütfen sadece **doğruluk (d)** veya **cesaret (c)** ile cevap verin.`) 
-          
+        }
         if (choice == 'cesaret' || choice == 'c') uwu = true
-       if (choice == 'doğruluk' || choice == 'd') uwu = true
     }
     if (uwu) {
-        
+        message.channel.send(`${cesaretcevap}`)
     }
 }
 exports.conf = {
     enabled: true,
     guildOnly: true,
-    aliases: ['doğruluk-cesaret','Doğruluk-cesaret','DOĞRULUK-CESARET'],
+    aliases: ['dc', 'doğruluk-cesaret','Doğruluk-cesaret','DOĞRULUK-CESARET'],
     permLevel: 0
 };
 exports.help = {
