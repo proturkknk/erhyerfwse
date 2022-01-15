@@ -3,8 +3,8 @@ const {MessageEmbed} = require('discord.js');
 exports.run = async(client, message) => {
      
       const vatan = new MessageEmbed()
-    .setAuthor('Mustafa Kemal Atatürkü Saygıyla Anıyoruz.')
-    .setColor(3447003)
+    .setAuthor('Mustafa Kemal Atatürk ü Saygıyla Anıyoruz.')
+    .setColor('RANDOM')
         .setImage(`https://i.hizliresim.com/8CIYMl.gif`)
     return message.channel.send({embeds: [vatan]});
     

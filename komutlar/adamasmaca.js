@@ -120,6 +120,18 @@ module.exports.run = async (bot, message, args) => {
     
 "bayram",
 
+"Dizi",
+
+"Javascript",
+
+"Hata",
+
+"Oyun",
+
+"İngilizce", 
+
+"Sosyal Medya", 
+
 ]
 
   

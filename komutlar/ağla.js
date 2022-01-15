@@ -19,7 +19,7 @@ exports.run = (client, message) => {
   if (message.channel.type !== "dm") {
     const motion = new MessageEmbed()
       .setAuthor("Bot Ağladı! :( Ama o hala mutlu <3 :)")
-      .setColor(3447003)
+      .setColor('RANDOM')
       .setTimestamp()
       .setDescription("")
       .setImage(

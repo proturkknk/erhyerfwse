@@ -4,7 +4,7 @@ const ayarlar = require('../ayarlar.json');
 exports.run = (client, message, params) => {
     const matador = new MessageEmbed()
     .setAuthor('İşte Kahraman Türk Askerleri! /:flag_tr:')
-    .setColor('BLUE')
+    .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://media.giphy.com/media/bPBUwqv2gfQKFD0eLG/giphy.gif`)

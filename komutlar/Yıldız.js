@@ -4,7 +4,7 @@ const ayarlar = require('../ayarlar.json');
 exports.run = (client, message, params) => {
     const embed = new MessageEmbed()
     .setAuthor('İsteğiniz üzerine yıldızlar gösteriliyor.  💫')
-    .setColor('BLUE')
+    .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
         .setImage(`https://media.giphy.com/media/RHIKETUlUINYvV7CAO/giphy.gif`)

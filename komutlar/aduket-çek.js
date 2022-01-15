@@ -6,7 +6,7 @@ const cu = message.mentions.users.first();
 
 if (!cu)
 
-return message.reply("**Aduket Çekeceğin Kişiyi Etiketlemelisin**");
+return message.reply("**:warning: Hata! Aduket Çekeceğin Kişiyi Etiketlemelisin.**");
 
 const Embedmatador = new MessageEmbed()
 

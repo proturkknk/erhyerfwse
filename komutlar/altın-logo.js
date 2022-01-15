@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
     .setAuthor(message.author.username, message.author.avatarURL)
     .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
     return message.author.send({embeds: [ozelmesajuyari]}); }
-  if(!yazi) return message.channel.send(`**Lütfen yazı yazınız.** :maple_leaf:`)
+  if(!yazi) return message.channel.send(`**Lütfen bir yazı yazınız.** :maple_leaf: Örnek: +altın-logo Xaine`)
   const linqo = `https://habbofont.net/font/steampunk/${yazi}.gif`
   .replace(' ', '+')
 
