@@ -15,7 +15,7 @@ exports.run = async (bot, message, args) => {
         if (choice == 'cesaret' || choice == 'c') uwu = true
     }
     if (uwu) {
-        message.channel.send(`${cesaretcevap}`)
+      return message.channel.send(`${cesaretcevap}`)
     }
 }
 exports.conf = {
