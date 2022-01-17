@@ -63,6 +63,14 @@ app.get('/workings', (req, res) => {
   res.sendFile(__dirname+'/views/ok.html')
 })
 
+app.get('/tos', async(req, res) => {
+  res.send('Botun eklendiği sunucularda admin yetkisi olursa daha iyi olur bukadar bb')
+})
+
+app.get('/privacy', async(req, res) => {
+  res.send('Botu kopyalamayın. Kötüye kullanmayın.')
+})
+
 app.get("/", async(request, response) => {
   let trefax = await client.users.fetch('696365117063036986')
   let ensar = await client.users.fetch('522834911732695041')
