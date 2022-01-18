@@ -64,7 +64,7 @@ app.get('/workings', (req, res) => {
 })
 
 app.get('/tos', async(req, res) => {
-  res.send('Botun eklendiği sunucularda admin yetkisi olursa daha iyi olur bukadar bb')
+  res.send('Botun eklendiği sunucularda ADMİN Yetkisi olursa daha iyi olur.')
 })
 
 app.get('/privacy', async(req, res) => {
@@ -526,7 +526,7 @@ client.on("messageUpdate", (oldMessage, newMessage) => {
             if (!oldMessage.member.hasPermission("BAN_MEMBERS")) {
                   oldMessage.delete();
                           
-                      return oldMessage.reply('Yakaladım seni! Bu sunucuda küfür etmek yasaktır.')
+                      return oldMessage.reply('Yakaladım seni! Bu sunucuda küfür etmek yasak.')
             }             
           } catch(err) {
             console.log(err);
