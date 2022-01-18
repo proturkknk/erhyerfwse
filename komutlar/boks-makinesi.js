@@ -14,7 +14,7 @@ exports.run = (client, message, args) => {
                  'Boks Makinesi Sonucu ・ **1100 Fena Değil**', 
                  'Boks Makinesi Sonucu ・ **1300 ** Çok güzel vurdun! Ama daha iyisini yapabilirsin.',
                  'Boks Makinesi Sonucu ・ **1350, ** Çok iyi vurdun! Nerdeyse boks makinesi devrilecekti. Ama daha iyisini yapabilirsin! ',
-                 'Boks Makinesi Sonucu ・ **1500, ** Harika vurdun! Nerdeyse boks makinesi devrilicekti. Tebrik ederiz! '
+                 'Boks Makinesi Sonucu ・ **1500, ** Harika vurdun! Nerdeyse boks makinesini devrilecekti. Ama sıkıntı yok tuttum devrilmekten kurtuldu. Tebrik ederiz! '
                 ];
  var cevap = boksmakinesi[Math.floor(Math.random() * boksmakinesi.length)];
   

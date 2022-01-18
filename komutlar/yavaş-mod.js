@@ -12,7 +12,7 @@ const limit = args[0] ? args[0] : 0;
             return
           }
 if (limit > 130) {
-    return message.channel.send({embeds: [new MessageEmbed().setDescription(" :x: Hata!: Süre limiti maksimum **120** saniye olabilir.").setColor("RANDOM")]});
+    return message.channel.send({embeds: [new MessageEmbed().setDescription(" :x: Hata!: Süre limiti maksimum **130** saniye olabilir.").setColor("RANDOM")]});
 }
    message.channel.send({embeds: [new MessageEmbed().setDescription(`Yazma süre limiti **${limit}** saniye olarak ayarlanmıştır.`).setColor("RANDOM")]});
 var request = require('request');

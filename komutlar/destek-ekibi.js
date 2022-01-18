@@ -6,7 +6,7 @@ exports.run = function(client, message, args,params) {
 
  let yetkili = "826378987038572565" /// destek ekibi rol ID
 
-message.channel.send(`Destek ekibi çağırıldı! Kısa sürede size yardıma geleceklerdir.`)
+message.channel.send(`Destek ekibi çağırıldı! Kısa sürede size yardıma geleceklerdir. Eğer Destek Ekibimizden biri gelmezse yapımcıma veya Destek Sunucumuzdan nedenini sorabilirsiniz.`)
 
 message.channel.createInvite({maxAge: 0}).then((invite) => {
 

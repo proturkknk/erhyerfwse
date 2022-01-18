@@ -11,7 +11,7 @@ const
             if (botChoice === 'makas') {
                 return 'won';
             } else if (botChoice === 'kağıt') {
-                return 'Kaybetin';
+                return 'Kaybettin..';
             }
 
             return 'draw';
@@ -19,7 +19,7 @@ const
             if (botChoice === 'taş') {
                 return 'lost';
             } else if (botChoice === 'makas') {
-                return 'Kazandın';
+                return 'Kazandın!';
             }
 
             return 'draw';
@@ -27,7 +27,7 @@ const
             if (botChoice === 'taş') {
                 return 'lost';
             } else if (botChoice === 'kağıt') {
-                return 'Kazandın';
+                return 'Kazandın!';
             }
 
             return 'draw';
@@ -51,9 +51,9 @@ exports.run = async (client, msg, args) => {
     let answer = '';
 
     if (result === 'won') {
-        answer = '🏆 Tebrikler, sen **Kazandın!** 🏆 \nSenin Seçtiği: `' + choice + '` | Bot\'un Seçtiği: `' + botChoice + '`';
+        answer = '🏆 Tebrikler, sen **Kazandın!** 🏆 \nSenin Seçtiğin: `' + choice + '` | Bot\'un Seçtiği: `' + botChoice + '`';
     } else if (result === 'lost') {
-        answer = '❌ Bidakine iyi şanslar **Kaybetin...** ❌ \nSenin Seçtiğin: `' + choice + '` | Bot\'s Seçtiği: `' + botChoice + '`';
+        answer = '❌ Bidahaki sefere iyi şanslar. **Kaybetin...** ❌ \nSenin Seçtiğin: `' + choice + '` | Bot\'s Seçtiği: `' + botChoice + '`';
     } else if (result === 'draw') {
         answer = '😐 Sonuç **Berabere** 😐\nSenin Seçimin: `' + choice + '` | Bot\'un Seçimi: `' + botChoice + '`';
     }
