@@ -16,15 +16,15 @@ module.exports.run = async (Main, message, args) => {
       message.channel.send({embeds: [Bilgi]});
 
       let reminder = args.slice(1).join(" ");
-      
-      setTimeout(function(){
-        let Zamanlayıcı = new MessageEmbed()
-        .setColor('RANDOM')
-        .setAuthor(`${message.author.username}`, message.author.displayAvatarURL({dynamic:true}))
-        .addField("Hatırlatıcı... zaman doldu!", `\`\`\`${reminder}\`\`\``)
-        .setTimestamp()
-        message.channel.send({embeds: [Zamanlayıcı]});
-      }, ms(reminderTime));
+
+ ////     setTimeout(function(){
+   ////      let Zamanlayıcı = new MessageEmbed()
+   ////      .setColor('RANDOM')
+   ////      .setAuthor(`${message.author.username}`, message.author.displayAvatarURL({dynamic:true}))
+   ////      .addField("Hatırlatıcı... zaman doldu!", `\`\`\`${reminder}\`\`\``)
+   ////      .setTimestamp()
+   ////      message.channel.send({embeds: [Zamanlayıcı]});
+   ////    }, ms(reminderTime));
 
 
 };
