@@ -6,8 +6,8 @@ let istek = args.slice(0).join(' ')
 if(!istek) return message.channel.send('**Bildirmek istedinizi bildirmek için: +bildir (Şikayet - Hata bildirimi - Öneri - Vb.)** Örnek: +bildir balık-tut komutunda hata var.')
 
 const embed = new MessageEmbed()
-.setTitle("Xaine Bildirme Sistemi")
-.setColor('BLUE')
+.setTitle("Xaine Bot Bildirme Sistemi")
+.setColor('RANDOM')
 .setDescription(`**Bug Kanalı** ${message.channel.name} \n **Bug Bildirilen Sunucu** \`${message.guild.name}\` \n **Bugu Bildiren Kullanıcı** <@${message.author.id}> \n **Bildirilen Bug :** \`${istek}\``)
 client.channels.cache.get('787987649977384960').send({embeds: [embed]})
   

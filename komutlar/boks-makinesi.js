@@ -1,6 +1,7 @@
 const {MessageEmbed} = require('discord.js');
 exports.run = (client, message, args) => {
-  
+  let d1 = Math.floor(Math.random() * 1600)
+
  var boksmakinesi = ['Boks Makinesi Sonucu ・ **3000 Boks Makinesi Kırıldı!** !', 
                  'Boks Makinesi Sonucu ・ **100 Çook Yavaş Vurdun. Daha iyisini yapabilirsin!**', 
                  'Boks Makinesi Sonucu ・ **900 Eh İşte **', 
@@ -12,7 +13,8 @@ exports.run = (client, message, args) => {
                  'Boks Makinesi Sonucu ・ **999 | 1 Puanla Kaçırdın Be.**', 
                  'Boks Makinesi Sonucu ・ **1100 Fena Değil**', 
                  'Boks Makinesi Sonucu ・ **1300 ** Çok güzel vurdun! Ama daha iyisini yapabilirsin.',
-                 'Boks Makinesi Sonucu ・ **1500, ** Çok iyi vurdun! Nerdeyse boks makinesi devrilicekti. Tebrik ederiz! '
+                 'Boks Makinesi Sonucu ・ **1350, ** Çok iyi vurdun! Nerdeyse boks makinesi devrilecekti. Ama daha iyisini yapabilirsin! ',
+                 'Boks Makinesi Sonucu ・ **1500, ** Harika vurdun! Nerdeyse boks makinesi devrilicekti. Tebrik ederiz! '
                 ];
  var cevap = boksmakinesi[Math.floor(Math.random() * boksmakinesi.length)];
   
