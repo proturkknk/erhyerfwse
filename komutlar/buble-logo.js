@@ -19,7 +19,7 @@ let link = "https://habbofont.net/font/bubble_orange/"+isim+".gif"
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["buble-logo","Buble-logo","BUBLE-LOGO"],
+  aliases: ["bubble-logo","Bubble-logo","BUBBLE-LOGO"],
   permLevel: 0
 };
 exports.help = {
