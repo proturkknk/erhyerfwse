@@ -8,7 +8,7 @@ const sistem = await data.fetch(`spam.${message.guild.id}`);
 if(sistem) return message.channel.send({embeds: [nn.setDescription(`Spam koruma zaten aktif.`)]}).then(a => a.delete({timeout: 10000}));
 
 data.set(`spam.${message.guild.id}`, 'Rylan');
-return message.channel.send({embeds: [nn.setTitle(`İşlem başarılı!`).setColor(0x36393F).setDescription(`Spam koruma başarıyla açıldı.`)]}).then(a => a.delete({timeout: 10000}));
+return message.channel.send({embeds: [nn.setTitle(`İşlem başarılı!`).setColor(0x3639).setDescription(`Spam koruma başarıyla açıldı.`)]}).then(a => a.delete({timeout: 10000}));
 
 };
 exports.conf = {
