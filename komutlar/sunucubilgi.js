@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args, user) => {
    
    .setAuthor('Sunucu bilgisi')
    
-   .setColor("GREEN")
+   .setColor("RANDOM")
   
    .setThumbnail(message.guild.iconURL)
    
