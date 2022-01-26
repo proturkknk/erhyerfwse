@@ -7,6 +7,7 @@ module.exports.run = async (bot, message, args, user) => {
   let month = 1 + message.guild.createdAt.getMonth()
   let year = message.guild.createdAt.getFullYear()
   let sicon = message.guild.iconURL;
+  let owner = message.guild.members.cache.get(message.guild.ownerId);
   
    let serverembed = new MessageEmbed()
    
@@ -18,7 +19,7 @@ module.exports.run = async (bot, message, args, user) => {
    
    .addField('Sunucu Adı',message.guild.name, true)
    .addField("Sunucu İd", message.guild.id, true)
-   .addField("Sunucu Sahibi", message.guild.owner.user.tag, true)
+   .addField("Sunucu Sahibi", owner.user.tag, true)
    .addField("Üyeler", message.guild.memberCount, true)
    .addField("Kanallar", message.guild.channels.size, true)
    .addField("Roller", message.guild.roles.size, true)

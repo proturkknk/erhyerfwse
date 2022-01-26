@@ -5,7 +5,7 @@ const {MessageEmbed} = require('discord.js')
 
 exports.run = async(client, msg, args) => {
     const antispam = await db.fetch(`anti_${msg.channel.id}`)
-    //if(db.fetch(`anti_${msg.channel.id}`)) return msg.reply('kanal başına sadece 1 tane oynanabilir.')
+    if(db.fetch(`anti_${msg.channel.id}`)) return msg.reply('kanal başına sadece 1 tane oynanabilir.')
     db.set(`anti_${msg.channel.id}`,'open')
     var filter = m => m.author.id == msg.author.id;
     const ilk = new MessageEmbed()
@@ -16,7 +16,8 @@ exports.run = async(client, msg, args) => {
     .setFooter("Xaine Bot")
     .setTimestamp()
     msg.channel.send({embeds: [ilk]}).then(msj => {
-      msg.channel.awaitMessages(filter,{
+      msg.channel.awaitMessages({
+        filter: filter,
       max: 1,
       time: 10000,
       errors: ['time']
@@ -60,7 +61,8 @@ exports.run = async(client, msg, args) => {
         .setTimestamp()
         msg.channel.send({embeds: [com]})
           .then(msj => {
-          msg.channel.awaitMessages(filter,{
+          msg.channel.awaitMessages({
+            filter: filter,
             max: 1,
             time: 10000,
             errors: ['time']
@@ -100,7 +102,8 @@ exports.run = async(client, msg, args) => {
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
             msg.channel.send({embeds: [virus]}).then(msj => {
-              msg.channel.awaitMessages(filter,{
+              msg.channel.awaitMessages({
+                filter: filter,
                 max: 1,
                 time: 10000,
                 errors: ['time']

@@ -4,33 +4,6 @@ const db = require('quick.db')
 const {MessageEmbed} = require('discord.js')
 
 exports.run = async(client, msg, args) => {
-  
-  let cooldown = true
-  
-  if(cooldown) {
-    cooldown = false
-    
-    const liste = await db.fetch('list');
-    
-  if(liste) {
-    if(liste.find(o => o.id === msg.author.id)) {
-      
-      const kullanıcı = liste.find(o => o.id === msg.author.id)
-      const yasaklayan = kullanıcı.yasaklayan
-      const sebep = kullanıcı.sebep
-      
-      const embed = new MessageEmbed()
-      .setTitle('Karaliste')
-      .setDescription('Neden Karalistem Var?')
-      .setThumbnail(msg.author.avatarURL)
-      .addField('Karaliste Bilgiler','\nYasaklayan: **'+yasaklayan+'**\nSebep: '+sebep)
-      .setColor('RED')
-      .setTimestamp()
-      
-      msg.channel.send({embeds: [embed]})
-      return
-    }
-  }
     const antispam = await db.fetch(`anti_${msg.channel.id}`)
     db.set(`anti_${msg.channel.id}`,'open')
     var filter = m => m.author.id == msg.author.id;
@@ -41,7 +14,8 @@ exports.run = async(client, msg, args) => {
     .addField('Kahve almak ister misiniz?','   [evet]   [hayır]')/////////////////////////////////////////////////:D
     .setTimestamp()
     msg.channel.send({embeds: [ilk]}).then(msj => {
-      msg.channel.awaitMessages(filter,{
+      msg.channel.awaitMessages({
+        filter: filter,
       max: 1,
       time: 6000,
       errors: ['time']
@@ -77,7 +51,8 @@ exports.run = async(client, msg, args) => {
         .setTimestamp()
         msg.channel.send({embeds: [com]})
           .then(msj => {
-          msg.channel.awaitMessages(filter,{
+          msg.channel.awaitMessages({
+            filter: filter,
             max: 1,
             time: 6000,
             errors: ['time']
@@ -109,7 +84,8 @@ exports.run = async(client, msg, args) => {
             .setTimestamp()
             .setThumbnail(msg.author.avatarURL)
             msg.channel.send({embeds: [virus]}).then(msj => {
-              msg.channel.awaitMessages(filter,{
+              msg.channel.awaitMessages({
+                filter: filter,
                 max: 1,
                 time: 6000,
                 errors: ['time']
@@ -181,12 +157,6 @@ exports.run = async(client, msg, args) => {
       }
     })
     })
-    
-    
-    setTimeout(function() {
-       cooldown = true
-      }, 2500);
-  }
   
     
 };

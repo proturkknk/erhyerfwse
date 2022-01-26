@@ -7,6 +7,9 @@ const db = require('quick.db')
 var prefix = ayarlar.prefix;
 
 module.exports = client => {
+  client.channels.cache.forEach(c => {
+    db.delete(`anti_${c.id}`)
+  })
   let cmd = "..."
   fs.readdir("./komutlar/", (error, komutlar) => {
       cmd = komutlar.length
