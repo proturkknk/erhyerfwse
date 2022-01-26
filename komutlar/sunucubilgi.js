@@ -9,9 +9,6 @@ module.exports.run = async (bot, message, args, user) => {
   let sicon = message.guild.iconURL;
   let owner = await message.guild.fetchOwner()
   
-  message.guild.members.cache.forEach(m => {
-    console.log(m.user.username)
-  })
    let serverembed = new MessageEmbed()
    
    .setAuthor('Sunucu bilgisi')
@@ -22,7 +19,7 @@ module.exports.run = async (bot, message, args, user) => {
    .addField('Sunucu Adı',message.guild.name, true)
    .addField("Sunucu İd", message.guild.id, true)
    .addField("Sunucu Sahibi", owner.user.username+"#"+owner.user.discriminator, true)
-   .addField("Üyeler", "konsolda", true)
+   .addField("Üyeler", message.guild.memberCount.toString(), true)
    .addField("Kanallar", message.guild.channels.cache.size.toString(), true)
    .addField("Roller", message.guild.roles.cache.size.toString(), true)
    
