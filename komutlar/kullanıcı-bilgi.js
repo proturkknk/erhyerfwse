@@ -25,8 +25,8 @@ let user;
     .addField("İd :", `${user.id}`, true)
     .addField("Discord Tag :", `#${user.discriminator}`, true)
     .addField("Hesap Oluşturma Tarihi :", `${moment.utc(user.createdAt).format('dddd, MMMM.Do.YYYY, ')}`, true)
-    .addField("Sunucuya Katılma Tarihi :", `${moment.utc(member.joinedAt).format('dddd, MMMM.Do.YYYY')}`, true)
-    .addField("Durumu :", `${user.presence.status}`, true)
+    .addField("Sunucuya Katılma Tarihi :", `${moment.utc(user.joinedAt).format('dddd, MMMM.Do.YYYY')}`, true)
+    .addField("Durumu :", `${user.presence.status || 'Bilinmiyor'}`, true)
     message.channel.send({embeds: [embed]});
     }
 
