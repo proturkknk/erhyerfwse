@@ -8,6 +8,7 @@ module.exports.run = async (bot, message, args, user) => {
   let year = message.guild.createdAt.getFullYear()
   let sicon = message.guild.iconURL;
   let owner = await message.guild.fetchOwner()
+  console.log(message.guild.channels)
   
    let serverembed = new MessageEmbed()
    
@@ -19,9 +20,9 @@ module.exports.run = async (bot, message, args, user) => {
    .addField('Sunucu Adı',message.guild.name, true)
    .addField("Sunucu İd", message.guild.id, true)
    .addField("Sunucu Sahibi", owner.user.username+"#"+owner.user.discriminator, true)
-   .addField("Üyeler", message.guild.memberCount, true)
-   .addField("Kanallar", message.guild.channels.size, true)
-   .addField("Roller", message.guild.roles.size, true)
+   .addField("Üyeler", message.guild.memberCount.filter(m => m.user.bot == false).toString(), true)
+   .addField("Kanallar", message.guild.channels.cache.size.toString(), true)
+   .addField("Roller", message.guild.roles.cache.size.toString(), true)
    
    message.channel.send({embeds: [serverembed]});
 
