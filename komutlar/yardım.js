@@ -12,10 +12,9 @@ Kullanılan Xaine Bot sürümü: **4.0**
 Sezon: ** Kar Sezonu ❄️ **
 
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
+**seçmeli-oyunlar-yardım** Komutundaki komutların çalışmama sorunları çözüldü.
 
-**bilgilendirme** Komutu eklendi! Artık Xaine Bot hakkında tüm bilgilendirmeleri görebilirsiniz.
-
-Botdaki bildirilen ve belirlenen tüm yazım yanlışları düzeltildi! Bildiren kullanıcılarımıza teşekkür ederiz.
+**sunucu-bilgi** Komutunun çalışmama sorunu çözüldü. 
 
 **VIP Üye Sistemi** Çok yakında geliyor!
 

@@ -12,7 +12,7 @@ let user;
         user = message.author;
     }
 
-    const member = message.guild.member(user);
+    const member = message.guild.member;
        
     const embed = new MessageEmbed()
         .setColor("RANDOM")
