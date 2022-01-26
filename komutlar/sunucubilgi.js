@@ -19,7 +19,7 @@ module.exports.run = async (bot, message, args, user) => {
    .addField('Sunucu Adı',message.guild.name, true)
    .addField("Sunucu İd", message.guild.id, true)
    .addField("Sunucu Sahibi", owner.user.username+"#"+owner.user.discriminator, true)
-   .addField("Üyeler", message.guild.members.size, true)
+   .addField("Üyeler", message.guild.memberCount, true)
    .addField("Kanallar", message.guild.channels.size, true)
    .addField("Roller", message.guild.roles.size, true)
    
