@@ -1,7 +1,7 @@
 //DEĞİŞKENLER
 
 const {Client, Intents, Collection, MessageEmbed, WebhookClient} = require("discord.js");
-const client = new Client({ intents: [Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const client = new Client({  intents: Object.values(Intents.FLAGS).reduce((p, c) => p + c, 0) });
 const ayarlar = require("./ayarlar.json");
 const moment = require("moment");
 var Jimp = require("jimp");
