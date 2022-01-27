@@ -524,7 +524,7 @@ client.on("messageUpdate", (oldMessage, newMessage) => {
 client.on("messageCreate", async msg => {
  const i = await db.fetch(`${msg.guild.id}.kufur`)
     if (i) {
-        const kufur = [" oç ", " amk ", " ananı sikiyim ", " ananı ", " ANANI ", " ananıskm ", " piç ", "a mk ", " amsk ", " sikim ", " sikiyim ", " orospu çocuğu ", " piç kurusu ", " kahpe ", " orospu ", " mal ", " sik ", " yarrak ",  " amcık ", " amık ", " yarram ", " sikimi ye ", " mq ", " aq ",  " amq "," azdım "," sikiş "," sik beni "," göt "," sex "," seks "," sulu sulu yarrak ","boşaldım","boşalmak","mastürbasyon","ananın namını","cu","ananın amcu","mal","salak","aptal",];
+        const kufur = [" oç ", " amk ", " ananı sikiyim ", " ananı ", " ANANI ", " ananıskm ", " piç ", "a mk ", " amsk ", " sikim ", " sikiyim ", " orospu çocuğu ", " piç kurusu ", " kahpe ", " orospu ", " mal ", " sik ", " yarrak ",  " amcık ", " amık ", " yarram ", " sikimi ye ", " mq ", " aq ",  " amq "," azdım "," sikiş "," sik beni "," göt "," sex "," seks "," sulu sulu yarrak "," boşaldım "," boşalmak "," mastürbasyon "," ananın namını "," cu "," ananın amcu "," mal "," salak "," aptal ",];
         if (kufur.some(word => msg.content.includes(word))) {
           try {
             if (!msg.member.permissions.has("BAN_MEMBERS")) {
