@@ -7,6 +7,21 @@ const db = require('quick.db')
 var prefix = ayarlar.prefix;
 
 module.exports = client => {
+  
+  
+  
+  client.guilds.cache.forEach(g => {
+    g.commands.create({
+      name: "test",
+      description: "test açıklama"
+    })
+  })
+  
+  
+  
+  
+  
+  
   client.channels.cache.forEach(c => {
     db.delete(`anti_${c.id}`)
   })

@@ -174,11 +174,8 @@ client.aliases = new Collection();
 fs.readdir("./komutlar/", (err, files) => {
   if (err) console.error(err);
   log(`${files.length} komut yüklenecek.`);
-  files.forEach(f => {
+  files.forEach(async(f) => {
     let props = require(`./komutlar/${f}`);
-    
-    let g = client.guilds.cache.find(g => g.id == '')
-    
     
     log(`Yüklenen komut: ${props.help.name}`);
     client.commands.set(props.help.name, props);
