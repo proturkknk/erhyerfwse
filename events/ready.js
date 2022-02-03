@@ -10,13 +10,13 @@ module.exports = client => {
   client.guilds.cache.forEach(g => {
     g.commands.set([]).catch(e => {})
       g.commands.create({
-        name: "test",
-        description: "test açıklama"
+        name: "kandil",
+        description: "test komutu"
       }).catch(er => {})
   })
   
   
-  
+
   
   
   
