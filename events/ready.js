@@ -26,17 +26,17 @@ const toad = [
     ]
 
 module.exports = client => {
-  //client.guilds.cache.forEach(g => {
-    client.application.commands.set([]).catch(e => {})
+  client.guilds.cache.forEach(g => {
+    g.commands.set([]).catch(e => {console.error(e)})
       toad.forEach(p => {
-        client.application.commands.create({
+        g.commands.create({
           name: p.isim, 
           description: p.aciklama
-        })//.catch(er => {})
+        }).catch(er => {console.error(er)})
       })
     
 
-  //})
+  })
   
   
   client.channels.cache.forEach(c => {

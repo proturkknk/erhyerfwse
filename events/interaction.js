@@ -100,7 +100,7 @@ function normalkomutlar(int, bot){
 }
 
 function secmelioyunlar(int,bot){
-      int.reply('Seçmeli oyunlar komutunu ku')//botu sal bi test etcemSAL
+      int.reply('Seçmeli oyunlar komutunu ku') 
 }
 
 function sartli(int,bot){
