@@ -9,15 +9,51 @@ var prefix = ayarlar.prefix;
 module.exports = client => {
   client.guilds.cache.forEach(g => {
     g.commands.set([]).catch(e => {})
+    
+    const toad = {
+      kandil: "kandil",
+      davet: "davet at"
+    }
+    
       g.commands.create({
-        name: "kandil",
-        description: "test komutu"
+        name: "kandil", //Trefax bu şekilde ekle
+        description: "kandil"
       }).catch(er => {})
-  })
-  
-  
+    
+    g.commands.create({
+        name: "davet", 
+        description: "davet at"
+      }).catch(er => {})
+    
+    g.commands.create({
+        name: "fbi", 
+        description: "FBI"
+      }).catch(er => {})
+    
+    g.commands.create({
+        name: "iftar", 
+        description: "iftar komutu"
+      }).catch(er => {})
+    
+    g.commands.create({
+        name: "sunucubilgi", 
+        description: "sunucu bilgisi"
+      }).catch(er => {})
 
-  
+    g.commands.create({
+        name: "Bilgilendirme", 
+        description: "Bilgilendirme"
+      }).catch(er => {})
+
+g.commands.create({
+        name: "vip-üye-şartları", 
+        description: "VIP Üye Şartları"
+      }).catch(er => {})
+
+
+    
+    
+  })
   
   
   client.channels.cache.forEach(c => {
