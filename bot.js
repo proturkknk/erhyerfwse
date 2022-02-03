@@ -590,3 +590,6 @@ client.on("guildMemberAdd", member => {
   return;
 });
 
+client.on("error", e => {
+  console.log("error: "+e)
+})

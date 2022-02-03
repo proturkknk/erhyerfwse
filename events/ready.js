@@ -7,18 +7,12 @@ const db = require('quick.db')
 var prefix = ayarlar.prefix;
 
 module.exports = client => {
-  
-  
-  
   client.guilds.cache.forEach(g => {
-    try{
+    g.commands.set([]).catch(e => {})
       g.commands.create({
         name: "test",
         description: "test açıklama"
-      })
-    }catch(e){
-      console.log(e)
-    }
+      }).catch(er => {})
   })
   
   
