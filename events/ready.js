@@ -10,49 +10,34 @@ module.exports = client => {
   client.guilds.cache.forEach(g => {
     g.commands.set([]).catch(e => {})
     
-    const toad = {
-      kandil: "kandil",
-      davet: "davet at"
-    }
+    const toad = [
+      {isim: "iftar", aciklama: "iftar komutu"},
+      {isim: "sunucubilgi", aciklama: "sunucubilgisi"},
+      {isim: "bilgilendirme", aciklama: "bilgilendirme"},
+      {isim: "yardım", aciklama: "Yardım Komutu"},
+      {isim: "vip-üye-bilgi", aciklama: "VİP Üye Bilgi"},
+      {isim: "eğlence-komutları", aciklama: "Eğlence Komutları"},
+      {isim: "gifli-komutlar", aciklama: "Gifli Komutlar"},
+      {isim: "bakımdaki-komutlar", aciklama: "Bakımdaki Komutlar"},
+      {isim: "bilgilendirme", aciklama: "Bilgilendirme"},
+      {isim: "aldığımız-tedbirler", aciklama: "Xaine Bot Ve Sizin İçin Aldığımız Komutlar "},
+      {isim: "normal-komutlar", aciklama: "Normal Komutlar"},
+      {isim: "seçmeli-oyunlar-yardım", aciklama: "Seçmeli Oyunlar Yardım"},
+      {isim: "şartlı-moderasyon-komutları", aciklama: "Şartlı Moderasyon Komutları"},
+      {isim: "Şartsız-moderasyon-komutları", aciklama: "Şartsız-moderasyon-komutları"},
+      {isim: "moderasyon", aciklama: "Moderasyon komutları"},
+      {isim: "şartlar", aciklama: "Xaine Botu Kullanmanız İçin Şartlarımız"},
+      {isim: "kabulet", aciklama: "Şartlarımızı Kabul Edersiniz"}//YETER RAGE BU SONDU SENDE YARDIM ETCEN TEK YAPMAM >:( olr sona birgül konulmaz olr
+    ]
+    //sald
+      toad.forEach(p => {
+        g.commands.create({
+          name: p.isim, 
+          description: p.aciklama
+        }).catch(er => {})
+      })
     
-      g.commands.create({
-        name: "kandil", //Trefax bu şekilde ekle
-        description: "kandil"
-      }).catch(er => {})
-    
-    g.commands.create({
-        name: "davet", 
-        description: "davet at"
-      }).catch(er => {})
-    
-    g.commands.create({
-        name: "fbi", 
-        description: "FBI"
-      }).catch(er => {})
-    
-    g.commands.create({
-        name: "iftar", 
-        description: "iftar komutu"
-      }).catch(er => {})
-    
-    g.commands.create({
-        name: "sunucubilgi", 
-        description: "sunucu bilgisi"
-      }).catch(er => {})
 
-    g.commands.create({
-        name: "Bilgilendirme", 
-        description: "Bilgilendirme"
-      }).catch(er => {})
-
-g.commands.create({
-        name: "vip-üye-şartları", 
-        description: "VIP Üye Şartları"
-      }).catch(er => {})
-
-
-    
-    
   })
   
   
