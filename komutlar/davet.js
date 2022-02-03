@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
     )
     .addField(
       `> Botumuzu Davet Etmek isterseniz`,
-      `[Botu Davet Etme Linki](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)`
+      `[Botu Davet Etme Linki](https://discord.com/api/oauth2/authorize?client_id=774235071653216286&permissions=8&scope=bot%20applications.commands`
     )
     .addField(
       `> Destek Sunucusuna Katılmak İsterseniz`,
@@ -24,11 +24,6 @@ exports.run = (client, message, args) => {
       `> Sitemize Göz Atmak isterseniz`,
       `[Sitemiz](http://www.xaine.tk/)`
     )
-  
-   .addField(
-      `> Kod Sitemize Göz Atmak İsterseniz`,
-      `[Kod sitemiz](https://xainecode.glitch.me/)`
-       )
   
   .addField(
       `> Top.gg den botumuza bakmak isterseniz`,

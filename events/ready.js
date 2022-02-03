@@ -11,10 +11,14 @@ module.exports = client => {
   
   
   client.guilds.cache.forEach(g => {
-    g.commands.create({
-      name: "test",
-      description: "test açıklama"
-    })
+    try{
+      g.commands.create({
+        name: "test",
+        description: "test açıklama"
+      })
+    }catch(e){
+      console.log(e)
+    }
   })
   
   
