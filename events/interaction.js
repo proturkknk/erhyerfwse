@@ -32,22 +32,22 @@ module.exports = async(int, bot) => {
     case "bakımdaki-komutlar":
       bakimdakikomutlar(int, bot)
       break
-    case "tedbirler":
+    case "aldığımız-tedbirler":
       tedbirler(int, bot)
       break
-    case "normalkomutlar":
+    case "normal-komutlar":
       normalkomutlar(int, bot)
       break
-    case "sartli":
+    case "şartlı-moderasyon-komutları":
       sartli(int, bot)
       break
-    case "sartsiz":
+    case "şartsız-moderasyon-komutları":
       sartsiz(int, bot)
       break
     case "moderasyon":
       moderasyon(int, bot)
       break
-    case "sartlar":
+    case "şartlar":
       sartlar(int, bot)
       break
     case "kabulet":
@@ -60,27 +60,27 @@ module.exports = async(int, bot) => {
 }
 
 function iftar(int, bot){
-  
+  int.reply("iftar") 
 }
 
 function sunucubilgi(int, bot){
-  
+    int.reply('sunucubilgi')
 }
 
 function bilgilendirme(int, bot){
-  
+    int.reply('bilgilendirme')
 }
 
 function yardim(int, bot){
-  
+    int.reply('yardım')
 }
 
 function vipuyebilgi(int, bot){
-  
+     int.reply('VİP Üye Bilgi')
 }
 
 function eglencekomutlari(int, bot){
-  
+     int.reply('')
 }
 
 function giflikomutlar(int, bot){
