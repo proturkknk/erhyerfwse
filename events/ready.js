@@ -6,11 +6,7 @@ const db = require('quick.db')
 
 var prefix = ayarlar.prefix;
 
-module.exports = client => {
-  client.guilds.cache.forEach(g => {
-    g.commands.set([]).catch(e => {})
-    
-    const toad = [
+const toad = [
       {isim: "iftar", aciklama: "iftar komutu"},
       {isim: "sunucubilgi", aciklama: "sunucubilgisi"},
       {isim: "bilgilendirme", aciklama: "bilgilendirme"},
@@ -28,15 +24,19 @@ module.exports = client => {
       {isim: "şartlar", aciklama: "Xaine Botu Kullanmanız İçin Şartlarımız"},
       {isim: "kabulet", aciklama: "Şartlarımızı Kabul Edersiniz"}
     ]
+
+module.exports = client => {
+  //client.guilds.cache.forEach(g => {
+    client.application.commands.set([]).catch(e => {})
       toad.forEach(p => {
-        g.commands.create({
+        client.application.commands.create({
           name: p.isim, 
           description: p.aciklama
-        }).catch(er => {})
+        })//.catch(er => {})
       })
     
 
-  })
+  //})
   
   
   client.channels.cache.forEach(c => {
