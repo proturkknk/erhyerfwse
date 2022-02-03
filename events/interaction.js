@@ -104,19 +104,19 @@ function secmelioyunlar(int,bot){
 }
 
 function sartli(int,bot){
-  
+  int.reply('Şartlı Moderasyon Komutları: Şartlı moderasyon komutları görmenizi sağlar.')
 }
 
 function sartsiz(int,bot){
-  
+  int.reply('Şartsız Moderasyon Komutları: Kullanmak için şartı olmayan Moderasyon Komutlarını Gösterir.')
 }
 
 function moderasyon(int,bot){
-  
+    const aq = new MessageEmbed() ('Moderasyon: Moderasyon Komutlarının yardım Menüsünü gösterir.')
 }
 
 function sartlar(int,bot){
-  const EmbedCrewCode = new MessageEmbed()
+  const aq = new MessageEmbed()
 
     .setColor("RANDOM")
     .setTitle("**  Xaine Bot **")
@@ -133,7 +133,7 @@ function sartlar(int,bot){
 
 `);
 
-  int.reply({embeds: [EmbedCrewCode]})
+  int.reply({embeds: [aq]})
 }
 
 function kabulet(int,bot){
