@@ -60,59 +60,117 @@ module.exports = async(int, bot) => {
 }
 
 function iftar(int, bot){
-  int.reply("iftar") 
+  const embed = new MessageEmbed()
+ .setTitle("iftar işte aq")
+.setDescription("iftar")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function sunucubilgi(int, bot){
-    int.reply('+sunucubilgi yazarak bulunduğun sunucu bilgilerini görebilirsin.')
+    const embed = new MessageEmbed()
+ .setTitle("sunucubilgiamk")
+.setDescription("suncu bilgi aq")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function bilgilendirme(int, bot){
-    int.reply('+bilgilendirme yazarak bot hakkında bilgilendirmeleri görebilirsin.')
+    const embed = new MessageEmbed()
+ .setTitle("bilgilendirey")
+.setDescription("al bilgilendirme nekadar zor olabilir bunu yapmak aq")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function yardim(int, bot){
-    int.reply('+yardım')
+    const embed = new MessageEmbed()
+ .setTitle("yardim")
+.setDescription("yardım et serdar")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function vipuyebilgi(int, bot){
-     int.reply('VİP Üye Bilgi Komutunu kullanarak VİP üyeliği hakkında bilgi alabilirsin.')
+     const embed = new MessageEmbed()
+ .setTitle("vip sjh")
+.setDescription("nekadar zor sence")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function eglencekomutlari(int, bot){
-     int.reply('eğlence komutları komutunu kullanarak eğlence komutlarımızı görebilirsin.')
+     const embed = new MessageEmbed()
+ .setTitle("eglence moderesyon")
+.setDescription("alaq eglence")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function giflikomutlar(int, bot){
-      int.reply('Gifli komutları kullanarak gif içeren komutlarımızı görebilirsin.')
+      const embed = new MessageEmbed()
+ .setTitle("gifli moderesyon")
+.setDescription("QWEQWEQWEQW")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function bakimdakikomutlar(int, bot){
-      int.reply('Bakımdaki Komutlar komutunu kullanarak bakımdaki komutları görebilirsin.')
+      const embed = new MessageEmbed()
+ .setTitle("bakımdaki komutlarza moderesyon")
+.setDescription("al")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function tedbirler(int, bot){
-      int.reply('Tedbirler Komutunu kullanarak Xaine bot ve sizin için aldığımız tedbirleri görebilirsiniz.')
+      const embed = new MessageEmbed()
+ .setTitle("tedbir aq")
+.setDescription("al 10 saniye mi aldı")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function normalkomutlar(int, bot){
-      int.reply('Normal Komutlar komutunu kullanarak kişisel komutları görebilirsin.')
+      const embed = new MessageEmbed()
+ .setTitle("normal komutlaersyon")
+.setDescription("aqweqwewqqw")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function secmelioyunlar(int,bot){
-      int.reply('Seçmeli oyunlar komutunu ku') 
+      const embed = new MessageEmbed()
+ .setTitle("secmeli işte aq moderesyon")
+.setDescription("AAAAAAAAAAAAAAAAAAAAAAAAAA")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function sartli(int,bot){
-  int.reply('Şartlı Moderasyon Komutları: Şartlı moderasyon komutları görmenizi sağlar.')
+  const embed = new MessageEmbed()
+ .setTitle("şartlı moderesyon")
+.setDescription("şartlı Moderasyon Komutları: Kullanmak için şartı olan Moderasyon Komutlarını Gösterir.")
+.setTimestamp()
+int.reply({embeds: [embed]})
+
 }
 
 function sartsiz(int,bot){
-  int.reply('Şartsız Moderasyon Komutları: Kullanmak için şartı olmayan Moderasyon Komutlarını Gösterir.')
+  const embed = new MessageEmbed()
+ .setTitle("şartsız moderesyon")
+.setDescription("şartsız Moderasyon Komutları: Kullanmak için şartı olmayan Moderasyon Komutlarını Gösterir.")
+.setTimestamp()
+int.reply({embeds: [embed]})
+
 }
 
 function moderasyon(int,bot){
-    const aq = new MessageEmbed() ('Moderasyon: Moderasyon Komutlarının yardım Menüsünü gösterir.')
+    const embed = new MessageEmbed()
+ .setTitle("moderesyon")
+.setDescription("artsız QWEQWEQWEWQQWEQWEQW")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
 
 function sartlar(int,bot){
@@ -137,5 +195,9 @@ function sartlar(int,bot){
 }
 
 function kabulet(int,bot){
-  
+  const embed = new MessageEmbed()
+ .setTitle("NB KABUL ETQWE moderesyon")
+.setDescription("AH SERDAR")
+.setTimestamp()
+int.reply({embeds: [embed]})
 }
