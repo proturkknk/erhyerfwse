@@ -12,7 +12,8 @@ Kullanılan Xaine Bot sürümü: **4.0**
 Sezon: ** Kar Sezonu ❄️ **
 
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
-**seçmeli-oyunlar-yardım** Komutundaki komutların çalışmama sorunları çözüldü.
+
+**Slash (/)** Komutları Yapım Çalışması Tamamlandı! Artık / (Slash) simgesiyle Bazı Komutlarımız Hakkında Bilgi Edinebilirsiniz.
 
 **sunucu-bilgi** Komutunun çalışmama sorunu çözüldü. 
 
