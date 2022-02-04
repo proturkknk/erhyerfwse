@@ -19,7 +19,7 @@ exports.run = (client, message, args) => {
       .send(`Lütfen sunucudan yasaklayacağınız kişiyi etiketleyin.`)
       .catch(console.error);
 
-  if (!message.guild.member(dızcılaraselam).bannable)
+  message.guild.members.cache.get
     return message.channel.send(
       `❌ Belirttiğiniz kişinin Yetkisi Benden Daha Üstün. O yüzden Banlayamıyorum.(Yasaklama)`
     );
