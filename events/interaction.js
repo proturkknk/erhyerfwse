@@ -61,8 +61,8 @@ module.exports = async(int, bot) => {
 
 function iftar(int, bot){
   const embed = new MessageEmbed()
- .setTitle("iftar işte aq")
-.setDescription("iftar")
+ .setTitle("iftar")
+.setDescription("İftar: Belirttiğiniz şehirde ki **İftara Kalan Süre**yi gösterir. ")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
