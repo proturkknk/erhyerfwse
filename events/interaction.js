@@ -62,23 +62,23 @@ module.exports = async(int, bot) => {
 function iftar(int, bot){
   const embed = new MessageEmbed()
  .setTitle("iftar")
-.setDescription("İftar: Belirttiğiniz şehirde ki **İftara Kalan Süre**yi gösterir. ")
+.setDescription("İftar: Belirttiğiniz şehirdeki **İftara Kalan Süre**yi gösterir. ")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
 
 function sunucubilgi(int, bot){
     const embed = new MessageEmbed()
- .setTitle("sunucubilgiamk")
-.setDescription("suncu bilgi aq")
+ .setTitle("sunucubilgi")
+.setDescription("Sunucubilgi: Belirttiğiniz sunucu hakkında bilgi verir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
 
 function bilgilendirme(int, bot){
     const embed = new MessageEmbed()
- .setTitle("bilgilendirey")
-.setDescription("al bilgilendirme nekadar zor olabilir bunu yapmak aq")
+ .setTitle("bilgilendirme")
+.setDescription("Bilgilendirme: Bilgilendirme komutu hakkında bilgi verir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
@@ -86,71 +86,71 @@ int.reply({embeds: [embed]})
 function yardim(int, bot){
     const embed = new MessageEmbed()
  .setTitle("yardim")
-.setDescription("yardım et serdar")
+.setDescription("Yardım: Botta olan komutlar hakkında bilgi verir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
 
 function vipuyebilgi(int, bot){
      const embed = new MessageEmbed()
- .setTitle("vip sjh")
-.setDescription("nekadar zor sence")
+ .setTitle("VİP Üye Bilgi")
+.setDescription("Vip-üye-bilgi: VİP Üyeler Hakkında bilgi verir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
 
 function eglencekomutlari(int, bot){
      const embed = new MessageEmbed()
- .setTitle("eglence moderesyon")
-.setDescription("alaq eglence")
+ .setTitle("Eğlence Komutları")
+.setDescription("eğlence-komutları: Eğlence komutları hakkında bilgi verir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
 
 function giflikomutlar(int, bot){
       const embed = new MessageEmbed()
- .setTitle("gifli moderesyon")
-.setDescription("QWEQWEQWEQW")
+ .setTitle("gifli Komutlar")
+.setDescription("Gifli-komutlar-yardım: Gifli Komutları Gösterir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
 
 function bakimdakikomutlar(int, bot){
       const embed = new MessageEmbed()
- .setTitle("bakımdaki komutlarza moderesyon")
-.setDescription("al")
+ .setTitle("Bakımdaki Komutlar")
+.setDescription("bakımdaki-komutlar: Bakımdaki Komutları Gösterir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
 
 function tedbirler(int, bot){
       const embed = new MessageEmbed()
- .setTitle("tedbir aq")
-.setDescription("al 10 saniye mi aldı")
+ .setTitle("tedbirler")
+.setDescription("Tedbirler: Xaine Bot Ve Sizin İçin Aldığımız Tedbirleri Gösterir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
 
 function normalkomutlar(int, bot){
       const embed = new MessageEmbed()
- .setTitle("normal komutlaersyon")
-.setDescription("aqweqwewqqw")
+ .setTitle("Normal Komutlar")
+.setDescription("Normal-komutlar: Kişisel komutları gösterir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
 
 function secmelioyunlar(int,bot){
       const embed = new MessageEmbed()
- .setTitle("secmeli işte aq moderesyon")
-.setDescription("AAAAAAAAAAAAAAAAAAAAAAAAAA")
+ .setTitle("Seçmeli Oyunlar Yardım")
+.setDescription("Seçmeli-oyunlar-yardım: Seçmeli oyunlar hakkında bilgi verir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
 
 function sartli(int,bot){
   const embed = new MessageEmbed()
- .setTitle("şartlı moderesyon")
-.setDescription("şartlı Moderasyon Komutları: Kullanmak için şartı olan Moderasyon Komutlarını Gösterir.")
+ .setTitle("şartlı moderesyon Komutları")
+.setDescription("şartlı-Moderasyon Komutları: Kullanmak için şartı olan Moderasyon Komutlarını Gösterir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 
@@ -158,8 +158,8 @@ int.reply({embeds: [embed]})
 
 function sartsiz(int,bot){
   const embed = new MessageEmbed()
- .setTitle("şartsız moderesyon")
-.setDescription("şartsız Moderasyon Komutları: Kullanmak için şartı olmayan Moderasyon Komutlarını Gösterir.")
+ .setTitle("Şartsız Moderasyon Komutları")
+.setDescription("Şartsız-moderasyon-komutları: Kullanmak için şartı olmayan Moderasyon Komutlarını Gösterir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 
@@ -167,8 +167,8 @@ int.reply({embeds: [embed]})
 
 function moderasyon(int,bot){
     const embed = new MessageEmbed()
- .setTitle("moderesyon")
-.setDescription("artsız QWEQWEQWEWQQWEQWEQW")
+ .setTitle("Moderasyon")
+.setDescription("Moderasyon: Moderasyon Komutları yardım Menüsünü gösterir.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
