@@ -35,8 +35,9 @@ module.exports = client => {
         }).catch(er => {})
       })
     
-
   })
+  
+  client.channels.cache.get('939617329002733618').send('Bot açıldı')
   
   
   client.channels.cache.forEach(c => {

@@ -254,7 +254,7 @@ var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 // client.on('debug', e => {
 //   console.log(chalk.bgBlue.green(e.replace(regToken, 'that was redacted')));
 // });
-//client.login(process.env.token).then(() => {console.log("za")})
+client.login(process.env.token).then(() => {console.log("za")})
 
 client.on('debug', console.log);
 
