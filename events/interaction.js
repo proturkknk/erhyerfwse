@@ -77,8 +77,9 @@ int.reply({embeds: [embed]})
 
 function bilgilendirme(int, bot){
     const embed = new MessageEmbed()
- .setTitle("bilgilendirme")
-.setDescription("Bilgilendirme: Bilgilendirme komutu hakkında bilgi verir.")
+ .setTitle("Xaine Bot Bilgilendirme Komutu ")
+.setDescription("**9.01.2022** ---> Xaine Botun ismine açılan sahte bot veya botları bizlere bildirebilirsiniz! Bildiren kullanıcılarımıza ödüllerimiz olacak.")
+    .setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
