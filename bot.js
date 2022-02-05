@@ -254,9 +254,9 @@ var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 // client.on('debug', e => {
 //   console.log(chalk.bgBlue.green(e.replace(regToken, 'that was redacted')));
 // });
-console.log("token: "+process.env.token)
-console.log("bota şuan giriş yapmasını emrediyom gir oc")
-client.login(process.env.token)
+//client.login(process.env.token).then(() => {console.log("za")})
+
+client.on('debug', console.log);
 
 client.on("messageCreate", async (message, bot) => {
   if (message.content.startsWith("/spotify")) {
