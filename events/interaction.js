@@ -196,8 +196,8 @@ function sartlar(int,bot){
 
 function kabulet(int,bot){
   const embed = new MessageEmbed()
- .setTitle("NB KABUL ETQWE moderesyon")
-.setDescription("AH SERDAR")
+ .setTitle("kabulet")
+.setDescription("Kabulet: Xaine Bot şartlarını kabul edersiniz.")
 .setTimestamp()
 int.reply({embeds: [embed]})
 }
