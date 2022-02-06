@@ -55,9 +55,9 @@ app.set("view engine", "ejs");
 //SAYFALAR
 
 let ss = null
-//let trefax = client.users.fetch('696365117063036986')
-//let ensar = client.users.fetch('522834911732695041')
-//let kerem = client.users.fetch('459377860012933121')
+let trefax = client.users.fetch('696365117063036986')
+let ensar = client.users.fetch('522834911732695041')
+let kerem = client.users.fetch('459377860012933121')
 
 app.get('/workings', (req, res) => {
   res.sendFile(__dirname+'/views/ok.html')
@@ -72,12 +72,11 @@ app.get('/privacy', async(req, res) => {
 })
 
 app.get("/", async(request, response) => {
-  let trefax = undefined//await client.users.fetch('696365117063036986')
-  let ensar = undefined//await client.users.fetch('522834911732695041')
-  let kerem = undefined//await client.users.fetch('459377860012933121')
-  ss = "AAAAAAAAAAAA"
+  let trefax = await client.users.fetch('696365117063036986')
+  let ensar = await client.users.fetch('522834911732695041')
+  let kerem = await client.users.fetch('459377860012933121')
   if(ss){
-    response.render("index", {username: ss, trefax: "", ensar: "", kerem: ""}); //avatarURL()
+    response.render("index", {username: ss, trefax: trefax.avatarURL(), ensar: ensar.avatarURL(), kerem: kerem.avatarURL()}); //avatarURL()
     ss = null
   }else{
     response.render("index", {username: "Giriş yap", trefax: trefax.avatarURL(), ensar: ensar.avatarURL(), kerem: kerem.avatarURL()});
@@ -251,7 +250,7 @@ client.elevation = message => {
 };
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
-//client.login(process.env.token).then(() => {console.log("za")})
+client.login(process.env.token).then(() => {console.log("za")})
 
 client.on('debug', console.error)
 
