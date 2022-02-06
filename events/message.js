@@ -21,7 +21,7 @@ module.exports = async(message, bot) => {
   let params = message.content.split(' ').slice(1);//
   let perms = client.elevation(message);
   let cmd;
-  
+  console.log(message.content)
   if (client.commands.has(command)) {
     cmd = client.commands.get(command);
   } else if (client.aliases.has(command)) {
