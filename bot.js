@@ -64,7 +64,7 @@ app.get('/workings', (req, res) => {
 })
 
 app.get('/tos', async(req, res) => {
-  res.send('Botun eklendiği sunucularda ADMİN Yetkisi olursa daha iyi olur.')
+  res.send('Botun eklendiği sunucularda daha iyi çalışması için ADMİN Yetkisi olursa daha iyi olur.')
 })
 
 app.get('/privacy', async(req, res) => {
