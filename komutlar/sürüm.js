@@ -3,7 +3,7 @@ const {MessageEmbed} = require("discord.js");
 exports.run = (client, message, args) => {
   const rexus = new MessageEmbed()
     .setColor("RANDOM")
-    .setDescription("Şuanda kullanılan Xaine Bot sürümü: 4.0")
+    .setDescription("Şuanda kullanılan Xaine Bot sürümü: 4.1")
     
   message.channel.send({embeds: [rexus]});
 };

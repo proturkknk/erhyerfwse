@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
 .setDescription(`
 <:civcivkalp:853213881111150642>  davet yazarak botla ilgili tüm linklere ulaşabilirsiniz.
 
-Kullanılan Xaine Bot sürümü: **4.0**
+Kullanılan Xaine Bot sürümü: **4.1**
 Sezon: ** Kar Sezonu ❄️ **
 
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
