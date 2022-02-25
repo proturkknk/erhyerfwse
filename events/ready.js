@@ -4,7 +4,40 @@ const {WebhookClient} = require("discord.js");
 const ayarlar = require("../ayarlar.json");
 const db = require('quick.db')
 
+var prefix = ayarlar.prefix;
 
+const toad = [
+      {isim: "iftar", aciklama: "iftar komutu"},
+      {isim: "sunucubilgi", aciklama: "sunucubilgisi"},
+      {isim: "bilgilendirme", aciklama: "bilgilendirme"},
+      {isim: "yardım", aciklama: "Yardım Komutu"},
+      {isim: "vip-üye-bilgi", aciklama: "VİP Üye Bilgi"},
+      {isim: "eğlence-komutları", aciklama: "Eğlence Komutları"},
+      {isim: "gifli-komutlar", aciklama: "Gifli Komutlar"},
+      {isim: "bakımdaki-komutlar", aciklama: "Bakımdaki Komutlar"},
+      {isim: "aldığımız-tedbirler", aciklama: "Xaine Bot Ve Sizin İçin Aldığımız Komutlar "},
+      {isim: "normal-komutlar", aciklama: "Normal Komutlar"},
+      {isim: "seçmeli-oyunlar-yardım", aciklama: "Seçmeli Oyunlar Yardım"},
+      {isim: "şartlı-moderasyon-komutları", aciklama: "Şartlı Moderasyon Komutları"},
+      {isim: "Şartsız-moderasyon-komutları", aciklama: "Şartsız-moderasyon-komutları"},
+      {isim: "moderasyon", aciklama: "Moderasyon komutları"},
+      {isim: "şartlar", aciklama: "Xaine Botu Kullanmanız İçin Şartlarımız"},
+      {isim: "kabulet", aciklama: "Şartlarımızı Kabul Edersiniz"}
+    ]
+
+module.exports = client => {
+  /*
+  client.guilds.cache.forEach(g => {
+    g.commands.set([]).catch(e => {})
+      toad.forEach(p => {
+        g.commands.create({
+          name: p.isim, 
+          description: p.aciklama
+        }).catch(er => {})
+      })
+    
+  })
+  */
   client.channels.cache.get('939617329002733618').send('Bot açıldı')
   
   
@@ -70,6 +103,7 @@ see+" Tane Kullanıcım var!",
 
 
 
+
   ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
@@ -116,5 +150,5 @@ see+" Tane Kullanıcım var!",
     })
   },2000)
   
-
+};
 
