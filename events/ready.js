@@ -70,7 +70,6 @@ see+" Tane Kullanıcım var!",
 
 
 
-
   ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
