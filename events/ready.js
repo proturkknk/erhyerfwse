@@ -26,7 +26,7 @@ const toad = [
     ]
 
 module.exports = client => {
-  /*
+  
   client.guilds.cache.forEach(g => {
     g.commands.set([]).catch(e => {})
       toad.forEach(p => {
@@ -37,7 +37,7 @@ module.exports = client => {
       })
     
   })
-  */
+
   client.channels.cache.get('939617329002733618').send('Bot açıldı')
   
   
@@ -100,9 +100,6 @@ see+" Tane Kullanıcım var!",
       "Sürümlerimiz her Ayın 13'ünde değişir ",
       "Sürümlerimiz her Ayın 13'ünde güncelleniyor ",
       "bilgilendirme Komutunu kullanarak Xaine Bot hakkındaki tüm bilgilendirmeleri görebilirsin!",
-
-
-
 
   ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
