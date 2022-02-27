@@ -25,18 +25,20 @@ const toad = [
       {isim: "kabulet", aciklama: "Şartlarımızı Kabul Edersiniz"}
     ]
 
-module.exports = client => {
+//* module.exports = client => {
   
-  client.guilds.cache.forEach(g => {
-    g.commands.set([]).catch(e => {})
-      toad.forEach(p => {
-        g.commands.create({
-          name: p.isim, 
-          description: p.aciklama
-        }).catch(er => {})
-      })
+  //* client.guilds.cache.forEach(g => {
+   //*  g.commands.set([]).catch(e => {})
+   //*    toad.forEach(p => {
+     //*    g.commands.create({
+     //*      name: p.isim, 
+      //*     description: p.aciklama
+    //*     }).catch(er => {})
+    //*   })
     
-  })
+ //*  }) 
+
+
 
   client.channels.cache.get('939617329002733618').send('Bot açıldı')
   
