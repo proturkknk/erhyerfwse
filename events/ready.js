@@ -25,7 +25,7 @@ const toad = [
       {isim: "kabulet", aciklama: "Şartlarımızı Kabul Edersiniz"}
     ]
 
-//* module.exports = client => {
+module.exports = client => {
   
   //* client.guilds.cache.forEach(g => {
    //*  g.commands.set([]).catch(e => {})
@@ -104,6 +104,7 @@ see+" Tane Kullanıcım var!",
       "bilgilendirme Komutunu kullanarak Xaine Bot hakkındaki tüm bilgilendirmeleri görebilirsin!",
 
   ];   
+
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
     client.user.setActivity(oyun[random], "");
