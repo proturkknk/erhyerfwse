@@ -6,8 +6,7 @@ const dbl = new dblapi(process.env.dbl_token)
 let talkedRecently = new Set();
 
 module.exports = async(int, bot) => {
-  const {commandName, options} = int
-  console.log(commandName)
+  const {commandName, ptions} = int
   switch(commandName){
     case "iftar":
       iftar(int, bot)

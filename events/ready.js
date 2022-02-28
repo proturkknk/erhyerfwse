@@ -5,6 +5,7 @@ const ayarlar = require("../ayarlar.json");
 const db = require('quick.db')
 
 var prefix = ayarlar.prefix;
+
 const toad = [
       {isim: "iftar", aciklama: "iftar komutu"},
       {isim: "sunucubilgi", aciklama: "sunucubilgisi"},
@@ -25,20 +26,17 @@ const toad = [
     ]
 
 module.exports = client => {
-  
-  //* client.guilds.cache.forEach(g => {
-   //*  g.commands.set([]).catch(e => {})
-   //*    toad.forEach(p => {
-     //*    g.commands.create({
-     //*      name: p.isim, 
-      //*     description: p.aciklama
-    //*     }).catch(er => {})
-    //*   })
+  client.guilds.cache.forEach(g => {
+    g.commands.set([]).catch(e => {})
+      toad.forEach(p => {
+        g.commands.create({
+          name: p.isim, 
+          description: p.aciklama
+        }).catch(er => {})
+      })
     
- //*  }) 
-
-
-
+  })
+  
   client.channels.cache.get('939617329002733618').send('Bot açıldı')
   
   
@@ -102,8 +100,10 @@ see+" Tane Kullanıcım var!",
       "Sürümlerimiz her Ayın 13'ünde güncelleniyor ",
       "bilgilendirme Komutunu kullanarak Xaine Bot hakkındaki tüm bilgilendirmeleri görebilirsin!",
 
-  ];   
 
+
+
+  ];   
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
     client.user.setActivity(oyun[random], "");
