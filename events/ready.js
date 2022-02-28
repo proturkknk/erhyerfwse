@@ -5,7 +5,6 @@ const ayarlar = require("../ayarlar.json");
 const db = require('quick.db')
 
 var prefix = ayarlar.prefix;
-
 const toad = [
       {isim: "iftar", aciklama: "iftar komutu"},
       {isim: "sunucubilgi", aciklama: "sunucubilgisi"},
