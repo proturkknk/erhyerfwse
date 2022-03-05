@@ -41,7 +41,6 @@ module.exports = client => {
   
   client.channels.cache.get('939617329002733618').send('Bot açıldı')
   
-  
   client.channels.cache.forEach(c => {
     db.delete(`anti_${c.id}`)
   })
