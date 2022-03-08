@@ -1,3 +1,3 @@
 module.exports = client => {
-  console.log(`Başlatılıyor... ${new Date()}`);
+  console.log(`Xaine Bot Başlatılıyor... ${new Date()}`);
 };

@@ -1,4 +1,4 @@
-//DEĞİŞKENLER
+//DEĞİŞKENLER AMA EMSAR 
 
 const {Client, Intents, Collection, MessageEmbed, WebhookClient} = require("discord.js");
 const client = new Client({ intents: [Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
@@ -57,7 +57,8 @@ app.set("view engine", "ejs");
 let ss = null
 let trefax = client.users.fetch('696365117063036986')
 let ensar = client.users.fetch('522834911732695041')
-let kerem = client.users.fetch('459377860012933121')
+let kerem = client.users.fetch('459377860012933121') 
+let efe   = client.users.fetch(' 660500943024029697 ')
 
 app.get('/workings', (req, res) => {
   res.sendFile(__dirname+'/views/ok.html')

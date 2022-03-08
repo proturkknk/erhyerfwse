@@ -26,20 +26,22 @@ const toad = [
     ]
 
 module.exports = client => {
-  /*
-  client.guilds.cache.forEach(g => {
-    g.commands.set([]).catch(e => {})
-      toad.forEach(p => {
-        g.commands.create({
-          name: p.isim, 
-          description: p.aciklama
-        }).catch(er => {})
-      })
-    
-  })
-  */ //Trefax elleme sonra çalışmıyo diye ağlıyon aq
   
+  //* client.guilds.cache.forEach(g => {
+   //*  g.commands.set([]).catch(e => {})
+   //*    toad.forEach(p => {
+     //*    g.commands.create({
+     //*      name: p.isim, 
+      //*     description: p.aciklama
+    //*     }).catch(er => {})
+    //*   })
+    
+ //*  }) 
+
+
+
   client.channels.cache.get('939617329002733618').send('Bot açıldı')
+  
   
   client.channels.cache.forEach(c => {
     db.delete(`anti_${c.id}`)
@@ -64,18 +66,45 @@ module.exports = client => {
     var oyun = [  
 see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
-"VIP Üye Ön Kayıt yaptırmak için Kurucumuzla iletişime geçebilirsiniz.",
-"VIP Üyelik Ayda sadece 2,99 TL",
 "Xaine Botun ismiyle açılan sahte botları bize bildirebilirsiniz! Bildiren kullanıcılarımıza ödüllerimiz olacak!",
 "V.I.P Üye Sistemi Çok yakında aktif!",
 "Kış Sezonu ❄️ ",
-"Kullanılan Xaine Bot sürümü: 4.1",
-"Web sitemiz | https://www.xainebot.tk/",
+"Kış Sezonu ❄️ aktif! ",
+" 2. Sezon! Kış Sezonu ❄️ ",
+" Sürümüm: 4.1 ",
+      "Sürüm 4.1 ",
+      " Xaine Bot Sürümü 4.1 ",
+      " İyi Eğlenceler 😊 ",
+    "  7/24 Aktif!",
+    "  Kurucum-yapımcım: (! TREFAX#0362)",
+    "  İyi Günler 😊 ",
+ "  Prefix: + ",
 " Destek sunucumuz: https://discord.gg/Kekc2pU",
-
-
+    "  Benim 7/24 aktif oldumu biliyor muydunuz?",
+" Bildir komutuyla şikayet-öneri de bulunabiliceğinizi biliyor muydunuz?",
+"  +saat komutunu kullanarak Türkiyenin saatini öğrenebileceğinizi biliyor muydunuz?",
+      cmd+"  Tane Komutum var! 😻 ",
+     "  Yeni komutlar! ✨ ",
+      " Prefixi değiştirmek isterseniz +prefix (prefix) komutuyla değiştirebilirsiniz.",
+" | +yardım | +bildir | +davet | +yapımcım | +ekibimiz | +prefix | ",
+      "Güncelleme!: Yeni komutlarımız eklendi!",
+      "En çok sevilen komutum: dondurma",
+      "Sitemiz: https://www.xainebot.tk/",
+       "XAİNE BOT ",
+      "Xaine Bot",
+      "Destek sunucumuzdaki çekilişlere katılmayı unutmayın! Destek sunucumuzun davet linkini almak için +davet yazabilirsiniz",
+      "Web sitemiz - https://www.xainebot.tk/",
+      "Web sitemiz | https://www.xainebot.tk/",
+      "Kurucum-Yapımcım - ! TREFAX#0362",
+      "Kurucum-Yapımcım | ! TREFAX#0362",
+      "https://www.xainebot.tk/",
+      "Sürümlerimiz her Ayın 13'ünde değişiyor ",
+      "Sürümlerimiz her Ayın 13'ünde değişir ",
+      "Sürümlerimiz her Ayın 13'ünde güncelleniyor ",
+      "bilgilendirme Komutunu kullanarak Xaine Bot hakkındaki tüm bilgilendirmeleri görebilirsin!",
 
   ];   
+
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
 
     client.user.setActivity(oyun[random], "");

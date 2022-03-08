@@ -8,7 +8,7 @@ if (!cu)
 
 return message.reply("**:warning: Hata! Aduket Çekeceğin Kişiyi Etiketlemelisin.**");
 
-const Emsargey = new MessageEmbed()
+const Embedmatador = new MessageEmbed()
 
     .setDescription(
       `${cu} ` + `**${message.author.username}** Size Aduket Çekti!`
@@ -19,7 +19,7 @@ const Emsargey = new MessageEmbed()
     .setFooter(client.user.username + " Sundu", client.user.avatarURL)
     .setTimestamp();
 
-return message.channel.send({embeds: [Emsargey]});
+return message.channel.send({embeds: [Embedmatador]});
 };
 
 exports.conf = {

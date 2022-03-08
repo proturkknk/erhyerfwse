@@ -4,7 +4,7 @@ const data = require('quick.db');
 exports.run = async (client, message, args) => {
   const nn = new MessageEmbed().setThumbnail();
   if(message.author.id !== message.guild.owner.user.id) return message.reply('Bu komutu kullanabilmek için **Sunucu Sahibi** olmalısın!')
-const sistem= await data.fetch(`spam.${message.guild.id}`);
+const sistem = await data.fetch(`spam.${message.guild.id}`);
 if(sistem) return message.channel.send({embeds: [nn.setDescription(`Spam koruma zaten aktif.`)]}).then(a => a.delete({timeout: 10000}));
 
 data.set(`spam.${message.guild.id}`, 'Rylan');
