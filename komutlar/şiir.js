@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
         .setImage(replies[result]);
     message.channel.send({embeds: [gifembed]});
 };
-//CodeShare
+
 exports.conf = {
   enabled: true,
   guildOnly: false,
