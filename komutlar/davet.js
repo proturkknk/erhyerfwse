@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
     )
     .addField(
       `> Botumuzu Davet Etmek isterseniz`,
-      `[Botu Davet Etme Linki](https://discord.com/api/oauth2/authorize?client_id=774235071653216286&permissions=8&scope=bot%20applications.commands`
+      `[Botu Davet Etme Linki](https://discord.com/oauth2/authorize?client_id=951720668758695936&scope=bot&permissions=8)`
     )
     .addField(
       `> Destek Sunucusuna Katılmak İsterseniz`,
@@ -27,13 +27,13 @@ exports.run = (client, message, args) => {
   
   .addField(
       `> Top.gg den botumuza bakmak isterseniz`,
-      `[Top.gg Botumuz Linki](https://top.gg/bot/774235071653216286)`
+      `[Top.gg Botumuz Linki (YAKINDA)]()`
     )
 
 
     .addField(
       `> Xaine Bota Oy Vermek İsterseniz`,
-      `[Top.gg Oy Verme Linki](https://top.gg/bot/774235071653216286/vote)`
+      `[Top.gg Oy Verme Linki (YAKINDA)](https://top.gg/bot/774235071653216286/vote)`
     )
 .setImage(`https://media.giphy.com/media/rZ3NPLjVRjAtLnwphZ/giphy.gif?cid=790b761116ac64a6f9e3add97dfb3c8126c68b94170377aa&rid=giphy.gif&ct=g`)
     .setThumbnail(
