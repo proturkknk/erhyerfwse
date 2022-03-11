@@ -12,7 +12,7 @@ exports.run = (client, message) => {
   const EmbedCrewCode = new MessageEmbed()
 
     .setColor("RANDOM")
-    .setTitle("**  Xaine Bot V.I.P Üye Şartları Komutu **")
+    .setTitle("**  Fleix Bot V.I.P Üye Şartları Komutu **")
     .setThumbnail(
       "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`

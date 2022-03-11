@@ -65,12 +65,12 @@ exports.run = function(client, message, args) {
 exports.conf = {
   enabled: true, 
   guildOnly: true, 
-  aliases: ['xaine','Xaine','XAİNE'],
+  aliases: ['fleix','Fleix','FLEİX'],
   permLevel: 0 
 };
 
 exports.help = {
-  name: 'xaine', 
+  name: 'Fleix', 
   description: 'sihirli konuş komutu sorularınızı cevaplar',
-  usage: 'xaine <soru>'
+  usage: 'fleix <soru>'
 };

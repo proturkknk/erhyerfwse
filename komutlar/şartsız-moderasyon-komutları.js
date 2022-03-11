@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 const EmbedFwhyCode = new MessageEmbed()
 
 .setColor("RANDOM")
-.setTitle("**▬▬▬[** ©️ **Xaine Bot (V12)** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`")
+.setTitle("**▬▬▬[** ©️ **Fleix Bot (V12)** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`")
 .setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
 .setDescription(`
 
@@ -42,5 +42,5 @@ exports.conf = {
   exports.help = {
     name: 'şartsız-moderasyon-komutları', 
     description: 'Xaine Bot moderasyon komutları',
-    usage: 'Xaine Bot'
+    usage: 'Fleix Bot'
 };

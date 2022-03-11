@@ -45,10 +45,10 @@ Sezon: ** Kar Sezonu ❄️ **
  
   > :wrench: | +Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.`)
  
- .setFooter(`Xaine Bot Yardım Menüsü `)
+ .setFooter(`Fleix Bot Yardım Menüsü `)
 .addField("Bağlantılar","[Davet et](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)\n[Destek sunucusu](https://discord.gg/99C4tGzgK4)\n[Oy verme linki](https://top.gg/bot/774235071653216286/vote)")
  .setFooter(`© 2020 Xaine Bot | Tüm hakları saklıdır`)
-.addField(`Duyuru!`,`Hey selam! Ben Xaine | Destek sunucumuza katılmak ister misiniz? Destek sunucumuzda çekilişler, bot hakkında duyurular ve güncellemeleri öğrenebilirsiniz! Katılmak isterseniz üsteki **bağlantılar** bölümünden **Destek sunucusu** yazan yere tıklayabilirsiniz.`)
+.addField(`Duyuru!`,`Hey selam! Ben Fleix | Destek sunucumuza katılmak ister misiniz? Destek sunucumuzda çekilişler, bot hakkında duyurular ve güncellemeleri öğrenebilirsiniz! Katılmak isterseniz üsteki **bağlantılar** bölümünden **Destek sunucusu** yazan yere tıklayabilirsiniz.`)
     .setTimestamp()
     .setImage("https://media.giphy.com/media/rZ3NPLjVRjAtLnwphZ/giphy.gif?cid=790b761116ac64a6f9e3add97dfb3c8126c68b94170377aa&rid=giphy.gif&ct=g")
 message.channel.send({embeds: [embed]}) 
