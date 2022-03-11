@@ -19,7 +19,7 @@ exports.run = async (client, message, args) => {
     .addField("**__Discord.JS__**", `${version}`, true)
     .addField("**__Konum__**", `Türkiye (Turkey) :flag_tr:`, true)
     .addField("**__Bot Sahibi__**", `<:civcivkalp:853213881111150642> ! TREFAX#0362`, true)
-    .addField("**__Geliştiriciler__**", ` <:civcivkalp:853213881111150642>  ! TREFAX#0362, ! xEnsar69#1611, ! kerem98#7884  `, true)
+    .addField("**__Geliştiriciler__**", ` <:civcivkalp:853213881111150642>  ! TREFAX#0362 `, true)
 
   return message.channel.send({embeds: [istatistikler]});
 };
