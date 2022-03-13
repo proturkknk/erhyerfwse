@@ -7,7 +7,7 @@ exports.run = (client, message, params) => {
     .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://www.hareketligifler.net/data/media/619/kar-hareketli-resim-0072.gif`)
+        .setImage('https://www.hareketligifler.net/data/media/619/kar-hareketli-resim-0072.gif')
     return message.channel.send({embeds: [matador]});
 };
 
