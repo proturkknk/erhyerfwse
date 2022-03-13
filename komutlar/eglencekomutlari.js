@@ -11,7 +11,7 @@ message.guild.emojis.cache.forEach(e => {
 })
   
   var cmds = [
-    "xaine -  aşkölçer - balıktut - mutlu-yıllar - roblox-oyuncu-bilgi - düello - efkarım - tersyazı - yazıtura - öp - aduketçek -  balık-tut - beşlik -  ejderha-yazı - emojiyazı - espri - kartopu - kralol - slots - tokat - yazı-tura - çıkma-teklifi -   düello - oylama -  yıldız - kar - adamasmaca - taş-kağıt-makas",
+    "xaine -  aşkölçer - balıktut - mutlu-yıllar - roblox-oyuncu-bilgi - düello - efkarım - tersyazı - yazıtura - öp - aduketçek -  balık-tut - beşlik -  ejderha-yazı - emojiyazı - espri - kralol - slots - tokat - yazı-tura - çıkma-teklifi -   düello - oylama -  yıldız - kar - adamasmaca - taş-kağıt-makas",
     "stresçarkı - zarat - nsfw - fal - boks-makinesi - şifre-oluştur -  sayıtut  - komik - sarıl - şiir -  ilginçbilgi - şanslı-sayım - yazan-kazanır - doğruluk-cesaret - kasa-aç"
   ]
 
