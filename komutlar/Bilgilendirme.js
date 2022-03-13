@@ -12,12 +12,12 @@ exports.run = (client, message) => {
   const EmbedCrewCode = new MessageEmbed()
 
     .setColor("RANDOM")
-    .setTitle("**  Xaine Bot Bilgilendirme Komutu **")
+    .setTitle("**  Fleix Bot Bilgilendirme Komutu **")
     .setThumbnail(
       "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`
 
-**9.01.2022** ---> Xaine Botun ismine açılan sahte bot veya botları bizlere bildirebilirsiniz! Bildiren kullanıcılarımıza ödüllerimiz olacak. 
+**9.01.2022** ---> Fleix Botun ismine açılan sahte bot veya botları bizlere bildirebilirsiniz! Bildiren kullanıcılarımıza ödüllerimiz olacak. 
 
 `);
 
