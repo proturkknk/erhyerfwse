@@ -69,7 +69,7 @@ see+" Tane Kullanıcım var!",
 "Fleix Botun ismiyle açılan sahte botları bize bildirebilirsiniz! Bildiren kullanıcılarımıza ödüllerimiz olacak!",
 "V.I.P Üye Sistemi Çok yakında aktif!",
 "Kış Sezonu ❄️ ",
-"Kullanılan Fleix Bot sürümü: 4.1",
+"Kullanılan Fleix Bot sürümü: 4.2",
 "Web sitemiz | YAKINDA ",
 " Destek sunucumuz: https://discord.gg/Kekc2pU",
 

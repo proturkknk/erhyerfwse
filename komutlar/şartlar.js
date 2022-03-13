@@ -12,7 +12,7 @@ exports.run = (client, message) => {
   const EmbedCrewCode = new MessageEmbed()
 
     .setColor("RANDOM")
-    .setTitle("**  Xaine Bot **")
+    .setTitle("**  Fleix Bot **")
     .setThumbnail(
       "https://media.giphy.com/media/vPJdwN8Hsu6K4hczUE/giphy.gif"
     ).setDescription(`

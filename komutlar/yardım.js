@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
 .setDescription(`
 <:civcivkalp:853213881111150642>  davet yazarak botla ilgili tüm linklere ulaşabilirsiniz.
 
-Kullanılan Xaine Bot sürümü: **4.1**
+Kullanılan Xaine Bot sürümü: **4.2**
 Sezon: ** Kar Sezonu ❄️ **
 
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
@@ -41,13 +41,13 @@ Sezon: ** Kar Sezonu ❄️ **
  
  > :tickets: | +davet -> Botla ilgili tüm linkleri gösterir.
 
- > :pencil:  | +bilgilendirme -> Xaine Bot hakkındaki tüm bilgilendirmeleri gösterir.
+ > :pencil:  | +bilgilendirme -> Fleix Bot hakkındaki tüm bilgilendirmeleri gösterir.
  
   > :wrench: | +Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.`)
  
  .setFooter(`Fleix Bot Yardım Menüsü `)
 .addField("Bağlantılar","[Davet et](https://discord.com/oauth2/authorize?client_id=774235071653216286&scope=bot&permissions=8)\n[Destek sunucusu](https://discord.gg/99C4tGzgK4)\n[Oy verme linki](https://top.gg/bot/774235071653216286/vote)")
- .setFooter(`© 2020 Xaine Bot | Tüm hakları saklıdır`)
+ .setFooter(`© 2020 Fleix Bot | Tüm hakları saklıdır`)
 .addField(`Duyuru!`,`Hey selam! Ben Fleix | Destek sunucumuza katılmak ister misiniz? Destek sunucumuzda çekilişler, bot hakkında duyurular ve güncellemeleri öğrenebilirsiniz! Katılmak isterseniz üsteki **bağlantılar** bölümünden **Destek sunucusu** yazan yere tıklayabilirsiniz.`)
     .setTimestamp()
     .setImage("https://media.giphy.com/media/rZ3NPLjVRjAtLnwphZ/giphy.gif?cid=790b761116ac64a6f9e3add97dfb3c8126c68b94170377aa&rid=giphy.gif&ct=g")
