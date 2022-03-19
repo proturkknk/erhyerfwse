@@ -74,6 +74,7 @@ see+" Tane Kullanıcım var!",
 " Destek sunucumuz: https://discord.gg/Kekc2pU",
 " Yaşadığın şehirde İftara Ne Kadar Kaldığını merak mı ediyorsun? Hadi **iftar** komutunu kullan!", 
 "**İftar** Komutunu kullanarak yaşadığın şehirin iftara kalan süresini ve zamanını öğrenebilirsin!",
+"**İftar** Komutunu kullan ve yaşadığın şehirdeki İftara Kalan süreyi öğren!",
 
 
 
