@@ -13,9 +13,9 @@ Sezon: ** Kar Sezonu ❄️ **
 
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
 
-**Slash (/)** Komutları Yapım Çalışması Tamamlandı! Artık / (Slash) simgesiyle Bazı Komutlarımız Hakkında Bilgi Edinebilirsiniz.
+**iftar-zamanı** Komutu kullanıma açıldı! 
 
-**sunucu-bilgi** Komutunun çalışmama sorunu çözüldü. 
+**Slash (/)** Komutları Yapım Çalışması Tamamlandı! Artık / (Slash) simgesiyle Bazı Komutlarımız Hakkında Bilgi Edinebilirsiniz.
 
 **VIP Üye Sistemi** Çok yakında geliyor!
 

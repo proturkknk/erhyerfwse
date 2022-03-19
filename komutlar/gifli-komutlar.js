@@ -12,7 +12,7 @@ exports.run = (client, message) => {
   const EmbedCrewCode = new MessageEmbed()
 
     .setColor("RANDOM")
-    .setTitle("**  Xaine Bot  **")
+    .setTitle("**  Fleix Bot Gifli Komutlar **")
     .setThumbnail(
       "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`
@@ -34,6 +34,7 @@ exports.run = (client, message) => {
 > [güneş]() → Güneş gifi gösterir. 
 > [kar]() → Kar gifi gösterir. 
 > [ramazan]() → Ramazan gifi gösterir. 
+> [iftar-zamanı]() → İftar zamanı gifi gösterir.
 > [bayram]() → Ramazan bayramı gifi gösterir.
 > [kandil]() → Kandil gifi gösterir.
 > [su]() → Su gifi gösterir. 
@@ -50,7 +51,7 @@ exports.run = (client, message) => {
 > [kolonya]() → Kolonya gifi gösterir.
 > [bebek]() → Bebek gifi gösterir.
 > [çanakkalezaferi]() → Çanakkale zaferi gifi gösterir.
-> [19mayıs]() → 19 Mayıs Atatürkü Anma Gençlik Ve Spor Bayramı gifi gösterir.
+> [19mayıs]() → 19 Mayıs Atatürk'ü Anma Gençlik Ve Spor Bayramı gifi gösterir.
 
 
 `);

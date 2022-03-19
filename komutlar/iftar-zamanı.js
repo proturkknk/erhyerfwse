@@ -20,6 +20,6 @@ exports.conf = {
 
 exports.help = {
   name: 'iftar-zamanı',
-  description: 'ramazan.',
-  usage: 'ramazan'
+  description: 'iftar-zamanı.',
+  usage: 'iftar-zamanı'
 };
