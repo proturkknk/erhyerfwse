@@ -72,6 +72,8 @@ see+" Tane Kullanıcım var!",
 "Kullanılan Fleix Bot sürümü: 4.2",
 "Web sitemiz | YAKINDA ",
 " Destek sunucumuz: https://discord.gg/Kekc2pU",
+" Yaşadığın şehirde İftara Ne Kadar Kaldığını merak mı ediyorsun? Hadi **iftar** komutunu kullan!", 
+"**İftar** Komutunu kullanarak yaşadığın şehirin iftara kalan süresini ve zamanını öğrenebilirsin!",
 
 
 
