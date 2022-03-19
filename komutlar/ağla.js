@@ -10,7 +10,7 @@ exports.run = (client, message) => {
   }
   if (!message.guild) {
     const motion = new MessageEmbed()
-      .setColor(0xff0000)
+      .setColor('RANDOM')
       .setTimestamp()
       .setAuthor(message.author.username, message.author.avatarURL)
       .addField("**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**");

@@ -4,14 +4,14 @@ exports.run = async(client, message, args) => {
   let arg = args[0]
   let sebep = args.slice(2).join(" ")
   let açıklama = args[1]
-let dreamcode = db.fetch(`xaine.bakim`)
+let dreamcode = db.fetch(`fleix.bakim`)
 if(!arg) {
   message.reply('Bakım modunu açmak için +bakım aç yaz')
 }
 
 if(arg == 'kapat'){
 message.channel.send(`Bot başarıyla bakım modundan çıkarıldı!`)
-db.delete(`xaine.bakim`)
+db.delete(`fleix.bakim`)
 db.delete(`afk_süre`);
 }
 

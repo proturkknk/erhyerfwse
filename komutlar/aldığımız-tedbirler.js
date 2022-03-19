@@ -12,14 +12,14 @@ exports.run = (client, message) => {
   const EmbedCrewCode = new MessageEmbed()
 
     .setColor("RANDOM")
-    .setTitle("**  Xaine Bot Aldığımız Tedbirler Komutu **")
+    .setTitle("**  Fleix Bot Aldığımız Tedbirler Komutu **")
     .setThumbnail(
       "https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif"
     ).setDescription(`
 
-**• Xaine Bot ve sizin için aldığımız tedbirler yardım menüsü**
+**• Fleix Bot ve sizin için aldığımız tedbirler yardım menüsü**
 
-> tedbirler → Xaine Bot ve Kullanıcılarımız için aldığımız tedbirleri gösterir.
+> tedbirler → Fleix Bot ve Kullanıcılarımız için aldığımız tedbirleri gösterir.
 
 **Daha fazla tedbir bilgileri eklenecektir.**
 

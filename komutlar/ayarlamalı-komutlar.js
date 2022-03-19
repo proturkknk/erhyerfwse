@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 
     .setColor("RANDOM")
     .setAuthor(
-      "**▬▬▬[** ©️ **Xaine Bot (V12)** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`",
+      "**▬▬▬[** ©️ **Fleix Bot (V13)** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`",
     )
     .setTitle("")
     .setThumbnail(
@@ -14,7 +14,7 @@ exports.run = (client, message) => {
     .setDescription(
       `
 
-[ :closed_lock_with_key: ** <:civcivkalp:853213881111150642> Xaine Bot Moderasyon Komutları** :teddy_bear: ]
+[ :closed_lock_with_key: ** <:civcivkalp:853213881111150642> Fleix Bot Moderasyon Komutları** :teddy_bear: ]
 
 > **[sa-as]**() → Sa-as sistemini açıp kapatmanızı sağlar
 
