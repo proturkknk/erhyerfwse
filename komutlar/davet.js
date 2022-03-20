@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
     )
     .addField(
       `> Botumuzu Davet Etmek isterseniz`,
-      `[Botu Davet Etme Linki](https://discord.com/oauth2/authorize?client_id=951720668758695936&scope=bot&permissions=8)`
+      `[Botu Davet Etme Linki](https://discord.com/oauth2/authorize?client_id=955104024619794472&scope=bot&permissions=27648860222)`
     )
     .addField(
       `> Destek Sunucusuna Katılmak İsterseniz`,
