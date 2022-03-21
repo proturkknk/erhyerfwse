@@ -24,6 +24,7 @@ exports.run = (client, message) => {
 > **hatırlatıcı** → Bakımda, lütfen bu komutu kullanmayınız.
 > **unmute** → Bakımda, lütfen bu komutu kullanmayınız. 
 > **son-görülme** → Bakımda, lütfen bu komutu kullanmayınız. 
+> **ban** → Bakımda, lütfen bu komutu kullanmayınız. 
 
 
 

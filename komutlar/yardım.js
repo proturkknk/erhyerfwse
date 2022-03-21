@@ -49,7 +49,7 @@ Sezon: ** Kar Sezonu ❄️ **
 .addField("Bağlantılar","[Davet et](https://discord.com/oauth2/authorize?client_id=955104024619794472&scope=bot&permissions=27648860222)\n[Destek sunucusu](https://discord.gg/99C4tGzgK4)\n[Oy verme linki](https://top.gg/bot/774235071653216286/vote)")
  .setFooter(`© 2020 Fleix Bot | Tüm hakları saklıdır`)
  .setTimestamp()
-    .setImage("https://media.giphy.com/media/rZ3NPLjVRjAtLnwphZ/giphy.gif?cid=790b761116ac64a6f9e3add97dfb3c8126c68b94170377aa&rid=giphy.gif&ct=g")
+    .setImage("https://media.giphy.com/media/BTQg35NV1TFyP03vGu/giphy.gif")
 message.channel.send({embeds: [embed]}) 
 //sharpen
 };
