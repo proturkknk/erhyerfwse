@@ -109,7 +109,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
     }
     if (perms < cmd.conf.permLevel) return;
     if(sg) return message.channel.send(bakim)
-    if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
+    if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Bu yazıyı görüyorsanız lütfen destek sunucumuzdan bize bildirin.")
     cmd.run(client, message, params, perms);
   }
   
