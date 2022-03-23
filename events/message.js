@@ -105,15 +105,9 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
 				return
 			}
 		}
-       if (cmd) {
-    }
-    if (perms < cmd.conf.permLevel) return;
-    if(sg) return message.channel.send(bakim)
-    if (db.fetch(`cokaradalistere_${message.author.id}`)) return message.channel.send("Olamaz sen botun karalistesinde bulunuyorsun botu kullanamazsın.")
-    cmd.run(client, message, params, perms);
-  }
+      
   
-  const hatamesaj = new MessageEmbed()
+    const hatamesaj = new MessageEmbed()
   .setTitle('Bekle! Biletiniz var mı?')
   .setDescription('**Bu komutu kullanmak için Destek sunucumuza katılıp bota oy vermeniz gerekmektedir.\n\n[Oy Ver](https://top.gg/bot/774235071653216286/vote), [Sunucuya Katıl](https://discord.gg/99C4tGzgK4)**')
   .setColor('RANDOM')
@@ -153,6 +147,8 @@ function sleep(ms) {
   }else{
     ok()
   }
-}
+
+ }
+ }
 
 
