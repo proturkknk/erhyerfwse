@@ -105,7 +105,8 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
 				return
 			}
 		}
-      
+       if (cmd) {
+    }
   
     const hatamesaj = new MessageEmbed()
   .setTitle('Bekle! Biletiniz var mı?')
@@ -147,8 +148,7 @@ function sleep(ms) {
   }else{
     ok()
   }
-
- }
- }
+}
 
 
+}
