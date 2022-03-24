@@ -53,7 +53,7 @@ if(!kabulettimi && cmd.conf.kategori != "bot") return message.reply("Botun herha
         const player = db.fetch(`karaliste.${message.author.id}`)//Bots For List Yapımı!
         if(player) return message.channel.send({embeds: [
           new MessageEmbed()
-          .setDescription(`**Xaine Botu artık kullanamazsınız! Çünkü Yetkililerimiz tarafından Karalisteye alınmışsınız. Nedenini bilmiyorsanız Xaine Bot sahibine yazabilirsiniz.**`)]}//Bots For List Yapımı!
+          .setDescription(`**Fleix Botu artık kullanamazsınız! Çünkü Yetkililerimiz tarafından Karalisteye alınmışsınız. Nedenini bilmiyorsanız Fleix Bot Destek Sunucumuza gelerek yardım alabilirsiniz.**`)]}//Bots For List Yapımı!
         )
         }
   
