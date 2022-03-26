@@ -18,13 +18,13 @@ const EmbedFwhyCode = new MessageEmbed()
 > **» +yavaşmod :** Bulunduğunuz kanalın yazma limitini(Süresini) belirlersiniz.
 > **» +nuke :** Tüm mesajları siler ve kanalı tekrar kurar.
 **▬▬▬▬▬▬▬[** :gear: **Bilgilendirme** :gear: **]▬▬▬▬▬▬▬**
-**DİKKAT!: LÜTFEN DİKKATLİCE OKUYUNUZ! Botda oluşan teknik nedenden dolayı bot moderasyon yetkisi alamadı buda moderasyon komutlarını kullanamazsınız anlamına geliyor. Sorun çözülmüştür Lütfen Xaine Botu sunucudan atıp tekrardan eklerseniz seviniriz. İyi günler! (10 temmuz 2021 sonrası botu sunucudan atıp ekleyenlerde bu sorun yoktur. Lütfen çalışmıyorsa botu atıp geri ekleyin.)**
+**DİKKAT!: LÜTFEN DİKKATLİCE OKUYUNUZ! Botda oluşan teknik nedenden dolayı bot moderasyon yetkisi alamadı buda moderasyon komutlarını kullanamazsınız anlamına geliyor. Sorun çözülmüştür Lütfen Botu sunucudan atıp tekrardan eklerseniz seviniriz. İyi günler! (10 temmuz 2021 sonrası botu sunucudan atıp ekleyenlerde bu sorun yoktur. Lütfen çalışmıyorsa botu atıp geri ekleyin.)**
 > :dizzy: **Fikirleriniz bizim için çok ** **değerlidir, bildir komutuyla belirtmekten asla çekinmeyin!**
 > :open_file_folder: **Botun Kod Paylaşım Ve Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kekc2pU)**
 > :round_pushpin: **Ana yardım menüsüne dönmek için: +yardım**
 > :airplane: **Aktif discord.js sürümüm: v12.2.0**
 `)
-.setImage(`https://media.giphy.com/media/YKqCL6KfuCJOdh2d8p/giphy.gif`)
+.setImage(`https://media.giphy.com/media/BTQg35NV1TFyP03vGu/giphy.gif`)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();
