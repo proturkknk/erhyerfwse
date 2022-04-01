@@ -64,6 +64,7 @@ module.exports = client => {
     var oyun = [  
 see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
+"Hayırlı Ramazanlar",
 "VIP Üye Ön Kayıt yaptırmak için Kurucumuzla iletişime geçebilirsiniz.",
 "VIP Üyelik Ayda sadece 2,99 TL",
 "Fleix Botun ismiyle açılan sahte botları bize bildirebilirsiniz! Bildiren kullanıcılarımıza ödüllerimiz olacak!",
