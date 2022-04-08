@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 const EmbedFwhyCode = new MessageEmbed()
 
 .setColor("RANDOM")
-.setTitle("**▬▬▬[** ©️ **Fleix Bot ** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`")
+.setTitle("**▬▬▬[** ©️ **Elitra Bot ** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`")
 .setThumbnail("https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif")
 .setDescription(`
 

@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
 .setDescription(`
 <:civcivkalp:853213881111150642>  davet yazarak botla ilgili tüm linklere ulaşabilirsiniz.
 
-Kullanılan  Bot sürümü: **4.2**
+Kullanılan Elitra Bot sürümü: **4.2**
 Sezon: ** Kar Sezonu ❄️ **
 
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
@@ -45,9 +45,9 @@ Sezon: ** Kar Sezonu ❄️ **
  
   > :wrench: | +Bakımdaki-komutlar -> Botun bakımdaki komutlarını gösterir.`)
  
- .setFooter(`Fleix Bot Yardım Menüsü `)
+ .setFooter(`Elitra Bot Yardım Menüsü `)
 .addField("Bağlantılar","[Davet et](https://discord.com/oauth2/authorize?client_id=955104024619794472&scope=bot&permissions=27648860222)\n[Destek sunucusu](https://discord.gg/99C4tGzgK4)\n[Oy verme linki](https://top.gg/bot/774235071653216286/vote)")
- .setFooter(`© 2020 Fleix Bot | Tüm hakları saklıdır`)
+ .setFooter(`© 2020 Elitra Bot | Tüm hakları saklıdır`)
  .setTimestamp()
     .setImage("https://media.giphy.com/media/BTQg35NV1TFyP03vGu/giphy.gif")
 message.channel.send({embeds: [embed]}) 
@@ -62,7 +62,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'yardım',   //Xaine bot yardım menüsü
+  name: 'yardım',   //Elitra bot yardım menüsü
   description: '',
   usage: ''
 };

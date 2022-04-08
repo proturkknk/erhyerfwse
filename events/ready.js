@@ -37,7 +37,7 @@ module.exports = client => {
       })
     
   })
-  */ //Trefax elleme sonra çalışmıyo diye ağlıyon aq
+  */ //Trefax elleme sonra çalışmıyo diye ağlıyon aq götünü
   
   client.channels.cache.get('939617329002733618').send('Bot açıldı')
   
@@ -68,10 +68,10 @@ see+" Tane Kullanıcım var!",
 "Ramazanın en çok kullanılan ve en çok sevilen Fleix Bot Komutu: **iftar**",
 "VIP Üye Ön Kayıt yaptırmak için Kurucumuzla iletişime geçebilirsiniz.",
 "VIP Üyelik Ayda sadece 2,99 TL",
-"Fleix Botun ismiyle açılan sahte botları bize bildirebilirsiniz! Bildiren kullanıcılarımıza ödüllerimiz olacak!",
+"Elitra Botun ismiyle açılan sahte botları bize bildirebilirsiniz! Bildiren kullanıcılarımıza ödüllerimiz olacak!",
 "V.I.P Üye Sistemi Çok yakında aktif!",
 "Kış Sezonu ❄️ ",
-"Kullanılan Fleix Bot sürümü: 4.2",
+"Kullanılan Elitra Bot sürümü: 4.2",
 "Web sitemiz | YAKINDA ",
 " Destek sunucumuz: https://discord.gg/Kekc2pU",
 " Yaşadığın şehirde İftara Ne Kadar Kaldığını merak mı ediyorsun? Hadi **iftar** komutunu kullan!", 

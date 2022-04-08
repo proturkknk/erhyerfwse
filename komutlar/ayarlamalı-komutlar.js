@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 
     .setColor("RANDOM")
     .setAuthor(
-      "**▬▬▬[** ©️ **Fleix Bot (V13)** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`",
+      "**▬▬▬[** ©️ **Elitra Bot (V13)** ©️ **]▬▬▬**  \n\n> :floppy_disk: `+is` **Botun istatistik bilgilerini açar.** \n> :floppy_disk: **Şuanda kullanılan prefix** `+`",
     )
     .setTitle("")
     .setThumbnail(
