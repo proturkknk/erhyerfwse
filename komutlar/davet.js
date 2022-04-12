@@ -3,14 +3,14 @@ const {MessageEmbed} = require("discord.js");
 exports.run = (client, message, args) => {
   const motion = new MessageEmbed()
     .setColor("RANDOM")
-    .setAuthor(`Xaine`, client.user.avatarURL)
+    .setAuthor(`Elitra`, client.user.avatarURL)
     .addField(
       `> Neden biz ?`,
-      `**Çünkü Xaine Ekibi olarak işimizi en iyi şekilde yaptığımızı düşünüyoruz ve sizide aramızda görmekten mutluluk duyuyoruz. :)**`
+      `**Çünkü Elitra Ekibi olarak işimizi en iyi şekilde yaptığımızı düşünüyoruz ve sizide aramızda görmekten mutluluk duyuyoruz. :)**`
     )
     .addField(
       `> Botumuzu Davet Etmek isterseniz`,
-      `[Botu Davet Etme Linki](https://discord.com/oauth2/authorize?client_id=955104024619794472&scope=bot&permissions=27648860222)`
+      `[Botu Davet Etme Linki](https://discord.com/oauth2/authorize?client_id=963328858298384437&scope=bot&permissions=27648860222)`
     )
     .addField(
       `> Destek Sunucusuna Katılmak İsterseniz`,
@@ -33,7 +33,7 @@ exports.run = (client, message, args) => {
 
     .addField(
       `> Xaine Bota Oy Vermek İsterseniz`,
-      `[Top.gg Oy Verme Linki (YAKINDA)](https://top.gg/bot/774235071653216286/vote)`
+      `[Top.gg Oy Verme Linki (YAKINDA)]()`
     )
 .setImage(`https://media.giphy.com/media/BTQg35NV1TFyP03vGu/giphy.gif`)
     .setThumbnail(
