@@ -1,39 +1,36 @@
-const {MessageEmbed} = require('discord.js');
+const Discord = require('discord.js');
 const weather = require('weather-js');
 
 exports.run = (client, message, args) => {
+  
   weather.find({search: args.join(" "), degreeType: 'C'}, function(err, result) {
-      if (err) message.channel.send(err);
       if (result === undefined || result.length === 0) {
-          message.channel.send(new MessageEmbed().setDescription('Lütfen şehir ismi giriniz.').setColor('RANDOM'));
-          return;
+          message.channel.send({content: '🚫 **Lokasyon/Bölge Bulunamadı...**'})
+          return
       }
-      var current = result[0].current;
-      var location = result[0].location;
-      const embed = new MessageEmbed()
+    
+      var current = result[0].current
+      var location = result[0].location
+      
+      const embed = new Discord.MessageEmbed()
+          .setTitle(`${current.observationpoint} Hava Durumu`)
           .setDescription(`**${current.skytext}**`)
-          .setAuthor(`${current.observationpoint} için hava durumu`)
           .setThumbnail(current.imageUrl)
-          .setColor('RANDOM')
-          .addField('● Zaman Dilimi',`UTC${location.timezone}`, true)
-          .addField('● Derece Türü',location.degreetype, true)
-          .addField('● Sıcaklık',`${current.temperature} Derece`, true)
-          .addField('● Hava', `${current.feelslike}`, true)
-          .addField('● Rüzgar',current.winddisplay, true)
-          .addField('● Nem', `${current.humidity}%`, true)
-          message.channel.send({embeds: [embed]});
+          .setColor("BLUE")
+          .addField('⏳ Zaman Dilimi: ',`UTC${location.timezone}`, true)
+          .addField('🎰 Derece Tipi: ',location.degreetype, true)
+          .addField('🌞 Sıcaklık: ',`${current.temperature} Derece`, true)
+          .addField('🌅 Hissedilen Sıcaklık: ', `${current.feelslike} Derece`, true)
+          .addField('🌈 Rüzgar Oranı: ',current.winddisplay, true)
+          .addField('🌁 Nem Oranı: ', `${current.humidity}%`, true)
+          message.channel.send({embeds: [embed]})
   })
 }
 
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ['Hava-durumu','hava-durumu','HAVA-DURUMU'],
-  permLevel: "0"
-};
+ aliases: ["hava-durumu","havadurumu","hd"]
+}
 
 exports.help = {
-  name: "havadurumu",
-  description: "hava durumunu gösterir",
-  usage: "havadurumu"
+  name:"havadurumu"
 }
