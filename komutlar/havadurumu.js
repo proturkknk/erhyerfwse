@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
   
   weather.find({search: args.join(" "), degreeType: 'C'}, function(err, result) {
       if (result === undefined || result.length === 0) {
-          message.channel.send({content: '🚫 **Lokasyon/Bölge Bulunamadı...**'})
+          message.channel.send({content: '🚫 **Lokasyon/Bölge Bulunamadı. Örnek kullanım: +havadurumu İstanbul**'})
           return
       }
     
