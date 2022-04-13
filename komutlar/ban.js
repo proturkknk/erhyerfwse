@@ -1,50 +1,45 @@
-const {MessageEmbed} = require("discord.js");
-const fs = require("fs");
+const Discord = require('discord.js');
+const db = require('quick.db');
+const config = require("../../../config.json")
+const limit = new Map();
+const moment = require("moment");
+moment.locale("tr");
 
-exports.run = (client, message, args) => {
-  if (!message.guild) {
-    const ozelmesajuyari = new MessageEmbed()
-      .setColor("RANDOM")
-      .setTimestamp()
-      .setAuthor(message.author.username, message.author.avatarURL)
-      .addField(" :warning: Uyarı!", "`ban` adlı komutu özel mesajlarda kullanamazsın.");
-    return message.author.send({embeds: [ozelmesajuyari]});
-  }
-  let guild = message.guild;
-  let reason = args.slice(1).join(" ");
-  let dızcılaraselam = message.mentions.users.first();
-
-  if (message.mentions.users.size < 1)
-    return message.channel
-      .send(`Lütfen sunucudan yasaklayacağınız kişiyi etiketleyin.`)
-      .catch(console.error);
-
-  message.guild.members.cache.get
-    return message.channel.send(
-      `❌ Belirttiğiniz kişinin Yetkisi Benden Daha Üstün. O yüzden Banlayamıyorum.(Yasaklama)`
-    );
-  message.guild.member(dızcılaraselam).ban();
-
-  message.channel.send(
-    " Başarılı! Belirttiğiniz kullanıcıyı banlandım. " +
-      dızcılaraselam +
-      " İD'li kullanıcı **" +
-      reason +
-      "** sebebiyle sunucudan yasaklandı."
-  );
-};
-
-exports.conf = {
-  enabled: true,
-  guildOnly: true,
-  aliases: ['ban','Ban','BAN'],
-  permLevel: 3,
-  kategori: "moderasyon"
-};
-
-exports.help = {
+module.exports = {
   name: "ban",
-  category: "moderasyon",
-  description: "İstediğiniz kişiyi sunucudan yasaklar. Xaine Bota ait! eğer alt yapıya girdiyseniz çalarsanız hakkımız sonuna kadar haramdır.",
-  usage: "ban <@kullanıcı> <sebep>"
+  aliases: ["BAN", "Ban", "ban", "yasakla"],
+  execute: async (client, message, args, embed, author, channel, guild) => {
+    if (!message.member.roles.cache.has(config.penals.ban.staff) && !message.member.permissions.has(8)) return message.reply({ embeds: [embed.setDescription(`Bu komutu kullanabilmek için öncelikle gerekli yetkin olmalı!`)] }).catch((err) => console.log(err), client.tick(message)).then((e) => setTimeout(() => { e.delete(); }, 10000));
+    let member = message.member
+    let user = message.mentions.users.first() || guild.members.cache.get(args[0]);
+    let reason = args.slice(1).join(' ');
+    if (!user) return message.reply({ embeds: [embed.setDescription('Yanlış Kullanım! Örnek +ban @kâte/ID [reason]')] }).catch((err) => console.log(err), client.tick(message)).then((e) => setTimeout(() => { e.delete(); }, 10000));
+    if (reason.length < 1) return message.reply({ embeds: [embed.setDescription('Öncelikle banlanma sebebi belirtmelisin.')] }).catch((err) => console.log(err), client.tick(message)).then((e) => setTimeout(() => { e.delete(); }, 10000));
+    if (config.penals.ban.limit > 0 && limit.has(author.id) && limit.get(author.id) == config.penals.ban.limit) return message.reply({ embeds: [embed.setDescription("Saatlik ban sınırına ulaştın!")] }).catch((err) => console.log(err), client.tick(message)).then((e) => setTimeout(() => { e.delete(); }, 10000));
+    if (!message.member.permissions.has(8) && member && member.roles.highest.position >= message.member.roles.highest.position) return message.reply({ embeds: [embed.setDescription("Kendinle aynı yetkide ya da daha yetkili olan birini banlayamazsın!")] })
+    guild.members.ban(user, { reason: reason });
+    message.reply({ embeds: [embed.setDescription(`**${user.user.tag}** - **(${user.id})** kullanıcısı ${author} tarafından **"${reason}"** sebebiyle sunucudan yasaklandı. \`(Ceza ID: #${db.fetch(`ceza_${guild.id}`)})\``)] }).catch((err) => console.log(err), client.ytick(message))
+    db.add(`ceza_${guild.id}`, 1)
+
+    client.channels.cache.get(config.penals.ban.log).send({ embeds: [embed.setDescription(`     
+    ${member ? member.toString(): member.username} başarıyla sunucudan yasaklandı.
+
+    Ceza ID: \`${db.fetch(`ceza_${guild.id}`)}\`
+    Kullanıcı: ${member ? member.toString() : ""} - \`(${member.id})\`
+    Yetkili: ${author} - \`(${author.id})\`
+    Sebep: \`${reason}\`
+    Tarih: \`${moment(Date.now()).format("LLL")}\``)] });
+    db.push(`sicil_${user.id}`, `${author} Tarafından ${moment(Date.now()).format("LLL")} tarihinde **${reason}** sebebiyle **[ BAN ]** cezası aldığını tespit ettim.`)
+    db.add(`points_${member}`, config.penals.points.banpoints);
+    db.add(`ban_${member.id}`, 1)
+    const cezaID = await db.fetch(`ceza_${guild.id}`)
+    db.set(`${cezaID}`, `${author} tarafından ${moment(Date.now()).format("LLL")} tarihinde ${reason} sebebiyle **[BAN]** cezası aldığını tespit ettim.`)
+    if (config.penals.ban.limit > 0) {
+      if (!limit.has(author.id)) limit.set(author.id, 1);
+      else limit.set(author.id, limit.get(author.id) + 1);
+      setTimeout(() => {
+        if (limit.has(author.id)) limit.delete(author.id);
+      }, 1000 * 60 * 60)
+    };
+  }
 };
