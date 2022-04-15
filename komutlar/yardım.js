@@ -8,8 +8,8 @@ exports.run = (client, message, args) => {
 .setDescription(`
 <:civcivkalp:853213881111150642>  davet yazarak botla ilgili tüm linklere ulaşabilirsiniz.
 
-Kullanılan Elitra Bot sürümü: **4.2**
-Sezon: ** Kar Sezonu ❄️ **
+Kullanılan Elitra Bot sürümü: **4.3**
+Sezon: ** İlkbahar Sezonu 🌺 **
 
 ---------------  **⭐ Yeni güncellemeler-düzeltmeler!** ---------------
 
