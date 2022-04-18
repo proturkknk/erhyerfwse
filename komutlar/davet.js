@@ -22,18 +22,18 @@ exports.run = (client, message, args) => {
     )
     .addField(
       `> Sitemize Göz Atmak isterseniz`,
-      `[Sitemiz](http://www.xaine.tk/)`
+      `[YAKINDA]()`
     )
   
   .addField(
       `> Top.gg den botumuza bakmak isterseniz`,
-      `[Top.gg Botumuz Linki (YAKINDA)]()`
+      `[Top.gg Elitra Bot Linki] (https://top.gg/bot/963328858298384437)]()`
     )
 
 
     .addField(
       `> Xaine Bota Oy Vermek İsterseniz`,
-      `[Top.gg Oy Verme Linki (YAKINDA)]()`
+      `[Top.gg Oy Verme Linki (https://top.gg/bot/963328858298384437/vote)]()`
     )
 .setImage(`https://media.giphy.com/media/BTQg35NV1TFyP03vGu/giphy.gif`)
     .setThumbnail(
