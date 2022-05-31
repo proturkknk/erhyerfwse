@@ -64,7 +64,6 @@ module.exports = client => {
     var oyun = [  
 see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
-"Hayırlı Ramazanlar",
 "Ramazanın en çok kullanılan ve en çok sevilen Elitra Bot Komutu: **iftar**",
 "VIP Üye Ön Kayıt yaptırmak için Kurucumuzla iletişime geçebilirsiniz.",
 "VIP Üyelik Ayda sadece 2,99 TL",
