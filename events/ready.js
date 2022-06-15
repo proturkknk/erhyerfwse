@@ -66,17 +66,13 @@ see+" Tane Kullanıcım var!",
     client.guilds.cache.size+" Tane Sunucuya eklendim!",
 "Ramazanın en çok kullanılan ve en çok sevilen Elitra Bot Komutu: **iftar**",
 "VIP Üye Ön Kayıt yaptırmak için Kurucumuzla iletişime geçebilirsiniz.",
-"VIP Üyelik Ayda sadece 2,99 TL",
+"VIP Üyelik Ayda sadece 2,99 TL (YAKINDA)",
 "Elitra Botun ismiyle açılan sahte botları bize bildirebilirsiniz! Bildiren kullanıcılarımıza ödüllerimiz olacak!",
 "V.I.P Üye Sistemi Çok yakında aktif!",
 "İlkbahar Sezonu 🌺",
 "Kullanılan Elitra Bot sürümü: 4.3",
 "Web sitemiz | YAKINDA ",
 " Destek sunucumuz: https://discord.gg/Kekc2pU",
-" Yaşadığın şehirde İftara Ne Kadar Kaldığını merak mı ediyorsun? Hadi **iftar** komutunu kullan!", 
-"**İftar** Komutunu kullanarak yaşadığın şehirin iftara kalan süresini ve zamanını öğrenebilirsin!",
-"**İftar** Komutunu kullan ve yaşadığın şehirdeki İftara Kalan süreyi öğren!",
-"**iftar-zamanı** Komutu kullanıma açıldı!",
 
 
 
